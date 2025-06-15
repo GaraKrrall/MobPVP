@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "com/kaplandev/mixin/client/TitleScreenMixin": {
+      "init": "Lnet/minecraft/class_442;method_25426()V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "com/kaplandev/mixin/client/TitleScreenMixin": {
+        "init": "Lnet/minecraft/class_442;method_25426()V"
+      }
+    }
+  }
+}

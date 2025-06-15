@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="21" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-AoutRefMapFile=D:\Programs\IDEA\PROJECTS\MobPVP\build\classes\java\client\client-mobpvp-refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=D:\Programs\IDEA\PROJECTS\MobPVP\build\loom-cache\mixin-map-net.fabricmc.yarn.1_21_1.1.21.1+build.1-v2.client.tiny -AinMapFileNamedIntermediary=C:\Users\akgls\.gradle\caches\fabric-loom\1.21.1\net.fabricmc.yarn.1_21_1.1.21.1+build.1-v2\mappings.tiny" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MobPVP.main" options="-AoutRefMapFile=D:\Programs\IDEA\PROJECTS\MobPVP\build\classes\java\main\mobpvp-refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=D:\Programs\IDEA\PROJECTS\MobPVP\build\loom-cache\mixin-map-net.fabricmc.yarn.1_21_1.1.21.1+build.1-v2.main.tiny -AinMapFileNamedIntermediary=C:\Users\akgls\.gradle\caches\fabric-loom\1.21.1\net.fabricmc.yarn.1_21_1.1.21.1+build.1-v2\mappings.tiny" />
+      <module name="MobPVP.test" options="-AoutRefMapFile=D:\Programs\IDEA\PROJECTS\MobPVP\build\classes\java\test\test-mobpvp-refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=D:\Programs\IDEA\PROJECTS\MobPVP\build\loom-cache\mixin-map-net.fabricmc.yarn.1_21_1.1.21.1+build.1-v2.test.tiny -AinMapFileNamedIntermediary=C:\Users\akgls\.gradle\caches\fabric-loom\1.21.1\net.fabricmc.yarn.1_21_1.1.21.1+build.1-v2\mappings.tiny" />
+    </option>
+  </component>
+</project>

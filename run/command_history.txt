@@ -1,0 +1,12 @@
+/time set noon
+/time set night
+/kill @e[name=Delio]
+/test
+/test clearall
+/time set day
+/kill @e[type=minecraft:zombie]
+/kill @e[type=minecraft:item]
+/ride Player443 dismount
+/time set day
+/kill @e[type=minecraft:warden]
+/effect give @a minecraft:strength infinite 255 true
