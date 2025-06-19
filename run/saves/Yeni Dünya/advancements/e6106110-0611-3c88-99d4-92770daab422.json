@@ -1,0 +1,63 @@
+{
+  "mobpvp:kick": {
+    "criteria": {
+      "hit_mob": "2025-06-19 17:12:07 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/composter": {
+    "criteria": {
+      "has_wood_slab": "2025-06-19 17:11:49 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:middle": {
+    "criteria": {
+      "armor_up": "2025-06-19 17:11:49 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-06-19 17:11:28 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:die": {
+    "criteria": {
+      "death": "2025-06-19 17:14:12 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2025-06-19 17:14:12 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:deep_dark": {
+    "criteria": {
+      "deep_dark": "2025-06-19 17:11:29 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:first": {
+    "criteria": {
+      "joined_world": "2025-06-19 17:11:28 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-06-19 17:11:29 +0300"
+    },
+    "done": false
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_wood_slab": "2025-06-19 17:11:49 +0300"
+    },
+    "done": true
+  },
+  "DataVersion": 3955
+}

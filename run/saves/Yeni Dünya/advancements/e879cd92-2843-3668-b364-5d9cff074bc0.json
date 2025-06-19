@@ -23,5 +23,23 @@
     },
     "done": false
   },
+  "minecraft:recipes/decorations/composter": {
+    "criteria": {
+      "has_wood_slab": "2025-06-19 23:23:27 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:middle": {
+    "criteria": {
+      "armor_up": "2025-06-19 23:23:27 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_wood_slab": "2025-06-19 23:23:27 +0300"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

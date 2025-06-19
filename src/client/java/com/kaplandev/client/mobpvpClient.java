@@ -4,18 +4,15 @@ import com.kaplandev.client.renderer.CustomZombieRenderer;
 import com.kaplandev.client.InfoSys.dink;
 import com.kaplandev.client.config.ModConfig;
 import com.kaplandev.client.gui.WelcomeScreen;
+import com.kaplandev.client.renderer.entity.zombie.SuperZombieRenderer;
 import com.kaplandev.entity.EntitiyRegister;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.render.entity.SkeletonEntityRenderer;
-import net.minecraft.client.render.entity.ZombieEntityRenderer;
-import net.minecraft.client.render.entity.model.EntityModelLayers;
-import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.EntityType;
 
 public class mobpvpClient implements ClientModInitializer {
@@ -26,10 +23,11 @@ public class mobpvpClient implements ClientModInitializer {
     public void onInitializeClient() {
 
         EntityRendererRegistry.register(EntityType.ZOMBIE, CustomZombieRenderer::new);
+        EntityRendererRegistry.register(EntitiyRegister.CUSTOM_ZOMBIE, SuperZombieRenderer::new);
+        EntityRendererRegistry.register(EntitiyRegister.CUSTOM_SKELETON, SkeletonEntityRenderer::new);
         ModConfig.initialize();
 
-        EntityRendererRegistry.register(EntitiyRegister.CUSTOM_ZOMBIE, ZombieEntityRenderer::new);
-        EntityRendererRegistry.register(EntitiyRegister.CUSTOM_SKELETON, SkeletonEntityRenderer::new);
+
         
 
         // Oyundan çıkarken config kaydet

@@ -3,6 +3,7 @@ package com.kaplandev;
 
 
 import com.kaplandev.commands.ModCommands;
+import com.kaplandev.items.KalpItem;
 import com.kaplandev.items.ModItems;
 import com.kaplandev.entity.EntitiyRegister;
 import com.kaplandev.items.tab.TabSetup;
@@ -560,7 +561,7 @@ public final class mobpvp implements ModInitializer {
                     guaranteed.add(ItemEntry.builder(Items.BEACON).build());
                 }
                 if (mobId.equals("zombie")) {
-                   rare.add(ItemEntry.builder(ModItems.MY_ITEM).build());
+                   rare.add(ItemEntry.builder(KalpItem.MY_ITEM).build());
                 }
                 if (mobId.equals("warden")) {
                     guaranteed.add(ItemEntry.builder(Items.SCULK_SHRIEKER).build());

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mobpvp:ore"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "enchantments": [],
+            "items": [
+              "minecraft:diamond_pickaxe",
+              "minecraft:netherite_pickaxe"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,3 @@
-/recipe give @a mobpvp:totem
-/recipe give @a mobpvp:gunpowder
-/recipe take @a mobpvp:gunpowder
 /recipe give @a mobpvp:gunpowder
 /advancement grant Player605 everything
 /difficulty peaceful
@@ -48,3 +45,6 @@
 /summon mobpvp:custom_skeleton
 /gamerule doMobSpawning true
 /time set night
+/summon mobpvp:custom_zombie
+/summon mobpvp:custom_skeleton
+/summon mobpvp:custom_zombie
