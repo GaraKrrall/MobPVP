@@ -1,5 +1,6 @@
 {
   "item.mobpvp.kalp": "Kalp",
   "key.mobpvp.dash": "Dash",
-  "category.mobpvp": "MobPvp Controls"
+  "category.mobpvp": "MobPvp Controls",
+  "itemGroup.mobpvp": "MobPVP"
 }

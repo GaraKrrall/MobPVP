@@ -5,6 +5,7 @@ package com.kaplandev;
 import com.kaplandev.commands.ModCommands;
 import com.kaplandev.items.ModItems;
 import com.kaplandev.entity.EntitiyRegister;
+import com.kaplandev.items.tab.TabSetup;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
@@ -83,6 +84,7 @@ public final class mobpvp implements ModInitializer {
     public void onInitialize() {
         ModItems.init();
         EntitiyRegister.register();
+        TabSetup.RegisterTabs();
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
             ModCommands.register(dispatcher);
         });

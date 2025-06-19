@@ -16,7 +16,7 @@ public class ModItems {
     );
 
     public static void registerCreativeTab() {
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
                 .register(entries -> entries.add(MY_ITEM));
     }
 
