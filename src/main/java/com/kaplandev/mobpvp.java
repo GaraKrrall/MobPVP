@@ -1,6 +1,8 @@
 package com.kaplandev;
 
 
+
+import com.kaplandev.items.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerEntityCombatEvents;
@@ -31,9 +33,14 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.minecraft.world.explosion.Explosion;
+import net.fabricmc.fabric.api.event.player.UseItemCallback;
+import net.minecraft.item.Items;
+import net.minecraft.util.ActionResult;
+
 
 import java.util.*;
 
@@ -72,9 +79,13 @@ public final class mobpvp implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ModItems.init();
         ServerEntityEvents.ENTITY_LOAD.register((entity, world) -> {
             if (!(entity instanceof LivingEntity living) || entity instanceof ServerPlayerEntity) return;
             if (living.hasCustomName()) return;
+
+
+
 
 
 
@@ -538,6 +549,9 @@ public final class mobpvp implements ModInitializer {
                     guaranteed.add(ItemEntry.builder(Items.ELYTRA).build());
                     guaranteed.add(ItemEntry.builder(Items.NETHERITE_BLOCK).build());
                     guaranteed.add(ItemEntry.builder(Items.BEACON).build());
+                }
+                if (mobId.equals("zombie")) {
+                   rare.add(ItemEntry.builder(ModItems.MY_ITEM).build());
                 }
                 if (mobId.equals("warden")) {
                     guaranteed.add(ItemEntry.builder(Items.SCULK_SHRIEKER).build());

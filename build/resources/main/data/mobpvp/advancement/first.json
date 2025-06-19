@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:dragon_egg"
+    },
+    "title": {
+      "text": "MobPVP"
+    },
+    "description": {
+      "text": "Dünyaya ilk adımını attın. Şimdi bakalım ne kadar dayanacaksın?"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+  },
+  "criteria": {
+    "joined_world": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

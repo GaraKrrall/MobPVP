@@ -1,0 +1,21 @@
+{
+  "parent": "mobpvp:combat",
+  "display": {
+    "icon": { "id": "minecraft:firework_rocket" },
+    "title": { "text": "Roket Gücü" },
+    "description": { "text": "Firework ile uçmaya başla." },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "used_firework": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:firework_rocket"]
+        }
+      }
+    }
+  }
+}

@@ -12,6 +12,8 @@ public class ModConfig {
     private static Path configPath;
 
     public static boolean showAKOTOriginalMessage = true;
+    public static boolean showWelcomePopup = true;
+
 
     public static void initialize() {
         try {
@@ -33,7 +35,7 @@ public class ModConfig {
 
     public static void save() {
         try {
-            ConfigData data = new ConfigData(showAKOTOriginalMessage);
+            ConfigData data = new ConfigData(showAKOTOriginalMessage, showWelcomePopup);
             String json = GSON.toJson(data);
             Files.writeString(configPath, json);
         } catch (IOException e) {
@@ -41,25 +43,31 @@ public class ModConfig {
         }
     }
 
+
     public static void load() {
         try {
             String json = Files.readString(configPath);
             ConfigData data = GSON.fromJson(json, ConfigData.class);
             if (data != null) {
                 showAKOTOriginalMessage = data.showAKOTOriginalMessage;
+                showWelcomePopup = data.showWelcomePopup;
             }
         } catch (IOException e) {
             System.err.println("MobPVP config yüklenemedi: " + e.getMessage());
         }
     }
 
+
     private static class ConfigData {
-        boolean showAKOTOriginalMessage;
+        boolean showAKOTOriginalMessage = true;
+        boolean showWelcomePopup = true;
+
 
         public ConfigData() {} // GSON için boş constructor
 
-        ConfigData(boolean showAKOTOriginalMessage) {
+        ConfigData(boolean showAKOTOriginalMessage, boolean showWelcomePopup) {
             this.showAKOTOriginalMessage = showAKOTOriginalMessage;
+            this.showWelcomePopup = showWelcomePopup;
         }
     }
 }

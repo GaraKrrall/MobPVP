@@ -1,0 +1,26 @@
+{
+  "parent": "mobpvp:first",
+  "display": {
+    "icon": {
+      "id": "minecraft:egg"
+    },
+    "title": {
+      "text": "Yeni Öğrendim!"
+    },
+    "description": {
+      "text": "Bir tarif aç."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+  },
+  "criteria": {
+    "learned_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mobpvp:gunpowder"
+      }
+    }
+  }
+}

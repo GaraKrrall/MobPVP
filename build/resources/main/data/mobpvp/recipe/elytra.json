@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MMM",
+    "PEP",
+    " G "
+  ],
+  "key": {
+    "M": { "item": "minecraft:phantom_membrane" },
+    "P": { "item": "minecraft:purpur_block" },
+    "E": { "item": "minecraft:echo_shard" },
+    "G": { "item": "minecraft:ghast_tear" }
+  },
+  "result": {
+    "id": "minecraft:elytra",
+    "count": 1
+  }
+}

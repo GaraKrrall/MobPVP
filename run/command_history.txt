@@ -10,3 +10,25 @@
 /time set day
 /kill @e[type=minecraft:warden]
 /effect give @a minecraft:strength infinite 255 true
+/recipe give @p mobpvp:gunpowder_from_custom
+/recipe give @a
+/recipe give @a *
+/recipe give @a mobpvp:gunpowder
+/recipe give @a mobpvp:totem
+/recipe give @a mobpvp:gunpowder
+/recipe take @a mobpvp:gunpowder
+/recipe give @a mobpvp:gunpowder
+/advancement grant Player605 everything
+/difficulty peaceful
+/difficulty easy
+/time set night
+/effect give Player880 minecraft:absorption infinite 255 true
+/effect give Player880 minecraft:saturation infinite 255
+/effect clear Player880 minecraft:saturation
+/effect give Player880 minecraft:regeneration infinite 255
+/time set day
+/give @a mobpvp:my_item
+/give Player321 mobpvp:kalp
+/time set night
+/effect clear @a
+/effect clear @e

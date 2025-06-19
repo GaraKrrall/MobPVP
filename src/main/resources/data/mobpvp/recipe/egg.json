@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "DED",
+    "OOO"
+  ],
+  "key": {
+    "N": { "item": "minecraft:nether_star" },
+    "D": { "item": "minecraft:dragon_breath" },
+    "E": { "item": "minecraft:echo_shard" },
+    "O": { "item": "minecraft:obsidian" }
+  },
+  "result": {
+    "id": "minecraft:dragon_egg",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "parent": "mobpvp:first",
+  "display": {
+    "icon": { "id": "minecraft:enchanted_book" },
+    "title": { "text": "Parıldayan Kahraman" },
+    "description": { "text": "Tüm zırh parçalarını enchant'lı olarak giy." },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "enchanted_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": ["minecraft:netherite_helmet"], "enchantments": [{}] },
+          { "items": ["minecraft:netherite_chestplate"], "enchantments": [{}] },
+          { "items": ["minecraft:netherite_leggings"], "enchantments": [{}] },
+          { "items": ["minecraft:netherite_boots"], "enchantments": [{}] }
+        ]
+      }
+    }
+  }
+}

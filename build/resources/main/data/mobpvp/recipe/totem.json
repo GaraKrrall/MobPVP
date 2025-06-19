@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GNG",
+    "MTM",
+    "RCR"
+  ],
+  "key": {
+    "G": { "item": "minecraft:enchanted_golden_apple" },
+    "N": { "item": "minecraft:nether_star" },
+    "M": { "item": "minecraft:phantom_membrane" },
+    "T": { "item": "minecraft:ghast_tear" },
+    "R": { "item": "minecraft:blaze_rod" },
+    "C": { "item": "minecraft:end_crystal" }
+  },
+  "result": {
+    "id": "minecraft:totem_of_undying",
+    "count": 1
+  }
+}

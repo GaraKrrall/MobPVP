@@ -1,0 +1,19 @@
+{
+  "parent": "mobpvp:first",
+  "display": {
+    "icon": { "id": "minecraft:trident" },
+    "title": { "text": "Üçlü Güç" },
+    "description": { "text": "Bir trident elde et." },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "trident": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": ["minecraft:trident"] }]
+      }
+    }
+  }
+}

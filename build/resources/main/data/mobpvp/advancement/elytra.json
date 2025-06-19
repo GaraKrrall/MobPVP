@@ -1,0 +1,19 @@
+{
+  "parent": "mobpvp:first",
+  "display": {
+    "icon": { "id": "minecraft:elytra" },
+    "title": { "text": "Kanatlara Kavuş" },
+    "description": { "text": "Bir Elytra giy." },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "elytra": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": ["minecraft:elytra"] }]
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FBF",
+    "CLC",
+    "   "
+  ],
+  "key": {
+    "F": { "item": "minecraft:flint" },
+    "B": { "item": "minecraft:blaze_powder" },
+    "C": { "item": "minecraft:coal" },
+    "L": { "item": "minecraft:clay_ball" }
+  },
+  "result": {
+    "id": "minecraft:gunpowder",
+    "count": 4
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "parent": "mobpvp:first",
+  "display": {
+    "icon": { "id": "minecraft:bread" },
+    "title": { "text": "Afiyet Olsun" },
+    "description": { "text": "Bir yemek ye." },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "eat": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": { "items": ["minecraft:bread"] }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DBD",
+    "ESE",
+    "OOO"
+  ],
+  "key": {
+    "D": { "item": "minecraft:diamond_block" },
+    "B": { "item": "minecraft:blaze_rod" },
+    "E": { "item": "minecraft:echo_shard" },
+    "S": { "item": "minecraft:totem_of_undying" },
+    "O": { "item": "minecraft:obsidian" }
+  },
+  "result": {
+    "id": "minecraft:nether_star",
+    "count": 1
+  }
+}

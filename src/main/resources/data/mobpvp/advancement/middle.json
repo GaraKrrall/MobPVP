@@ -1,0 +1,23 @@
+{
+  "parent": "mobpvp:first",
+  "display": {
+    "icon": { "id": "minecraft:diamond_chestplate" },
+    "title": { "text": "Koruyucu Gibi Giyin" },
+    "description": { "text": "Tüm zırhları kuşan." },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "armor_up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "slots": {
+          "armor": {
+            "occupied": 4
+          }
+        }
+      }
+    }
+  }
+}

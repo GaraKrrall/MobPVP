@@ -1,3 +1,4 @@
 {
-  "showAKOTOriginalMessage": true
+  "showAKOTOriginalMessage": true,
+  "showWelcomePopup": false
 }

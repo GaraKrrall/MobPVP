@@ -1,5 +1,5 @@
-[13:41:40] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
-[13:41:40] [main/INFO] (FabricLoader) Loading 55 mods:
+[00:30:52] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
+[00:30:53] [main/INFO] (FabricLoader) Loading 55 mods:
 	- fabric-api 0.116.1+1.21.1
 	- fabric-api-base 0.4.42+6573ed8c19
 	- fabric-api-lookup-api-v1 1.6.71+b559734419
@@ -54,512 +54,88 @@
 	- java 21
 	- minecraft 1.21.1
 	- mixinextras 0.4.1
-	- mobpvp 2.8-14.06.2025-buff-icon-h
-[13:41:40] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/akgls/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/22f9eb729e216a091673a574a5906dc1b9027fb3/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[13:41:41] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[13:41:41] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[13:41:41] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[13:41:42] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[13:41:44] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 914 milliseconds
-[13:41:52] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[13:41:52] [Render thread/INFO] (Minecraft) Setting user: Player36
-[13:41:53] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[13:41:54] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
-[13:41:56] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, mobpvp
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Worker-Main-3/INFO] (Minecraft) Found unifont_all_no_pua-15.1.05.hex, loading
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Worker-Main-3/INFO] (Minecraft) Found unifont_jp_patch-15.1.05.hex, loading
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:56] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:57] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:58] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:58] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:58] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:58] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:58] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:58] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:58] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:58] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:58] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:58] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:58] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:58] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:58] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:58] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:58] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:41:58] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
-[13:41:58] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[13:41:58] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on SES (VB-Audio Virtual Cable)
-[13:41:58] [Render thread/INFO] (Minecraft) Sound engine started
-[13:41:59] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[13:41:59] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[13:41:59] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[13:41:59] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[13:41:59] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[13:41:59] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[13:41:59] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[13:41:59] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[13:41:59] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[13:41:59] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[13:41:59] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[13:41:59] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[13:41:59] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[13:41:59] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[13:41:59] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[13:41:59] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:00] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:01] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:02] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:03] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:04] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:05] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:06] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:07] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:08] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:09] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:10] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:11] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:12] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:13] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:14] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:15] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:16] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:17] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:18] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:19] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:20] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:20] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:20] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:20] [Render thread/INFO] (Minecraft) [STDOUT]: MobPVP modu başarıyla yüklendi!
-[13:42:20] [Render thread/INFO] (Minecraft) Stopping!
+	- mobpvp 2.9.4-18.06.2025-bugfix-and-new
+[00:30:53] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/akgls/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/22f9eb729e216a091673a574a5906dc1b9027fb3/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[00:30:53] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[00:30:53] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[00:30:53] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[00:30:56] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[00:31:06] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 8297 milliseconds
+[00:31:10] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[00:31:10] [Render thread/INFO] (Minecraft) Setting user: Player830
+[00:31:11] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[00:31:12] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
+[00:31:14] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, mobpvp
+[00:31:14] [Worker-Main-1/INFO] (Minecraft) Found unifont_all_no_pua-15.1.05.hex, loading
+[00:31:14] [Worker-Main-1/INFO] (Minecraft) Found unifont_jp_patch-15.1.05.hex, loading
+[00:31:16] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[00:31:16] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[00:31:17] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Hoparlör (3- VB-Audio Virtual Cable)
+[00:31:17] [Render thread/INFO] (Minecraft) Sound engine started
+[00:31:17] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[00:31:17] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[00:31:17] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[00:31:17] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[00:31:17] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[00:31:17] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[00:31:17] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[00:31:17] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[00:31:17] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[00:31:17] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[00:31:17] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[00:31:17] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[00:31:17] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[00:31:17] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[00:31:17] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[00:31:26] [Render thread/INFO] (Minecraft) Loaded 1298 recipes
+[00:31:26] [Render thread/INFO] (Minecraft) Loaded 1417 advancements
+[00:31:26] [Render thread/WARN] (Minecraft) Not all defined tags for registry ResourceKey[minecraft:root / minecraft:entity_type] are present in data pack: mobpvp:hostile_mobs
+[00:31:27] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 2.034 ms
+[00:31:27] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.1
+[00:31:27] [Server thread/INFO] (Minecraft) Generating keypair
+[00:31:27] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[00:31:28] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %0
+[00:31:28] [Render thread/INFO] (Minecraft) Time elapsed: 470 ms
+[00:31:28] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
+[00:31:28] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
+[00:31:29] [Server thread/INFO] (Minecraft) Player830[local:E:113f72f0] logged in with entity id 42 at (-27.843074060110325, -59.73651909256165, -58.14556022727078)
+[00:31:29] [Server thread/INFO] (Minecraft) Player830 oyuna katıldı
+[00:31:29] [Server thread/INFO] (Minecraft) Player830, [Koruyucu Gibi Giyin] hedefine ulaştı
+[00:31:29] [Server thread/INFO] (Minecraft) Player830, [MobPVP] meydan okumasını tamamladı
+[00:31:30] [Server thread/INFO] (Minecraft) Player830, [Karanlığın Kalbine] meydan okumasını tamamladı
+[00:31:34] [Render thread/INFO] (Minecraft) [System] [CHAT] Player830, [Koruyucu Gibi Giyin] hedefine ulaştı
+[00:31:34] [Render thread/INFO] (Minecraft) [System] [CHAT] Player830, [MobPVP] meydan okumasını tamamladı
+[00:31:34] [Render thread/INFO] (Minecraft) Loaded 20 advancements
+[00:31:34] [Render thread/INFO] (Minecraft) [System] [CHAT] Player830, [Karanlığın Kalbine] meydan okumasını tamamladı
+[00:31:34] [Render thread/INFO] (Minecraft) Loaded 20 advancements
+[00:31:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Ekran görüntüsü 2025-06-19_00.31.58.png olarak kaydedildi
+[00:31:59] [Server thread/INFO] (Minecraft) [Player830: Oyun modunuz Hayatta Kalma Modu olarak ayarlandı]
+[00:31:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Hayatta Kalma Modu olarak ayarlandı
+[00:32:00] [Server thread/INFO] (Minecraft) [Player830: Oyun modunuz Yaratıcı Mod olarak ayarlandı]
+[00:32:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Yaratıcı Mod olarak ayarlandı
+[00:32:08] [Render thread/INFO] (Minecraft) Loaded 22 advancements
+[00:32:19] [Server thread/INFO] (Minecraft) Player830, [İlk saldırı] gelişimini yaptı
+[00:32:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Player830, [İlk saldırı] gelişimini yaptı
+[00:32:19] [Render thread/INFO] (Minecraft) Loaded 22 advancements
+[00:32:25] [Server thread/INFO] (Minecraft) [Player830: Player830 hedefinden tüm etkiler kaldırıldı]
+[00:32:25] [Render thread/INFO] (Minecraft) [System] [CHAT] Player830 hedefinden tüm etkiler kaldırıldı
+[00:32:28] [Server thread/INFO] (Minecraft) [Player830: 142 hedeften tüm etkiler kaldırıldı]
+[00:32:28] [Render thread/INFO] (Minecraft) [System] [CHAT] 142 hedeften tüm etkiler kaldırıldı
+[00:33:52] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[00:33:53] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:overworld
+[00:33:53] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_nether
+[00:33:53] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_end
+[00:33:55] [Server thread/INFO] (Minecraft) Player830 lost connection: Bağlantı kesildi
+[00:33:55] [Server thread/INFO] (Minecraft) Player830 oyundan ayrıldı
+[00:33:55] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[00:33:55] [Server thread/INFO] (Minecraft) Stopping server
+[00:33:55] [Server thread/INFO] (Minecraft) Saving players
+[00:33:55] [Server thread/INFO] (Minecraft) Saving worlds
+[00:33:56] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:overworld
+[00:33:56] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_nether
+[00:33:56] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_end
+[00:33:56] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (Yeni Dünya): All chunks are saved
+[00:33:56] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[00:33:56] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[00:33:56] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[00:33:57] [Render thread/INFO] (Minecraft) Stopping!
