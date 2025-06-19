@@ -1,19 +1,3 @@
-/time set noon
-/time set night
-/kill @e[name=Delio]
-/test
-/test clearall
-/time set day
-/kill @e[type=minecraft:zombie]
-/kill @e[type=minecraft:item]
-/ride Player443 dismount
-/time set day
-/kill @e[type=minecraft:warden]
-/effect give @a minecraft:strength infinite 255 true
-/recipe give @p mobpvp:gunpowder_from_custom
-/recipe give @a
-/recipe give @a *
-/recipe give @a mobpvp:gunpowder
 /recipe give @a mobpvp:totem
 /recipe give @a mobpvp:gunpowder
 /recipe take @a mobpvp:gunpowder
@@ -32,3 +16,35 @@
 /time set night
 /effect clear @a
 /effect clear @e
+/time set day
+/difficulty hard
+/kill @e[type=minecraft:zombie]
+/kill @e[type=minecraft:zombie_villager]
+/gamerule doMobSpawning false
+/time set night
+/kill @e[type=minecraft:slime]
+/kill @e[type=minecraft:item]
+/difficulty hard
+/summon minecraft:warden
+/time set night
+/kill @e[type=minecraft:warden]
+/kill @e[type=minecraft:item]
+/summon minecraft:tnt_minecart
+/selam
+/selamt
+/trigger dash
+/skin
+/skinapply
+/skinapply s
+/skinapply a
+/skinapply a.png
+/skin
+/skinapply a.png
+/skin
+/skinapply a.png
+/skin
+/skinapply a.png
+/summon mobpvp:custom_zombie
+/summon mobpvp:custom_skeleton
+/gamerule doMobSpawning true
+/time set night

@@ -14,7 +14,8 @@
       "com.kaplandev.client.mobpvpDataGenerator"
     ],
     "client": [
-      "com.kaplandev.client.mobpvpClient"
+      "com.kaplandev.client.mobpvpClient",
+      "com.kaplandev.client.keybinds.DashKeybind"
     ],
     "main": [
       "com.kaplandev.mobpvp"

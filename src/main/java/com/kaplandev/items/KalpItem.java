@@ -2,6 +2,7 @@ package com.kaplandev.items;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
@@ -10,7 +11,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
@@ -26,16 +26,24 @@ public class KalpItem extends Item {
         ItemStack stack = player.getStackInHand(hand);
 
         if (!world.isClient) {
-            // 30 dakika = 30 * 60 * 20 = 36000 tick
-            StatusEffectInstance effect = new StatusEffectInstance(
-                    StatusEffects.HEALTH_BOOST, // ekstra kalp verir
-                    36000,                      // 30 dakika
-                    0,                          // seviye 1 (+4 sağlık = 2 kalp)
+            StatusEffectInstance current = player.getStatusEffect(StatusEffects.HEALTH_BOOST);
+            int duration = 36000; // 30 dakika
+            int amplifier = 0;    // seviye 1 (+2 kalp)
+
+            // Aynı efekt varsa, süresini yenile
+            if (current != null) {
+                player.removeStatusEffect(StatusEffects.HEALTH_BOOST);
+            }
+
+            StatusEffectInstance newEffect = new StatusEffectInstance(
+                    StatusEffects.HEALTH_BOOST,
+                    duration,
+                    amplifier,
                     false,
                     true
             );
 
-            player.addStatusEffect(effect);
+            player.addStatusEffect(newEffect);
             player.sendMessage(Text.literal("§a+2 Kalp (30 dakika)"), true);
             player.playSound(SoundEvents.ENTITY_PLAYER_LEVELUP, 1.0f, 1.0f);
             stack.decrement(1);
@@ -43,7 +51,6 @@ public class KalpItem extends Item {
 
         return TypedActionResult.success(stack, world.isClient());
     }
-
 
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
