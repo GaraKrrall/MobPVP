@@ -9,8 +9,8 @@
 ### 🧟 **Level System for All Mobs**  
 - Every mob is given a random level on spawn based on its type.  
 - Higher-level mobs are stronger and more dangerous.  
-### 📚**Item drop chances**
-![Item drop chances](https://cdn.modrinth.com/data/cached_images/470f62092ead22d349e122fe179590b96cb6ce8d_0.webp)
+
+
 ### 💀 **Unique Skeleton Variant**  
 - Introduces a special skeleton type with enhanced stats and equipment.  
 
@@ -37,10 +37,20 @@
 
 ### 🧪 **Custom Status Effects**  
 - Mobs receive powerful effects based on their level, including:  
-![effects](https://cdn.modrinth.com/data/cached_images/492019f0073fd1aecd0c7a68c36e0b5e79607d7d_0.webp)
+
+
 ### 🔥 **Extremely Strong Endgame Mobs**  
 - Boss mobs like the **Wither**, **Ender Dragon**, and **Warden** can reach absurdly high levels with dangerous abilities.  
 
+
+---
+### Tables:
+
+### 📚**Item drop chances**
+![Item drop chances](https://cdn.modrinth.com/data/cached_images/470f62092ead22d349e122fe179590b96cb6ce8d_0.webp)
+
+### 🧪 **Custom Status Effects**  
+![effects](https://cdn.modrinth.com/data/cached_images/492019f0073fd1aecd0c7a68c36e0b5e79607d7d_0.webp)
 ---  
 ✅ **Fully compatible** with vanilla Minecraft.  
 🔄 **No external configuration required.**  
