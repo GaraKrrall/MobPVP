@@ -1,7 +1,9 @@
 package com.kaplandev.items.tab;
 
+
 import com.kaplandev.items.KalpItem;
 import com.kaplandev.items.blocks.CrudeAcidicLayerRockOre;
+import com.kaplandev.items.eggs.SkeletonEggItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -23,6 +25,7 @@ public class TabMobPVP {
             .displayName(Text.translatable("itemGroup.mobpvp"))
             .entries((context, entries) -> {
                 entries.add(CrudeAcidicLayerRockOre.ORE);
+
 
             })
             .build();

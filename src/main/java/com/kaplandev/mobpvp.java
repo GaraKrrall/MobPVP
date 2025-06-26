@@ -8,6 +8,7 @@ import com.kaplandev.items.ModItems;
 import com.kaplandev.entity.EntitiyRegister;
 import com.kaplandev.items.tab.TabSetup;
 
+import com.kaplandev.levels.MobLevelRegistry;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerEntityCombatEvents;
@@ -56,31 +57,6 @@ public final class mobpvp implements ModInitializer {
 
     public static final String MOD_ID = "mobpvp";
 
-    static {
-        LEVEL_RANGES.put("zombie", new Integer[]{1, 5});
-        LEVEL_RANGES.put("skeleton", new Integer[]{1, 5});
-        LEVEL_RANGES.put("husk", new Integer[]{1, 5});
-        LEVEL_RANGES.put("ghast", new Integer[]{5, 10});
-        LEVEL_RANGES.put("zombie_villager", new Integer[]{2, 6});
-        LEVEL_RANGES.put("piglin", new Integer[]{5, 12});
-        LEVEL_RANGES.put("creeper", new Integer[]{4, 10});
-        LEVEL_RANGES.put("witch", new Integer[]{10, 20});
-        LEVEL_RANGES.put("magma_cube", new Integer[]{8, 16});
-        LEVEL_RANGES.put("piglin_brute", new Integer[]{10, 20});
-        LEVEL_RANGES.put("wither_skeleton", new Integer[]{40, 64});
-        LEVEL_RANGES.put("wither", new Integer[]{100, 800});
-        LEVEL_RANGES.put("warden", new Integer[]{500, 520});
-        LEVEL_RANGES.put("ender_dragon", new Integer[]{2000, 2001});
-        LEVEL_RANGES.put("enderman", new Integer[]{2, 11});
-        LEVEL_RANGES.put("spider", new Integer[]{3, 6});
-        LEVEL_RANGES.put("cave_spider", new Integer[]{4, 8});
-
-        LEVEL_RANGES.put("sheep", new Integer[]{2, 5});
-        LEVEL_RANGES.put("cow", new Integer[]{1, 5});
-        LEVEL_RANGES.put("pig", new Integer[]{1, 5});
-        LEVEL_RANGES.put("chicken", new Integer[]{1, 5});
-    }
-
     @Override
     public void onInitialize() {
         ModItems.init();
@@ -102,7 +78,7 @@ public final class mobpvp implements ModInitializer {
 
 
             String mobId = Registries.ENTITY_TYPE.getId(entity.getType()).getPath();
-            Integer[] range = LEVEL_RANGES.getOrDefault(mobId, new Integer[]{1, 40});
+            Integer[] range = MobLevelRegistry.getLevelRangeOrDefault(mobId, new Integer[]{1, 40});
             int level = range[0] + entity.getRandom().nextInt(range[1] - range[0] + 1);
 
             // Zombi özel varyantlar
@@ -631,6 +607,7 @@ public final class mobpvp implements ModInitializer {
             case "cow" -> "İnek";
             case "chicken" -> "Tavuk";
             case "pig" -> "Domuz";
+            case "custom_skeleton" -> "Deli İskelet";
             case "spider" -> "Örümcek";
             case "cave_spider" -> "Mağara Örümceği";
             default -> cap(en);

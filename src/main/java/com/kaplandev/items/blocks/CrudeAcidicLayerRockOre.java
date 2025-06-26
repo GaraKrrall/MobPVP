@@ -9,7 +9,7 @@ import net.minecraft.util.Identifier;
 
 public class CrudeAcidicLayerRockOre {
 
-    public static final Block ORE =new Block(AbstractBlock.Settings
+    public static final Block ORE = new Block(AbstractBlock.Settings
             .create()
             .strength(4.0f, 4.0f) // Dayanıklılık (taş ile aynı veya biraz daha fazla)
             .requiresTool() // El ile veya düşük kazmalarla kırılamasın

@@ -1,6 +1,3 @@
-/recipe give @a mobpvp:gunpowder
-/advancement grant Player605 everything
-/difficulty peaceful
 /difficulty easy
 /time set night
 /effect give Player880 minecraft:absorption infinite 255 true
@@ -48,3 +45,6 @@
 /summon mobpvp:custom_zombie
 /summon mobpvp:custom_skeleton
 /summon mobpvp:custom_zombie
+/kill @e[type=mobpvp:custom_zombie
+/kill @e[type=mobpvp:custom_zombie]
+/time set midnight

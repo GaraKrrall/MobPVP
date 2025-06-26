@@ -1,12 +1,8 @@
 package com.kaplandev.items;
 
 import com.kaplandev.items.blocks.CrudeAcidicLayerRockOre;
-import com.kaplandev.items.tab.TabMobPVP;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
+import com.kaplandev.items.eggs.SkeletonEggItem;
+import com.kaplandev.items.eggs.ZombieEggItem;
 
 public class ModItems {
 
@@ -14,7 +10,11 @@ public class ModItems {
 
         //items
         KalpItem.init();
-        a.register();
+        CrudeAcidicLayerRockOreItem.register();
+
+        //eggs
+        SkeletonEggItem.register();
+        ZombieEggItem.register();
 
 
         //blocks

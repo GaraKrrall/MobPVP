@@ -14,6 +14,8 @@ import net.minecraft.registry.*;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.world.Heightmap;
 
+import static com.kaplandev.entity.spawn.LuckySpawnLocation.LUCK;
+
 public class EntitiyRegister {
 
     public static final EntityType<CustomZombieEntity> CUSTOM_ZOMBIE = Registry.register(
@@ -45,14 +47,14 @@ public class EntitiyRegister {
     }
     private static void registerSpawns() {
         // Custom ZOMBIE her biyomda gece doğsun
-        BiomeModifications.addSpawn(
+     /*   BiomeModifications.addSpawn(
                 context -> context.hasTag(BiomeTags.IS_OVERWORLD), // Tüm overworld biyomları
                 SpawnGroup.MONSTER,
                 CUSTOM_ZOMBIE,
                 80, // spawn weight (daha yüksek = daha sık)
                 1,  // min group
                 3   // max group
-        );
+        );*/
 
         // Custom SKELETON her biyomda gece doğsun
         BiomeModifications.addSpawn(
@@ -65,16 +67,16 @@ public class EntitiyRegister {
         );
 
         // Ayrıca onların gece gerçekten spawn olabilmesi için şuna da ihtiyacımız var:
-        SpawnRestriction.register(
+    /*    SpawnRestriction.register(
                 CUSTOM_ZOMBIE,
                 com.kaplandev.entity.spawn.SpawnLocation.ON_GROUND,
                 Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
                 MobEntity::canMobSpawn
-        );
+        );*/
 
         SpawnRestriction.register(
                 CUSTOM_SKELETON,
-                com.kaplandev.entity.spawn.SpawnLocation.ON_GROUND,
+                LUCK,
                 Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
                 MobEntity::canMobSpawn
         );
