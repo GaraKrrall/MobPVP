@@ -1,5 +1,5 @@
-[16:49:08] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
-[16:49:09] [main/INFO] (FabricLoader) Loading 55 mods:
+[00:41:01] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
+[00:41:01] [main/INFO] (FabricLoader) Loading 55 mods:
 	- fabric-api 0.116.1+1.21.1
 	- fabric-api-base 0.4.42+6573ed8c19
 	- fabric-api-lookup-api-v1 1.6.71+b559734419
@@ -54,148 +54,89 @@
 	- java 21
 	- minecraft 1.21.1
 	- mixinextras 0.4.1
-	- mobpvp 2.9.7-256.06.2025-buff-egg
-[16:49:09] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/akgls/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/22f9eb729e216a091673a574a5906dc1b9027fb3/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[16:49:09] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[16:49:09] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[16:49:09] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[16:49:11] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[16:49:13] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 825 milliseconds
-[16:49:22] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[16:49:22] [Render thread/INFO] (Minecraft) Setting user: Player39
-[16:49:22] [Render thread/INFO] (Minecraft) [STDOUT]: Custom entities registered.
-[16:49:23] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[16:49:24] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
-[16:49:25] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, mobpvp
-[16:49:26] [Worker-Main-3/INFO] (Minecraft) Found unifont_all_no_pua-15.1.05.hex, loading
-[16:49:26] [Worker-Main-3/INFO] (Minecraft) Found unifont_jp_patch-15.1.05.hex, loading
-[16:49:27] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'mobpvp:item/ore' referenced from: mobpvp:item/ore: java.io.FileNotFoundException: mobpvp:models/item/ore.json
-[16:49:28] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
-[16:49:28] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[16:49:28] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on SES (VB-Audio Virtual Cable)
-[16:49:28] [Render thread/INFO] (Minecraft) Sound engine started
-[16:49:28] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[16:49:28] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[16:49:28] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[16:49:28] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[16:49:28] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[16:49:28] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[16:49:28] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[16:49:28] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[16:49:28] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[16:49:29] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[16:49:29] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[16:49:29] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[16:49:29] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[16:49:29] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[16:49:29] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[16:50:33] [Render thread/INFO] (Minecraft) Loaded 1298 recipes
-[16:50:33] [Render thread/INFO] (Minecraft) Loaded 1417 advancements
-[16:50:33] [Render thread/WARN] (Minecraft) Not all defined tags for registry ResourceKey[minecraft:root / minecraft:entity_type] are present in data pack: mobpvp:hostile_mobs
-[16:50:33] [Render thread/INFO] (BiomeModificationImpl) Applied 53 biome modifications to 53 of 64 new biomes in 13.14 ms
-[16:50:33] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.1
-[16:50:33] [Server thread/INFO] (Minecraft) Generating keypair
-[16:50:34] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[16:50:34] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %0
-[16:50:34] [Render thread/INFO] (Minecraft) Time elapsed: 449 ms
-[16:50:34] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
-[16:50:34] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
-[16:50:35] [Server thread/INFO] (Minecraft) Player39[local:E:2fef36ce] logged in with entity id 7 at (742.4567342801001, -41.33224777352872, 26.1147918896706)
-[16:50:36] [Server thread/INFO] (Minecraft) Player39 oyuna katıldı
-[16:50:36] [Server thread/INFO] (Minecraft) Player39, [Koruyucu Gibi Giyin] hedefine ulaştı
-[16:50:36] [Render thread/INFO] (Minecraft) [System] [CHAT] Player39, [Koruyucu Gibi Giyin] hedefine ulaştı
-[16:50:36] [Server thread/INFO] (Minecraft) Player39, [MobPVP] meydan okumasını tamamladı
-[16:50:36] [Render thread/INFO] (Minecraft) [System] [CHAT] Player39, [MobPVP] meydan okumasını tamamladı
-[16:50:36] [Render thread/INFO] (Minecraft) Loaded 20 advancements
-[16:50:37] [Server thread/INFO] (Minecraft) Player39, [Karanlığın Kalbine] meydan okumasını tamamladı
-[16:50:37] [Render thread/INFO] (Minecraft) [System] [CHAT] Player39, [Karanlığın Kalbine] meydan okumasını tamamladı
-[16:50:37] [Render thread/INFO] (Minecraft) Loaded 20 advancements
-[16:50:45] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2570ms or 51 ticks behind
-[16:50:46] [Server thread/INFO] (Minecraft) Named entity SkeletonEntity['§c[Seviye: 5] §fİskelet'/76, l='ServerLevel[Yeni Dünya]', x=766.66, y=-59.94, z=22.44] died: §c[Seviye: 5] §fİskelet, §c[Seviye: 29] §fIron_golem tarafından katledildi
-[16:50:48] [Server thread/INFO] (Minecraft) Named entity SpiderEntity['§c[Seviye: 5] §fÖrümcek'/223, l='ServerLevel[Yeni Dünya]', x=767.53, y=-59.69, z=16.25] died: §c[Seviye: 5] §fÖrümcek, §c[Seviye: 29] §fIron_golem tarafından katledildi
-[16:50:49] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 12] §4MİNİ BOSS'/214, l='ServerLevel[Yeni Dünya]', x=764.12, y=-60.00, z=16.68] died: §c[Seviye: 12] §4MİNİ BOSS, §c[Seviye: 29] §fIron_golem tarafından katledildi
-[16:50:53] [Server thread/INFO] (Minecraft) Named entity SkeletonEntity['§c[Seviye: 2] §fİskelet'/222, l='ServerLevel[Yeni Dünya]', x=766.85, y=-60.00, z=28.30] died: §c[Seviye: 2] §fİskelet, §c[Seviye: 29] §fIron_golem tarafından katledildi
-[16:50:54] [Server thread/INFO] (Minecraft) Named entity IronGolemEntity['§c[Seviye: 29] §fIron_golem'/37, l='ServerLevel[Yeni Dünya]', x=768.19, y=-60.00, z=29.83] died: §c[Seviye: 29] §fIron_golem, §c[Seviye: 100] §3Sessiz Zombi tarafından katledildi
-[16:53:30] [Server thread/INFO] (Minecraft) Player39, [İlk saldırı] gelişimini yaptı
-[16:53:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Player39, [İlk saldırı] gelişimini yaptı
-[16:53:30] [Render thread/INFO] (Minecraft) Loaded 20 advancements
-[16:53:44] [Server thread/INFO] (Minecraft) [Player39: Oyun modunuz Hayatta Kalma Modu olarak ayarlandı]
-[16:53:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Hayatta Kalma Modu olarak ayarlandı
-[16:53:49] [Server thread/INFO] (Minecraft) [Player39: Oyun modunuz Yaratıcı Mod olarak ayarlandı]
-[16:53:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Yaratıcı Mod olarak ayarlandı
-[16:54:35] [Server thread/INFO] (Minecraft) Player39, [Cila Giderme] gelişimini yaptı
-[16:54:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Player39, [Cila Giderme] gelişimini yaptı
-[16:54:35] [Render thread/INFO] (Minecraft) Loaded 24 advancements
-[16:54:35] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 32] §fDeli İskelet'/980, l='ServerLevel[Yeni Dünya]', x=570.29, y=-60.00, z=159.28] died: §c[Seviye: 32] §fDeli İskelet yanarak öldü
-[16:54:38] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 37] §fDeli İskelet'/862, l='ServerLevel[Yeni Dünya]', x=633.25, y=-60.00, z=124.77] died: §c[Seviye: 37] §fDeli İskelet yanarak öldü
-[16:54:42] [Server thread/INFO] (Minecraft) Named entity SkeletonEntity['§c[Seviye: 1] §fİskelet'/945, l='ServerLevel[Yeni Dünya]', x=618.24, y=-60.00, z=146.76] died: §c[Seviye: 1] §fİskelet yanarak öldü
-[16:54:48] [Render thread/INFO] (Minecraft) Loaded 25 advancements
-[16:54:49] [Server thread/INFO] (Minecraft) Named entity SkeletonEntity['§c[Seviye: 4] §fİskelet'/971, l='ServerLevel[Yeni Dünya]', x=566.70, y=-60.00, z=87.28] died: §c[Seviye: 4] §fİskelet yanarak öldü
-[16:54:54] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 33] §fDeli İskelet'/1038, l='ServerLevel[Yeni Dünya]', x=533.23, y=-60.00, z=121.23] died: §c[Seviye: 33] §fDeli İskelet yanarak öldü
-[16:54:58] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 37] §fDeli İskelet'/1021, l='ServerLevel[Yeni Dünya]', x=552.68, y=-60.00, z=190.34] died: §c[Seviye: 37] §fDeli İskelet yanarak öldü
-[16:55:02] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 12] §fDeli İskelet'/1088, l='ServerLevel[Yeni Dünya]', x=576.78, y=-60.00, z=186.78] died: §c[Seviye: 12] §fDeli İskelet yanarak öldü
-[16:55:05] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 34] §fDeli İskelet'/1155, l='ServerLevel[Yeni Dünya]', x=589.74, y=-60.00, z=297.26] died: §c[Seviye: 34] §fDeli İskelet yanarak öldü
-[16:55:06] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 12] §fDeli İskelet'/1159, l='ServerLevel[Yeni Dünya]', x=545.25, y=-60.00, z=295.23] died: §c[Seviye: 12] §fDeli İskelet yanarak öldü
-[16:55:14] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 12] §fDeli İskelet'/1103, l='ServerLevel[Yeni Dünya]', x=490.50, y=-60.00, z=217.50] died: §c[Seviye: 12] §fDeli İskelet yanarak öldü
-[16:55:17] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 27] §fDeli İskelet'/1089, l='ServerLevel[Yeni Dünya]', x=558.48, y=-60.00, z=185.61] died: §c[Seviye: 27] §fDeli İskelet yanarak öldü
-[16:55:21] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 29] §fDeli İskelet'/1102, l='ServerLevel[Yeni Dünya]', x=473.46, y=-60.00, z=211.45] died: §c[Seviye: 29] §fDeli İskelet yanarak öldü
-[16:55:24] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 16] §fDeli İskelet'/1160, l='ServerLevel[Yeni Dünya]', x=541.79, y=-60.00, z=264.50] died: §c[Seviye: 16] §fDeli İskelet yanarak öldü
-[16:56:04] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[16:56:04] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:overworld
-[16:56:04] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_nether
-[16:56:04] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_end
-[16:56:18] [Render thread/WARN] (Minecraft) Unable to play empty soundEvent: minecraft:entity.snow_golem.ambient
-[16:56:35] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 10] §fSnow_golem'/21377, l='ServerLevel[Yeni Dünya]', x=24.36, y=-46.56, z=343.11] died: §c[Seviye: 10] §fSnow_golem, §c[Seviye: 8] §fShulker tarafından katledildi
-[16:56:39] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 13] §fDeli İskelet'/20829, l='ServerLevel[Yeni Dünya]', x=29.71, y=-60.00, z=322.71] died: §c[Seviye: 13] §fDeli İskelet yanarak öldü
-[16:56:45] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[16:56:45] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:overworld
-[16:56:45] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_nether
-[16:56:45] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_end
-[18:52:02] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 13] §fSnow_golem'/21421, l='ServerLevel[Yeni Dünya]', x=16.49, y=-35.01, z=346.70] died: §c[Seviye: 13] §fSnow_golem, §c[Seviye: 1] §fShulker tarafından katledildi
-[18:52:06] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 25] §fSnow_golem'/21381, l='ServerLevel[Yeni Dünya]', x=19.72, y=-49.83, z=326.75] died: §c[Seviye: 25] §fSnow_golem, §c[Seviye: 16] §fShulker tarafından katledildi
-[18:52:07] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 13] §fSnow_golem'/21467, l='ServerLevel[Yeni Dünya]', x=27.21, y=-43.34, z=332.88] died: §c[Seviye: 13] §fSnow_golem, §c[Seviye: 35] §fShulker tarafından katledildi
-[18:52:21] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 8] §fSnow_golem'/21435, l='ServerLevel[Yeni Dünya]', x=0.44, y=-45.20, z=334.19] died: §c[Seviye: 8] §fSnow_golem, §c[Seviye: 37] §fShulker tarafından katledildi
-[18:52:22] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 30] §fSnow_golem'/21451, l='ServerLevel[Yeni Dünya]', x=15.78, y=-58.98, z=330.55] died: §c[Seviye: 30] §fSnow_golem, §c[Seviye: 20] §fShulker tarafından katledildi
-[18:52:23] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 7] §fSnow_golem'/23643, l='ServerLevel[Yeni Dünya]', x=22.04, y=-54.79, z=324.32] died: §c[Seviye: 7] §fSnow_golem, §c[Seviye: 8] §fShulker tarafından katledildi
-[18:52:29] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 39] §fSnow_golem'/21441, l='ServerLevel[Yeni Dünya]', x=15.47, y=-47.05, z=329.94] died: §c[Seviye: 39] §fSnow_golem, §c[Seviye: 20] §fShulker tarafından katledildi
-[18:52:33] [Server thread/INFO] (Minecraft) Named entity ShulkerEntity['§c[Seviye: 35] §fShulker'/21371, l='ServerLevel[Yeni Dünya]', x=7.50, y=-60.00, z=335.50] died: §c[Seviye: 35] §fShulker, §c[Seviye: 37] §fShulker tarafından katledildi
-[18:52:35] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 6] §fSnow_golem'/21438, l='ServerLevel[Yeni Dünya]', x=11.03, y=-51.64, z=323.05] died: §c[Seviye: 6] §fSnow_golem, §c[Seviye: 1] §fShulker tarafından katledildi
-[18:52:39] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 35] §fSnow_golem'/21425, l='ServerLevel[Yeni Dünya]', x=17.65, y=-60.00, z=328.38] died: §c[Seviye: 35] §fSnow_golem, §c[Seviye: 9] §fShulker tarafından katledildi
-[18:52:40] [Server thread/INFO] (Minecraft) Named entity ShulkerEntity['§c[Seviye: 32] §fShulker'/21338, l='ServerLevel[Yeni Dünya]', x=23.50, y=-60.00, z=312.50] died: §c[Seviye: 32] §fShulker, §c[Seviye: 33] §fShulker tarafından katledildi
-[18:52:41] [Server thread/INFO] (Minecraft) Named entity CustomZombieEntity['§c[Seviye: 20] §eAcemi Zombi'/22899, l='ServerLevel[Yeni Dünya]', x=0.84, y=-60.00, z=287.71] died: §c[Seviye: 20] §eAcemi Zombi yanarak öldü
-[18:52:42] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 38] §fSnow_golem'/21479, l='ServerLevel[Yeni Dünya]', x=11.17, y=-60.00, z=332.38] died: §c[Seviye: 38] §fSnow_golem, §c[Seviye: 15] §fShulker tarafından katledildi
-[18:52:43] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 14] §fDeli İskelet'/23166, l='ServerLevel[Yeni Dünya]', x=23.50, y=-60.00, z=288.66] died: §c[Seviye: 14] §fDeli İskelet yanarak öldü
-[18:52:44] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 22] §fDeli İskelet'/23105, l='ServerLevel[Yeni Dünya]', x=6.54, y=-60.00, z=284.60] died: §c[Seviye: 22] §fDeli İskelet yanarak öldü
-[18:52:45] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 14] §fDeli İskelet'/23131, l='ServerLevel[Yeni Dünya]', x=7.76, y=-60.00, z=286.76] died: §c[Seviye: 14] §fDeli İskelet yanarak öldü
-[18:52:47] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 21] §fDeli İskelet'/23200, l='ServerLevel[Yeni Dünya]', x=15.24, y=-60.00, z=310.74] died: §c[Seviye: 21] §fDeli İskelet yanarak öldü
-[18:52:48] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 32] §fSnow_golem'/21429, l='ServerLevel[Yeni Dünya]', x=11.30, y=-60.00, z=328.68] died: §c[Seviye: 32] §fSnow_golem, §c[Seviye: 1] §fShulker tarafından katledildi
-[18:52:49] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 23] §fDeli İskelet'/23210, l='ServerLevel[Yeni Dünya]', x=13.66, y=-60.00, z=299.66] died: §c[Seviye: 23] §fDeli İskelet yanarak öldü
-[18:52:50] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 33] §fSnow_golem'/23649, l='ServerLevel[Yeni Dünya]', x=27.63, y=-43.89, z=330.30] died: §c[Seviye: 33] §fSnow_golem, §c[Seviye: 12] §fShulker tarafından katledildi
-[18:52:50] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 32] §fDeli İskelet'/23152, l='ServerLevel[Yeni Dünya]', x=7.72, y=-60.00, z=295.28] died: §c[Seviye: 32] §fDeli İskelet yanarak öldü
-[18:52:51] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 24] §fDeli İskelet'/23234, l='ServerLevel[Yeni Dünya]', x=34.50, y=-60.00, z=289.57] died: §c[Seviye: 24] §fDeli İskelet yanarak öldü
-[18:52:51] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 4] §fSnow_golem'/23653, l='ServerLevel[Yeni Dünya]', x=24.83, y=-60.00, z=325.35] died: §c[Seviye: 4] §fSnow_golem, §c[Seviye: 28] §fPanda tarafından katledildi
-[18:52:54] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 17] §fSnow_golem'/23679, l='ServerLevel[Yeni Dünya]', x=34.26, y=-60.00, z=330.51] died: §c[Seviye: 17] §fSnow_golem, §c[Seviye: 1] §fPanda tarafından katledildi
-[18:52:56] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 14] §fSnow_golem'/21383, l='ServerLevel[Yeni Dünya]', x=10.33, y=-45.43, z=329.36] died: §c[Seviye: 14] §fSnow_golem, §c[Seviye: 37] §fShulker tarafından katledildi
-[18:52:57] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 35] §fDeli İskelet'/23142, l='ServerLevel[Yeni Dünya]', x=31.24, y=-60.00, z=295.25] died: §c[Seviye: 35] §fDeli İskelet yanarak öldü
-[18:52:58] [Server thread/INFO] (Minecraft) Named entity CustomZombieEntity['§c[Seviye: 10] §fÇaylak Zombi'/24797, l='ServerLevel[Yeni Dünya]', x=-50.48, y=-59.08, z=310.56] died: §c[Seviye: 10] §fÇaylak Zombi, §c[Seviye: 19] §fSnow_golem ile savaşırken cayır cayır yandı
-[18:52:58] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 5] §fSnow_golem'/23685, l='ServerLevel[Yeni Dünya]', x=40.76, y=-48.88, z=323.66] died: §c[Seviye: 5] §fSnow_golem, §c[Seviye: 9] §fShulker tarafından katledildi
-[18:52:58] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 35] §fDeli İskelet'/23184, l='ServerLevel[Yeni Dünya]', x=30.32, y=-60.00, z=281.50] died: §c[Seviye: 35] §fDeli İskelet yanarak öldü
-[18:52:59] [Server thread/INFO] (Minecraft) Named entity ShulkerEntity['§c[Seviye: 38] §fShulker'/21359, l='ServerLevel[Yeni Dünya]', x=27.50, y=-60.00, z=321.50] died: §c[Seviye: 38] §fShulker, §c[Seviye: 9] §fShulker tarafından katledildi
-[18:53:00] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 31] §fSnow_golem'/23765, l='ServerLevel[Yeni Dünya]', x=21.88, y=-53.59, z=322.17] died: §c[Seviye: 31] §fSnow_golem, §c[Seviye: 8] §fShulker tarafından katledildi
-[18:53:01] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 36] §fDeli İskelet'/23238, l='ServerLevel[Yeni Dünya]', x=46.03, y=-60.00, z=270.75] died: §c[Seviye: 36] §fDeli İskelet, §c[Seviye: 36] §fSnow_golem ile savaşırken cayır cayır yandı
-[18:53:05] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 33] §fSnow_golem'/23709, l='ServerLevel[Yeni Dünya]', x=33.59, y=-42.80, z=323.13] died: §c[Seviye: 33] §fSnow_golem, §c[Seviye: 29] §fShulker tarafından katledildi
-[18:53:09] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 34] §fSnow_golem'/23888, l='ServerLevel[Yeni Dünya]', x=47.44, y=-59.61, z=319.65] died: §c[Seviye: 34] §fSnow_golem, §c[Seviye: 33] §fShulker tarafından katledildi
-[18:53:10] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 1] §fSnow_golem'/23727, l='ServerLevel[Yeni Dünya]', x=28.15, y=-60.00, z=312.94] died: §c[Seviye: 1] §fSnow_golem, §c[Seviye: 29] §fShulker tarafından katledildi
-[18:53:10] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 20] §fDeli İskelet'/24862, l='ServerLevel[Yeni Dünya]', x=-12.07, y=-60.00, z=327.18] died: §c[Seviye: 20] §fDeli İskelet yanarak öldü
-[18:53:10] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 21] §fDeli İskelet'/25081, l='ServerLevel[Yeni Dünya]', x=-11.62, y=-60.00, z=336.50] died: §c[Seviye: 21] §fDeli İskelet yanarak öldü
-[18:53:12] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 4] §fSnow_golem'/23743, l='ServerLevel[Yeni Dünya]', x=16.93, y=-51.51, z=311.60] died: §c[Seviye: 4] §fSnow_golem, §c[Seviye: 20] §fShulker tarafından katledildi
-[18:53:13] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 7] §fSnow_golem'/23738, l='ServerLevel[Yeni Dünya]', x=34.79, y=-47.83, z=320.10] died: §c[Seviye: 7] §fSnow_golem, §c[Seviye: 11] §fShulker tarafından katledildi
-[18:53:14] [Render thread/INFO] (Minecraft) Loaded 27 advancements
-[18:53:15] [Render thread/INFO] (Minecraft) Loaded 30 advancements
-[18:53:16] [Server thread/INFO] (Minecraft) Named entity SnowGolemEntity['§c[Seviye: 12] §fSnow_golem'/21417, l='ServerLevel[Yeni Dünya]', x=12.94, y=-53.50, z=337.02] died: §c[Seviye: 12] §fSnow_golem, §c[Seviye: 37] §fShulker tarafından katledildi
-[18:53:16] [Server thread/INFO] (Minecraft) Named entity CustomSkeletonEntity['§c[Seviye: 34] §fDeli İskelet'/25180, l='ServerLevel[Yeni Dünya]', x=-25.33, y=-60.00, z=302.00] died: §c[Seviye: 34] §fDeli İskelet, §c[Seviye: 35] §fSnow_golem ile savaşırken cayır cayır yandı
-[18:53:17] [Render thread/INFO] (Minecraft) Loaded 32 advancements
-[18:53:19] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[18:53:19] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:overworld
-[18:53:19] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_nether
-[18:53:19] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_end
+	- mobpvp 2.9.8-26.06.2025-egg
+[00:41:01] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/akgls/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/22f9eb729e216a091673a574a5906dc1b9027fb3/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[00:41:01] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[00:41:02] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[00:41:02] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[00:41:03] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[00:41:05] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 1035 milliseconds
+[00:41:14] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[00:41:14] [Render thread/INFO] (Minecraft) Setting user: Player8
+[00:41:14] [Render thread/INFO] (Minecraft) [STDOUT]: Custom entities registered.
+[00:41:15] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[00:41:15] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
+[00:41:17] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, mobpvp
+[00:41:18] [Worker-Main-1/INFO] (Minecraft) Found unifont_all_no_pua-15.1.05.hex, loading
+[00:41:18] [Worker-Main-1/INFO] (Minecraft) Found unifont_jp_patch-15.1.05.hex, loading
+[00:41:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'mobpvp:item/key' referenced from: mobpvp:item/key: java.io.FileNotFoundException: mobpvp:models/item/key.json
+[00:41:20] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[00:41:20] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[00:41:20] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on SES (VB-Audio Virtual Cable)
+[00:41:20] [Render thread/INFO] (Minecraft) Sound engine started
+[00:41:20] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[00:41:21] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[00:41:21] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[00:41:21] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[00:41:21] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[00:41:21] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[00:41:21] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[00:41:21] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[00:41:21] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[00:41:21] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[00:41:21] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[00:41:21] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[00:41:21] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[00:41:21] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[00:41:21] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[00:41:26] [Render thread/INFO] (Minecraft) Loaded 1298 recipes
+[00:41:27] [Render thread/INFO] (Minecraft) Loaded 1417 advancements
+[00:41:27] [Render thread/WARN] (Minecraft) Not all defined tags for registry ResourceKey[minecraft:root / minecraft:entity_type] are present in data pack: mobpvp:hostile_mobs
+[00:41:27] [Render thread/INFO] (BiomeModificationImpl) Applied 53 biome modifications to 53 of 64 new biomes in 16.98 ms
+[00:41:27] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.1
+[00:41:27] [Server thread/INFO] (Minecraft) Generating keypair
+[00:41:28] [Server thread/INFO] (Minecraft) [STDOUT]: Yapı oluşturuluyor: 0, -64, 0
+[00:41:28] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[00:41:28] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %4
+[00:41:28] [Render thread/INFO] (Minecraft) Time elapsed: 247 ms
+[00:41:28] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
+[00:41:28] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
+[00:41:30] [Server thread/INFO] (Minecraft) Player8[local:E:d47f3876] logged in with entity id 27 at (0.8897993375982599, -57.506285956223024, 2.2762451192210094)
+[00:41:30] [Server thread/INFO] (Minecraft) Player8 oyuna katıldı
+[00:41:30] [Server thread/INFO] (Minecraft) Player8, [Koruyucu Gibi Giyin] hedefine ulaştı
+[00:41:30] [Server thread/INFO] (Minecraft) Player8, [MobPVP] meydan okumasını tamamladı
+[00:41:30] [Server thread/INFO] (Minecraft) Player8, [Karanlığın Kalbine] meydan okumasını tamamladı
+[00:41:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Player8, [Koruyucu Gibi Giyin] hedefine ulaştı
+[00:41:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Player8, [MobPVP] meydan okumasını tamamladı
+[00:41:35] [Render thread/INFO] (Minecraft) Loaded 31 advancements
+[00:41:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Player8, [Karanlığın Kalbine] meydan okumasını tamamladı
+[00:41:35] [Render thread/INFO] (Minecraft) Loaded 31 advancements
+[00:42:05] [Server thread/INFO] (Minecraft) Named entity HorseEntity['§c[Seviye: 34] §fHorse'/1, l='ServerLevel[Yeni Dünya]', x=14.82, y=-60.00, z=-3.82] died: §c[Seviye: 34] §fHorse, Player8 tarafından katledildi
+[00:42:05] [Render thread/INFO] (Minecraft) [System] [CHAT] Player8 → §c[Seviye: 34] §fHorse öldürdü!
+[00:42:05] [Server thread/INFO] (Minecraft) Player8, [İlk saldırı] gelişimini yaptı
+[00:42:05] [Render thread/INFO] (Minecraft) [System] [CHAT] Player8, [İlk saldırı] gelişimini yaptı
+[00:42:05] [Render thread/INFO] (Minecraft) Loaded 67 advancements
+[00:42:06] [Render thread/INFO] (Minecraft) Loaded 75 advancements
+[00:42:10] [Server thread/INFO] (Minecraft) Player8, [Canavar Avcısı] gelişimini yaptı
+[00:42:10] [Server thread/INFO] (Minecraft) Named entity SlimeEntity['§c[Seviye: 30] §fSlime'/4, l='ServerLevel[Yeni Dünya]', x=40.37, y=-60.00, z=-7.20] died: §c[Seviye: 30] §fSlime, Player8 tarafından katledildi
+[00:42:10] [Render thread/INFO] (Minecraft) [System] [CHAT] Player8, [Canavar Avcısı] gelişimini yaptı
+[00:42:10] [Render thread/INFO] (Minecraft) [System] [CHAT] Player8 → §c[Seviye: 30] §fSlime öldürdü!
+[00:42:10] [Render thread/INFO] (Minecraft) Loaded 78 advancements
+[00:42:12] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[00:42:12] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:overworld
+[00:42:12] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_end
+[00:42:12] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_nether
+[00:42:14] [Server thread/INFO] (Minecraft) Player8 lost connection: Bağlantı kesildi
+[00:42:14] [Server thread/INFO] (Minecraft) Player8 oyundan ayrıldı
+[00:42:14] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[00:42:14] [Server thread/INFO] (Minecraft) Stopping server
+[00:42:14] [Server thread/INFO] (Minecraft) Saving players
+[00:42:14] [Server thread/INFO] (Minecraft) Saving worlds
+[00:42:14] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:overworld
+[00:42:15] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_end
+[00:42:15] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_nether
+[00:42:15] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (Yeni Dünya): All chunks are saved
+[00:42:15] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[00:42:15] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[00:42:15] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[00:42:15] [Render thread/INFO] (Minecraft) Stopping!

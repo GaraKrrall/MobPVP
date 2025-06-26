@@ -11,6 +11,7 @@ public class ModItems {
         //items
         KalpItem.init();
         CrudeAcidicLayerRockOreItem.register();
+        KeyItem.init();
 
         //eggs
         SkeletonEggItem.register();

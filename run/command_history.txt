@@ -1,10 +1,3 @@
-/difficulty easy
-/time set night
-/effect give Player880 minecraft:absorption infinite 255 true
-/effect give Player880 minecraft:saturation infinite 255
-/effect clear Player880 minecraft:saturation
-/effect give Player880 minecraft:regeneration infinite 255
-/time set day
 /give @a mobpvp:my_item
 /give Player321 mobpvp:kalp
 /time set night
@@ -48,3 +41,10 @@
 /kill @e[type=mobpvp:custom_zombie
 /kill @e[type=mobpvp:custom_zombie]
 /time set midnight
+/weather clear
+/difficulty peaceful
+/give Player931 minecraft:structure_block
+/tp 0 ~ 0
+/tp 2 6 2
+/tp 0 320 0
+/tp 0 -64 0
