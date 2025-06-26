@@ -9,10 +9,8 @@
 ### 🧟 **Level System for All Mobs**  
 - Every mob is given a random level on spawn based on its type.  
 - Higher-level mobs are stronger and more dangerous.  
-
 ### 📚**Item drop chances**
 ![Item drop chances](https://cdn.modrinth.com/data/cached_images/470f62092ead22d349e122fe179590b96cb6ce8d_0.webp)
-
 ### 💀 **Unique Skeleton Variant**  
 - Introduces a special skeleton type with enhanced stats and equipment.  
 
