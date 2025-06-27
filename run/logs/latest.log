@@ -1,5 +1,5 @@
-[00:41:01] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
-[00:41:01] [main/INFO] (FabricLoader) Loading 55 mods:
+[13:34:16] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
+[13:34:17] [main/INFO] (FabricLoader) Loading 55 mods:
 	- fabric-api 0.116.1+1.21.1
 	- fabric-api-base 0.4.42+6573ed8c19
 	- fabric-api-lookup-api-v1 1.6.71+b559734419
@@ -55,88 +55,142 @@
 	- minecraft 1.21.1
 	- mixinextras 0.4.1
 	- mobpvp 2.9.8-26.06.2025-egg
-[00:41:01] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/akgls/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/22f9eb729e216a091673a574a5906dc1b9027fb3/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[00:41:01] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[00:41:02] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[00:41:02] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[00:41:03] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[00:41:05] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 1035 milliseconds
-[00:41:14] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[00:41:14] [Render thread/INFO] (Minecraft) Setting user: Player8
-[00:41:14] [Render thread/INFO] (Minecraft) [STDOUT]: Custom entities registered.
-[00:41:15] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[00:41:15] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
-[00:41:17] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, mobpvp
-[00:41:18] [Worker-Main-1/INFO] (Minecraft) Found unifont_all_no_pua-15.1.05.hex, loading
-[00:41:18] [Worker-Main-1/INFO] (Minecraft) Found unifont_jp_patch-15.1.05.hex, loading
-[00:41:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'mobpvp:item/key' referenced from: mobpvp:item/key: java.io.FileNotFoundException: mobpvp:models/item/key.json
-[00:41:20] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
-[00:41:20] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[00:41:20] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on SES (VB-Audio Virtual Cable)
-[00:41:20] [Render thread/INFO] (Minecraft) Sound engine started
-[00:41:20] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[00:41:21] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[00:41:21] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[00:41:21] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[00:41:21] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[00:41:21] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[00:41:21] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[00:41:21] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[00:41:21] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[00:41:21] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[00:41:21] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[00:41:21] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[00:41:21] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[00:41:21] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[00:41:21] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[00:41:26] [Render thread/INFO] (Minecraft) Loaded 1298 recipes
-[00:41:27] [Render thread/INFO] (Minecraft) Loaded 1417 advancements
-[00:41:27] [Render thread/WARN] (Minecraft) Not all defined tags for registry ResourceKey[minecraft:root / minecraft:entity_type] are present in data pack: mobpvp:hostile_mobs
-[00:41:27] [Render thread/INFO] (BiomeModificationImpl) Applied 53 biome modifications to 53 of 64 new biomes in 16.98 ms
-[00:41:27] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.1
-[00:41:27] [Server thread/INFO] (Minecraft) Generating keypair
-[00:41:28] [Server thread/INFO] (Minecraft) [STDOUT]: Yapı oluşturuluyor: 0, -64, 0
-[00:41:28] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[00:41:28] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %4
-[00:41:28] [Render thread/INFO] (Minecraft) Time elapsed: 247 ms
-[00:41:28] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
-[00:41:28] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
-[00:41:30] [Server thread/INFO] (Minecraft) Player8[local:E:d47f3876] logged in with entity id 27 at (0.8897993375982599, -57.506285956223024, 2.2762451192210094)
-[00:41:30] [Server thread/INFO] (Minecraft) Player8 oyuna katıldı
-[00:41:30] [Server thread/INFO] (Minecraft) Player8, [Koruyucu Gibi Giyin] hedefine ulaştı
-[00:41:30] [Server thread/INFO] (Minecraft) Player8, [MobPVP] meydan okumasını tamamladı
-[00:41:30] [Server thread/INFO] (Minecraft) Player8, [Karanlığın Kalbine] meydan okumasını tamamladı
-[00:41:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Player8, [Koruyucu Gibi Giyin] hedefine ulaştı
-[00:41:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Player8, [MobPVP] meydan okumasını tamamladı
-[00:41:35] [Render thread/INFO] (Minecraft) Loaded 31 advancements
-[00:41:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Player8, [Karanlığın Kalbine] meydan okumasını tamamladı
-[00:41:35] [Render thread/INFO] (Minecraft) Loaded 31 advancements
-[00:42:05] [Server thread/INFO] (Minecraft) Named entity HorseEntity['§c[Seviye: 34] §fHorse'/1, l='ServerLevel[Yeni Dünya]', x=14.82, y=-60.00, z=-3.82] died: §c[Seviye: 34] §fHorse, Player8 tarafından katledildi
-[00:42:05] [Render thread/INFO] (Minecraft) [System] [CHAT] Player8 → §c[Seviye: 34] §fHorse öldürdü!
-[00:42:05] [Server thread/INFO] (Minecraft) Player8, [İlk saldırı] gelişimini yaptı
-[00:42:05] [Render thread/INFO] (Minecraft) [System] [CHAT] Player8, [İlk saldırı] gelişimini yaptı
-[00:42:05] [Render thread/INFO] (Minecraft) Loaded 67 advancements
-[00:42:06] [Render thread/INFO] (Minecraft) Loaded 75 advancements
-[00:42:10] [Server thread/INFO] (Minecraft) Player8, [Canavar Avcısı] gelişimini yaptı
-[00:42:10] [Server thread/INFO] (Minecraft) Named entity SlimeEntity['§c[Seviye: 30] §fSlime'/4, l='ServerLevel[Yeni Dünya]', x=40.37, y=-60.00, z=-7.20] died: §c[Seviye: 30] §fSlime, Player8 tarafından katledildi
-[00:42:10] [Render thread/INFO] (Minecraft) [System] [CHAT] Player8, [Canavar Avcısı] gelişimini yaptı
-[00:42:10] [Render thread/INFO] (Minecraft) [System] [CHAT] Player8 → §c[Seviye: 30] §fSlime öldürdü!
-[00:42:10] [Render thread/INFO] (Minecraft) Loaded 78 advancements
-[00:42:12] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[00:42:12] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:overworld
-[00:42:12] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_end
-[00:42:12] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_nether
-[00:42:14] [Server thread/INFO] (Minecraft) Player8 lost connection: Bağlantı kesildi
-[00:42:14] [Server thread/INFO] (Minecraft) Player8 oyundan ayrıldı
-[00:42:14] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[00:42:14] [Server thread/INFO] (Minecraft) Stopping server
-[00:42:14] [Server thread/INFO] (Minecraft) Saving players
-[00:42:14] [Server thread/INFO] (Minecraft) Saving worlds
-[00:42:14] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:overworld
-[00:42:15] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_end
-[00:42:15] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_nether
-[00:42:15] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (Yeni Dünya): All chunks are saved
-[00:42:15] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[00:42:15] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[00:42:15] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
-[00:42:15] [Render thread/INFO] (Minecraft) Stopping!
+[13:34:18] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/akgls/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/22f9eb729e216a091673a574a5906dc1b9027fb3/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[13:34:18] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[13:34:18] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[13:34:18] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[13:34:20] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[13:34:22] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 934 milliseconds
+[13:34:30] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[13:34:30] [Render thread/INFO] (Minecraft) Setting user: Player370
+[13:34:30] [Render thread/INFO] (Minecraft) [STDOUT]: Custom entities registered.
+[13:34:31] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[13:34:31] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
+[13:34:33] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, mobpvp
+[13:34:33] [Worker-Main-1/INFO] (Minecraft) Found unifont_all_no_pua-15.1.05.hex, loading
+[13:34:34] [Worker-Main-1/INFO] (Minecraft) Found unifont_jp_patch-15.1.05.hex, loading
+[13:34:35] [Worker-Main-3/WARN] (Minecraft) Unable to load model: 'mobpvp:item/key' referenced from: mobpvp:item/key: java.io.FileNotFoundException: mobpvp:models/item/key.json
+[13:34:36] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[13:34:36] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[13:34:36] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on SES (VB-Audio Virtual Cable)
+[13:34:36] [Render thread/INFO] (Minecraft) Sound engine started
+[13:34:36] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[13:34:36] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[13:34:36] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[13:34:36] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[13:34:36] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[13:34:36] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[13:34:36] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[13:34:36] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[13:34:36] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[13:34:37] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[13:34:37] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[13:34:37] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[13:34:37] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[13:34:37] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[13:34:37] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[13:35:22] [Render thread/INFO] (Minecraft) Loaded 1298 recipes
+[13:35:22] [Render thread/INFO] (Minecraft) Loaded 1417 advancements
+[13:35:22] [Render thread/WARN] (Minecraft) Not all defined tags for registry ResourceKey[minecraft:root / minecraft:entity_type] are present in data pack: mobpvp:hostile_mobs
+[13:35:22] [Render thread/INFO] (BiomeModificationImpl) Applied 93 biome modifications to 53 of 64 new biomes in 17.83 ms
+[13:35:22] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.1
+[13:35:22] [Server thread/INFO] (Minecraft) Generating keypair
+[13:35:25] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[13:35:26] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %0
+[13:35:26] [Render thread/INFO] (Minecraft) Time elapsed: 584 ms
+[13:35:26] [Server thread/INFO] (Minecraft) Changing view distance to 32, from 10
+[13:35:26] [Server thread/INFO] (Minecraft) Changing simulation distance to 11, from 0
+[13:35:27] [Server thread/INFO] (Minecraft) Player370[local:E:a714c765] logged in with entity id 31 at (-76.66223269822565, 75.38166488434207, 488.6519658111079)
+[13:35:27] [Server thread/INFO] (Minecraft) Player370 oyuna katıldı
+[13:35:27] [Server thread/INFO] (Minecraft) Player370, [MobPVP] meydan okumasını tamamladı
+[13:35:28] [Server thread/INFO] (Minecraft) Player370, [Karanlığın Kalbine] meydan okumasını tamamladı
+[13:35:55] [Render thread/INFO] (Minecraft) [System] [CHAT] Player370, [MobPVP] meydan okumasını tamamladı
+[13:35:55] [Render thread/INFO] (Minecraft) Loaded 18 advancements
+[13:35:55] [Render thread/INFO] (Minecraft) [System] [CHAT] Player370, [Karanlığın Kalbine] meydan okumasını tamamladı
+[13:35:55] [Render thread/INFO] (Minecraft) Loaded 18 advancements
+[13:36:00] [Server thread/INFO] (Minecraft) Named entity DrownedEntity['§c[Seviye: 90] §fBuzlu Zombi'/143, l='ServerLevel[Yeni Dünya]', x=27.50, y=48.05, z=418.50] died: §c[Seviye: 90] §fBuzlu Zombi duvarların arasına sıkıştı
+[13:36:22] [Render thread/INFO] (Minecraft) [System] [CHAT] Henüz hiçbir arena oluşmadı.
+[13:36:35] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[13:36:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:overworld
+[13:36:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_end
+[13:36:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_nether
+[13:36:36] [Server thread/INFO] (Minecraft) Player370 lost connection: Bağlantı kesildi
+[13:36:36] [Server thread/INFO] (Minecraft) Player370 oyundan ayrıldı
+[13:36:36] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[13:36:36] [Server thread/INFO] (Minecraft) Stopping server
+[13:36:36] [Server thread/INFO] (Minecraft) Saving players
+[13:36:36] [Server thread/INFO] (Minecraft) Saving worlds
+[13:36:37] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:overworld
+[13:36:40] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_end
+[13:36:40] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_nether
+[13:36:40] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (Yeni Dünya (1)): All chunks are saved
+[13:36:40] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[13:36:40] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[13:36:40] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[13:36:43] [Render thread/INFO] (Minecraft) Deleting level Yeni Dünya (1)
+[13:36:43] [Render thread/INFO] (Minecraft) Attempt 1...
+[13:36:44] [Render thread/INFO] (Minecraft) Loaded 1298 recipes
+[13:36:44] [Render thread/INFO] (Minecraft) Loaded 1417 advancements
+[13:36:44] [Render thread/WARN] (Minecraft) Not all defined tags for registry ResourceKey[minecraft:root / minecraft:entity_type] are present in data pack: mobpvp:hostile_mobs
+[13:36:48] [Render thread/INFO] (BiomeModificationImpl) Applied 93 biome modifications to 53 of 64 new biomes in 3.788 ms
+[13:36:48] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.1
+[13:36:48] [Server thread/INFO] (Minecraft) Generating keypair
+[13:36:52] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[13:36:52] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %2
+[13:36:53] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %2
+[13:36:53] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %18
+[13:36:54] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %18
+[13:36:54] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %51
+[13:36:55] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %51
+[13:36:55] [Server thread/INFO] (Minecraft) Changing view distance to 32, from 10
+[13:36:55] [Server thread/INFO] (Minecraft) Changing simulation distance to 11, from 0
+[13:36:55] [Render thread/INFO] (Minecraft) Time elapsed: 2641 ms
+[13:36:55] [Server thread/INFO] (Minecraft) Player370[local:E:b1487020] logged in with entity id 2203 at (249.5, 65.0, 337.5)
+[13:36:55] [Server thread/INFO] (Minecraft) Player370 oyuna katıldı
+[13:36:55] [Server thread/INFO] (Minecraft) Player370, [MobPVP] meydan okumasını tamamladı
+[13:36:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Player370, [MobPVP] meydan okumasını tamamladı
+[13:36:56] [Render thread/INFO] (Minecraft) Loaded 18 advancements
+[13:36:56] [Server thread/INFO] (Minecraft) Player370, [Karanlığın Kalbine] meydan okumasını tamamladı
+[13:36:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Player370, [Karanlığın Kalbine] meydan okumasını tamamladı
+[13:36:56] [Render thread/INFO] (Minecraft) Loaded 18 advancements
+[13:37:19] [Server thread/WARN] (Minecraft) Tried to load a DUMMY block entity @ BlockPos{x=402, y=36, z=367} but found not block entity block Block{minecraft:air} at location
+[13:37:19] [Server thread/WARN] (Minecraft) Tried to load a block entity for block Block{minecraft:air} but failed at location BlockPos{x=402, y=36, z=367}
+[13:37:19] [Server thread/WARN] (Minecraft) Tried to load a DUMMY block entity @ BlockPos{x=404, y=36, z=365} but found not block entity block Block{minecraft:air} at location
+[13:37:19] [Server thread/WARN] (Minecraft) Tried to load a block entity for block Block{minecraft:air} but failed at location BlockPos{x=404, y=36, z=365}
+[13:37:19] [Server thread/WARN] (Minecraft) Tried to load a DUMMY block entity @ BlockPos{x=404, y=36, z=366} but found not block entity block Block{minecraft:air} at location
+[13:37:19] [Server thread/WARN] (Minecraft) Tried to load a block entity for block Block{minecraft:air} but failed at location BlockPos{x=404, y=36, z=366}
+[13:37:19] [Server thread/WARN] (Minecraft) Tried to load a DUMMY block entity @ BlockPos{x=400, y=36, z=364} but found not block entity block Block{minecraft:air} at location
+[13:37:19] [Server thread/WARN] (Minecraft) Tried to load a block entity for block Block{minecraft:air} but failed at location BlockPos{x=400, y=36, z=364}
+[13:37:19] [Server thread/WARN] (Minecraft) Tried to load a DUMMY block entity @ BlockPos{x=402, y=36, z=365} but found not block entity block Block{minecraft:air} at location
+[13:37:19] [Server thread/WARN] (Minecraft) Tried to load a block entity for block Block{minecraft:air} but failed at location BlockPos{x=402, y=36, z=365}
+[13:37:19] [Server thread/WARN] (Minecraft) Tried to load a DUMMY block entity @ BlockPos{x=401, y=36, z=366} but found not block entity block Block{minecraft:air} at location
+[13:37:19] [Server thread/WARN] (Minecraft) Tried to load a block entity for block Block{minecraft:air} but failed at location BlockPos{x=401, y=36, z=366}
+[13:37:19] [Server thread/WARN] (Minecraft) Tried to load a DUMMY block entity @ BlockPos{x=403, y=36, z=363} but found not block entity block Block{minecraft:air} at location
+[13:37:19] [Server thread/WARN] (Minecraft) Tried to load a block entity for block Block{minecraft:air} but failed at location BlockPos{x=403, y=36, z=363}
+[13:37:40] [Server thread/INFO] (Minecraft) Named entity DrownedEntity['§c[Seviye: 12] §4MİNİ BOSS'/2944, l='ServerLevel[Yeni Dünya]', x=405.50, y=37.00, z=366.50] died: §c[Seviye: 12] §4MİNİ BOSS duvarların arasına sıkıştı
+[13:37:40] [Server thread/INFO] (Minecraft) Named entity GlowSquidEntity['§c[Seviye: 18] §fGlow_squid'/2414, l='ServerLevel[Yeni Dünya]', x=265.43, y=-23.00, z=300.90] died: §c[Seviye: 18] §fGlow_squid boğuldu
+[13:37:42] [Server thread/INFO] (Minecraft) Named entity GlowSquidEntity['§c[Seviye: 33] §fGlow_squid'/2413, l='ServerLevel[Yeni Dünya]', x=265.41, y=-22.00, z=299.40] died: §c[Seviye: 33] §fGlow_squid boğuldu
+[13:37:43] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[13:37:43] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:overworld
+[13:37:43] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_end
+[13:37:43] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:the_nether
+[13:38:16] [Render thread/INFO] (Minecraft) [System] [CHAT] Henüz hiçbir arena oluşmadı.
+[13:39:22] [Worker-Main-2/INFO] (Minecraft) [STDOUT]: Arena üretildi: BlockPos{x=-124, y=65, z=1179}
+[13:39:23] [Worker-Main-3/INFO] (Minecraft) [STDOUT]: Arena üretildi: BlockPos{x=68, y=65, z=1198}
+[13:39:28] [Worker-Main-2/INFO] (Minecraft) [STDOUT]: Arena üretildi: BlockPos{x=-148, y=74, z=1227}
+[13:39:31] [Worker-Main-2/INFO] (Minecraft) [STDOUT]: Arena üretildi: BlockPos{x=-199, y=65, z=1020}
+[13:39:44] [Worker-Main-1/INFO] (Minecraft) [STDOUT]: Arena üretildi: BlockPos{x=248, y=63, z=1386}
+[13:39:47] [Worker-Main-1/INFO] (Minecraft) [STDOUT]: Arena üretildi: BlockPos{x=285, y=63, z=1213}
+[13:39:58] [Worker-Main-2/INFO] (Minecraft) [STDOUT]: Arena üretildi: BlockPos{x=368, y=69, z=1421}
+[13:40:00] [Worker-Main-3/INFO] (Minecraft) [STDOUT]: Arena üretildi: BlockPos{x=429, y=67, z=1363}
+[13:40:07] [Worker-Main-1/INFO] (Minecraft) [STDOUT]: Arena üretildi: BlockPos{x=325, y=70, z=1472}
+[13:40:26] [Server thread/INFO] (Minecraft) Named entity RabbitEntity['§c[Seviye: 34] §fRabbit'/10501, l='ServerLevel[Yeni Dünya]', x=154.55, y=54.00, z=1257.52] died: §c[Seviye: 34] §fRabbit düşürüldü
+[13:40:34] [Server thread/INFO] (Minecraft) Named entity GlowSquidEntity['§c[Seviye: 20] §fGlow_squid'/11496, l='ServerLevel[Yeni Dünya]', x=176.55, y=18.00, z=1246.60] died: §c[Seviye: 20] §fGlow_squid boğuldu
+[13:41:03] [Render thread/INFO] (Minecraft) Stopping!
+[13:41:03] [Server thread/INFO] (Minecraft) Player370 lost connection: Bağlantı kesildi
+[13:41:03] [Server thread/INFO] (Minecraft) Player370 oyundan ayrıldı
+[13:41:03] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[13:41:03] [Server thread/INFO] (Minecraft) Stopping server
+[13:41:03] [Server thread/INFO] (Minecraft) Saving players
+[13:41:03] [Server thread/INFO] (Minecraft) Saving worlds
+[13:41:08] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Yeni Dünya]'/minecraft:overworld

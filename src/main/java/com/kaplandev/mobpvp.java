@@ -2,31 +2,30 @@ package com.kaplandev;
 
 
 
+import com.kaplandev.build.ArenaFeature;
 import com.kaplandev.build.StructureBuilder;
 import com.kaplandev.commands.ModCommands;
+import com.kaplandev.gen.ModWorldGen;
 import com.kaplandev.items.KalpItem;
 import com.kaplandev.items.ModItems;
 import com.kaplandev.entity.EntitiyRegister;
 import com.kaplandev.items.tab.TabSetup;
-
 import com.kaplandev.levels.MobLevelRegistry;
+
+
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerEntityCombatEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerWorldEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableSource;
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.Enchantments;
 import net.minecraft.registry.*;
 import net.minecraft.entity.*;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.*;
-import net.minecraft.entity.passive.*;
 import net.minecraft.item.*;
 import net.minecraft.loot.*;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
@@ -35,23 +34,17 @@ import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.TypedActionResult;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.random.Random;
-import net.minecraft.world.Heightmap;
 import net.minecraft.world.World;
-import net.minecraft.world.explosion.Explosion;
-import net.fabricmc.fabric.api.event.player.UseItemCallback;
 import net.minecraft.item.Items;
-import net.minecraft.util.ActionResult;
+
 
 
 import java.util.*;
+
 
 
 
@@ -61,8 +54,10 @@ public final class mobpvp implements ModInitializer {
 
     public static final String MOD_ID = "mobpvp";
 
+
     @Override
     public void onInitialize() {
+        ModWorldGen.register();
         ModItems.init();
         EntitiyRegister.register();
         TabSetup.RegisterTabs();
@@ -70,24 +65,9 @@ public final class mobpvp implements ModInitializer {
             ModCommands.register(dispatcher);
         });
 
-        ServerWorldEvents.LOAD.register((server, world) -> {
-            // Sadece overworld'de çalışsın
-            if (world.getRegistryKey() == World.OVERWORLD) {
 
-                // X=0, Z=0 konumundaki yüzey yüksekliğini al
-                int structureHeight = 4; // yapı yüksekliği
-                int topY = world.getTopY(Heightmap.Type.WORLD_SURFACE, 0, 0);
-                int baseY = Math.min(topY, 100 - structureHeight); // böylece en fazla Y=100’e kadar çıkar
-                BlockPos origin = new BlockPos(0, baseY, 0);
 
-                // Oyunculara bilgi ver (debug)
 
-                System.out.println("Yapı oluşturuluyor: " + origin.toShortString());
-
-                // Yapıyı inşa et
-                StructureBuilder.buildStarterHouse(world, origin);
-            }
-        });
 
         ServerEntityEvents.ENTITY_LOAD.register((entity, world) -> {
             if (!(entity instanceof LivingEntity living) || entity instanceof ServerPlayerEntity) return;
