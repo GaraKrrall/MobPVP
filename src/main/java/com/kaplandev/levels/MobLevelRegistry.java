@@ -31,6 +31,9 @@ public class MobLevelRegistry {
         LEVEL_RANGES.put("chicken", new Integer[]{1, 5});
         // Özel moblar
         LEVEL_RANGES.put("custom_skeleton", new Integer[]{10, 40});
+
+        //boss
+      //  LEVEL_RANGES.put("bulwark", new Integer[]{100, 112}); //TODO: Başka bir yönteme aldık bunu
     }
 
     public static Integer[] getLevelRange(String mobId) {

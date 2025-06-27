@@ -5,6 +5,7 @@ package com.kaplandev;
 import com.kaplandev.build.ArenaFeature;
 import com.kaplandev.build.StructureBuilder;
 import com.kaplandev.commands.ModCommands;
+import com.kaplandev.entity.boss.BulwarkEntity;
 import com.kaplandev.gen.ModWorldGen;
 import com.kaplandev.items.KalpItem;
 import com.kaplandev.items.ModItems;
@@ -330,7 +331,7 @@ public final class mobpvp implements ModInitializer {
             if (entity instanceof ZombieEntity zombie && zombie.getRandom().nextFloat() < 0.01f) {
                 zombie.setCustomName(Text.literal("§4GİANT BOSS"));
                 zombie.setCustomNameVisible(true);
-                
+
 
                 level = 1000;
 
@@ -374,6 +375,30 @@ public final class mobpvp implements ModInitializer {
 
 
                 return;
+            }
+
+            //boss
+            if (entity instanceof BulwarkEntity bulwark && bulwark.getRandom().nextFloat() < 0.06f) {
+                bulwark.setCustomName(Text.literal("§4BULWARK"));
+                bulwark.setCustomNameVisible(true);
+
+                level = 112;
+                living.setCustomName(Text.literal("§c[Lv." + level + "] §4BULWARK"));
+
+                if (living.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH) != null) {
+                    double base = living.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).getBaseValue();
+                    double extra = level * 1.2;
+                    double total = base + extra;
+                    living.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).setBaseValue(total);
+                    living.setHealth((float) total);
+                }
+
+                if (living.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE) != null) {
+                    double dmg = living.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE).getBaseValue();
+                    living.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE).setBaseValue(dmg + level * 0.2);
+                }
+
+
             }
 
 

@@ -1,8 +1,10 @@
 package com.kaplandev.entity;
 
+import com.kaplandev.entity.boss.BulwarkEntity;
 import com.kaplandev.entity.skeleton.CustomSkeletonEntity;
 import com.kaplandev.entity.zombie.CustomZombieEntity;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.SpawnRestriction.SpawnPredicate;
 import net.minecraft.entity.*;
@@ -40,10 +42,25 @@ public class EntitiyRegister {
                     .build()
     );
 
+    public static final EntityType<BulwarkEntity> BULWARK = Registry.register(
+            Registries.ENTITY_TYPE,
+            Identifier.of("modid", "bulwark"),
+            FabricEntityTypeBuilder.createMob()
+                    .entityFactory(BulwarkEntity::new)
+                    .spawnGroup(SpawnGroup.MONSTER)
+                    .dimensions(EntityDimensions.fixed(0.8f, 2.0f))
+                    .trackRangeBlocks(80)
+                    .build()
+    );
+
+
+
+
     public static void register() {
-        // Şimdilik gerek yok ama debug amaçlı log ekleyebilirsin
         System.out.println("Custom entities registered.");
         registerSpawns();
+        registerAttributes();
+        System.out.println("Mob özellikleri kaydedildi");
     }
     private static void registerSpawns() {
         // Custom ZOMBIE her biyomda gece doğsun
@@ -81,5 +98,9 @@ public class EntitiyRegister {
                 MobEntity::canMobSpawn
         );
 
+    }
+
+    public static void registerAttributes() {
+        FabricDefaultAttributeRegistry.register(BULWARK, BulwarkEntity.createAttributes());
     }
 }
