@@ -1,0 +1,39 @@
+{
+  "mobpvp:kick": {
+    "criteria": {
+      "hit_mob": "2025-06-27 18:39:46 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:middle": {
+    "criteria": {
+      "armor_up": "2025-06-27 18:38:23 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-06-27 18:38:23 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:deep_dark": {
+    "criteria": {
+      "deep_dark": "2025-06-27 18:38:24 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:first": {
+    "criteria": {
+      "joined_world": "2025-06-27 18:38:23 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-06-27 18:38:24 +0300"
+    },
+    "done": false
+  },
+  "DataVersion": 3955
+}
