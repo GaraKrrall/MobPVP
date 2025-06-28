@@ -3,6 +3,8 @@
   "key.mobpvp.dash": "Dash",
   "category.mobpvp": "MobPvp Controls",
   "itemGroup.mobpvp": "MobPVP",
+  "block.mobpvp.ore": "Bulwark Çağırıcı",
   "item.mobpvp.zombie_egg": "Deli Zombi Yumurtası",
+  "item.mobpvp.hearth_part": "Kalp Parçası",
   "item.mobpvp.skeleton_egg": "Deli İskelet Yumurtası"
 }

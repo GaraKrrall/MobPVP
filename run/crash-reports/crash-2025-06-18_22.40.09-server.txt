@@ -34,7 +34,7 @@ java.lang.ExceptionInInitializerError
 Caused by: java.lang.IllegalStateException: This registry can't create intrusive holders
 	at knot//net.minecraft.registry.SimpleRegistry.createEntry(SimpleRegistry.java:369)
 	at knot//net.minecraft.item.Item.<init>(Item.java:71)
-	at knot//com.kaplandev.items.ModItems.<clinit>(ModItems.java:11)
+	at knot//com.kaplandev.item.Items.<clinit>(ModItems.java:11)
 	... 26 more
 
 

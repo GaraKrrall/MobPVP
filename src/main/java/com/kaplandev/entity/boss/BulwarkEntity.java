@@ -4,10 +4,7 @@ import com.kaplandev.entity.boss.goal.FireballAttackGoal;
 import com.kaplandev.entity.boss.goal.SummonZombieGoal;
 import com.kaplandev.entity.boss.goal.TntSpawnGoal;
 
-import com.kaplandev.items.CrudeAcidicLayerRockOreItem;
-import com.kaplandev.items.KalpItem;
-import com.kaplandev.items.ModItems;
-import com.kaplandev.items.blocks.CrudeAcidicLayerRockOre;
+
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
@@ -19,8 +16,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.entity.boss.BossBar;
 import net.minecraft.entity.boss.ServerBossBar;

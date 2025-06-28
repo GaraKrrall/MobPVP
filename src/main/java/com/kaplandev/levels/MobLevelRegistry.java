@@ -30,15 +30,16 @@ public class MobLevelRegistry {
         LEVEL_RANGES.put("pig", new Integer[]{1, 5});
         LEVEL_RANGES.put("chicken", new Integer[]{1, 5});
         // Özel moblar
-        LEVEL_RANGES.put("custom_skeleton", new Integer[]{10, 40});
+        LEVEL_RANGES.put("custom_skeleton", new Integer[]{1, 10});
 
         //boss
-      //  LEVEL_RANGES.put("bulwark", new Integer[]{100, 112}); //TODO: Başka bir yönteme aldık bunu
+        //  LEVEL_RANGES.put("bulwark", new Integer[]{100, 112}); //TODO: Başka bir yönteme aldık bunu
     }
 
     public static Integer[] getLevelRange(String mobId) {
         return LEVEL_RANGES.get(mobId);
     }
+
     public static Integer[] getLevelRangeOrDefault(String mobId, Integer[] defaultRange) {
         return LEVEL_RANGES.getOrDefault(mobId, defaultRange);
     }

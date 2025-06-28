@@ -7,7 +7,7 @@ Description: Unexpected error
 java.lang.IllegalArgumentException: Stack size must be exactly 1
 	at knot//net.minecraft.item.ItemGroup$EntriesImpl.add(ItemGroup.java:232)
 	at knot//net.minecraft.item.ItemGroup$Entries.add(ItemGroup.java:276)
-	at knot//com.kaplandev.items.tab.TabMobPVP.lambda$static$1(TabMobPVP.java:25)
+	at knot//com.kaplandev.item.tab.TabMobPVP.lambda$static$1(TabMobPVP.java:25)
 	at knot//net.minecraft.item.ItemGroup.updateEntries(ItemGroup.java:102)
 	at knot//net.minecraft.item.ItemGroups.method_47338(ItemGroups.java:2166)
 	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
@@ -46,7 +46,7 @@ Thread: Render thread
 Stacktrace:
 	at knot//net.minecraft.item.ItemGroup$EntriesImpl.add(ItemGroup.java:232)
 	at knot//net.minecraft.item.ItemGroup$Entries.add(ItemGroup.java:276)
-	at knot//com.kaplandev.items.tab.TabMobPVP.lambda$static$1(TabMobPVP.java:25)
+	at knot//com.kaplandev.item.tab.TabMobPVP.lambda$static$1(TabMobPVP.java:25)
 	at knot//net.minecraft.item.ItemGroup.updateEntries(ItemGroup.java:102)
 	at knot//net.minecraft.item.ItemGroups.method_47338(ItemGroups.java:2166)
 	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)

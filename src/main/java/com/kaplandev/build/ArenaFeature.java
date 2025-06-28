@@ -1,6 +1,7 @@
 package com.kaplandev.build;
 
-import com.kaplandev.items.blocks.CrudeAcidicLayerRockOre;
+
+
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.mob.SkeletonEntity;
@@ -138,7 +139,7 @@ public class ArenaFeature extends Feature<DefaultFeatureConfig> {
 
         // Özel cevher bloğu en üste
         BlockPos orePos = origin.up(columnHeight);
-        world.setBlockState(orePos, CrudeAcidicLayerRockOre.ORE.getDefaultState(), 3);
+        world.setBlockState(orePos, com.kaplandev.block.Blocks.CRUDE_ACIDIC_ORE.getDefaultState(), 3);
 
         // Yaratıklar (Zombi + İskelet)
         if (world instanceof ServerWorld serverWorld) {

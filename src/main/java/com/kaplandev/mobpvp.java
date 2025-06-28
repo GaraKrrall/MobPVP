@@ -1,17 +1,14 @@
 package com.kaplandev;
 
 
-import com.kaplandev.build.ArenaFeature;
-import com.kaplandev.build.StructureBuilder;
+import com.kaplandev.block.Blocks;
 import com.kaplandev.commands.ModCommands;
+import com.kaplandev.entity.EntitiyRegister;
 import com.kaplandev.entity.boss.BulwarkEntity;
 import com.kaplandev.gen.ModWorldGen;
-import com.kaplandev.items.KalpItem;
-import com.kaplandev.items.ModItems;
-import com.kaplandev.entity.EntitiyRegister;
-import com.kaplandev.items.tab.TabSetup;
+import com.kaplandev.item.Items;
+import com.kaplandev.item.tab.Tabs;
 import com.kaplandev.levels.MobLevelRegistry;
-
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
@@ -20,27 +17,29 @@ import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableSource;
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.registry.*;
-import net.minecraft.entity.*;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.entity.mob.*;
-import net.minecraft.item.*;
-import net.minecraft.loot.*;
+import net.minecraft.entity.mob.EndermanEntity;
+import net.minecraft.entity.mob.ZombieEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
-import net.minecraft.item.Items;
-
 
 import java.util.*;
 
@@ -55,16 +54,18 @@ public final class mobpvp implements ModInitializer {
     @Override
     public void onInitialize() {
         ModWorldGen.register();
-        ModItems.init();
+        Items.init();
+        Blocks.init();
         EntitiyRegister.register();
-        TabSetup.RegisterTabs();
+        Tabs.init();
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
             ModCommands.register(dispatcher);
         });
 
 
         ServerEntityEvents.ENTITY_LOAD.register((entity, world) -> {
-            if (!(entity instanceof LivingEntity living) || entity instanceof ServerPlayerEntity || entity instanceof BulwarkEntity) return;
+            if (!(entity instanceof LivingEntity living) || entity instanceof ServerPlayerEntity || entity instanceof BulwarkEntity)
+                return;
             if (living.hasCustomName()) return;
 
 
@@ -193,12 +194,12 @@ public final class mobpvp implements ModInitializer {
                 }
 
                 // Netherite zırh giydir (düşmesin)
-                zombie.equipStack(EquipmentSlot.HEAD, new ItemStack(Items.NETHERITE_HELMET));
-                zombie.equipStack(EquipmentSlot.CHEST, new ItemStack(Items.NETHERITE_CHESTPLATE));
-                zombie.equipStack(EquipmentSlot.LEGS, new ItemStack(Items.NETHERITE_LEGGINGS));
-                zombie.equipStack(EquipmentSlot.FEET, new ItemStack(Items.NETHERITE_BOOTS));
+                zombie.equipStack(EquipmentSlot.HEAD, new ItemStack(net.minecraft.item.Items.NETHERITE_HELMET));
+                zombie.equipStack(EquipmentSlot.CHEST, new ItemStack(net.minecraft.item.Items.NETHERITE_CHESTPLATE));
+                zombie.equipStack(EquipmentSlot.LEGS, new ItemStack(net.minecraft.item.Items.NETHERITE_LEGGINGS));
+                zombie.equipStack(EquipmentSlot.FEET, new ItemStack(net.minecraft.item.Items.NETHERITE_BOOTS));
 
-                ItemStack sword = new ItemStack(Items.NETHERITE_SWORD);
+                ItemStack sword = new ItemStack(net.minecraft.item.Items.NETHERITE_SWORD);
                 RegistryEntry<Enchantment> sharpnessEntry = world.getRegistryManager()
                         .get(RegistryKeys.ENCHANTMENT)
                         .getEntry(Identifier.of("minecraft", "sharpness")).orElseThrow();
@@ -243,12 +244,12 @@ public final class mobpvp implements ModInitializer {
                 }
 
 
-                zombie.equipStack(EquipmentSlot.HEAD, new ItemStack(Items.DIAMOND_HELMET));
-                zombie.equipStack(EquipmentSlot.CHEST, new ItemStack(Items.DIAMOND_CHESTPLATE));
-                zombie.equipStack(EquipmentSlot.LEGS, new ItemStack(Items.DIAMOND_LEGGINGS));
-                zombie.equipStack(EquipmentSlot.FEET, new ItemStack(Items.DIAMOND_BOOTS));
+                zombie.equipStack(EquipmentSlot.HEAD, new ItemStack(net.minecraft.item.Items.DIAMOND_HELMET));
+                zombie.equipStack(EquipmentSlot.CHEST, new ItemStack(net.minecraft.item.Items.DIAMOND_CHESTPLATE));
+                zombie.equipStack(EquipmentSlot.LEGS, new ItemStack(net.minecraft.item.Items.DIAMOND_LEGGINGS));
+                zombie.equipStack(EquipmentSlot.FEET, new ItemStack(net.minecraft.item.Items.DIAMOND_BOOTS));
 
-                ItemStack sword = new ItemStack(Items.NETHERITE_SWORD);
+                ItemStack sword = new ItemStack(net.minecraft.item.Items.NETHERITE_SWORD);
                 RegistryEntry<Enchantment> sharpnessEntry = world.getRegistryManager()
                         .get(RegistryKeys.ENCHANTMENT)
                         .getEntry(Identifier.of("minecraft", "sharpness")).orElseThrow();
@@ -288,12 +289,12 @@ public final class mobpvp implements ModInitializer {
                 }
 
 
-                zombie.equipStack(EquipmentSlot.HEAD, new ItemStack(Items.IRON_HELMET));
-                zombie.equipStack(EquipmentSlot.CHEST, new ItemStack(Items.IRON_CHESTPLATE));
-                zombie.equipStack(EquipmentSlot.LEGS, new ItemStack(Items.IRON_LEGGINGS));
-                zombie.equipStack(EquipmentSlot.FEET, new ItemStack(Items.IRON_BOOTS));
+                zombie.equipStack(EquipmentSlot.HEAD, new ItemStack(net.minecraft.item.Items.IRON_HELMET));
+                zombie.equipStack(EquipmentSlot.CHEST, new ItemStack(net.minecraft.item.Items.IRON_CHESTPLATE));
+                zombie.equipStack(EquipmentSlot.LEGS, new ItemStack(net.minecraft.item.Items.IRON_LEGGINGS));
+                zombie.equipStack(EquipmentSlot.FEET, new ItemStack(net.minecraft.item.Items.IRON_BOOTS));
 
-                ItemStack sword = new ItemStack(Items.IRON_SWORD);
+                ItemStack sword = new ItemStack(net.minecraft.item.Items.IRON_SWORD);
                 RegistryEntry<Enchantment> sharpnessEntry = world.getRegistryManager()
                         .get(RegistryKeys.ENCHANTMENT)
                         .getEntry(Identifier.of("minecraft", "sharpness")).orElseThrow();
@@ -335,12 +336,12 @@ public final class mobpvp implements ModInitializer {
                 }
 
 
-                zombie.equipStack(EquipmentSlot.HEAD, new ItemStack(Items.NETHERITE_HELMET));
-                zombie.equipStack(EquipmentSlot.CHEST, new ItemStack(Items.NETHERITE_CHESTPLATE));
-                zombie.equipStack(EquipmentSlot.LEGS, new ItemStack(Items.NETHERITE_LEGGINGS));
-                zombie.equipStack(EquipmentSlot.FEET, new ItemStack(Items.NETHERITE_BOOTS));
+                zombie.equipStack(EquipmentSlot.HEAD, new ItemStack(net.minecraft.item.Items.NETHERITE_HELMET));
+                zombie.equipStack(EquipmentSlot.CHEST, new ItemStack(net.minecraft.item.Items.NETHERITE_CHESTPLATE));
+                zombie.equipStack(EquipmentSlot.LEGS, new ItemStack(net.minecraft.item.Items.NETHERITE_LEGGINGS));
+                zombie.equipStack(EquipmentSlot.FEET, new ItemStack(net.minecraft.item.Items.NETHERITE_BOOTS));
 
-                ItemStack sword = new ItemStack(Items.NETHERITE_SWORD);
+                ItemStack sword = new ItemStack(net.minecraft.item.Items.NETHERITE_SWORD);
                 RegistryEntry<Enchantment> sharpnessEntry = world.getRegistryManager()
                         .get(RegistryKeys.ENCHANTMENT)
                         .getEntry(Identifier.of("minecraft", "sharpness")).orElseThrow();
@@ -357,8 +358,6 @@ public final class mobpvp implements ModInitializer {
 
                 return;
             }
-
-
 
 
             if (living.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH) != null) {
@@ -389,7 +388,7 @@ public final class mobpvp implements ModInitializer {
             } else if (level >= 20 && level < 30) {
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, Integer.MAX_VALUE, 1));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, Integer.MAX_VALUE, 1));
-               // living.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, Integer.MAX_VALUE, 0));
+                // living.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, Integer.MAX_VALUE, 0));
             } else if (level >= 30 && level < 40) {
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, Integer.MAX_VALUE, 0));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, Integer.MAX_VALUE, 0));
@@ -423,7 +422,7 @@ public final class mobpvp implements ModInitializer {
                 // living.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, Integer.MAX_VALUE, 1));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, Integer.MAX_VALUE, 2));
             } else if (level >= 150 && level < 200) {
-              //  living.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, Integer.MAX_VALUE, 1));
+                //  living.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, Integer.MAX_VALUE, 1));
                 //  living.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, Integer.MAX_VALUE, 1));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, Integer.MAX_VALUE, 3));
             } else if (level >= 200 && level < 300) {
@@ -435,7 +434,7 @@ public final class mobpvp implements ModInitializer {
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, Integer.MAX_VALUE, 1));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, Integer.MAX_VALUE, 1));
             } else if (level >= 400 && level < 500) {
-               // living.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, Integer.MAX_VALUE, 1));
+                // living.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, Integer.MAX_VALUE, 1));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, Integer.MAX_VALUE, 1));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, Integer.MAX_VALUE, 3));
             } else if (level >= 500) {
@@ -489,57 +488,57 @@ public final class mobpvp implements ModInitializer {
             List<LootPoolEntry> veryCommon = new ArrayList<>();
 
             if (!mobId.equals("sheep") && !mobId.equals("cow") && !mobId.equals("chicken") && !mobId.equals("pig")) {
-                if (level >= 2) common.add(ItemEntry.builder(Items.IRON_INGOT).build());
-                if (level >= 4) common.add(ItemEntry.builder(Items.BOW).build());
-                if (level >= 6) common.add(ItemEntry.builder(Items.GOLD_INGOT).build());
-                if (level >= 10) common.add(ItemEntry.builder(Items.DIAMOND).build());
-                if (level >= 15) common.add(ItemEntry.builder(Items.DIAMOND_CHESTPLATE).build());
-                if (level >= 50) common.add(ItemEntry.builder(Items.NETHERITE_SCRAP).build());
+                if (level >= 2) common.add(ItemEntry.builder(net.minecraft.item.Items.IRON_INGOT).build());
+                if (level >= 4) common.add(ItemEntry.builder(net.minecraft.item.Items.BOW).build());
+                if (level >= 6) common.add(ItemEntry.builder(net.minecraft.item.Items.GOLD_INGOT).build());
+                if (level >= 10) common.add(ItemEntry.builder(net.minecraft.item.Items.DIAMOND).build());
+                if (level >= 15) common.add(ItemEntry.builder(net.minecraft.item.Items.DIAMOND_CHESTPLATE).build());
+                if (level >= 50) common.add(ItemEntry.builder(net.minecraft.item.Items.NETHERITE_SCRAP).build());
 
                 if (level >= 10) {
-                    rare.add(ItemEntry.builder(Items.ENCHANTED_GOLDEN_APPLE).build());
-                    rare.add(ItemEntry.builder(Items.NETHERITE_INGOT).build());
-                    rare.add(ItemEntry.builder(Items.TOTEM_OF_UNDYING).build());
+                    rare.add(ItemEntry.builder(net.minecraft.item.Items.ENCHANTED_GOLDEN_APPLE).build());
+                    rare.add(ItemEntry.builder(net.minecraft.item.Items.NETHERITE_INGOT).build());
+                    rare.add(ItemEntry.builder(net.minecraft.item.Items.TOTEM_OF_UNDYING).build());
                 }
                 if (level >= 100) {
-                    rare.add(ItemEntry.builder(Items.NETHER_STAR).build());
-                    rare.add(ItemEntry.builder(Items.NETHERITE_CHESTPLATE).build());
+                    rare.add(ItemEntry.builder(net.minecraft.item.Items.NETHER_STAR).build());
+                    rare.add(ItemEntry.builder(net.minecraft.item.Items.NETHERITE_CHESTPLATE).build());
                 }
                 if (level >= 200) {
-                    rare.add(ItemEntry.builder(Items.NETHERITE_SWORD).build());
-                    rare.add(ItemEntry.builder(Items.SCULK_SENSOR).build());
+                    rare.add(ItemEntry.builder(net.minecraft.item.Items.NETHERITE_SWORD).build());
+                    rare.add(ItemEntry.builder(net.minecraft.item.Items.SCULK_SENSOR).build());
                 }
 
                 if (level == 1000) {
-                    guaranteed.add(ItemEntry.builder(Items.NETHERITE_AXE).build());
-                    guaranteed.add(ItemEntry.builder(Items.NETHERITE_INGOT).build());
-                    guaranteed.add(ItemEntry.builder(Items.NETHERITE_CHESTPLATE).build());
-                    guaranteed.add(ItemEntry.builder(Items.NETHERITE_SWORD).build());
+                    guaranteed.add(ItemEntry.builder(net.minecraft.item.Items.NETHERITE_AXE).build());
+                    guaranteed.add(ItemEntry.builder(net.minecraft.item.Items.NETHERITE_INGOT).build());
+                    guaranteed.add(ItemEntry.builder(net.minecraft.item.Items.NETHERITE_CHESTPLATE).build());
+                    guaranteed.add(ItemEntry.builder(net.minecraft.item.Items.NETHERITE_SWORD).build());
                 }
                 if (mobId.equals("ender_dragon")) {
-                    guaranteed.add(ItemEntry.builder(Items.DRAGON_EGG).build());
-                    guaranteed.add(ItemEntry.builder(Items.ELYTRA).build());
-                    guaranteed.add(ItemEntry.builder(Items.NETHERITE_BLOCK).build());
-                    guaranteed.add(ItemEntry.builder(Items.BEACON).build());
+                    guaranteed.add(ItemEntry.builder(net.minecraft.item.Items.DRAGON_EGG).build());
+                    guaranteed.add(ItemEntry.builder(net.minecraft.item.Items.ELYTRA).build());
+                    guaranteed.add(ItemEntry.builder(net.minecraft.item.Items.NETHERITE_BLOCK).build());
+                    guaranteed.add(ItemEntry.builder(net.minecraft.item.Items.BEACON).build());
                 }
                 if (mobId.equals("zombie")) {
-                    rare.add(ItemEntry.builder(KalpItem.MY_ITEM).build());
+                    rare.add(ItemEntry.builder(Items.KALP_ITEM).build());
                 }
                 if (mobId.equals("warden")) {
-                    guaranteed.add(ItemEntry.builder(Items.SCULK_SHRIEKER).build());
-                    guaranteed.add(ItemEntry.builder(Items.NETHERITE_INGOT).build());
-                    guaranteed.add(ItemEntry.builder(Items.NETHERITE_AXE).build());
-                    guaranteed.add(ItemEntry.builder(Items.NETHERITE_BOOTS).build());
+                    guaranteed.add(ItemEntry.builder(net.minecraft.item.Items.SCULK_SHRIEKER).build());
+                    guaranteed.add(ItemEntry.builder(net.minecraft.item.Items.NETHERITE_INGOT).build());
+                    guaranteed.add(ItemEntry.builder(net.minecraft.item.Items.NETHERITE_AXE).build());
+                    guaranteed.add(ItemEntry.builder(net.minecraft.item.Items.NETHERITE_BOOTS).build());
                 }
 
-                veryCommon.add(ItemEntry.builder(Items.IRON_NUGGET).build());
-                veryCommon.add(ItemEntry.builder(Items.GOLD_NUGGET).build());
-                veryCommon.add(ItemEntry.builder(Items.GUNPOWDER).build());
+                veryCommon.add(ItemEntry.builder(net.minecraft.item.Items.IRON_NUGGET).build());
+                veryCommon.add(ItemEntry.builder(net.minecraft.item.Items.GOLD_NUGGET).build());
+                veryCommon.add(ItemEntry.builder(net.minecraft.item.Items.GUNPOWDER).build());
             } else {
-                if (mobId.equals("sheep")) common.add(ItemEntry.builder(Items.COOKED_MUTTON).build());
-                if (mobId.equals("cow")) common.add(ItemEntry.builder(Items.COOKED_BEEF).build());
-                if (mobId.equals("pig")) common.add(ItemEntry.builder(Items.COOKED_PORKCHOP).build());
-                if (mobId.equals("chicken")) common.add(ItemEntry.builder(Items.COOKED_CHICKEN).build());
+                if (mobId.equals("sheep")) common.add(ItemEntry.builder(net.minecraft.item.Items.COOKED_MUTTON).build());
+                if (mobId.equals("cow")) common.add(ItemEntry.builder(net.minecraft.item.Items.COOKED_BEEF).build());
+                if (mobId.equals("pig")) common.add(ItemEntry.builder(net.minecraft.item.Items.COOKED_PORKCHOP).build());
+                if (mobId.equals("chicken")) common.add(ItemEntry.builder(net.minecraft.item.Items.COOKED_CHICKEN).build());
             }
 
             if (!guaranteed.isEmpty()) {

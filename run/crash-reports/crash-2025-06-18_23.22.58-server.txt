@@ -7,7 +7,7 @@ Description: Exception ticking world
 java.lang.IllegalStateException: This registry can't create intrusive holders
 	at knot//net.minecraft.registry.SimpleRegistry.createEntry(SimpleRegistry.java:369)
 	at knot//net.minecraft.item.Item.<init>(Item.java:71)
-	at knot//com.kaplandev.items.ModItems.initialize(ModItems.java:17)
+	at knot//com.kaplandev.item.Items.initialize(ModItems.java:17)
 	at knot//com.kaplandev.mobpvp.lambda$onInitialize$2(mobpvp.java:85)
 	at knot//net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents.lambda$static$0(ServerEntityEvents.java:39)
 	at knot//net.minecraft.server.world.ServerWorld$ServerEntityHandler.handler$znf000$fabric-lifecycle-events-v1$invokeEntityLoadEvent(ServerWorld.java:1730)
@@ -37,7 +37,7 @@ Thread: Server thread
 Stacktrace:
 	at knot//net.minecraft.registry.SimpleRegistry.createEntry(SimpleRegistry.java:369)
 	at knot//net.minecraft.item.Item.<init>(Item.java:71)
-	at knot//com.kaplandev.items.ModItems.initialize(ModItems.java:17)
+	at knot//com.kaplandev.item.Items.initialize(ModItems.java:17)
 	at knot//com.kaplandev.mobpvp.lambda$onInitialize$2(mobpvp.java:85)
 	at knot//net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents.lambda$static$0(ServerEntityEvents.java:39)
 	at knot//net.minecraft.server.world.ServerWorld$ServerEntityHandler.handler$znf000$fabric-lifecycle-events-v1$invokeEntityLoadEvent(ServerWorld.java:1730)
