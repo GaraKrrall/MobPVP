@@ -3,7 +3,7 @@ package com.kaplandev.entity.boss.goal;
 import com.kaplandev.entity.EntitiyRegister;
 import com.kaplandev.entity.boss.BulwarkEntity;
 import com.kaplandev.entity.zombie.CustomZombieEntity;
-import net.minecraft.entity.mob.ZombieEntity;
+
 import net.minecraft.entity.ai.goal.Goal;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
@@ -28,12 +28,15 @@ public class SummonZombieGoal extends Goal {
     public void tick() {
         if (cooldown <= 0 && !boss.getWorld().isClient) {
             ServerWorld world = (ServerWorld) boss.getWorld();
-            BlockPos spawnPos = boss.getBlockPos().add(boss.getRandom().nextInt(3) - 1, 0, boss.getRandom().nextInt(3) - 1);
 
-            CustomZombieEntity customZombieEntity = new CustomZombieEntity(EntitiyRegister.CUSTOM_ZOMBIE, world);
+            for (int i = 0; i < 6; i++) {
+                CustomZombieEntity customZombieEntity = new CustomZombieEntity(EntitiyRegister.CUSTOM_ZOMBIE, world);
+                BlockPos spawnPos = boss.getBlockPos().add(boss.getRandom().nextInt(3) - 1, 0, boss.getRandom().nextInt(3) - 1);
+                customZombieEntity.refreshPositionAndAngles(spawnPos, 0.0f, 0.0f);
+                world.spawnEntity(customZombieEntity);
+            }
 
-            customZombieEntity.refreshPositionAndAngles(spawnPos, 0.0f, 0.0f);
-            world.spawnEntity(customZombieEntity);
+
 
             cooldown = 100; // 5 saniye
         } else {

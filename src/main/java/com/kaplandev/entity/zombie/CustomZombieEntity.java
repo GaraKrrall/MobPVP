@@ -21,7 +21,8 @@ public class CustomZombieEntity extends ZombieEntity {
     public static DefaultAttributeContainer.Builder createCustomZombieAttributes() {
         return ZombieEntity.createZombieAttributes()
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 1.0) // Daha hızlı
-                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 40.0);  // Oyuncuyu daha uzaktan görsün
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.35); // Hızlı ama kaçılmaz değil
+
     }
 
     @Override

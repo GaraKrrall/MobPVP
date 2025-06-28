@@ -36,15 +36,20 @@ public class FireballAttackGoal extends Goal {
         if (cooldown <= 0) {
             Vec3d dir = target.getPos().subtract(boss.getPos()).normalize();
 
-            FireballEntity fireball = new FireballEntity(
-                    EntityType.FIREBALL,
-                    world
-            );
 
-            fireball.setVelocity(dir.x, dir.y, dir.z, 2.5f, 0.0f);
-            fireball.setPosition(boss.getX(), boss.getEyeY(), boss.getZ());
+            for (int i = 0; i < 6; i++) {
+                FireballEntity fireball = new FireballEntity(
+                        EntityType.FIREBALL,
+                        world
+                );
+                fireball.setVelocity(dir.x, dir.y, dir.z, 2.5f, 0.0f);
+                fireball.setPosition(boss.getX(), boss.getEyeY(), boss.getZ());
 
-            world.spawnEntity(fireball);
+                world.spawnEntity(fireball);
+            }
+
+
+
             cooldown = 100;
         } else {
             cooldown--;

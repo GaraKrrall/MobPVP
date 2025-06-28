@@ -8,7 +8,6 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -24,8 +23,8 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class KalpItem extends Item {
-    public KalpItem(Settings settings) {
+public class KalpItemFeatures extends Item {
+    public KalpItemFeatures(Settings settings) {
         super(settings);
     }
 

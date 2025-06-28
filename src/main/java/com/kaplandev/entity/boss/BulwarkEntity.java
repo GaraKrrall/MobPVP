@@ -4,14 +4,23 @@ import com.kaplandev.entity.boss.goal.FireballAttackGoal;
 import com.kaplandev.entity.boss.goal.SummonZombieGoal;
 import com.kaplandev.entity.boss.goal.TntSpawnGoal;
 
+import com.kaplandev.items.CrudeAcidicLayerRockOreItem;
+import com.kaplandev.items.KalpItem;
+import com.kaplandev.items.ModItems;
+import com.kaplandev.items.blocks.CrudeAcidicLayerRockOre;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.entity.boss.BossBar;
 import net.minecraft.entity.boss.ServerBossBar;
@@ -46,7 +55,7 @@ public class BulwarkEntity extends PathAwareEntity {
     @Override
     public void tick() {
         super.tick();
-        System.out.println("Boss tickliyor! Health: " + this.getHealth());
+        // System.out.println("Boss tickliyor! Health: " + this.getHealth());
         bossBar.setPercent(this.getHealth() / this.getMaxHealth());
     }
 
@@ -67,13 +76,33 @@ public class BulwarkEntity extends PathAwareEntity {
         return false;
     }
 
+
     public ServerBossBar getBossBar() {
         return bossBar;
     }
+
     public static DefaultAttributeContainer.Builder createAttributes() {
         return ZombieEntity.createZombieAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 80.0)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 10.0)
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 300.0)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 1.0)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.3);
     }
+
+
+    @Override
+    protected void dropLoot(DamageSource source, boolean causedByPlayer) {
+        super.dropLoot(source, causedByPlayer);
+
+        if (!this.getWorld().isClient()) {
+            // Elmas 3 tane düşür
+            this.dropStack(new ItemStack(Items.DIAMOND, 8));
+            this.dropStack(new ItemStack(Items.NETHERITE_SCRAP, 1));
+
+            // Kendi özel item'ların varsa şunun gibi çağır:
+            // this.dropStack(new ItemStack(ModItems.BULWARK_CORE));
+        }
+
+    }
+
+
 }

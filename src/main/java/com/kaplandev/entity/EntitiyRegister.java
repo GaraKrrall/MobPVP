@@ -3,6 +3,8 @@ package com.kaplandev.entity;
 import com.kaplandev.entity.boss.BulwarkEntity;
 import com.kaplandev.entity.skeleton.CustomSkeletonEntity;
 import com.kaplandev.entity.zombie.CustomZombieEntity;
+import static com.kaplandev.mobpvp.MOD_ID;
+
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
@@ -22,7 +24,7 @@ public class EntitiyRegister {
 
     public static final EntityType<CustomZombieEntity> CUSTOM_ZOMBIE = Registry.register(
             Registries.ENTITY_TYPE,
-            Identifier.of("mobpvp", "custom_zombie"),
+            Identifier.of(MOD_ID, "custom_zombie"),
             FabricEntityTypeBuilder.createMob()
                     .entityFactory(CustomZombieEntity::new)
                     .defaultAttributes(CustomZombieEntity::createCustomZombieAttributes)
@@ -33,7 +35,7 @@ public class EntitiyRegister {
 
     public static final EntityType<CustomSkeletonEntity> CUSTOM_SKELETON = Registry.register(
             Registries.ENTITY_TYPE,
-            Identifier.of("mobpvp", "custom_skeleton"),
+            Identifier.of(MOD_ID, "custom_skeleton"),
             FabricEntityTypeBuilder.createMob()
                     .entityFactory(CustomSkeletonEntity::new)
                     .defaultAttributes(CustomSkeletonEntity::createCustomSkeletonAttributes)
@@ -44,7 +46,7 @@ public class EntitiyRegister {
 
     public static final EntityType<BulwarkEntity> BULWARK = Registry.register(
             Registries.ENTITY_TYPE,
-            Identifier.of("modid", "bulwark"),
+            Identifier.of(MOD_ID, "bulwark"),
             FabricEntityTypeBuilder.createMob()
                     .entityFactory(BulwarkEntity::new)
                     .spawnGroup(SpawnGroup.MONSTER)

@@ -1,6 +1,9 @@
 package com.kaplandev.items;
 
+import com.kaplandev.items.ItemsFeatures.KalpItemFeatures;
 import com.kaplandev.items.tab.TabMobPVP;
+
+
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -8,10 +11,10 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class KalpItem {
-    public static final com.kaplandev.items.ItemsFeatures.KalpItem MY_ITEM = Registry.register(
+    public static final KalpItemFeatures MY_ITEM = Registry.register(
             Registries.ITEM,
             Identifier.of("mobpvp:kalp"),  // ← YENİ SÜRÜMLERDE BU ŞART
-            new com.kaplandev.items.ItemsFeatures.KalpItem(new Item.Settings())     // ← Artık FabricItemSettings yok
+            new KalpItemFeatures(new Item.Settings())     // ← Artık FabricItemSettings yok
     );
 
     public static void registerCreativeTab() {

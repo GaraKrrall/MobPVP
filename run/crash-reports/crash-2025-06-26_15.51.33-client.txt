@@ -27,7 +27,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.kaplandev.items.K
 Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalStateException: This registry can't create intrusive holders [in thread "Worker-Main-3"]
 	at knot//net.minecraft.registry.SimpleRegistry.createEntry(SimpleRegistry.java:369)
 	at knot//net.minecraft.item.Item.<init>(Item.java:71)
-	at knot//com.kaplandev.items.ItemsFeatures.KalpItem.<init>(KalpItem.java:21)
+	at knot//com.kaplandev.items.ItemsFeatures.KalpItemFeatures.<init>(KalpItem.java:21)
 	at knot//com.kaplandev.items.KalpItem.<clinit>(KalpItem.java:13)
 	... 19 more
 

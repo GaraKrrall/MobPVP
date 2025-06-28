@@ -1,7 +1,6 @@
 package com.kaplandev;
 
 
-
 import com.kaplandev.build.ArenaFeature;
 import com.kaplandev.build.StructureBuilder;
 import com.kaplandev.commands.ModCommands;
@@ -43,10 +42,7 @@ import net.minecraft.world.World;
 import net.minecraft.item.Items;
 
 
-
 import java.util.*;
-
-
 
 
 public final class mobpvp implements ModInitializer {
@@ -67,18 +63,9 @@ public final class mobpvp implements ModInitializer {
         });
 
 
-
-
-
         ServerEntityEvents.ENTITY_LOAD.register((entity, world) -> {
-            if (!(entity instanceof LivingEntity living) || entity instanceof ServerPlayerEntity) return;
+            if (!(entity instanceof LivingEntity living) || entity instanceof ServerPlayerEntity || entity instanceof BulwarkEntity) return;
             if (living.hasCustomName()) return;
-
-
-
-
-
-
 
 
             String mobId = Registries.ENTITY_TYPE.getId(entity.getType()).getPath();
@@ -184,7 +171,6 @@ public final class mobpvp implements ModInitializer {
             }
 
 
-
             // "SİNİRLİ MİRAN BABA" zombisi - %10 ihtimal
             if (entity instanceof ZombieEntity zombie && zombie.getRandom().nextFloat() < 0.06f) {
                 zombie.setCustomName(Text.literal("§4SİNİRLİ MİRAN BABA"));
@@ -221,7 +207,7 @@ public final class mobpvp implements ModInitializer {
                         .get(RegistryKeys.ENCHANTMENT)
                         .getEntry(Identifier.of("minecraft", "knockback")).orElseThrow();
 
-                  // Kılıca büyü ekle
+                // Kılıca büyü ekle
                 sword.addEnchantment(sharpnessEntry, 9);
                 sword.addEnchantment(knockbackEntry, 40);
                 zombie.equipStack(EquipmentSlot.MAINHAND, sword);
@@ -236,7 +222,7 @@ public final class mobpvp implements ModInitializer {
 
             //Easter egg
             // "SİNİRLİ MİRAN BABA" zombisi - %5 ihtimal
-            if (entity instanceof ZombieEntity zombie && zombie.getRandom().nextFloat() <  0.05f) {
+            if (entity instanceof ZombieEntity zombie && zombie.getRandom().nextFloat() < 0.05f) {
                 zombie.setCustomName(Text.literal("§4ARABİC TOAST BOSS"));
                 zombie.setCustomNameVisible(true);
 
@@ -275,7 +261,6 @@ public final class mobpvp implements ModInitializer {
                 sword.addEnchantment(sharpnessEntry, 9);
                 sword.addEnchantment(knockbackEntry, 20);
                 zombie.equipStack(EquipmentSlot.MAINHAND, sword);
-
 
 
                 return;
@@ -321,7 +306,6 @@ public final class mobpvp implements ModInitializer {
                 sword.addEnchantment(sharpnessEntry, 9);
                 sword.addEnchantment(knockbackEntry, 2);
                 zombie.equipStack(EquipmentSlot.MAINHAND, sword);
-
 
 
                 return;
@@ -371,34 +355,7 @@ public final class mobpvp implements ModInitializer {
                 zombie.equipStack(EquipmentSlot.MAINHAND, sword);
 
 
-
-
-
                 return;
-            }
-
-            //boss
-            if (entity instanceof BulwarkEntity bulwark && bulwark.getRandom().nextFloat() < 0.06f) {
-                bulwark.setCustomName(Text.literal("§4BULWARK"));
-                bulwark.setCustomNameVisible(true);
-
-                level = 112;
-                living.setCustomName(Text.literal("§c[Lv." + level + "] §4BULWARK"));
-
-                if (living.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH) != null) {
-                    double base = living.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).getBaseValue();
-                    double extra = level * 1.2;
-                    double total = base + extra;
-                    living.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).setBaseValue(total);
-                    living.setHealth((float) total);
-                }
-
-                if (living.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE) != null) {
-                    double dmg = living.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE).getBaseValue();
-                    living.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE).setBaseValue(dmg + level * 0.2);
-                }
-
-
             }
 
 
@@ -425,14 +382,14 @@ public final class mobpvp implements ModInitializer {
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.HUNGER, Integer.MAX_VALUE, 0));
             } else if (level >= 10 && level < 15) {
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, Integer.MAX_VALUE, 0));
-              //  living.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, Integer.MAX_VALUE, 0));
+                //  living.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, Integer.MAX_VALUE, 0));
             } else if (level >= 15 && level < 20) {
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, Integer.MAX_VALUE, 1));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, Integer.MAX_VALUE, 0));
             } else if (level >= 20 && level < 30) {
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, Integer.MAX_VALUE, 1));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, Integer.MAX_VALUE, 1));
-                living.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, Integer.MAX_VALUE, 0));
+               // living.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, Integer.MAX_VALUE, 0));
             } else if (level >= 30 && level < 40) {
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, Integer.MAX_VALUE, 0));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, Integer.MAX_VALUE, 0));
@@ -447,7 +404,7 @@ public final class mobpvp implements ModInitializer {
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, Integer.MAX_VALUE, 0));
             } else if (level >= 60 && level < 70) {
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, Integer.MAX_VALUE, 2));
-               // living.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, Integer.MAX_VALUE, 1));
+                // living.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, Integer.MAX_VALUE, 1));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, Integer.MAX_VALUE, 1));
             } else if (level >= 70 && level < 80) {
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, Integer.MAX_VALUE, 0));
@@ -463,31 +420,31 @@ public final class mobpvp implements ModInitializer {
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.LUCK, Integer.MAX_VALUE, 2));
             } else if (level >= 100 && level < 150) {
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, Integer.MAX_VALUE, 3));
-               // living.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, Integer.MAX_VALUE, 1));
+                // living.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, Integer.MAX_VALUE, 1));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, Integer.MAX_VALUE, 2));
             } else if (level >= 150 && level < 200) {
-                living.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, Integer.MAX_VALUE, 1));
-              //  living.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, Integer.MAX_VALUE, 1));
+              //  living.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, Integer.MAX_VALUE, 1));
+                //  living.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, Integer.MAX_VALUE, 1));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, Integer.MAX_VALUE, 3));
             } else if (level >= 200 && level < 300) {
-           //     living.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, Integer.MAX_VALUE, 4));
-            //    living.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, Integer.MAX_VALUE, 4));
+                //     living.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, Integer.MAX_VALUE, 4));
+                //    living.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, Integer.MAX_VALUE, 4));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, Integer.MAX_VALUE, 3));
             } else if (level >= 300 && level < 400) {
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, Integer.MAX_VALUE, 1));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, Integer.MAX_VALUE, 1));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, Integer.MAX_VALUE, 1));
             } else if (level >= 400 && level < 500) {
-                living.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, Integer.MAX_VALUE, 1));
+               // living.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, Integer.MAX_VALUE, 1));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, Integer.MAX_VALUE, 1));
                 living.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, Integer.MAX_VALUE, 3));
             } else if (level >= 500) {
-            //    living.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, Integer.MAX_VALUE, 5));
-              //  living.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, Integer.MAX_VALUE, 5));
-              //  living.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, Integer.MAX_VALUE, 3));
-               // living.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, Integer.MAX_VALUE, 4));
+                //    living.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, Integer.MAX_VALUE, 5));
+                //  living.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, Integer.MAX_VALUE, 5));
+                //  living.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, Integer.MAX_VALUE, 3));
+                // living.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, Integer.MAX_VALUE, 4));
                 //living.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, Integer.MAX_VALUE, 2));
-               // living.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, Integer.MAX_VALUE, 2));
+                // living.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, Integer.MAX_VALUE, 2));
             }
 
             if (entity instanceof EndermanEntity enderman && level > 8) {
@@ -507,7 +464,8 @@ public final class mobpvp implements ModInitializer {
                             serverWorld.createExplosion(finalEntity, finalEntity.getX(), finalEntity.getY(), finalEntity.getZ(), 2.5f, World.ExplosionSourceType.MOB);
                             finalEntity.discard();
                         }
-                    } catch (InterruptedException ignored) {}
+                    } catch (InterruptedException ignored) {
+                    }
                 }).start();
             }
         });
@@ -565,7 +523,7 @@ public final class mobpvp implements ModInitializer {
                     guaranteed.add(ItemEntry.builder(Items.BEACON).build());
                 }
                 if (mobId.equals("zombie")) {
-                   rare.add(ItemEntry.builder(KalpItem.MY_ITEM).build());
+                    rare.add(ItemEntry.builder(KalpItem.MY_ITEM).build());
                 }
                 if (mobId.equals("warden")) {
                     guaranteed.add(ItemEntry.builder(Items.SCULK_SHRIEKER).build());
