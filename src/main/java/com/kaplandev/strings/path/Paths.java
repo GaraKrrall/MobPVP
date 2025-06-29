@@ -17,5 +17,9 @@ public class Paths {
     //blocks
     public static final String  CRUDE_ACIDIC_ORE_KEY = "ore";
 
+
+    //tabs
+    public static final String  TAB_MOBPVP_ITEMS_KEY = "itemsmobpvp";
+    public static final String  TAB_MOBPVP_EGGS_KEY = "eggsmobpvp";
     private Paths() {}
 }

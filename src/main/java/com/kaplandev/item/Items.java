@@ -33,7 +33,7 @@ public class Items {
     public static void init() {
         // creative tab'a ekleme
         registerToTab(KALP_ITEM, Tabs.MOBPVP_GROUP_KEY);
-        registerToTab(KEY_ITEM, Tabs.MOBPVP_GROUP_KEY);
+        //registerToTab(KEY_ITEM, Tabs.MOBPVP_GROUP_KEY); //TODO: Başka bir zaman lazım olur!
         registerToTab(ORE, Tabs.MOBPVP_GROUP_KEY);
         registerToTab(EGG_SKELETON, Tabs.EGGS_GROUP_KEY);
         registerToTab(EGG_SUPER_ZOMBIE, Tabs.EGGS_GROUP_KEY);

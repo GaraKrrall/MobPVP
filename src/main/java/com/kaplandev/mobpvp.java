@@ -459,13 +459,18 @@ public final class mobpvp implements ModInitializer {
                 new Thread(() -> {
                     try {
                         Thread.sleep(3000);
+
+                        // Minecraft ana thread’ine güvenli şekilde iş teslimi
                         if (!finalEntity.isRemoved() && finalEntity.getWorld() instanceof ServerWorld serverWorld) {
-                            serverWorld.createExplosion(finalEntity, finalEntity.getX(), finalEntity.getY(), finalEntity.getZ(), 2.5f, World.ExplosionSourceType.MOB);
-                            finalEntity.discard();
+                            serverWorld.getServer().execute(() -> {
+                                serverWorld.createExplosion(finalEntity, finalEntity.getX(), finalEntity.getY(), finalEntity.getZ(), 2.5f, World.ExplosionSourceType.MOB);
+                                finalEntity.discard();
+                            });
                         }
                     } catch (InterruptedException ignored) {
                     }
                 }).start();
+
             }
         });
 

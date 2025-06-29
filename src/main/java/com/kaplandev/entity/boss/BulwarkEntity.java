@@ -1,5 +1,7 @@
 package com.kaplandev.entity.boss;
 
+import com.kaplandev.entity.zombie.CustomZombieEntity;
+import com.kaplandev.entity.boss.goal.BreakBlockGoal;
 import com.kaplandev.entity.boss.goal.FireballAttackGoal;
 import com.kaplandev.entity.boss.goal.SummonZombieGoal;
 import com.kaplandev.entity.boss.goal.TntSpawnGoal;
@@ -9,6 +11,8 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.boss.BossBar;
+import net.minecraft.entity.boss.ServerBossBar;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.entity.mob.ZombieEntity;
@@ -17,8 +21,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
-import net.minecraft.entity.boss.BossBar;
-import net.minecraft.entity.boss.ServerBossBar;
 import net.minecraft.world.World;
 
 public class BulwarkEntity extends PathAwareEntity {
@@ -36,15 +38,19 @@ public class BulwarkEntity extends PathAwareEntity {
     protected void initGoals() {
         super.initGoals();
 
-        this.goalSelector.add(0, new MeleeAttackGoal(this, 1.2, false)); // Vurmayı öğrendi
-        this.goalSelector.add(1, new FireballAttackGoal(this));          // Fireball'ı unutma
+        this.goalSelector.add(0, new MeleeAttackGoal(this, 1.2, false));
+        this.goalSelector.add(1, new FireballAttackGoal(this));
         this.goalSelector.add(2, new TntSpawnGoal(this));
         this.goalSelector.add(3, new SummonZombieGoal(this));
         this.goalSelector.add(4, new WanderAroundFarGoal(this, 1.0));
         this.goalSelector.add(5, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
         this.goalSelector.add(6, new LookAroundGoal(this));
+        this.goalSelector.add(7, new BreakBlockGoal(this)); // 👈 Yeni eklenen blok kırma davranışı
 
-        this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true)); // Sana yönelsin
+        this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
+        this.targetSelector.add(2, new ActiveTargetGoal<>(this, PathAwareEntity.class, 10, true, true, entity -> entity != this && !(entity instanceof CustomZombieEntity) && !(entity instanceof BulwarkEntity)));
+        ; // 👈 Her şeye saldır
+        this.targetSelector.add(3, new RevengeGoal(this)); // 👈 Saldıranı hatırla
     }
 
     @Override
