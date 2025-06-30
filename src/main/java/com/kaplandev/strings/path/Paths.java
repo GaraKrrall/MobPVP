@@ -21,5 +21,12 @@ public class Paths {
     //tabs
     public static final String  TAB_MOBPVP_ITEMS_KEY = "itemsmobpvp";
     public static final String  TAB_MOBPVP_EGGS_KEY = "eggsmobpvp";
+
+
+    //id
+    public static final String  MOBPVP = "mobpvp";
+
+    //message
+    public static final String  BINGO = "§6§lBİNGO! §fNadir ganimet kazandın!";
     private Paths() {}
 }

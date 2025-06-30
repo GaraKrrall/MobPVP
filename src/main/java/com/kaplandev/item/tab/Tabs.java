@@ -15,6 +15,7 @@ import static com.kaplandev.mobpvp.MOD_ID;
 import static com.kaplandev.strings.path.Paths.TAB_MOBPVP_EGGS_KEY;
 import static com.kaplandev.strings.path.Paths.TAB_MOBPVP_ITEMS_KEY;
 
+
 public class Tabs {
 
     public static final RegistryKey<ItemGroup> MOBPVP_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(MOD_ID, TAB_MOBPVP_ITEMS_KEY));

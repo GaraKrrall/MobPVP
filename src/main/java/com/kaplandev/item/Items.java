@@ -2,8 +2,7 @@ package com.kaplandev.item;
 
 import com.kaplandev.block.Blocks;
 import com.kaplandev.entity.EntitiyRegister;
-import com.kaplandev.item.ItemFeatures.KalpItemFeatures;
-
+import com.kaplandev.item.feature.KalpItemFeatures;
 import com.kaplandev.item.tab.Tabs;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.BlockItem;
@@ -16,7 +15,12 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
 import static com.kaplandev.mobpvp.MOD_ID;
-import static com.kaplandev.strings.path.Paths.*;
+import static com.kaplandev.strings.path.Paths.EGG_SKELETON_KEY;
+import static com.kaplandev.strings.path.Paths.EGG_SUPER_ZOMBIE_KEY;
+import static com.kaplandev.strings.path.Paths.HEARTH_PART_KEY;
+import static com.kaplandev.strings.path.Paths.KALP_ITEM_KEY;
+import static com.kaplandev.strings.path.Paths.KEY_ITEM_KEY;
+import static com.kaplandev.strings.path.Paths.ORE_ITEM_KEY;
 
 
 public class Items {
