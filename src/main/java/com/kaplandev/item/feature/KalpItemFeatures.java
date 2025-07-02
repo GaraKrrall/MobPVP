@@ -20,35 +20,42 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-
 import java.util.List;
 
-public class KalpItemFeatures extends Item {
+public class KalpItemFeatures extends Item implements ItemFeature {
     public KalpItemFeatures(Settings settings) {
         super(settings);
     }
 
-    // Elmas bloğuna SAĞ TIKLANINCA çağrılan metod
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
+        return onUseOnBlock(context);
+    }
+
+    @Override
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
+        return onUse(world, player, hand);
+    }
+
+    @Environment(EnvType.CLIENT)
+    public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+        addTooltip(stack, world, tooltip, context);
+    }
+
+    @Override
+    public ActionResult onUseOnBlock(ItemUsageContext context) {
         World world = context.getWorld();
         BlockPos pos = context.getBlockPos();
         PlayerEntity player = context.getPlayer();
         ItemStack stack = context.getStack();
 
         if (!world.isClient && world.getBlockState(pos).getBlock() == Blocks.CRUDE_ACIDIC_ORE) {
-            // Zombi çağır
             BulwarkEntity bulwark = new BulwarkEntity(EntitiyRegister.BULWARK, world);
             bulwark.refreshPositionAndAngles(pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, 0, 0);
             world.spawnEntity(bulwark);
 
-            // bloğu sil
             world.breakBlock(pos, false);
-
-            // Itemi 1 azalt
             stack.decrement(1);
-
-            // Ses çal
             player.playSound(SoundEvents.ENTITY_ZOMBIE_AMBIENT, 1.0f, 1.0f);
             return ActionResult.SUCCESS;
         }
@@ -56,15 +63,14 @@ public class KalpItemFeatures extends Item {
         return ActionResult.PASS;
     }
 
-    // Havada sağ tıklanınca: +2 kalp verir
     @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
+    public TypedActionResult<ItemStack> onUse(World world, PlayerEntity player, Hand hand) {
         ItemStack stack = player.getStackInHand(hand);
 
         if (!world.isClient) {
             StatusEffectInstance current = player.getStatusEffect(StatusEffects.HEALTH_BOOST);
-            int duration = 36000; // 30 dakika
-            int amplifier = 0;    // +2 kalp
+            int duration = 36000;
+            int amplifier = 0;
 
             if (current != null) {
                 player.removeStatusEffect(StatusEffects.HEALTH_BOOST);
@@ -79,8 +85,8 @@ public class KalpItemFeatures extends Item {
         return TypedActionResult.success(stack, world.isClient());
     }
 
-    @Environment(EnvType.CLIENT)
-    public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+    @Override
+    public void addTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.literal("§7Sağ tıklayınca +2 Kalp verir (30 dakika)"));
         tooltip.add(Text.literal("§bElmas bloğuna sağ tıklarsan bir zombi çağırır!"));
     }

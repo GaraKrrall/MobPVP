@@ -1,11 +1,13 @@
 package com.kaplandev;
 
+import com.kaplandev.api.annotation.KaplanBedwars;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerEntityCombatEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableSource;
+
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.EndermanEntity;
@@ -41,11 +43,12 @@ import com.kaplandev.item.Items;
 import com.kaplandev.item.tab.Tabs;
 import com.kaplandev.level.MobLevelRegistry;
 import com.kaplandev.level.ZombieVariantAssigner;
+import com.kaplandev.api.PluginRegistry;
 
 import static com.kaplandev.strings.path.Paths.BINGO;
 import static com.kaplandev.strings.path.Paths.MOBPVP;
 
-
+@KaplanBedwars
 public final class mobpvp implements ModInitializer {
 
     public static final Map<String, Integer[]> LEVEL_RANGES = new HashMap<>();
@@ -60,6 +63,7 @@ public final class mobpvp implements ModInitializer {
         Blocks.init();
         EntitiyRegister.register();
         Tabs.init();
+        PluginRegistry.callOnLoad();
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
             ModCommands.register(dispatcher);
         });
@@ -229,6 +233,13 @@ public final class mobpvp implements ModInitializer {
                 builder.pool(vcPool);
             }
         });
+    }
+
+    static {
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            PluginRegistry.callOnClose();
+            System.out.println("[MobPVP] Mod kapanıyor...");
+        }));
     }
 
     private static String cap(String s) {
