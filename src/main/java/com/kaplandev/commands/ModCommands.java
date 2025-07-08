@@ -10,13 +10,13 @@ import net.minecraft.util.math.BlockPos;
 
 public class ModCommands {
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher) {
-        // Test komutu
+         /*
         dispatcher.register(CommandManager.literal("selam")
                 .executes(context -> {
                     context.getSource().sendFeedback(() -> Text.literal("Merhaba! Bu bir test komutudur."), false);
                     return 1;
                 }));
-
+*/
         // Dash komutu
         dispatcher.register(CommandManager.literal("trigger")
                 .then(CommandManager.literal("dash")

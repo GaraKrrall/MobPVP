@@ -1,6 +1,5 @@
 package com.kaplandev;
 
-import com.kaplandev.api.annotation.KaplanBedwars;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerEntityCombatEvents;
@@ -44,6 +43,7 @@ import com.kaplandev.item.tab.Tabs;
 import com.kaplandev.level.MobLevelRegistry;
 import com.kaplandev.level.ZombieVariantAssigner;
 import com.kaplandev.api.PluginRegistry;
+import com.kaplandev.api.annotation.KaplanBedwars;
 
 import static com.kaplandev.strings.path.Paths.BINGO;
 import static com.kaplandev.strings.path.Paths.MOBPVP;

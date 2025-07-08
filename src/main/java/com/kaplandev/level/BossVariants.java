@@ -19,15 +19,14 @@ public class BossVariants {
 
     public static boolean tryAssignCustomZombieBoss(ZombieEntity zombie, LivingEntity living, World world) {
         float roll = zombie.getRandom().nextFloat();
-
-        if (roll < 0.01f) {
-            return applyBoss(zombie, living, world, "§4GİANT BOSS", 1000, ArmorSet.NETHERITE, Items.NETHERITE_SWORD, 9, 20);
-        } else if (roll < 0.06f) {
-            return applyBoss(zombie, living, world, "§4SİNİRLİ MİRAN BABA", 38, ArmorSet.NETHERITE, Items.NETHERITE_SWORD, 9, 40);
-        } else if (roll < 0.11f) {
-            return applyBoss(zombie, living, world, "§4ARABİC TOAST BOSS", 29, ArmorSet.DIAMOND, Items.NETHERITE_SWORD, 9, 20);
-        } else if (roll < 0.20f) {
-            return applyBoss(zombie, living, world, "§4MİNİ BOSS", 12, ArmorSet.IRON, Items.IRON_SWORD, 9, 2);
+        if (roll < 0.002f) { // %0.2 şans
+            return applyBoss(zombie, living, world, "§4GİANT BOSS", 600, ArmorSet.NETHERITE, Items.NETHERITE_SWORD, 8, 15);
+        } else if (roll < 0.01f) { // %0.8 şans
+            return applyBoss(zombie, living, world, "§4SİNİRLİ MİRAN BABA", 28, ArmorSet.DIAMOND, Items.DIAMOND_SWORD, 6, 15);
+        } else if (roll < 0.025f) { // %1.5 şans
+            return applyBoss(zombie, living, world, "§4ARABİC TOAST BOSS", 20, ArmorSet.IRON, Items.IRON_SWORD, 5, 10);
+        } else if (roll < 0.05f) { // %2.5 şans
+            return applyBoss(zombie, living, world, "§4MİNİ BOSS", 10, ArmorSet.IRON, Items.STONE_SWORD, 4, 5);
         }
 
         return false;
@@ -41,20 +40,20 @@ public class BossVariants {
 
         living.setCustomName(Text.literal("§c[Seviye: " + level + "] " + name));
         living.setCustomNameVisible(true);
-
-        // HP
+// HP
         if (living.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH) != null) {
             double base = living.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).getBaseValue();
-            double total = base + level * 1.2;
+            double total = base + level * 0.5; // DÜŞÜRÜLDÜ: Eskiden 1.2 idi
             living.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).setBaseValue(total);
             living.setHealth((float) total);
         }
 
-        // Damage
+// Damage
         if (living.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE) != null) {
             double dmg = living.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE).getBaseValue();
-            living.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE).setBaseValue(dmg + level * 0.2);
+            living.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE).setBaseValue(dmg + level * 0.05); // Eskiden 0.2 idi
         }
+
 
         // Zırh
         ItemStack[] armor = armorSet.getArmor();
