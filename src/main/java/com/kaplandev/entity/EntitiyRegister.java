@@ -1,9 +1,10 @@
 package com.kaplandev.entity;
 
 import com.kaplandev.entity.boss.BulwarkEntity;
+import com.kaplandev.entity.mobpvp.MiniIronGolemEntity;
 import com.kaplandev.entity.skeleton.CustomSkeletonEntity;
 import com.kaplandev.entity.zombie.CustomZombieEntity;
-import static com.kaplandev.mobpvp.MOD_ID;
+
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
@@ -19,6 +20,7 @@ import net.minecraft.entity.EntityDimensions;
 import net.minecraft.world.Heightmap;
 
 import static com.kaplandev.entity.spawn.LuckySpawnLocation.LUCK;
+import static com.kaplandev.mobpvp.MOD_ID;
 
 public class EntitiyRegister {
 
@@ -55,6 +57,16 @@ public class EntitiyRegister {
                     .build()
     );
 
+    public static final EntityType<MiniIronGolemEntity> MINIGOLEM = Registry.register(
+            Registries.ENTITY_TYPE,
+            Identifier.of(MOD_ID, "mini_iron_golem"),
+            FabricEntityTypeBuilder.createMob()
+                    .entityFactory(MiniIronGolemEntity::new)
+                    .spawnGroup(SpawnGroup.MONSTER)
+                    .dimensions(EntityDimensions.fixed(0.8f, 2.0f))
+                    .trackRangeBlocks(80)
+                    .build()
+    );
 
 
 
@@ -104,5 +116,6 @@ public class EntitiyRegister {
 
     public static void registerAttributes() {
         FabricDefaultAttributeRegistry.register(BULWARK, BulwarkEntity.createAttributes());
+        FabricDefaultAttributeRegistry.register(MINIGOLEM, MiniIronGolemEntity.createAttributes());
     }
 }

@@ -28,6 +28,7 @@ public class NameUtils {
             case "custom_skeleton" -> "Deli İskelet";
             case "spider" -> "Örümcek";
             case "cave_spider" -> "Mağara Örümceği";
+            case "mini_iron_golem" -> "Minik Demir Golem";
             default -> cap(en.replace("_", " "));
         };
     }

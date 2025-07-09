@@ -4,10 +4,12 @@ import com.kaplandev.client.renderer.CustomZombieRenderer;
 import com.kaplandev.client.InfoSys.dink;
 import com.kaplandev.client.config.ModConfig;
 import com.kaplandev.client.gui.WelcomeScreen;
+import com.kaplandev.client.renderer.entity.mobpvp.MiniIronGolemRenderer;
 import com.kaplandev.client.renderer.entity.zombie.SuperZombieRenderer;
 import com.kaplandev.entity.EntitiyRegister;
 import com.kaplandev.client.renderer.entity.boss.BulwarkRenderer;
-import com.kaplandev.entity.EntitiyRegister;
+
+
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
@@ -28,6 +30,7 @@ public class mobpvpClient implements ClientModInitializer {
         EntityRendererRegistry.register(EntitiyRegister.CUSTOM_ZOMBIE, SuperZombieRenderer::new);
         EntityRendererRegistry.register(EntitiyRegister.CUSTOM_SKELETON, SkeletonEntityRenderer::new);
         EntityRendererRegistry.register(EntitiyRegister.BULWARK, BulwarkRenderer::new);
+        EntityRendererRegistry.register(EntitiyRegister.MINIGOLEM, MiniIronGolemRenderer::new);
         ModConfig.initialize();
 
 

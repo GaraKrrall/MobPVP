@@ -33,6 +33,8 @@ public class MobLevelRegistry {
 
         // Özel mob
         LEVEL_RANGES.put("custom_skeleton", new Integer[]{2, 6});
+
+        LEVEL_RANGES.put("mini_iron_golem", new Integer[]{1, 2});
     }
 
     public static Integer[] getLevelRange(String mobId) {

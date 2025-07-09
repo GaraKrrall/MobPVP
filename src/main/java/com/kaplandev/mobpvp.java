@@ -1,9 +1,12 @@
 package com.kaplandev;
 
+
+
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerEntityCombatEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
+import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableSource;
 
@@ -44,9 +47,11 @@ import com.kaplandev.level.MobLevelRegistry;
 import com.kaplandev.level.ZombieVariantAssigner;
 import com.kaplandev.api.PluginRegistry;
 import com.kaplandev.api.annotation.KaplanBedwars;
+import com.kaplandev.block.use.IRON_BLOCK;
 
 import static com.kaplandev.strings.path.Paths.BINGO;
 import static com.kaplandev.strings.path.Paths.MOBPVP;
+
 
 @KaplanBedwars
 public final class mobpvp implements ModInitializer {
@@ -67,6 +72,7 @@ public final class mobpvp implements ModInitializer {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
             ModCommands.register(dispatcher);
         });
+        UseBlockCallback.EVENT.register(IRON_BLOCK::onUseBlock);
 
 
         ServerEntityEvents.ENTITY_LOAD.register((entity, world) -> {

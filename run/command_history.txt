@@ -1,7 +1,3 @@
-/time set day
-/difficulty hard
-/difficulty peaceful
-/difficulty hard
 /effect give Player368 minecraft:absorption infinite 255
 /effect clear @a minecraft:absorption
 /enchant Player368 minecraft:sharpness 5
@@ -48,3 +44,7 @@
 /time set day
 /difficulty peaceful
 /difficulty easy
+/weather clear
+/tp 0 ~ 0
+/summon mobpvp:mini_iron_golem
+/time set day
