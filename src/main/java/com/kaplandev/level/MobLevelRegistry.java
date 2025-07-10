@@ -24,6 +24,7 @@ public class MobLevelRegistry {
         LEVEL_RANGES.put("enderman", new Integer[]{1, 6});
         LEVEL_RANGES.put("spider", new Integer[]{2, 4});
         LEVEL_RANGES.put("cave_spider", new Integer[]{3, 5});
+        LEVEL_RANGES.put("villager", new Integer[]{1, 2});
 
         // Pasif moblar (çok az seviye farkı olsun)
         LEVEL_RANGES.put("sheep", new Integer[]{1, 2});

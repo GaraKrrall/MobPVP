@@ -1,7 +1,5 @@
 package com.kaplandev;
 
-
-
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerEntityCombatEvents;
@@ -9,6 +7,7 @@ import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableSource;
+
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -36,7 +35,7 @@ import java.util.Map;
 
 import com.kaplandev.level.BossVariants;
 import com.kaplandev.block.Blocks;
-import com.kaplandev.commands.ModCommands;
+import com.kaplandev.command.ModCommands;
 import com.kaplandev.effect.LevelEffectHandler;
 import com.kaplandev.entity.EntitiyRegister;
 import com.kaplandev.entity.boss.BulwarkEntity;
@@ -49,6 +48,7 @@ import com.kaplandev.api.PluginRegistry;
 import com.kaplandev.api.annotation.KaplanBedwars;
 import com.kaplandev.block.use.IRON_BLOCK;
 
+
 import static com.kaplandev.strings.path.Paths.BINGO;
 import static com.kaplandev.strings.path.Paths.MOBPVP;
 
@@ -59,6 +59,7 @@ public final class mobpvp implements ModInitializer {
     public static final Map<String, Integer[]> LEVEL_RANGES = new HashMap<>();
 
     public static final String MOD_ID = MOBPVP;
+    public static final String MODID = MOBPVP;
 
 
     @Override

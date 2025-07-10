@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mobpvp:block/mob_table_side",
+    "up": "mobpvp:block/mob_table_top",
+    "north": "mobpvp:block/mob_table_side",
+    "south": "mobpvp:block/mob_table_side",
+    "west": "mobpvp:block/mob_table_side",
+    "east": "mobpvp:block/mob_table_side",
+    "particle": "mobpvp:block/mob_table_side"
+  }
+}

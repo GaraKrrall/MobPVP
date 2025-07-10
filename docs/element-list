@@ -9,13 +9,13 @@ com.kaplandev.build
 com.kaplandev.client
 com.kaplandev.client.config
 com.kaplandev.client.gui
-com.kaplandev.client.InfoSys
-com.kaplandev.client.keybinds
+com.kaplandev.client.info
+com.kaplandev.client.keybind
 com.kaplandev.client.renderer
 com.kaplandev.client.renderer.entity.boss
 com.kaplandev.client.renderer.entity.zombie
-com.kaplandev.commands
-com.kaplandev.commands.dashSys
+com.kaplandev.command
+com.kaplandev.command.dashSys
 com.kaplandev.effect
 com.kaplandev.entity
 com.kaplandev.entity.boss

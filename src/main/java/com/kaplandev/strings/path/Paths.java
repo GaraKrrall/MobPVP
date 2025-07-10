@@ -11,12 +11,14 @@ public class Paths {
     public static final String KALP_ITEM_KEY = "kalp";
     public static final String KEY_ITEM_KEY = "key";
     public static final String ORE_ITEM_KEY = "ore";
+    public static final String  MOB_TABLE_ITEM_KEY = "mobtable_item";
     public static final String EGG_SKELETON_KEY = "skeleton_egg";
     public static final String EGG_SUPER_ZOMBIE_KEY = "zombie_egg";
     public static final String HEARTH_PART_KEY = "hearth_part";
 
     //blocks
     public static final String  CRUDE_ACIDIC_ORE_KEY = "ore";
+    public static final String  MOB_TABLE_KEY = "mob_table";
 
 
     //tabs

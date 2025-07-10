@@ -1,7 +1,7 @@
 package com.kaplandev.client;
 
 import com.kaplandev.client.renderer.CustomZombieRenderer;
-import com.kaplandev.client.InfoSys.dink;
+import com.kaplandev.client.info.dink;
 import com.kaplandev.client.config.ModConfig;
 import com.kaplandev.client.gui.WelcomeScreen;
 import com.kaplandev.client.renderer.entity.mobpvp.MiniIronGolemRenderer;
