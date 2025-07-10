@@ -25,7 +25,15 @@ public class IRON_BLOCK {
                 && (stack.isOf(Items.CARVED_PUMPKIN) || stack.isOf(Items.JACK_O_LANTERN))
                 && hit.getSide() == Direction.UP
                 && world.getBlockState(pos).isOf(Blocks.IRON_BLOCK)
-                && world.getBlockState(pos.up()).isAir()) {
+                && world.getBlockState(pos.up()).isAir()
+
+                // SADECE 1 BLOK demir bloğu varsa çalış
+                && world.getBlockState(pos.north()).isAir()
+                && world.getBlockState(pos.south()).isAir()
+                && world.getBlockState(pos.east()).isAir()
+                && world.getBlockState(pos.west()).isAir()
+        ) {
+
 
             if (!player.isCreative()) stack.decrement(1);
 

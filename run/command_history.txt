@@ -1,7 +1,3 @@
-/effect give Player368 minecraft:absorption infinite 255
-/effect clear @a minecraft:absorption
-/enchant Player368 minecraft:sharpness 5
-/give Player434 mobpvp:ore
 /kill @e[type=mobpvp:custom_skeleton]
 /summon minecraft:warden
 /time set day
@@ -47,4 +43,8 @@
 /weather clear
 /tp 0 ~ 0
 /summon mobpvp:mini_iron_golem
+/time set day
+/effect give 0d284a1e-f8d2-4da6-9dfc-2cde604ecc14 minecraft:slowness infinite 255
+/weather clear
+/effect give @e[type=minecraft:iron_golem] minecraft:slowness infinite 255
 /time set day
