@@ -1,6 +1,7 @@
 package com.kaplandev.mixin.client;
 
 import com.kaplandev.client.gui.MobPVPConfigScreen;
+
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.gui.screen.Screen;

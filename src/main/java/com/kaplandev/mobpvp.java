@@ -4,11 +4,11 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerEntityCombatEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableSource;
-
-
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.EndermanEntity;
@@ -32,9 +32,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.UUID;
 
-import com.kaplandev.level.BossVariants;
+import com.kaplandev.api.PluginRegistry;
+import com.kaplandev.api.annotation.KaplanBedwars;
 import com.kaplandev.block.Blocks;
+import com.kaplandev.block.use.IRON_BLOCK;
 import com.kaplandev.command.ModCommands;
 import com.kaplandev.effect.LevelEffectHandler;
 import com.kaplandev.entity.EntitiyRegister;
@@ -42,12 +45,12 @@ import com.kaplandev.entity.boss.BulwarkEntity;
 import com.kaplandev.gen.ModWorldGen;
 import com.kaplandev.item.Items;
 import com.kaplandev.item.tab.Tabs;
+import com.kaplandev.level.BossVariants;
+import com.kaplandev.level.LevelAssigner;
 import com.kaplandev.level.MobLevelRegistry;
-import com.kaplandev.level.ZombieVariantAssigner;
-import com.kaplandev.api.PluginRegistry;
-import com.kaplandev.api.annotation.KaplanBedwars;
-import com.kaplandev.block.use.IRON_BLOCK;
-
+import com.kaplandev.level.player.PlayerLevelData;
+import com.kaplandev.level.player.PlayerLevelSaveHandler;
+import com.kaplandev.level.player.event.PlayerLevelEvents;
 
 import static com.kaplandev.strings.path.Paths.BINGO;
 import static com.kaplandev.strings.path.Paths.MOBPVP;
@@ -57,6 +60,7 @@ import static com.kaplandev.strings.path.Paths.MOBPVP;
 public final class mobpvp implements ModInitializer {
 
     public static final Map<String, Integer[]> LEVEL_RANGES = new HashMap<>();
+
 
     public static final String MOD_ID = MOBPVP;
     public static final String MODID = MOBPVP;
@@ -74,6 +78,21 @@ public final class mobpvp implements ModInitializer {
             ModCommands.register(dispatcher);
         });
         UseBlockCallback.EVENT.register(IRON_BLOCK::onUseBlock);
+        ServerLifecycleEvents.SERVER_STARTED.register(PlayerLevelSaveHandler::init);
+        ServerLifecycleEvents.SERVER_STOPPING.register(server -> PlayerLevelSaveHandler.save());
+
+
+
+        ServerTickEvents.END_WORLD_TICK.register(world -> {
+            for (var player : world.getPlayers()) {
+                UUID uuid = player.getUuid(); // bak aşağıdaki hatayla da ilişkili
+                int level = PlayerLevelData.getLevel(uuid);
+
+                PlayerLevelEvents.applyStatBonus(player, level);
+
+
+            }
+        });
 
 
         ServerEntityEvents.ENTITY_LOAD.register((entity, world) -> {
@@ -87,7 +106,7 @@ public final class mobpvp implements ModInitializer {
             int level = range[0] + entity.getRandom().nextInt(range[1] - range[0] + 1);
 
 
-            level = ZombieVariantAssigner.assign(living, mobId, level);
+            LevelAssigner.assignLevel(living, mobId, level);
 
 
             if (entity instanceof ZombieEntity zombie) {
@@ -143,9 +162,21 @@ public final class mobpvp implements ModInitializer {
         ServerEntityCombatEvents.AFTER_KILLED_OTHER_ENTITY.register((world, attacker, victim) -> {
             if (!(world instanceof ServerWorld serverWorld)) return;
             if (!(attacker instanceof ServerPlayerEntity player)) return;
-            serverWorld.getPlayers().forEach(p -> p.sendMessage(Text.literal(player.getName().getString() + " → " + victim.getName().getString() + " öldürdü!"), false));
-            if (Math.random() <= 0.01) player.sendMessage(Text.literal(BINGO), false);
+            if (victim.isAlive())
+                player.sendMessage(Text.literal("§6" + victim.getName().getString() + " §aöldürdün!"), true);
+            if (Math.random() <= 0.01) player.sendMessage(Text.literal(BINGO), true);
         });
+
+        ServerTickEvents.END_WORLD_TICK.register((ServerWorld world) -> {
+            for (var entity : world.iterateEntities()) {
+                if (!(entity instanceof LivingEntity living)) continue;
+                if (!living.hasCustomName()) continue;
+                if (!LevelAssigner.hasLevel(living)) continue;
+
+                LevelAssigner.updateDisplay(living);
+            }
+        });
+
 
         LootTableEvents.MODIFY.register((RegistryKey<LootTable> id, LootTable.Builder builder, LootTableSource source) -> {
             if (!"minecraft".equals(id.getValue().getNamespace())) return;

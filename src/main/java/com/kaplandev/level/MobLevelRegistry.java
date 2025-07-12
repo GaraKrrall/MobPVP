@@ -7,7 +7,7 @@ public class MobLevelRegistry {
     private static final Map<String, Integer[]> LEVEL_RANGES = new HashMap<>();
 
     static {
-        LEVEL_RANGES.put("zombie", new Integer[]{1, 3});
+        LEVEL_RANGES.put("zombie", new Integer[]{1, 20});
         LEVEL_RANGES.put("skeleton", new Integer[]{1, 3});
         LEVEL_RANGES.put("husk", new Integer[]{1, 3});
         LEVEL_RANGES.put("ghast", new Integer[]{3, 6});

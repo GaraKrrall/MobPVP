@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "mobpvp",
-  "version": "3.0.6-10.07.2025",
+  "version": "3.0.7-12.07.2025",
   "name": "MobPVP",
   "description": "Bir müsellesin mesaha-i sathiyesi, ka'idesiyle irtifa'ının hasıl-darbının nışfına müsavidir.",
   "authors": ["KaplanBedwars"],
@@ -15,7 +15,7 @@
     ],
     "client": [
       "com.kaplandev.client.mobpvpClient",
-      "com.kaplandev.client.keybind.DashKeybind"
+      "com.kaplandev.client.keybind.Keybinds"
     ],
     "main": [
       "com.kaplandev.mobpvp"

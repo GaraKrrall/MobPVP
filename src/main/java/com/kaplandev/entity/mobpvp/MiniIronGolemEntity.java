@@ -36,7 +36,7 @@ public class MiniIronGolemEntity extends IronGolemEntity {
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
         this.goalSelector.add(1, new FindIngotAndHealGolemGoal(this));  // Yeni eklenen goal
-        //this.goalSelector.add(2, new GolemHealGoal(this));              // Önceki özel heal goal
+        //this.goalSelector.add(2, new GolemHealGoal(this));
         this.goalSelector.add(3, new WanderAroundFarGoal(this, 0.6D));
         this.goalSelector.add(4, new LookAroundGoal(this));
     }

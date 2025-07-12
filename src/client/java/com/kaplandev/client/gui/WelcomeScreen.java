@@ -1,6 +1,6 @@
 package com.kaplandev.client.gui;
 
-import com.kaplandev.client.config.ModConfig;
+import com.kaplandev.client.config.ConfigManager;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
@@ -8,20 +8,30 @@ import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.text.Text;
 
 public class WelcomeScreen extends Screen {
+    private boolean isTurkish;
+
     public WelcomeScreen() {
-        super(Text.of("Orijinal KaplanBedwars"));
+        super(Text.of("KaplanBedwars"));
+
+        String languageCode = MinecraftClient.getInstance().options.language;
+        isTurkish = languageCode.toLowerCase().startsWith("tr");
     }
+
+
 
     @Override
     protected void init() {
         int centerX = this.width / 2;
         int centerY = this.height / 2;
 
-        this.addDrawableChild(ButtonWidget.builder(Text.of("Anladım"), button -> {
-            ModConfig.showWelcomePopup = false; // ✅ Bu ekran bir daha açılmasın
-            ModConfig.save();
-            MinecraftClient.getInstance().setScreen(null);
-        }).position(centerX - 50, centerY + 60).size(100, 20).build());
+        this.addDrawableChild(ButtonWidget.builder(
+                Text.of(isTurkish ? "Anladım" : "Got it"),
+                button -> {
+                    ConfigManager.showWelcomePopup = false;
+                    ConfigManager.save();
+                    MinecraftClient.getInstance().setScreen(null);
+                }
+        ).position(centerX - 50, centerY + 40).size(100, 20).build());
     }
 
     @Override
@@ -29,21 +39,19 @@ public class WelcomeScreen extends Screen {
         this.renderBackground(context, mouseX, mouseY, delta);
         super.render(context, mouseX, mouseY, delta);
 
-        int textX = this.width / 2 - 120; // metin kutusu başlangıcı
-        int textWidth = 240;              // maksimum genişlik
-        int y = this.height / 2 - 60;
+        int y = this.height / 2 - 20;
 
-        context.drawCenteredTextWithShadow(this.textRenderer, Text.of("Bu, orijinal bir KaplanBedwars eklentisidir."), this.width / 2, y, 0xFFFFFF);
+        String thankYou = isTurkish
+                ? "Modu indirdiğiniz için teşekkürler!"
+                : "Thanks for downloading the mod!";
+        String enjoy = isTurkish
+                ? "İyi oyunlar!"
+                : "Enjoy your game!";
+
+        context.drawCenteredTextWithShadow(this.textRenderer, Text.of(thankYou), this.width / 2, y, 0xFFFFFF);
         y += 20;
-
-        Text wrappedText = Text.of("Eklentide, her canlıya seviye atanır. Canlılar seviyesine göre daha fazla cana ve loota sahip olabilir. Dragon 2000 seviyedir. Bu da onu oyundaki en güçlü boss yapar. Ayrıca zombiler için özel seviye istemi bulunur.");
-        context.drawTextWrapped(this.textRenderer, wrappedText, textX, y, textWidth, 0xAAAAAA);
-
-        y += 60; // yaklaşık yükseklik ayarı
-        context.drawCenteredTextWithShadow(this.textRenderer, Text.of("İyi oyunlar."), this.width / 2, y, 0x888888);
+        context.drawCenteredTextWithShadow(this.textRenderer, Text.of(enjoy), this.width / 2, y, 0xAAAAAA);
     }
-
-
 
     @Override
     public boolean shouldPause() {

@@ -15,7 +15,7 @@
     ],
     "client": [
       "com.kaplandev.client.mobpvpClient",
-      "com.kaplandev.client.keybind.DashKeybind"
+      "com.kaplandev.client.keybind.Keybinds"
     ],
     "main": [
       "com.kaplandev.mobpvp"

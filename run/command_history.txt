@@ -1,12 +1,3 @@
-/setblock 33 -57 25 minecraft:sculk_shrieker
-/summon minecraft:warden
-/summon mobpvp:bulwark
-/effect give @e minecraft:levitation infinite 12
-/effect give @e minecraft:absorption infinite 12
-/effect give @e minecraft:saturation infinite 255
-/effect give @e minecraft:regeneration infinite 255
-/effect clear @e minecraft:levitation
-/summon mobpvp:bulwark
 /locatearena
 /tp 37 87 -144
 /summon mobpvp:bulwark
@@ -48,3 +39,12 @@
 /summon mobpvp:mini_iron_golema
 /summon mobpvp:mini_iron_golem,d
 /summon mobpvp:mini_iron_golem
+/time set day
+/summon minecraft:warden
+/summon minecraft:ender_dragon
+/time set day
+/effect give Player323 minecraft:strength infinite 255
+/effect clear
+/effect give Player323 minecraft:strength infinite 255
+/effect give Player462 minecraft:strength infinite 255
+/summon minecraft:ender_dragon
