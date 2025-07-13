@@ -6,6 +6,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
+
 public class SpawnLocation implements net.minecraft.entity.SpawnLocation {
     public static final SpawnLocation ON_GROUND = new SpawnLocation();
 

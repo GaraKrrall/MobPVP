@@ -8,6 +8,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Random;
 
+@Deprecated
 public class LuckySpawnLocation implements net.minecraft.entity.SpawnLocation {
     public static final SpawnLocation LUCK = new SpawnLocation();
     private static final Random random = new Random();
@@ -24,7 +25,7 @@ public class LuckySpawnLocation implements net.minecraft.entity.SpawnLocation {
     }
 
     @Override
-    public BlockPos adjustPosition(WorldView world, BlockPos pos) {
-        return pos;
-    }
+    public BlockPos adjustPosition(WorldView world, BlockPos pos) { return pos; }
+
+
 }

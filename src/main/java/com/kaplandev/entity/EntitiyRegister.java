@@ -1,17 +1,15 @@
 package com.kaplandev.entity;
 
 import com.kaplandev.entity.boss.BulwarkEntity;
-import com.kaplandev.entity.mobpvp.MiniIronGolemEntity;
-import com.kaplandev.entity.skeleton.CustomSkeletonEntity;
-import com.kaplandev.entity.zombie.CustomZombieEntity;
-
+import com.kaplandev.entity.mob.MadSkeletonEntity;
+import com.kaplandev.entity.passive.MiniIronGolemEntity;
+import com.kaplandev.entity.mob.MadZombieEntity;
+import com.kaplandev.strings.path.Paths;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
-import net.minecraft.entity.SpawnRestriction.SpawnPredicate;
 import net.minecraft.entity.*;
-import net.minecraft.entity.attribute.DefaultAttributeRegistry;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.registry.tag.BiomeTags;
 import net.minecraft.util.Identifier;
@@ -21,52 +19,15 @@ import net.minecraft.world.Heightmap;
 
 import static com.kaplandev.entity.spawn.LuckySpawnLocation.LUCK;
 import static com.kaplandev.mobpvp.MOD_ID;
+import static com.kaplandev.strings.path.Paths.MAD_SKELETON;
+import static com.kaplandev.strings.path.Paths.MAD_ZOMBIE;
 
 public class EntitiyRegister {
 
-    public static final EntityType<CustomZombieEntity> CUSTOM_ZOMBIE = Registry.register(
-            Registries.ENTITY_TYPE,
-            Identifier.of(MOD_ID, "custom_zombie"),
-            FabricEntityTypeBuilder.createMob()
-                    .entityFactory(CustomZombieEntity::new)
-                    .defaultAttributes(CustomZombieEntity::createCustomZombieAttributes)
-                    .spawnGroup(SpawnGroup.MONSTER)
-                    .dimensions(EntityDimensions.fixed(0.6f, 1.95f))
-                    .build()
-    );
-
-    public static final EntityType<CustomSkeletonEntity> CUSTOM_SKELETON = Registry.register(
-            Registries.ENTITY_TYPE,
-            Identifier.of(MOD_ID, "custom_skeleton"),
-            FabricEntityTypeBuilder.createMob()
-                    .entityFactory(CustomSkeletonEntity::new)
-                    .defaultAttributes(CustomSkeletonEntity::createCustomSkeletonAttributes)
-                    .spawnGroup(SpawnGroup.MONSTER)
-                    .dimensions(EntityDimensions.fixed(0.6f, 1.99f))
-                    .build()
-    );
-
-    public static final EntityType<BulwarkEntity> BULWARK = Registry.register(
-            Registries.ENTITY_TYPE,
-            Identifier.of(MOD_ID, "bulwark"),
-            FabricEntityTypeBuilder.createMob()
-                    .entityFactory(BulwarkEntity::new)
-                    .spawnGroup(SpawnGroup.MONSTER)
-                    .dimensions(EntityDimensions.fixed(0.8f, 2.0f))
-                    .trackRangeBlocks(80)
-                    .build()
-    );
-
-    public static final EntityType<MiniIronGolemEntity> MINIGOLEM = Registry.register(
-            Registries.ENTITY_TYPE,
-            Identifier.of(MOD_ID, "mini_iron_golem"),
-            FabricEntityTypeBuilder.createMob()
-                    .entityFactory(MiniIronGolemEntity::new)
-                    .spawnGroup(SpawnGroup.MONSTER)
-                    .dimensions(EntityDimensions.fixed(0.8f, 2.0f))
-                    .trackRangeBlocks(80)
-                    .build()
-    );
+    public static final EntityType<MadZombieEntity> CUSTOM_ZOMBIE = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, MAD_ZOMBIE), FabricEntityTypeBuilder.createMob().entityFactory(MadZombieEntity::new).defaultAttributes(MadZombieEntity::createCustomZombieAttributes).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.6f, 1.95f)).build());
+    public static final EntityType<MadSkeletonEntity> CUSTOM_SKELETON = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, MAD_SKELETON), FabricEntityTypeBuilder.createMob().entityFactory(MadSkeletonEntity::new).defaultAttributes(MadSkeletonEntity::createCustomSkeletonAttributes).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.6f, 1.99f)).build());
+    public static final EntityType<BulwarkEntity> BULWARK = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, Paths.BULWARK), FabricEntityTypeBuilder.createMob().entityFactory(BulwarkEntity::new).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.8f, 2.0f)).trackRangeBlocks(80).build());
+    public static final EntityType<MiniIronGolemEntity> MINIGOLEM = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, Paths.MINIGOLEM), FabricEntityTypeBuilder.createMob().entityFactory(MiniIronGolemEntity::new).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.8f, 2.0f)).trackRangeBlocks(80).build());
 
 
 
@@ -77,7 +38,10 @@ public class EntitiyRegister {
         System.out.println("Mob özellikleri kaydedildi");
     }
     private static void registerSpawns() {
-        // Custom ZOMBIE her biyomda gece doğsun
+
+        BiomeModifications.addSpawn(context -> context.hasTag(BiomeTags.IS_OVERWORLD), SpawnGroup.MONSTER, CUSTOM_SKELETON, 80, 1, 3);
+        SpawnRestriction.register(CUSTOM_SKELETON, LUCK, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, MobEntity::canMobSpawn);
+
      /*   BiomeModifications.addSpawn(
                 context -> context.hasTag(BiomeTags.IS_OVERWORLD), // Tüm overworld biyomları
                 SpawnGroup.MONSTER,
@@ -87,16 +51,6 @@ public class EntitiyRegister {
                 3   // max group
         );*/
 
-        // Custom SKELETON her biyomda gece doğsun
-        BiomeModifications.addSpawn(
-                context -> context.hasTag(BiomeTags.IS_OVERWORLD),
-                SpawnGroup.MONSTER,
-                CUSTOM_SKELETON,
-                80,
-                1,
-                3
-        );
-
         // Ayrıca onların gece gerçekten spawn olabilmesi için şuna da ihtiyacımız var:
     /*    SpawnRestriction.register(
                 CUSTOM_ZOMBIE,
@@ -105,12 +59,7 @@ public class EntitiyRegister {
                 MobEntity::canMobSpawn
         );*/
 
-        SpawnRestriction.register(
-                CUSTOM_SKELETON,
-                LUCK,
-                Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-                MobEntity::canMobSpawn
-        );
+
 
     }
 

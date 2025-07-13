@@ -1,13 +1,12 @@
 package com.kaplandev.block.use;
 
 import com.kaplandev.entity.EntitiyRegister;
-import com.kaplandev.entity.mobpvp.MiniIronGolemEntity;
+import com.kaplandev.entity.passive.MiniIronGolemEntity;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;

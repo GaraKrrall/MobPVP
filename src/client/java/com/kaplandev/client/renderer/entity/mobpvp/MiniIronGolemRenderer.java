@@ -1,8 +1,7 @@
 package com.kaplandev.client.renderer.entity.mobpvp;
 
 
-import com.kaplandev.entity.mobpvp.MiniIronGolemEntity;
-import net.minecraft.client.render.VertexConsumerProvider;
+import com.kaplandev.entity.passive.MiniIronGolemEntity;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.render.entity.model.EntityModelLayers;

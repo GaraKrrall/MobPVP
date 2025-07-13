@@ -1,14 +1,18 @@
 package com.kaplandev.entity.boss;
 
-import com.kaplandev.entity.zombie.CustomZombieEntity;
-import com.kaplandev.entity.boss.goal.BreakBlockGoal;
-import com.kaplandev.entity.boss.goal.FireballAttackGoal;
-import com.kaplandev.entity.boss.goal.SummonZombieGoal;
-import com.kaplandev.entity.boss.goal.TntSpawnGoal;
-
+import com.kaplandev.entity.goal.boss.BreakBlockGoal;
+import com.kaplandev.entity.goal.boss.FireballAttackGoal;
+import com.kaplandev.entity.goal.boss.SummonZombieGoal;
+import com.kaplandev.entity.goal.boss.TntSpawnGoal;
+import com.kaplandev.entity.mob.MadZombieEntity;
 
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ai.goal.*;
+import net.minecraft.entity.ai.goal.ActiveTargetGoal;
+import net.minecraft.entity.ai.goal.LookAroundGoal;
+import net.minecraft.entity.ai.goal.LookAtEntityGoal;
+import net.minecraft.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.entity.ai.goal.RevengeGoal;
+import net.minecraft.entity.ai.goal.WanderAroundFarGoal;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.boss.BossBar;
@@ -45,12 +49,10 @@ public class BulwarkEntity extends PathAwareEntity {
         this.goalSelector.add(4, new WanderAroundFarGoal(this, 1.0));
         this.goalSelector.add(5, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
         this.goalSelector.add(6, new LookAroundGoal(this));
-        this.goalSelector.add(7, new BreakBlockGoal(this)); // 👈 Yeni eklenen blok kırma davranışı
-
+        this.goalSelector.add(7, new BreakBlockGoal(this));
         this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
-        this.targetSelector.add(2, new ActiveTargetGoal<>(this, PathAwareEntity.class, 10, true, true, entity -> entity != this && !(entity instanceof CustomZombieEntity) && !(entity instanceof BulwarkEntity)));
-        ; // 👈 Her şeye saldır
-        this.targetSelector.add(3, new RevengeGoal(this)); // 👈 Saldıranı hatırla
+        this.targetSelector.add(2, new ActiveTargetGoal<>(this, PathAwareEntity.class, 10, true, true, entity -> entity != this && !(entity instanceof MadZombieEntity) && !(entity instanceof BulwarkEntity)));
+        this.targetSelector.add(3, new RevengeGoal(this));
     }
 
     @Override

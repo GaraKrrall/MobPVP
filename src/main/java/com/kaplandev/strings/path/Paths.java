@@ -31,5 +31,11 @@ public class Paths {
 
     //message
     public static final String  BINGO = "§6§lBİNGO! §fNadir ganimet kazandın!";
+
+    //mob
+    public static final String  MAD_ZOMBIE = "mad_zombie";
+    public static final String  MAD_SKELETON = "mad_skeleton";
+    public static final String  MINIGOLEM = "mini_iron_golem";
+    public static final String  BULWARK = "bulwark";
     private Paths() {}
 }
