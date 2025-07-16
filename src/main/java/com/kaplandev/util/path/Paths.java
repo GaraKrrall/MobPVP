@@ -1,4 +1,4 @@
-package com.kaplandev.strings.path;
+package com.kaplandev.util.path;
 
 public class Paths {
     //textures

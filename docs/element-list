@@ -27,7 +27,7 @@ com.kaplandev.entity.zombie.goal
 com.kaplandev.gen
 com.kaplandev.item
 com.kaplandev.item.feature
-com.kaplandev.item.tab
+com.kaplandev.item.group
 com.kaplandev.level
 com.kaplandev.mixin
 com.kaplandev.mixin.client

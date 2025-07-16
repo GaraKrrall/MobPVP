@@ -1,5 +1,6 @@
 package com.kaplandev;
 
+import com.kaplandev.item.group.ItemGroups;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerEntityCombatEvents;
@@ -42,9 +43,8 @@ import com.kaplandev.command.ModCommands;
 import com.kaplandev.effect.LevelEffectHandler;
 import com.kaplandev.entity.EntitiyRegister;
 import com.kaplandev.entity.boss.BulwarkEntity;
-import com.kaplandev.gen.ModWorldGen;
+import com.kaplandev.gen.WorldGen;
 import com.kaplandev.item.Items;
-import com.kaplandev.item.tab.Tabs;
 import com.kaplandev.level.BossVariants;
 import com.kaplandev.level.LevelAssigner;
 import com.kaplandev.level.MobLevelRegistry;
@@ -52,8 +52,8 @@ import com.kaplandev.level.player.PlayerLevelData;
 import com.kaplandev.level.player.PlayerLevelSaveHandler;
 import com.kaplandev.level.player.event.PlayerLevelEvents;
 
-import static com.kaplandev.strings.path.Paths.BINGO;
-import static com.kaplandev.strings.path.Paths.MOBPVP;
+import static com.kaplandev.util.path.Paths.BINGO;
+import static com.kaplandev.util.path.Paths.MOBPVP;
 
 
 @KaplanBedwars
@@ -68,11 +68,11 @@ public final class mobpvp implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ModWorldGen.register();
+        WorldGen.register();
         Items.init();
         Blocks.init();
         EntitiyRegister.register();
-        Tabs.init();
+        ItemGroups.init();
         PluginRegistry.callOnLoad();
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
             ModCommands.register(dispatcher);

@@ -1,11 +1,17 @@
 {
   "mappings": {
+    "com/kaplandev/mixin/client/InGameHudMixin": {
+      "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V"
+    },
     "com/kaplandev/mixin/client/TitleScreenMixin": {
       "init": "Lnet/minecraft/class_442;method_25426()V"
     }
   },
   "data": {
     "named:intermediary": {
+      "com/kaplandev/mixin/client/InGameHudMixin": {
+        "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V"
+      },
       "com/kaplandev/mixin/client/TitleScreenMixin": {
         "init": "Lnet/minecraft/class_442;method_25426()V"
       }

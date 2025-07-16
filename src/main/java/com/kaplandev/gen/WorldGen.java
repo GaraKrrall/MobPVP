@@ -16,9 +16,11 @@ import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.PlacedFeature;
 
-public class ModWorldGen {
+import static com.kaplandev.util.path.Paths.MOBPVP;
 
-    public static final Identifier ARENA_ID = Identifier.of("mobpvp", "arena_feature");
+public class WorldGen {
+
+    public static final Identifier ARENA_ID = Identifier.of(MOBPVP, "arena_feature");
     public static final Feature<?> ARENA_FEATURE = new ArenaFeature();
 
     public static void register() {

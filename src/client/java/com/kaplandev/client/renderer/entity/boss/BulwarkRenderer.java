@@ -3,7 +3,7 @@ package com.kaplandev.client.renderer.entity.boss;
 import com.kaplandev.entity.boss.BulwarkEntity;
 
 import static com.kaplandev.mobpvp.MOD_ID;
-import static com.kaplandev.strings.path.Paths.BULWARK_TEXTURE;
+import static com.kaplandev.util.path.Paths.BULWARK_TEXTURE;
 
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;

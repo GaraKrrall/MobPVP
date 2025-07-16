@@ -11,5 +11,7 @@
   "screen.kaplandev.level.title": "Seviye Paneli",
   "screen.kaplandev.level.level": "Seviye: %s",
   "screen.kaplandev.level.xp": "XP: %s / %s",
-  "screen.kaplandev.level.close": "Kapat"
+  "screen.kaplandev.level.close": "Kapat",
+  "key.mobpvp.screenerror": "Oyunucu seviye sistemi sadece tek oyunculuda çalışır.",
+  "itemGroup.eggs": "MobPVP Çağırma Yumurtaları"
 }

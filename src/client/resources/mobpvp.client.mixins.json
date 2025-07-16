@@ -4,7 +4,8 @@
   "package": "com.kaplandev.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "TitleScreenMixin"
+    "TitleScreenMixin",
+    "InGameHudMixin"
 
   ],
   "injectors": {

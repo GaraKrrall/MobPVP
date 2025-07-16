@@ -1,6 +1,7 @@
 package com.kaplandev.mixin.client;
 
-/* com.kaplandev.level.player.PlayerLevelData;
+
+import com.kaplandev.level.player.PlayerLevelData;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;
@@ -39,4 +40,3 @@ public class InGameHudMixin {
     }
 }
 
-*/

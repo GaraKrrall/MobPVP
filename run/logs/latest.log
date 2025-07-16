@@ -1,5 +1,5 @@
-[17:14:25] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
-[17:14:25] [main/INFO] (FabricLoader) Loading 55 mods:
+[18:06:08] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
+[18:06:08] [main/INFO] (FabricLoader) Loading 55 mods:
 	- fabric-api 0.116.1+1.21.1
 	- fabric-api-base 0.4.42+6573ed8c19
 	- fabric-api-lookup-api-v1 1.6.71+b559734419
@@ -54,123 +54,93 @@
 	- java 21
 	- minecraft 1.21.1
 	- mixinextras 0.4.1
-	- mobpvp 3.0.6-10.07.2025
-[17:14:26] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/akgls/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/22f9eb729e216a091673a574a5906dc1b9027fb3/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[17:14:26] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[17:14:26] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[17:14:26] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[17:14:28] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[17:14:30] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 1205 milliseconds
-[17:14:39] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[17:14:39] [Render thread/INFO] (Minecraft) Setting user: Player566
-[17:14:40] [Render thread/INFO] (Minecraft) [STDOUT]: Custom entities registered.
-[17:14:40] [Render thread/INFO] (Minecraft) [STDOUT]: Mob özellikleri kaydedildi
-[17:14:40] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[17:14:41] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
-[17:14:43] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, mobpvp
-[17:14:43] [Worker-Main-1/INFO] (Minecraft) Found unifont_all_no_pua-15.1.05.hex, loading
-[17:14:44] [Worker-Main-1/INFO] (Minecraft) Found unifont_jp_patch-15.1.05.hex, loading
-[17:14:45] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'mobpvp:item/key' referenced from: mobpvp:item/key: java.io.FileNotFoundException: mobpvp:models/item/key.json
-[17:14:46] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
-[17:14:46] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[17:14:46] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on SES (VB-Audio Virtual Cable)
-[17:14:46] [Render thread/INFO] (Minecraft) Sound engine started
-[17:14:46] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[17:14:46] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[17:14:46] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[17:14:46] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[17:14:46] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[17:14:46] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[17:14:46] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[17:14:46] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[17:14:46] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[17:14:47] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[17:14:47] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[17:14:47] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[17:14:47] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[17:14:47] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[17:14:47] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[17:15:07] [Render thread/INFO] (Minecraft) Loaded 1299 recipes
-[17:15:07] [Render thread/INFO] (Minecraft) Loaded 1417 advancements
-[17:15:07] [Render thread/WARN] (Minecraft) Not all defined tags for registry ResourceKey[minecraft:root / minecraft:entity_type] are present in data pack: mobpvp:hostile_mobs
-[17:15:08] [Render thread/INFO] (BiomeModificationImpl) Applied 54 biome modifications to 53 of 64 new biomes in 15.48 ms
-[17:15:08] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.1
-[17:15:08] [Server thread/INFO] (Minecraft) Generating keypair
-[17:15:08] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[17:15:09] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %0
-[17:15:09] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %0
-[17:15:09] [Render thread/INFO] (Minecraft) Time elapsed: 563 ms
-[17:15:09] [Server thread/INFO] (Minecraft) Changing view distance to 32, from 10
-[17:15:09] [Server thread/INFO] (Minecraft) Changing simulation distance to 11, from 0
-[17:15:10] [Server thread/INFO] (Minecraft) Player566[local:E:f1329d19] logged in with entity id 12 at (51.79319459895633, -53.006862994049804, -568.9666617148168)
-[17:15:11] [Server thread/INFO] (Minecraft) Player566 oyuna katıldı
-[17:15:11] [Server thread/INFO] (Minecraft) Player566, [Koruyucu Gibi Giyin] hedefine ulaştı
-[17:15:11] [Server thread/INFO] (Minecraft) Player566, [Elmaslar!] gelişimini yaptı
-[17:15:11] [Server thread/INFO] (Minecraft) Player566, [Donanım Edin] gelişimini yaptı
-[17:15:11] [Server thread/INFO] (Minecraft) Player566, [Kanatlara Kavuş] meydan okumasını tamamladı
-[17:15:11] [Server thread/INFO] (Minecraft) Player566, [İstikbal Göklerdedir] hedefine ulaştı
-[17:15:11] [Server thread/INFO] (Minecraft) Player566, [Yeni Nesil] hedefine ulaştı
-[17:15:11] [Server thread/INFO] (Minecraft) Player566, [MobPVP] meydan okumasını tamamladı
-[17:15:11] [Server thread/INFO] (Minecraft) Player566, [Karanlığın Kalbine] meydan okumasını tamamladı
-[17:15:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Player566, [Koruyucu Gibi Giyin] hedefine ulaştı
-[17:15:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Player566, [Elmaslar!] gelişimini yaptı
-[17:15:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Player566, [Donanım Edin] gelişimini yaptı
-[17:15:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Player566, [Kanatlara Kavuş] meydan okumasını tamamladı
-[17:15:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Player566, [İstikbal Göklerdedir] hedefine ulaştı
-[17:15:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Player566, [Yeni Nesil] hedefine ulaştı
-[17:15:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Player566, [MobPVP] meydan okumasını tamamladı
-[17:15:27] [Render thread/INFO] (Minecraft) Loaded 82 advancements
-[17:15:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Player566, [Karanlığın Kalbine] meydan okumasını tamamladı
-[17:15:27] [Render thread/INFO] (Minecraft) Loaded 82 advancements
-[17:15:32] [Render thread/INFO] (Minecraft) [System] [CHAT] §aDash aktif!
-[17:16:07] [Server thread/INFO] (Minecraft) [Player566: Yeni bir §c[Seviye: 204] §fEnder Ejderhası §7- §a200,0§7/§c200 ❤ çağrıldı]
-[17:16:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Yeni bir §c[Seviye: 204] §fEnder Ejderhası §7- §a200,0§7/§c200 ❤ çağrıldı
-[17:16:07] [Server thread/INFO] (Minecraft) Player566, [İlk saldırı] gelişimini yaptı
-[17:16:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Player566, [İlk saldırı] gelişimini yaptı
-[17:16:08] [Render thread/INFO] (Minecraft) Loaded 82 advancements
-[17:16:09] [Server thread/INFO] (Minecraft) Player566, [Canavar Avcısı] gelişimini yaptı
-[17:16:09] [Server thread/INFO] (Minecraft) Player566, [End’i Özgür Bırak] gelişimini yaptı
-[17:16:09] [Server thread/INFO] (Minecraft) Named entity EnderDragonEntity['§c[Seviye: 204] §fEnder Ejderhası §7- §a5,9§7/§c253 ❤'/270, l='ServerLevel[Ana dünya]', x=53.25, y=-59.80, z=-576.48] died: §c[Seviye: 204] §fEnder Ejderhası §7- §a5,9§7/§c253 ❤, Player566 tarafından katledildi
-[17:16:09] [Render thread/INFO] (Minecraft) [System] [CHAT] Player566, [Canavar Avcısı] gelişimini yaptı
-[17:16:09] [Render thread/INFO] (Minecraft) [System] [CHAT] Player566, [End’i Özgür Bırak] gelişimini yaptı
-[17:16:09] [Render thread/INFO] (Minecraft) Loaded 123 advancements
-[17:16:25] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[17:16:26] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
-[17:16:27] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
-[17:16:27] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
-[17:16:47] [Render thread/INFO] (Minecraft) Loaded 124 advancements
-[17:16:53] [Server thread/INFO] (Minecraft) Named entity CustomZombieEntity['§c[Seviye: 26] §fCustom Zombie §7- §a53,0§7/§c53 ❤'/360, l='ServerLevel[Ana dünya]', x=61.50, y=-60.00, z=-571.50] died: §c[Seviye: 26] §fCustom Zombie §7- §a53,0§7/§c53 ❤, Player566 tarafından katledildi
-[17:16:58] [Server thread/INFO] (Minecraft) Named entity CustomZombieEntity['§c[Seviye: 8] §fCustom Zombie §7- §a42,0§7/§c42 ❤'/371, l='ServerLevel[Ana dünya]', x=60.82, y=-60.00, z=-570.03] died: §c[Seviye: 8] §fCustom Zombie §7- §a42,0§7/§c42 ❤, Player566 tarafından katledildi
-[17:17:03] [Server thread/INFO] (Minecraft) Villager VillagerEntity['§c[Seviye: 1] §fVillager §7- §a26,9§7/§c27 ❤'/379, l='ServerLevel[Ana dünya]', x=58.50, y=-60.00, z=-574.50] died, message: '§c[Seviye: 1] §fVillager §7- §a26,9§7/§c27 ❤, Player566 tarafından katledildi'
-[17:17:03] [Server thread/INFO] (Minecraft) Named entity VillagerEntity['§c[Seviye: 1] §fVillager §7- §a26,9§7/§c27 ❤'/379, l='ServerLevel[Ana dünya]', x=58.50, y=-60.00, z=-574.50] died: §c[Seviye: 1] §fVillager §7- §a26,9§7/§c27 ❤, Player566 tarafından katledildi
-[17:17:03] [Render thread/INFO] (Minecraft) Villager VillagerEntity['§c[Seviye: 1] §fVillager §7- §a26,9§7/§c27 ❤'/379, l='ClientLevel', x=58.50, y=-60.00, z=-574.50] died, message: '§c[Seviye: 1] §fVillager §7- §a26,9§7/§c27 ❤ öldü'
-[17:17:13] [Server thread/INFO] (Minecraft) Named entity IronGolemEntity['§c[Seviye: 24] §fIron Golem §7- §a132,2§7/§c132 ❤'/385, l='ServerLevel[Ana dünya]', x=56.50, y=-60.00, z=-577.50] died: §c[Seviye: 24] §fIron Golem §7- §a132,2§7/§c132 ❤, Player566 tarafından katledildi
-[17:17:18] [Server thread/INFO] (Minecraft) [Player566: Yeni bir §c[Seviye: 210] §fEnder Ejderhası §7- §a200,0§7/§c200 ❤ çağrıldı]
-[17:17:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Yeni bir §c[Seviye: 210] §fEnder Ejderhası §7- §a200,0§7/§c200 ❤ çağrıldı
-[17:17:19] [Server thread/INFO] (Minecraft) Named entity EnderDragonEntity['§c[Seviye: 210] §fEnder Ejderhası §7- §a57,7§7/§c254 ❤'/395, l='ServerLevel[Ana dünya]', x=39.81, y=-59.90, z=-576.86] died: §c[Seviye: 210] §fEnder Ejderhası §7- §a57,7§7/§c254 ❤, Player566 tarafından katledildi
-[17:17:23] [Server thread/INFO] (Minecraft) [Player566: Yeni bir §c[Seviye: 246] §fEnder Ejderhası §7- §a200,0§7/§c200 ❤ çağrıldı]
-[17:17:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Yeni bir §c[Seviye: 246] §fEnder Ejderhası §7- §a200,0§7/§c200 ❤ çağrıldı
-[17:17:25] [Server thread/INFO] (Minecraft) Named entity EnderDragonEntity['§c[Seviye: 246] §fEnder Ejderhası §7- §a6,6§7/§c255 ❤'/426, l='ServerLevel[Ana dünya]', x=44.56, y=-59.76, z=-551.23] died: §c[Seviye: 246] §fEnder Ejderhası §7- §a6,6§7/§c255 ❤, Player566 tarafından katledildi
-[17:17:39] [Server thread/INFO] (Minecraft) [Player566: Oyun modunuz Hayatta Kalma Modu olarak ayarlandı]
-[17:17:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Hayatta Kalma Modu olarak ayarlandı
-[17:17:42] [Server thread/INFO] (Minecraft) [Player566: Oyun modunuz Yaratıcı Mod olarak ayarlandı]
-[17:17:42] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Yaratıcı Mod olarak ayarlandı
-[17:17:46] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[17:17:46] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
-[17:17:46] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
-[17:17:46] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
-[17:17:51] [Render thread/INFO] (Minecraft) Stopping!
-[17:17:51] [Server thread/INFO] (Minecraft) Player566 lost connection: Bağlantı kesildi
-[17:17:51] [Server thread/INFO] (Minecraft) Player566 oyundan ayrıldı
-[17:17:51] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[17:17:51] [Server thread/INFO] (Minecraft) Stopping server
-[17:17:51] [Server thread/INFO] (Minecraft) Saving players
-[17:17:51] [Server thread/INFO] (Minecraft) Saving worlds
-[17:17:51] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
-[17:17:51] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
-[17:17:51] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
-[17:17:51] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (Yeni Dünya): All chunks are saved
-[17:17:51] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[17:17:51] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[17:17:51] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
-[17:17:52] [Thread-3/INFO] (Minecraft) [STDOUT]: [MobPVP] Mod kapanıyor...
+	- mobpvp 3.0.7-12.07.2025
+[18:06:09] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/akgls/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/22f9eb729e216a091673a574a5906dc1b9027fb3/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[18:06:09] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[18:06:09] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[18:06:09] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[18:06:11] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[18:06:14] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 1172 milliseconds
+[18:06:23] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[18:06:23] [Render thread/INFO] (Minecraft) Setting user: Player923
+[18:06:23] [Render thread/INFO] (Minecraft) [STDOUT]: Custom entities registered.
+[18:06:23] [Render thread/INFO] (Minecraft) [STDOUT]: Mob özellikleri kaydedildi
+[18:06:24] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[18:06:25] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
+[18:06:27] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, mobpvp
+[18:06:28] [Worker-Main-1/INFO] (Minecraft) Found unifont_all_no_pua-15.1.05.hex, loading
+[18:06:28] [Worker-Main-1/INFO] (Minecraft) Found unifont_jp_patch-15.1.05.hex, loading
+[18:06:30] [Worker-Main-3/WARN] (Minecraft) Unable to load model: 'mobpvp:item/key' referenced from: mobpvp:item/key: java.io.FileNotFoundException: mobpvp:models/item/key.json
+[18:06:31] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[18:06:31] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[18:06:31] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on SES (VB-Audio Virtual Cable)
+[18:06:31] [Render thread/INFO] (Minecraft) Sound engine started
+[18:06:31] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[18:06:31] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[18:06:31] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[18:06:31] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[18:06:31] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[18:06:31] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[18:06:31] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[18:06:31] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[18:06:31] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[18:06:32] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[18:06:32] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[18:06:32] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[18:06:32] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[18:06:32] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[18:06:32] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[18:06:40] [Render thread/INFO] (Minecraft) Loaded 1299 recipes
+[18:06:40] [Render thread/INFO] (Minecraft) Loaded 1417 advancements
+[18:06:40] [Render thread/WARN] (Minecraft) Not all defined tags for registry ResourceKey[minecraft:root / minecraft:entity_type] are present in data pack: mobpvp:hostile_mobs
+[18:06:41] [Render thread/INFO] (BiomeModificationImpl) Applied 54 biome modifications to 53 of 64 new biomes in 28.44 ms
+[18:06:41] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.1
+[18:06:41] [Server thread/INFO] (Minecraft) Generating keypair
+[18:06:42] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[18:06:42] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %0
+[18:06:42] [Render thread/INFO] (Minecraft) Time elapsed: 657 ms
+[18:06:43] [Server thread/INFO] (Minecraft) Changing view distance to 32, from 10
+[18:06:43] [Server thread/INFO] (Minecraft) Changing simulation distance to 11, from 0
+[18:06:44] [Server thread/INFO] (Minecraft) Player923[local:E:0bcce020] logged in with entity id 12 at (28.293829565955484, -60.0, -500.86529229930323)
+[18:06:44] [Server thread/INFO] (Minecraft) Player923 oyuna katıldı
+[18:06:45] [Server thread/INFO] (Minecraft) Player923, [Koruyucu Gibi Giyin] hedefine ulaştı
+[18:06:45] [Server thread/INFO] (Minecraft) Player923, [Elmaslar!] gelişimini yaptı
+[18:06:45] [Server thread/INFO] (Minecraft) Player923, [Donanım Edin] gelişimini yaptı
+[18:06:45] [Server thread/INFO] (Minecraft) Player923, [Kanatlara Kavuş] meydan okumasını tamamladı
+[18:06:45] [Server thread/INFO] (Minecraft) Player923, [İstikbal Göklerdedir] hedefine ulaştı
+[18:06:45] [Server thread/INFO] (Minecraft) Player923, [Yeni Nesil] hedefine ulaştı
+[18:06:45] [Server thread/INFO] (Minecraft) Player923, [MobPVP] meydan okumasını tamamladı
+[18:06:45] [Server thread/INFO] (Minecraft) Player923, [Karanlığın Kalbine] meydan okumasını tamamladı
+[18:07:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Player923, [Koruyucu Gibi Giyin] hedefine ulaştı
+[18:07:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Player923, [Elmaslar!] gelişimini yaptı
+[18:07:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Player923, [Donanım Edin] gelişimini yaptı
+[18:07:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Player923, [Kanatlara Kavuş] meydan okumasını tamamladı
+[18:07:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Player923, [İstikbal Göklerdedir] hedefine ulaştı
+[18:07:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Player923, [Yeni Nesil] hedefine ulaştı
+[18:07:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Player923, [MobPVP] meydan okumasını tamamladı
+[18:07:00] [Render thread/INFO] (Minecraft) Loaded 84 advancements
+[18:07:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Player923, [Karanlığın Kalbine] meydan okumasını tamamladı
+[18:07:00] [Render thread/INFO] (Minecraft) Loaded 84 advancements
+[18:07:05] [Server thread/INFO] (Minecraft) [Player923: Oyun modunuz Yaratıcı Mod olarak ayarlandı]
+[18:07:05] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Yaratıcı Mod olarak ayarlandı
+[18:07:29] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 29] §fMad Skeleton §7- §a6,9§7/§c54 ❤'/381, l='ServerLevel[Ana dünya]', x=24.12, y=-60.00, z=-506.53] died: §c[Seviye: 29] §fMad Skeleton §7- §a6,9§7/§c54 ❤, §c[Seviye: 39] §fMad Zombie §7- §a39,9§7/§c57 ❤ tarafından katledildi
+[18:07:33] [Render thread/INFO] (Minecraft) [System] [CHAT] §aDash aktif!
+[18:07:38] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Seviye: 39] §fMad Zombie §7- §a29,9§7/§c57 ❤'/376, l='ServerLevel[Ana dünya]', x=33.30, y=-60.00, z=-516.30] died: §c[Seviye: 39] §fMad Zombie §7- §a29,9§7/§c57 ❤, Player923 tarafından katledildi
+[18:07:38] [Server thread/INFO] (Minecraft) Player923, [İlk saldırı] gelişimini yaptı
+[18:07:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Player923, [İlk saldırı] gelişimini yaptı
+[18:07:38] [Render thread/INFO] (Minecraft) Loaded 120 advancements
+[18:07:45] [Render thread/INFO] (Minecraft) Stopping!
+[18:07:45] [Server thread/INFO] (Minecraft) Player923 lost connection: Bağlantı kesildi
+[18:07:45] [Server thread/INFO] (Minecraft) Player923 oyundan ayrıldı
+[18:07:45] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[18:07:45] [Server thread/INFO] (Minecraft) Stopping server
+[18:07:45] [Server thread/INFO] (Minecraft) Saving players
+[18:07:45] [Server thread/INFO] (Minecraft) Saving worlds
+[18:07:46] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
+[18:07:46] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
+[18:07:46] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
+[18:07:46] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (Yeni Dünya): All chunks are saved
+[18:07:46] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[18:07:46] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[18:07:46] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[18:07:46] [Thread-3/INFO] (Minecraft) [STDOUT]: [MobPVP] Mod kapanıyor...

@@ -32,10 +32,17 @@ public class LevelScreen extends Screen {
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        super.render(context, mouseX, mouseY, delta);
-
         MinecraftClient client = MinecraftClient.getInstance();
-        if (client.player == null) return;
+        if (client.player == null || client.world == null) return;
+
+        // Eğer oyuncu bir sunucudaysa (entegre değilse yani local değilse)
+        if (!client.isInSingleplayer()) {
+            client.setScreen(null); // Ekranı kapat
+            client.player.sendMessage(Text.translatable("key.mobpvp.screenerror"), true);
+            return;
+        }
+
+        super.render(context, mouseX, mouseY, delta);
 
         UUID uuid = client.player.getUuid();
         int level = PlayerLevelData.getLevel(uuid);
@@ -48,10 +55,8 @@ public class LevelScreen extends Screen {
         context.drawCenteredTextWithShadow(textRenderer, "§6SEVİYE PANELİ", centerX, centerY - 60, 0xFFFFFF);
         context.drawCenteredTextWithShadow(textRenderer, "§eSeviye: §a" + level, centerX, centerY - 30, 0xFFFFFF);
         context.drawCenteredTextWithShadow(textRenderer, "§eXP: §7" + xp + "§f/§7" + xpToNext, centerX, centerY - 10, 0xFFFFFF);
-
-
-
     }
+
 
     @Override
     public boolean shouldPause() {

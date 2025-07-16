@@ -1,16 +1,15 @@
 package com.kaplandev.entity.spawn;
 
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.SpawnRestriction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Random;
 
-@Deprecated
+@Deprecated(forRemoval = true)
 public class LuckySpawnLocation implements net.minecraft.entity.SpawnLocation {
-    public static final SpawnLocation LUCK = new SpawnLocation();
+    public static final SpawnLocation LUCKY_SPAWN = new SpawnLocation();
     private static final Random random = new Random();
 
     @Override

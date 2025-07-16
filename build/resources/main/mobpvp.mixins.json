@@ -6,7 +6,6 @@
   "mixins": [
 
     "LivingEntityMixin",
-    "PlayerEntityMixin",
     "LivingEntityMixin2"
   ],
   "injectors": {
