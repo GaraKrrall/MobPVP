@@ -22,7 +22,6 @@ import static com.kaplandev.mobpvp.MOD_ID;
 import static com.kaplandev.util.path.Paths.MAD_SKELETON;
 import static com.kaplandev.util.path.Paths.MAD_ZOMBIE;
 
-
 public class EntitiyRegister {
 
     public static final EntityType<MadZombieEntity> CUSTOM_ZOMBIE;

@@ -26,10 +26,8 @@ public class WorldGen {
     public static void register() {
         // Feature kaydı (sadece bu, diğerleri JSON olacak!)
         Registry.register(Registries.FEATURE, ARENA_ID, ARENA_FEATURE);
-
         // PlacedFeature JSON ile tanımlandığı için sadece anahtarla biyomlara bağlanır
         RegistryKey<PlacedFeature> placedArenaKey = RegistryKey.of(RegistryKeys.PLACED_FEATURE, ARENA_ID);
-
 
         BiomeModifications.addFeature(
                 BiomeSelectors.foundInOverworld()
@@ -42,9 +40,5 @@ public class WorldGen {
                 GenerationStep.Feature.SURFACE_STRUCTURES,
                 RegistryKey.of(RegistryKeys.PLACED_FEATURE, ARENA_ID)
         );
-
-
-
-
     }
 }

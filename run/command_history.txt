@@ -1,6 +1,3 @@
-/tp 37 87 -144
-/summon mobpvp:bulwark
-/locate structure minecraft:ancient_city
 /tp @s 240 ~ 16
 /effect give Player646 minecraft:night_vision infinite
 /effect give Player646 minecraft:night_vision infinite 255
@@ -48,3 +45,6 @@
 /effect give Player462 minecraft:strength infinite 255
 /summon minecraft:ender_dragon
 /summon mobpvp:mini_iron_golem
+/effect clear
+/summon minecraft:iron_golem
+/time set day

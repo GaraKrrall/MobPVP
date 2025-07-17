@@ -11,5 +11,8 @@
   "screen.kaplandev.level.title": "Level Panel",
   "screen.kaplandev.level.level": "Level: %s",
   "screen.kaplandev.level.xp": "XP: %s / %s",
-  "screen.kaplandev.level.close": "Close"
+  "screen.kaplandev.level.close": "Close",
+  "key.mobpvp.screenerror": "The player level system only works in singleplayer.",
+  "itemGroup.eggs": "MobPVP Spawn Eggs"
+
 }
