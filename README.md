@@ -1,46 +1,59 @@
-# A KaplanBedwas Original Team: MobPVP
+# A KaplanBedwas Original Team: [MobPVP](https://github.com/KaplanBedwars/MobPVP)
 
----
+_Compatible with Modpacks_
+
+***
+
+[Help me translate this mod into other languages!](https://crowdin.com/project/mobpvp)
 
 **MobPVP** transforms your Minecraft survival experience by assigning levels to every living creature in the game. Based on these levels, mobs gain different abilities, attributes, and loot chances, creating a more challenging and rewarding combat system.
+
+![image](https://media.forgecdn.net/attachments/description/1294652/description_f8c05ce0-d7ec-467b-8dd4-ff3b734253c5.png)
+
+***
+
+![Custom Status Effects](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3.2.0/assets/cozy/available/github_64h.png)  ![Custom Status Effects](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/fabric_vector.svg) ![Custom Status Effects](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3.2.0/assets/cozy/unsupported/forge_vector.svg)
+
+**_This mod supports Plugins! [Click for an official plugin](https://www.curseforge.com/minecraft/mc-mods/mobpvp-settings-disabled)_**
+
+If you want to make a plugin for Mobpvp mod, [you can use this.](https://github.com/KaplanBedwars/Mobpvp-Example-Plugin)
 
 ## 🎯 Key Features
 
 ### 🧟 Level System for All Mobs
-- Every mob is given a random level on spawn based on its type.
-- Higher-level mobs are stronger and more dangerous.
+
+*   Every mob is given a random level on spawn based on its type.
+*   Higher-level mobs are stronger and more dangerous.
 
 ### 💀 Unique Skeleton Variant
-- Introduces a special skeleton type with enhanced stats and equipment.
+
+*   Introduces a special skeleton type with enhanced stats and equipment.
 
 ### ❤️ One Extra Heart for the Player
-- Players are granted an additional heart to prepare them for tougher mobs.
 
-### 🧟‍♂️ Special Zombie Levels
-- Zombies have a detailed leveling system with over **25 rare and named variants**.
-- Unique zombie types include:
-  - *"Mad Uncle"*
-  - *"Mini Miran"*
-  - *"Angry Miran Baba"*
-  - ...and more, each with unique names, stats, gear, and effects.
+*   Players are granted an additional heart to prepare them for tougher mobs.
 
 ### 📦 Level-Based Loot Drops
-- Higher-level mobs have increased chances to drop powerful loot.
-- Includes rare **"Bingo Loot"** and custom rewards.
+
+*   Higher-level mobs have increased chances to drop powerful loot.
+*   Includes rare **"Bingo Loot"** and custom rewards.
 
 ### ⚔️ Mini-Bosses & Easter Eggs
-- Some zombies spawn as **mini-bosses** or **Easter egg bosses**, such as:
-  - *"Arabic Toast Boss"*
-  - *"GIANT BOSS"*
-  - ...featuring enchanted **Netherite** or **Diamond** gear.
+
+*   Some zombies spawn as **mini-bosses** or **Easter egg bosses**, such as:
+    *   _"Arabic Toast Boss"_
+    *   _"GIANT BOSS"_
+    *   …featuring enchanted **Netherite** or **Diamond** gear.
 
 ### 🧪 Custom Status Effects
-- Mobs receive powerful effects based on their level.
+
+*   Mobs receive powerful effects based on their level.
 
 ### 🔥 Extremely Strong Endgame Mobs
-- Boss mobs like the **Wither**, **Ender Dragon**, and **Warden** can reach absurdly high levels with dangerous abilities.
 
----
+*   Boss mobs like the **Wither**, **Ender Dragon**, and **Warden** can reach absurdly high levels with dangerous abilities.
+
+***
 
 ## 📚 Item Drop Chances
 
@@ -50,7 +63,7 @@
 
 ![Custom Status Effects](https://cdn.modrinth.com/data/cached_images/492019f0073fd1aecd0c7a68c36e0b5e79607d7d_0.webp)
 
----
+***
 
 ✅ **Fully compatible** with vanilla Minecraft  
 🔄 **No external configuration required**  
