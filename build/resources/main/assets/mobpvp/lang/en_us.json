@@ -13,6 +13,8 @@
   "screen.kaplandev.level.xp": "XP: %s / %s",
   "screen.kaplandev.level.close": "Close",
   "key.mobpvp.screenerror": "The player level system only works in singleplayer.",
-  "itemGroup.eggs": "MobPVP Spawn Eggs"
+  "itemGroup.eggs": "MobPVP Spawn Eggs",
+  "item.mobpvp.mini_golem_egg": "Mini Iron Golem Spawn Egg",
+  "item.mobpvp.bulwark_egg": "Bulwark Spawn Egg"
 
 }

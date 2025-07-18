@@ -90,8 +90,8 @@ public class MobXpValues {
 
         //mobpvp
         XP_VALUES.put(EntitiyRegister.BULWARK, 25);
-        XP_VALUES.put(EntitiyRegister.CUSTOM_SKELETON, 5);
-        XP_VALUES.put(EntitiyRegister.CUSTOM_ZOMBIE, 1);
+        XP_VALUES.put(EntitiyRegister.MAD_SKELETON, 5);
+        XP_VALUES.put(EntitiyRegister.MAD_ZOMBIE, 1);
         XP_VALUES.put(EntitiyRegister.MINIGOLEM, 2);
 
     }

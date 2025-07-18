@@ -5,8 +5,7 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "TitleScreenMixin",
-    "InGameHudMixin"
-
+    "BetterTitleScreen"
   ],
   "injectors": {
     "defaultRequire": 1

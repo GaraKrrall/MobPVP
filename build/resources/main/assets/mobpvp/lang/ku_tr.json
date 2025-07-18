@@ -1,0 +1,19 @@
+{
+  "item.mobpvp.kalp": "Dil",
+  "key.mobpvp.dash": "Xezîn",
+  "key.kaplandev.open_level_gui": "Dema Asta veke",
+  "category.mobpvp": "Kontrolên MobPVP",
+  "itemGroup.mobpvp": "MobPVP",
+  "block.mobpvp.ore": "Bangkerê Bulwark",
+  "item.mobpvp.zombie_egg": "Hêka zombîya xirab",
+  "item.mobpvp.hearth_part": "Parça dilê",
+  "item.mobpvp.skeleton_egg": "Hêka eskeleya xirab",
+  "screen.kaplandev.level.title": "Panele Astan",
+  "screen.kaplandev.level.level": "Asta: %s",
+  "screen.kaplandev.level.xp": "XP: %s / %s",
+  "screen.kaplandev.level.close": "Bigire",
+  "key.mobpvp.screenerror": "Pergala asta lîstikvan tenê di moda yeklîstikê de dixebite.",
+  "itemGroup.eggs": "Hêkan MobPVP",
+  "item.mobpvp.mini_golem_egg": "Gola Bîranînê ya Golemê Aşînîyê",
+  "item.mobpvp.bulwark_egg": "Gola Bîranînê ya Bulwark"
+}

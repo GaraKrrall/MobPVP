@@ -1,7 +1,7 @@
 package com.kaplandev.client.renderer.entity.mobpvp;
 
-
 import com.kaplandev.entity.passive.MiniIronGolemEntity;
+
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.render.entity.model.EntityModelLayers;
@@ -9,12 +9,15 @@ import net.minecraft.client.render.entity.model.IronGolemEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
+import static com.kaplandev.util.path.Paths.GOLEM_TEXTURE;
+import static com.kaplandev.util.path.Paths.MC;
+
 public class MiniIronGolemRenderer
         extends MobEntityRenderer<MiniIronGolemEntity, IronGolemEntityModel<MiniIronGolemEntity>> {
 
     /** Vanilla demir golem dokusu – namespace mutlaka "minecraft" olmalı */
     private static final Identifier TEXTURE =
-            Identifier.of("minecraft", "textures/entity/iron_golem/iron_golem.png");
+            Identifier.of(MC, GOLEM_TEXTURE);
 
     public MiniIronGolemRenderer(EntityRendererFactory.Context ctx) {
         super(ctx,

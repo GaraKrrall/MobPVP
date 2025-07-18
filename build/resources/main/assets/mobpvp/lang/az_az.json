@@ -1,0 +1,19 @@
+{
+  "item.mobpvp.kalp": "Ürək",
+  "key.mobpvp.dash": "Atılma",
+  "key.kaplandev.open_level_gui": "Səviyyə Ekranını Aç",
+  "category.mobpvp": "MobPVP İdarəetmələri",
+  "itemGroup.mobpvp": "MobPVP",
+  "block.mobpvp.ore": "Bulwark Çağırıcı",
+  "item.mobpvp.zombie_egg": "Dəli Zombi Yumurtası",
+  "item.mobpvp.hearth_part": "Ürək Parçası",
+  "item.mobpvp.skeleton_egg": "Dəli Skelet Yumurtası",
+  "screen.kaplandev.level.title": "Səviyyə Paneli",
+  "screen.kaplandev.level.level": "Səviyyə: %s",
+  "screen.kaplandev.level.xp": "Təcrübə: %s / %s",
+  "screen.kaplandev.level.close": "Bağla",
+  "key.mobpvp.screenerror": "Oyunçu səviyyə sistemi yalnız tək oyunçu rejimində işləyir.",
+  "itemGroup.eggs": "MobPVP Yumurtaları",
+  "item.mobpvp.mini_golem_egg": "Mini Dəmir Qolem Çağırma Yumurtası",
+  "item.mobpvp.bulwark_egg": "Bulwark Çağırma Yumurtası"
+}

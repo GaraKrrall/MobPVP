@@ -1,6 +1,5 @@
 package com.kaplandev;
 
-import com.kaplandev.item.group.ItemGroups;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerEntityCombatEvents;
@@ -51,6 +50,7 @@ import com.kaplandev.level.MobLevelRegistry;
 import com.kaplandev.level.player.PlayerLevelData;
 import com.kaplandev.level.player.PlayerLevelSaveHandler;
 import com.kaplandev.level.player.event.PlayerLevelEvents;
+import com.kaplandev.item.group.ItemGroups;
 
 import static com.kaplandev.util.path.Paths.BINGO;
 import static com.kaplandev.util.path.Paths.MOBPVP;
@@ -80,9 +80,6 @@ public final class mobpvp implements ModInitializer {
         UseBlockCallback.EVENT.register(IRON_BLOCK::onUseBlock);
         ServerLifecycleEvents.SERVER_STARTED.register(PlayerLevelSaveHandler::init);
         ServerLifecycleEvents.SERVER_STOPPING.register(server -> PlayerLevelSaveHandler.save());
-
-
-
         ServerTickEvents.END_WORLD_TICK.register(world -> {
             for (var player : world.getPlayers()) {
                 UUID uuid = player.getUuid(); // bak aşağıdaki hatayla da ilişkili
@@ -112,7 +109,6 @@ public final class mobpvp implements ModInitializer {
             if (entity instanceof ZombieEntity zombie) {
                 if (BossVariants.tryAssignCustomZombieBoss(zombie, living, world)) return;
             }
-
 
             if (living.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH) != null) {
                 double base = living.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).getBaseValue();

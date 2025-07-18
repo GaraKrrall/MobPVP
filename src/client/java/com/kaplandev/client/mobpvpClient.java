@@ -24,8 +24,8 @@ public class mobpvpClient implements ClientModInitializer {
     public void onInitializeClient() {
 
         EntityRendererRegistry.register(EntityType.ZOMBIE, CustomZombieRenderer::new);
-        EntityRendererRegistry.register(EntitiyRegister.CUSTOM_ZOMBIE, SuperZombieRenderer::new);
-        EntityRendererRegistry.register(EntitiyRegister.CUSTOM_SKELETON, SkeletonEntityRenderer::new);
+        EntityRendererRegistry.register(EntitiyRegister.MAD_ZOMBIE, SuperZombieRenderer::new);
+        EntityRendererRegistry.register(EntitiyRegister.MAD_SKELETON, SkeletonEntityRenderer::new);
         EntityRendererRegistry.register(EntitiyRegister.BULWARK, BulwarkRenderer::new);
         EntityRendererRegistry.register(EntitiyRegister.MINIGOLEM, MiniIronGolemRenderer::new);
         ConfigManager.initialize();

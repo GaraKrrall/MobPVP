@@ -1,0 +1,19 @@
+{
+  "item.mobpvp.kalp": "Herz",
+  "key.mobpvp.dash": "Sprinten",
+  "key.kaplandev.open_level_gui": "Level-Bildschirm öffnen",
+  "category.mobpvp": "MobPVP-Steuerung",
+  "itemGroup.mobpvp": "MobPVP",
+  "block.mobpvp.ore": "Bulwark-Beschwörer",
+  "item.mobpvp.zombie_egg": "Verrücktes Zombie-Ei",
+  "item.mobpvp.hearth_part": "Herzfragment",
+  "item.mobpvp.skeleton_egg": "Verrücktes Skelett-Ei",
+  "screen.kaplandev.level.title": "Level-Panel",
+  "screen.kaplandev.level.level": "Level: %s",
+  "screen.kaplandev.level.xp": "EP: %s / %s",
+  "screen.kaplandev.level.close": "Schließen",
+  "key.mobpvp.screenerror": "Das Spielerlevel-System funktioniert nur im Einzelspielermodus.",
+  "itemGroup.eggs": "MobPVP Spawn Eier",
+  "item.mobpvp.mini_golem_egg": "Mini-Eisen-Golem-Spawn-Ei",
+  "item.mobpvp.bulwark_egg": "Bulwark-Spawn-Ei"
+}

@@ -1,8 +1,3 @@
-/tp @s 240 ~ 16
-/effect give Player646 minecraft:night_vision infinite
-/effect give Player646 minecraft:night_vision infinite 255
-/effect give Player646 minecraft:night_vision infinite 255 true
-/summon mobpvp:bulwark
 /effect clear @a
 /effect give Player646 minecraft:night_vision infinite 1 true
 /summon mobpvp:bulwark
@@ -48,3 +43,8 @@
 /effect clear
 /summon minecraft:iron_golem
 /time set day
+/summon minecraft:iron_golem
+/time set day
+/weather clear
+/give Player321 mobpvp:mini_golem_egg
+/give Player321 mobpvp:bulwark_egg

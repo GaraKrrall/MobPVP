@@ -1,0 +1,19 @@
+{
+  "item.mobpvp.kalp": "Cœur",
+  "key.mobpvp.dash": "Ruée",
+  "key.kaplandev.open_level_gui": "Ouvrir l’écran de niveau",
+  "category.mobpvp": "Commandes MobPVP",
+  "itemGroup.mobpvp": "MobPVP",
+  "block.mobpvp.ore": "Invocateur Bulwark",
+  "item.mobpvp.zombie_egg": "Œuf de zombie fou",
+  "item.mobpvp.hearth_part": "Fragment de cœur",
+  "item.mobpvp.skeleton_egg": "Œuf de squelette fou",
+  "screen.kaplandev.level.title": "Panneau de niveau",
+  "screen.kaplandev.level.level": "Niveau : %s",
+  "screen.kaplandev.level.xp": "XP : %s / %s",
+  "screen.kaplandev.level.close": "Fermer",
+  "key.mobpvp.screenerror": "Le système de niveau ne fonctionne qu’en mode solo.",
+  "itemGroup.eggs": "Œufs d'apparition MobPVP",
+  "item.mobpvp.mini_golem_egg": "Œuf d'Invocation de Mini Golem de Fer",
+  "item.mobpvp.bulwark_egg": "Œuf d'Invocation de Bulwark"
+}

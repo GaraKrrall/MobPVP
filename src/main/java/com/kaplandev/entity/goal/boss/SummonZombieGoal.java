@@ -30,7 +30,7 @@ public class SummonZombieGoal extends Goal {
             ServerWorld world = (ServerWorld) boss.getWorld();
 
             for (int i = 0; i < 6; i++) {
-                MadZombieEntity customZombieEntity = new MadZombieEntity(EntitiyRegister.CUSTOM_ZOMBIE, world);
+                MadZombieEntity customZombieEntity = new MadZombieEntity(EntitiyRegister.MAD_ZOMBIE, world);
                 BlockPos spawnPos = boss.getBlockPos().add(boss.getRandom().nextInt(3) - 1, 0, boss.getRandom().nextInt(3) - 1);
                 customZombieEntity.refreshPositionAndAngles(spawnPos, 0.0f, 0.0f);
                 world.spawnEntity(customZombieEntity);

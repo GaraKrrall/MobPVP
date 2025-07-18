@@ -1,0 +1,19 @@
+{
+  "item.mobpvp.kalp": "심장",
+  "key.mobpvp.dash": "대시",
+  "key.kaplandev.open_level_gui": "레벨 화면 열기",
+  "category.mobpvp": "MobPVP 조작 설정",
+  "itemGroup.mobpvp": "MobPVP",
+  "block.mobpvp.ore": "불워크 소환사",
+  "item.mobpvp.zombie_egg": "광란의 좀비 알",
+  "item.mobpvp.hearth_part": "심장 조각",
+  "item.mobpvp.skeleton_egg": "광란의 해골 알",
+  "screen.kaplandev.level.title": "레벨 패널",
+  "screen.kaplandev.level.level": "레벨: %s",
+  "screen.kaplandev.level.xp": "경험치: %s / %s",
+  "screen.kaplandev.level.close": "닫기",
+  "key.mobpvp.screenerror": "플레이어 레벨 시스템은 싱글플레이에서만 작동합니다.",
+  "itemGroup.eggs": "MobPVP 스폰 알",
+  "item.mobpvp.mini_golem_egg": "미니 아이언 골렘 소환 알",
+  "item.mobpvp.bulwark_egg": "불워크 소환 알"
+}

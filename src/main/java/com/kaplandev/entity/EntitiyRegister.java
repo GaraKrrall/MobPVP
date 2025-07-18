@@ -19,13 +19,14 @@ import net.minecraft.world.Heightmap;
 import static com.kaplandev.entity.spawn.RegisterSpawn.registerSpawn;
 import static com.kaplandev.entity.util.RegisterAttributes.AttributeRegister;
 import static com.kaplandev.mobpvp.MOD_ID;
-import static com.kaplandev.util.path.Paths.MAD_SKELETON;
-import static com.kaplandev.util.path.Paths.MAD_ZOMBIE;
+import static com.kaplandev.util.path.Paths.MAD_SKELETON_KEY;
+import static com.kaplandev.util.path.Paths.MAD_ZOMBIE_KEY;
+
 
 public class EntitiyRegister {
 
-    public static final EntityType<MadZombieEntity> CUSTOM_ZOMBIE;
-    public static final EntityType<MadSkeletonEntity> CUSTOM_SKELETON;
+    public static final EntityType<MadZombieEntity> MAD_ZOMBIE;
+    public static final EntityType<MadSkeletonEntity> MAD_SKELETON;
     public static final EntityType<BulwarkEntity> BULWARK;
     public static final EntityType<MiniIronGolemEntity> MINIGOLEM;
 
@@ -38,15 +39,16 @@ public class EntitiyRegister {
     }
     @SuppressWarnings("removal")
     private static void registerSpawns() {
-        registerSpawn(context -> context.hasTag(BiomeTags.IS_OVERWORLD), SpawnGroup.MONSTER, CUSTOM_SKELETON, 80, 1, 3, LuckySpawnLocation.LUCKY_SPAWN, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, MobEntity::canMobSpawn);
+        registerSpawn(context -> context.hasTag(BiomeTags.IS_OVERWORLD), SpawnGroup.MONSTER, MAD_SKELETON, 80, 1, 3, LuckySpawnLocation.LUCKY_SPAWN, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, MobEntity::canMobSpawn);
     }
 
     static {
-        CUSTOM_ZOMBIE = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, MAD_ZOMBIE), FabricEntityTypeBuilder.createMob().entityFactory(MadZombieEntity::new).defaultAttributes(MadZombieEntity::createCustomZombieAttributes).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.6f, 1.95f)).build());
-        CUSTOM_SKELETON = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, MAD_SKELETON), FabricEntityTypeBuilder.createMob().entityFactory(MadSkeletonEntity::new).defaultAttributes(MadSkeletonEntity::createCustomSkeletonAttributes).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.6f, 1.99f)).build());
+        MAD_ZOMBIE = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, MAD_ZOMBIE_KEY), FabricEntityTypeBuilder.createMob().entityFactory(MadZombieEntity::new).defaultAttributes(MadZombieEntity::createCustomZombieAttributes).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.6f, 1.95f)).build());
+        MAD_SKELETON = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, MAD_SKELETON_KEY), FabricEntityTypeBuilder.createMob().entityFactory(MadSkeletonEntity::new).defaultAttributes(MadSkeletonEntity::createCustomSkeletonAttributes).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.6f, 1.99f)).build());
         BULWARK = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, Paths.BULWARK), FabricEntityTypeBuilder.createMob().entityFactory(BulwarkEntity::new).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.8f, 2.0f)).trackRangeBlocks(80).build());
         MINIGOLEM = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, Paths.MINIGOLEM), FabricEntityTypeBuilder.createMob().entityFactory(MiniIronGolemEntity::new).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.8f, 2.0f)).trackRangeBlocks(80).build());
     }
+
 }
 /*   BiomeModifications.addSpawn(
                 context -> context.hasTag(BiomeTags.IS_OVERWORLD), // Tüm overworld biyomları

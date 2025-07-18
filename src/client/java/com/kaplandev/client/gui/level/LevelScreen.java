@@ -29,8 +29,6 @@ public class LevelScreen extends Screen {
                 button -> this.close()
         ).dimensions(centerX - 50, centerY + 40, 100, 20).build());
     }
-
-
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
         MinecraftClient client = MinecraftClient.getInstance();
@@ -44,7 +42,6 @@ public class LevelScreen extends Screen {
         }
 
         super.render(context, mouseX, mouseY, delta);
-
         UUID uuid = client.player.getUuid();
         int level = PlayerLevelData.getLevel(uuid);
         int xp = PlayerLevelData.getXp(uuid);
@@ -53,12 +50,19 @@ public class LevelScreen extends Screen {
         int centerX = this.width / 2;
         int centerY = this.height / 2;
 
-        context.drawCenteredTextWithShadow(textRenderer, "§6SEVİYE PANELİ", centerX, centerY - 60, 0xFFFFFF);
-        context.drawCenteredTextWithShadow(textRenderer, "§eSeviye: §a" + level, centerX, centerY - 30, 0xFFFFFF);
-        context.drawCenteredTextWithShadow(textRenderer, "§eXP: §7" + xp + "§f/§7" + xpToNext, centerX, centerY - 10, 0xFFFFFF);
+        context.drawCenteredTextWithShadow(textRenderer,
+                Text.translatable("screen.kaplandev.level.title"),
+                centerX, centerY - 60, 0xFFFFFF);
+
+        context.drawCenteredTextWithShadow(textRenderer,
+                Text.translatable("screen.kaplandev.level.level", level),
+                centerX, centerY - 30, 0xFFFFFF);
+
+        context.drawCenteredTextWithShadow(textRenderer,
+                Text.translatable("screen.kaplandev.level.xp", xp, xpToNext),
+                centerX, centerY - 10, 0xFFFFFF);
+
     }
-
-
     @Override
     public boolean shouldPause() {
         return false;

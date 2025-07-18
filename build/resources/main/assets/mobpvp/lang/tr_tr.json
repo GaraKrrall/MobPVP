@@ -5,13 +5,15 @@
   "category.mobpvp": "MobPVP Kontrolleri",
   "itemGroup.mobpvp": "MobPVP",
   "block.mobpvp.ore": "Bulwark Çağırıcı",
-  "item.mobpvp.zombie_egg": "Delirmiş Zombi Yumurtası",
+  "item.mobpvp.zombie_egg": "Delirmiş Zombi Çağırma Yumurtası",
   "item.mobpvp.hearth_part": "Kalp Parçası",
-  "item.mobpvp.skeleton_egg": "Delirmiş İskelet Yumurtası",
+  "item.mobpvp.skeleton_egg": "Delirmiş İskelet Çağırma Yumurtası",
   "screen.kaplandev.level.title": "Seviye Paneli",
   "screen.kaplandev.level.level": "Seviye: %s",
   "screen.kaplandev.level.xp": "Deneyim: %s / %s",
   "screen.kaplandev.level.close": "Kapat",
   "key.mobpvp.screenerror": "Oyuncu seviye sistemi yalnızca tek oyunculu modda çalışır.",
-  "itemGroup.eggs": "MobPVP Çağırma Yumurtaları"
+  "itemGroup.eggs": "MobPVP Çağırma Yumurtaları",
+  "item.mobpvp.mini_golem_egg": "Minik Demir Golem Çağırma Yumurtası",
+  "item.mobpvp.bulwark_egg": "Bulwark Çağırma Yumurtası"
 }
