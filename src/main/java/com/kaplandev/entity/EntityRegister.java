@@ -16,6 +16,10 @@ import net.minecraft.registry.*;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.world.Heightmap;
 
+import static com.kaplandev.entity.EntityType.BULWARK;
+import static com.kaplandev.entity.EntityType.MINIGOLEM;
+import static com.kaplandev.entity.EntityType.MAD_SKELETON;
+import static com.kaplandev.entity.EntityType.MAD_ZOMBIE;
 import static com.kaplandev.entity.spawn.RegisterSpawn.registerSpawn;
 import static com.kaplandev.entity.util.RegisterAttributes.AttributeRegister;
 import static com.kaplandev.mobpvp.MOD_ID;
@@ -23,12 +27,7 @@ import static com.kaplandev.util.path.Paths.MAD_SKELETON_KEY;
 import static com.kaplandev.util.path.Paths.MAD_ZOMBIE_KEY;
 
 
-public class EntitiyRegister {
-
-    public static final EntityType<MadZombieEntity> MAD_ZOMBIE;
-    public static final EntityType<MadSkeletonEntity> MAD_SKELETON;
-    public static final EntityType<BulwarkEntity> BULWARK;
-    public static final EntityType<MiniIronGolemEntity> MINIGOLEM;
+public class EntityRegister {
 
     public static void register() {
         System.out.println("Custom entities registered.");

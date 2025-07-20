@@ -1,7 +1,7 @@
 package com.kaplandev.item.feature;
 
 import com.kaplandev.block.Blocks;
-import com.kaplandev.entity.EntitiyRegister;
+import com.kaplandev.entity.EntityType;
 import com.kaplandev.entity.boss.BulwarkEntity;
 
 import net.fabricmc.api.EnvType;
@@ -50,7 +50,7 @@ public class KalpItemFeatures extends Item implements ItemFeature {
         ItemStack stack = context.getStack();
 
         if (!world.isClient && world.getBlockState(pos).getBlock() == Blocks.CRUDE_ACIDIC_ORE) {
-            BulwarkEntity bulwark = new BulwarkEntity(EntitiyRegister.BULWARK, world);
+            BulwarkEntity bulwark = new BulwarkEntity(EntityType.BULWARK, world);
             bulwark.refreshPositionAndAngles(pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, 0, 0);
             world.spawnEntity(bulwark);
 

@@ -5,8 +5,8 @@ import com.kaplandev.client.renderer.CustomZombieRenderer;
 import com.kaplandev.client.info.dink;
 import com.kaplandev.client.renderer.entity.mobpvp.MiniIronGolemRenderer;
 import com.kaplandev.client.renderer.entity.zombie.SuperZombieRenderer;
-import com.kaplandev.entity.EntitiyRegister;
 import com.kaplandev.client.renderer.entity.boss.BulwarkRenderer;
+import com.kaplandev.entity.EntityType;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
@@ -14,7 +14,6 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.render.entity.SkeletonEntityRenderer;
-import net.minecraft.entity.EntityType;
 
 public class mobpvpClient implements ClientModInitializer {
     private boolean hasShownToast = false;
@@ -23,11 +22,11 @@ public class mobpvpClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
-        EntityRendererRegistry.register(EntityType.ZOMBIE, CustomZombieRenderer::new);
-        EntityRendererRegistry.register(EntitiyRegister.MAD_ZOMBIE, SuperZombieRenderer::new);
-        EntityRendererRegistry.register(EntitiyRegister.MAD_SKELETON, SkeletonEntityRenderer::new);
-        EntityRendererRegistry.register(EntitiyRegister.BULWARK, BulwarkRenderer::new);
-        EntityRendererRegistry.register(EntitiyRegister.MINIGOLEM, MiniIronGolemRenderer::new);
+        EntityRendererRegistry.register(net.minecraft.entity.EntityType.ZOMBIE, CustomZombieRenderer::new);
+        EntityRendererRegistry.register(EntityType.MAD_ZOMBIE, SuperZombieRenderer::new);
+        EntityRendererRegistry.register(EntityType.MAD_SKELETON, SkeletonEntityRenderer::new);
+        EntityRendererRegistry.register(EntityType.BULWARK, BulwarkRenderer::new);
+        EntityRendererRegistry.register(EntityType.MINIGOLEM, MiniIronGolemRenderer::new);
         ConfigManager.initialize();
 
 

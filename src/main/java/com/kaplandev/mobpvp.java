@@ -1,5 +1,6 @@
 package com.kaplandev;
 
+import com.kaplandev.entity.EntityRegister;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerEntityCombatEvents;
@@ -40,7 +41,6 @@ import com.kaplandev.block.Blocks;
 import com.kaplandev.block.use.IRON_BLOCK;
 import com.kaplandev.command.ModCommands;
 import com.kaplandev.effect.LevelEffectHandler;
-import com.kaplandev.entity.EntitiyRegister;
 import com.kaplandev.entity.boss.BulwarkEntity;
 import com.kaplandev.gen.WorldGen;
 import com.kaplandev.item.Items;
@@ -69,9 +69,9 @@ public final class mobpvp implements ModInitializer {
     @Override
     public void onInitialize() {
         WorldGen.register();
+        EntityRegister.register();
         Items.init();
         Blocks.init();
-        EntitiyRegister.register();
         ItemGroups.init();
         PluginRegistry.callOnLoad();
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {

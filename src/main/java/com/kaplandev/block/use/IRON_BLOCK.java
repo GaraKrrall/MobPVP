@@ -1,6 +1,6 @@
 package com.kaplandev.block.use;
 
-import com.kaplandev.entity.EntitiyRegister;
+import com.kaplandev.entity.EntityType;
 import com.kaplandev.entity.passive.MiniIronGolemEntity;
 
 import net.minecraft.block.Blocks;
@@ -40,7 +40,7 @@ public class IRON_BLOCK {
 
             BlockPos spawnPos = pos.up();
             for (int i = 0; i < 2; i++) {
-                MiniIronGolemEntity mini = new MiniIronGolemEntity(EntitiyRegister.MINIGOLEM, world);
+                MiniIronGolemEntity mini = new MiniIronGolemEntity(EntityType.MINIGOLEM, world);
                 mini.refreshPositionAndAngles(
                         spawnPos.getX() + 0.5,
                         spawnPos.getY(),

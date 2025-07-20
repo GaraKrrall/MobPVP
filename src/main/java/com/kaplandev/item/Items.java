@@ -1,9 +1,9 @@
 package com.kaplandev.item;
 
 import com.kaplandev.block.Blocks;
-import com.kaplandev.entity.EntitiyRegister;
 import com.kaplandev.item.feature.KalpItemFeatures;
 import com.kaplandev.item.group.ItemGroups;
+import com.kaplandev.entity.EntityType;
 
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -46,11 +46,11 @@ public class Items {
     static {
         ORE = register(ORE_ITEM_KEY, new BlockItem(Blocks.CRUDE_ACIDIC_ORE, new Item.Settings()));
         MOB_TABLE = register(MOB_TABLE_ITEM_KEY, new BlockItem(Blocks.MOB_TABLE, new Item.Settings()));
-        EGG_SKELETON = register(EGG_SKELETON_KEY, new SpawnEggItem(EntitiyRegister.MAD_SKELETON, 0xC1C1C1,0x3A3A3A, new Item.Settings()));
-        EGG_SUPER_ZOMBIE = register(EGG_SUPER_ZOMBIE_KEY, new SpawnEggItem(EntitiyRegister.MAD_ZOMBIE, 0xB71C1C, 0xFF5252, new Item.Settings()));
-        EGG_MINI_GOLEM = register(EGG_MINI_GOLEM_KEY, new SpawnEggItem(EntitiyRegister.MINIGOLEM, 0xD8D8D8, 0x8A8A8A, new Item.Settings()));
-        EGG_BULWARK = register(EGG_BULWARK_KEY, new SpawnEggItem(EntitiyRegister.BULWARK, 0x880E4F, 0xFF1744, new Item.Settings().rarity(Rarity.EPIC)));
+        EGG_SKELETON = register(EGG_SKELETON_KEY, new SpawnEggItem(EntityType.MAD_SKELETON, 0xC1C1C1,0x3A3A3A, new Item.Settings()));
+        EGG_SUPER_ZOMBIE = register(EGG_SUPER_ZOMBIE_KEY, new SpawnEggItem(EntityType.MAD_ZOMBIE, 0xB71C1C, 0xFF5252, new Item.Settings()));
+        EGG_MINI_GOLEM = register(EGG_MINI_GOLEM_KEY, new SpawnEggItem(EntityType.MINIGOLEM, 0xD8D8D8, 0x8A8A8A, new Item.Settings()));
+        EGG_BULWARK = register(EGG_BULWARK_KEY, new SpawnEggItem(EntityType.BULWARK, 0x880E4F, 0xFF1744, new Item.Settings().rarity(Rarity.EPIC)));
         HEARTH_PART = register(HEARTH_PART_KEY, new Item(new Item.Settings()));
-        KALP_ITEM = register(KALP_ITEM_KEY, new KalpItemFeatures(new Item.Settings().rarity(Rarity.RARE)));
+        KALP_ITEM = register(KALP_ITEM_KEY, new KalpItemFeatures(new Item.Settings().rarity(Rarity.UNCOMMON)));
     }
 }
