@@ -6,6 +6,13 @@
     "com/kaplandev/mixin/client/InGameHudMixin": {
       "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V"
     },
+    "com/kaplandev/mixin/client/SplashOverlayMixin": {
+      "<init>": "Lnet/minecraft/class_425;<init>(Lnet/minecraft/class_310;Lnet/minecraft/class_4011;Ljava/util/function/Consumer;Z)V",
+      "Lnet/minecraft/client/gui/DrawContext;drawTexture(Lnet/minecraft/util/Identifier;IIIIFFIIII)V": "Lnet/minecraft/class_332;method_25293(Lnet/minecraft/class_2960;IIIIFFIIII)V",
+      "Lnet/minecraft/client/gui/DrawContext;setShaderColor(FFFF)V": "Lnet/minecraft/class_332;method_51422(FFFF)V",
+      "Lnet/minecraft/client/gui/screen/SplashOverlay;renderProgressBar(Lnet/minecraft/client/gui/DrawContext;IIIIF)V": "Lnet/minecraft/class_425;method_18103(Lnet/minecraft/class_332;IIIIF)V",
+      "render": "Lnet/minecraft/class_425;method_25394(Lnet/minecraft/class_332;IIF)V"
+    },
     "com/kaplandev/mixin/client/TitleScreenMixin": {
       "init": "Lnet/minecraft/class_442;method_25426()V"
     }
@@ -17,6 +24,13 @@
       },
       "com/kaplandev/mixin/client/InGameHudMixin": {
         "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V"
+      },
+      "com/kaplandev/mixin/client/SplashOverlayMixin": {
+        "<init>": "Lnet/minecraft/class_425;<init>(Lnet/minecraft/class_310;Lnet/minecraft/class_4011;Ljava/util/function/Consumer;Z)V",
+        "Lnet/minecraft/client/gui/DrawContext;drawTexture(Lnet/minecraft/util/Identifier;IIIIFFIIII)V": "Lnet/minecraft/class_332;method_25293(Lnet/minecraft/class_2960;IIIIFFIIII)V",
+        "Lnet/minecraft/client/gui/DrawContext;setShaderColor(FFFF)V": "Lnet/minecraft/class_332;method_51422(FFFF)V",
+        "Lnet/minecraft/client/gui/screen/SplashOverlay;renderProgressBar(Lnet/minecraft/client/gui/DrawContext;IIIIF)V": "Lnet/minecraft/class_425;method_18103(Lnet/minecraft/class_332;IIIIF)V",
+        "render": "Lnet/minecraft/class_425;method_25394(Lnet/minecraft/class_332;IIF)V"
       },
       "com/kaplandev/mixin/client/TitleScreenMixin": {
         "init": "Lnet/minecraft/class_442;method_25426()V"

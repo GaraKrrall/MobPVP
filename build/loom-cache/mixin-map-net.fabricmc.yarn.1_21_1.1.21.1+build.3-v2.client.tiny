@@ -1,1 +1,4 @@
 v1	named	intermediary
+FIELD	com/kaplandev/mixin/client/SplashOverlayMixin	Lnet/minecraft/resource/ResourceReload;	reload	field_17767
+FIELD	com/kaplandev/mixin/client/SplashOverlayMixin	F	progress	field_17770
+FIELD	com/kaplandev/mixin/client/SplashOverlayMixin	Ljava/util/function/IntSupplier;	BRAND_ARGB	field_25041

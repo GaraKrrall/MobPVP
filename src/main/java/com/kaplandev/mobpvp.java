@@ -1,6 +1,5 @@
 package com.kaplandev;
 
-import com.kaplandev.entity.EntityRegister;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerEntityCombatEvents;
@@ -21,6 +20,7 @@ import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
@@ -51,9 +51,12 @@ import com.kaplandev.level.player.PlayerLevelData;
 import com.kaplandev.level.player.PlayerLevelSaveHandler;
 import com.kaplandev.level.player.event.PlayerLevelEvents;
 import com.kaplandev.item.group.ItemGroups;
+import com.kaplandev.entity.EntityRegister;
 
 import static com.kaplandev.util.path.Paths.BINGO;
 import static com.kaplandev.util.path.Paths.MOBPVP;
+import static com.kaplandev.util.path.Paths.STARTUP_SOUND_EVENT;
+import static com.kaplandev.util.path.Paths.STARTUP_SOUND_ID;
 
 
 @KaplanBedwars
@@ -73,6 +76,7 @@ public final class mobpvp implements ModInitializer {
         Items.init();
         Blocks.init();
         ItemGroups.init();
+        Registry.register(Registries.SOUND_EVENT, STARTUP_SOUND_ID, STARTUP_SOUND_EVENT);
         PluginRegistry.callOnLoad();
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
             ModCommands.register(dispatcher);
