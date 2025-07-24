@@ -22,8 +22,8 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class KalpItemFeatures extends Item implements ItemFeature {
-    public KalpItemFeatures(Settings settings) {
+public class KalpItem extends Item implements ItemFeature {
+    public KalpItem(Settings settings) {
         super(settings);
     }
 

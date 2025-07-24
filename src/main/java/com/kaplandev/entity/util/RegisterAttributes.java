@@ -5,6 +5,12 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 
+
+/**
+ * @deprecated use {@link EntityAttributeAndSpawnBuilder#BuildAttribute}
+ */
+
+@Deprecated(forRemoval = true)
 public class RegisterAttributes {
     public static <T extends LivingEntity> void AttributeRegister(EntityType<T> entityType, DefaultAttributeContainer.Builder attributes) {
         FabricDefaultAttributeRegistry.register(entityType, attributes);

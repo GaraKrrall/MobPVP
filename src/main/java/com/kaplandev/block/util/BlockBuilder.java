@@ -6,19 +6,18 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ExperienceDroppingBlock;
-import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.intprovider.IntProvider;
-import net.minecraft.util.math.intprovider.UniformIntProvider;
-import net.minecraft.world.BlockView;
-import net.minecraft.world.World;
-@Deprecated(forRemoval = true)
-public class BlockCreator {
-    @Deprecated(forRemoval = true)
-    public static Block createCustomBlock(AbstractBlock.Settings settings, BlockBehavior behavior, IntProvider xpProvider) {
+
+import static com.kaplandev.mobpvp.MOD_ID;
+
+public class BlockBuilder {
+    public static Block BuildBlockAttribute(AbstractBlock.Settings settings, BlockBehavior behavior, IntProvider xpProvider) {
         return new ExperienceDroppingBlock(xpProvider, settings) {
             @Override
             protected void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack tool, boolean dropXp) {
@@ -27,6 +26,9 @@ public class BlockCreator {
             }
         };
     }
-
-
+    public static Block RegisterCreatedBlock (String name, Block block) {
+        // Bloğu kaydet
+        Block registeredBlock = Registry.register(Registries.BLOCK, Identifier.of(MOD_ID, name), block);
+        return registeredBlock;
+    }
 }

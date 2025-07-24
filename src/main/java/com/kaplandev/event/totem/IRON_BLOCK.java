@@ -1,4 +1,4 @@
-package com.kaplandev.block.use;
+package com.kaplandev.event.totem;
 
 import com.kaplandev.entity.EntityType;
 import com.kaplandev.entity.passive.MiniIronGolemEntity;

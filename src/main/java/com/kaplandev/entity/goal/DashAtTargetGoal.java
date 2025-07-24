@@ -7,13 +7,13 @@ import net.minecraft.entity.player.PlayerEntity;
 
 import java.util.EnumSet;
 
-public class CustomDashAtTargetGoal extends Goal {
+public class DashAtTargetGoal extends Goal {
 
     private final ZombieEntity zombie;
     private final double dashSpeed;
     private PlayerEntity target;
 
-    public CustomDashAtTargetGoal(ZombieEntity zombie, double dashSpeed) {
+    public DashAtTargetGoal(ZombieEntity zombie, double dashSpeed) {
         this.zombie = zombie;
         this.dashSpeed = dashSpeed;
         this.setControls(EnumSet.of(Control.MOVE));

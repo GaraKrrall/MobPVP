@@ -12,6 +12,7 @@ public class LuckySpawnLocation implements net.minecraft.entity.SpawnLocation {
     public static final SpawnLocation LUCKY_SPAWN = new SpawnLocation();
     private static final Random random = new Random();
 
+    @Deprecated
     @Override
     public boolean isSpawnPositionOk(WorldView world, BlockPos pos, @Nullable EntityType<?> entityType) {
         // Alt blok sağlam mı?
@@ -22,7 +23,7 @@ public class LuckySpawnLocation implements net.minecraft.entity.SpawnLocation {
 
         return solidGround && lucky;
     }
-
+    @Deprecated
     @Override
     public BlockPos adjustPosition(WorldView world, BlockPos pos) { return pos; }
 

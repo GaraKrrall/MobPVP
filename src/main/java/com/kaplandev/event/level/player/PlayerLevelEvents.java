@@ -1,4 +1,4 @@
-package com.kaplandev.level.player.event;
+package com.kaplandev.event.level.player;
 
 import com.kaplandev.api.annotation.test;
 import com.kaplandev.api.annotation.Bug;

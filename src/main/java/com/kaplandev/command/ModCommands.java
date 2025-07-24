@@ -1,6 +1,7 @@
 package com.kaplandev.command;
 
 import com.kaplandev.build.ArenaTracker;
+
 import com.mojang.brigadier.CommandDispatcher;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;

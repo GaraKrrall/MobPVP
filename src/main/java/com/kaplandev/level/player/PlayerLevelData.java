@@ -1,6 +1,7 @@
 package com.kaplandev.level.player;
 
-import com.kaplandev.level.player.event.PlayerLevelEvents;
+import com.kaplandev.event.level.player.PlayerLevelEvents;
+
 import net.minecraft.server.network.ServerPlayerEntity;
 
 import java.util.UUID;

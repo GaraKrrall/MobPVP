@@ -5,6 +5,7 @@ import com.kaplandev.entity.mob.MadSkeletonEntity;
 import com.kaplandev.entity.passive.MiniIronGolemEntity;
 import com.kaplandev.entity.mob.MadZombieEntity;
 import com.kaplandev.entity.spawn.LuckySpawnLocation;
+import com.kaplandev.entity.util.EntityAttributeAndSpawnBuilder;
 import com.kaplandev.util.path.Paths;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
@@ -20,8 +21,6 @@ import static com.kaplandev.entity.EntityType.BULWARK;
 import static com.kaplandev.entity.EntityType.MINIGOLEM;
 import static com.kaplandev.entity.EntityType.MAD_SKELETON;
 import static com.kaplandev.entity.EntityType.MAD_ZOMBIE;
-import static com.kaplandev.entity.spawn.RegisterSpawn.registerSpawn;
-import static com.kaplandev.entity.util.RegisterAttributes.AttributeRegister;
 import static com.kaplandev.mobpvp.MOD_ID;
 import static com.kaplandev.util.path.Paths.MAD_SKELETON_KEY;
 import static com.kaplandev.util.path.Paths.MAD_ZOMBIE_KEY;
@@ -32,13 +31,13 @@ public class EntityRegister {
     public static void register() {
         System.out.println("Custom entities registered.");
         registerSpawns();
-        AttributeRegister(BULWARK, BulwarkEntity.createAttributes());
-        AttributeRegister(MINIGOLEM, MiniIronGolemEntity.createAttributes());
+        EntityAttributeAndSpawnBuilder.BuildAttribute(BULWARK, BulwarkEntity.createAttributes());
+        EntityAttributeAndSpawnBuilder.BuildAttribute(MINIGOLEM, MiniIronGolemEntity.createAttributes());
         System.out.println("Mob özellikleri kaydedildi");
     }
     @SuppressWarnings("removal")
     private static void registerSpawns() {
-        registerSpawn(context -> context.hasTag(BiomeTags.IS_OVERWORLD), SpawnGroup.MONSTER, MAD_SKELETON, 80, 1, 3, LuckySpawnLocation.LUCKY_SPAWN, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, MobEntity::canMobSpawn);
+        EntityAttributeAndSpawnBuilder.BuildSpawn(context -> context.hasTag(BiomeTags.IS_OVERWORLD), SpawnGroup.MONSTER, MAD_SKELETON, 80, 1, 3, LuckySpawnLocation.LUCKY_SPAWN, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, MobEntity::canMobSpawn);
     }
 
     static {

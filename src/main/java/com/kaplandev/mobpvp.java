@@ -38,7 +38,7 @@ import java.util.UUID;
 import com.kaplandev.api.PluginRegistry;
 import com.kaplandev.api.annotation.KaplanBedwars;
 import com.kaplandev.block.Blocks;
-import com.kaplandev.block.use.IRON_BLOCK;
+import com.kaplandev.event.totem.IRON_BLOCK;
 import com.kaplandev.command.ModCommands;
 import com.kaplandev.effect.LevelEffectHandler;
 import com.kaplandev.entity.boss.BulwarkEntity;
@@ -49,7 +49,7 @@ import com.kaplandev.level.LevelAssigner;
 import com.kaplandev.level.MobLevelRegistry;
 import com.kaplandev.level.player.PlayerLevelData;
 import com.kaplandev.level.player.PlayerLevelSaveHandler;
-import com.kaplandev.level.player.event.PlayerLevelEvents;
+import com.kaplandev.event.level.player.PlayerLevelEvents;
 import com.kaplandev.item.group.ItemGroups;
 import com.kaplandev.entity.EntityRegister;
 

@@ -1,7 +1,7 @@
 package com.kaplandev.entity.mob;
 
 import com.kaplandev.entity.boss.BulwarkEntity;
-import com.kaplandev.entity.goal.CustomDashAtTargetGoal;
+import com.kaplandev.entity.goal.DashAtTargetGoal;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
@@ -30,7 +30,7 @@ public class MadZombieEntity extends ZombieEntity {
     @Override
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
-        this.goalSelector.add(1, new CustomDashAtTargetGoal(this, 1.5)); // özel dash
+        this.goalSelector.add(1, new DashAtTargetGoal(this, 1.5)); // özel dash
         this.goalSelector.add(2, new MeleeAttackGoal(this, 1.0, false));
         this.goalSelector.add(3, new WanderAroundFarGoal(this, 0.8));
         this.goalSelector.add(4, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));

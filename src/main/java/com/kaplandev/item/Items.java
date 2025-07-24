@@ -1,7 +1,8 @@
 package com.kaplandev.item;
 
 import com.kaplandev.block.Blocks;
-import com.kaplandev.item.feature.KalpItemFeatures;
+import com.kaplandev.item.feature.KalpItem;
+import com.kaplandev.item.group.GroupItemBuilder;
 import com.kaplandev.item.group.ItemGroups;
 import com.kaplandev.entity.EntityType;
 
@@ -10,7 +11,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.Rarity;
 
-import static com.kaplandev.item.group.GroupRegister.registerToTab;
 import static com.kaplandev.item.util.ItemRegister.register;
 import static com.kaplandev.util.path.Paths.EGG_BULWARK_KEY;
 import static com.kaplandev.util.path.Paths.EGG_MINI_GOLEM_KEY;
@@ -33,14 +33,14 @@ public class Items {
     public static final Item KALP_ITEM;
 
     public static void init() {
-        registerToTab(EGG_SKELETON, ItemGroups.EGGS_GROUP_KEY);
-        registerToTab(EGG_MINI_GOLEM, ItemGroups.EGGS_GROUP_KEY);
-        registerToTab(EGG_SUPER_ZOMBIE, ItemGroups.EGGS_GROUP_KEY);
-        registerToTab(EGG_BULWARK, ItemGroups.EGGS_GROUP_KEY);
-        registerToTab(KALP_ITEM, ItemGroups.MOBPVP_GROUP_KEY);
-        registerToTab(HEARTH_PART, ItemGroups.MOBPVP_GROUP_KEY);
-        registerToTab(MOB_TABLE, ItemGroups.MOBPVP_GROUP_KEY);
-        registerToTab(ORE, ItemGroups.MOBPVP_GROUP_KEY);
+        GroupItemBuilder.AddGroup(EGG_SKELETON, ItemGroups.EGGS_GROUP_KEY);
+        GroupItemBuilder.AddGroup(EGG_MINI_GOLEM, ItemGroups.EGGS_GROUP_KEY);
+        GroupItemBuilder.AddGroup(EGG_SUPER_ZOMBIE, ItemGroups.EGGS_GROUP_KEY);
+        GroupItemBuilder.AddGroup(EGG_BULWARK, ItemGroups.EGGS_GROUP_KEY);
+        GroupItemBuilder.AddGroup(KALP_ITEM, ItemGroups.MOBPVP_GROUP_KEY);
+        GroupItemBuilder.AddGroup(HEARTH_PART, ItemGroups.MOBPVP_GROUP_KEY);
+        GroupItemBuilder.AddGroup(MOB_TABLE, ItemGroups.MOBPVP_GROUP_KEY);
+        GroupItemBuilder.AddGroup(ORE, ItemGroups.MOBPVP_GROUP_KEY);
     }
 
     static {
@@ -51,6 +51,6 @@ public class Items {
         EGG_MINI_GOLEM = register(EGG_MINI_GOLEM_KEY, new SpawnEggItem(EntityType.MINIGOLEM, 0xD8D8D8, 0x8A8A8A, new Item.Settings()));
         EGG_BULWARK = register(EGG_BULWARK_KEY, new SpawnEggItem(EntityType.BULWARK, 0x880E4F, 0xFF1744, new Item.Settings().rarity(Rarity.EPIC)));
         HEARTH_PART = register(HEARTH_PART_KEY, new Item(new Item.Settings()));
-        KALP_ITEM = register(KALP_ITEM_KEY, new KalpItemFeatures(new Item.Settings().rarity(Rarity.UNCOMMON)));
+        KALP_ITEM = register(KALP_ITEM_KEY, new KalpItem(new Item.Settings().rarity(Rarity.UNCOMMON)));
     }
 }
