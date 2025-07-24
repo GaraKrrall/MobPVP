@@ -31,6 +31,10 @@ public class Paths {
     public static final String MAD_ZOMBIE_KEY = "mad_zombie";
     public static final String MAD_SKELETON_KEY = "mad_skeleton";
     public static final String MINIGOLEM = "mini_iron_golem";
+    public static final String PVP_SPAWNER_KEY = "pvp_spawner";
+    public static final String PVP_SPAWNER_MAX_KEY = "pvp_spawner_max";
+    public static final String PVP_SPAWNER_ITEM_KEY = "pvp_spawner_item";
+    public static final String PVP_SPAWNER_MAX_ITEM_KEY = "pvp_spawner_max_item";
     public static final String BULWARK = "bulwark";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     public static final Identifier STARTUP_SOUND_ID = Identifier.of(MOD_ID, "startup");

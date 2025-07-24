@@ -20,6 +20,8 @@ import static com.kaplandev.util.path.Paths.HEARTH_PART_KEY;
 import static com.kaplandev.util.path.Paths.KALP_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.MOB_TABLE_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.ORE_ITEM_KEY;
+import static com.kaplandev.util.path.Paths.PVP_SPAWNER_ITEM_KEY;
+import static com.kaplandev.util.path.Paths.PVP_SPAWNER_MAX_KEY;
 
 public class Items {
     // Item tanımları
@@ -31,6 +33,8 @@ public class Items {
     public static final Item EGG_BULWARK;
     public static final Item HEARTH_PART;
     public static final Item KALP_ITEM;
+    public static final Item PVP_SPAWNER_ITEM;
+    public static final Item PVP_SPAWNER_MAX_ITEM;
 
     public static void init() {
         GroupItemBuilder.AddGroup(EGG_SKELETON, ItemGroups.EGGS_GROUP_KEY);
@@ -41,11 +45,15 @@ public class Items {
         GroupItemBuilder.AddGroup(HEARTH_PART, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(MOB_TABLE, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(ORE, ItemGroups.MOBPVP_GROUP_KEY);
+        GroupItemBuilder.AddGroup(PVP_SPAWNER_ITEM, ItemGroups.MOBPVP_GROUP_KEY);
+        GroupItemBuilder.AddGroup(PVP_SPAWNER_MAX_ITEM, ItemGroups.MOBPVP_GROUP_KEY);
     }
 
     static {
         ORE = register(ORE_ITEM_KEY, new BlockItem(Blocks.CRUDE_ACIDIC_ORE, new Item.Settings()));
         MOB_TABLE = register(MOB_TABLE_ITEM_KEY, new BlockItem(Blocks.MOB_TABLE, new Item.Settings()));
+        PVP_SPAWNER_ITEM = register(PVP_SPAWNER_ITEM_KEY, new BlockItem(Blocks.PVP_SPAWNER, new Item.Settings()));
+        PVP_SPAWNER_MAX_ITEM = register(PVP_SPAWNER_MAX_KEY, new BlockItem(Blocks.PVP_SPAWNER_MAX, new Item.Settings()));
         EGG_SKELETON = register(EGG_SKELETON_KEY, new SpawnEggItem(EntityType.MAD_SKELETON, 0xC1C1C1,0x3A3A3A, new Item.Settings()));
         EGG_SUPER_ZOMBIE = register(EGG_SUPER_ZOMBIE_KEY, new SpawnEggItem(EntityType.MAD_ZOMBIE, 0xB71C1C, 0xFF5252, new Item.Settings()));
         EGG_MINI_GOLEM = register(EGG_MINI_GOLEM_KEY, new SpawnEggItem(EntityType.MINIGOLEM, 0xD8D8D8, 0x8A8A8A, new Item.Settings()));
