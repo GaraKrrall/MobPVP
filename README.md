@@ -30,7 +30,6 @@ _Compatible with Modpacks_
 
 ***
 
-![Custom Status Effects](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3.2.0/assets/cozy/available/github_64h.png)  ![Custom Status Effects](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/fabric_vector.svg) ![Custom Status Effects](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3.2.0/assets/cozy/unsupported/forge_vector.svg)
 
 **_This mod supports Plugins! [Click for an official plugin](https://www.curseforge.com/minecraft/mc-mods/mobpvp-settings-disabled)_**
 
