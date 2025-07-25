@@ -2,6 +2,24 @@
 
 _Compatible with Modpacks_
 
+<p align="center">
+  <img src="https://media.forgecdn.net/attachments/1266/434/chatgpt_image_jul_25-_2025-_10_59_44_pm-min-1.png" alt="Logo" width="200">
+</p>
+<div align="center">
+  <h1>MobPvP</h1>
+  <br>
+  <a href="https://www.curseforge.com/minecraft/mc-mods/mobpvp">
+    <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3.2.0/assets/cozy/available/curseforge_vector.svg" alt="CurseForge">
+  </a>
+  <a href="https://github.com/Creators-of-Create/Create/blob/master/LICENSE">
+    <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3.2.0/assets/cozy/available/github_64h.png" alt="GitHub">
+  </a>
+  <a href="https://modrinth.com/mod/create">
+    <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3.2.0/assets/cozy/available/modrinth_vector.svg" alt="Modrinth">
+  </a>
+</div>
+
+
 ***
 
 [Help me translate this mod into other languages!](https://crowdin.com/project/mobpvp)
