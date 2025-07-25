@@ -11,10 +11,10 @@ _Compatible with Modpacks_
   <a href="https://www.curseforge.com/minecraft/mc-mods/mobpvp">
     <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3.2.0/assets/cozy/available/curseforge_vector.svg" alt="CurseForge">
   </a>
-  <a href="https://github.com/Creators-of-Create/Create/blob/master/LICENSE">
+  <a href="https://github.com/KaplanBedwars/MobPVP">
     <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3.2.0/assets/cozy/available/github_64h.png" alt="GitHub">
   </a>
-  <a href="https://modrinth.com/mod/create">
+  <a href="https://modrinth.com/mod/mobpvp">
     <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3.2.0/assets/cozy/available/modrinth_vector.svg" alt="Modrinth">
   </a>
 </div>
