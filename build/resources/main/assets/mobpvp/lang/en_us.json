@@ -15,6 +15,13 @@
   "key.mobpvp.screenerror": "The player level system only works in singleplayer.",
   "itemGroup.eggs": "MobPVP Spawn Eggs",
   "item.mobpvp.mini_golem_egg": "Mini Iron Golem Spawn Egg",
-  "item.mobpvp.bulwark_egg": "Bulwark Spawn Egg"
-
+  "item.mobpvp.bulwark_egg": "Bulwark Spawn Egg",
+  "item.mobpvp.ultra_hearth": "Ultra Heart",
+  "block.mobpvp.mob_table": "Mob Table",
+  "block.mobpvp.pvp_spawner": "PvE Spawner",
+  "block.mobpvp.pvp_spawner_max": "Super PvE Spawner",
+  "block.mobpvp.damaged_pvp_spawner": "Damaged PvE Spawner",
+  "block.mobpvp.damaged_pvp_spawner_max": "Damaged Super PvE Spawner",
+  "error.mobpvp.alan": "Surface is not flat or area is not suitable.",
+  "error.mobpvp.block": "The block below is not supported."
 }

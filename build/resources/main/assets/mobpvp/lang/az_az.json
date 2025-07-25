@@ -15,5 +15,13 @@
   "key.mobpvp.screenerror": "Oyunçu səviyyə sistemi yalnız tək oyunçu rejimində işləyir.",
   "itemGroup.eggs": "MobPVP Yumurtaları",
   "item.mobpvp.mini_golem_egg": "Mini Dəmir Qolem Çağırma Yumurtası",
-  "item.mobpvp.bulwark_egg": "Bulwark Çağırma Yumurtası"
-}
+  "item.mobpvp.bulwark_egg": "Bulwark Çağırma Yumurtası",
+  "item.mobpvp.ultra_hearth": "Super Ürək",
+  "block.mobpvp.mob_table": "Canlı Masası",
+  "block.mobpvp.pvp_spawner": "PvE Çağırıcı",
+  "block.mobpvp.pvp_spawner_max": "Super PvE Çağırıcı",
+  "block.mobpvp.damaged_pvp_spawner": "Zədələnmiş PvE Çağırıcı",
+  "block.mobpvp.damaged_pvp_spawner_max": "Zədələnmiş Super PvE Çağırıcı",
+  "error.mobpvp.alan": "Səth düz deyil və ya ərazi uyğun deyil.",
+  "error.mobpvp.block": "Alt blok dəstəklənmir."
+

@@ -15,5 +15,14 @@
   "key.mobpvp.screenerror": "Das Spielerlevel-System funktioniert nur im Einzelspielermodus.",
   "itemGroup.eggs": "MobPVP Spawn Eier",
   "item.mobpvp.mini_golem_egg": "Mini-Eisen-Golem-Spawn-Ei",
-  "item.mobpvp.bulwark_egg": "Bulwark-Spawn-Ei"
+  "item.mobpvp.bulwark_egg": "Bulwark-Spawn-Ei",
+  "item.mobpvp.ultra_hearth": "Superherz",
+  "block.mobpvp.mob_table": "Mob-Tisch",
+  "block.mobpvp.pvp_spawner": "PvE-Beschwörer",
+  "block.mobpvp.pvp_spawner_max": "Super-PvE-Beschwörer",
+  "block.mobpvp.damaged_pvp_spawner": "Beschädigter PvE-Beschwörer",
+  "block.mobpvp.damaged_pvp_spawner_max": "Beschädigter Super-PvE-Beschwörer",
+  "error.mobpvp.alan": "Oberfläche ist uneben oder der Bereich ist ungeeignet.",
+  "error.mobpvp.block": "Der Block darunter wird nicht unterstützt."
+
 }
