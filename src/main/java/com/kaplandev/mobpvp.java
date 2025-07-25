@@ -72,9 +72,9 @@ public final class mobpvp implements ModInitializer {
     @Override
     public void onInitialize() {
         WorldGen.register();
+        Blocks.init();
         EntityRegister.register();
         Items.init();
-        Blocks.init();
         ItemGroups.init();
         Registry.register(Registries.SOUND_EVENT, STARTUP_SOUND_ID, STARTUP_SOUND_EVENT);
         PluginRegistry.callOnLoad();

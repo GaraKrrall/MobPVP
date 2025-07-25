@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " H ",
+    "DCD",
+    " P "
+  ],
+  "key": {
+    "H": { "item": "mobpvp:hearth_part" },
+    "D": { "item": "minecraft:diamond" },
+    "C": { "item": "minecraft:golden_apple" },
+    "P": { "item": "mobpvp:kalp" }
+  },
+  "result": {
+    "id": "mobpvp:ultra_hearth",
+    "count": 1
+  }
+}

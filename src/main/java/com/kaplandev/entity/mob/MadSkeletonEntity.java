@@ -23,7 +23,8 @@ public class MadSkeletonEntity extends SkeletonEntity {
     public static DefaultAttributeContainer.Builder createCustomSkeletonAttributes() {
         return SkeletonEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.26) // Daha hızlı hareket
-                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 40.0);
+                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 40.0)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 4.0);
     }
 
     @Override

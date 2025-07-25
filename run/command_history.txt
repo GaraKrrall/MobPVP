@@ -1,21 +1,3 @@
-/effect clear @a
-/effect give Player646 minecraft:night_vision infinite 1 true
-/summon mobpvp:bulwark
-/time set day
-/difficulty peaceful
-/difficulty easy
-/weather clear
-/tp 0 ~ 0
-/summon mobpvp:mini_iron_golem
-/time set day
-/effect give 0d284a1e-f8d2-4da6-9dfc-2cde604ecc14 minecraft:slowness infinite 255
-/weather clear
-/effect give @e[type=minecraft:iron_golem] minecraft:slowness infinite 255
-/time set day
-/give Player536 mobpvp:mobtable_item
-/give Player574 mobpvp:mobtable_item
-/data get entity @e[type=minecraft:villager,limit=1,sort=nearest]
-/kill @e[type=minecraft:villager]
 /time set day
 /execute if block ~ ~-1 ~ mobpvp:mob_table run say doğru blok
 /give Player792 mobpvp:mobtable_item
@@ -48,3 +30,21 @@
 /weather clear
 /give Player321 mobpvp:mini_golem_egg
 /give Player321 mobpvp:bulwark_egg
+/playsound block.trial_spawner.ambient_ominous
+/time set day
+/effect give @a minecraft:strength infinite 255
+/summon mobpvp:bulwark
+/setblock 120 -61 -708 mobpvp:pvp_spawner
+/time set day
+/summon minecraft:warden
+/kill @e[type=minecraft:ender_dragon]
+/summon minecraft:warden
+/summon mobpvp:bulwark
+/time set day
+/effect give @a minecraft:strength infinite 255
+/time set day
+/difficulty peaceful
+/difficulty easy
+/effect give @a minecraft:strength infinite 255
+/time set day
+/recipe give Player191 mobpvp:ultra_hearth

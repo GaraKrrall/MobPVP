@@ -21,6 +21,7 @@ public class Paths {
     public static final String EGG_MINI_GOLEM_KEY = "mini_golem_egg";
     public static final String EGG_BULWARK_KEY = "bulwark_egg";
     public static final String HEARTH_PART_KEY = "hearth_part";
+    public static final String ULTRA_HEARTH_KEY = "ultra_hearth";
     public static final String CRUDE_ACIDIC_ORE_KEY = "ore";
     public static final String MOB_TABLE_KEY = "mob_table";
     public static final String TAB_MOBPVP_ITEMS_KEY = "itemsmobpvp";
@@ -35,6 +36,10 @@ public class Paths {
     public static final String PVP_SPAWNER_MAX_KEY = "pvp_spawner_max";
     public static final String PVP_SPAWNER_ITEM_KEY = "pvp_spawner_item";
     public static final String PVP_SPAWNER_MAX_ITEM_KEY = "pvp_spawner_max_item";
+    public static final String DAMAGED_PVP_SPAWNER_KEY = "damaged_pvp_spawner";
+    public static final String DAMAGED_PVP_SPAWNER_MAX_KEY = "damaged_pvp_spawner_max";
+    public static final String DAMAGED_PVP_SPAWNER_ITEM_KEY = "damaged_pvp_spawner_item";
+    public static final String DAMAGED_PVP_SPAWNER_MAX_ITEM_KEY = "damaged_pvp_spawner_max_item";
     public static final String BULWARK = "bulwark";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     public static final Identifier STARTUP_SOUND_ID = Identifier.of(MOD_ID, "startup");

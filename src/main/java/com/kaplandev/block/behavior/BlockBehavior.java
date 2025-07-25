@@ -9,4 +9,3 @@ public interface BlockBehavior {
     default void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack tool, boolean dropXp) {
     }
 }
-

@@ -23,7 +23,8 @@ public class MadZombieEntity extends ZombieEntity {
     public static DefaultAttributeContainer.Builder createCustomZombieAttributes() {
         return ZombieEntity.createZombieAttributes()
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.35) // Hızlı ama kaçılmaz değil
-                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 40.0);
+                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 40.0)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 8.0);
 
     }
 
@@ -44,6 +45,8 @@ public class MadZombieEntity extends ZombieEntity {
                 entity -> entity != this
                         && !(entity instanceof MadZombieEntity)
                         && !(entity instanceof BulwarkEntity)
+                        && !(entity instanceof MadSkeletonEntity)
+
         ));
     }
 

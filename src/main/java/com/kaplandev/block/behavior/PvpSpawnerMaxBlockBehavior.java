@@ -1,17 +1,38 @@
 package com.kaplandev.block.behavior;
 
-import com.kaplandev.item.Items;
+import com.kaplandev.entity.EntityType;
+import com.kaplandev.entity.block.PvpSpawnerMaxBlockEntity;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.item.ItemStack;
-import net.minecraft.server.world.ServerWorld;
+import com.mojang.serialization.MapCodec;
+import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.block.entity.BlockEntityTicker;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
-public class PvpSpawnerMaxBlockBehavior implements BlockBehavior {
-    @Override
-    public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack tool, boolean dropXp) {
-        if (!world.isClient) Block.dropStack(world, pos, new ItemStack(Items.PVP_SPAWNER_MAX_ITEM));
+public class PvpSpawnerMaxBlockBehavior extends BlockWithEntity {
+    public PvpSpawnerMaxBlockBehavior(Settings settings) {
+        super(settings);
     }
 
+    @Override
+    public BlockRenderType getRenderType(BlockState state) {
+        return BlockRenderType.MODEL;
+    }
+
+    @Override
+    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+        return new PvpSpawnerMaxBlockEntity(pos, state);
+    }
+
+    @Override
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
+        return world.isClient ? null : BlockWithEntity.validateTicker(type, EntityType.PVP_SPAWNER_MAX, PvpSpawnerMaxBlockEntity::tick);
+    }
+
+    @Override
+    protected MapCodec<? extends BlockWithEntity> getCodec() {
+        return null; // geçici çözüm — crash riskine dikkat
+    }
 }

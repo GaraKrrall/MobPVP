@@ -1,5 +1,6 @@
 package com.kaplandev.entity.boss;
 
+import com.kaplandev.block.behavior.PvpSpawnerBlockBehavior;
 import com.kaplandev.entity.goal.boss.BreakBlockGoal;
 import com.kaplandev.entity.goal.boss.FireballAttackGoal;
 import com.kaplandev.entity.goal.boss.SummonZombieGoal;
@@ -60,6 +61,7 @@ public class BulwarkEntity extends PathAwareEntity {
         super.tick();
         // System.out.println("Boss tickliyor! Health: " + this.getHealth());
         bossBar.setPercent(this.getHealth() / this.getMaxHealth());
+
     }
 
     @Override

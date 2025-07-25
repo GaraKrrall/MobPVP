@@ -15,5 +15,13 @@
   "key.mobpvp.screenerror": "Oyuncu seviye sistemi yalnızca tek oyunculu modda çalışır.",
   "itemGroup.eggs": "MobPVP Çağırma Yumurtaları",
   "item.mobpvp.mini_golem_egg": "Minik Demir Golem Çağırma Yumurtası",
-  "item.mobpvp.bulwark_egg": "Bulwark Çağırma Yumurtası"
+  "item.mobpvp.bulwark_egg": "Bulwark Çağırma Yumurtası",
+  "item.mobpvp.ultra_hearth": "Süper Kalp",
+  "block.mobpvp.mob_table": "Canlı Masası",
+  "block.mobpvp.pvp_spawner": "PvE Çağırıcı",
+  "block.mobpvp.pvp_spawner_max": "Süper PvE Çağırıcı",
+  "block.mobpvp.damaged_pvp_spawner": "Hasarlı PvE Çağırıcı",
+  "block.mobpvp.damaged_pvp_spawner_max": "Hasarlı Süper PvE Çağırıcı",
+  "error.mobpvp.alan": "Yüzey düz değil veya alan uygun değil.",
+  "error.mobpvp.block": "Alt blok desteklenmiyor."
 }

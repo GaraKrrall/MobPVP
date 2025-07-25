@@ -60,6 +60,14 @@ public class KalpItem extends Item implements ItemFeature {
             return ActionResult.SUCCESS;
         }
 
+        if (!world.isClient && world.getBlockState(pos).getBlock() == Blocks.PVP_SPAWNER) {
+
+            world.setBlockState(pos, Blocks.PVP_SPAWNER_MAX.getDefaultState());
+            stack.decrement(1);
+            player.playSound(SoundEvents.BLOCK_TRIAL_SPAWNER_AMBIENT_OMINOUS, 1.0f, 1.0f);
+            return ActionResult.SUCCESS;
+        }
+
         return ActionResult.PASS;
     }
 

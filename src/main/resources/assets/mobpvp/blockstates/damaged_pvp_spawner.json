@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "mobpvp:block/damaged_pvp_spawner" }
+  }
+}

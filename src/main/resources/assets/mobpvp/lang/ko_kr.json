@@ -15,5 +15,14 @@
   "key.mobpvp.screenerror": "플레이어 레벨 시스템은 싱글플레이에서만 작동합니다.",
   "itemGroup.eggs": "MobPVP 스폰 알",
   "item.mobpvp.mini_golem_egg": "미니 아이언 골렘 소환 알",
-  "item.mobpvp.bulwark_egg": "불워크 소환 알"
+  "item.mobpvp.bulwark_egg": "불워크 소환 알",
+  "item.mobpvp.ultra_hearth": "Cœur Suprême",
+  "block.mobpvp.mob_table": "Table des Créatures",
+  "block.mobpvp.pvp_spawner": "Générateur PvE",
+  "block.mobpvp.pvp_spawner_max": "Générateur PvE Suprême",
+  "block.mobpvp.damaged_pvp_spawner": "Générateur PvE Endommagé",
+  "block.mobpvp.damaged_pvp_spawner_max": "Générateur PvE Suprême Endommagé",
+  "error.mobpvp.alan": "La surface n'est pas plane ou la zone est inappropriée.",
+  "error.mobpvp.block": "Le bloc en dessous n'est pas pris en charge."
+
 }

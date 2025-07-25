@@ -15,5 +15,14 @@
   "key.mobpvp.screenerror": "Le système de niveau ne fonctionne qu’en mode solo.",
   "itemGroup.eggs": "Œufs d'apparition MobPVP",
   "item.mobpvp.mini_golem_egg": "Œuf d'Invocation de Mini Golem de Fer",
-  "item.mobpvp.bulwark_egg": "Œuf d'Invocation de Bulwark"
+  "item.mobpvp.bulwark_egg": "Œuf d'Invocation de Bulwark",
+  "item.mobpvp.ultra_hearth": "Cœur Suprême",
+  "block.mobpvp.mob_table": "Table des Créatures",
+  "block.mobpvp.pvp_spawner": "Générateur PvE",
+  "block.mobpvp.pvp_spawner_max": "Générateur PvE Suprême",
+  "block.mobpvp.damaged_pvp_spawner": "Générateur PvE Endommagé",
+  "block.mobpvp.damaged_pvp_spawner_max": "Générateur PvE Suprême Endommagé",
+  "error.mobpvp.alan": "La surface n'est pas plane ou la zone est inappropriée.",
+  "error.mobpvp.block": "Le bloc en dessous n'est pas pris en charge."
+
 }
