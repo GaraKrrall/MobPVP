@@ -36,6 +36,8 @@ public class Paths {
     public static final String PVP_SPAWNER_MAX_KEY = "pvp_spawner_max";
     public static final String PVP_SPAWNER_ITEM_KEY = "pvp_spawner_item";
     public static final String PVP_SPAWNER_MAX_ITEM_KEY = "pvp_spawner_max_item";
+    public static final String IRON_CHEST_KEY = "iron_chest";
+    public static final String IRON_CHEST_ITEM_KEY = "iron_chest_item";
     public static final String DAMAGED_PVP_SPAWNER_KEY = "damaged_pvp_spawner";
     public static final String DAMAGED_PVP_SPAWNER_MAX_KEY = "damaged_pvp_spawner_max";
     public static final String DAMAGED_PVP_SPAWNER_ITEM_KEY = "damaged_pvp_spawner_item";

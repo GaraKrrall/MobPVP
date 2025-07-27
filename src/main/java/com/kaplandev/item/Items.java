@@ -19,6 +19,7 @@ import static com.kaplandev.util.path.Paths.EGG_MINI_GOLEM_KEY;
 import static com.kaplandev.util.path.Paths.EGG_SKELETON_KEY;
 import static com.kaplandev.util.path.Paths.EGG_SUPER_ZOMBIE_KEY;
 import static com.kaplandev.util.path.Paths.HEARTH_PART_KEY;
+import static com.kaplandev.util.path.Paths.IRON_CHEST_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.KALP_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.MOB_TABLE_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.ORE_ITEM_KEY;
@@ -41,6 +42,7 @@ public class Items {
     public static final Item PVP_SPAWNER_MAX_ITEM;
     public static final Item DAMAGED_PVP_SPAWNER_ITEM;
     public static final Item DAMAGED_PVP_SPAWNER_MAX_ITEM;
+    public static final Item IRON_CHEST_ITEM;
 
     public static void init() {
         GroupItemBuilder.AddGroup(EGG_SKELETON, ItemGroups.EGGS_GROUP_KEY);
@@ -56,6 +58,7 @@ public class Items {
         GroupItemBuilder.AddGroup(PVP_SPAWNER_MAX_ITEM, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(DAMAGED_PVP_SPAWNER_ITEM, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(DAMAGED_PVP_SPAWNER_MAX_ITEM, ItemGroups.MOBPVP_GROUP_KEY);
+        GroupItemBuilder.AddGroup(IRON_CHEST_ITEM, ItemGroups.MOBPVP_GROUP_KEY);
     }
 
     static {
@@ -65,6 +68,7 @@ public class Items {
         PVP_SPAWNER_MAX_ITEM = GroupItemBuilder.BuildItem(PVP_SPAWNER_MAX_ITEM_KEY, new BlockItem(Blocks.PVP_SPAWNER_MAX, new Item.Settings()));
         DAMAGED_PVP_SPAWNER_ITEM = GroupItemBuilder.BuildItem(DAMAGED_PVP_SPAWNER_ITEM_KEY, new BlockItem(Blocks.DAMAGED_PVP_SPAWNER, new Item.Settings()));
         DAMAGED_PVP_SPAWNER_MAX_ITEM =GroupItemBuilder.BuildItem(DAMAGED_PVP_SPAWNER_MAX_ITEM_KEY, new BlockItem(Blocks.DAMAGED_PVP_SPAWNER_MAX, new Item.Settings()));
+        IRON_CHEST_ITEM = GroupItemBuilder.BuildItem(IRON_CHEST_ITEM_KEY, new BlockItem(Blocks.IRON_CHEST, new Item.Settings()));
         EGG_SKELETON = GroupItemBuilder.BuildItem(EGG_SKELETON_KEY, new SpawnEggItem(EntityType.MAD_SKELETON, 0xC1C1C1,0x3A3A3A, new Item.Settings()));
         EGG_SUPER_ZOMBIE = GroupItemBuilder.BuildItem(EGG_SUPER_ZOMBIE_KEY, new SpawnEggItem(EntityType.MAD_ZOMBIE, 0xB71C1C, 0xFF5252, new Item.Settings()));
         EGG_MINI_GOLEM = GroupItemBuilder.BuildItem(EGG_MINI_GOLEM_KEY, new SpawnEggItem(EntityType.MINIGOLEM, 0xD8D8D8, 0x8A8A8A, new Item.Settings()));

@@ -19,6 +19,9 @@ import net.minecraft.util.math.intprovider.IntProvider;
 import static com.kaplandev.mobpvp.MOD_ID;
 
 public class BlockBuilder {
+    public static BlockEntityType<?> registeredEntity;
+    public static Block registeredBlock;
+
     public static Block BuildBlockAttribute(AbstractBlock.Settings settings, BlockBehavior behavior, IntProvider xpProvider) {
         return new ExperienceDroppingBlock(xpProvider, settings) {
             @Override
@@ -44,6 +47,24 @@ public class BlockBuilder {
 
         // 2. BlockEntityType oluştur ve kaydet
         BlockEntityType<T> blockEntityType = Registry.register(
+                Registries.BLOCK_ENTITY_TYPE,
+                id,
+                BlockEntityType.Builder.create(factory, registeredBlock).build(null)
+        );
+
+        return registeredBlock;
+    }
+
+
+    public static <T extends BlockEntity> Block RegisterCreatedBlockWithEntityType2(
+            String name,
+            Block block,
+            BlockEntityType.BlockEntityFactory<T> factory
+    ) {
+        Identifier id = Identifier.of(MOD_ID, name);
+
+        registeredBlock = Registry.register(Registries.BLOCK, id, block);
+        registeredEntity = Registry.register(
                 Registries.BLOCK_ENTITY_TYPE,
                 id,
                 BlockEntityType.Builder.create(factory, registeredBlock).build(null)

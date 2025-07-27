@@ -48,8 +48,8 @@ mouseSensitivity:0.5
 damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:true
-resourcePacks:["vanilla","fabric"]
-incompatibleResourcePacks:["mobpvp"]
+resourcePacks:[]
+incompatibleResourcePacks:[]
 lastServer:
 lang:tr_tr
 chatVisibility:0
