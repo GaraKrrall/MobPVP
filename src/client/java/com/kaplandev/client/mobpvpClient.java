@@ -16,7 +16,6 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.minecraft.client.render.entity.SkeletonEntityRenderer;
@@ -57,8 +56,6 @@ public class mobpvpClient implements ClientModInitializer {
                 hasOpenedPopup = true;
                 client.setScreen(new WelcomeScreen()); // Artık ayrı ayar kontrol ediliyor
             }*/
-
-
         });
     }
 }

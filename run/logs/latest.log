@@ -1,5 +1,5 @@
-[00:33:13] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
-[00:33:13] [main/INFO] (FabricLoader) Loading 55 mods:
+[15:18:07] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
+[15:18:07] [main/INFO] (FabricLoader) Loading 55 mods:
 	- fabric-api 0.116.1+1.21.1
 	- fabric-api-base 0.4.42+6573ed8c19
 	- fabric-api-lookup-api-v1 1.6.71+b559734419
@@ -55,156 +55,93 @@
 	- minecraft 1.21.1
 	- mixinextras 0.4.1
 	- mobpvp 3.1.2-25.07.2025
-[00:33:13] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/akgls/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/22f9eb729e216a091673a574a5906dc1b9027fb3/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[00:33:14] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[00:33:14] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[00:33:15] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[00:33:17] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 808 milliseconds
-[00:33:24] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[00:33:24] [Render thread/INFO] (Minecraft) Setting user: Player3
-[00:33:24] [Render thread/INFO] (Minecraft) [STDOUT]: Custom entities registered.
-[00:33:24] [Render thread/INFO] (Minecraft) [STDOUT]: Mob özellikleri kaydedildi
-[00:33:25] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[00:33:25] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
-[00:33:27] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, mobpvp
-[00:33:27] [Worker-Main-2/INFO] (Minecraft) Found unifont_all_no_pua-15.1.05.hex, loading
-[00:33:28] [Worker-Main-2/INFO] (Minecraft) Found unifont_jp_patch-15.1.05.hex, loading
-[00:33:29] [Worker-Main-1/WARN] (Minecraft) Missing textures in model mobpvp:iron_chest_item#inventory:
-    minecraft:textures/atlas/blocks.png:mobpvp:item/iron_chest
-[00:33:29] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
-[00:33:29] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[00:33:29] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on SES (VB-Audio Virtual Cable)
-[00:33:29] [Render thread/INFO] (Minecraft) Sound engine started
-[00:33:29] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[00:33:29] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[00:33:29] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[00:33:29] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[00:33:29] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[00:33:29] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[00:33:29] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[00:33:29] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[00:33:29] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[00:33:30] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[00:33:30] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[00:33:30] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[00:33:30] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[00:33:30] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[00:33:30] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[00:33:31] [Render thread/INFO] (mobpvp) Playing startup sound
-[00:33:42] [Render thread/INFO] (Minecraft) Loaded 1300 recipes
-[00:33:42] [Render thread/INFO] (Minecraft) Loaded 1417 advancements
-[00:33:42] [Render thread/WARN] (Minecraft) Not all defined tags for registry ResourceKey[minecraft:root / minecraft:entity_type] are present in data pack: mobpvp:hostile_mobs
-[00:33:43] [Render thread/INFO] (BiomeModificationImpl) Applied 54 biome modifications to 53 of 64 new biomes in 13.64 ms
-[00:33:43] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.1
-[00:33:43] [Server thread/INFO] (Minecraft) Generating keypair
-[00:33:43] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[00:33:44] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %0
-[00:33:44] [Render thread/INFO] (Minecraft) Time elapsed: 364 ms
-[00:33:44] [Server thread/INFO] (Minecraft) Changing view distance to 32, from 10
-[00:33:44] [Server thread/INFO] (Minecraft) Changing simulation distance to 11, from 0
-[00:33:45] [Server thread/INFO] (Minecraft) Player3[local:E:08132a31] logged in with entity id 25 at (-210.9421449507247, -57.933647628454096, -176.05305089258243)
-[00:33:45] [Server thread/INFO] (Minecraft) Player3 oyuna katıldı
-[00:33:45] [Server thread/INFO] (Minecraft) Player3, [Donanım Edin] gelişimini yaptı
-[00:33:45] [Server thread/INFO] (Minecraft) Player3, [İstikbal Göklerdedir] hedefine ulaştı
-[00:33:45] [Server thread/INFO] (Minecraft) Player3, [Kanatlara Kavuş] meydan okumasını tamamladı
-[00:33:46] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 32] §fMad Skeleton §7- §a18,0§7/§c55 ❤'/135, l='ServerLevel[Ana dünya]', x=-187.14, y=-60.00, z=-196.74] died: §c[Seviye: 32] §fMad Skeleton §7- §a18,0§7/§c55 ❤ yanarak öldü
-[00:33:46] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 14] §fMad Skeleton §7- §a12,2§7/§c47 ❤'/290, l='ServerLevel[Ana dünya]', x=-116.73, y=-59.98, z=-229.09] died: §c[Seviye: 14] §fMad Skeleton §7- §a12,2§7/§c47 ❤ yanarak öldü
-[00:33:47] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 2] §fZombi §7- §a10,9§7/§c31 ❤'/199, l='ServerLevel[Ana dünya]', x=-192.28, y=-63.00, z=-198.35] died: §c[Seviye: 2] §fZombi §7- §a10,9§7/§c31 ❤, §c[Seviye: 9] §fMad Zombie §7- §a41,0§7/§c43 ❤ tarafından katledildi
-[00:33:47] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 18] §fMad Skeleton §7- §a37,4§7/§c49 ❤'/110, l='ServerLevel[Ana dünya]', x=-177.86, y=-60.00, z=-200.18] died: §c[Seviye: 18] §fMad Skeleton §7- §a37,4§7/§c49 ❤ yanarak öldü
-[00:33:47] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 37] §fMad Skeleton §7- §a19,4§7/§c56 ❤'/206, l='ServerLevel[Ana dünya]', x=-175.85, y=-60.00, z=-220.20] died: §c[Seviye: 37] §fMad Skeleton §7- §a19,4§7/§c56 ❤ yanarak öldü
-[00:33:47] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 1] §fZombi §7- §a8,5§7/§c30 ❤'/156, l='ServerLevel[Ana dünya]', x=-192.52, y=-63.00, z=-200.10] died: §c[Seviye: 1] §fZombi §7- §a8,5§7/§c30 ❤, §c[Seviye: 38] §fMad Zombie §7- §a51,1§7/§c57 ❤ tarafından katledildi
-[00:33:48] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 18] §fZombi §7- §a14,2§7/§c49 ❤'/200, l='ServerLevel[Ana dünya]', x=-192.54, y=-63.00, z=-199.40] died: §c[Seviye: 18] §fZombi §7- §a14,2§7/§c49 ❤, §c[Seviye: 15] §fMad Zombie §7- §a37,7§7/§c48 ❤ tarafından katledildi
-[00:33:48] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 20] §fZombi §7- §a15,2§7/§c50 ❤'/154, l='ServerLevel[Ana dünya]', x=-189.39, y=-63.00, z=-201.53] died: §c[Seviye: 20] §fZombi §7- §a15,2§7/§c50 ❤, §c[Seviye: 33] §fMad Zombie §7- §a44,4§7/§c55 ❤ tarafından katledildi
-[00:33:48] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 9] §fZombi §7- §a0,8§7/§c43 ❤'/153, l='ServerLevel[Ana dünya]', x=-192.13, y=-63.00, z=-196.39] died: §c[Seviye: 9] §fZombi §7- §a0,8§7/§c43 ❤, §c[Seviye: 15] §fMad Zombie §7- §a45,7§7/§c48 ❤ tarafından katledildi
-[00:33:48] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 30] §fMad Skeleton §7- §a19,3§7/§c54 ❤'/292, l='ServerLevel[Ana dünya]', x=-114.86, y=-58.00, z=-234.23] died: §c[Seviye: 30] §fMad Skeleton §7- §a19,3§7/§c54 ❤ yanarak öldü
-[00:33:48] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Seviye: 19] §fMad Zombie §7- §a1,8§7/§c50 ❤'/138, l='ServerLevel[Ana dünya]', x=-193.50, y=-63.00, z=-197.15] died: §c[Seviye: 19] §fMad Zombie §7- §a1,8§7/§c50 ❤ yanarak öldü
-[00:33:48] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 36] §fMad Skeleton §7- §a18,3§7/§c56 ❤'/144, l='ServerLevel[Ana dünya]', x=-168.87, y=-60.00, z=-184.87] died: §c[Seviye: 36] §fMad Skeleton §7- §a18,3§7/§c56 ❤ yanarak öldü
-[00:33:48] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 16] §fZombi §7- §a3,2§7/§c48 ❤'/175, l='ServerLevel[Ana dünya]', x=-197.94, y=-60.00, z=-200.12] died: §c[Seviye: 16] §fZombi §7- §a3,2§7/§c48 ❤, §c[Seviye: 23] §fMad Zombie §7- §a34,8§7/§c52 ❤ tarafından katledildi
-[00:33:48] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 11] §fZombi §7- §a13,2§7/§c45 ❤'/165, l='ServerLevel[Ana dünya]', x=-195.18, y=-60.00, z=-196.08] died: §c[Seviye: 11] §fZombi §7- §a13,2§7/§c45 ❤, §c[Seviye: 37] §fMad Zombie §7- §a44,0§7/§c56 ❤ tarafından katledildi
-[00:33:48] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 2] §fZombi §7- §a8,8§7/§c31 ❤'/184, l='ServerLevel[Ana dünya]', x=-191.39, y=-63.00, z=-197.46] died: §c[Seviye: 2] §fZombi §7- §a8,8§7/§c31 ❤, §c[Seviye: 15] §fMad Zombie §7- §a37,7§7/§c48 ❤ tarafından katledildi
-[00:33:49] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 3] §fZombi §7- §a4,7§7/§c34 ❤'/194, l='ServerLevel[Ana dünya]', x=-190.43, y=-63.00, z=-202.08] died: §c[Seviye: 3] §fZombi §7- §a4,7§7/§c34 ❤, §c[Seviye: 21] §fMad Zombie §7- §a41,2§7/§c51 ❤ tarafından katledildi
-[00:33:49] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Seviye: 25] §fMad Zombie §7- §a5,8§7/§c53 ❤'/159, l='ServerLevel[Ana dünya]', x=-193.70, y=-62.06, z=-195.30] died: §c[Seviye: 25] §fMad Zombie §7- §a5,8§7/§c53 ❤, §c[Seviye: 5] §fZombi §7- §a32,0§7/§c34 ❤ tarafından katledildi
-[00:33:49] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 5] §fMad Skeleton §7- §a19,9§7/§c38 ❤'/305, l='ServerLevel[Ana dünya]', x=-114.14, y=-63.00, z=-229.42] died: §c[Seviye: 5] §fMad Skeleton §7- §a19,9§7/§c38 ❤, §c[Seviye: 7] §fMad Zombie §7- §a36,8§7/§c41 ❤ tarafından havaya uçuruldu
-[00:33:49] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Seviye: 4] §fMad Zombie §7- §a19,1§7/§c36 ❤'/328, l='ServerLevel[Ana dünya]', x=-110.59, y=-63.00, z=-231.72] died: §c[Seviye: 4] §fMad Zombie §7- §a19,1§7/§c36 ❤, §c[Seviye: 7] §fMad Zombie §7- §a36,8§7/§c41 ❤ tarafından havaya uçuruldu
-[00:33:49] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 16] §fZombi §7- §a1,8§7/§c48 ❤'/414, l='ServerLevel[Ana dünya]', x=-130.70, y=-62.04, z=-139.74] died: §c[Seviye: 16] §fZombi §7- §a1,8§7/§c48 ❤, §c[Seviye: 28] §fMad Zombie §7- §a38,7§7/§c54 ❤ tarafından katledildi
-[00:33:49] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 30] §fMad Skeleton §7- §a19,3§7/§c54 ❤'/291, l='ServerLevel[Ana dünya]', x=-116.45, y=-63.00, z=-237.52] died: §c[Seviye: 30] §fMad Skeleton §7- §a19,3§7/§c54 ❤ yanarak öldü
-[00:33:49] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 15] §fMad Skeleton §7- §a10,7§7/§c48 ❤'/311, l='ServerLevel[Ana dünya]', x=-115.20, y=-63.00, z=-237.45] died: §c[Seviye: 15] §fMad Skeleton §7- §a10,7§7/§c48 ❤ yanarak öldü
-[00:33:49] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 10] §fZombi §7- §a19,0§7/§c44 ❤'/319, l='ServerLevel[Ana dünya]', x=-114.72, y=-58.00, z=-231.81] died: §c[Seviye: 10] §fZombi §7- §a19,0§7/§c44 ❤, §c[Seviye: 31] §fMad Zombie §7- §a46,7§7/§c55 ❤ tarafından katledildi
-[00:33:49] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 9] §fZombi §7- §a0,8§7/§c43 ❤'/166, l='ServerLevel[Ana dünya]', x=-195.88, y=-58.00, z=-199.88] died: §c[Seviye: 9] §fZombi §7- §a0,8§7/§c43 ❤, §c[Seviye: 21] §fMad Zombie §7- §a23,2§7/§c51 ❤ ile savaşırken cayır cayır yandı
-[00:33:49] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 4] §fZombi §7- §a1,4§7/§c36 ❤'/148, l='ServerLevel[Ana dünya]', x=-194.18, y=-63.00, z=-200.32] died: §c[Seviye: 4] §fZombi §7- §a1,4§7/§c36 ❤, §c[Seviye: 27] §fMad Zombie §7- §a37,3§7/§c53 ❤ tarafından katledildi
-[00:33:49] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 11] §fZombi §7- §a13,7§7/§c45 ❤'/429, l='ServerLevel[Ana dünya]', x=-108.46, y=-63.00, z=-226.40] died: §c[Seviye: 11] §fZombi §7- §a13,7§7/§c45 ❤, §c[Seviye: 15] §fMad Zombie §7- §a35,7§7/§c48 ❤ tarafından katledildi
-[00:33:50] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 19] §fZombi §7- §a10,7§7/§c50 ❤'/196, l='ServerLevel[Ana dünya]', x=-192.75, y=-63.00, z=-199.84] died: §c[Seviye: 19] §fZombi §7- §a10,7§7/§c50 ❤, §c[Seviye: 26] §fMad Zombie §7- §a316,2§7/§c320 ❤ tarafından katledildi
-[00:33:50] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Seviye: 33] §fMad Zombie §7- §a38,3§7/§c55 ❤'/137, l='ServerLevel[Ana dünya]', x=-192.19, y=-63.00, z=-199.49] died: §c[Seviye: 33] §fMad Zombie §7- §a38,3§7/§c55 ❤, §c[Seviye: 17] §fZombi §7- §a11,7§7/§c49 ❤ tarafından katledildi
-[00:33:50] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Seviye: 19] §fMad Zombie §7- §a8,1§7/§c50 ❤'/346, l='ServerLevel[Ana dünya]', x=-115.68, y=-63.00, z=-235.09] died: §c[Seviye: 19] §fMad Zombie §7- §a8,1§7/§c50 ❤ yanarak öldü
-[00:33:50] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 13] §fZombi §7- §a11,8§7/§c46 ❤'/174, l='ServerLevel[Ana dünya]', x=-193.24, y=-63.00, z=-197.86] died: §c[Seviye: 13] §fZombi §7- §a11,8§7/§c46 ❤, §c[Seviye: 39] §fMad Zombie §7- §a50,9§7/§c57 ❤ tarafından katledildi
-[00:33:50] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 7] §fZombi §7- §a0,2§7/§c41 ❤'/152, l='ServerLevel[Ana dünya]', x=-194.73, y=-62.00, z=-196.45] died: §c[Seviye: 7] §fZombi §7- §a0,2§7/§c41 ❤, §c[Seviye: 23] §fMad Zombie §7- §a34,8§7/§c52 ❤ tarafından katledildi
-[00:33:50] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 20] §fZombi §7- §a10,5§7/§c50 ❤'/149, l='ServerLevel[Ana dünya]', x=-193.78, y=-63.00, z=-199.60] died: §c[Seviye: 20] §fZombi §7- §a10,5§7/§c50 ❤, §c[Seviye: 10] §fMad Zombie §7- §a13,3§7/§c44 ❤ tarafından katledildi
-[00:33:51] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 11] §fZombi §7- §a16,3§7/§c45 ❤'/163, l='ServerLevel[Ana dünya]', x=-191.76, y=-62.21, z=-200.19] died: §c[Seviye: 11] §fZombi §7- §a16,3§7/§c45 ❤, §c[Seviye: 26] §fMad Zombie §7- §a316,2§7/§c320 ❤ tarafından katledildi
-[00:33:51] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 17] §fZombi §7- §a11,7§7/§c49 ❤'/164, l='ServerLevel[Ana dünya]', x=-192.89, y=-63.00, z=-197.55] died: §c[Seviye: 17] §fZombi §7- §a11,7§7/§c49 ❤, §c[Seviye: 39] §fMad Zombie §7- §a49,9§7/§c57 ❤ tarafından katledildi
-[00:33:51] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 13] §fZombi §7- §a0,0§7/§c34 ❤'/431, l='ServerLevel[Ana dünya]', x=-105.91, y=-63.00, z=-228.60] died: §c[Seviye: 13] §fZombi §7- §a0,0§7/§c34 ❤, §c[Seviye: 22] §fMad Zombie §7- §a48,4§7/§c51 ❤ tarafından katledildi
-[00:33:51] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 13] §fMad Skeleton §7- §a16,8§7/§c46 ❤'/313, l='ServerLevel[Ana dünya]', x=-113.27, y=-58.00, z=-230.45] died: §c[Seviye: 13] §fMad Skeleton §7- §a16,8§7/§c46 ❤ yanarak öldü
-[00:33:52] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 14] §fZombi §7- §a1,5§7/§c47 ❤'/182, l='ServerLevel[Ana dünya]', x=-193.56, y=-63.00, z=-196.67] died: §c[Seviye: 14] §fZombi §7- §a1,5§7/§c47 ❤, §c[Seviye: 9] §fMad Zombie §7- §a19,8§7/§c43 ❤ tarafından katledildi
-[00:33:52] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 1] §fZombi §7- §a6,3§7/§c27 ❤'/179, l='ServerLevel[Ana dünya]', x=-193.34, y=-63.00, z=-197.15] died: §c[Seviye: 1] §fZombi §7- §a6,3§7/§c27 ❤, §c[Seviye: 21] §fMad Zombie §7- §a19,8§7/§c51 ❤ tarafından katledildi
-[00:33:52] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 2] §fZombi §7- §a13,6§7/§c31 ❤'/162, l='ServerLevel[Ana dünya]', x=-192.55, y=-63.00, z=-196.86] died: §c[Seviye: 2] §fZombi §7- §a13,6§7/§c31 ❤, §c[Seviye: 32] §fMad Zombie §7- §a32,5§7/§c55 ❤ tarafından katledildi
-[00:33:53] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 7] §fZombi §7- §a2,2§7/§c41 ❤'/188, l='ServerLevel[Ana dünya]', x=-194.69, y=-63.08, z=-198.68] died: §c[Seviye: 7] §fZombi §7- §a2,2§7/§c41 ❤, §c[Seviye: 37] §fMad Zombie §7- §a45,6§7/§c56 ❤ tarafından katledildi
-[00:33:53] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 5] §fZombi §7- §a6,2§7/§c34 ❤'/146, l='ServerLevel[Ana dünya]', x=-192.05, y=-62.70, z=-198.38] died: §c[Seviye: 5] §fZombi §7- §a6,2§7/§c34 ❤, §c[Seviye: 26] §fMad Zombie §7- §a316,2§7/§c320 ❤ tarafından katledildi
-[00:33:54] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 18] §fZombi §7- §a8,3§7/§c49 ❤'/189, l='ServerLevel[Ana dünya]', x=-195.58, y=-60.00, z=-169.64] died: §c[Seviye: 18] §fZombi §7- §a8,3§7/§c49 ❤, §c[Seviye: 1] §fMad Zombie §7- §a34,0§7/§c34 ❤ tarafından katledildi
-[00:33:54] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 12] §fMad Skeleton §7- §a21,5§7/§c46 ❤'/390, l='ServerLevel[Ana dünya]', x=-109.98, y=-63.00, z=-234.63] died: §c[Seviye: 12] §fMad Skeleton §7- §a21,5§7/§c46 ❤ yanarak öldü
-[00:33:54] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Seviye: 15] §fZombi §7- §a1,8§7/§c48 ❤'/172, l='ServerLevel[Ana dünya]', x=-193.70, y=-63.00, z=-195.30] died: §c[Seviye: 15] §fZombi §7- §a1,8§7/§c48 ❤, §c[Seviye: 27] §fMad Zombie §7- §a37,3§7/§c53 ❤ tarafından katledildi
-[00:33:55] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Seviye: 11] §fMad Zombie §7- §a31,2§7/§c45 ❤'/308, l='ServerLevel[Ana dünya]', x=-112.51, y=-61.75, z=-225.24] died: §c[Seviye: 11] §fMad Zombie §7- §a31,2§7/§c45 ❤ yanarak öldü
-[00:33:55] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Seviye: 12] §fMad Zombie §7- §a2,5§7/§c46 ❤'/158, l='ServerLevel[Ana dünya]', x=-189.30, y=-63.00, z=-195.30] died: §c[Seviye: 12] §fMad Zombie §7- §a2,5§7/§c46 ❤, §c[Seviye: 21] §fMad Zombie §7- §a18,2§7/§c51 ❤ tarafından katledildi
-[00:33:56] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 2] §fMad Skeleton §7- §a0,2§7/§c31 ❤'/367, l='ServerLevel[Ana dünya]', x=-109.46, y=-63.00, z=-231.83] died: §c[Seviye: 2] §fMad Skeleton §7- §a0,2§7/§c31 ❤ yanarak öldü
-[00:33:56] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Seviye: 1] §fMad Zombie §7- §a10,9§7/§c27 ❤'/316, l='ServerLevel[Ana dünya]', x=-107.93, y=-63.00, z=-227.95] died: §c[Seviye: 1] §fMad Zombie §7- §a10,9§7/§c27 ❤ yanarak öldü
-[00:33:56] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 30] §fMad Skeleton §7- §a30,3§7/§c54 ❤'/107, l='ServerLevel[Ana dünya]', x=-185.80, y=-60.00, z=-208.25] died: §c[Seviye: 30] §fMad Skeleton §7- §a30,3§7/§c54 ❤ yanarak öldü
-[00:33:57] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 18] §fMad Skeleton §7- §a17,6§7/§c49 ❤'/298, l='ServerLevel[Ana dünya]', x=-123.81, y=-60.00, z=-230.47] died: §c[Seviye: 18] §fMad Skeleton §7- §a17,6§7/§c49 ❤ yanarak öldü
-[00:33:57] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 8] §fMad Skeleton §7- §a0,9§7/§c42 ❤'/432, l='ServerLevel[Ana dünya]', x=-113.00, y=-63.00, z=-228.44] died: §c[Seviye: 8] §fMad Skeleton §7- §a0,9§7/§c42 ❤ yanarak öldü
-[00:33:58] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 3] §fMad Skeleton §7- §a12,9§7/§c34 ❤'/133, l='ServerLevel[Ana dünya]', x=-187.19, y=-60.00, z=-190.77] died: §c[Seviye: 3] §fMad Skeleton §7- §a12,9§7/§c34 ❤ yanarak öldü
-[00:33:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Player3, [Donanım Edin] gelişimini yaptı
-[00:33:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Player3, [İstikbal Göklerdedir] hedefine ulaştı
-[00:33:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Player3, [Kanatlara Kavuş] meydan okumasını tamamladı
-[00:33:59] [Render thread/INFO] (Minecraft) Loaded 119 advancements
-[00:33:59] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Seviye: 10] §fMad Zombie §7- §a0,6§7/§c44 ❤'/187, l='ServerLevel[Ana dünya]', x=-192.79, y=-63.00, z=-196.85] died: §c[Seviye: 10] §fMad Zombie §7- §a0,6§7/§c44 ❤ yanarak öldü
-[00:34:01] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Seviye: 2] §fMad Zombie §7- §a14,0§7/§c31 ❤'/304, l='ServerLevel[Ana dünya]', x=-112.85, y=-60.00, z=-223.48] died: §c[Seviye: 2] §fMad Zombie §7- §a14,0§7/§c31 ❤ yanarak öldü
-[00:34:01] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Seviye: 15] §fMad Zombie §7- §a37,7§7/§c48 ❤'/131, l='ServerLevel[Ana dünya]', x=-187.30, y=-62.32, z=-199.56] died: §c[Seviye: 15] §fMad Zombie §7- §a37,7§7/§c48 ❤ yanarak öldü
-[00:34:02] [Render thread/ERROR] (Minecraft) Unreported exception thrown!
-java.lang.IllegalStateException: Invalid block entity minecraft:chest // net.minecraft.block.entity.ChestBlockEntity state at BlockPos{x=-212, y=-60, z=-175}, got Block{mobpvp:iron_chest}[facing=north,type=single,waterlogged=false]
-	at knot/net.minecraft.block.entity.BlockEntity.validateSupports(BlockEntity.java:57) ~[minecraft-common-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.block.entity.BlockEntity.<init>(BlockEntity.java:51) ~[minecraft-common-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.block.entity.LockableContainerBlockEntity.<init>(LockableContainerBlockEntity.java:33) ~[minecraft-common-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.block.entity.LootableContainerBlockEntity.<init>(LootableContainerBlockEntity.java:25) ~[minecraft-common-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.block.entity.ChestBlockEntity.<init>(ChestBlockEntity.java:60) ~[minecraft-common-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.block.entity.ChestBlockEntity.<init>(ChestBlockEntity.java:64) ~[minecraft-common-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.block.ChestBlock.createBlockEntity(ChestBlock.java:314) ~[minecraft-common-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.world.chunk.WorldChunk.setBlockState(WorldChunk.java:286) ~[minecraft-common-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.world.World.setBlockState(World.java:232) ~[minecraft-common-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.client.world.ClientWorld.setBlockState(ClientWorld.java:160) ~[minecraft-clientOnly-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.world.World.setBlockState(World.java:217) ~[minecraft-common-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.item.BlockItem.place(BlockItem.java:153) ~[minecraft-common-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.item.BlockItem.place(BlockItem.java:76) ~[minecraft-common-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.item.BlockItem.useOnBlock(BlockItem.java:46) ~[minecraft-common-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.item.ItemStack.useOnBlock(ItemStack.java:373) ~[minecraft-common-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.client.network.ClientPlayerInteractionManager.interactBlockInternal(ClientPlayerInteractionManager.java:363) ~[minecraft-clientOnly-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.client.network.ClientPlayerInteractionManager.method_41933(ClientPlayerInteractionManager.java:318) ~[minecraft-clientOnly-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.client.network.ClientPlayerInteractionManager.sendSequencedPacket(ClientPlayerInteractionManager.java:279) ~[minecraft-clientOnly-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.client.network.ClientPlayerInteractionManager.interactBlock(ClientPlayerInteractionManager.java:317) ~[minecraft-clientOnly-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.client.MinecraftClient.doItemUse(MinecraftClient.java:1852) ~[minecraft-clientOnly-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.client.MinecraftClient.handleInputEvents(MinecraftClient.java:2111) ~[minecraft-clientOnly-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.client.MinecraftClient.tick(MinecraftClient.java:1938) ~[minecraft-clientOnly-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1246) ~[minecraft-clientOnly-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.client.MinecraftClient.run(MinecraftClient.java:882) [minecraft-clientOnly-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at knot/net.minecraft.client.main.Main.main(Main.java:256) [minecraft-clientOnly-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480) [fabric-loader-0.16.14.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.16.14.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.16.14.jar:?]
-	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[00:34:02] [Server thread/INFO] (Minecraft) Stopping server
-[00:34:02] [Server thread/INFO] (Minecraft) Saving players
-[00:34:02] [Server thread/INFO] (Minecraft) Saving worlds
-[00:34:02] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
-[00:34:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
-[00:34:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
-[00:34:03] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (Yeni Dünya): All chunks are saved
-[00:34:03] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[00:34:03] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[00:34:03] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
-[00:34:03] [Thread-3/INFO] (Minecraft) [STDOUT]: [MobPVP] Mod kapanıyor...
+[15:18:08] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/akgls/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/22f9eb729e216a091673a574a5906dc1b9027fb3/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[15:18:08] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[15:18:08] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[15:18:10] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[15:18:14] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 2113 milliseconds
+[15:18:24] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[15:18:24] [Render thread/INFO] (Minecraft) Setting user: Player429
+[15:18:24] [Render thread/INFO] (Minecraft) [STDOUT]: Custom entities registered.
+[15:18:24] [Render thread/INFO] (Minecraft) [STDOUT]: Mob özellikleri kaydedildi
+[15:18:26] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[15:18:26] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
+[15:18:28] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, mobpvp
+[15:18:29] [Worker-Main-3/INFO] (Minecraft) Found unifont_all_no_pua-15.1.05.hex, loading
+[15:18:30] [Worker-Main-3/INFO] (Minecraft) Found unifont_jp_patch-15.1.05.hex, loading
+[15:18:32] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[15:18:32] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[15:18:32] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on SES (VB-Audio Virtual Cable)
+[15:18:32] [Render thread/INFO] (Minecraft) Sound engine started
+[15:18:32] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[15:18:32] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[15:18:32] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[15:18:32] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[15:18:32] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[15:18:32] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[15:18:32] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[15:18:32] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[15:18:32] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[15:18:33] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[15:18:33] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[15:18:33] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[15:18:33] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[15:18:33] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[15:18:33] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[15:18:34] [Render thread/INFO] (mobpvp) Playing startup sound
+[15:18:48] [Render thread/INFO] (Minecraft) Loaded 1300 recipes
+[15:18:48] [Render thread/INFO] (Minecraft) Loaded 1417 advancements
+[15:18:48] [Render thread/WARN] (Minecraft) Not all defined tags for registry ResourceKey[minecraft:root / minecraft:entity_type] are present in data pack: mobpvp:hostile_mobs
+[15:18:48] [Render thread/INFO] (BiomeModificationImpl) Applied 54 biome modifications to 53 of 64 new biomes in 11.94 ms
+[15:18:48] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.1
+[15:18:48] [Server thread/INFO] (Minecraft) Generating keypair
+[15:18:49] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[15:18:49] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %0
+[15:18:49] [Render thread/INFO] (Minecraft) Time elapsed: 385 ms
+[15:18:49] [Server thread/INFO] (Minecraft) Changing view distance to 32, from 10
+[15:18:49] [Server thread/INFO] (Minecraft) Changing simulation distance to 11, from 0
+[15:18:50] [Server thread/INFO] (Minecraft) Player429[local:E:a04e4b12] logged in with entity id 25 at (-557.3162996467682, -53.38186188814852, -159.3725347623373)
+[15:18:50] [Server thread/INFO] (Minecraft) Player429 oyuna katıldı
+[15:18:50] [Server thread/INFO] (Minecraft) Player429, [Koruyucu Gibi Giyin] hedefine ulaştı
+[15:18:50] [Server thread/INFO] (Minecraft) Player429, [Elmaslar!] gelişimini yaptı
+[15:18:50] [Server thread/INFO] (Minecraft) Player429, [Donanım Edin] gelişimini yaptı
+[15:18:50] [Server thread/INFO] (Minecraft) Player429, [İstikbal Göklerdedir] hedefine ulaştı
+[15:18:50] [Server thread/INFO] (Minecraft) Player429, [Kanatlara Kavuş] meydan okumasını tamamladı
+[15:18:50] [Server thread/INFO] (Minecraft) Player429, [MobPVP] meydan okumasını tamamladı
+[15:18:51] [Server thread/INFO] (Minecraft) Player429, [Karanlığın Kalbine] meydan okumasını tamamladı
+[15:18:51] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 12] §fMad Skeleton §7- §a0,8§7/§c46 ❤'/30, l='ServerLevel[Ana dünya]', x=-528.70, y=-55.00, z=-166.30] died: §c[Seviye: 12] §fMad Skeleton §7- §a0,8§7/§c46 ❤ duvarların arasına sıkıştı
+[15:18:52] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 4] §fMad Skeleton §7- §a1,1§7/§c36 ❤'/84, l='ServerLevel[Ana dünya]', x=-517.78, y=-60.00, z=-175.52] died: §c[Seviye: 4] §fMad Skeleton §7- §a1,1§7/§c36 ❤ yanarak öldü
+[15:18:54] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 5] §fMad Skeleton §7- §a3,9§7/§c38 ❤'/93, l='ServerLevel[Ana dünya]', x=-522.80, y=-60.00, z=-171.53] died: §c[Seviye: 5] §fMad Skeleton §7- §a3,9§7/§c38 ❤ yanarak öldü
+[15:18:55] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 37] §fMad Skeleton §7- §a4,4§7/§c56 ❤'/81, l='ServerLevel[Ana dünya]', x=-525.76, y=-60.00, z=-180.40] died: §c[Seviye: 37] §fMad Skeleton §7- §a4,4§7/§c56 ❤ yanarak öldü
+[15:19:00] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Seviye: 22] §fMad Zombie §7- §a8,4§7/§c51 ❤'/82, l='ServerLevel[Ana dünya]', x=-562.63, y=-60.00, z=-135.52] died: §c[Seviye: 22] §fMad Zombie §7- §a8,4§7/§c51 ❤ yanarak öldü
+[15:19:03] [Render thread/INFO] (Minecraft) [System] [CHAT] Player429, [Koruyucu Gibi Giyin] hedefine ulaştı
+[15:19:03] [Render thread/INFO] (Minecraft) [System] [CHAT] Player429, [Elmaslar!] gelişimini yaptı
+[15:19:03] [Render thread/INFO] (Minecraft) [System] [CHAT] Player429, [Donanım Edin] gelişimini yaptı
+[15:19:03] [Render thread/INFO] (Minecraft) [System] [CHAT] Player429, [İstikbal Göklerdedir] hedefine ulaştı
+[15:19:03] [Render thread/INFO] (Minecraft) [System] [CHAT] Player429, [Kanatlara Kavuş] meydan okumasını tamamladı
+[15:19:03] [Render thread/INFO] (Minecraft) [System] [CHAT] Player429, [MobPVP] meydan okumasını tamamladı
+[15:19:03] [Render thread/INFO] (Minecraft) Loaded 82 advancements
+[15:19:03] [Render thread/INFO] (Minecraft) [System] [CHAT] Player429, [Karanlığın Kalbine] meydan okumasını tamamladı
+[15:19:03] [Render thread/INFO] (Minecraft) Loaded 82 advancements
+[15:19:04] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 9] §fMad Skeleton §7- §a13,0§7/§c43 ❤'/86, l='ServerLevel[Ana dünya]', x=-523.47, y=-60.00, z=-167.55] died: §c[Seviye: 9] §fMad Skeleton §7- §a13,0§7/§c43 ❤ yanarak öldü
+[15:19:08] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 33] §fMad Skeleton §7- §a18,3§7/§c55 ❤'/83, l='ServerLevel[Ana dünya]', x=-520.75, y=-60.06, z=-164.80] died: §c[Seviye: 33] §fMad Skeleton §7- §a18,3§7/§c55 ❤ yanarak öldü
+[15:19:09] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 1] §fMad Skeleton §7- §a0,9§7/§c27 ❤'/53, l='ServerLevel[Ana dünya]', x=-523.80, y=-60.00, z=-173.25] died: §c[Seviye: 1] §fMad Skeleton §7- §a0,9§7/§c27 ❤ yanarak öldü
+[15:19:17] [Server thread/INFO] (Minecraft) Named entity MadSkeletonEntity['§c[Seviye: 36] §fMad Skeleton §7- §a25,1§7/§c56 ❤'/80, l='ServerLevel[Ana dünya]', x=-527.24, y=-60.00, z=-174.81] died: §c[Seviye: 36] §fMad Skeleton §7- §a25,1§7/§c56 ❤ yanarak öldü
+[15:19:19] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Seviye: 3] §fMad Zombie §7- §a29,9§7/§c34 ❤'/40, l='ServerLevel[Ana dünya]', x=-557.50, y=-60.00, z=-160.73] died: §c[Seviye: 3] §fMad Zombie §7- §a29,9§7/§c34 ❤ yanarak öldü
+[15:19:22] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Seviye: 5] §fMad Zombie §7- §a32,9§7/§c38 ❤'/44, l='ServerLevel[Ana dünya]', x=-570.24, y=-60.00, z=-146.79] died: §c[Seviye: 5] §fMad Zombie §7- §a32,9§7/§c38 ❤ yanarak öldü
+[15:19:27] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Seviye: 6] §fMad Zombie §7- §a0,5§7/§c39 ❤'/61, l='ServerLevel[Ana dünya]', x=-526.41, y=-60.00, z=-156.50] died: §c[Seviye: 6] §fMad Zombie §7- §a0,5§7/§c39 ❤ yanarak öldü
+[15:19:30] [Render thread/INFO] (Minecraft) Stopping!
+[15:19:30] [Server thread/INFO] (Minecraft) Player429 lost connection: Bağlantı kesildi
+[15:19:30] [Server thread/INFO] (Minecraft) Player429 oyundan ayrıldı
+[15:19:30] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[15:19:30] [Server thread/INFO] (Minecraft) Stopping server
+[15:19:30] [Server thread/INFO] (Minecraft) Saving players
+[15:19:30] [Server thread/INFO] (Minecraft) Saving worlds
+[15:19:30] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
+[15:19:31] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
+[15:19:31] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
+[15:19:31] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (Yeni Dünya): All chunks are saved
+[15:19:31] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:19:31] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:19:31] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[15:19:31] [Thread-3/INFO] (Minecraft) [STDOUT]: [MobPVP] Mod kapanıyor...

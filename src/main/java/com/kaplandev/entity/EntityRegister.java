@@ -1,6 +1,7 @@
 package com.kaplandev.entity;
 
 import com.kaplandev.block.Blocks;
+import com.kaplandev.entity.block.IronChestBlockEntity;
 import com.kaplandev.entity.block.PvpSpawnerMaxBlockEntity;
 import com.kaplandev.entity.boss.BulwarkEntity;
 import com.kaplandev.entity.mob.MadSkeletonEntity;
@@ -13,6 +14,7 @@ import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
+import net.minecraft.block.Block;
 import net.minecraft.entity.*;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.registry.tag.BiomeTags;
@@ -22,12 +24,14 @@ import net.minecraft.entity.EntityDimensions;
 import net.minecraft.world.Heightmap;
 
 import static com.kaplandev.entity.EntityType.BULWARK;
+import static com.kaplandev.entity.EntityType.IRON_CHEST;
 import static com.kaplandev.entity.EntityType.MINIGOLEM;
 import static com.kaplandev.entity.EntityType.MAD_SKELETON;
 import static com.kaplandev.entity.EntityType.MAD_ZOMBIE;
 import static com.kaplandev.entity.EntityType.PVP_SPAWNER;
 import static com.kaplandev.entity.EntityType.PVP_SPAWNER_MAX;
 import static com.kaplandev.mobpvp.MOD_ID;
+import static com.kaplandev.util.path.Paths.IRON_CHEST_KEY;
 import static com.kaplandev.util.path.Paths.MAD_SKELETON_KEY;
 import static com.kaplandev.util.path.Paths.MAD_ZOMBIE_KEY;
 import static com.kaplandev.util.path.Paths.PVP_SPAWNER_KEY;
@@ -55,6 +59,7 @@ public class EntityRegister {
         MINIGOLEM = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, Paths.MINIGOLEM), FabricEntityTypeBuilder.createMob().entityFactory(MiniIronGolemEntity::new).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.8f, 2.0f)).trackRangeBlocks(80).build());
         PVP_SPAWNER = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, PVP_SPAWNER_KEY),FabricBlockEntityTypeBuilder.create(PvpSpawnerBlockEntity::new, Blocks.PVP_SPAWNER).build());
         PVP_SPAWNER_MAX = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, PVP_SPAWNER_MAX_KEY),FabricBlockEntityTypeBuilder.create(PvpSpawnerMaxBlockEntity::new, Blocks.PVP_SPAWNER_MAX).build());
+        IRON_CHEST = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, IRON_CHEST_KEY), FabricBlockEntityTypeBuilder.create(IronChestBlockEntity::new, new Block[]{ Blocks.IRON_CHEST }).build());
     }
 
 }

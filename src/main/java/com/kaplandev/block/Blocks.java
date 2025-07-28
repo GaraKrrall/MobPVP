@@ -13,7 +13,6 @@ import com.kaplandev.block.util.BlockBuilder;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
@@ -43,6 +42,6 @@ public class Blocks {
         PVP_SPAWNER_MAX = BlockBuilder.RegisterCreatedBlockWithEntity(PVP_SPAWNER_MAX_KEY, new PvpSpawnerMaxBlockBehavior(AbstractBlock.Settings.create().strength(5.0f).requiresTool().resistance(1200.0f).hardness(-1.0f).sounds(BlockSoundGroup.TRIAL_SPAWNER)), PvpSpawnerBlockEntity::new);
         DAMAGED_PVP_SPAWNER = BlockBuilder.RegisterCreatedBlock(DAMAGED_PVP_SPAWNER_KEY, BlockBuilder.BuildBlockAttribute(AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.TRIAL_SPAWNER), new DamagedPvpSpawnerBlockBehavior(), UniformIntProvider.create(0, 0)));
         DAMAGED_PVP_SPAWNER_MAX = BlockBuilder.RegisterCreatedBlock(DAMAGED_PVP_SPAWNER_MAX_KEY, BlockBuilder.BuildBlockAttribute(AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.TRIAL_SPAWNER), new DamagedPvpSpawnerMaxBlockBehavior(), UniformIntProvider.create(0, 0)));
-        IRON_CHEST = BlockBuilder.RegisterCreatedBlockWithEntityType2(IRON_CHEST_KEY, new IronChestBehavior(AbstractBlock.Settings.create().strength(8.0f).requiresTool().resistance(1200.0f).sounds(BlockSoundGroup.WOOD)), (pos, state) -> new IronChestBlockEntity(BlockEntityType.CHEST, pos, state));
+        IRON_CHEST = BlockBuilder.RegisterCreatedBlockWithEntityType2(IRON_CHEST_KEY, new IronChestBehavior(AbstractBlock.Settings.create().strength(8.0f).requiresTool().resistance(1200.0f).sounds(BlockSoundGroup.WOOD)), (pos, state) -> new IronChestBlockEntity(pos, state));
     }
 }

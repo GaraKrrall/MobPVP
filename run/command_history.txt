@@ -1,5 +1,3 @@
-/time set day
-/execute if block ~ ~-1 ~ mobpvp:mob_table run say doğru blok
 /give Player792 mobpvp:mobtable_item
 /setblock 100 -61 -184 mobpvp:mob_table
 /kill @e[type=minecraft:villager]
@@ -48,3 +46,5 @@
 /effect give @a minecraft:strength infinite 255
 /time set day
 /recipe give Player191 mobpvp:ultra_hearth
+/enchant Player52 minecraft:silk_touch
+/time set day
