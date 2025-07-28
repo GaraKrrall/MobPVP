@@ -1,7 +1,3 @@
-/give Player792 mobpvp:mobtable_item
-/setblock 100 -61 -184 mobpvp:mob_table
-/kill @e[type=minecraft:villager]
-/time set day
 /summon mobpvp:mini_iron_golem
 /summon mobpvp:mini_iron_golema
 /summon mobpvp:mini_iron_golem
@@ -48,3 +44,7 @@
 /recipe give Player191 mobpvp:ultra_hearth
 /enchant Player52 minecraft:silk_touch
 /time set day
+/setblock ~ ~ ~ mobpvp:pvp_spawner
+/time set midnight
+/gamerule doMobSpawning true
+/gamerule doMobSpawning false

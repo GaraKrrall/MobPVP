@@ -1,6 +1,6 @@
 package com.kaplandev.block.behavior;
 
-import com.kaplandev.block.BlockEntityTypes;
+/*import com.kaplandev.block.BlockEntityTypes;
 import com.kaplandev.entity.block.IronChestBlockEntity;
 
 import net.minecraft.block.BlockState;
@@ -33,3 +33,4 @@ public class IronChestBehavior extends ChestBlock {
         return new IronChestBlockEntity(pos, state);
     }
 }
+*/

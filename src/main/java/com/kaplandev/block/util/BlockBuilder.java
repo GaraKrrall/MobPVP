@@ -1,9 +1,9 @@
 package com.kaplandev.block.util;
 
-import com.kaplandev.block.BlockEntityTypes;
+// com.kaplandev.block.BlockEntityTypes;
 import com.kaplandev.block.behavior.BlockBehavior;
 
-import com.kaplandev.block.behavior.IronChestBehavior;
+//import com.kaplandev.block.behavior.IronChestBehavior;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;

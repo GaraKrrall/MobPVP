@@ -1,10 +1,10 @@
 package com.kaplandev.client;
 
-import com.kaplandev.block.BlockEntityTypes;
+//import com.kaplandev.block.BlockEntityTypes;
 import com.kaplandev.client.config.ConfigManager;
 import com.kaplandev.client.info.dink;
 import com.kaplandev.client.renderer.CustomZombieRenderer;
-import com.kaplandev.client.renderer.entity.block.IronChestBlockRenderer;
+//import com.kaplandev.client.renderer.entity.block.IronChestBlockRenderer;
 import com.kaplandev.client.renderer.entity.block.PvpSpawnerBlockRenderer;
 import com.kaplandev.client.renderer.entity.boss.BulwarkRenderer;
 import com.kaplandev.client.renderer.entity.mobpvp.MiniIronGolemRenderer;
@@ -28,7 +28,7 @@ public class mobpvpClient implements ClientModInitializer {
     public void onInitializeClient() {
         BlockEntityRendererFactories.register(EntityType.PVP_SPAWNER, PvpSpawnerBlockRenderer::new);
         BlockEntityRendererFactories.register(EntityType.PVP_SPAWNER_MAX, PvpSpawnerMaxBlockRenderer::new);
-        BlockEntityRendererFactories.register(BlockEntityTypes.IRON_CHEST_ENTITY_TYPE, IronChestBlockRenderer::new);
+       // BlockEntityRendererFactories.register(BlockEntityTypes.IRON_CHEST_ENTITY_TYPE, IronChestBlockRenderer::new);
         EntityRendererRegistry.register(net.minecraft.entity.EntityType.ZOMBIE, CustomZombieRenderer::new);
         EntityRendererRegistry.register(EntityType.MAD_ZOMBIE, SuperZombieRenderer::new);
         EntityRendererRegistry.register(EntityType.MAD_SKELETON, SkeletonEntityRenderer::new);

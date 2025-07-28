@@ -3,11 +3,11 @@ package com.kaplandev.block;
 import com.kaplandev.block.behavior.AcidicOreBehavior;
 import com.kaplandev.block.behavior.DamagedPvpSpawnerBlockBehavior;
 import com.kaplandev.block.behavior.DamagedPvpSpawnerMaxBlockBehavior;
-import com.kaplandev.block.behavior.IronChestBehavior;
+//import com.kaplandev.block.behavior.IronChestBehavior;
 import com.kaplandev.block.behavior.MobTableBehavior;
 import com.kaplandev.block.behavior.PvpSpawnerBlockBehavior;
 import com.kaplandev.block.behavior.PvpSpawnerMaxBlockBehavior;
-import com.kaplandev.entity.block.IronChestBlockEntity;
+//import com.kaplandev.entity.block.IronChestBlockEntity;
 import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
 import com.kaplandev.block.util.BlockBuilder;
 
@@ -32,7 +32,7 @@ public class Blocks {
     public static final Block PVP_SPAWNER_MAX;
     public static final Block DAMAGED_PVP_SPAWNER;
     public static final Block DAMAGED_PVP_SPAWNER_MAX;
-    public static final Block IRON_CHEST;
+ //   public static final Block IRON_CHEST;
     public static void init() {}
 
     static {
@@ -42,6 +42,6 @@ public class Blocks {
         PVP_SPAWNER_MAX = BlockBuilder.RegisterCreatedBlockWithEntity(PVP_SPAWNER_MAX_KEY, new PvpSpawnerMaxBlockBehavior(AbstractBlock.Settings.create().strength(5.0f).requiresTool().resistance(1200.0f).hardness(-1.0f).sounds(BlockSoundGroup.TRIAL_SPAWNER)), PvpSpawnerBlockEntity::new);
         DAMAGED_PVP_SPAWNER = BlockBuilder.RegisterCreatedBlock(DAMAGED_PVP_SPAWNER_KEY, BlockBuilder.BuildBlockAttribute(AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.TRIAL_SPAWNER), new DamagedPvpSpawnerBlockBehavior(), UniformIntProvider.create(0, 0)));
         DAMAGED_PVP_SPAWNER_MAX = BlockBuilder.RegisterCreatedBlock(DAMAGED_PVP_SPAWNER_MAX_KEY, BlockBuilder.BuildBlockAttribute(AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.TRIAL_SPAWNER), new DamagedPvpSpawnerMaxBlockBehavior(), UniformIntProvider.create(0, 0)));
-        IRON_CHEST = BlockBuilder.RegisterCreatedBlockWithEntityType2(IRON_CHEST_KEY, new IronChestBehavior(AbstractBlock.Settings.create().strength(8.0f).requiresTool().resistance(1200.0f).sounds(BlockSoundGroup.WOOD)), (pos, state) -> new IronChestBlockEntity(pos, state));
+       // IRON_CHEST = BlockBuilder.RegisterCreatedBlockWithEntityType2(IRON_CHEST_KEY, new IronChestBehavior(AbstractBlock.Settings.create().strength(8.0f).requiresTool().resistance(1200.0f).sounds(BlockSoundGroup.WOOD)), (pos, state) -> new IronChestBlockEntity(pos, state));
     }
 }

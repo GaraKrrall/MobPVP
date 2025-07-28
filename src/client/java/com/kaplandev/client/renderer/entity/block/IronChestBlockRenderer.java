@@ -1,6 +1,6 @@
 package com.kaplandev.client.renderer.entity.block;
 
-import com.kaplandev.entity.block.IronChestBlockEntity;
+/*import com.kaplandev.entity.block.IronChestBlockEntity;
 import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.VertexConsumerProvider;
@@ -28,3 +28,4 @@ public class IronChestBlockRenderer implements BlockEntityRenderer<IronChestBloc
     }
 }
 
+*/

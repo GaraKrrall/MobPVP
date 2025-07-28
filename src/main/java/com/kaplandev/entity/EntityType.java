@@ -1,6 +1,6 @@
 package com.kaplandev.entity;
 
-import com.kaplandev.entity.block.IronChestBlockEntity;
+//import com.kaplandev.entity.block.IronChestBlockEntity;
 import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
 import com.kaplandev.entity.block.PvpSpawnerMaxBlockEntity;
 import com.kaplandev.entity.boss.BulwarkEntity;
@@ -17,5 +17,5 @@ public class EntityType {
     public static net.minecraft.entity.EntityType<MiniIronGolemEntity> MINIGOLEM;
     public static BlockEntityType<PvpSpawnerBlockEntity> PVP_SPAWNER;
     public static BlockEntityType<PvpSpawnerMaxBlockEntity> PVP_SPAWNER_MAX;
-    public static BlockEntityType<IronChestBlockEntity> IRON_CHEST;
+  //  public static BlockEntityType<IronChestBlockEntity> IRON_CHEST;
 }

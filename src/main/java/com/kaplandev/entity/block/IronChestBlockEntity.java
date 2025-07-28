@@ -1,7 +1,7 @@
 package com.kaplandev.entity.block;
 
 
-import com.kaplandev.block.BlockEntityTypes;
+/*import com.kaplandev.block.BlockEntityTypes;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.ChestBlockEntity;
 import net.minecraft.util.math.BlockPos;
@@ -12,3 +12,4 @@ public class IronChestBlockEntity extends ChestBlockEntity {
     }
 }
 
+*/
