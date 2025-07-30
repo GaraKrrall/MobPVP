@@ -3,12 +3,12 @@ package com.kaplandev.client;
 //import com.kaplandev.block.BlockEntityTypes;
 import com.kaplandev.client.config.ConfigManager;
 import com.kaplandev.client.info.dink;
-import com.kaplandev.client.renderer.CustomZombieRenderer;
+import com.kaplandev.client.renderer.entity.mob.CustomZombieRenderer;
 //import com.kaplandev.client.renderer.entity.block.IronChestBlockRenderer;
 import com.kaplandev.client.renderer.entity.block.PvpSpawnerBlockRenderer;
 import com.kaplandev.client.renderer.entity.boss.BulwarkRenderer;
 import com.kaplandev.client.renderer.entity.mobpvp.MiniIronGolemRenderer;
-import com.kaplandev.client.renderer.entity.zombie.SuperZombieRenderer;
+import com.kaplandev.client.renderer.entity.mob.SuperZombieRenderer;
 import com.kaplandev.client.renderer.entity.block.PvpSpawnerMaxBlockRenderer;
 import com.kaplandev.entity.EntityType;
 

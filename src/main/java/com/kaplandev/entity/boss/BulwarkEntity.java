@@ -1,6 +1,5 @@
 package com.kaplandev.entity.boss;
 
-import com.kaplandev.block.behavior.PvpSpawnerBlockBehavior;
 import com.kaplandev.entity.goal.boss.BreakBlockGoal;
 import com.kaplandev.entity.goal.boss.FireballAttackGoal;
 import com.kaplandev.entity.goal.boss.SummonZombieGoal;

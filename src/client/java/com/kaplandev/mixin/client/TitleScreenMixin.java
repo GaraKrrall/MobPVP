@@ -1,6 +1,6 @@
 package com.kaplandev.mixin.client;
 
-import com.kaplandev.client.gui.MobPVPConfigScreen;
+import com.kaplandev.client.gui.MobPVPAboutScreen;
 
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;
@@ -17,7 +17,6 @@ public abstract class TitleScreenMixin extends Screen {
         super(title);
     }
 
-
     @Inject(method = "init", at = @At("TAIL"))
     private void mobpvp$injectCornerIcon(CallbackInfo ci) {
         if (this.client == null) return;
@@ -28,10 +27,8 @@ public abstract class TitleScreenMixin extends Screen {
         int y = padding;
 
         this.addDrawableChild(ButtonWidget.builder(
-                Text.literal("⚙"), // İstersen ikon yerine Text.empty() + texture kullanabilirsin
-                b -> this.client.setScreen(new MobPVPConfigScreen(this))
+                Text.literal("ⓘ"),
+                b -> this.client.setScreen(new MobPVPAboutScreen(this))
         ).dimensions(x, y, iconSize, iconSize).build());
     }
-
-
 }
