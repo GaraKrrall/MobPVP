@@ -42,7 +42,7 @@ public class Items {
     public static final Item PVP_SPAWNER_MAX_ITEM;
     public static final Item DAMAGED_PVP_SPAWNER_ITEM;
     public static final Item DAMAGED_PVP_SPAWNER_MAX_ITEM;
-   // public static final Item IRON_CHEST_ITEM;
+    //public static final Item IRON_CHEST_ITEM;
 
     public static void init() {
         GroupItemBuilder.AddGroup(EGG_SKELETON, ItemGroups.EGGS_GROUP_KEY);
@@ -67,7 +67,7 @@ public class Items {
         PVP_SPAWNER_ITEM = GroupItemBuilder.BuildItem(PVP_SPAWNER_ITEM_KEY, new BlockItem(Blocks.PVP_SPAWNER, new Item.Settings()));
         PVP_SPAWNER_MAX_ITEM = GroupItemBuilder.BuildItem(PVP_SPAWNER_MAX_ITEM_KEY, new BlockItem(Blocks.PVP_SPAWNER_MAX, new Item.Settings()));
         DAMAGED_PVP_SPAWNER_ITEM = GroupItemBuilder.BuildItem(DAMAGED_PVP_SPAWNER_ITEM_KEY, new BlockItem(Blocks.DAMAGED_PVP_SPAWNER, new Item.Settings()));
-        DAMAGED_PVP_SPAWNER_MAX_ITEM =GroupItemBuilder.BuildItem(DAMAGED_PVP_SPAWNER_MAX_ITEM_KEY, new BlockItem(Blocks.DAMAGED_PVP_SPAWNER_MAX, new Item.Settings()));
+        DAMAGED_PVP_SPAWNER_MAX_ITEM = GroupItemBuilder.BuildItem(DAMAGED_PVP_SPAWNER_MAX_ITEM_KEY, new BlockItem(Blocks.DAMAGED_PVP_SPAWNER_MAX, new Item.Settings()));
        // IRON_CHEST_ITEM = GroupItemBuilder.BuildItem(IRON_CHEST_ITEM_KEY, new BlockItem(Blocks.IRON_CHEST, new Item.Settings()));
         EGG_SKELETON = GroupItemBuilder.BuildItem(EGG_SKELETON_KEY, new SpawnEggItem(EntityType.MAD_SKELETON, 0xC1C1C1,0x3A3A3A, new Item.Settings()));
         EGG_SUPER_ZOMBIE = GroupItemBuilder.BuildItem(EGG_SUPER_ZOMBIE_KEY, new SpawnEggItem(EntityType.MAD_ZOMBIE, 0xB71C1C, 0xFF5252, new Item.Settings()));

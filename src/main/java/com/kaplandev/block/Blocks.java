@@ -32,7 +32,7 @@ public class Blocks {
     public static final Block PVP_SPAWNER_MAX;
     public static final Block DAMAGED_PVP_SPAWNER;
     public static final Block DAMAGED_PVP_SPAWNER_MAX;
- //   public static final Block IRON_CHEST;
+    //public static final Block IRON_CHEST;
     public static void init() {}
 
     static {

@@ -10,9 +10,9 @@ import static com.kaplandev.mobpvp.MOD_ID;
 public class Paths {
     public static final String BULWARK_TEXTURE = "textures/entity/zombie/superzombie.png";
     public static final String CUSTOM_ZOMBIE_TEXTURE = "textures/entity/zombie/zombie.png";
-    public static final String CUSTOM_SKELETON_TEXTURE = "";
+    @Deprecated public static final String CUSTOM_SKELETON_TEXTURE = "";
     public static final String SUPER_ZOMBIE_TEXTURE = "textures/entity/zombie/superzombie.png";
-    public static final String GOLEM_TEXTURE = "textures/entity/iron_golem/iron_golem.png";
+    @Deprecated public static final String GOLEM_TEXTURE = "textures/entity/iron_golem/iron_golem.png";
     public static final String KALP_ITEM_KEY = "kalp";
     public static final String ORE_ITEM_KEY = "ore";
     public static final String MOB_TABLE_ITEM_KEY = "mobtable_item";
@@ -43,6 +43,7 @@ public class Paths {
     public static final String DAMAGED_PVP_SPAWNER_ITEM_KEY = "damaged_pvp_spawner_item";
     public static final String DAMAGED_PVP_SPAWNER_MAX_ITEM_KEY = "damaged_pvp_spawner_max_item";
     public static final String BULWARK = "bulwark";
+    public static final String MINI_IRON_GOLEM_TEXTURE = "textures/entity/mini_iron_golem/mini_iron_golem.png";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     public static final Identifier STARTUP_SOUND_ID = Identifier.of(MOD_ID, "startup");
     public static final SoundEvent STARTUP_SOUND_EVENT = SoundEvent.of(STARTUP_SOUND_ID);

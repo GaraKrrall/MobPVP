@@ -9,15 +9,15 @@ import net.minecraft.client.render.entity.model.IronGolemEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
-import static com.kaplandev.util.path.Paths.GOLEM_TEXTURE;
-import static com.kaplandev.util.path.Paths.MC;
+import static com.kaplandev.util.path.Paths.MINI_IRON_GOLEM_TEXTURE;
+import static com.kaplandev.util.path.Paths.MOBPVP;
 
 public class MiniIronGolemRenderer
         extends MobEntityRenderer<MiniIronGolemEntity, IronGolemEntityModel<MiniIronGolemEntity>> {
 
     /** Vanilla demir golem dokusu – namespace mutlaka "minecraft" olmalı */
     private static final Identifier TEXTURE =
-            Identifier.of(MC, GOLEM_TEXTURE);
+            Identifier.of(MOBPVP, MINI_IRON_GOLEM_TEXTURE);
 
     public MiniIronGolemRenderer(EntityRendererFactory.Context ctx) {
         super(ctx,
