@@ -1,6 +1,4 @@
 /summon mobpvp:mini_iron_golem
-/summon mobpvp:mini_iron_golema
-/summon mobpvp:mini_iron_golem
 /summon mobpvp:mini_iron_golemw
 /summon mobpvp:mini_iron_golem
 /summon mobpvp:mini_iron_golema
@@ -48,3 +46,5 @@
 /time set midnight
 /gamerule doMobSpawning true
 /gamerule doMobSpawning false
+/effect clear
+/time set day

@@ -2,6 +2,7 @@ package com.kaplandev.entity.goal;
 
 import com.kaplandev.entity.passive.MiniIronGolemEntity;
 
+import com.kaplandev.level.LevelAssigner;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.ChestBlockEntity;
@@ -30,7 +31,7 @@ public class FindIngotAndHealGolemGoal extends Goal {
 
     private Phase phase = Phase.SEARCH;
 
-    private enum Phase {
+    public enum Phase {
         SEARCH, PICKUP, MOVE_TO_GOLEM, HEAL, FOLLOW
     }
 
@@ -43,6 +44,7 @@ public class FindIngotAndHealGolemGoal extends Goal {
     public boolean canStart() {
         return true;
     }
+
 
     @Override
     public boolean shouldContinue() {
@@ -67,25 +69,36 @@ public class FindIngotAndHealGolemGoal extends Goal {
                     return;
                 }
 
-                // Yeni: Yakındaki HERHANGİ bir demir golem varsa onu takip et
                 List<IronGolemEntity> golems = miniGolem.getWorld().getEntitiesByClass(IronGolemEntity.class,
                         miniGolem.getBoundingBox().expand(10),
-                        g -> !(g instanceof MiniIronGolemEntity)); // minikleri alma
+                        g -> !(g instanceof MiniIronGolemEntity) && g.getHealth() < g.getMaxHealth());
+// En yakını seç, mızıkçılık yapma!
+                targetGolem = golems.stream()
+                        .min((a, b) -> Double.compare(miniGolem.squaredDistanceTo(a), miniGolem.squaredDistanceTo(b)))
+                        .orElse(null);
+
 
                 if (!golems.isEmpty()) {
                     targetGolem = golems.get(0);
+                    followStartHealth = -1; // yeni takibi başlat
+                    phase = Phase.FOLLOW;
+                } else if (targetGolem != null && targetGolem.isAlive()) {
+                    // Eskiden izlenen golem hala yaşıyorsa, geri takip et
                     phase = Phase.FOLLOW;
                 }
+
             }
 
             case FOLLOW -> {
                 if (targetGolem != null && targetGolem.isAlive()) {
                     if (followStartHealth < 0) {
-                        followStartHealth = targetGolem.getHealth(); // Başlangıç sağlığı kaydet
+                        followStartHealth = targetGolem.getHealth(); // Başlangıç sağlığını kaydet
                     }
 
-                    // Golemin canı azaldıysa yeniden külçe ara!
-                    if (targetGolem.getHealth() < followStartHealth) {
+                    boolean golemDamaged = targetGolem.getHealth() < followStartHealth;
+                    boolean foundIngot = findNearbyIngot() != null || findChestWithIngot() != null;
+
+                    if (golemDamaged && foundIngot) {
                         phase = Phase.SEARCH;
                         return;
                     }
@@ -102,15 +115,13 @@ public class FindIngotAndHealGolemGoal extends Goal {
             }
 
 
-
-
             case PICKUP -> {
                 List<IronGolemEntity> golems = miniGolem.getWorld().getEntitiesByClass(IronGolemEntity.class,
                         miniGolem.getBoundingBox().expand(10),
                         g -> !(g instanceof MiniIronGolemEntity) && g.getHealth() < g.getMaxHealth());
 
                 if (golems.isEmpty()) {
-                    reset();
+                    resetButKeepGolem();
                     return;
                 }
 
@@ -137,19 +148,25 @@ public class FindIngotAndHealGolemGoal extends Goal {
                 } else {
                     if (targetIngotEntity != null && targetIngotEntity.isAlive()) {
                         miniGolem.getNavigation().startMovingTo(targetIngotEntity, 0.35);
-                        if (miniGolem.squaredDistanceTo(targetIngotEntity) < 1.5) {
+                        if (miniGolem.squaredDistanceTo(targetIngotEntity) < 1) {
                             ItemStack stack = targetIngotEntity.getStack();
-                            if (stack.getCount() > 1) {
-                                stack.decrement(1);
-                                targetIngotEntity.setStack(stack);
+                            if (!stack.isEmpty() && stack.getItem() == Items.IRON_INGOT) {
+                                if (stack.getCount() > 1) {
+                                    stack.decrement(1);
+                                    targetIngotEntity.setStack(stack);
+                                } else {
+                                    targetIngotEntity.discard();
+                                }
+                                miniGolem.setStackInHand(Hand.MAIN_HAND, new ItemStack(Items.IRON_INGOT));
+                                phase = Phase.MOVE_TO_GOLEM;
                             } else {
-                                targetIngotEntity.discard();
+                                // Demir alınmış ya da değişmiş, yeniden ara
+                                resetButKeepGolem(); // Golemi unutma, tekrar dene
+
                             }
-                            miniGolem.setStackInHand(Hand.MAIN_HAND, new ItemStack(Items.IRON_INGOT));
-                            phase = Phase.MOVE_TO_GOLEM;
                         }
                     } else {
-                        reset();
+                        fullReset(); // Entity yok olmuş, direkt resetle
                     }
                 }
             }
@@ -162,7 +179,7 @@ public class FindIngotAndHealGolemGoal extends Goal {
                     }
                 } else {
                     miniGolem.setStackInHand(Hand.MAIN_HAND, ItemStack.EMPTY);
-                    reset();
+                    fullReset();
                 }
             }
 
@@ -172,7 +189,8 @@ public class FindIngotAndHealGolemGoal extends Goal {
                     if (targetGolem.getHealth() < targetGolem.getMaxHealth()) {
                         targetGolem.heal(8.0F);
                         miniGolem.setStackInHand(Hand.MAIN_HAND, ItemStack.EMPTY);
-                        miniGolem.playSound(SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, 0.4F, 1.1F);
+                        LevelAssigner.updateDisplay(targetGolem);
+                        miniGolem.playSound(SoundEvents.ENTITY_IRON_GOLEM_REPAIR, 0.4F, 1.1F);
 
                         // Eğer hala canı tam değilse, tekrar külçe aramaya gönder
                         if (targetGolem.getHealth() < targetGolem.getMaxHealth()) {
@@ -184,7 +202,7 @@ public class FindIngotAndHealGolemGoal extends Goal {
                     phase = Phase.FOLLOW;
                     followStartHealth = targetGolem.getHealth();
                 } else {
-                    reset(); // Golem ölmüşse sıfırla
+                    fullReset(); // Golem ölmüşse sıfırla
                 }
             }
 
@@ -223,13 +241,21 @@ public class FindIngotAndHealGolemGoal extends Goal {
         return null;
     }
 
-    private void reset() {
+    private void fullReset() {
         targetIngotEntity = null;
         targetGolem = null;
         targetChest = null;
         usingChest = false;
         phase = Phase.SEARCH;
         followStartHealth = -1;
-
     }
+
+    private void resetButKeepGolem() {
+        targetIngotEntity = null;
+        targetChest = null;
+        usingChest = false;
+        phase = Phase.SEARCH;
+        // targetGolem aynı kalıyor
+    }
+
 }

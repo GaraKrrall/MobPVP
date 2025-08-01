@@ -203,12 +203,6 @@
     },
     "done": true
   },
-  "mobpvp:deep_dark": {
-    "criteria": {
-      "deep_dark": "2025-07-25 15:22:21 +0300"
-    },
-    "done": true
-  },
   "mobpvp:first": {
     "criteria": {
       "joined_world": "2025-07-25 15:22:20 +0300"
@@ -238,12 +232,6 @@
       "has_iron_ingot": "2025-07-25 15:22:20 +0300"
     },
     "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:plains": "2025-07-25 15:22:21 +0300"
-    },
-    "done": false
   },
   "minecraft:recipes/decorations/smithing_table": {
     "criteria": {
@@ -326,6 +314,42 @@
   "minecraft:recipes/combat/diamond_boots": {
     "criteria": {
       "has_diamond": "2025-07-25 15:22:20 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:deep_dark": {
+    "criteria": {
+      "deep_dark": "2025-07-25 15:22:21 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-07-25 15:22:21 +0300"
+    },
+    "done": false
+  },
+  "mobpvp:kick": {
+    "criteria": {
+      "hit_mob": "2025-08-01 18:13:50 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/summon_iron_golem": {
+    "criteria": {
+      "summoned_golem": "2025-08-01 18:13:47 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/cauldron": {
+    "criteria": {
+      "has_water_bucket": "2025-08-01 18:13:23 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-08-01 18:13:50 +0300"
     },
     "done": true
   },

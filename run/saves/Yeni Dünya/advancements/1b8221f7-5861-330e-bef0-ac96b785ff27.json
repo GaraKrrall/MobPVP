@@ -329,5 +329,23 @@
     },
     "done": true
   },
+  "minecraft:recipes/brewing/cauldron": {
+    "criteria": {
+      "has_water_bucket": "2025-08-01 18:04:21 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:kick": {
+    "criteria": {
+      "hit_mob": "2025-08-01 18:04:36 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-08-01 18:04:36 +0300"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

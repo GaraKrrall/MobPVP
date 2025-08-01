@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "id": "mobpvp",
-  "version": "25w31d4+v3.1.4",
+  "version": "3.1.4-build-2",
   "name": "MobPVP",
-  "description": "Bir müsellesin mesaha-i sathiyesi, ka'idesiyle irtifa'ının hasıl-darbının nışfına müsavidir.",
+  "description": "MobPVP adds a level system to every mob. Stronger mobs drop better loot and may become minibosses.",
   "authors": ["KaplanBedwars"],
   "contact": {},
   "license": "AGPL-3.0",
