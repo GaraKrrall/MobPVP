@@ -23,5 +23,8 @@
   "block.mobpvp.damaged_pvp_spawner": "Zədələnmiş PvE Çağırıcı",
   "block.mobpvp.damaged_pvp_spawner_max": "Zədələnmiş Super PvE Çağırıcı",
   "error.mobpvp.alan": "Səth düz deyil və ya ərazi uyğun deyil.",
-  "error.mobpvp.block": "Alt blok dəstəklənmir."
+  "error.mobpvp.block": "Alt blok dəstəklənmir.",
+  "item.mobpvp.reinforced_copper_ingot": "Gücləndirilmiş Mis Tığı",
+  "block.mobpvp.reinforced_copper_block": "Gücləndirilmiş Mis Bloku"
+}
 

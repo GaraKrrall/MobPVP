@@ -3,6 +3,7 @@
     "mobpvp:pvp_spawner",
     "mobpvp:pvp_spawner_max",
     "mobpvp:damaged_pvp_spawner",
-    "mobpvp:damaged_pvp_spawner_max"
+    "mobpvp:damaged_pvp_spawner_max",
+    "mobpvp:reinforced_copper_block"
   ]
 }

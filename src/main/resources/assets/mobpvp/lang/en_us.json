@@ -23,5 +23,7 @@
   "block.mobpvp.damaged_pvp_spawner": "Damaged PvE Spawner",
   "block.mobpvp.damaged_pvp_spawner_max": "Damaged Super PvE Spawner",
   "error.mobpvp.alan": "Surface is not flat or area is not suitable.",
-  "error.mobpvp.block": "The block below is not supported."
+  "error.mobpvp.block": "The block below is not supported.",
+  "item.mobpvp.reinforced_copper_ingot": "Reinforced Copper Ingot",
+  "block.mobpvp.reinforced_copper_block": "Reinforced Copper Block"
 }

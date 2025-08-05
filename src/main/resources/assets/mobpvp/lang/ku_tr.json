@@ -23,7 +23,7 @@
   "block.mobpvp.damaged_pvp_spawner": "Générateur PvE Endommagé",
   "block.mobpvp.damaged_pvp_spawner_max": "Générateur PvE Suprême Endommagé",
   "error.mobpvp.alan": "La surface n'est pas plane ou la zone est inappropriée.",
-  "error.mobpvp.block": "Le bloc en dessous n'est pas pris en charge."
-
-
+  "error.mobpvp.block": "Le bloc en dessous n'est pas pris en charge.",
+  "item.mobpvp.reinforced_copper_ingot": "Külçeyê Baxurê Bi Asînê",
+  "block.mobpvp.reinforced_copper_block": "Bloka Baxurê Bi Asînê"
 }

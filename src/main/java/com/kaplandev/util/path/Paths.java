@@ -10,9 +10,9 @@ import static com.kaplandev.mobpvp.MOD_ID;
 public class Paths {
     public static final String BULWARK_TEXTURE = "textures/entity/zombie/superzombie.png";
     public static final String CUSTOM_ZOMBIE_TEXTURE = "textures/entity/zombie/zombie.png";
-    @Deprecated public static final String CUSTOM_SKELETON_TEXTURE = "";
+    @Deprecated(forRemoval = true) public static final String CUSTOM_SKELETON_TEXTURE = "";
     public static final String SUPER_ZOMBIE_TEXTURE = "textures/entity/zombie/superzombie.png";
-    @Deprecated public static final String GOLEM_TEXTURE = "textures/entity/iron_golem/iron_golem.png";
+    @Deprecated static final String GOLEM_TEXTURE = "textures/entity/iron_golem/iron_golem.png";
     public static final String KALP_ITEM_KEY = "kalp";
     public static final String ORE_ITEM_KEY = "ore";
     public static final String MOB_TABLE_ITEM_KEY = "mobtable_item";
@@ -21,6 +21,8 @@ public class Paths {
     public static final String EGG_MINI_GOLEM_KEY = "mini_golem_egg";
     public static final String EGG_BULWARK_KEY = "bulwark_egg";
     public static final String HEARTH_PART_KEY = "hearth_part";
+    public static final String REINFORCED_COPPER_INGOT_KEY = "reinforced_copper_ingot";
+    public static final String REINFORCED_COPPER_BLOCK_KEY = "reinforced_copper_block";
     public static final String ULTRA_HEARTH_KEY = "ultra_hearth";
     public static final String CRUDE_ACIDIC_ORE_KEY = "ore";
     public static final String MOB_TABLE_KEY = "mob_table";

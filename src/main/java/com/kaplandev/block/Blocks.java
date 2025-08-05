@@ -8,6 +8,7 @@ import com.kaplandev.block.behavior.MobTableBehavior;
 import com.kaplandev.block.behavior.PvpSpawnerBlockBehavior;
 import com.kaplandev.block.behavior.PvpSpawnerMaxBlockBehavior;
 //import com.kaplandev.entity.block.IronChestBlockEntity;
+import com.kaplandev.block.behavior.ReinforcedCopperBlockBehavior;
 import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
 import com.kaplandev.block.util.BlockBuilder;
 
@@ -23,6 +24,7 @@ import static com.kaplandev.util.path.Paths.IRON_CHEST_KEY;
 import static com.kaplandev.util.path.Paths.MOB_TABLE_KEY;
 import static com.kaplandev.util.path.Paths.PVP_SPAWNER_KEY;
 import static com.kaplandev.util.path.Paths.PVP_SPAWNER_MAX_KEY;
+import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_BLOCK_KEY;
 
 public class Blocks {
 
@@ -32,6 +34,7 @@ public class Blocks {
     public static final Block PVP_SPAWNER_MAX;
     public static final Block DAMAGED_PVP_SPAWNER;
     public static final Block DAMAGED_PVP_SPAWNER_MAX;
+    public static final Block REINFORCED_COPPER_BLOCK;
     //public static final Block IRON_CHEST;
     public static void init() {}
 
@@ -43,5 +46,6 @@ public class Blocks {
         DAMAGED_PVP_SPAWNER = BlockBuilder.RegisterCreatedBlock(DAMAGED_PVP_SPAWNER_KEY, BlockBuilder.BuildBlockAttribute(AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.TRIAL_SPAWNER), new DamagedPvpSpawnerBlockBehavior(), UniformIntProvider.create(0, 0)));
         DAMAGED_PVP_SPAWNER_MAX = BlockBuilder.RegisterCreatedBlock(DAMAGED_PVP_SPAWNER_MAX_KEY, BlockBuilder.BuildBlockAttribute(AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.TRIAL_SPAWNER), new DamagedPvpSpawnerMaxBlockBehavior(), UniformIntProvider.create(0, 0)));
        // IRON_CHEST = BlockBuilder.RegisterCreatedBlockWithEntityType2(IRON_CHEST_KEY, new IronChestBehavior(AbstractBlock.Settings.create().strength(8.0f).requiresTool().resistance(1200.0f).sounds(BlockSoundGroup.WOOD)), (pos, state) -> new IronChestBlockEntity(pos, state));
+        REINFORCED_COPPER_BLOCK = BlockBuilder.RegisterCreatedBlock(REINFORCED_COPPER_BLOCK_KEY, BlockBuilder.BuildBlockAttribute(AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.COPPER), new ReinforcedCopperBlockBehavior(), UniformIntProvider.create(0, 0)));
     }
 }

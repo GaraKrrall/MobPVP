@@ -25,6 +25,8 @@ import static com.kaplandev.util.path.Paths.MOB_TABLE_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.ORE_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.PVP_SPAWNER_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.PVP_SPAWNER_MAX_ITEM_KEY;
+import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_BLOCK_KEY;
+import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_INGOT_KEY;
 import static com.kaplandev.util.path.Paths.ULTRA_HEARTH_KEY;
 
 public class Items {
@@ -36,12 +38,14 @@ public class Items {
     public static final Item EGG_MINI_GOLEM;
     public static final Item EGG_BULWARK;
     public static final Item HEARTH_PART;
+    public static final Item REINFORCED_COPPER_INGOT;
     public static final Item ULTRA_HEARTH_ITEM;
     public static final Item KALP_ITEM;
     public static final Item PVP_SPAWNER_ITEM;
     public static final Item PVP_SPAWNER_MAX_ITEM;
     public static final Item DAMAGED_PVP_SPAWNER_ITEM;
     public static final Item DAMAGED_PVP_SPAWNER_MAX_ITEM;
+    public static final Item REINFORCED_COPPER_BLOCK;
     //public static final Item IRON_CHEST_ITEM;
 
     public static void init() {
@@ -52,6 +56,8 @@ public class Items {
         GroupItemBuilder.AddGroup(KALP_ITEM, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(HEARTH_PART, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(ULTRA_HEARTH_ITEM, ItemGroups.MOBPVP_GROUP_KEY);
+        GroupItemBuilder.AddGroup(REINFORCED_COPPER_INGOT, ItemGroups.MOBPVP_GROUP_KEY);
+        GroupItemBuilder.AddGroup(REINFORCED_COPPER_BLOCK, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(MOB_TABLE, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(ORE, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(PVP_SPAWNER_ITEM, ItemGroups.MOBPVP_GROUP_KEY);
@@ -68,12 +74,14 @@ public class Items {
         PVP_SPAWNER_MAX_ITEM = GroupItemBuilder.BuildItem(PVP_SPAWNER_MAX_ITEM_KEY, new BlockItem(Blocks.PVP_SPAWNER_MAX, new Item.Settings()));
         DAMAGED_PVP_SPAWNER_ITEM = GroupItemBuilder.BuildItem(DAMAGED_PVP_SPAWNER_ITEM_KEY, new BlockItem(Blocks.DAMAGED_PVP_SPAWNER, new Item.Settings()));
         DAMAGED_PVP_SPAWNER_MAX_ITEM = GroupItemBuilder.BuildItem(DAMAGED_PVP_SPAWNER_MAX_ITEM_KEY, new BlockItem(Blocks.DAMAGED_PVP_SPAWNER_MAX, new Item.Settings()));
+        REINFORCED_COPPER_BLOCK = GroupItemBuilder.BuildItem(REINFORCED_COPPER_BLOCK_KEY, new BlockItem(Blocks.REINFORCED_COPPER_BLOCK, new Item.Settings()));
        // IRON_CHEST_ITEM = GroupItemBuilder.BuildItem(IRON_CHEST_ITEM_KEY, new BlockItem(Blocks.IRON_CHEST, new Item.Settings()));
         EGG_SKELETON = GroupItemBuilder.BuildItem(EGG_SKELETON_KEY, new SpawnEggItem(EntityType.MAD_SKELETON, 0xC1C1C1,0x3A3A3A, new Item.Settings()));
         EGG_SUPER_ZOMBIE = GroupItemBuilder.BuildItem(EGG_SUPER_ZOMBIE_KEY, new SpawnEggItem(EntityType.MAD_ZOMBIE, 0xB71C1C, 0xFF5252, new Item.Settings()));
         EGG_MINI_GOLEM = GroupItemBuilder.BuildItem(EGG_MINI_GOLEM_KEY, new SpawnEggItem(EntityType.MINIGOLEM, 0xD8D8D8, 0x8A8A8A, new Item.Settings()));
         EGG_BULWARK = GroupItemBuilder.BuildItem(EGG_BULWARK_KEY, new SpawnEggItem(EntityType.BULWARK, 0x880E4F, 0xFF1744, new Item.Settings().rarity(Rarity.EPIC)));
         HEARTH_PART = GroupItemBuilder.BuildItem(HEARTH_PART_KEY, new Item(new Item.Settings()));
+        REINFORCED_COPPER_INGOT = GroupItemBuilder.BuildItem(REINFORCED_COPPER_INGOT_KEY, new Item(new Item.Settings()));
         KALP_ITEM = GroupItemBuilder.BuildItem(KALP_ITEM_KEY, new KalpItem(new Item.Settings().rarity(Rarity.UNCOMMON)));
         ULTRA_HEARTH_ITEM = GroupItemBuilder.BuildItem(ULTRA_HEARTH_KEY, new UltraHeathItem(new Item.Settings().rarity(Rarity.RARE)));
     }
