@@ -2,6 +2,7 @@ package com.kaplandev.mixin.client;
 
 import com.kaplandev.bouncingelf10.animatedLogo.DarkLoadingScreenCompat;
 import com.kaplandev.util.path.Paths;
+
 import com.llamalad7.mixinextras.sugar.Local;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.MinecraftClient;

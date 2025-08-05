@@ -1,7 +1,9 @@
 package com.kaplandev.client;
 
+import com.kaplandev.util.version.BetaVersions;
 //import com.kaplandev.block.BlockEntityTypes;
 import com.kaplandev.client.config.ConfigManager;
+import com.kaplandev.client.gui.BetaNoticeScreen;
 import com.kaplandev.client.info.dink;
 import com.kaplandev.client.renderer.entity.mob.CustomZombieRenderer;
 //import com.kaplandev.client.renderer.entity.block.IronChestBlockRenderer;
@@ -22,7 +24,7 @@ import net.minecraft.client.render.entity.SkeletonEntityRenderer;
 
 public class mobpvpClient implements ClientModInitializer {
     private boolean hasShownToast = false;
-    private boolean hasOpenedPopup = false;
+    private boolean hasOpenedBetaNotice = false;
 
     @Override
     public void onInitializeClient() {
@@ -44,6 +46,10 @@ public class mobpvpClient implements ClientModInitializer {
         ClientTickEvents.START_CLIENT_TICK.register(client -> {
 
             if (ConfigManager.showAKOTOriginalMessage && client.currentScreen instanceof TitleScreen && !hasShownToast) {
+                if (!hasOpenedBetaNotice && BetaVersions.IS_BETA){
+                    hasOpenedBetaNotice = true;
+                    client.setScreen(new BetaNoticeScreen(client.currentScreen));
+                }
                 dink.showToast("Merhaba!", "Orjinal bir KaplanBedwars eklentisi kullanıyorsunuz!");
                 hasShownToast = true;
             }
