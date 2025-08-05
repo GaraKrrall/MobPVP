@@ -1,5 +1,5 @@
-[22:18:14] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
-[22:18:14] [main/INFO] (FabricLoader) Loading 55 mods:
+[00:12:37] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
+[00:12:38] [main/INFO] (FabricLoader) Loading 55 mods:
 	- fabric-api 0.116.1+1.21.1
 	- fabric-api-base 0.4.42+6573ed8c19
 	- fabric-api-lookup-api-v1 1.6.71+b559734419
@@ -55,130 +55,109 @@
 	- minecraft 1.21.1
 	- mixinextras 0.4.1
 	- mobpvp 3.1.5
-[22:18:15] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/akgls/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/22f9eb729e216a091673a574a5906dc1b9027fb3/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[22:18:15] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[22:18:15] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[22:18:15] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[22:18:18] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[22:18:23] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 3786 milliseconds
-[22:18:32] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[22:18:32] [Render thread/INFO] (Minecraft) Setting user: Player352
-[22:18:33] [Render thread/INFO] (Minecraft) [STDOUT]: Custom entities registered.
-[22:18:33] [Render thread/INFO] (Minecraft) [STDOUT]: Mob özellikleri kaydedildi
-[22:18:33] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[22:18:34] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
-[22:18:36] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, mobpvp
-[22:18:37] [Worker-Main-2/INFO] (Minecraft) Found unifont_all_no_pua-15.1.05.hex, loading
-[22:18:37] [Worker-Main-2/INFO] (Minecraft) Found unifont_jp_patch-15.1.05.hex, loading
-[22:18:39] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
-[22:18:39] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[22:18:40] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on SES (VB-Audio Virtual Cable)
-[22:18:40] [Render thread/INFO] (Minecraft) Sound engine started
-[22:18:40] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[22:18:40] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[22:18:40] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[22:18:40] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[22:18:40] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[22:18:40] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[22:18:40] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[22:18:40] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[22:18:40] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[22:18:40] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[22:18:40] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[22:18:40] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[22:18:40] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[22:18:40] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[22:18:40] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[22:18:41] [Render thread/INFO] (mobpvp) Playing startup sound
-[22:18:52] [Render thread/INFO] (Minecraft) Loaded 1303 recipes
-[22:18:52] [Render thread/INFO] (Minecraft) Loaded 1417 advancements
-[22:18:52] [Render thread/WARN] (Minecraft) Not all defined tags for registry ResourceKey[minecraft:root / minecraft:entity_type] are present in data pack: mobpvp:hostile_mobs
-[22:18:53] [Render thread/INFO] (BiomeModificationImpl) Applied 1 biome modifications to 1 of 64 new biomes in 9.702 ms
-[22:18:53] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.1
-[22:18:53] [Server thread/INFO] (Minecraft) Generating keypair
-[22:18:53] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[22:18:53] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %0
-[22:18:53] [Render thread/INFO] (Minecraft) Time elapsed: 374 ms
-[22:18:54] [Server thread/INFO] (Minecraft) Changing view distance to 32, from 10
-[22:18:54] [Server thread/INFO] (Minecraft) Changing simulation distance to 11, from 0
-[22:18:55] [Server thread/INFO] (Minecraft) Player352[local:E:1a107953] logged in with entity id 25 at (-546.1375486041759, -60.0, -308.30724634177284)
-[22:18:55] [Server thread/INFO] (Minecraft) Player352 oyuna katıldı
-[22:18:55] [Server thread/INFO] (Minecraft) Player352, [Elmaslar!] gelişimini yaptı
-[22:18:55] [Server thread/INFO] (Minecraft) Player352, [Donanım Edin] gelişimini yaptı
-[22:18:55] [Server thread/INFO] (Minecraft) Player352, [Kanatlara Kavuş] meydan okumasını tamamladı
-[22:18:55] [Server thread/INFO] (Minecraft) Player352, [İstikbal Göklerdedir] hedefine ulaştı
-[22:19:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Player352, [Elmaslar!] gelişimini yaptı
-[22:19:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Player352, [Donanım Edin] gelişimini yaptı
-[22:19:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Player352, [Kanatlara Kavuş] meydan okumasını tamamladı
-[22:19:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Player352, [İstikbal Göklerdedir] hedefine ulaştı
-[22:19:08] [Render thread/INFO] (Minecraft) Loaded 126 advancements
-[22:19:59] [Server thread/INFO] (Minecraft) Player352, [İlk saldırı] gelişimini yaptı
-[22:19:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Player352, [İlk saldırı] gelişimini yaptı
-[22:19:59] [Render thread/INFO] (Minecraft) Loaded 126 advancements
-[22:20:14] [Server thread/INFO] (Minecraft) Named entity IronGolemEntity['§c[Seviye: 27] §fIron Golem §7- §a23,4§7/§c133 ❤'/498, l='ServerLevel[Ana dünya]', x=-647.33, y=-58.00, z=-359.68] died: §c[Seviye: 27] §fIron Golem §7- §a23,4§7/§c133 ❤, Player352 tarafından katledildi
-[22:20:14] [Render thread/INFO] (Minecraft) Loaded 162 advancements
-[22:20:19] [Server thread/INFO] (Minecraft) [Player352: Zaman 1000 olarak ayarlandı]
-[22:20:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Zaman 1000 olarak ayarlandı
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤'/27, l='ServerLevel[Ana dünya]', x=-543.13, y=-60.00, z=-309.19] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem §7- §a8,1§7/§c17 ❤'/32, l='ServerLevel[Ana dünya]', x=-449.55, y=-60.00, z=-232.55] died: §c[Seviye: 1] §fMinik Demir Golem §7- §a8,1§7/§c17 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a18,8§7/§c21 ❤'/34, l='ServerLevel[Ana dünya]', x=-480.84, y=-60.00, z=-197.78] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a18,8§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤'/35, l='ServerLevel[Ana dünya]', x=-590.99, y=-60.00, z=-203.57] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤'/36, l='ServerLevel[Ana dünya]', x=-591.49, y=-60.00, z=-206.94] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤'/37, l='ServerLevel[Ana dünya]', x=-592.31, y=-60.00, z=-202.84] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤'/38, l='ServerLevel[Ana dünya]', x=-595.30, y=-60.00, z=-203.57] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤'/39, l='ServerLevel[Ana dünya]', x=-594.03, y=-60.00, z=-203.31] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤'/40, l='ServerLevel[Ana dünya]', x=-594.43, y=-60.00, z=-204.23] died: §c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤'/41, l='ServerLevel[Ana dünya]', x=-595.33, y=-60.00, z=-204.82] died: §c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤'/42, l='ServerLevel[Ana dünya]', x=-593.03, y=-60.00, z=-204.04] died: §c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤'/43, l='ServerLevel[Ana dünya]', x=-593.03, y=-60.00, z=-205.91] died: §c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤'/44, l='ServerLevel[Ana dünya]', x=-592.74, y=-60.00, z=-205.10] died: §c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤'/45, l='ServerLevel[Ana dünya]', x=-593.61, y=-60.00, z=-204.92] died: §c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤'/46, l='ServerLevel[Ana dünya]', x=-593.45, y=-60.00, z=-206.83] died: §c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤'/47, l='ServerLevel[Ana dünya]', x=-594.22, y=-60.00, z=-206.00] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem §7- §a14,7§7/§c17 ❤'/48, l='ServerLevel[Ana dünya]', x=-441.64, y=-60.00, z=-333.22] died: §c[Seviye: 1] §fMinik Demir Golem §7- §a14,7§7/§c17 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤'/56, l='ServerLevel[Ana dünya]', x=-527.54, y=-60.00, z=-177.27] died: §c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤'/57, l='ServerLevel[Ana dünya]', x=-525.98, y=-60.00, z=-175.37] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤'/58, l='ServerLevel[Ana dünya]', x=-526.79, y=-60.00, z=-175.36] died: §c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤'/59, l='ServerLevel[Ana dünya]', x=-526.94, y=-60.00, z=-176.16] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤'/60, l='ServerLevel[Ana dünya]', x=-526.80, y=-60.00, z=-174.52] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤'/61, l='ServerLevel[Ana dünya]', x=-527.73, y=-60.00, z=-174.55] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤'/62, l='ServerLevel[Ana dünya]', x=-527.63, y=-60.00, z=-175.32] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤'/63, l='ServerLevel[Ana dünya]', x=-527.76, y=-60.00, z=-176.21] died: §c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤'/64, l='ServerLevel[Ana dünya]', x=-526.00, y=-60.00, z=-174.49] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤'/65, l='ServerLevel[Ana dünya]', x=-528.57, y=-60.00, z=-174.60] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem §7- §a14,7§7/§c17 ❤'/66, l='ServerLevel[Ana dünya]', x=-526.74, y=-60.00, z=-173.71] died: §c[Seviye: 1] §fMinik Demir Golem §7- §a14,7§7/§c17 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤'/70, l='ServerLevel[Ana dünya]', x=-485.87, y=-60.06, z=-169.57] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem §7- §a14,7§7/§c17 ❤'/71, l='ServerLevel[Ana dünya]', x=-487.62, y=-60.06, z=-169.28] died: §c[Seviye: 1] §fMinik Demir Golem §7- §a14,7§7/§c17 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤'/72, l='ServerLevel[Ana dünya]', x=-486.71, y=-60.00, z=-169.65] died: §c[Seviye: 2] §fMinik Demir Golem §7- §a21,0§7/§c21 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem'/264, l='ServerLevel[Ana dünya]', x=-143.18, y=-60.00, z=-61.52] died: §c[Seviye: 1] §fMinik Demir Golem öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem'/265, l='ServerLevel[Ana dünya]', x=-143.55, y=-60.00, z=-59.90] died: §c[Seviye: 1] §fMinik Demir Golem öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem'/267, l='ServerLevel[Ana dünya]', x=-139.97, y=-60.00, z=-69.69] died: §c[Seviye: 1] §fMinik Demir Golem öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem'/268, l='ServerLevel[Ana dünya]', x=-140.76, y=-60.00, z=-69.80] died: §c[Seviye: 1] §fMinik Demir Golem öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem'/269, l='ServerLevel[Ana dünya]', x=-139.10, y=-60.00, z=-68.85] died: §c[Seviye: 2] §fMinik Demir Golem öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem'/270, l='ServerLevel[Ana dünya]', x=-140.76, y=-60.00, z=-68.91] died: §c[Seviye: 2] §fMinik Demir Golem öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem'/271, l='ServerLevel[Ana dünya]', x=-139.95, y=-60.00, z=-68.73] died: §c[Seviye: 1] §fMinik Demir Golem öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem'/272, l='ServerLevel[Ana dünya]', x=-141.80, y=-60.00, z=-70.63] died: §c[Seviye: 2] §fMinik Demir Golem öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem'/273, l='ServerLevel[Ana dünya]', x=-141.37, y=-60.00, z=-68.09] died: §c[Seviye: 1] §fMinik Demir Golem öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem'/274, l='ServerLevel[Ana dünya]', x=-141.69, y=-60.00, z=-68.89] died: §c[Seviye: 2] §fMinik Demir Golem öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem'/275, l='ServerLevel[Ana dünya]', x=-141.70, y=-60.00, z=-69.85] died: §c[Seviye: 1] §fMinik Demir Golem öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤'/507, l='ServerLevel[Ana dünya]', x=-651.50, y=-60.00, z=-356.50] died: §c[Seviye: 1] §fMinik Demir Golem §7- §a16,9§7/§c17 ❤ öldürüldü
-[22:21:45] [Server thread/INFO] (Minecraft) [Player352: 43 varlık öldürüldü]
-[22:21:45] [Render thread/INFO] (Minecraft) [System] [CHAT] 43 varlık öldürüldü
-[22:22:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Ekran görüntüsü 2025-08-05_22.22.23.png olarak kaydedildi
-[22:22:25] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[22:22:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
-[22:22:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
-[22:22:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
-[22:22:36] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[22:22:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
-[22:22:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
-[22:22:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
-[22:23:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Ekran görüntüsü 2025-08-05_22.23.49.png olarak kaydedildi
-[22:23:52] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[22:23:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
-[22:23:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
-[22:23:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
-[22:23:55] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[22:23:55] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
-[22:23:55] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
-[22:23:55] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
+[00:12:38] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/akgls/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/22f9eb729e216a091673a574a5906dc1b9027fb3/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[00:12:39] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[00:12:39] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[00:12:39] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[00:12:42] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[00:12:44] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 714 milliseconds
+[00:12:53] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[00:12:53] [Render thread/INFO] (Minecraft) Setting user: Player274
+[00:12:53] [Render thread/INFO] (Minecraft) [STDOUT]: Custom entities registered.
+[00:12:53] [Render thread/INFO] (Minecraft) [STDOUT]: Mob özellikleri kaydedildi
+[00:12:54] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[00:12:55] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
+[00:12:58] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, mobpvp
+[00:12:58] [Worker-Main-2/INFO] (Minecraft) Found unifont_all_no_pua-15.1.05.hex, loading
+[00:12:59] [Worker-Main-2/INFO] (Minecraft) Found unifont_jp_patch-15.1.05.hex, loading
+[00:13:01] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[00:13:01] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[00:13:01] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on SES (VB-Audio Virtual Cable)
+[00:13:01] [Render thread/INFO] (Minecraft) Sound engine started
+[00:13:02] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[00:13:02] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[00:13:02] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[00:13:02] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[00:13:02] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[00:13:02] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[00:13:02] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[00:13:02] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[00:13:02] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[00:13:02] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[00:13:02] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[00:13:02] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[00:13:02] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[00:13:02] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[00:13:02] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[00:13:03] [Render thread/INFO] (mobpvp) Playing startup sound
+[00:15:02] [Render thread/INFO] (Minecraft) Loaded 1303 recipes
+[00:15:02] [Render thread/INFO] (Minecraft) Loaded 1417 advancements
+[00:15:02] [Render thread/WARN] (Minecraft) Not all defined tags for registry ResourceKey[minecraft:root / minecraft:entity_type] are present in data pack: mobpvp:hostile_mobs
+[00:15:03] [Render thread/INFO] (BiomeModificationImpl) Applied 1 biome modifications to 1 of 64 new biomes in 14.01 ms
+[00:15:03] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.1
+[00:15:03] [Server thread/INFO] (Minecraft) Generating keypair
+[00:15:04] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[00:15:04] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %0
+[00:15:04] [Render thread/INFO] (Minecraft) Time elapsed: 419 ms
+[00:15:04] [Server thread/INFO] (Minecraft) Changing view distance to 32, from 10
+[00:15:04] [Server thread/INFO] (Minecraft) Changing simulation distance to 11, from 0
+[00:15:05] [Server thread/INFO] (Minecraft) Player274[local:E:27bff8c7] logged in with entity id 25 at (-655.6762781712667, -54.9872025661857, -362.8422462390993)
+[00:15:05] [Server thread/INFO] (Minecraft) Player274 oyuna katıldı
+[00:15:05] [Server thread/INFO] (Minecraft) Player274, [Koruyucu Gibi Giyin] hedefine ulaştı
+[00:15:05] [Server thread/INFO] (Minecraft) Player274, [Elmaslar!] gelişimini yaptı
+[00:15:05] [Server thread/INFO] (Minecraft) Player274, [Donanım Edin] gelişimini yaptı
+[00:15:05] [Server thread/INFO] (Minecraft) Player274, [Kanatlara Kavuş] meydan okumasını tamamladı
+[00:15:05] [Server thread/INFO] (Minecraft) Player274, [İstikbal Göklerdedir] hedefine ulaştı
+[00:15:05] [Server thread/INFO] (Minecraft) Player274, [MobPVP] meydan okumasını tamamladı
+[00:15:06] [Server thread/INFO] (Minecraft) Player274, [Karanlığın Kalbine] meydan okumasını tamamladı
+[00:15:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Player274, [Koruyucu Gibi Giyin] hedefine ulaştı
+[00:15:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Player274, [Elmaslar!] gelişimini yaptı
+[00:15:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Player274, [Donanım Edin] gelişimini yaptı
+[00:15:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Player274, [Kanatlara Kavuş] meydan okumasını tamamladı
+[00:15:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Player274, [İstikbal Göklerdedir] hedefine ulaştı
+[00:15:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Player274, [MobPVP] meydan okumasını tamamladı
+[00:15:06] [Render thread/INFO] (Minecraft) Loaded 83 advancements
+[00:15:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Player274, [Karanlığın Kalbine] meydan okumasını tamamladı
+[00:15:06] [Render thread/INFO] (Minecraft) Loaded 83 advancements
+[00:15:07] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[00:15:07] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
+[00:15:07] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
+[00:15:07] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
+[00:16:11] [Render thread/INFO] (Minecraft) Loaded 84 advancements
+[00:18:39] [Server thread/INFO] (Minecraft) [Player274: Oyun modunuz Seyirci Modu olarak ayarlandı]
+[00:18:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Seyirci Modu olarak ayarlandı
+[00:18:48] [Server thread/INFO] (Minecraft) [Player274: Oyun modunuz Yaratıcı Mod olarak ayarlandı]
+[00:18:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Yaratıcı Mod olarak ayarlandı
+[00:18:52] [Server thread/INFO] (Minecraft) [Player274: Zaman 1000 olarak ayarlandı]
+[00:18:52] [Render thread/INFO] (Minecraft) [System] [CHAT] Zaman 1000 olarak ayarlandı
+[00:19:11] [Render thread/INFO] (Minecraft) [System] [CHAT] [Hata Ayıklama]: Vurma kutuları: görünür
+[00:19:13] [Render thread/INFO] (Minecraft) [System] [CHAT] [Hata Ayıklama]: Vurma kutuları: gizli
+[00:20:08] [Server thread/INFO] (Minecraft) [Player274: Oyun modunuz Hayatta Kalma Modu olarak ayarlandı]
+[00:20:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Hayatta Kalma Modu olarak ayarlandı
+[00:20:11] [Server thread/INFO] (Minecraft) [Player274: Oyun modunuz Yaratıcı Mod olarak ayarlandı]
+[00:20:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Yaratıcı Mod olarak ayarlandı
+[00:20:20] [Server thread/INFO] (Minecraft) [Player274: Oyun modunuz Hayatta Kalma Modu olarak ayarlandı]
+[00:20:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Hayatta Kalma Modu olarak ayarlandı
+[00:20:31] [Server thread/INFO] (Minecraft) [Player274: Oyun modunuz Yaratıcı Mod olarak ayarlandı]
+[00:20:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Yaratıcı Mod olarak ayarlandı
+[00:20:33] [Server thread/INFO] (Minecraft) [Player274: Oyun modunuz Hayatta Kalma Modu olarak ayarlandı]
+[00:20:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Hayatta Kalma Modu olarak ayarlandı
+[00:20:38] [Server thread/INFO] (Minecraft) [Player274: Oyun modunuz Yaratıcı Mod olarak ayarlandı]
+[00:20:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Yaratıcı Mod olarak ayarlandı
+[00:24:53] [Render thread/INFO] (Minecraft) Loaded 86 advancements
+[00:25:50] [Render thread/INFO] (Minecraft) Loaded 97 advancements
+[00:26:28] [Render thread/INFO] (Minecraft) Stopping!
+[00:26:28] [Server thread/INFO] (Minecraft) Player274 lost connection: Bağlantı kesildi
+[00:26:28] [Server thread/INFO] (Minecraft) Player274 oyundan ayrıldı
+[00:26:28] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[00:26:28] [Server thread/INFO] (Minecraft) Stopping server
+[00:26:28] [Server thread/INFO] (Minecraft) Saving players
+[00:26:28] [Server thread/INFO] (Minecraft) Saving worlds
+[00:26:28] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
+[00:26:28] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
+[00:26:28] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
+[00:26:28] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (Yeni Dünya): All chunks are saved
+[00:26:28] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[00:26:28] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[00:26:28] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[00:26:29] [Thread-3/INFO] (Minecraft) [STDOUT]: [MobPVP] Mod kapanıyor...

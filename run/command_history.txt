@@ -1,4 +1,3 @@
-/summon mobpvp:mini_iron_golema
 /summon mobpvp:mini_iron_golem,d
 /summon mobpvp:mini_iron_golem
 /time set day
@@ -48,3 +47,4 @@
 /give Player791 mobpvp:reinforced_copper_block
 /time set day
 /kill @e[type=mobpvp:mini_iron_golem]
+/time set day

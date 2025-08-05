@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.Rarity;
 
+import static com.kaplandev.util.path.Paths.COPPER_STICK_KEY;
 import static com.kaplandev.util.path.Paths.DAMAGED_PVP_SPAWNER_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.DAMAGED_PVP_SPAWNER_MAX_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.EGG_BULWARK_KEY;
@@ -46,6 +47,7 @@ public class Items {
     public static final Item DAMAGED_PVP_SPAWNER_ITEM;
     public static final Item DAMAGED_PVP_SPAWNER_MAX_ITEM;
     public static final Item REINFORCED_COPPER_BLOCK;
+    public static final Item COPPER_STICK;
     //public static final Item IRON_CHEST_ITEM;
 
     public static void init() {
@@ -57,6 +59,7 @@ public class Items {
         GroupItemBuilder.AddGroup(HEARTH_PART, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(ULTRA_HEARTH_ITEM, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(REINFORCED_COPPER_INGOT, ItemGroups.MOBPVP_GROUP_KEY);
+        GroupItemBuilder.AddGroup(COPPER_STICK, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(REINFORCED_COPPER_BLOCK, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(MOB_TABLE, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(ORE, ItemGroups.MOBPVP_GROUP_KEY);
@@ -84,5 +87,6 @@ public class Items {
         REINFORCED_COPPER_INGOT = GroupItemBuilder.BuildItem(REINFORCED_COPPER_INGOT_KEY, new Item(new Item.Settings()));
         KALP_ITEM = GroupItemBuilder.BuildItem(KALP_ITEM_KEY, new KalpItem(new Item.Settings().rarity(Rarity.UNCOMMON)));
         ULTRA_HEARTH_ITEM = GroupItemBuilder.BuildItem(ULTRA_HEARTH_KEY, new UltraHeathItem(new Item.Settings().rarity(Rarity.RARE)));
+        COPPER_STICK = GroupItemBuilder.BuildItem(COPPER_STICK_KEY, new Item(new Item.Settings()));
     }
 }

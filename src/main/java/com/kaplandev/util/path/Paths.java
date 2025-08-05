@@ -21,6 +21,7 @@ public class Paths {
     public static final String EGG_MINI_GOLEM_KEY = "mini_golem_egg";
     public static final String EGG_BULWARK_KEY = "bulwark_egg";
     public static final String HEARTH_PART_KEY = "hearth_part";
+    public static final String COPPER_STICK_KEY = "copper_stick";
     public static final String REINFORCED_COPPER_INGOT_KEY = "reinforced_copper_ingot";
     public static final String REINFORCED_COPPER_BLOCK_KEY = "reinforced_copper_block";
     public static final String ULTRA_HEARTH_KEY = "ultra_hearth";

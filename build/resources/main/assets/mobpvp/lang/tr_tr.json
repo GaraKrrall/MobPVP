@@ -23,5 +23,7 @@
   "block.mobpvp.damaged_pvp_spawner": "Hasarlı PvE Çağırıcı",
   "block.mobpvp.damaged_pvp_spawner_max": "Hasarlı Süper PvE Çağırıcı",
   "error.mobpvp.alan": "Yüzey düz değil veya alan uygun değil.",
-  "error.mobpvp.block": "Alt blok desteklenmiyor."
+  "error.mobpvp.block": "Alt blok desteklenmiyor.",
+  "item.mobpvp.reinforced_copper_ingot": "Demir İle Güçlendirilmiş Bakır Külçesi",
+  "block.mobpvp.reinforced_copper_block": "Demir İle Güçlendirilmiş Bakır Bloğu"
 }
