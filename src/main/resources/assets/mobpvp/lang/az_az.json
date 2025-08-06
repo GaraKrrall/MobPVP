@@ -25,6 +25,9 @@
   "error.mobpvp.alan": "Səth düz deyil və ya ərazi uyğun deyil.",
   "error.mobpvp.block": "Alt blok dəstəklənmir.",
   "item.mobpvp.reinforced_copper_ingot": "Gücləndirilmiş Mis Tığı",
-  "block.mobpvp.reinforced_copper_block": "Gücləndirilmiş Mis Bloku"
+  "block.mobpvp.reinforced_copper_block": "Gücləndirilmiş Mis Bloku",
+  "item.mobpvp.copper_stick": "Bakar Çubuğu",
+  "item.mobpvp.reinforced_copper_knife": "Dəmir Gücləndirilmiş Bakar Bıçağı",
+  "item.mobpvp.reinforced_copper_mace": "Dəmir Gücləndirilmiş Bakar Qələm"
 }
 

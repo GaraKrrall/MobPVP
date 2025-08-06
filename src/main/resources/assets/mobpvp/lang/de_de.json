@@ -25,6 +25,8 @@
   "error.mobpvp.alan": "Oberfläche ist uneben oder der Bereich ist ungeeignet.",
   "error.mobpvp.block": "Der Block darunter wird nicht unterstützt.",
   "item.mobpvp.reinforced_copper_ingot": "Verstärzter Kupferbarren",
-  "block.mobpvp.reinforced_copper_block": "Verstärkter Kupferblock"
-
+  "block.mobpvp.reinforced_copper_block": "Verstärkter Kupferblock",
+  "item.mobpvp.copper_stick": "Kupferstab",
+  "item.mobpvp.reinforced_copper_knife": "Mit Eisen verstärktes Kupfermesser",
+  "item.mobpvp.reinforced_copper_mace": "Mit Eisen verstärkter Kupferstreitkolben"
 }

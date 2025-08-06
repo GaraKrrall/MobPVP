@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:enchanted_book" },
     "title": { "text": "Parıldayan Kahraman" },
-    "description": { "text": "Tüm zırh parçalarını enchant'lı olarak giy." },
+    "description": { "text": "Tüm netherite zırh parçalarını enchant'lı olarak giy." },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true

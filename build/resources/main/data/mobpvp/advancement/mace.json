@@ -1,0 +1,19 @@
+{
+  "parent": "mobpvp:first",
+  "display": {
+    "icon": { "id": "mobpvp:reinforced_copper_mace" },
+    "title": { "text": "Biraz Daha Güçlü..." },
+    "description": { "text": "Bir Demir İle Güçlendirilmiş Bakır Gürz Alın." },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "elytra": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": ["mobpvp:reinforced_copper_mace"] }]
+      }
+    }
+  }
+}

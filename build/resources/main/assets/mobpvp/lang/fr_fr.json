@@ -25,6 +25,9 @@
   "error.mobpvp.alan": "La surface n'est pas plane ou la zone est inappropriée.",
   "error.mobpvp.block": "Le bloc en dessous n'est pas pris en charge.",
   "item.mobpvp.reinforced_copper_ingot": "Lingot de cuivre renforcé",
-  "block.mobpvp.reinforced_copper_block": "Bloc de cuivre renforcé"
+  "block.mobpvp.reinforced_copper_block": "Bloc de cuivre renforcé",
+  "item.mobpvp.copper_stick": "Bâton de Cuivre",
+  "item.mobpvp.reinforced_copper_knife": "Couteau en Cuivre Renforcé de Fer",
+  "item.mobpvp.reinforced_copper_mace": "Masse en Cuivre Renforcée de Fer"
 
 }

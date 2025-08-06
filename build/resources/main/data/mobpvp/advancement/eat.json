@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:bread" },
     "title": { "text": "Afiyet Olsun" },
-    "description": { "text": "Bir yemek ye." },
+    "description": { "text": "Bir ekmek ye." },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true

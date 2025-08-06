@@ -25,5 +25,8 @@
   "error.mobpvp.alan": "Yüzey düz değil veya alan uygun değil.",
   "error.mobpvp.block": "Alt blok desteklenmiyor.",
   "item.mobpvp.reinforced_copper_ingot": "Demir İle Güçlendirilmiş Bakır Külçesi",
-  "block.mobpvp.reinforced_copper_block": "Demir İle Güçlendirilmiş Bakır Bloğu"
+  "block.mobpvp.reinforced_copper_block": "Demir İle Güçlendirilmiş Bakır Bloğu",
+  "item.mobpvp.copper_stick":  "Bakır Çubuk",
+  "item.mobpvp.reinforced_copper_knife": "Demir İle Güçlendirilmiş Bakır Bıçak",
+  "item.mobpvp.reinforced_copper_mace": "Demir İle Güçlendirilmiş Bakır Gürz"
 }

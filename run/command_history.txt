@@ -1,21 +1,3 @@
-/summon mobpvp:mini_iron_golem,d
-/summon mobpvp:mini_iron_golem
-/time set day
-/summon minecraft:warden
-/summon minecraft:ender_dragon
-/time set day
-/effect give Player323 minecraft:strength infinite 255
-/effect clear
-/effect give Player323 minecraft:strength infinite 255
-/effect give Player462 minecraft:strength infinite 255
-/summon minecraft:ender_dragon
-/summon mobpvp:mini_iron_golem
-/effect clear
-/summon minecraft:iron_golem
-/time set day
-/summon minecraft:iron_golem
-/time set day
-/weather clear
 /give Player321 mobpvp:mini_golem_egg
 /give Player321 mobpvp:bulwark_egg
 /playsound block.trial_spawner.ambient_ominous
@@ -48,3 +30,21 @@
 /time set day
 /kill @e[type=mobpvp:mini_iron_golem]
 /time set day
+/recipe give Player139 mobpvp:istanbul
+/time set day
+/enchant Player177 minecraft:unbreaking
+/advancement revoke @a everything
+/effect give @e[type=minecraft:item_frame] minecraft:invisibility infinite 255 true
+/time set day
+/effect give @e[type=minecraft:item_display] minecraft:invisibility infinite 255 true
+/tick freeze
+/tick unfreeze
+/tick freeze
+/weather clear
+/tick freeze
+/recipe give Player388 mobpvp:a
+/recipe give Player388 mobpvp:b
+/recipe give Player388 mobpvp:denizli
+/recipe give Player388 mobpvp:diamond
+/recipe give Player388 mobpvp:nie
+/recipe give Player388 *

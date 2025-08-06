@@ -2,7 +2,9 @@ package com.kaplandev.item;
 
 import com.kaplandev.block.Blocks;
 import com.kaplandev.item.feature.KalpItem;
+import com.kaplandev.item.feature.ReinforcedCopperKnifeItem;
 import com.kaplandev.item.feature.UltraHeathItem;
+import com.kaplandev.item.feature.ReinforcedCopperMaceItem;
 import com.kaplandev.item.group.GroupItemBuilder;
 import com.kaplandev.item.group.ItemGroups;
 import com.kaplandev.entity.EntityType;
@@ -20,7 +22,6 @@ import static com.kaplandev.util.path.Paths.EGG_MINI_GOLEM_KEY;
 import static com.kaplandev.util.path.Paths.EGG_SKELETON_KEY;
 import static com.kaplandev.util.path.Paths.EGG_SUPER_ZOMBIE_KEY;
 import static com.kaplandev.util.path.Paths.HEARTH_PART_KEY;
-import static com.kaplandev.util.path.Paths.IRON_CHEST_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.KALP_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.MOB_TABLE_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.ORE_ITEM_KEY;
@@ -28,6 +29,8 @@ import static com.kaplandev.util.path.Paths.PVP_SPAWNER_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.PVP_SPAWNER_MAX_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_BLOCK_KEY;
 import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_INGOT_KEY;
+import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_KNIFE_KEY;
+import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_MACE_KEY;
 import static com.kaplandev.util.path.Paths.ULTRA_HEARTH_KEY;
 
 public class Items {
@@ -49,6 +52,8 @@ public class Items {
     public static final Item REINFORCED_COPPER_BLOCK;
     public static final Item COPPER_STICK;
     //public static final Item IRON_CHEST_ITEM;
+    public static final Item REINFORCED_COPPER_MACE;
+    public static final Item REINFORCED_COPPER_KNIFE;
 
     public static void init() {
         GroupItemBuilder.AddGroup(EGG_SKELETON, ItemGroups.EGGS_GROUP_KEY);
@@ -60,6 +65,8 @@ public class Items {
         GroupItemBuilder.AddGroup(ULTRA_HEARTH_ITEM, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(REINFORCED_COPPER_INGOT, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(COPPER_STICK, ItemGroups.MOBPVP_GROUP_KEY);
+        GroupItemBuilder.AddGroup(REINFORCED_COPPER_MACE, ItemGroups.MOBPVP_GROUP_KEY);
+        GroupItemBuilder.AddGroup(REINFORCED_COPPER_KNIFE, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(REINFORCED_COPPER_BLOCK, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(MOB_TABLE, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(ORE, ItemGroups.MOBPVP_GROUP_KEY);
@@ -88,5 +95,7 @@ public class Items {
         KALP_ITEM = GroupItemBuilder.BuildItem(KALP_ITEM_KEY, new KalpItem(new Item.Settings().rarity(Rarity.UNCOMMON)));
         ULTRA_HEARTH_ITEM = GroupItemBuilder.BuildItem(ULTRA_HEARTH_KEY, new UltraHeathItem(new Item.Settings().rarity(Rarity.RARE)));
         COPPER_STICK = GroupItemBuilder.BuildItem(COPPER_STICK_KEY, new Item(new Item.Settings()));
+        REINFORCED_COPPER_MACE = GroupItemBuilder.BuildItem(REINFORCED_COPPER_MACE_KEY, new ReinforcedCopperMaceItem(new Item.Settings().maxDamage(250).maxCount(1).rarity(Rarity.RARE), 2.0F,  -3.5F, 2.8F, 0.5F));
+        REINFORCED_COPPER_KNIFE = GroupItemBuilder.BuildItem(REINFORCED_COPPER_KNIFE_KEY, new ReinforcedCopperKnifeItem(new Item.Settings().maxCount(1).maxDamage(200), 5.0F, -2.0F));
     }
 }

@@ -25,6 +25,9 @@
   "error.mobpvp.alan": "La surface n'est pas plane ou la zone est inappropriée.",
   "error.mobpvp.block": "Le bloc en dessous n'est pas pris en charge.",
   "item.mobpvp.reinforced_copper_ingot": "강화된 구리 주괴",
-  "block.mobpvp.reinforced_copper_block": "강화된 구리 블록"
+  "block.mobpvp.reinforced_copper_block": "강화된 구리 블록",
+  "item.mobpvp.copper_stick": "구리 막대",
+  "item.mobpvp.reinforced_copper_knife": "철로 강화된 구리 단검",
+  "item.mobpvp.reinforced_copper_mace": "철로 강화된 구리 철퇴"
 
 }

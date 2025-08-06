@@ -23,6 +23,8 @@ public class Paths {
     public static final String HEARTH_PART_KEY = "hearth_part";
     public static final String COPPER_STICK_KEY = "copper_stick";
     public static final String REINFORCED_COPPER_INGOT_KEY = "reinforced_copper_ingot";
+    public static final String REINFORCED_COPPER_MACE_KEY = "reinforced_copper_mace";
+    public static final String REINFORCED_COPPER_KNIFE_KEY = "reinforced_copper_knife";
     public static final String REINFORCED_COPPER_BLOCK_KEY = "reinforced_copper_block";
     public static final String ULTRA_HEARTH_KEY = "ultra_hearth";
     public static final String CRUDE_ACIDIC_ORE_KEY = "ore";
