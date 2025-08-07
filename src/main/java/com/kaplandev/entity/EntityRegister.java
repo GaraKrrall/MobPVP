@@ -7,21 +7,16 @@ import com.kaplandev.entity.boss.BulwarkEntity;
 import com.kaplandev.entity.mob.MadSkeletonEntity;
 import com.kaplandev.entity.passive.MiniIronGolemEntity;
 import com.kaplandev.entity.mob.MadZombieEntity;
-import com.kaplandev.entity.spawn.LuckySpawnLocation;
-import com.kaplandev.entity.util.EntityAttributeAndSpawnBuilder;
+import com.kaplandev.api.builder.EntityAttributeAndSpawnBuilder;
 import com.kaplandev.util.path.Paths;
 import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
-import net.minecraft.block.Block;
 import net.minecraft.entity.*;
-import net.minecraft.entity.mob.MobEntity;
-import net.minecraft.registry.tag.BiomeTags;
 import net.minecraft.util.Identifier;
 import net.minecraft.registry.*;
 import net.minecraft.entity.EntityDimensions;
-import net.minecraft.world.Heightmap;
 
 import static com.kaplandev.entity.EntityType.BULWARK;
 //import static com.kaplandev.entity.EntityType.IRON_CHEST;

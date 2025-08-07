@@ -1,6 +1,6 @@
 package com.kaplandev.block;
 
-/*import com.kaplandev.block.util.BlockBuilder;
+/*import com.kaplandev.api.builder.BlockBuilder;
 import com.kaplandev.entity.block.IronChestBlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 

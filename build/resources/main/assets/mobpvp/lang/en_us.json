@@ -28,5 +28,7 @@
   "block.mobpvp.reinforced_copper_block": "Reinforced Copper Block",
   "item.mobpvp.copper_stick": "Copper Stick",
   "item.mobpvp.reinforced_copper_knife": "Reinforced Copper Knife",
-  "item.mobpvp.reinforced_copper_mace": "Reinforced Copper Mace"
+  "item.mobpvp.reinforced_copper_mace": "Reinforced Copper Mace",
+  "itemGroup.beta.item": "Beta Items",
+  "itemGroup.beta.block": "Beta Blocks"
 }

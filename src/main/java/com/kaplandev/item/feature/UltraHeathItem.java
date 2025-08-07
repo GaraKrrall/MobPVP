@@ -1,5 +1,6 @@
 package com.kaplandev.item.feature;
 
+import com.kaplandev.api.feature.ItemFeature;
 import com.kaplandev.block.Blocks;
 
 import net.fabricmc.api.EnvType;
@@ -14,7 +15,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 
 import java.util.ArrayList;

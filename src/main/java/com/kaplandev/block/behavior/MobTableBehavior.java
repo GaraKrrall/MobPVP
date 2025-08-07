@@ -1,6 +1,7 @@
 package com.kaplandev.block.behavior;
 
 import com.kaplandev.item.Items;
+import com.kaplandev.api.behavior.BlockBehavior;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

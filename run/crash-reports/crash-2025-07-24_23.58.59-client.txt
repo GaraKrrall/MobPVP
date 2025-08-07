@@ -24,7 +24,7 @@ Caused by: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] chara
 	at knot//net.minecraft.util.Identifier.validatePath(Identifier.java:285)
 	at knot//net.minecraft.util.Identifier.ofValidated(Identifier.java:48)
 	at knot//net.minecraft.util.Identifier.of(Identifier.java:52)
-	at knot//com.kaplandev.block.util.BlockBuilder.RegisterCreatedBlock(BlockBuilder.java:31)
+	at knot//com.kaplandev.api.builder.BlockBuilder.RegisterCreatedBlock(BlockBuilder.java:31)
 	at knot//com.kaplandev.block.Blocks.<clinit>(Blocks.java:31)
 	... 10 more
 

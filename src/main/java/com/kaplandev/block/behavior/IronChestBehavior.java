@@ -2,6 +2,7 @@ package com.kaplandev.block.behavior;
 
 /*import com.kaplandev.block.BlockEntityTypes;
 import com.kaplandev.entity.block.IronChestBlockEntity;
+import com.kaplandev.api.behavior.BlockBehavior;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ChestBlock;

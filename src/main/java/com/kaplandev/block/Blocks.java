@@ -10,7 +10,7 @@ import com.kaplandev.block.behavior.PvpSpawnerMaxBlockBehavior;
 //import com.kaplandev.entity.block.IronChestBlockEntity;
 import com.kaplandev.block.behavior.ReinforcedCopperBlockBehavior;
 import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
-import com.kaplandev.block.util.BlockBuilder;
+import com.kaplandev.api.builder.BlockBuilder;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -20,7 +20,6 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import static com.kaplandev.util.path.Paths.CRUDE_ACIDIC_ORE_KEY;
 import static com.kaplandev.util.path.Paths.DAMAGED_PVP_SPAWNER_KEY;
 import static com.kaplandev.util.path.Paths.DAMAGED_PVP_SPAWNER_MAX_KEY;
-import static com.kaplandev.util.path.Paths.IRON_CHEST_KEY;
 import static com.kaplandev.util.path.Paths.MOB_TABLE_KEY;
 import static com.kaplandev.util.path.Paths.PVP_SPAWNER_KEY;
 import static com.kaplandev.util.path.Paths.PVP_SPAWNER_MAX_KEY;

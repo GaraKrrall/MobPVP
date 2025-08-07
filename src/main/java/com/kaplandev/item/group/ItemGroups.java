@@ -1,5 +1,6 @@
 package com.kaplandev.item.group;
 
+import com.kaplandev.api.version.BetaVersions;
 import com.kaplandev.item.Items;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -20,7 +21,7 @@ public class ItemGroups {
     public static final RegistryKey<ItemGroup> EGGS_GROUP_KEY;
     public static final ItemGroup MOBPVP_GROUP;
     public static final ItemGroup EGGS_GROUP;
-    public static void init() {}
+    public static void init() {if (BetaVersions.IS_BETA){BetaItemGroups.init();}}
 
     static {
         MOBPVP_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(MOD_ID, TAB_MOBPVP_ITEMS_KEY));

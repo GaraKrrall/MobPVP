@@ -1,7 +1,8 @@
 package com.kaplandev.client;
 
-import com.kaplandev.util.version.BetaVersions;
+import com.kaplandev.api.version.BetaVersions;
 //import com.kaplandev.block.BlockEntityTypes;
+import com.kaplandev.api.version.VersionUtils;
 import com.kaplandev.client.config.ConfigManager;
 import com.kaplandev.client.gui.BetaNoticeScreen;
 import com.kaplandev.client.info.dink;
@@ -51,6 +52,7 @@ public class mobpvpClient implements ClientModInitializer {
                     client.setScreen(new BetaNoticeScreen(client.currentScreen));
                 }
                 dink.showToast("Merhaba!", "Orjinal bir KaplanBedwars eklentisi kullanıyorsunuz!");
+                if (BetaVersions.IS_BETA){ dink.showToast("Debug", VersionUtils.getBetaVersionNumber());}
                 hasShownToast = true;
             }
             if (client == null || client.world == null) return;

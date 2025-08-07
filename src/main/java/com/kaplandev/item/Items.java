@@ -1,11 +1,13 @@
 package com.kaplandev.item;
 
+import com.kaplandev.api.version.BetaVersions;
 import com.kaplandev.block.Blocks;
 import com.kaplandev.item.feature.KalpItem;
 import com.kaplandev.item.feature.ReinforcedCopperKnifeItem;
 import com.kaplandev.item.feature.UltraHeathItem;
 import com.kaplandev.item.feature.ReinforcedCopperMaceItem;
-import com.kaplandev.item.group.GroupItemBuilder;
+import com.kaplandev.api.builder.GroupItemBuilder;
+import com.kaplandev.item.group.BetaItemGroups;
 import com.kaplandev.item.group.ItemGroups;
 import com.kaplandev.entity.EntityType;
 
@@ -54,6 +56,7 @@ public class Items {
     //public static final Item IRON_CHEST_ITEM;
     public static final Item REINFORCED_COPPER_MACE;
     public static final Item REINFORCED_COPPER_KNIFE;
+    public static final Item TEST_ITEM;
 
     public static void init() {
         GroupItemBuilder.AddGroup(EGG_SKELETON, ItemGroups.EGGS_GROUP_KEY);
@@ -68,7 +71,6 @@ public class Items {
         GroupItemBuilder.AddGroup(REINFORCED_COPPER_MACE, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(REINFORCED_COPPER_KNIFE, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(REINFORCED_COPPER_BLOCK, ItemGroups.MOBPVP_GROUP_KEY);
-        GroupItemBuilder.AddGroup(MOB_TABLE, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(ORE, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(PVP_SPAWNER_ITEM, ItemGroups.MOBPVP_GROUP_KEY);
         GroupItemBuilder.AddGroup(PVP_SPAWNER_MAX_ITEM, ItemGroups.MOBPVP_GROUP_KEY);
@@ -97,5 +99,6 @@ public class Items {
         COPPER_STICK = GroupItemBuilder.BuildItem(COPPER_STICK_KEY, new Item(new Item.Settings()));
         REINFORCED_COPPER_MACE = GroupItemBuilder.BuildItem(REINFORCED_COPPER_MACE_KEY, new ReinforcedCopperMaceItem(new Item.Settings().maxDamage(250).maxCount(1).rarity(Rarity.RARE), 2.0F,  -3.5F, 2.8F, 0.5F));
         REINFORCED_COPPER_KNIFE = GroupItemBuilder.BuildItem(REINFORCED_COPPER_KNIFE_KEY, new ReinforcedCopperKnifeItem(new Item.Settings().maxCount(1).maxDamage(200), 5.0F, -2.0F));
+        TEST_ITEM = GroupItemBuilder.BuildItem("test", new Item(new Item.Settings()));
     }
 }

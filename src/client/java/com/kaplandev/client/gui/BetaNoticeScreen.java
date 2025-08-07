@@ -1,13 +1,11 @@
 package com.kaplandev.client.gui;
 
-import com.kaplandev.util.version.VersionUtils;
+import com.kaplandev.api.version.VersionUtils;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
-import net.minecraft.text.Style;
 import net.minecraft.text.Text;
-import net.minecraft.util.Util;
 
 public class BetaNoticeScreen extends Screen {
     private final boolean isTurkish;
