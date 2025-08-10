@@ -1,17 +1,21 @@
 package com.kaplandev.block.behavior;
 
+import com.kaplandev.api.behavior.BlockBehavior;
 import com.kaplandev.entity.EntityType;
 import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
 
+import com.kaplandev.item.Items;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.item.ItemStack;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class PvpSpawnerBlockBehavior extends BlockWithEntity {
+public class PvpSpawnerBlockBehavior extends BlockWithEntity implements BlockBehavior {
     public PvpSpawnerBlockBehavior(Settings settings) {
         super(settings);
     }
@@ -35,4 +39,10 @@ public class PvpSpawnerBlockBehavior extends BlockWithEntity {
     protected MapCodec<? extends BlockWithEntity> getCodec() {
         return null; // geçici çözüm — crash riskine dikkat
     }
+
+    @Override
+    public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack tool, boolean dropXp) {
+        if (!world.isClient) Block.dropStack(world, pos, new ItemStack(Items.TEST_ITEM));
+    }
+
 }

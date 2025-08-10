@@ -38,8 +38,8 @@ public class EntityRegister {
     public static void register() {
         System.out.println("Custom entities registered.");
         registerSpawns();
-        EntityAttributeAndSpawnBuilder.BuildAttribute(BULWARK, BulwarkEntity.createAttributes());
-        EntityAttributeAndSpawnBuilder.BuildAttribute(MINIGOLEM, MiniIronGolemEntity.createAttributes());
+        EntityAttributeAndSpawnBuilder.create(BULWARK).attributes(BulwarkEntity.createAttributes()).build();
+        EntityAttributeAndSpawnBuilder.create(MINIGOLEM).attributes(BulwarkEntity.createAttributes()).build();
         System.out.println("Mob özellikleri kaydedildi");
     }
     @SuppressWarnings("removal")

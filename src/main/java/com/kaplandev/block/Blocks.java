@@ -9,9 +9,11 @@ import com.kaplandev.block.behavior.PvpSpawnerBlockBehavior;
 import com.kaplandev.block.behavior.PvpSpawnerMaxBlockBehavior;
 //import com.kaplandev.entity.block.IronChestBlockEntity;
 import com.kaplandev.block.behavior.ReinforcedCopperBlockBehavior;
+import com.kaplandev.entity.EntityBlockSettings;
 import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
 import com.kaplandev.api.builder.BlockBuilder;
 
+import com.kaplandev.entity.block.PvpSpawnerMaxBlockEntity;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.sound.BlockSoundGroup;
@@ -38,13 +40,16 @@ public class Blocks {
     public static void init() {}
 
     static {
-        CRUDE_ACIDIC_ORE = BlockBuilder.RegisterCreatedBlock(CRUDE_ACIDIC_ORE_KEY, BlockBuilder.BuildBlockAttribute(AbstractBlock.Settings.create().strength(4.0f).requiresTool().sounds(BlockSoundGroup.STONE), new AcidicOreBehavior(), UniformIntProvider.create(0, 0)));
-        MOB_TABLE = BlockBuilder.RegisterCreatedBlock(MOB_TABLE_KEY, BlockBuilder.BuildBlockAttribute(AbstractBlock.Settings.create().strength(2.0f).requiresTool().sounds(BlockSoundGroup.WOOD), new MobTableBehavior(), UniformIntProvider.create(0, 0)));
+        CRUDE_ACIDIC_ORE = BlockBuilder.create(CRUDE_ACIDIC_ORE_KEY, AbstractBlock.Settings.create().strength(4.0f).requiresTool().sounds(BlockSoundGroup.STONE)).behavior(new AcidicOreBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();
+        MOB_TABLE = BlockBuilder.create(MOB_TABLE_KEY, AbstractBlock.Settings.create().strength(2.0f).requiresTool().sounds(BlockSoundGroup.WOOD)).behavior(new MobTableBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();
         PVP_SPAWNER = BlockBuilder.RegisterCreatedBlockWithEntity(PVP_SPAWNER_KEY, new PvpSpawnerBlockBehavior(AbstractBlock.Settings.create().strength(5.0f).requiresTool().resistance(1200.0f).hardness(-1.0f).sounds(BlockSoundGroup.TRIAL_SPAWNER)), PvpSpawnerBlockEntity::new);
         PVP_SPAWNER_MAX = BlockBuilder.RegisterCreatedBlockWithEntity(PVP_SPAWNER_MAX_KEY, new PvpSpawnerMaxBlockBehavior(AbstractBlock.Settings.create().strength(5.0f).requiresTool().resistance(1200.0f).hardness(-1.0f).sounds(BlockSoundGroup.TRIAL_SPAWNER)), PvpSpawnerBlockEntity::new);
-        DAMAGED_PVP_SPAWNER = BlockBuilder.RegisterCreatedBlock(DAMAGED_PVP_SPAWNER_KEY, BlockBuilder.BuildBlockAttribute(AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.TRIAL_SPAWNER), new DamagedPvpSpawnerBlockBehavior(), UniformIntProvider.create(0, 0)));
-        DAMAGED_PVP_SPAWNER_MAX = BlockBuilder.RegisterCreatedBlock(DAMAGED_PVP_SPAWNER_MAX_KEY, BlockBuilder.BuildBlockAttribute(AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.TRIAL_SPAWNER), new DamagedPvpSpawnerMaxBlockBehavior(), UniformIntProvider.create(0, 0)));
-       // IRON_CHEST = BlockBuilder.RegisterCreatedBlockWithEntityType2(IRON_CHEST_KEY, new IronChestBehavior(AbstractBlock.Settings.create().strength(8.0f).requiresTool().resistance(1200.0f).sounds(BlockSoundGroup.WOOD)), (pos, state) -> new IronChestBlockEntity(pos, state));
-        REINFORCED_COPPER_BLOCK = BlockBuilder.RegisterCreatedBlock(REINFORCED_COPPER_BLOCK_KEY, BlockBuilder.BuildBlockAttribute(AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.COPPER), new ReinforcedCopperBlockBehavior(), UniformIntProvider.create(0, 0)));
+        DAMAGED_PVP_SPAWNER = BlockBuilder.create(DAMAGED_PVP_SPAWNER_KEY, AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.TRIAL_SPAWNER)).behavior(new DamagedPvpSpawnerBlockBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();
+        DAMAGED_PVP_SPAWNER_MAX = BlockBuilder.create(DAMAGED_PVP_SPAWNER_MAX_KEY, AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.TRIAL_SPAWNER)).behavior(new DamagedPvpSpawnerMaxBlockBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();
+        // IRON_CHEST = BlockBuilder
+        //     .create(IRON_CHEST_KEY, AbstractBlock.Settings.create().strength(8.0f).requiresTool().resistance(1200.0f).sounds(BlockSoundGroup.WOOD))
+        //     .withEntity((pos, state) -> new IronChestBlockEntity(pos, state))
+        //     .register();
+        REINFORCED_COPPER_BLOCK = BlockBuilder.create(REINFORCED_COPPER_BLOCK_KEY, AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.COPPER)).behavior(new ReinforcedCopperBlockBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();
     }
 }

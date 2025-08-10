@@ -1,7 +1,6 @@
 package com.kaplandev.api.builder;
 
 import com.kaplandev.api.spawn.SpawnLocation;
-
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectionContext;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
@@ -15,14 +14,35 @@ import net.minecraft.world.Heightmap;
 
 import java.util.function.Predicate;
 
-public class EntityAttributeAndSpawnBuilder {
-    public static <T extends LivingEntity> void BuildAttribute(EntityType<T> entityType, DefaultAttributeContainer.Builder attributes) {
-        FabricDefaultAttributeRegistry.register(entityType, attributes);
+public class EntityAttributeAndSpawnBuilder<T extends MobEntity> {
+
+    private final EntityType<T> entityType;
+    private DefaultAttributeContainer.Builder attributes;
+    private Predicate<BiomeSelectionContext> biomePredicate;
+    private SpawnGroup group;
+    private int weight;
+    private int minGroupSize;
+    private int maxGroupSize;
+    private SpawnLocation location;
+    private Heightmap.Type heightmapType;
+    private SpawnRestriction.SpawnPredicate<T> spawnPredicate;
+
+    private EntityAttributeAndSpawnBuilder(EntityType<T> entityType) {
+        this.entityType = entityType;
     }
-    public static <T extends MobEntity> void BuildSpawn(
+
+    public static <T extends MobEntity> EntityAttributeAndSpawnBuilder<T> create(EntityType<T> entityType) {
+        return new EntityAttributeAndSpawnBuilder<>(entityType);
+    }
+
+    public EntityAttributeAndSpawnBuilder<T> attributes(DefaultAttributeContainer.Builder attributes) {
+        this.attributes = attributes;
+        return this;
+    }
+
+    public EntityAttributeAndSpawnBuilder<T> spawn(
             Predicate<BiomeSelectionContext> biomePredicate,
             SpawnGroup group,
-            EntityType<T> entityType,
             int weight,
             int minGroupSize,
             int maxGroupSize,
@@ -30,7 +50,24 @@ public class EntityAttributeAndSpawnBuilder {
             Heightmap.Type heightmapType,
             SpawnRestriction.SpawnPredicate<T> spawnPredicate
     ) {
-        BiomeModifications.addSpawn(biomePredicate, group, entityType, weight, minGroupSize, maxGroupSize);
-        SpawnRestriction.register(entityType, location, heightmapType, spawnPredicate);
+        this.biomePredicate = biomePredicate;
+        this.group = group;
+        this.weight = weight;
+        this.minGroupSize = minGroupSize;
+        this.maxGroupSize = maxGroupSize;
+        this.location = location;
+        this.heightmapType = heightmapType;
+        this.spawnPredicate = spawnPredicate;
+        return this;
+    }
+
+    public void build() {
+        if (attributes != null) {
+            FabricDefaultAttributeRegistry.register(entityType, attributes);
+        }
+        if (biomePredicate != null && group != null && location != null && heightmapType != null && spawnPredicate != null) {
+            BiomeModifications.addSpawn(biomePredicate, group, entityType, weight, minGroupSize, maxGroupSize);
+            SpawnRestriction.register(entityType, location, heightmapType, spawnPredicate);
+        }
     }
 }
