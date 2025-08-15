@@ -7,7 +7,7 @@
       "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V"
     },
     "com/kaplandev/mixin/client/PanoramaMixin": {
-      "render": "Lnet/minecraft/class_766;method_3317(Lnet/minecraft/class_332;IIFF)V"
+      "<init>": "Lnet/minecraft/class_766;<init>(Lnet/minecraft/class_751;)V"
     },
     "com/kaplandev/mixin/client/SplashOverlayMixin": {
       "<init>": "Lnet/minecraft/class_425;<init>(Lnet/minecraft/class_310;Lnet/minecraft/class_4011;Ljava/util/function/Consumer;Z)V",
@@ -29,7 +29,7 @@
         "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V"
       },
       "com/kaplandev/mixin/client/PanoramaMixin": {
-        "render": "Lnet/minecraft/class_766;method_3317(Lnet/minecraft/class_332;IIFF)V"
+        "<init>": "Lnet/minecraft/class_766;<init>(Lnet/minecraft/class_751;)V"
       },
       "com/kaplandev/mixin/client/SplashOverlayMixin": {
         "<init>": "Lnet/minecraft/class_425;<init>(Lnet/minecraft/class_310;Lnet/minecraft/class_4011;Ljava/util/function/Consumer;Z)V",

@@ -1,9 +1,3 @@
-/setblock 120 -61 -708 mobpvp:pvp_spawner
-/time set day
-/summon minecraft:warden
-/kill @e[type=minecraft:ender_dragon]
-/summon minecraft:warden
-/summon mobpvp:bulwark
 /time set day
 /effect give @a minecraft:strength infinite 255
 /time set day
@@ -48,3 +42,9 @@
 /difficulty hard
 /summon minecraft:warden
 /time set day
+/panorama
+/give Player656 minecraft:command_block
+/panorama
+/tp 125 60 -63
+/tp 125 ~ -63
+/effect clear
