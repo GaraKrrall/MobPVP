@@ -203,12 +203,6 @@
     },
     "done": true
   },
-  "mobpvp:deep_dark": {
-    "criteria": {
-      "deep_dark": "2025-07-25 13:39:46 +0300"
-    },
-    "done": true
-  },
   "mobpvp:first": {
     "criteria": {
       "joined_world": "2025-07-25 13:39:45 +0300"
@@ -239,12 +233,6 @@
     },
     "done": true
   },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:plains": "2025-07-25 13:39:46 +0300"
-    },
-    "done": false
-  },
   "minecraft:recipes/decorations/smithing_table": {
     "criteria": {
       "has_iron_ingot": "2025-07-25 13:39:45 +0300"
@@ -263,21 +251,9 @@
     },
     "done": true
   },
-  "minecraft:husbandry/balanced_diet": {
-    "criteria": {
-      "enchanted_golden_apple": "2025-07-25 13:40:24 +0300"
-    },
-    "done": false
-  },
   "minecraft:recipes/redstone/tnt": {
     "criteria": {
       "has_gunpowder": "2025-07-25 13:39:45 +0300"
-    },
-    "done": true
-  },
-  "minecraft:husbandry/root": {
-    "criteria": {
-      "consumed_item": "2025-07-25 13:40:24 +0300"
     },
     "done": true
   },
@@ -338,6 +314,24 @@
   "minecraft:recipes/combat/diamond_boots": {
     "criteria": {
       "has_diamond": "2025-07-25 13:39:45 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-07-25 13:39:46 +0300"
+    },
+    "done": false
+  },
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "enchanted_golden_apple": "2025-07-25 13:40:24 +0300"
+    },
+    "done": false
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2025-07-25 13:40:24 +0300"
     },
     "done": true
   },

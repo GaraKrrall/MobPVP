@@ -31,9 +31,22 @@ public class PvpSpawnerBlockEntity extends BlockEntity {
     public static void tick(World world, BlockPos pos, BlockState state, PvpSpawnerBlockEntity blockEntity) {
         if (world.isClient || !(world instanceof ServerWorld serverWorld)) return;
 
+        // Yakındaki oyuncular
         List<ServerPlayerEntity> playersNearby = serverWorld.getPlayers(p ->
                 p.getBlockPos().isWithinDistance(pos, SPAWN_RADIUS)
         );
+
+        // Eğer hiç oyuncu yoksa veya herkes çok uzaksa → resetle
+        Optional<ServerPlayerEntity> nearest = serverWorld.getPlayers().stream()
+                .min(Comparator.comparingDouble(p -> p.squaredDistanceTo(Vec3d.ofCenter(pos))));
+        if (nearest.isEmpty() || nearest.get().squaredDistanceTo(Vec3d.ofCenter(pos)) > 20 * 20) { // 20 bloktan uzak
+            if (blockEntity.waveCount > 0 || !blockEntity.aliveEntities.isEmpty()) {
+                blockEntity.waveCount = 0;
+                blockEntity.aliveEntities.clear();
+                serverWorld.setBlockState(pos, Blocks.PVP_SPAWNER.getDefaultState()); // geri eski haline dön
+            }
+            return;
+        }
 
         // Ölüleri temizle
         blockEntity.aliveEntities.removeIf(uuid -> {

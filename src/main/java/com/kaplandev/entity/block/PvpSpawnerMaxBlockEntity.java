@@ -3,6 +3,7 @@ package com.kaplandev.entity.block;
 import com.kaplandev.block.Blocks;
 import com.kaplandev.entity.EntityType;
 import com.kaplandev.entity.mob.*;
+
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.Entity;
@@ -13,8 +14,10 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 import java.util.UUID;
 
@@ -34,9 +37,22 @@ public class PvpSpawnerMaxBlockEntity extends BlockEntity {
     public static void tick(World world, BlockPos pos, BlockState state, PvpSpawnerMaxBlockEntity blockEntity) {
         if (world.isClient || !(world instanceof ServerWorld serverWorld)) return;
 
+        // Yakındaki oyuncular
         List<ServerPlayerEntity> playersNearby = serverWorld.getPlayers(p ->
                 p.getBlockPos().isWithinDistance(pos, SPAWN_RADIUS)
         );
+
+        // Eğer hiç oyuncu yoksa veya herkes çok uzaksa → resetle
+        Optional<ServerPlayerEntity> nearest = serverWorld.getPlayers().stream()
+                .min(Comparator.comparingDouble(p -> p.squaredDistanceTo(Vec3d.ofCenter(pos))));
+        if (nearest.isEmpty() || nearest.get().squaredDistanceTo(Vec3d.ofCenter(pos)) > 20 * 20) { // 20 bloktan uzak
+            if (blockEntity.waveCount > 0 || !blockEntity.aliveEntities.isEmpty()) {
+                blockEntity.waveCount = 0;
+                blockEntity.aliveEntities.clear();
+                serverWorld.setBlockState(pos, Blocks.PVP_SPAWNER.getDefaultState()); // geri eski haline dön
+            }
+            return;
+        }
 
 
         // Clean up dead entities

@@ -28,5 +28,8 @@
   "block.mobpvp.reinforced_copper_block": "Demir İle Güçlendirilmiş Bakır Bloğu",
   "item.mobpvp.copper_stick":  "Bakır Çubuk",
   "item.mobpvp.reinforced_copper_knife": "Demir İle Güçlendirilmiş Bakır Bıçak",
-  "item.mobpvp.reinforced_copper_mace": "Demir İle Güçlendirilmiş Bakır Gürz"
+  "item.mobpvp.reinforced_copper_mace": "Demir İle Güçlendirilmiş Bakır Gürz",
+  "item.mobpvp.reinforced_copper_ball": "Demir İle Güçlendirilmiş Bakır Top",
+  "itemGroup.beta.item": "Beta Items",
+  "itemGroup.beta.block": "Beta Blocks"
 }

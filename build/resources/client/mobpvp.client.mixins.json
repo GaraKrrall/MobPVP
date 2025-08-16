@@ -6,7 +6,6 @@
   "mixins": [
     "TitleScreenMixin",
     "BetterTitleScreen",
-    "SplashOverlayMixin",
     "PanoramaMixin"
   ],
   "injectors": {

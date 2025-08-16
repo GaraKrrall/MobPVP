@@ -10,10 +10,11 @@ import net.minecraft.text.Text;
 public class BetaNoticeScreen extends Screen {
     private final boolean isTurkish;
     private final Screen parent;
-    private final String betaVersionText = "MobPVP " + VersionUtils.getPermanentBetaVersionNumberWithFullVersion("3.1.5");
+   // private final String betaVersionText = "MobPVP " + VersionUtils.getPermanentBetaVersionNumberWithFullVersion("3.1.5");
+     private final String betaVersionText = "MobPVP 3.1.7";
 
     public BetaNoticeScreen(Screen parent) {
-        super(Text.of("MobPVP " + VersionUtils.getPermanentBetaVersionNumberWithFullVersion("3.1.5")));
+        super(Text.of("MobPVP 3.1.7"));
         this.parent = parent;
 
         String languageCode = MinecraftClient.getInstance().options.language;

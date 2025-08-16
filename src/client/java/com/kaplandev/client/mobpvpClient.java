@@ -23,6 +23,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.minecraft.client.render.entity.SkeletonEntityRenderer;
+import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 
 public class mobpvpClient implements ClientModInitializer {
     private boolean hasShownToast = false;
@@ -38,6 +39,7 @@ public class mobpvpClient implements ClientModInitializer {
         EntityRendererRegistry.register(EntityType.MAD_SKELETON, SkeletonEntityRenderer::new);
         EntityRendererRegistry.register(EntityType.BULWARK, BulwarkRenderer::new);
         EntityRendererRegistry.register(EntityType.MINIGOLEM, MiniIronGolemRenderer::new);
+        EntityRendererRegistry.register(EntityType.IRON_REINFORCED_COPPER_BALL, FlyingItemEntityRenderer::new);
         ConfigManager.initialize();
 
 

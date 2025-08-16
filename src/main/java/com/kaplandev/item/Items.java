@@ -2,6 +2,7 @@ package com.kaplandev.item;
 
 import com.kaplandev.api.version.BetaVersions;
 import com.kaplandev.block.Blocks;
+import com.kaplandev.item.feature.IronReinforcedCopperBallItem;
 import com.kaplandev.item.feature.KalpItem;
 import com.kaplandev.item.feature.ReinforcedCopperKnifeItem;
 import com.kaplandev.item.feature.UltraHeathItem;
@@ -29,6 +30,7 @@ import static com.kaplandev.util.path.Paths.MOB_TABLE_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.ORE_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.PVP_SPAWNER_ITEM_KEY;
 import static com.kaplandev.util.path.Paths.PVP_SPAWNER_MAX_ITEM_KEY;
+import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_BALL_KEY;
 import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_BLOCK_KEY;
 import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_INGOT_KEY;
 import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_KNIFE_KEY;
@@ -57,6 +59,7 @@ public class Items {
     public static final Item REINFORCED_COPPER_MACE;
     public static final Item REINFORCED_COPPER_KNIFE;
     public static final Item TEST_ITEM;
+    public static final Item REINFORCED_COPPER_BALL;
     public static void init() {}
 
     static {
@@ -80,5 +83,6 @@ public class Items {
         REINFORCED_COPPER_MACE = GroupItemBuilder.create(REINFORCED_COPPER_MACE_KEY, new ReinforcedCopperMaceItem(new Item.Settings().maxDamage(250).maxCount(1).rarity(Rarity.RARE), 2.0F,  -3.5F, 2.8F, 0.5F)).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         REINFORCED_COPPER_KNIFE = GroupItemBuilder.create(REINFORCED_COPPER_KNIFE_KEY, new ReinforcedCopperKnifeItem(new Item.Settings().maxCount(1).maxDamage(200), 5.0F, -2.0F)).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         TEST_ITEM = GroupItemBuilder.create("test", new Item(new Item.Settings())).register();
+        REINFORCED_COPPER_BALL = GroupItemBuilder.create(REINFORCED_COPPER_BALL_KEY, new IronReinforcedCopperBallItem(new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
     }
 }

@@ -2,19 +2,19 @@ version:3955
 ao:true
 biomeBlendRadius:2
 enableVsync:true
-entityDistanceScaling:1.0
+entityDistanceScaling:5.0
 entityShadows:true
 forceUnicodeFont:false
 japaneseGlyphVariants:false
-fov:0.5
+fov:1.0
 fovEffectScale:1.0
 darknessEffectScale:1.0
 glintSpeed:0.5
 glintStrength:0.75
 prioritizeChunkUpdates:0
-fullscreen:false
-gamma:0.5
-graphicsMode:1
+fullscreen:true
+gamma:1.0
+graphicsMode:2
 guiScale:3
 maxFps:120
 mipmapLevels:4
@@ -23,7 +23,7 @@ particles:0
 reducedDebugInfo:false
 renderClouds:"true"
 renderDistance:32
-simulationDistance:11
+simulationDistance:32
 screenEffectScale:1.0
 soundDevice:""
 autoJump:false
@@ -86,7 +86,7 @@ onlyShowSecureChat:false
 panoramaScrollSpeed:1.0
 telemetryOptInExtra:false
 onboardAccessibility:false
-menuBackgroundBlurriness:5
+menuBackgroundBlurriness:0
 key_key.attack:key.mouse.right
 key_key.use:key.mouse.left
 key_key.forward:key.keyboard.w
@@ -121,6 +121,7 @@ key_key.hotbar.6:key.keyboard.6
 key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
+key_Take Panorama Screenshot:key.keyboard.f4
 key_key.mobpvp.dash:key.mouse.4
 key_key.kaplandev.open_level_gui:key.mouse.5
 soundCategory_master:0.17880794701986755

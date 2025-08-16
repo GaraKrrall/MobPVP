@@ -1,10 +1,7 @@
 package com.kaplandev.item.feature;
 
-import com.kaplandev.api.feature.ItemFeature;
 import com.kaplandev.block.Blocks;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -17,10 +14,7 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class UltraHeathItem extends Item implements ItemFeature {
+public class UltraHeathItem extends Item {
     public UltraHeathItem(Settings settings) {
         super(settings);
     }
@@ -31,84 +25,79 @@ public class UltraHeathItem extends Item implements ItemFeature {
     }
 
     @Override
-    public ActionResult onUseOnBlock(ItemUsageContext context) {
-        return ActionResult.PASS;
-    }
-
-    @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
-        return onUse(world, player, hand);
-    }
-
-    @Override
-    public TypedActionResult<ItemStack> onUse(World world, PlayerEntity player, Hand hand) {
         if (world.isClient) return TypedActionResult.pass(player.getStackInHand(hand));
 
         ItemStack stack = player.getStackInHand(hand);
         BlockPos center = player.getBlockPos();
-        int radius = 2;
 
-        List<BlockPos> circlePositions = getCirclePositions(center, radius);
+        // --- 1. 5x5 alan UYGUNLUK kontrolü ---
+        int size = 2;
+        for (int dx = -size; dx <= size; dx++) {
+            for (int dz = -size; dz <= size; dz++) {
+                BlockPos ground = center.add(dx, -1, dz);   // parke gelecek yer
+                BlockPos above = ground.up();               // oyuncunun ayağı
+                BlockPos above2 = ground.up(2);             // oyuncunun kafası
 
-        // Uygunluk kontrolü
-        for (BlockPos pos : circlePositions) {
-            BlockPos below = pos;
-            BlockPos above = pos.up();
-
-            if (!world.getBlockState(below).isAir() || !world.getBlockState(above).isAir()) {
-                player.sendMessage(Text.translatable("error.mobpvp.alan"), true);
-                return TypedActionResult.fail(stack);
-            }
-
-            BlockPos ground = below.down();
-            if (world.getBlockState(ground).isAir()) {
-                player.sendMessage(Text.translatable("error.mobpvp.block"), true);
-                return TypedActionResult.fail(stack);
+                // Alt blok hava olamaz
+                if (world.getBlockState(ground).isAir()) {
+                    player.sendMessage(Text.translatable("error.mobpvp.block"), true);
+                    return TypedActionResult.fail(stack);
+                }
+                // Oyuncunun ayağı/kafası dolu olamaz
+                if (!world.getBlockState(above).isAir() || !world.getBlockState(above2).isAir()) {
+                    player.sendMessage(Text.translatable("error.mobpvp.alan"), true);
+                    return TypedActionResult.fail(stack);
+                }
             }
         }
 
-        // Blok yerleştir
-        for (BlockPos pos : circlePositions) {
-            world.setBlockState(pos, net.minecraft.block.Blocks.SMOOTH_STONE.getDefaultState()); // Alt blok
-            world.setBlockState(pos.up(), Blocks.PVP_SPAWNER.getDefaultState()); // Üst blok
+        // --- 2. 5x5 alanı parke ile değiştir ---
+        for (int dx = -size; dx <= size; dx++) {
+            for (int dz = -size; dz <= size; dz++) {
+                BlockPos pos = center.add(dx, -1, dz);
+                world.setBlockState(pos, net.minecraft.block.Blocks.CUT_COPPER.getDefaultState());
+            }
         }
 
+        // --- 3. Köşelere yapılar yerleştir ---
+        int offset = 7; // 5–10 arası
+        int[][] corners = {
+                { offset, 0, offset},
+                {-offset, 0, offset},
+                { offset, 0,-offset},
+                {-offset, 0,-offset}
+        };
+
+        for (int[] c : corners) {
+            BlockPos structureCenter = center.add(c[0], c[1], c[2]);
+            placeStructure(world, structureCenter);
+        }
+
+        // Ses ve item tüketme
         world.playSound(null, player.getBlockPos(), SoundEvents.BLOCK_BEACON_ACTIVATE, player.getSoundCategory(), 1f, 1f);
         stack.decrement(1);
         return TypedActionResult.success(stack);
     }
 
-    private List<BlockPos> getCirclePositions(BlockPos center, int radius) {
-        List<BlockPos> positions = new ArrayList<>();
-        int cx = center.getX();
-        int cy = center.getY();
-        int cz = center.getZ();
-
-        BlockPos doorPos = new BlockPos(cx + radius, cy, cz); // Doğu yönünde kapı
-
-        for (int x = -radius; x <= radius; x++) {
-            for (int z = -radius; z <= radius; z++) {
-                double distance = Math.sqrt(x * x + z * z);
-                if (distance >= radius - 0.5 && distance <= radius + 0.5) {
-                    BlockPos pos = new BlockPos(cx + x, cy, cz + z);
-                    if (pos.equals(doorPos)) continue; // Kapı boşluğu
-                    positions.add(pos);
-                }
+    // Küçük yapı yerleştirme metodu
+    private void placeStructure(World world, BlockPos center) {
+        // Basit 3x3 taban
+        for (int dx = -1; dx <= 1; dx++) {
+            for (int dz = -1; dz <= 1; dz++) {
+                BlockPos pos = center.add(dx, -1, dz);
+                world.setBlockState(pos, net.minecraft.block.Blocks.CUT_COPPER.getDefaultState());
             }
         }
-        return positions;
+
+        // Ortada PVP Spawner olsun
+        world.setBlockState(center, Blocks.PVP_SPAWNER.getDefaultState());
+
+        // %25 şansla üstte 2 süper blok
+        if (world.random.nextFloat() < 0.25f) {
+            world.setBlockState(center.up(), Blocks.PVP_SPAWNER_MAX.getDefaultState());
+        }
     }
 
 
-
-
-    @Environment(EnvType.CLIENT)
-    public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-        addTooltip(stack, world, tooltip, context);
-    }
-
-    @Override
-    public void addTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-        // Boş bırakabilirsin veya info yazabilirsin
-    }
 }

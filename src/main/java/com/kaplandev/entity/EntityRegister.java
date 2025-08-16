@@ -4,6 +4,7 @@ import com.kaplandev.block.Blocks;
 //import com.kaplandev.entity.block.IronChestBlockEntity;
 import com.kaplandev.entity.block.PvpSpawnerMaxBlockEntity;
 import com.kaplandev.entity.boss.BulwarkEntity;
+import com.kaplandev.entity.item.IronReinforcedCopperBallEntity;
 import com.kaplandev.entity.mob.MadSkeletonEntity;
 import com.kaplandev.entity.passive.MiniIronGolemEntity;
 import com.kaplandev.entity.mob.MadZombieEntity;
@@ -25,12 +26,14 @@ import static com.kaplandev.entity.EntityType.MAD_SKELETON;
 import static com.kaplandev.entity.EntityType.MAD_ZOMBIE;
 import static com.kaplandev.entity.EntityType.PVP_SPAWNER;
 import static com.kaplandev.entity.EntityType.PVP_SPAWNER_MAX;
+import static com.kaplandev.entity.EntityType.IRON_REINFORCED_COPPER_BALL;
 import static com.kaplandev.mobpvp.MOD_ID;
 //import static com.kaplandev.util.path.Paths.IRON_CHEST_KEY;
 import static com.kaplandev.util.path.Paths.MAD_SKELETON_KEY;
 import static com.kaplandev.util.path.Paths.MAD_ZOMBIE_KEY;
 import static com.kaplandev.util.path.Paths.PVP_SPAWNER_KEY;
 import static com.kaplandev.util.path.Paths.PVP_SPAWNER_MAX_KEY;
+import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_BALL_KEY;
 
 
 public class EntityRegister {
@@ -39,7 +42,7 @@ public class EntityRegister {
         System.out.println("Custom entities registered.");
         registerSpawns();
         EntityAttributeAndSpawnBuilder.create(BULWARK).attributes(BulwarkEntity.createAttributes()).build();
-        EntityAttributeAndSpawnBuilder.create(MINIGOLEM).attributes(BulwarkEntity.createAttributes()).build();
+        EntityAttributeAndSpawnBuilder.create(MINIGOLEM).attributes(MiniIronGolemEntity.createAttributes()).build();
         System.out.println("Mob özellikleri kaydedildi");
     }
     @SuppressWarnings("removal")
@@ -55,6 +58,8 @@ public class EntityRegister {
         PVP_SPAWNER = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, PVP_SPAWNER_KEY),FabricBlockEntityTypeBuilder.create(PvpSpawnerBlockEntity::new, Blocks.PVP_SPAWNER).build());
         PVP_SPAWNER_MAX = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, PVP_SPAWNER_MAX_KEY),FabricBlockEntityTypeBuilder.create(PvpSpawnerMaxBlockEntity::new, Blocks.PVP_SPAWNER_MAX).build());
        // IRON_CHEST = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, IRON_CHEST_KEY), FabricBlockEntityTypeBuilder.create(IronChestBlockEntity::new, new Block[]{ Blocks.IRON_CHEST }).build());
+        IRON_REINFORCED_COPPER_BALL = Registry.register(Registries.ENTITY_TYPE, MOD_ID, net.minecraft.entity.EntityType.Builder.<IronReinforcedCopperBallEntity>create(IronReinforcedCopperBallEntity::new, SpawnGroup.MISC).dimensions(0.25f, 0.25f).maxTrackingRange(4).trackingTickInterval(10).build(REINFORCED_COPPER_BALL_KEY)
+        );
     }
 
 }

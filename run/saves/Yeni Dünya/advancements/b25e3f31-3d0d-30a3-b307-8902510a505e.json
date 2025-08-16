@@ -1,0 +1,27 @@
+{
+  "mobpvp:middle": {
+    "criteria": {
+      "armor_up": "2025-08-16 15:24:52 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-08-16 15:24:52 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:first": {
+    "criteria": {
+      "joined_world": "2025-08-16 15:24:52 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-08-16 15:24:53 +0300"
+    },
+    "done": false
+  },
+  "DataVersion": 3955
+}

@@ -1,19 +1,3 @@
-/time set day
-/effect give @a minecraft:strength infinite 255
-/time set day
-/difficulty peaceful
-/difficulty easy
-/effect give @a minecraft:strength infinite 255
-/time set day
-/recipe give Player191 mobpvp:ultra_hearth
-/enchant Player52 minecraft:silk_touch
-/time set day
-/setblock ~ ~ ~ mobpvp:pvp_spawner
-/time set midnight
-/gamerule doMobSpawning true
-/gamerule doMobSpawning false
-/effect clear
-/time set day
 /give Player791 mobpvp:reinforced_copper_block
 /time set day
 /kill @e[type=mobpvp:mini_iron_golem]
@@ -48,3 +32,19 @@
 /tp 125 60 -63
 /tp 125 ~ -63
 /effect clear
+/time set day
+/tp 191.66 -60.00 -139.61
+/tp 191.66 -61.00 -139.61
+/time set day
+/summon minecraft:mobpvp ~ ~ ~
+/summon minecraft:mule ~ ~ ~
+/enchant Player48 minecraft:fire_aspect 1
+/enchant Player48 minecraft:fire_protection
+/enchant Player48 minecraft:channeling
+/difficulty peaceful
+/time set day
+/effect clear
+/tick freeze
+/tp -212 69.00 -286
+/tp -212 69.00 -286,
+/tp -212 69.00 -286
