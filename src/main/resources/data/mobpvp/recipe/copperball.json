@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D "
+  ],
+  "key": {
+    "D": { "item": "mobpvp:reinforced_copper_ingot" }
+  },
+  "result": {
+    "id": "mobpvp:reinforced_copper_ball",
+    "count": 4
+  }
+}

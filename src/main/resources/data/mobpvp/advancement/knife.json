@@ -1,0 +1,19 @@
+{
+  "parent": "mobpvp:first",
+  "display": {
+    "icon": { "id": "mobpvp:reinforced_copper_knife" },
+    "title": { "text": "Güçlü Gibi Görünüyor..." },
+    "description": { "text": "Bir Demir İle Güçlendirilmiş Bakır Bıçak Alın."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "elytra": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": ["mobpvp:reinforced_copper_knife"] }]
+      }
+    }
+  }
+}
