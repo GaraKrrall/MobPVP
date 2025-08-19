@@ -1,8 +1,8 @@
 package com.kaplandev.entity.goal;
 
 import com.kaplandev.entity.passive.MiniIronGolemEntity;
-
 import com.kaplandev.level.LevelAssigner;
+
 import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.ChestBlockEntity;
@@ -111,7 +111,7 @@ public class FindIngotAndHealGolemGoal extends Goal {
                     }
 
                 } else {
-                    phase = Phase.SEARCH;
+                    fullReset();
                 }
             }
 

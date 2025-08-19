@@ -121,5 +121,21 @@ public class BlockBuilder<T extends BlockEntity> {
 
         return registeredBlock;
     }
+    @Deprecated
+    public static Block RegisterCreatedBlock (String name, Block block) {
+        // Bloğu kaydet
+        Block registeredBlock = Registry.register(Registries.BLOCK, Identifier.of(MOD_ID, name), block);
+        return registeredBlock;
+    }
+    @Deprecated
+    public static Block BuildBlockAttribute(AbstractBlock.Settings settings, BlockBehavior behavior, IntProvider xpProvider) {
+        return new ExperienceDroppingBlock(xpProvider, settings) {
+            @Override
+            protected void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack tool, boolean dropXp) {
+                super.onStacksDropped(state, world, pos, tool, dropXp);
+                behavior.onStacksDropped(state, world, pos, tool, dropXp);
+            }
+        };
+    }
 
 }

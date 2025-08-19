@@ -1,0 +1,19 @@
+{
+  "parent": "mobpvp:first",
+  "display": {
+    "icon": { "id": "mobpvp:copper_stick" },
+    "title": { "text": "Gerçekten Sadece Bu Mu?" },
+    "description": { "text": "Bu güncellemede sadece bu eklenmiş olamaz!" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "elytra": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": ["mobpvp:copper_stick"] }]
+      }
+    }
+  }
+}

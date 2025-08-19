@@ -1,0 +1,41 @@
+{
+  "mobpvp:middle": {
+    "criteria": {
+      "armor_up": "2025-08-19 14:07:30 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:kapat": {
+    "criteria": {
+      "elytra": "2025-08-19 14:07:30 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-08-19 14:07:30 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:first": {
+    "criteria": {
+      "joined_world": "2025-08-19 14:07:30 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:cherry_grove": "2025-08-19 14:07:30 +0300",
+      "minecraft:river": "2025-08-19 14:08:12 +0300",
+      "minecraft:plains": "2025-08-19 14:08:05 +0300"
+    },
+    "done": false
+  },
+  "mobpvp:copperball": {
+    "criteria": {
+      "elytra": "2025-08-19 14:07:30 +0300"
+    },
+    "done": true
+  },
+  "DataVersion": 3955
+}

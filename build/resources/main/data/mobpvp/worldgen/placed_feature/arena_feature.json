@@ -1,7 +1,8 @@
 {
   "feature": "mobpvp:arena_feature",
   "placement": [
-    { "type": "minecraft:rarity_filter", "chance": 250 },
+    { "type": "minecraft:rarity_filter", "chance": 2000 },
+    { "type": "minecraft:count", "count": 1 },
     { "type": "minecraft:in_square" },
     { "type": "minecraft:heightmap", "heightmap": "WORLD_SURFACE" },
     { "type": "minecraft:biome" }

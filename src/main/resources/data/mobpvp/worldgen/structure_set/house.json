@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mobpvp:house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 2234567,
+    "separation": 4,
+    "spacing": 18
+  }
+}

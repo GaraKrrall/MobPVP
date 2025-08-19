@@ -2,7 +2,6 @@ package com.kaplandev;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
-import net.fabricmc.fabric.api.entity.event.v1.ServerEntityCombatEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
@@ -24,7 +23,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.text.Text;
 import net.minecraft.world.World;
 
 import java.util.ArrayList;
@@ -53,21 +51,16 @@ import com.kaplandev.event.level.player.PlayerLevelEvents;
 import com.kaplandev.item.group.ItemGroups;
 import com.kaplandev.entity.EntityRegister;
 
-import static com.kaplandev.util.path.Paths.BINGO;
 import static com.kaplandev.util.path.Paths.MOBPVP;
 import static com.kaplandev.util.path.Paths.STARTUP_SOUND_EVENT;
 import static com.kaplandev.util.path.Paths.STARTUP_SOUND_ID;
-
 
 @KaplanBedwars
 public final class mobpvp implements ModInitializer {
 
     public static final Map<String, Integer[]> LEVEL_RANGES = new HashMap<>();
-
-
     public static final String MOD_ID = MOBPVP;
     public static final String MODID = MOBPVP;
-
 
     @Override
     public void onInitialize() {
@@ -94,7 +87,6 @@ public final class mobpvp implements ModInitializer {
 
             }
         });
-
 
         ServerEntityEvents.ENTITY_LOAD.register((entity, world) -> {
             if (!(entity instanceof LivingEntity living) || entity instanceof ServerPlayerEntity || entity instanceof BulwarkEntity)
@@ -159,14 +151,6 @@ public final class mobpvp implements ModInitializer {
             }
         });
 
-        ServerEntityCombatEvents.AFTER_KILLED_OTHER_ENTITY.register((world, attacker, victim) -> {
-            if (!(world instanceof ServerWorld serverWorld)) return;
-            if (!(attacker instanceof ServerPlayerEntity player)) return;
-            if (victim.isAlive())
-                player.sendMessage(Text.literal("§6" + victim.getName().getString() + " §aöldürdün!"), true);
-            if (Math.random() <= 0.01) player.sendMessage(Text.literal(BINGO), true);
-        });
-
         ServerTickEvents.END_WORLD_TICK.register((ServerWorld world) -> {
             for (var entity : world.iterateEntities()) {
                 if (!(entity instanceof LivingEntity living)) continue;
@@ -176,7 +160,6 @@ public final class mobpvp implements ModInitializer {
                 LevelAssigner.updateDisplay(living);
             }
         });
-
 
         LootTableEvents.MODIFY.register((RegistryKey<LootTable> id, LootTable.Builder builder, LootTableSource source) -> {
             if (!"minecraft".equals(id.getValue().getNamespace())) return;
@@ -283,5 +266,4 @@ public final class mobpvp implements ModInitializer {
     private static String cap(String s) {
         return s.isEmpty() ? s : s.substring(0, 1).toUpperCase(Locale.ROOT) + s.substring(1);
     }
-
 }

@@ -1,0 +1,44 @@
+{
+  "mobpvp:middle": {
+    "criteria": {
+      "armor_up": "2025-08-18 21:29:18 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-08-18 21:29:18 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:first": {
+    "criteria": {
+      "joined_world": "2025-08-18 21:29:18 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/red_dye_from_poppy": {
+    "criteria": {
+      "has_poppy": "2025-08-18 21:30:04 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:snowy_slopes": "2025-08-18 21:31:08 +0300",
+      "minecraft:forest": "2025-08-18 21:30:14 +0300",
+      "minecraft:river": "2025-08-18 21:32:19 +0300",
+      "minecraft:meadow": "2025-08-18 21:31:17 +0300",
+      "minecraft:plains": "2025-08-18 21:29:19 +0300",
+      "minecraft:jagged_peaks": "2025-08-18 21:31:15 +0300"
+    },
+    "done": false
+  },
+  "mobpvp:copperball": {
+    "criteria": {
+      "elytra": "2025-08-18 21:29:18 +0300"
+    },
+    "done": true
+  },
+  "DataVersion": 3955
+}

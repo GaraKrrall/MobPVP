@@ -1,6 +1,3 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "mobpvp:item/copper_stick"
-  }
+  "parent": "mobpvp:block/copper_stick"
 }

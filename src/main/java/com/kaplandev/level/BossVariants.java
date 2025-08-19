@@ -38,7 +38,7 @@ public class BossVariants {
                                      String name, int level, ArmorSet armorSet,
                                      net.minecraft.item.Item swordItem, int sharp, int knockback) {
 
-        living.setCustomName(Text.literal("§c[Seviye: " + level + "] " + name));
+        living.setCustomName(Text.literal("§c[Level: " + level + "] " + name));
         living.setCustomNameVisible(true);
 // HP
         if (living.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH) != null) {

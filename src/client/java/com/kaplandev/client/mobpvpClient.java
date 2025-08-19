@@ -3,6 +3,7 @@ package com.kaplandev.client;
 import com.kaplandev.api.version.BetaVersions;
 //import com.kaplandev.block.BlockEntityTypes;
 import com.kaplandev.api.version.VersionUtils;
+import com.kaplandev.block.Blocks;
 import com.kaplandev.client.config.ConfigManager;
 import com.kaplandev.client.gui.BetaNoticeScreen;
 import com.kaplandev.client.info.dink;
@@ -17,10 +18,12 @@ import com.kaplandev.entity.EntityType;
 
 
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.gui.screen.TitleScreen;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.minecraft.client.render.entity.SkeletonEntityRenderer;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
@@ -33,6 +36,8 @@ public class mobpvpClient implements ClientModInitializer {
     public void onInitializeClient() {
         BlockEntityRendererFactories.register(EntityType.PVP_SPAWNER, PvpSpawnerBlockRenderer::new);
         BlockEntityRendererFactories.register(EntityType.PVP_SPAWNER_MAX, PvpSpawnerMaxBlockRenderer::new);
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.PVP_SPAWNER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.PVP_SPAWNER_MAX, RenderLayer.getCutout());
        // BlockEntityRendererFactories.register(BlockEntityTypes.IRON_CHEST_ENTITY_TYPE, IronChestBlockRenderer::new);
         EntityRendererRegistry.register(net.minecraft.entity.EntityType.ZOMBIE, CustomZombieRenderer::new);
         EntityRendererRegistry.register(EntityType.MAD_ZOMBIE, SuperZombieRenderer::new);

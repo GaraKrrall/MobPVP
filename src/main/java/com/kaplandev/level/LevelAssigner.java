@@ -27,7 +27,7 @@ public class LevelAssigner {
         String mobId = Registries.ENTITY_TYPE.getId(entity.getType()).getPath();
 
         String displayName = String.format(
-                "§c[Seviye: %d] §f%s §7- §a%.1f§7/§c%.0f ❤",
+                "§c[Level: %d] §f%s §7- §a%.1f§7/§c%.0f ❤",
                 level,
                 toTr(mobId),
                 currentHealth,

@@ -49,7 +49,7 @@ public class PvpSpawnerMaxBlockEntity extends BlockEntity {
             if (blockEntity.waveCount > 0 || !blockEntity.aliveEntities.isEmpty()) {
                 blockEntity.waveCount = 0;
                 blockEntity.aliveEntities.clear();
-                serverWorld.setBlockState(pos, Blocks.PVP_SPAWNER.getDefaultState()); // geri eski haline dön
+                serverWorld.setBlockState(pos, Blocks.PVP_SPAWNER_MAX.getDefaultState()); // geri eski haline dön
             }
             return;
         }

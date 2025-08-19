@@ -1,0 +1,13 @@
+{
+  "type": "mobpvp:water_pond",
+  "step": "surface_structures",
+  "biomes": [
+    "minecraft:plains",
+    "minecraft:forest",
+    "minecraft:savanna",
+    "minecraft:taiga",
+    "minecraft:desert"
+  ],
+  "adapt_noise": false,
+  "spawn_overrides": {}
+}

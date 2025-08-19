@@ -1,50 +1,50 @@
-/give Player791 mobpvp:reinforced_copper_block
+/locate structure mobpvp:house
+/tp @s -1056 ~ 7200
+/tp 800 ~ 9000
+/locate structure mobpvp:house
+/tp @s -128 ~ 10160
+/locatearena
+/locate structure mobpvp:house
+/tp @s -496 ~ 32
+/locate structure mobpvp:pve_tower
+/tp @s -1120 ~ 1056
+/locate structure mobpvp:pve_tower
+/tp @s 16 ~ -144
+/locate structure mobpvp:house
+/tp @s 176 ~ -128
+/publish true creative
+/place structure mobpvp:house
 /time set day
-/kill @e[type=mobpvp:mini_iron_golem]
+/locate structure mobpvp:mini_village
+/tp @s -160 ~ 416
+/place jigsaw minecraft:ancient_city/city/entrance
+/place structure mobpvp:mini_village
+/locate structure minecraft:monument
+/tp @s -1968 ~ 2256
+/locate structure mobpvp:house
+/tp @s -192 ~ 480
+/locate structure mobpvp:mini_village
+/tp @s 176 ~ 16
+/locate structure mobpvp:pve_tower
+/tp @s 32 ~ -144
+/locate structure mobpvp:water_pond
+/tp @s 0 ~ -288
+/locate biome minecraft:taiga
+/tp @s 270 162 -962
 /time set day
-/recipe give Player139 mobpvp:istanbul
-/time set day
-/enchant Player177 minecraft:unbreaking
-/advancement revoke @a everything
-/effect give @e[type=minecraft:item_frame] minecraft:invisibility infinite 255 true
-/time set day
-/effect give @e[type=minecraft:item_display] minecraft:invisibility infinite 255 true
+/locate structure mobpvp:pve_tower
+/tp @s 560 ~ -1200
+/tp 9000 ~ 9000
+/locate structure mobpvp:pve_tower
+/tp @s 8928 ~ 8736
+/locate biome minecraft:cherry_grove
+/tp @s 9800 94 9400
 /tick freeze
-/tick unfreeze
-/tick freeze
-/weather clear
-/tick freeze
-/recipe give Player388 mobpvp:a
-/recipe give Player388 mobpvp:b
-/recipe give Player388 mobpvp:denizli
-/recipe give Player388 mobpvp:diamond
-/recipe give Player388 mobpvp:nie
-/recipe give Player388 *
-/give Player611 mobpvp:test
-/give Player992 mobpvp:test
+/place feature mobpvp:arena_feature
+/place structure mobpvp:mini_village
+/locate biome minecraft:cherry_grove
+/locate structure mobpvp:pve_tower
 /time set day
-/difficulty hard
-/summon minecraft:warden
-/time set day
-/panorama
-/give Player656 minecraft:command_block
-/panorama
-/tp 125 60 -63
-/tp 125 ~ -63
-/effect clear
-/time set day
-/tp 191.66 -60.00 -139.61
-/tp 191.66 -61.00 -139.61
-/time set day
-/summon minecraft:mobpvp ~ ~ ~
-/summon minecraft:mule ~ ~ ~
-/enchant Player48 minecraft:fire_aspect 1
-/enchant Player48 minecraft:fire_protection
-/enchant Player48 minecraft:channeling
-/difficulty peaceful
-/time set day
-/effect clear
-/tick freeze
-/tp -212 69.00 -286
-/tp -212 69.00 -286,
-/tp -212 69.00 -286
+/place structure mobpvp:water_pond
+/locate structure mobpvp:house
+/tp @s -1072 ~ 1568

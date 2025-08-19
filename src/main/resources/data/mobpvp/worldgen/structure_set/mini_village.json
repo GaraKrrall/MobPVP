@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mobpvp:mini_village",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 2239567,
+    "separation": 4,
+    "spacing": 18
+  }
+}

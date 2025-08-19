@@ -105,12 +105,10 @@ public class BulwarkEntity extends PathAwareEntity {
         super.dropLoot(source, causedByPlayer);
 
         if (!this.getWorld().isClient()) {
-            // Elmas 3 tane düşür
             this.dropStack(new ItemStack(Items.DIAMOND, 8));
             this.dropStack(new ItemStack(Items.NETHERITE_SCRAP, 1));
-
-            // Kendi özel item'ların varsa şunun gibi çağır:
-            // this.dropStack(new ItemStack(ModItems.BULWARK_CORE));
+            this.dropStack(new ItemStack(com.kaplandev.item.Items.COPPER_STICK, 2));
+            this.dropStack(new ItemStack(com.kaplandev.item.Items.KALP_ITEM, 2));
         }
 
     }

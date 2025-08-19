@@ -79,7 +79,7 @@ public class Items {
         REINFORCED_COPPER_INGOT = GroupItemBuilder.create(REINFORCED_COPPER_INGOT_KEY, new Item(new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         KALP_ITEM = GroupItemBuilder.create(KALP_ITEM_KEY, new KalpItem(new Item.Settings().rarity(Rarity.UNCOMMON))).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         ULTRA_HEARTH_ITEM = GroupItemBuilder.create(ULTRA_HEARTH_KEY, new UltraHeathItem(new Item.Settings().rarity(Rarity.RARE))).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
-        COPPER_STICK = GroupItemBuilder.create(COPPER_STICK_KEY, new Item(new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        COPPER_STICK = GroupItemBuilder.create(COPPER_STICK_KEY, new BlockItem(Blocks.REINFORCED_COPPER_STICK, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         REINFORCED_COPPER_MACE = GroupItemBuilder.create(REINFORCED_COPPER_MACE_KEY, new ReinforcedCopperMaceItem(new Item.Settings().maxDamage(250).maxCount(1).rarity(Rarity.RARE), 2.0F,  -3.5F, 2.8F, 0.5F)).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         REINFORCED_COPPER_KNIFE = GroupItemBuilder.create(REINFORCED_COPPER_KNIFE_KEY, new ReinforcedCopperKnifeItem(new Item.Settings().maxCount(1).maxDamage(200), 5.0F, -2.0F)).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         TEST_ITEM = GroupItemBuilder.create("test", new Item(new Item.Settings())).register();

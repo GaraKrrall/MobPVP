@@ -1,0 +1,19 @@
+{
+  "parent": "mobpvp:first",
+  "display": {
+    "icon": { "id": "mobpvp:reinforced_copper_ball" },
+    "title": { "text": "Bu Neden Bu Kadar Ağır?" },
+    "description": { "text": "Bir Demir İle Güçlendirilmiş Bakır Top Alın." },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "elytra": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": ["mobpvp:reinforced_copper_ball"] }]
+      }
+    }
+  }
+}

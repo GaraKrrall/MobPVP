@@ -1,0 +1,9 @@
+Minik demir golemlerin takip ettiği golem öldükten sonra donması sorunu düzeltildi
+Gereksiz yere bingo yazması çözüldü
+Güçlendirilmiş bakır bıçağın elde çok kötü durma sorunu çözüldü
+Güçlendirilmiş bakır Topuzun elde çok kötü durma sorunu çözüldü
+PvE çağrıcıların arkalarının gözükmemesi hatası düzeltildi
+Süper PvE çağrıcılarının uzaklaşınca normale dönüşme hatası düzeltildi
+
+Bakır çubuk artık yere konulabilir
+Arena yapısı güncellendi

@@ -1,0 +1,21 @@
+{
+  "parent": "mobpvp:first",
+  "display": {
+    "icon": { "id": "mobpvp:kalp" },
+    "title": { "text": "What The Hell???" },
+    "description": { "text": "Bu Ev Yıkılmış Gibi Görünüyor..." },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "visited_structure": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "position": {
+          "structure": "mobpvp:house"
+        }
+      }
+    }
+  }
+}

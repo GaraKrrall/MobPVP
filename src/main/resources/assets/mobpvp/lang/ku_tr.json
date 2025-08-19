@@ -26,7 +26,7 @@
   "error.mobpvp.block": "Le bloc en dessous n'est pas pris en charge.",
   "item.mobpvp.reinforced_copper_ingot": "Külçeyê Baxurê Bi Asînê",
   "block.mobpvp.reinforced_copper_block": "Bloka Baxurê Bi Asînê",
-  "item.mobpvp.copper_stick": "Darikê Kopêrê",
+  "block.mobpvp.copper_stick": "Darikê Kopêrê",
   "item.mobpvp.reinforced_copper_knife": "Kêrê Kopêrê Bi Demirê Biqewimî",
   "item.mobpvp.reinforced_copper_mace": "Topa Kopêrê Bi Demirê Biqewimî"
 }
