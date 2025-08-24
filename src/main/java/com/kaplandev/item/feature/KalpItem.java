@@ -1,10 +1,11 @@
 package com.kaplandev.item.feature;
 
-import com.kaplandev.api.feature.ItemFeature;
+
 import com.kaplandev.block.Blocks;
 import com.kaplandev.entity.EntityType;
 import com.kaplandev.entity.boss.BulwarkEntity;
 
+import com.kaplanlib.api.feature.ItemFeature;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.entity.effect.StatusEffectInstance;

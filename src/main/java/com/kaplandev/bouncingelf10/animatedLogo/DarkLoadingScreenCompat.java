@@ -1,7 +1,9 @@
 package com.kaplandev.bouncingelf10.animatedLogo;
 
 import net.fabricmc.loader.api.FabricLoader;
-import static com.kaplandev.util.path.Paths.LOGGER;
+
+import static com.mojang.text2speech.Narrator.LOGGER;
+
 
 public class DarkLoadingScreenCompat {
 

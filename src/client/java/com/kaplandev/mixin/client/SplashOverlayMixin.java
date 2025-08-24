@@ -1,8 +1,8 @@
 package com.kaplandev.mixin.client;
 
 import com.kaplandev.bouncingelf10.animatedLogo.DarkLoadingScreenCompat;
-import com.kaplandev.util.path.Paths;
 
+import com.kaplanlib.util.path.Paths;
 import com.llamalad7.mixinextras.sugar.Local;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.MinecraftClient;
@@ -28,9 +28,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.function.Consumer;
 import java.util.function.IntSupplier;
 
-import static com.kaplandev.util.path.Paths.LOGGER;
-import static com.kaplandev.util.path.Paths.MOBPVP;
+import static com.kaplanlib.util.path.Paths.MOBPVP;
 import static net.minecraft.util.math.ColorHelper.Abgr.withAlpha;
+import static com.kaplanlib.util.path.Paths.LOGGER;
 
 @Mixin(SplashOverlay.class)
 @SuppressWarnings({"unused", "FieldMayBeFinal"})

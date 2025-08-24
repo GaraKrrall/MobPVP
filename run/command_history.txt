@@ -1,34 +1,3 @@
-/locate structure mobpvp:house
-/tp @s -1056 ~ 7200
-/tp 800 ~ 9000
-/locate structure mobpvp:house
-/tp @s -128 ~ 10160
-/locatearena
-/locate structure mobpvp:house
-/tp @s -496 ~ 32
-/locate structure mobpvp:pve_tower
-/tp @s -1120 ~ 1056
-/locate structure mobpvp:pve_tower
-/tp @s 16 ~ -144
-/locate structure mobpvp:house
-/tp @s 176 ~ -128
-/publish true creative
-/place structure mobpvp:house
-/time set day
-/locate structure mobpvp:mini_village
-/tp @s -160 ~ 416
-/place jigsaw minecraft:ancient_city/city/entrance
-/place structure mobpvp:mini_village
-/locate structure minecraft:monument
-/tp @s -1968 ~ 2256
-/locate structure mobpvp:house
-/tp @s -192 ~ 480
-/locate structure mobpvp:mini_village
-/tp @s 176 ~ 16
-/locate structure mobpvp:pve_tower
-/tp @s 32 ~ -144
-/locate structure mobpvp:water_pond
-/tp @s 0 ~ -288
 /locate biome minecraft:taiga
 /tp @s 270 162 -962
 /time set day
@@ -48,3 +17,34 @@
 /place structure mobpvp:water_pond
 /locate structure mobpvp:house
 /tp @s -1072 ~ 1568
+/place structure mobpvp:mini_village
+/tp 90000 ~ 9000
+/place structure minecraft:village_plains
+/tp 90000 ~ 90000
+/time set day
+/place structure mobpvp:mini_village
+/locate structure mobpvp:pve_tower
+/tp @s 89968 ~ 88800
+/locate structure mobpvp:statue
+/tp @s 89088 ~ 88928
+/place structure mobpvp:statue
+/time set day
+/place structure mobpvp:statue
+/locate structure mobpvp:statue
+/tp @s 90224 ~ 88864
+/locate structure mobpvp:statue
+/place structure mobpvp:statue
+/place structure mobpvp:statue ~ ~ ~
+/locate structure mobpvp:statue
+/tp @s 89616 ~ 89712
+/locate structure mobpvp:statue
+/tp @s 89616 ~ 89712
+/locate structure mobpvp:statue
+/tp @s 89440 ~ 89696
+/locate structure mobpvp:statue
+/tp @s 88912 ~ 89856
+/locate structure mobpvp:statue
+/tp @s 89440 ~ 89696
+/locate structure mobpvp:statue
+/tp @s 88656 ~ 89424
+/time set day

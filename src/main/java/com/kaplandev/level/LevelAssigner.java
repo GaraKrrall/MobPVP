@@ -8,7 +8,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-import static com.kaplandev.util.NameUtils.toTr;
+import static com.kaplanlib.util.NameUtils.toTr;
+
 
 public class LevelAssigner {
 

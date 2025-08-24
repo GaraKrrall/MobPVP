@@ -9,8 +9,8 @@ import net.minecraft.client.render.entity.model.IronGolemEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
-import static com.kaplandev.util.path.Paths.MINI_IRON_GOLEM_TEXTURE;
-import static com.kaplandev.util.path.Paths.MOBPVP;
+import static com.kaplanlib.util.path.Paths.MINI_IRON_GOLEM_TEXTURE;
+import static com.kaplanlib.util.path.Paths.MOBPVP;
 
 public class MiniIronGolemRenderer
         extends MobEntityRenderer<MiniIronGolemEntity, IronGolemEntityModel<MiniIronGolemEntity>> {

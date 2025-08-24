@@ -1,6 +1,6 @@
 package com.kaplandev.block.behavior;
 
-import com.kaplandev.api.behavior.BlockBehavior;
+import com.kaplanlib.api.behavior.BlockBehavior;
 import com.kaplandev.entity.EntityType;
 import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
 import com.kaplandev.item.Items;

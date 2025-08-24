@@ -5,10 +5,12 @@ import com.kaplandev.gen.piece.VillagePiece;
 import com.kaplandev.gen.piece.WaterPondPiece;
 import com.kaplandev.gen.structure.House;
 import com.kaplandev.gen.structure.PvETower;
+import com.kaplandev.gen.structure.Statue;
 import com.kaplandev.gen.structure.Village;
 import com.kaplandev.gen.structure.WaterPondStructure;
 import com.kaplandev.gen.piece.PvETowerPiece;
 import com.kaplandev.gen.piece.HousePiece;
+import com.kaplandev.gen.piece.StatuePiece;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
@@ -26,7 +28,7 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.structure.StructureType;
 
-import static com.kaplandev.util.path.Paths.MOBPVP;
+import static com.kaplanlib.util.path.Paths.MOBPVP;
 
 public class WorldGen {
 
@@ -51,6 +53,11 @@ public class WorldGen {
     public static final Identifier VILLAGE_ID = Identifier.of(MOBPVP, "mini_village");
     public static final StructureType<Village> VILLAGE_POND = () -> Village.CODEC;
     public static final StructurePieceType VILLAGE_POND_PIECE = VillagePiece::new;
+    //HEYKEL
+    public static final Identifier STATUE_ID = Identifier.of(MOBPVP, "statue");
+    public static final StructureType<Statue> STATUE_POND = () -> Statue.CODEC;
+    public static final StructurePieceType STATUE_POND_PIECE = StatuePiece::new;
+
 
 
 
@@ -68,6 +75,8 @@ public class WorldGen {
         Registry.register(Registries.STRUCTURE_PIECE, HOUSE_ID, HOUSE_POND_PIECE);
         Registry.register(Registries.STRUCTURE_TYPE, VILLAGE_ID, VILLAGE_POND);
         Registry.register(Registries.STRUCTURE_PIECE, VILLAGE_ID, VILLAGE_POND_PIECE);
+        Registry.register(Registries.STRUCTURE_TYPE, STATUE_ID, STATUE_POND);
+        Registry.register(Registries.STRUCTURE_PIECE, STATUE_ID, STATUE_POND_PIECE);
 
         // Arena placed feature -> JSON’da tanımlanmalı
         BiomeModifications.addFeature(

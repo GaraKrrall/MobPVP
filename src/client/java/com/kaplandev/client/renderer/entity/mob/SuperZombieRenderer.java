@@ -5,7 +5,7 @@ import net.minecraft.client.render.entity.ZombieEntityRenderer;
 import net.minecraft.util.Identifier;
 
 import static com.kaplandev.mobpvp.MOD_ID;
-import static com.kaplandev.util.path.Paths.SUPER_ZOMBIE_TEXTURE;
+import static com.kaplanlib.util.path.Paths.SUPER_ZOMBIE_TEXTURE;
 
 public class SuperZombieRenderer extends ZombieEntityRenderer {
     private static final Identifier SUPER_ZOMBIE_TEXTURE_RENDERER =

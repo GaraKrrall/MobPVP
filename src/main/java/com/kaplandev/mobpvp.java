@@ -1,5 +1,8 @@
 package com.kaplandev;
 
+import com.kaplanlib.api.PluginRegistry;
+import com.kaplanlib.api.annotation.KaplanBedwars;
+
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
@@ -33,8 +36,6 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.UUID;
 
-import com.kaplandev.api.PluginRegistry;
-import com.kaplandev.api.annotation.KaplanBedwars;
 import com.kaplandev.block.Blocks;
 import com.kaplandev.event.totem.IRON_BLOCK;
 import com.kaplandev.command.ModCommands;
@@ -51,9 +52,10 @@ import com.kaplandev.event.level.player.PlayerLevelEvents;
 import com.kaplandev.item.group.ItemGroups;
 import com.kaplandev.entity.EntityRegister;
 
-import static com.kaplandev.util.path.Paths.MOBPVP;
-import static com.kaplandev.util.path.Paths.STARTUP_SOUND_EVENT;
-import static com.kaplandev.util.path.Paths.STARTUP_SOUND_ID;
+import static com.kaplanlib.util.path.Paths.MOBPVP;
+import static com.kaplanlib.util.path.Paths.STARTUP_SOUND_EVENT;
+import static com.kaplanlib.util.path.Paths.STARTUP_SOUND_ID;
+
 
 @KaplanBedwars
 public final class mobpvp implements ModInitializer {

@@ -1,41 +1,41 @@
 package com.kaplandev.item;
 
-import com.kaplandev.api.version.BetaVersions;
 import com.kaplandev.block.Blocks;
 import com.kaplandev.item.feature.IronReinforcedCopperBallItem;
 import com.kaplandev.item.feature.KalpItem;
 import com.kaplandev.item.feature.ReinforcedCopperKnifeItem;
 import com.kaplandev.item.feature.UltraHeathItem;
 import com.kaplandev.item.feature.ReinforcedCopperMaceItem;
-import com.kaplandev.api.builder.GroupItemBuilder;
-import com.kaplandev.item.group.BetaItemGroups;
 import com.kaplandev.item.group.ItemGroups;
 import com.kaplandev.entity.EntityType;
+
+import com.kaplanlib.api.builder.GroupItemBuilder;
 
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.Rarity;
 
-import static com.kaplandev.util.path.Paths.COPPER_STICK_KEY;
-import static com.kaplandev.util.path.Paths.DAMAGED_PVP_SPAWNER_ITEM_KEY;
-import static com.kaplandev.util.path.Paths.DAMAGED_PVP_SPAWNER_MAX_ITEM_KEY;
-import static com.kaplandev.util.path.Paths.EGG_BULWARK_KEY;
-import static com.kaplandev.util.path.Paths.EGG_MINI_GOLEM_KEY;
-import static com.kaplandev.util.path.Paths.EGG_SKELETON_KEY;
-import static com.kaplandev.util.path.Paths.EGG_SUPER_ZOMBIE_KEY;
-import static com.kaplandev.util.path.Paths.HEARTH_PART_KEY;
-import static com.kaplandev.util.path.Paths.KALP_ITEM_KEY;
-import static com.kaplandev.util.path.Paths.MOB_TABLE_ITEM_KEY;
-import static com.kaplandev.util.path.Paths.ORE_ITEM_KEY;
-import static com.kaplandev.util.path.Paths.PVP_SPAWNER_ITEM_KEY;
-import static com.kaplandev.util.path.Paths.PVP_SPAWNER_MAX_ITEM_KEY;
-import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_BALL_KEY;
-import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_BLOCK_KEY;
-import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_INGOT_KEY;
-import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_KNIFE_KEY;
-import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_MACE_KEY;
-import static com.kaplandev.util.path.Paths.ULTRA_HEARTH_KEY;
+import static com.kaplanlib.util.path.Paths.COPPER_STICK_KEY;
+import static com.kaplanlib.util.path.Paths.DAMAGED_PVP_SPAWNER_ITEM_KEY;
+import static com.kaplanlib.util.path.Paths.DAMAGED_PVP_SPAWNER_MAX_ITEM_KEY;
+import static com.kaplanlib.util.path.Paths.EGG_BULWARK_KEY;
+import static com.kaplanlib.util.path.Paths.EGG_MINI_GOLEM_KEY;
+import static com.kaplanlib.util.path.Paths.EGG_SKELETON_KEY;
+import static com.kaplanlib.util.path.Paths.EGG_SUPER_ZOMBIE_KEY;
+import static com.kaplanlib.util.path.Paths.HEARTH_PART_KEY;
+import static com.kaplanlib.util.path.Paths.KALP_ITEM_KEY;
+import static com.kaplanlib.util.path.Paths.MOB_TABLE_ITEM_KEY;
+import static com.kaplanlib.util.path.Paths.ORE_ITEM_KEY;
+import static com.kaplanlib.util.path.Paths.PVP_SPAWNER_ITEM_KEY;
+import static com.kaplanlib.util.path.Paths.PVP_SPAWNER_MAX_ITEM_KEY;
+import static com.kaplanlib.util.path.Paths.REINFORCED_COPPER_BALL_KEY;
+import static com.kaplanlib.util.path.Paths.REINFORCED_COPPER_BLOCK_KEY;
+import static com.kaplanlib.util.path.Paths.REINFORCED_COPPER_INGOT_KEY;
+import static com.kaplanlib.util.path.Paths.REINFORCED_COPPER_KNIFE_KEY;
+import static com.kaplanlib.util.path.Paths.REINFORCED_COPPER_MACE_KEY;
+import static com.kaplanlib.util.path.Paths.ULTRA_HEARTH_KEY;
+
 
 public class Items {
     // Item tanımları

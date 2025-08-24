@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mobpvp:statue",
+      "weight": 5
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1267507,
+    "separation": 8,
+    "spacing": 16
+  }
+}

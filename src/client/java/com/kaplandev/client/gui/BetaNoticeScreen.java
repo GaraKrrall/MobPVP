@@ -1,6 +1,5 @@
 package com.kaplandev.client.gui;
 
-import com.kaplandev.api.version.VersionUtils;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;

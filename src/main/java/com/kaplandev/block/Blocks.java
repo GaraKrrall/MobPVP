@@ -4,20 +4,14 @@ import com.kaplandev.block.behavior.AcidicOreBehavior;
 import com.kaplandev.block.behavior.CopperRod;
 import com.kaplandev.block.behavior.DamagedPvpSpawnerBlockBehavior;
 import com.kaplandev.block.behavior.DamagedPvpSpawnerMaxBlockBehavior;
-//import com.kaplandev.block.behavior.IronChestBehavior;
 import com.kaplandev.block.behavior.MobTableBehavior;
 import com.kaplandev.block.behavior.PvpSpawnerBlockBehavior;
 import com.kaplandev.block.behavior.PvpSpawnerMaxBlockBehavior;
-//import com.kaplandev.entity.block.IronChestBlockEntity;
 import com.kaplandev.block.behavior.ReinforcedCopperBlockBehavior;
-import com.kaplandev.entity.EntityBlockSettings;
 import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
-import com.kaplandev.api.builder.BlockBuilder;
-
-import com.kaplandev.entity.block.PvpSpawnerMaxBlockEntity;
+import com.kaplanlib.api.builder.BlockBuilder;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.RodBlock;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -25,14 +19,14 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 import static com.kaplandev.mobpvp.MOD_ID;
-import static com.kaplandev.util.path.Paths.COPPER_STICK_KEY;
-import static com.kaplandev.util.path.Paths.CRUDE_ACIDIC_ORE_KEY;
-import static com.kaplandev.util.path.Paths.DAMAGED_PVP_SPAWNER_KEY;
-import static com.kaplandev.util.path.Paths.DAMAGED_PVP_SPAWNER_MAX_KEY;
-import static com.kaplandev.util.path.Paths.MOB_TABLE_KEY;
-import static com.kaplandev.util.path.Paths.PVP_SPAWNER_KEY;
-import static com.kaplandev.util.path.Paths.PVP_SPAWNER_MAX_KEY;
-import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_BLOCK_KEY;
+import static com.kaplanlib.util.path.Paths.COPPER_STICK_KEY;
+import static com.kaplanlib.util.path.Paths.CRUDE_ACIDIC_ORE_KEY;
+import static com.kaplanlib.util.path.Paths.DAMAGED_PVP_SPAWNER_KEY;
+import static com.kaplanlib.util.path.Paths.DAMAGED_PVP_SPAWNER_MAX_KEY;
+import static com.kaplanlib.util.path.Paths.MOB_TABLE_KEY;
+import static com.kaplanlib.util.path.Paths.PVP_SPAWNER_KEY;
+import static com.kaplanlib.util.path.Paths.PVP_SPAWNER_MAX_KEY;
+import static com.kaplanlib.util.path.Paths.REINFORCED_COPPER_BLOCK_KEY;
 
 public class Blocks {
 

@@ -1,8 +1,8 @@
 package com.kaplandev.client;
 
-import com.kaplandev.api.version.BetaVersions;
+
 //import com.kaplandev.block.BlockEntityTypes;
-import com.kaplandev.api.version.VersionUtils;
+
 import com.kaplandev.block.Blocks;
 import com.kaplandev.client.config.ConfigManager;
 import com.kaplandev.client.gui.BetaNoticeScreen;
@@ -17,6 +17,8 @@ import com.kaplandev.client.renderer.entity.block.PvpSpawnerMaxBlockRenderer;
 import com.kaplandev.entity.EntityType;
 
 
+import com.kaplanlib.api.version.BetaVersions;
+import com.kaplanlib.api.version.VersionUtils;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;

@@ -8,10 +8,10 @@ import com.kaplandev.entity.item.IronReinforcedCopperBallEntity;
 import com.kaplandev.entity.mob.MadSkeletonEntity;
 import com.kaplandev.entity.passive.MiniIronGolemEntity;
 import com.kaplandev.entity.mob.MadZombieEntity;
-import com.kaplandev.api.builder.EntityAttributeAndSpawnBuilder;
-import com.kaplandev.util.path.Paths;
 import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
 
+import com.kaplanlib.api.builder.EntityAttributeAndSpawnBuilder;
+import com.kaplanlib.util.path.Paths;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.*;
@@ -28,12 +28,13 @@ import static com.kaplandev.entity.EntityType.PVP_SPAWNER;
 import static com.kaplandev.entity.EntityType.PVP_SPAWNER_MAX;
 import static com.kaplandev.entity.EntityType.IRON_REINFORCED_COPPER_BALL;
 import static com.kaplandev.mobpvp.MOD_ID;
+import static com.kaplanlib.util.path.Paths.MAD_SKELETON_KEY;
+import static com.kaplanlib.util.path.Paths.MAD_ZOMBIE_KEY;
+import static com.kaplanlib.util.path.Paths.PVP_SPAWNER_KEY;
+import static com.kaplanlib.util.path.Paths.PVP_SPAWNER_MAX_KEY;
+import static com.kaplanlib.util.path.Paths.REINFORCED_COPPER_BALL_KEY;
 //import static com.kaplandev.util.path.Paths.IRON_CHEST_KEY;
-import static com.kaplandev.util.path.Paths.MAD_SKELETON_KEY;
-import static com.kaplandev.util.path.Paths.MAD_ZOMBIE_KEY;
-import static com.kaplandev.util.path.Paths.PVP_SPAWNER_KEY;
-import static com.kaplandev.util.path.Paths.PVP_SPAWNER_MAX_KEY;
-import static com.kaplandev.util.path.Paths.REINFORCED_COPPER_BALL_KEY;
+
 
 
 public class EntityRegister {

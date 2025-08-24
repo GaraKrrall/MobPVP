@@ -1,8 +1,8 @@
 package com.kaplandev.client.gui.level;
 
-import com.kaplandev.api.annotation.Bug;
 import com.kaplandev.level.player.PlayerLevelData;
 
+import com.kaplanlib.api.annotation.Bug;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;

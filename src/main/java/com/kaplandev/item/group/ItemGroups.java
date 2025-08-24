@@ -1,8 +1,8 @@
 package com.kaplandev.item.group;
 
-import com.kaplandev.api.version.BetaVersions;
 import com.kaplandev.item.Items;
 
+import com.kaplanlib.api.version.BetaVersions;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -13,8 +13,8 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 import static com.kaplandev.mobpvp.MOD_ID;
-import static com.kaplandev.util.path.Paths.TAB_MOBPVP_EGGS_KEY;
-import static com.kaplandev.util.path.Paths.TAB_MOBPVP_ITEMS_KEY;
+import static com.kaplanlib.util.path.Paths.TAB_MOBPVP_EGGS_KEY;
+import static com.kaplanlib.util.path.Paths.TAB_MOBPVP_ITEMS_KEY;
 
 public class ItemGroups {
     public static final RegistryKey<ItemGroup> MOBPVP_GROUP_KEY;

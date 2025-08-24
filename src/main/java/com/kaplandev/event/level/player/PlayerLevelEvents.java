@@ -1,8 +1,9 @@
 package com.kaplandev.event.level.player;
 
-import com.kaplandev.api.annotation.test;
-import com.kaplandev.api.annotation.Bug;
-import com.kaplandev.api.annotation.KaplanBedwars;
+
+import com.kaplanlib.api.annotation.Bug;
+import com.kaplanlib.api.annotation.KaplanBedwars;
+import com.kaplanlib.api.annotation.test;
 
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
