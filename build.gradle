@@ -47,7 +47,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    modImplementation name: 'MobLiB-1.1-25w34d7'
+    modImplementation "curse.maven:moblib-1333954:6923764"
 
 }
 
