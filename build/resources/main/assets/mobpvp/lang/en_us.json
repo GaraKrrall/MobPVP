@@ -31,5 +31,7 @@
   "item.mobpvp.reinforced_copper_mace": "Reinforced Copper Mace",
   "item.mobpvp.reinforced_copper_ball": "Reinforced Copper Ball",
   "itemGroup.beta.item": "Beta Items",
-  "itemGroup.beta.block": "Beta Blocks"
+  "itemGroup.beta.block": "Beta Blocks",
+  "enchantment.mobpvp.thundering": "Coppered",
+  "enchantment.mobpvp.certainty": "Certainty"
 }
