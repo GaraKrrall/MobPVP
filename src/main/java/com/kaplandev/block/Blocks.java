@@ -10,6 +10,7 @@ import com.kaplandev.block.behavior.PvpSpawnerMaxBlockBehavior;
 import com.kaplandev.block.behavior.ReinforcedCopperBlockBehavior;
 import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
 import com.kaplanlib.api.builder.BlockBuilder;
+
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.registry.Registries;
@@ -43,8 +44,7 @@ public class Blocks {
 
     static {
         CRUDE_ACIDIC_ORE = BlockBuilder.create(CRUDE_ACIDIC_ORE_KEY, AbstractBlock.Settings.create().strength(4.0f).requiresTool().sounds(BlockSoundGroup.STONE)).behavior(new AcidicOreBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();
-        MOB_TABLE = BlockBuilder.create(MOB_TABLE_KEY, AbstractBlock.Settings.create().strength(2.0f).requiresTool().sounds(BlockSoundGroup.WOOD)).behavior(new MobTableBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();
-        PVP_SPAWNER = BlockBuilder.RegisterCreatedBlockWithEntity(PVP_SPAWNER_KEY, new PvpSpawnerBlockBehavior(AbstractBlock.Settings.create().strength(5.0f).requiresTool().resistance(1200.0f).hardness(-1.0f).sounds(BlockSoundGroup.TRIAL_SPAWNER).nonOpaque()), PvpSpawnerBlockEntity::new);
+        MOB_TABLE = Registry.register(Registries.BLOCK, Identifier.of(MOD_ID, MOB_TABLE_KEY), new MobTableBehavior(AbstractBlock.Settings.create().strength(2.0f).requiresTool().sounds(BlockSoundGroup.WOOD)));      PVP_SPAWNER = BlockBuilder.RegisterCreatedBlockWithEntity(PVP_SPAWNER_KEY, new PvpSpawnerBlockBehavior(AbstractBlock.Settings.create().strength(5.0f).requiresTool().resistance(1200.0f).hardness(-1.0f).sounds(BlockSoundGroup.TRIAL_SPAWNER).nonOpaque()), PvpSpawnerBlockEntity::new);
         PVP_SPAWNER_MAX = BlockBuilder.RegisterCreatedBlockWithEntity(PVP_SPAWNER_MAX_KEY, new PvpSpawnerMaxBlockBehavior(AbstractBlock.Settings.create().strength(5.0f).requiresTool().resistance(1200.0f).hardness(-1.0f).sounds(BlockSoundGroup.TRIAL_SPAWNER).nonOpaque()), PvpSpawnerBlockEntity::new);
         DAMAGED_PVP_SPAWNER = BlockBuilder.create(DAMAGED_PVP_SPAWNER_KEY, AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.TRIAL_SPAWNER)).behavior(new DamagedPvpSpawnerBlockBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();
         DAMAGED_PVP_SPAWNER_MAX = BlockBuilder.create(DAMAGED_PVP_SPAWNER_MAX_KEY, AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.TRIAL_SPAWNER)).behavior(new DamagedPvpSpawnerMaxBlockBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();

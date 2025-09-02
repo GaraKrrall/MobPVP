@@ -1,0 +1,75 @@
+{
+  "mobpvp:iaiaiaiaiaiaiaiaiia": {
+    "criteria": {
+      "visited_structure": "2025-09-03 00:16:16 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiaiaia": {
+    "criteria": {
+      "visited_structure": "2025-09-03 00:16:15 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiaiaiaiaiaiiaiaiaaiai": {
+    "criteria": {
+      "visited_structure": "2025-09-03 00:16:16 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:kick": {
+    "criteria": {
+      "hit_mob": "2025-09-03 00:20:05 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:middle": {
+    "criteria": {
+      "armor_up": "2025-09-03 00:16:15 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-09-03 00:16:15 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_emerald": "2025-09-03 00:17:07 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiai": {
+    "criteria": {
+      "visited_structure": "2025-09-03 00:16:16 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaia": {
+    "criteria": {
+      "visited_structure": "2025-09-03 00:16:15 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:first": {
+    "criteria": {
+      "joined_world": "2025-09-03 00:16:15 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-09-03 00:16:16 +0300"
+    },
+    "done": false
+  },
+  "minecraft:adventure/trade": {
+    "criteria": {
+      "traded": "2025-09-03 00:17:17 +0300"
+    },
+    "done": true
+  },
+  "DataVersion": 3955
+}

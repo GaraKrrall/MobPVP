@@ -1,38 +1,3 @@
-/locate biome minecraft:taiga
-/tp @s 270 162 -962
-/time set day
-/locate structure mobpvp:pve_tower
-/tp @s 560 ~ -1200
-/tp 9000 ~ 9000
-/locate structure mobpvp:pve_tower
-/tp @s 8928 ~ 8736
-/locate biome minecraft:cherry_grove
-/tp @s 9800 94 9400
-/tick freeze
-/place feature mobpvp:arena_feature
-/place structure mobpvp:mini_village
-/locate biome minecraft:cherry_grove
-/locate structure mobpvp:pve_tower
-/time set day
-/place structure mobpvp:water_pond
-/locate structure mobpvp:house
-/tp @s -1072 ~ 1568
-/place structure mobpvp:mini_village
-/tp 90000 ~ 9000
-/place structure minecraft:village_plains
-/tp 90000 ~ 90000
-/time set day
-/place structure mobpvp:mini_village
-/locate structure mobpvp:pve_tower
-/tp @s 89968 ~ 88800
-/locate structure mobpvp:statue
-/tp @s 89088 ~ 88928
-/place structure mobpvp:statue
-/time set day
-/place structure mobpvp:statue
-/locate structure mobpvp:statue
-/tp @s 90224 ~ 88864
-/locate structure mobpvp:statue
 /place structure mobpvp:statue
 /place structure mobpvp:statue ~ ~ ~
 /locate structure mobpvp:statue
@@ -47,4 +12,39 @@
 /tp @s 89440 ~ 89696
 /locate structure mobpvp:statue
 /tp @s 88656 ~ 89424
+/time set day
+/enchant Player747 minecraft:looting
+/enchant Player747 minecraft:looting 9
+/enchant Player747 minecraft:looting 3
+/enchant Player747 minecraft:looting 1
+/enchant Player747 minecraft:looting 3
+/enchant Player747 mobpvp:test
+/enchant Player21 mobpvp:test
+/enchant Player21 mobpvp:test 2
+/enchant Player21 mobpvp:test 1
+/enchant Player21 mobpvp:test 19
+/enchant Player21 mobpvp:test
+/weather clear
+/time set day
+/weather rain
+/weather thunder
+/enchant Player21 mobpvp:test
+/enchant Player996 mobpvp:test
+/weather clear
+/weather rain
+/weather thunder
+/weather clear
+/enchant Player21 mobpvp:test
+/enchant Player996 mobpvp:test
+/weather thunder
+/time set day
+/weather clear
+/time set day
+/reload
+/time set day
+/enchant Player21 mobpvp:test
+/enchant Player552 mobpvp:test
+/time set day
+/weather thunder
+/weather clear
 /time set day

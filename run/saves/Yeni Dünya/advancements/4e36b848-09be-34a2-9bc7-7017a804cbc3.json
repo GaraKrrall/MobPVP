@@ -113,12 +113,6 @@
     },
     "done": true
   },
-  "mobpvp:deep_dark": {
-    "criteria": {
-      "deep_dark": "2025-07-10 16:00:20 +0300"
-    },
-    "done": true
-  },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:plains": "2025-07-10 16:00:20 +0300"
@@ -134,6 +128,42 @@
   "minecraft:adventure/summon_iron_golem": {
     "criteria": {
       "summoned_golem": "2025-07-10 16:01:05 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/firework_rocket_simple": {
+    "criteria": {
+      "has_gunpowder": "2025-07-12 14:47:29 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2025-07-12 14:47:29 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-07-12 14:48:06 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "minecraft:zombie": "2025-07-12 14:48:06 +0300"
+    },
+    "done": false
+  },
+  "mobpvp:kill": {
+    "criteria": {
+      "kill_mob": "2025-07-12 14:48:06 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "minecraft:zombie": "2025-07-12 14:48:06 +0300"
     },
     "done": true
   },
@@ -227,12 +257,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/gold_ingot_from_nuggets": {
-    "criteria": {
-      "has_gold_nugget": "2025-07-12 14:57:37 +0300"
-    },
-    "done": true
-  },
   "minecraft:story/smelt_iron": {
     "criteria": {
       "iron": "2025-07-12 14:49:38 +0300"
@@ -245,29 +269,11 @@
     },
     "done": true
   },
-  "minecraft:recipes/brewing/golden_carrot": {
-    "criteria": {
-      "has_gold_nugget": "2025-07-12 14:57:37 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/redstone/iron_trapdoor": {
     "criteria": {
       "has_iron_ingot": "2025-07-12 14:49:38 +0300"
     },
     "done": true
-  },
-  "minecraft:adventure/root": {
-    "criteria": {
-      "killed_something": "2025-07-12 14:48:06 +0300"
-    },
-    "done": true
-  },
-  "minecraft:adventure/kill_all_mobs": {
-    "criteria": {
-      "minecraft:zombie": "2025-07-12 14:48:06 +0300"
-    },
-    "done": false
   },
   "minecraft:recipes/decorations/chain": {
     "criteria": {
@@ -278,12 +284,6 @@
   "minecraft:recipes/building_blocks/iron_block": {
     "criteria": {
       "has_iron_ingot": "2025-07-12 14:49:38 +0300"
-    },
-    "done": true
-  },
-  "mobpvp:kill": {
-    "criteria": {
-      "kill_mob": "2025-07-12 14:48:06 +0300"
     },
     "done": true
   },
@@ -299,27 +299,9 @@
     },
     "done": true
   },
-  "minecraft:adventure/kill_a_mob": {
-    "criteria": {
-      "minecraft:zombie": "2025-07-12 14:48:06 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/smithing_table": {
     "criteria": {
       "has_iron_ingot": "2025-07-12 14:49:38 +0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/firework_rocket_simple": {
-    "criteria": {
-      "has_gunpowder": "2025-07-12 14:47:29 +0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/tnt": {
-    "criteria": {
-      "has_gunpowder": "2025-07-12 14:47:29 +0300"
     },
     "done": true
   },
@@ -332,6 +314,174 @@
   "minecraft:recipes/redstone/heavy_weighted_pressure_plate": {
     "criteria": {
       "has_iron_ingot": "2025-07-12 14:49:38 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_nuggets": {
+    "criteria": {
+      "has_gold_nugget": "2025-07-12 14:57:37 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/golden_carrot": {
+    "criteria": {
+      "has_gold_nugget": "2025-07-12 14:57:37 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiaiaiaiaiaiaiaiia": {
+    "criteria": {
+      "visited_structure": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiaiaia": {
+    "criteria": {
+      "visited_structure": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiaiaiaiaiaiiaiaiaaiai": {
+    "criteria": {
+      "visited_structure": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_copper_slab_from_cut_copper_stonecutting": {
+    "criteria": {
+      "has_cut_copper": "2025-09-02 18:25:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/bow": {
+    "criteria": {
+      "has_string": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_copper_slab": {
+    "criteria": {
+      "has_cut_copper": "2025-09-02 18:25:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/snow": {
+    "criteria": {
+      "has_snowball": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:kapat": {
+    "criteria": {
+      "elytra": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/waxed_cut_copper_from_honeycomb": {
+    "criteria": {
+      "has_cut_copper": "2025-09-02 18:25:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/fishing_rod": {
+    "criteria": {
+      "has_string": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dispenser": {
+    "criteria": {
+      "has_bow": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiai": {
+    "criteria": {
+      "visited_structure": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaia": {
+    "criteria": {
+      "visited_structure": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:knife": {
+    "criteria": {
+      "elytra": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/white_wool_from_string": {
+    "criteria": {
+      "has_string": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/tripwire_hook": {
+    "criteria": {
+      "has_string": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal": {
+    "criteria": {
+      "has_bone": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/candle": {
+    "criteria": {
+      "has_string": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:copperball": {
+    "criteria": {
+      "elytra": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_copper_stairs": {
+    "criteria": {
+      "has_cut_copper": "2025-09-02 18:25:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_copper_stairs_from_cut_copper_stonecutting": {
+    "criteria": {
+      "has_cut_copper": "2025-09-02 18:25:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/loom": {
+    "criteria": {
+      "has_string": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:mace": {
+    "criteria": {
+      "elytra": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_copper_from_cut_copper_stonecutting": {
+    "criteria": {
+      "has_cut_copper": "2025-09-02 18:25:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/snow_block": {
+    "criteria": {
+      "has_snowball": "2025-09-02 18:25:02 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_nuggets": {
+    "criteria": {
+      "has_iron_nugget": "2025-09-02 18:25:02 +0300"
     },
     "done": true
   },

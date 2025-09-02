@@ -15,7 +15,7 @@ import static com.kaplanlib.util.path.Paths.MOBPVP;
 public class MiniIronGolemRenderer
         extends MobEntityRenderer<MiniIronGolemEntity, IronGolemEntityModel<MiniIronGolemEntity>> {
 
-    /** Vanilla demir golem dokusu – namespace mutlaka "minecraft" olmalı */
+
     private static final Identifier TEXTURE =
             Identifier.of(MOBPVP, MINI_IRON_GOLEM_TEXTURE);
 

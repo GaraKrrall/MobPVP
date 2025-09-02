@@ -1,5 +1,7 @@
 package com.kaplandev;
 
+import com.kaplandev.enchantment.EnchantmentEffects;
+import com.kaplandev.trade.Trades;
 import com.kaplanlib.api.PluginRegistry;
 import com.kaplanlib.api.annotation.KaplanBedwars;
 
@@ -66,6 +68,8 @@ public final class mobpvp implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        EnchantmentEffects.registerModEnchantmentEffects();
+        Trades.register();
         WorldGen.register();
         Blocks.init();
         EntityRegister.register();

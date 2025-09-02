@@ -6,6 +6,7 @@ package com.kaplandev.client;
 import com.kaplandev.block.Blocks;
 import com.kaplandev.client.config.ConfigManager;
 import com.kaplandev.client.gui.BetaNoticeScreen;
+import com.kaplandev.handler.type.ScreenHandlerTypes;
 import com.kaplandev.client.info.dink;
 import com.kaplandev.client.renderer.entity.mob.CustomZombieRenderer;
 //import com.kaplandev.client.renderer.entity.block.IronChestBlockRenderer;
@@ -14,6 +15,7 @@ import com.kaplandev.client.renderer.entity.boss.BulwarkRenderer;
 import com.kaplandev.client.renderer.entity.mobpvp.MiniIronGolemRenderer;
 import com.kaplandev.client.renderer.entity.mob.SuperZombieRenderer;
 import com.kaplandev.client.renderer.entity.block.PvpSpawnerMaxBlockRenderer;
+import com.kaplandev.client.gui.MobTableScreen;
 import com.kaplandev.entity.EntityType;
 
 
@@ -25,6 +27,7 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.gui.screen.TitleScreen;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.minecraft.client.render.entity.SkeletonEntityRenderer;
@@ -47,6 +50,8 @@ public class mobpvpClient implements ClientModInitializer {
         EntityRendererRegistry.register(EntityType.BULWARK, BulwarkRenderer::new);
         EntityRendererRegistry.register(EntityType.MINIGOLEM, MiniIronGolemRenderer::new);
         EntityRendererRegistry.register(EntityType.IRON_REINFORCED_COPPER_BALL, FlyingItemEntityRenderer::new);
+        HandledScreens.register(ScreenHandlerTypes.MOB_TABLE, MobTableScreen::new);
+
         ConfigManager.initialize();
 
 
