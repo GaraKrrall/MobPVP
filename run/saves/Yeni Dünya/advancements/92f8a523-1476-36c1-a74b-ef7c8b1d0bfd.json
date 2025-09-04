@@ -1,0 +1,99 @@
+{
+  "mobpvp:eat": {
+    "criteria": {
+      "eat": "2025-09-04 15:25:41 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:kick": {
+    "criteria": {
+      "hit_mob": "2025-09-04 15:24:00 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:kapat": {
+    "criteria": {
+      "elytra": "2025-09-04 15:24:10 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:full_enchanted": {
+    "criteria": {
+      "enchanted_armor": "2025-09-04 15:23:32 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-09-04 15:23:12 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:knife": {
+    "criteria": {
+      "elytra": "2025-09-04 15:23:51 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-09-04 15:24:00 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:first": {
+    "criteria": {
+      "joined_world": "2025-09-04 15:23:12 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-09-04 15:23:12 +0300"
+    },
+    "done": false
+  },
+  "minecraft:recipes/misc/firework_rocket_simple": {
+    "criteria": {
+      "has_gunpowder": "2025-09-04 15:24:00 +0300"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "bread": "2025-09-04 15:25:41 +0300"
+    },
+    "done": false
+  },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2025-09-04 15:24:00 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:copperball": {
+    "criteria": {
+      "elytra": "2025-09-04 15:24:04 +0300"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2025-09-04 15:25:41 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:mace": {
+    "criteria": {
+      "elytra": "2025-09-04 15:23:53 +0300"
+    },
+    "done": true
+  },
+  "minecraft:nether/netherite_armor": {
+    "criteria": {
+      "netherite_armor": "2025-09-04 15:23:32 +0300"
+    },
+    "done": true
+  },
+  "DataVersion": 3955
+}

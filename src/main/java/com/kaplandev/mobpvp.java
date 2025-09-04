@@ -1,10 +1,8 @@
 package com.kaplandev;
 
-import com.kaplandev.enchantment.EnchantmentEffects;
-import com.kaplandev.trade.Trades;
-import com.kaplanlib.api.PluginRegistry;
-import com.kaplanlib.api.annotation.KaplanBedwars;
-
+import com.kaplandev.enchantment.EnchantmentGet;
+import com.kaplandev.enchantment.effect.MagmatizationEffect;
+import com.kaplandev.villager.Villagers;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
@@ -26,8 +24,10 @@ import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
 import java.util.ArrayList;
@@ -53,6 +53,10 @@ import com.kaplandev.level.player.PlayerLevelSaveHandler;
 import com.kaplandev.event.level.player.PlayerLevelEvents;
 import com.kaplandev.item.group.ItemGroups;
 import com.kaplandev.entity.EntityRegister;
+import com.kaplandev.enchantment.EnchantmentsAndEffects;
+import com.kaplandev.trade.Trades;
+import com.kaplanlib.api.PluginRegistry;
+import com.kaplanlib.api.annotation.KaplanBedwars;
 
 import static com.kaplanlib.util.path.Paths.MOBPVP;
 import static com.kaplanlib.util.path.Paths.STARTUP_SOUND_EVENT;
@@ -68,29 +72,31 @@ public final class mobpvp implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        EnchantmentEffects.registerModEnchantmentEffects();
-        Trades.register();
+        EnchantmentsAndEffects.registerModEnchantmentEffects();
+        EnchantmentGet.init();
         WorldGen.register();
         Blocks.init();
+        Villagers.registerVillagers();
+        Trades.init();
         EntityRegister.register();
         Items.init();
         ItemGroups.init();
         Registry.register(Registries.SOUND_EVENT, STARTUP_SOUND_ID, STARTUP_SOUND_EVENT);
         PluginRegistry.callOnLoad();
-        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
-            ModCommands.register(dispatcher);
-        });
+        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {ModCommands.register(dispatcher);});
         UseBlockCallback.EVENT.register(IRON_BLOCK::onUseBlock);
-        ServerLifecycleEvents.SERVER_STARTED.register(PlayerLevelSaveHandler::init);
+        ServerLifecycleEvents.SERVER_STARTED.register(server -> {
+            Trades.register(); // enchantment registry bu noktada hazır
+            PlayerLevelSaveHandler.init(server);
+        });
+
         ServerLifecycleEvents.SERVER_STOPPING.register(server -> PlayerLevelSaveHandler.save());
         ServerTickEvents.END_WORLD_TICK.register(world -> {
+            MagmatizationEffect.tick(world);
             for (var player : world.getPlayers()) {
-                UUID uuid = player.getUuid(); // bak aşağıdaki hatayla da ilişkili
+                UUID uuid = player.getUuid();
                 int level = PlayerLevelData.getLevel(uuid);
-
                 PlayerLevelEvents.applyStatBonus(player, level);
-
-
             }
         });
 

@@ -2,8 +2,8 @@
   "parent": "mobpvp:first",
   "display": {
     "icon": { "id": "minecraft:totem_of_undying" },
-    "title": { "text": "Son Nefes" },
-    "description": { "text": "Ölümle tanış." },
+    "title": { "text": "[Last Breath]" },
+    "description": { "text": "Meet death." },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true

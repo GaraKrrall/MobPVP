@@ -1,9 +1,9 @@
 {
-  "parent": "mobpvp:middle",
+  "parent": "mobpvp:eat",
   "display": {
     "icon": { "id": "minecraft:ender_pearl" },
-    "title": { "text": "Karanlığın İçinden" },
-    "description": { "text": "Bir Enderman öldür." },
+    "title": { "text": "[From the Darkness]" },
+    "description": { "text": "Kill an Enderman." },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true

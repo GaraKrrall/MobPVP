@@ -78,18 +78,7 @@ public class WorldGen {
         Registry.register(Registries.STRUCTURE_TYPE, STATUE_ID, STATUE_POND);
         Registry.register(Registries.STRUCTURE_PIECE, STATUE_ID, STATUE_POND_PIECE);
 
-        // Arena placed feature -> JSON’da tanımlanmalı
-        BiomeModifications.addFeature(
-                BiomeSelectors.foundInOverworld()
-                        .and(context -> {
-                            RegistryEntry<Biome> biomeEntry = context.getBiomeRegistryEntry();
-                            return !biomeEntry.isIn(BiomeTags.IS_OCEAN)
-                                    && !biomeEntry.isIn(BiomeTags.IS_RIVER)
-                                    && !biomeEntry.isIn(BiomeTags.IS_BEACH);
-                        }),
-                GenerationStep.Feature.SURFACE_STRUCTURES,
-                ARENA_PLACED_KEY
-        );
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld().and(context -> {RegistryEntry<Biome> biomeEntry = context.getBiomeRegistryEntry();return !biomeEntry.isIn(BiomeTags.IS_OCEAN) && !biomeEntry.isIn(BiomeTags.IS_RIVER) && !biomeEntry.isIn(BiomeTags.IS_BEACH);}), GenerationStep.Feature.SURFACE_STRUCTURES, ARENA_PLACED_KEY);
 
 
     }

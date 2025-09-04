@@ -2,8 +2,8 @@
   "parent": "mobpvp:first",
   "display": {
     "icon": { "id": "mobpvp:copper_stick" },
-    "title": { "text": "Gerçekten Sadece Bu Mu?" },
-    "description": { "text": "Bu güncellemede sadece bu eklenmiş olamaz!" },
+    "title": { "text": "Is this really all there is?" },
+    "description": { "text": "This update cannot only have this added!" },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true

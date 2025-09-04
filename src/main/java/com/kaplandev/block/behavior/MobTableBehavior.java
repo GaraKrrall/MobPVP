@@ -39,16 +39,7 @@ public class MobTableBehavior extends Block implements BlockBehavior {
         }
     }
 
-    @Override
-    protected NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state,
-                                                                   World world,
-                                                                   BlockPos pos) {
-        return new SimpleNamedScreenHandlerFactory(
-                (syncId, inventory, player) ->
-                        new MobTableScreenHandler(syncId, inventory, ScreenHandlerContext.create(world, pos)),
-                TITLE
-        );
-    }
+
     @Override
     public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack tool, boolean dropXp) {
         if (!world.isClient) Block.dropStack(world, pos, new ItemStack(Items.HEARTH_PART));

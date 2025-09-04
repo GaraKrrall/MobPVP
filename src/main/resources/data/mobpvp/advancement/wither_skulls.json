@@ -2,8 +2,8 @@
   "parent": "mobpvp:first",
   "display": {
     "icon": { "id": "minecraft:wither_skeleton_skull" },
-    "title": { "text": "Karanlık Hasat" },
-    "description": { "text": "3 Wither kafası topla." },
+    "title": { "text": "[Dark Harvest]" },
+    "description": { "text": "Collect 3 Wither heads." },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true

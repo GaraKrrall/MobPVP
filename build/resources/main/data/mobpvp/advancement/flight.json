@@ -2,8 +2,8 @@
   "parent": "mobpvp:combat",
   "display": {
     "icon": { "id": "minecraft:firework_rocket" },
-    "title": { "text": "Roket Gücü" },
-    "description": { "text": "Firework ile uçmaya başla." },
+    "title": { "text": "Rocket Power" },
+    "description": { "text": "Start flying with Firework." },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true

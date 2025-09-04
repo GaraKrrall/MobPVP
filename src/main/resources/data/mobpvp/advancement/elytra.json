@@ -2,8 +2,8 @@
   "parent": "mobpvp:first",
   "display": {
     "icon": { "id": "minecraft:elytra" },
-    "title": { "text": "Kanatlara Kavuş" },
-    "description": { "text": "Bir Elytra giy." },
+    "title": { "text": "[Reach for the Skies]" },
+    "description": { "text": "Put on an Elytra." },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true

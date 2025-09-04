@@ -4,10 +4,10 @@
       "id": "minecraft:dragon_egg"
     },
     "title": {
-      "text": "MobPVP"
+      "text": "[MobPVP]"
     },
     "description": {
-      "text": "Dünyaya ilk adımını attın. Şimdi bakalım ne kadar dayanacaksın?"
+      "text": "You've taken your first step into the world. Now let's see how long you'll last?"
     },
     "frame": "challenge",
     "show_toast": true,

@@ -2,8 +2,8 @@
   "parent": "mobpvp:first",
   "display": {
     "icon": { "id": "minecraft:enchanted_book" },
-    "title": { "text": "Parıldayan Kahraman" },
-    "description": { "text": "Tüm netherite zırh parçalarını enchant'lı olarak giy." },
+    "title": { "text": "The Shining Hero" },
+    "description": { "text": "Equip all enchanted Netherite armour pieces." },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true

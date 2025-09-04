@@ -2,8 +2,8 @@
   "parent": "mobpvp:first",
   "display": {
     "icon": { "id": "minecraft:trident" },
-    "title": { "text": "Üçlü Güç" },
-    "description": { "text": "Bir trident elde et." },
+    "title": { "text": "Triple Power" },
+    "description": { "text": "Obtain a trident." },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true

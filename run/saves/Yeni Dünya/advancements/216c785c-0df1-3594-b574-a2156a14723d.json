@@ -1,0 +1,57 @@
+{
+  "mobpvp:iaiaiaiaiaiaiaiaiia": {
+    "criteria": {
+      "visited_structure": "2025-09-04 15:04:21 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiaiaia": {
+    "criteria": {
+      "visited_structure": "2025-09-04 15:04:21 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiaiaiaiaiaiiaiaiaaiai": {
+    "criteria": {
+      "visited_structure": "2025-09-04 15:04:21 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:middle": {
+    "criteria": {
+      "armor_up": "2025-09-04 15:05:21 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-09-04 15:04:20 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiai": {
+    "criteria": {
+      "visited_structure": "2025-09-04 15:04:21 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaia": {
+    "criteria": {
+      "visited_structure": "2025-09-04 15:04:21 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:first": {
+    "criteria": {
+      "joined_world": "2025-09-04 15:04:20 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-09-04 15:04:21 +0300"
+    },
+    "done": false
+  },
+  "DataVersion": 3955
+}

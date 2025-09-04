@@ -83,12 +83,6 @@
     },
     "done": true
   },
-  "mobpvp:kick": {
-    "criteria": {
-      "hit_mob": "2025-08-06 14:58:11 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/combat/iron_helmet": {
     "criteria": {
       "has_iron_ingot": "2025-08-06 14:57:47 +0300"
@@ -257,12 +251,6 @@
     },
     "done": true
   },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:plains": "2025-08-06 14:57:48 +0300"
-    },
-    "done": false
-  },
   "minecraft:recipes/decorations/barrel": {
     "criteria": {
       "has_planks": "2025-08-06 14:57:47 +0300"
@@ -320,6 +308,54 @@
   "minecraft:recipes/redstone/heavy_weighted_pressure_plate": {
     "criteria": {
       "has_iron_ingot": "2025-08-06 14:57:47 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-08-06 14:57:48 +0300"
+    },
+    "done": false
+  },
+  "mobpvp:kick": {
+    "criteria": {
+      "hit_mob": "2025-08-06 14:58:11 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiaiaiaiaiaiaiaiia": {
+    "criteria": {
+      "visited_structure": "2025-09-04 10:22:28 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiaiaia": {
+    "criteria": {
+      "visited_structure": "2025-09-04 10:22:28 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiaiaiaiaiaiiaiaiaaiai": {
+    "criteria": {
+      "visited_structure": "2025-09-04 10:22:28 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiai": {
+    "criteria": {
+      "visited_structure": "2025-09-04 10:22:28 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaia": {
+    "criteria": {
+      "visited_structure": "2025-09-04 10:22:28 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:knife": {
+    "criteria": {
+      "elytra": "2025-09-04 10:23:14 +0300"
     },
     "done": true
   },

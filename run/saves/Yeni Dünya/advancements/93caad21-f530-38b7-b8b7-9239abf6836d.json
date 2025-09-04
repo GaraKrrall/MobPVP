@@ -203,12 +203,6 @@
     },
     "done": true
   },
-  "mobpvp:deep_dark": {
-    "criteria": {
-      "deep_dark": "2025-07-31 20:55:15 +0300"
-    },
-    "done": true
-  },
   "mobpvp:first": {
     "criteria": {
       "joined_world": "2025-07-31 20:55:14 +0300"
@@ -232,12 +226,6 @@
       "has_iron_ingot": "2025-07-31 20:55:14 +0300"
     },
     "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:plains": "2025-07-31 20:55:15 +0300"
-    },
-    "done": false
   },
   "minecraft:recipes/decorations/smithing_table": {
     "criteria": {
@@ -320,6 +308,54 @@
   "minecraft:recipes/combat/diamond_boots": {
     "criteria": {
       "has_diamond": "2025-07-31 20:55:14 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-07-31 20:55:15 +0300"
+    },
+    "done": false
+  },
+  "mobpvp:iaiaiaiaiaiaiaiaiia": {
+    "criteria": {
+      "visited_structure": "2025-09-04 11:55:08 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiaiaia": {
+    "criteria": {
+      "visited_structure": "2025-09-04 11:55:08 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiaiaiaiaiaiiaiaiaaiai": {
+    "criteria": {
+      "visited_structure": "2025-09-04 11:55:08 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:kick": {
+    "criteria": {
+      "hit_mob": "2025-09-04 11:57:13 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaiai": {
+    "criteria": {
+      "visited_structure": "2025-09-04 11:55:08 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:iaia": {
+    "criteria": {
+      "visited_structure": "2025-09-04 11:55:08 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:copperball": {
+    "criteria": {
+      "elytra": "2025-09-04 11:55:07 +0300"
     },
     "done": true
   },

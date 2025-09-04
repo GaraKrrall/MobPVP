@@ -2,8 +2,8 @@
   "parent": "mobpvp:first",
   "display": {
     "icon": { "id": "mobpvp:reinforced_copper_knife" },
-    "title": { "text": "Güçlü Gibi Görünüyor..." },
-    "description": { "text": "Bir Demir İle Güçlendirilmiş Bakır Bıçak Alın."},
+    "title": { "text": "Looks strong..." },
+    "description": { "text": "Get a Copper Knife Reinforced with Iron."},
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true

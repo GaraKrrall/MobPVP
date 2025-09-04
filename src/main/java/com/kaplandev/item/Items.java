@@ -64,7 +64,7 @@ public class Items {
 
     static {
         ORE = GroupItemBuilder.create(ORE_ITEM_KEY, new BlockItem(Blocks.CRUDE_ACIDIC_ORE, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
-        MOB_TABLE = GroupItemBuilder.create(MOB_TABLE_ITEM_KEY, new BlockItem(Blocks.MOB_TABLE, new Item.Settings())).register();
+        MOB_TABLE = GroupItemBuilder.create(MOB_TABLE_ITEM_KEY, new BlockItem(Blocks.MOB_TABLE, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         PVP_SPAWNER_ITEM = GroupItemBuilder.create(PVP_SPAWNER_ITEM_KEY, new BlockItem(Blocks.PVP_SPAWNER, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         PVP_SPAWNER_MAX_ITEM = GroupItemBuilder.create(PVP_SPAWNER_MAX_ITEM_KEY, new BlockItem(Blocks.PVP_SPAWNER_MAX, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         DAMAGED_PVP_SPAWNER_ITEM = GroupItemBuilder.create(DAMAGED_PVP_SPAWNER_ITEM_KEY, new BlockItem(Blocks.DAMAGED_PVP_SPAWNER, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();

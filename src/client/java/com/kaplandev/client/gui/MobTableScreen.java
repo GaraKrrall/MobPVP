@@ -9,27 +9,17 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class MobTableScreen extends HandledScreen<MobTableScreenHandler> {
-    private static final Identifier TEXTURE =
-            Identifier.of("mobpvp", "textures/gui/mob_table.png");
+
 
     public MobTableScreen(MobTableScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
-        this.backgroundWidth = 176; // vanilla crafting table boyutları
+        this.backgroundWidth = 176;
         this.backgroundHeight = 166;
+        BookOpener.openFakeSignedBook();
     }
 
     @Override
     protected void drawBackground(DrawContext context, float delta, int mouseX, int mouseY) {
-        RenderSystem.setShaderTexture(0, TEXTURE);
-        int x = (this.width - this.backgroundWidth) / 2;
-        int y = (this.height - this.backgroundHeight) / 2;
-        context.drawTexture(TEXTURE, x, y, 0, 0, this.backgroundWidth, this.backgroundHeight);
-    }
 
-    @Override
-    public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        this.renderBackground(context, mouseX, mouseY, delta);
-        super.render(context, mouseX, mouseY, delta);
-        this.drawMouseoverTooltip(context, mouseX, mouseY);
     }
 }

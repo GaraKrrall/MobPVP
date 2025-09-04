@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "mobpvp",
-  "version": "testbuild.9",
+  "version": "3.2.0",
   "name": "MobPVP",
   "description": "MobPVP adds a level system to every mob. Stronger mobs drop better loot and may become minibosses.",
   "authors": ["KaplanBedwars"],

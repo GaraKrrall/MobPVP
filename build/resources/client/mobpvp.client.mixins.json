@@ -5,8 +5,7 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "TitleScreenMixin",
-    "BetterTitleScreen",
-    "PanoramaMixin"
+    "BetterTitleScreen"
   ],
   "injectors": {
     "defaultRequire": 1

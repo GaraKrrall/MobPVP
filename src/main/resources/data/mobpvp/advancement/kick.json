@@ -5,10 +5,10 @@
       "id": "minecraft:dragon_egg"
     },
     "title": {
-      "text": "İlk saldırı"
+      "text": "The first attack"
     },
     "description": {
-      "text": "Bir canlıya vur"
+      "text": "Hit a living creature"
     },
     "frame": "task",
     "show_toast": true,

@@ -1,0 +1,40 @@
+{
+  "anvil_cost": 5,
+  "description": {
+    "translate": "enchantment.mobpvp.magmatization"
+  },
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "mobpvp:magmatization_effect",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 0
+          }
+        },
+        "enchanted": "self"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 15
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "feet"
+  ],
+  "supported_items": [
+    "minecraft:leather_boots",
+    "minecraft:iron_boots",
+    "minecraft:diamond_boots",
+    "minecraft:netherite_boots"
+  ],
+  "weight": 100
+}

@@ -5,10 +5,10 @@
       "id": "minecraft:book"
     },
     "title": {
-      "text": "Daha yeni başlıyoruz evlat!"
+      "text": "We're just getting started, son!"
     },
     "description": {
-      "text": "Bir zombi öldür"
+      "text": "Kill a zombie"
     },
     "frame": "task",
     "show_toast": true,

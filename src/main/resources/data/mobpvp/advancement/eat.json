@@ -2,8 +2,8 @@
   "parent": "mobpvp:first",
   "display": {
     "icon": { "id": "minecraft:bread" },
-    "title": { "text": "Afiyet Olsun" },
-    "description": { "text": "Bir ekmek ye." },
+    "title": { "text": "[Enjoy your meal!]" },
+    "description": { "text": "Eat a piece of bread." },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true

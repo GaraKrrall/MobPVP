@@ -2,8 +2,8 @@
   "parent": "mobpvp:first",
   "display": {
     "icon": { "id": "mobpvp:reinforced_copper_mace" },
-    "title": { "text": "Biraz Daha Güçlü..." },
-    "description": { "text": "Bir Demir İle Güçlendirilmiş Bakır Gürz Alın." },
+    "title": { "text": "A Bit Stronger..." },
+    "description": { "text": "Take a Copper Mace Reinforced with Iron." },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true

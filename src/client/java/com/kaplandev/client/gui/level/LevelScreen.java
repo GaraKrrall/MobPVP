@@ -34,12 +34,6 @@ public class LevelScreen extends Screen {
         MinecraftClient client = MinecraftClient.getInstance();
         if (client.player == null || client.world == null) return;
 
-        // Eğer oyuncu bir sunucudaysa (entegre değilse yani local değilse)
-        if (!client.isInSingleplayer()) {
-            client.setScreen(null); // Ekranı kapat
-            client.player.sendMessage(Text.translatable("key.mobpvp.screenerror"), true);
-            return;
-        }
 
         super.render(context, mouseX, mouseY, delta);
         UUID uuid = client.player.getUuid();
