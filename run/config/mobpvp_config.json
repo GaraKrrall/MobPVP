@@ -1,4 +1,13 @@
 {
+  "customToastTitle": "MobPvP Addon",
+  "customToastMessage": "Hello!",
+  "customToastColor": 16776960,
+  "customToastType": "PERIODIC_NOTIFICATION",
   "showAKOTOriginalMessage": true,
-  "showWelcomePopup": false
+  "showLevelHud": false,
+  "showMobPvPPanorama": true,
+  "debugHasShownToast": true,
+  "hasOpenedBetaNotice": false,
+  "levelColor": 16776960,
+  "xpColor": 16777215
 }

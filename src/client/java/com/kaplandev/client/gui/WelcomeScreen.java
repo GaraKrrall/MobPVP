@@ -1,6 +1,6 @@
 package com.kaplandev.client.gui;
 
-import com.kaplandev.client.config.ConfigManager;
+/*import com.kaplandev.client.config.ConfigManager;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
@@ -58,3 +58,4 @@ public class WelcomeScreen extends Screen {
         return false;
     }
 }
+*/

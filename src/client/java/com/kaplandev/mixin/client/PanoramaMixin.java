@@ -1,8 +1,14 @@
 package com.kaplandev.mixin.client;
 
+import com.kaplandev.client.config.ConfigManager;
+
+import me.shedaniel.autoconfig.AutoConfig;
+
+import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.RotatingCubeMapRenderer;
 import net.minecraft.client.gui.CubeMapRenderer;
 import net.minecraft.util.Identifier;
+
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;
@@ -18,9 +24,21 @@ public class PanoramaMixin {
     @Shadow @Final
     private CubeMapRenderer cubeMap;
 
-    @Inject(method = "<init>", at = @At("TAIL"))
-    private void onInit(CubeMapRenderer original, CallbackInfo ci) {
-        Identifier myPanorama = Identifier.of("mobpvp", "textures/gui/title/panorama");
-        this.cubeMap = new CubeMapRenderer(myPanorama);
+    private boolean addon$lastState = false;
+
+    private static final Identifier VANILLA_PANORAMA =
+            Identifier.ofVanilla("textures/gui/title/background/panorama");
+    private static final Identifier MOBPVP_PANORAMA =
+            Identifier.of("mobpvp", "textures/gui/title/panorama");
+
+    @Inject(method = "render", at = @At("HEAD"))
+    private void addon$onRender(DrawContext context, int width, int height, float alpha, float tickDelta, CallbackInfo ci) {
+        ConfigManager config = AutoConfig.getConfigHolder(ConfigManager.class).getConfig();
+        boolean enabled = config.showMobPvPPanorama;
+
+        if (enabled != addon$lastState) {
+            this.cubeMap = new CubeMapRenderer(enabled ? MOBPVP_PANORAMA : VANILLA_PANORAMA);
+            addon$lastState = enabled;
+        }
     }
 }

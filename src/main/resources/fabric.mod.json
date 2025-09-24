@@ -19,6 +19,9 @@
     ],
     "main": [
       "com.kaplandev.mobpvp"
+    ],
+    "modmenu": [
+      "com.kaplandev.client.config.MobPvpModMenuIntegration"
     ]
   },
   "mixins": [
@@ -32,5 +35,11 @@
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
     "minecraft": "${minecraft_version}"
+  },
+  "breaks": {
+    "addon": "<=1.1"
+  },
+  "suggests": {
+    "modmenu": "*"
   }
 }

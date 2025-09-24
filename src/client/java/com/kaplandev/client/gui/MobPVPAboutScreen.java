@@ -1,6 +1,6 @@
 package com.kaplandev.client.gui;
 
-import net.minecraft.client.gui.screen.Screen;
+/*import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.gui.widget.MultilineTextWidget;
 import net.minecraft.text.Style;
@@ -73,3 +73,4 @@ Stronger mobs drop better loot and may become minibosses.
         return false;
     }
 }
+*/

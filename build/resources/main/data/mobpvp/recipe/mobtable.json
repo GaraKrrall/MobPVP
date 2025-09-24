@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+     "BB",
+     "SS"
+  ],
+  "key": {
+    "B": { "item": "minecraft:chiseled_bookshelf" },
+    "S": { "item": "minecraft:oak_planks" }
+  },
+  "result": {
+    "id": "mobpvp:mobtable_item",
+    "count": 1
+  }
+}

@@ -1,7 +1,8 @@
 package com.kaplandev.mixin.client;
 
-import com.kaplandev.client.gui.MobPVPAboutScreen;
+import com.kaplandev.client.config.ConfigManager;
 
+import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.gui.screen.Screen;
@@ -27,8 +28,8 @@ public abstract class TitleScreenMixin extends Screen {
         int y = padding;
 
         this.addDrawableChild(ButtonWidget.builder(
-                Text.literal("ⓘ"),
-                b -> this.client.setScreen(new MobPVPAboutScreen(this))
+                Text.literal("⚙"),
+                b -> this.client.setScreen(AutoConfig.getConfigScreen(ConfigManager.class, this).get())
         ).dimensions(x, y, iconSize, iconSize).build());
     }
 }

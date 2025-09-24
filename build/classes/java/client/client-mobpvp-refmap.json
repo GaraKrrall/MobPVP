@@ -3,11 +3,14 @@
     "com/kaplandev/mixin/client/BetterTitleScreen": {
       "get": "Lnet/minecraft/class_4008;method_18174()Lnet/minecraft/class_8519;"
     },
+    "com/kaplandev/mixin/client/GameMenuScreenMixin": {
+      "init": "Lnet/minecraft/class_433;method_25426()V"
+    },
     "com/kaplandev/mixin/client/InGameHudMixin": {
       "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V"
     },
     "com/kaplandev/mixin/client/PanoramaMixin": {
-      "<init>": "Lnet/minecraft/class_766;<init>(Lnet/minecraft/class_751;)V"
+      "render": "Lnet/minecraft/class_766;method_3317(Lnet/minecraft/class_332;IIFF)V"
     },
     "com/kaplandev/mixin/client/SplashOverlayMixin": {
       "<init>": "Lnet/minecraft/class_425;<init>(Lnet/minecraft/class_310;Lnet/minecraft/class_4011;Ljava/util/function/Consumer;Z)V",
@@ -25,11 +28,14 @@
       "com/kaplandev/mixin/client/BetterTitleScreen": {
         "get": "Lnet/minecraft/class_4008;method_18174()Lnet/minecraft/class_8519;"
       },
+      "com/kaplandev/mixin/client/GameMenuScreenMixin": {
+        "init": "Lnet/minecraft/class_433;method_25426()V"
+      },
       "com/kaplandev/mixin/client/InGameHudMixin": {
         "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V"
       },
       "com/kaplandev/mixin/client/PanoramaMixin": {
-        "<init>": "Lnet/minecraft/class_766;<init>(Lnet/minecraft/class_751;)V"
+        "render": "Lnet/minecraft/class_766;method_3317(Lnet/minecraft/class_332;IIFF)V"
       },
       "com/kaplandev/mixin/client/SplashOverlayMixin": {
         "<init>": "Lnet/minecraft/class_425;<init>(Lnet/minecraft/class_310;Lnet/minecraft/class_4011;Ljava/util/function/Consumer;Z)V",

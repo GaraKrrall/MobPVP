@@ -1,73 +1,61 @@
 package com.kaplandev.client.config;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import net.fabricmc.loader.api.FabricLoader;
+import com.kaplanlib.client.api.ToastType;
 
-public class ConfigManager {
-    private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
-    private static Path configPath;
+import me.shedaniel.autoconfig.ConfigData;
+import me.shedaniel.autoconfig.annotation.Config;
+import me.shedaniel.autoconfig.annotation.ConfigEntry;
+import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
-    public static boolean showAKOTOriginalMessage = true;
-    public static boolean showWelcomePopup = true;
+@Config(name = "mobpvp_config")
+public class ConfigManager implements ConfigData {
+    @ConfigEntry.Gui.NoTooltip
+    @Comment("Custom toast title.")
+    public String customToastTitle = "MobPvP Addon";
 
+    @ConfigEntry.Gui.NoTooltip
+    @Comment("Custom toast message.")
+    public String customToastMessage = "Hello!";
 
-    public static void initialize() {
-        try {
-            configPath = FabricLoader.getInstance().getConfigDir().resolve("mobpvp_config.json");
+    @ConfigEntry.ColorPicker(allowAlpha = false)
+    @Comment("Custom toast text color. Default: Yellow")
+    public int customToastColor = 0xFFFF00;
 
-            // Config klasörü yoksa oluştur
-            Files.createDirectories(configPath.getParent());
+    @ConfigEntry.Gui.NoTooltip
+    @Comment("Toast style type.")
+    public ToastType customToastType = ToastType.PERIODIC_NOTIFICATION;
 
-            // Config dosyası yoksa oluştur
-            if (!Files.exists(configPath)) {
-                save();
-            } else {
-                load();
-            }
-        } catch (IOException e) {
-            System.err.println("MobPVP config başlatılamadı: " + e.getMessage());
-        }
-    }
+    @ConfigEntry.Gui.NoTooltip
+    @Comment("Shows the original AKOT message.")
+    public boolean showAKOTOriginalMessage = true;
 
-    public static void save() {
-        try {
-            ConfigData data = new ConfigData(showAKOTOriginalMessage, showWelcomePopup);
-            String json = GSON.toJson(data);
-            Files.writeString(configPath, json);
-        } catch (IOException e) {
-            System.err.println("MobPVP config kaydedilemedi: " + e.getMessage());
-        }
-    }
+    @ConfigEntry.Category("old_features")
+    @ConfigEntry.Gui.NoTooltip
+    @Comment("Shows level and XP information on the in-game HUD.")
+    public boolean showLevelHud = false;
 
+    @ConfigEntry.Category("old_features")
+    @ConfigEntry.Gui.NoTooltip
+    @Comment("Enables the MobPvP panorama in the main menu background.")
+    public boolean showMobPvPPanorama = true;
 
-    public static void load() {
-        try {
-            String json = Files.readString(configPath);
-            ConfigData data = GSON.fromJson(json, ConfigData.class);
-            if (data != null) {
-                showAKOTOriginalMessage = data.showAKOTOriginalMessage;
-                showWelcomePopup = data.showWelcomePopup;
-            }
-        } catch (IOException e) {
-            System.err.println("MobPVP config yüklenemedi: " + e.getMessage());
-        }
-    }
+    @ConfigEntry.Category("debug")
+    @ConfigEntry.Gui.NoTooltip
+    @Comment("")
+    public boolean debugHasShownToast = false;
 
+    @ConfigEntry.Category("debug")
+    @ConfigEntry.Gui.NoTooltip
+    @Comment("")
+    public boolean hasOpenedBetaNotice = false;
 
-    private static class ConfigData {
-        boolean showAKOTOriginalMessage = true;
-        boolean showWelcomePopup = true;
+    @ConfigEntry.Category("old_features")
+    @ConfigEntry.ColorPicker(allowAlpha = false)
+    @Comment("Sets the text color for the level display. Default: Yellow")
+    public int levelColor = 0xFFFF00;
 
-
-        public ConfigData() {} // GSON için boş constructor
-
-        ConfigData(boolean showAKOTOriginalMessage, boolean showWelcomePopup) {
-            this.showAKOTOriginalMessage = showAKOTOriginalMessage;
-            this.showWelcomePopup = showWelcomePopup;
-        }
-    }
+    @ConfigEntry.Category("old_features")
+    @ConfigEntry.ColorPicker(allowAlpha = false)
+    @Comment("Sets the text color for the XP display. Default: White")
+    public int xpColor = 0xFFFFFF;
 }

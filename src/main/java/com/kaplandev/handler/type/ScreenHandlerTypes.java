@@ -1,6 +1,7 @@
 package com.kaplandev.handler.type;
 
 import com.kaplandev.handler.MobTableScreenHandler;
+
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.resource.featuretoggle.FeatureFlags;

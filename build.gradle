@@ -33,6 +33,8 @@ repositories {
         url = "https://cursemaven.com"
     }
     mavenCentral()
+    maven { url "https://maven.shedaniel.me"}
+    maven { url "https://maven.wispforest.io" } // wispforest maven
     flatDir {
         dirs 'libs'
     }
@@ -46,7 +48,14 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    modImplementation name: 'MobLiB-1.2'
+    modImplementation name: 'MobLiB-1.3-build.3'
+    modImplementation "io.wispforest:owo-lib:${project.owo_version}"
+    include "io.wispforest:owo-lib:${project.owo_version}"
+
+    modImplementation "curse.maven:cloth-config-348521:5729125"
+    modApi("me.shedaniel.cloth:basic-math:+")
+
+    modCompileOnly "curse.maven:modmenu-308702:5810603"
 }
 
 processResources {

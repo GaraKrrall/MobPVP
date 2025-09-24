@@ -1,5 +1,3 @@
-/weather thunder
-/time set day
 /weather clear
 /time set day
 /reload
@@ -48,3 +46,5 @@
 /give @a minecraft:chiseled_bookshelf
 /recipe give Player122 mobpvp:mobtable
 /time set day
+/effect give Player932 minecraft:strength infinite 255 true
+/summon minecraft:ender_dragon

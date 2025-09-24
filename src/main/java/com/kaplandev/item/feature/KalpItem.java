@@ -6,6 +6,7 @@ import com.kaplandev.entity.EntityType;
 import com.kaplandev.entity.boss.BulwarkEntity;
 
 import com.kaplanlib.api.feature.ItemFeature;
+
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -87,7 +88,6 @@ public class KalpItem extends Item implements ItemFeature {
             }
 
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, duration, amplifier, false, true));
-            player.sendMessage(Text.literal("§a+2 Kalp (30 dakika)"), true);
             player.playSound(SoundEvents.ENTITY_PLAYER_LEVELUP, 1.0f, 1.0f);
             stack.decrement(1);
         }

@@ -34,5 +34,20 @@
   "itemGroup.beta.block": "Beta Blocks",
   "enchantment.mobpvp.thundering": "Coppered",
   "enchantment.mobpvp.certainty": "Certainty",
-  "enchantment.mobpvp.magmatization": "Magmatization"
+  "enchantment.mobpvp.magmatization": "Magmatization",
+  "text.autoconfig.mobpvp_config.title": "MobPvP Config",
+  "text.autoconfig.mobpvp_config.option.customToastTitle": "Custom toast title",
+  "text.autoconfig.mobpvp_config.option.customToastMessage": "Custom toast message",
+  "text.autoconfig.mobpvp_config.option.customToastColor": "Custom toast text color",
+  "text.autoconfig.mobpvp_config.option.customToastType": "Toast style type",
+  "text.autoconfig.mobpvp_config.option.showAKOTOriginalMessage": "Show original AKOT message",
+  "text.autoconfig.mobpvp_config.category.old_features": "Old Features",
+  "text.autoconfig.mobpvp_config.option.showLevelHud": "Show level & XP HUD",
+  "text.autoconfig.mobpvp_config.option.showMobPvPPanorama": "Enable MobPvP panorama",
+  "text.autoconfig.mobpvp_config.option.levelColor": "Level text color",
+  "text.autoconfig.mobpvp_config.option.xpColor": "XP text color",
+  "text.autoconfig.mobpvp_config.category.default": "General Settings",
+  "text.autoconfig.mobpvp_config.category.debug": "Debug",
+  "text.autoconfig.mobpvp_config.option.debugHasShownToast": "Debug: Has shown toast",
+  "text.autoconfig.mobpvp_config.option.hasOpenedBetaNotice": "Debug: Has opened beta notice"
 }

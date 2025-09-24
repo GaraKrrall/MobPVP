@@ -34,5 +34,20 @@
   "itemGroup.beta.block": "Beta Blocks",
   "enchantment.mobpvp.thundering": "Bakırlandırılmış",
   "enchantment.mobpvp.certainty": "Kesinlik",
-  "enchantment.mobpvp.magmatization": "Magmalaştırma"
+  "enchantment.mobpvp.magmatization": "Magmalaştırma",
+  "text.autoconfig.mobpvp_config.title": "MobPvP Ayarları",
+  "text.autoconfig.mobpvp_config.option.customToastTitle": "Özel bildirim başlığı",
+  "text.autoconfig.mobpvp_config.option.customToastMessage": "Özel bildirim mesajı",
+  "text.autoconfig.mobpvp_config.option.customToastColor": "Özel bildirim yazı rengi",
+  "text.autoconfig.mobpvp_config.option.customToastType": "Bildirim stili",
+  "text.autoconfig.mobpvp_config.option.showAKOTOriginalMessage": "Orijinal AKOT mesajını göster",
+  "text.autoconfig.mobpvp_config.category.old_features": "Eski Özellikler",
+  "text.autoconfig.mobpvp_config.option.showLevelHud": "Seviye & XP HUD göster",
+  "text.autoconfig.mobpvp_config.option.showMobPvPPanorama": "MobPvP panoramasını etkinleştir",
+  "text.autoconfig.mobpvp_config.option.levelColor": "Seviye yazı rengi",
+  "text.autoconfig.mobpvp_config.option.xpColor": "XP yazı rengi",
+  "text.autoconfig.mobpvp_config.category.debug": "Hata Ayıklama",
+  "text.autoconfig.mobpvp_config.category.default": "Genel Ayarlar",
+  "text.autoconfig.mobpvp_config.option.debugHasShownToast": "Debug: Bildirim gösterildi mi",
+  "text.autoconfig.mobpvp_config.option.hasOpenedBetaNotice": "Debug: Beta uyarısı açıldı mı"
 }
