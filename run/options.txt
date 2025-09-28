@@ -12,7 +12,7 @@ darknessEffectScale:1.0
 glintSpeed:0.5
 glintStrength:0.75
 prioritizeChunkUpdates:0
-fullscreen:false
+fullscreen:true
 gamma:1.0
 graphicsMode:2
 guiScale:3
@@ -44,7 +44,7 @@ toggleSprint:false
 darkMojangStudiosBackground:false
 hideLightningFlashes:false
 hideSplashTexts:false
-mouseSensitivity:0.5
+mouseSensitivity:0.6267605633802817
 damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:true
@@ -72,7 +72,7 @@ useNativeTransport:true
 mainHand:"right"
 attackIndicator:1
 tutorialStep:none
-mouseWheelSensitivity:1.0
+mouseWheelSensitivity:1.5848931924611136
 rawMouseInput:true
 glDebugVerbosity:1
 skipMultiplayerWarning:true

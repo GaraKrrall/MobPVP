@@ -36,7 +36,7 @@ public class IRON_BLOCK {
 
             if (!player.isCreative()) stack.decrement(1);
 
-            world.breakBlock(pos, false); // 👈 Demir bloğu sil
+            world.breakBlock(pos, false);
 
             BlockPos spawnPos = pos.up();
             for (int i = 0; i < 2; i++) {

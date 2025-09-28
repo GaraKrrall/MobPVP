@@ -49,5 +49,10 @@
   "text.autoconfig.mobpvp_config.category.default": "General Settings",
   "text.autoconfig.mobpvp_config.category.debug": "Debug",
   "text.autoconfig.mobpvp_config.option.debugHasShownToast": "Debug: Has shown toast",
-  "text.autoconfig.mobpvp_config.option.hasOpenedBetaNotice": "Debug: Has opened beta notice"
+  "text.autoconfig.mobpvp_config.option.hasOpenedBetaNotice": "Debug: Has opened beta notice",
+  "entity.minecraft.villager.secret_trader": "Secret trader",
+  "entity.mobpvp.mini_iron_golem": "Tiny Iron Golem",
+  "entity.mobpvp.mad_skeleton": "Mad Skeleton",
+  "entity.mobpvp.mad_zombie": "Mad Zombie",
+  "entity.mobpvp.bulwark": "Bulwark"
 }

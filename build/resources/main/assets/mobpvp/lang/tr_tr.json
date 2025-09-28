@@ -49,5 +49,10 @@
   "text.autoconfig.mobpvp_config.category.debug": "Hata Ayıklama",
   "text.autoconfig.mobpvp_config.category.default": "Genel Ayarlar",
   "text.autoconfig.mobpvp_config.option.debugHasShownToast": "Debug: Bildirim gösterildi mi",
-  "text.autoconfig.mobpvp_config.option.hasOpenedBetaNotice": "Debug: Beta uyarısı açıldı mı"
+  "text.autoconfig.mobpvp_config.option.hasOpenedBetaNotice": "Debug: Beta uyarısı açıldı mı",
+  "entity.minecraft.villager.secret_trader": "Gizli Tüccar",
+  "entity.mobpvp.mini_iron_golem": "Minik Demir Golem",
+  "entity.mobpvp.mad_skeleton": "Deli İskelet",
+  "entity.mobpvp.mad_zombie": "Deli Zombi",
+  "entity.mobpvp.bulwark": "Bulwark"
 }

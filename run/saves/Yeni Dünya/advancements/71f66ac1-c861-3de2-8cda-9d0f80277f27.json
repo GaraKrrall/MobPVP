@@ -71,5 +71,47 @@
     },
     "done": true
   },
+  "minecraft:end/dragon_egg": {
+    "criteria": {
+      "dragon_egg": "2025-09-28 15:25:54 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:kick": {
+    "criteria": {
+      "hit_mob": "2025-09-28 15:26:16 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/netherite_ingot_from_netherite_block": {
+    "criteria": {
+      "has_netherite_block": "2025-09-28 15:25:54 +0300"
+    },
+    "done": true
+  },
+  "minecraft:end/elytra": {
+    "criteria": {
+      "elytra": "2025-09-28 15:25:54 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-09-28 15:26:16 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:mace": {
+    "criteria": {
+      "elytra": "2025-09-28 15:25:54 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:elytra": {
+    "criteria": {
+      "elytra": "2025-09-28 15:25:54 +0300"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

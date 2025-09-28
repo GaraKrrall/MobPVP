@@ -201,7 +201,6 @@ public class FindIngotAndHealGolemGoal extends Goal {
                         miniGolem.setStackInHand(Hand.MAIN_HAND, ItemStack.EMPTY);
 
                         miniGolem.setStackInHand(Hand.MAIN_HAND, ItemStack.EMPTY);
-                        LevelAssigner.updateDisplay(targetGolem);
                         miniGolem.playSound(SoundEvents.ENTITY_IRON_GOLEM_REPAIR, 0.4F, 1.1F);
 
                         // Eğer hala canı tam değilse, tekrar külçe aramaya gönder

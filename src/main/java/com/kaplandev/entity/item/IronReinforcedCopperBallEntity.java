@@ -24,19 +24,39 @@ public class IronReinforcedCopperBallEntity extends ThrownItemEntity {
         if (!this.getWorld().isClient) {
             if (entityHitResult.getEntity() instanceof LivingEntity target) {
                 target.damage(this.getDamageSources().thrown(this, this.getOwner()), 10.0F);
+
+                ((net.minecraft.server.world.ServerWorld) this.getWorld()).spawnParticles(
+                        net.minecraft.particle.ParticleTypes.DAMAGE_INDICATOR,
+                        target.getX(),
+                        target.getBodyY(0.5), // gövde hizasında
+                        target.getZ(),
+                        5,  // kaç partikül çıksın
+                        0.2, 0.2, 0.2, // x,y,z yayılma
+                        0.1  // hız
+                );
             }
             this.discard();
         }
     }
 
-
     @Override
     protected void onCollision(HitResult hitResult) {
         super.onCollision(hitResult);
         if (!this.getWorld().isClient) {
+
+            ((net.minecraft.server.world.ServerWorld) this.getWorld()).spawnParticles(
+                    net.minecraft.particle.ParticleTypes.DAMAGE_INDICATOR,
+                    hitResult.getPos().x,
+                    hitResult.getPos().y,
+                    hitResult.getPos().z,
+                    5,
+                    0.2, 0.2, 0.2,
+                    0.1
+            );
             this.discard();
         }
     }
+
 
     @Override
     protected Item getDefaultItem() {

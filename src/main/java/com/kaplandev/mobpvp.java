@@ -1,8 +1,8 @@
 package com.kaplandev;
 
-import com.kaplandev.enchantment.EnchantmentGet;
-import com.kaplandev.enchantment.effect.MagmatizationEffect;
-import com.kaplandev.villager.Villagers;
+import me.shedaniel.autoconfig.AutoConfig;
+import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
+
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
@@ -57,6 +57,10 @@ import com.kaplandev.enchantment.EnchantmentsAndEffects;
 import com.kaplandev.trade.Trades;
 import com.kaplanlib.api.PluginRegistry;
 import com.kaplanlib.api.annotation.KaplanBedwars;
+import com.kaplandev.enchantment.EnchantmentGet;
+import com.kaplandev.enchantment.effect.MagmatizationEffect;
+import com.kaplandev.villager.Villagers;
+import com.kaplandev.data.LevelData;
 
 import static com.kaplanlib.util.path.Paths.MOBPVP;
 import static com.kaplanlib.util.path.Paths.STARTUP_SOUND_EVENT;
@@ -72,6 +76,8 @@ public final class mobpvp implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        AutoConfig.register(LevelData.class, GsonConfigSerializer::new);
+
         EnchantmentsAndEffects.registerModEnchantmentEffects();
         EnchantmentGet.init();
         WorldGen.register();
@@ -160,16 +166,6 @@ public final class mobpvp implements ModInitializer {
                     }
                 }).start();
 
-            }
-        });
-
-        ServerTickEvents.END_WORLD_TICK.register((ServerWorld world) -> {
-            for (var entity : world.iterateEntities()) {
-                if (!(entity instanceof LivingEntity living)) continue;
-                if (!living.hasCustomName()) continue;
-                if (!LevelAssigner.hasLevel(living)) continue;
-
-                LevelAssigner.updateDisplay(living);
             }
         });
 

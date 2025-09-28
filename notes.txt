@@ -1,9 +1,8 @@
-Minik demir golemlerin takip ettiği golem öldükten sonra donması sorunu düzeltildi
-Gereksiz yere bingo yazması çözüldü
-Güçlendirilmiş bakır bıçağın elde çok kötü durma sorunu çözüldü
-Güçlendirilmiş bakır Topuzun elde çok kötü durma sorunu çözüldü
-PvE çağrıcıların arkalarının gözükmemesi hatası düzeltildi
-Süper PvE çağrıcılarının uzaklaşınca normale dönüşme hatası düzeltildi
+Canlıların seviyelerinin sürekli gösterilmesi çözüldü.
+Canlıların seviyesisin oyundan çık-gir den sonra güncellenmemesi çözüldü
+Canlıların ismini değiştirememe sorunu çözüldü. Örn. [Level: 1] Villager - 26,9/27 isimili bir canlıya "tospik" ismini verirseniz artık [Level: 1] tospik - 26,9/27 olarak gözükür.
+Bebek canlıların isminin saçma görünmesi çözüldü.
+İsimlendirme sorunları çözüldü.
 
-Bakır çubuk artık yere konulabilir
-Arena yapısı güncellendi
+
+Artık Bakır top düştüğü yerde küçük bir partikül çıkarır
