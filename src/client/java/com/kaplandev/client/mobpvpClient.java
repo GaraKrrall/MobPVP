@@ -11,6 +11,7 @@ import com.kaplandev.client.renderer.entity.block.PvpSpawnerMaxBlockRenderer;
 import com.kaplandev.client.renderer.entity.boss.BulwarkRenderer;
 import com.kaplandev.client.renderer.entity.mob.CustomZombieRenderer;
 import com.kaplandev.client.renderer.entity.mob.SuperZombieRenderer;
+import com.kaplandev.client.renderer.entity.mobpvp.MiniCopperGolemRenderer;
 import com.kaplandev.client.renderer.entity.mobpvp.MiniIronGolemRenderer;
 import com.kaplandev.entity.EntityType;
 import com.kaplandev.handler.type.ScreenHandlerTypes;
@@ -25,18 +26,12 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.RenderTickCounter;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.client.render.entity.SkeletonEntityRenderer;
-import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.hit.EntityHitResult;
 
@@ -62,6 +57,7 @@ public class mobpvpClient implements ClientModInitializer {
         EntityRendererRegistry.register(EntityType.MAD_SKELETON, SkeletonEntityRenderer::new);
         EntityRendererRegistry.register(EntityType.BULWARK, BulwarkRenderer::new);
         EntityRendererRegistry.register(EntityType.MINIGOLEM, MiniIronGolemRenderer::new);
+        EntityRendererRegistry.register(EntityType.MINIGOLEM_COPPER, MiniCopperGolemRenderer::new);
         EntityRendererRegistry.register(EntityType.IRON_REINFORCED_COPPER_BALL, FlyingItemEntityRenderer::new);
 
         HandledScreens.register(ScreenHandlerTypes.MOB_TABLE, MobTableScreen::new);

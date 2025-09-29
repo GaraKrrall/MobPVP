@@ -28,7 +28,8 @@ public class MiniIronGolemEntity extends IronGolemEntity {
         return IronGolemEntity.createIronGolemAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 10.0D)     // 5  ❤️
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.55D)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 0.0D);  // Saldırı yapmasın
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 0.0D);
+
     }
 
     @Override

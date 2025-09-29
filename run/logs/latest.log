@@ -1,5 +1,5 @@
-[16:16:47] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
-[16:16:48] [main/INFO] (FabricLoader) Loading 62 mods:
+[21:27:34] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
+[21:27:35] [main/INFO] (FabricLoader) Loading 62 mods:
 	- cloth-basic-math 0.6.1
 	- cloth-config 15.0.140
 	- fabric-api 0.116.5+1.21.1
@@ -57,182 +57,383 @@
 	- minecraft 1.21.1
 	- mixinextras 0.4.1
 	- moblib 1.3-build.3
-	- mobpvp 3.2.1
+	- mobpvp 3.2.2-pre1
 	- modmenu 11.0.3
 	   \-- placeholder-api 2.4.0-pre.2+1.21
 	- owo 0.12.15.4+1.21
 	- panorama_screenshot 1.0.0-1.21.1
-[16:16:54] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/akgls/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/22f9eb729e216a091673a574a5906dc1b9027fb3/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[16:16:54] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[16:16:54] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[16:16:54] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[16:16:55] [main/WARN] (FabricLoader/Mixin) Error loading class: xyz/nucleoid/server/translations/impl/language/SystemDelegatedLanguage (java.lang.ClassNotFoundException: xyz/nucleoid/server/translations/impl/language/SystemDelegatedLanguage)
-[16:16:55] [main/WARN] (FabricLoader/Mixin) Error loading class: org/jetbrains/annotations/ApiStatus$Internal (java.lang.ClassNotFoundException: org/jetbrains/annotations/ApiStatus$Internal)
-[16:16:55] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[16:16:58] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 681 milliseconds
-[16:17:05] [Render thread/WARN] (FabricLoader/Mixin) Error loading class: org/quiltmc/loader/impl/game/minecraft/Hooks (java.lang.ClassNotFoundException: org/quiltmc/loader/impl/game/minecraft/Hooks)
-[16:17:05] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[16:17:05] [Render thread/INFO] (Minecraft) Setting user: Player626
-[16:17:06] [Render thread/INFO] (Minecraft) [STDOUT]: Registered Enchantments
-[16:17:06] [Render thread/INFO] (Minecraft) [STDOUT]: Registered custom villager professions for mobpvp
-[16:17:06] [Render thread/ERROR] (Minecraft) No data fixer registered for reinforced_copper_ball
-[16:17:06] [Render thread/INFO] (Minecraft) [STDOUT]: Custom entities registered.
-[16:17:06] [Render thread/INFO] (Minecraft) [STDOUT]: Mob özellikleri kaydedildi
-[16:17:06] [Render thread/INFO] (owo) Here at Wisp Forest© we employ Wisp Tech Support™ magic, which solves your problem when you ask
-[16:17:06] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[16:17:06] [Render thread/INFO] (Mod Menu/Update Checker) Checking mod updates...
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-item-api-v1 11.2.0+3b3cb2e819 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-particles-v1 4.0.2+6573ed8c19 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-screen-handler-api-v1 1.3.90+b559734419 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-data-attachment-api-v1 1.4.5+6116a37819 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-object-builder-api-v1 15.2.1+40875a9319 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-item-group-api-v1 4.1.7+def88e3a19 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-block-view-api-v2 1.0.11+ebb2264e19 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for mobpvp 3.2.1 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-message-api-v1 6.0.14+8aaf3aca19 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-registry-sync-v0 5.3.1+e3eddc2119 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-lifecycle-events-v1 2.6.0+0865547519 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-rendering-data-attachment-v1 0.3.49+73761d2e19 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-command-api-v2 2.2.28+6ced4dd919 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-resource-loader-v0 1.3.1+5b5275af19 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-transfer-api-v1 5.4.3+c24bd99419 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-recipe-api-v1 5.0.14+248df81c19 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-networking-api-v1 4.3.0+c7469b2119 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-game-rule-api-v1 1.0.53+6ced4dd919 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-entity-events-v1 1.8.0+2b27e0a419 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-data-generation-api-v1 20.2.33+37516cd619 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-rendering-fluids-v1 3.1.6+1daea21519 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for moblib 1.3-build.3 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-events-interaction-v0 0.7.13+ba9dae0619 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [Render thread/WARN] (FabricLoader) getRootPath access for minecraft 1.21.1 with multiple paths, returning only one which may incur unexpected behavior!
-[16:17:07] [ModMenu/Update Checker/Fabric Loader/INFO] (Mod Menu/Update Checker) Update available for 'fabricloader@0.16.14'
-[16:17:07] [Render thread/INFO] (owo) Services frozen by 'net.minecraft.client.MinecraftClient'
-[16:17:07] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
-[16:17:09] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, cloth-config, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, mobpvp, modmenu, owo, panorama_screenshot
-[16:17:09] [Worker-Main-3/INFO] (Minecraft) Found unifont_all_no_pua-15.1.05.hex, loading
-[16:17:10] [Worker-Main-3/INFO] (Minecraft) Found unifont_jp_patch-15.1.05.hex, loading
-[16:17:12] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
-[16:17:12] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[16:17:12] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on SES (VB-Audio Virtual Cable)
-[16:17:12] [Render thread/INFO] (Minecraft) Sound engine started
-[16:17:12] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[16:17:12] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[16:17:12] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[16:17:12] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[16:17:12] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[16:17:12] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[16:17:12] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[16:17:12] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[16:17:12] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[16:17:12] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[16:17:12] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[16:17:12] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[16:17:12] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[16:17:12] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[16:17:12] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[16:17:19] [Render thread/INFO] (Minecraft) Loaded 1308 recipes
-[16:17:19] [Render thread/INFO] (Minecraft) Loaded 1414 advancements
-[16:17:20] [Render thread/INFO] (BiomeModificationImpl) Applied 1 biome modifications to 1 of 64 new biomes in 6.972 ms
-[16:17:20] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.1
-[16:17:20] [Server thread/INFO] (Minecraft) Generating keypair
-[16:17:20] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[16:17:20] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %0
-[16:17:20] [Render thread/INFO] (Minecraft) Time elapsed: 377 ms
-[16:17:21] [Server thread/INFO] (Minecraft) Changing view distance to 32, from 10
-[16:17:21] [Server thread/INFO] (Minecraft) Changing simulation distance to 32, from 0
-[16:17:22] [Server thread/INFO] (Minecraft) Player626[local:E:fce20ea1] logged in with entity id 52 at (928.5800296301645, -45.012520046119306, 981.3155295292215)
-[16:17:22] [Server thread/INFO] (Minecraft) Player626 oyuna katıldı
-[16:17:22] [Server thread/INFO] (Minecraft) Player626, [İstikbal Göklerdedir] hedefine ulaştı
-[16:17:22] [Server thread/INFO] (Minecraft) Player626, [[Reach for the Skies]] meydan okumasını tamamladı
-[16:17:22] [Server thread/INFO] (Minecraft) Player626, [[Why is it so heavy?]] gelişimini yaptı
-[16:17:22] [Server thread/INFO] (Minecraft) Player626, [A Bit Stronger...] meydan okumasını tamamladı
-[16:17:22] [Server thread/INFO] (Minecraft) Player626, [Yeni Nesil] hedefine ulaştı
-[16:17:22] [Server thread/INFO] (Minecraft) Player626, [[MobPVP]] meydan okumasını tamamladı
-[16:17:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Player626, [İstikbal Göklerdedir] hedefine ulaştı
-[16:17:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Player626, [[Reach for the Skies]] meydan okumasını tamamladı
-[16:17:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Player626, [[Why is it so heavy?]] gelişimini yaptı
-[16:17:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Player626, [A Bit Stronger...] meydan okumasını tamamladı
-[16:17:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Player626, [Yeni Nesil] hedefine ulaştı
-[16:17:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Player626, [[MobPVP]] meydan okumasını tamamladı
-[16:17:38] [Render thread/INFO] (Minecraft) Loaded 40 advancements
-[16:17:49] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2095ms or 41 ticks behind
-[16:18:16] [Server thread/INFO] (Minecraft) [Player626: Dünya başlangıç noktası 765, -61, 932, [0.0] olarak ayarlandı]
-[16:18:16] [Render thread/INFO] (Minecraft) [System] [CHAT] Dünya başlangıç noktası 765, -61, 932, [0.0] olarak ayarlandı
-[16:18:26] [Server thread/INFO] (Minecraft) [Player626: Player626 için minecraft:overworld boyutundaki başlangıç noktası 765,-59,923 [0.0] olarak ayarlandı]
-[16:18:26] [Render thread/INFO] (Minecraft) [System] [CHAT] Player626 için minecraft:overworld boyutundaki başlangıç noktası 765,-59,923 [0.0] olarak ayarlandı
-[16:18:32] [Server thread/INFO] (Minecraft) [Player626: Oyun modunuz Hayatta Kalma Modu olarak ayarlandı]
-[16:18:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Hayatta Kalma Modu olarak ayarlandı
-[16:18:33] [Server thread/INFO] (Minecraft) Villager VillagerEntity['§c[Level: 2] §fVillager §7- §a24,4§7/§c31 ❤'/99, l='ServerLevel[Ana dünya]', x=766.82, y=-59.00, z=917.50] died, message: '§c[Level: 2] §fVillager §7- §a24,4§7/§c31 ❤, Deli Zombi tarafından katledildi'
-[16:18:33] [Server thread/INFO] (Minecraft) Named entity VillagerEntity['§c[Level: 2] §fVillager §7- §a24,4§7/§c31 ❤'/99, l='ServerLevel[Ana dünya]', x=766.82, y=-59.00, z=917.50] died: §c[Level: 2] §fVillager §7- §a24,4§7/§c31 ❤, Deli Zombi tarafından katledildi
-[16:18:33] [Render thread/INFO] (Minecraft) Villager VillagerEntity['§c[Level: 2] §fVillager §7- §a20,0§7/§c31 ❤'/99, l='ClientLevel', x=766.89, y=-58.21, z=917.97] died, message: '§c[Level: 2] §fVillager §7- §a20,0§7/§c31 ❤ öldü'
-[16:18:37] [Server thread/INFO] (Minecraft) Player626, Deli Zombi tarafından katledildi
-[16:18:37] [Server thread/INFO] (Minecraft) Player626, [[Last Breath]] hedefine ulaştı
-[16:18:37] [Render thread/INFO] (Minecraft) [System] [CHAT] Player626, Deli Zombi tarafından katledildi
-[16:18:37] [Render thread/INFO] (Minecraft) [System] [CHAT] Player626, [[Last Breath]] hedefine ulaştı
-[16:18:37] [Render thread/INFO] (Minecraft) Loaded 76 advancements
-[16:18:40] [Server thread/INFO] (Minecraft) [Player626: Oyun modunuz Yaratıcı Mod olarak ayarlandı]
-[16:18:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Yaratıcı Mod olarak ayarlandı
-[16:18:42] [Server thread/INFO] (Minecraft) Villager VillagerEntity['Ad Etiketiaa'/70, l='ServerLevel[Ana dünya]', x=777.72, y=-60.06, z=929.27] died, message: 'Ad Etiketiaa, Deli Zombi tarafından katledildi'
-[16:18:42] [Server thread/INFO] (Minecraft) Named entity VillagerEntity['Ad Etiketiaa'/70, l='ServerLevel[Ana dünya]', x=777.72, y=-60.06, z=929.27] died: Ad Etiketiaa, Deli Zombi tarafından katledildi
-[16:18:43] [Render thread/INFO] (Minecraft) Villager VillagerEntity['Ad Etiketiaa'/70, l='ClientLevel', x=777.40, y=-60.06, z=929.58] died, message: 'Ad Etiketiaa öldü'
-[16:18:43] [Server thread/INFO] (Minecraft) Player626, [The first attack] gelişimini yaptı
-[16:18:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Player626, [The first attack] gelişimini yaptı
-[16:18:43] [Render thread/INFO] (Minecraft) Loaded 76 advancements
-[16:18:44] [Server thread/INFO] (Minecraft) Villager VillagerEntity['Köylü'/92, l='ServerLevel[Ana dünya]', x=775.35, y=-60.00, z=922.59] died, message: 'Köylü, Deli Zombi tarafından katledildi'
-[16:18:44] [Render thread/INFO] (Minecraft) Villager VillagerEntity['§c[Level: 1] §fKöylü §7- §a13,9§7/§c63 ❤'/92, l='ClientLevel', x=775.35, y=-60.00, z=922.59] died, message: '§c[Level: 1] §fKöylü §7- §a13,9§7/§c63 ❤ öldü'
-[16:18:53] [Server thread/INFO] (Minecraft) Villager VillagerEntity['bu-malın-önde-gideni'/65, l='ServerLevel[Ana dünya]', x=809.23, y=-60.00, z=931.27] died, message: 'bu-malın-önde-gideni, Deli Zombi tarafından katledildi'
-[16:18:53] [Server thread/INFO] (Minecraft) Named entity VillagerEntity['bu-malın-önde-gideni'/65, l='ServerLevel[Ana dünya]', x=809.23, y=-60.00, z=931.27] died: bu-malın-önde-gideni, Deli Zombi tarafından katledildi
-[16:18:53] [Render thread/INFO] (Minecraft) Villager VillagerEntity['bu-malın-önde-gideni'/65, l='ClientLevel', x=808.57, y=-60.00, z=930.57] died, message: 'bu-malın-önde-gideni öldü'
-[16:18:56] [Server thread/INFO] (Minecraft) Named entity ZombieHorseEntity['BEN ÇOK BÜYÜK BİR MALIM'/53, l='ServerLevel[Ana dünya]', x=809.46, y=-60.00, z=954.71] died: BEN ÇOK BÜYÜK BİR MALIM, Deli Zombi tarafından katledildi
-[16:21:12] [Server thread/INFO] (Minecraft) Player626, [Is this really all there is?] gelişimini yaptı
-[16:21:12] [Render thread/INFO] (Minecraft) [System] [CHAT] Player626, [Is this really all there is?] gelişimini yaptı
-[16:21:12] [Render thread/INFO] (Minecraft) Loaded 76 advancements
-[16:21:14] [Server thread/INFO] (Minecraft) [Player626: Oyun modunuz Hayatta Kalma Modu olarak ayarlandı]
-[16:21:14] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Hayatta Kalma Modu olarak ayarlandı
-[16:21:16] [Server thread/INFO] (Minecraft) [Player626: Oyun modunuz Yaratıcı Mod olarak ayarlandı]
-[16:21:16] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Yaratıcı Mod olarak ayarlandı
-[16:21:21] [Render thread/INFO] (Minecraft) Loaded 78 advancements
-[16:21:22] [Server thread/INFO] (Minecraft) [Player626: Oyun modunuz Hayatta Kalma Modu olarak ayarlandı]
-[16:21:22] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Hayatta Kalma Modu olarak ayarlandı
-[16:21:26] [Server thread/INFO] (Minecraft) [Player626: Oyun modunuz Yaratıcı Mod olarak ayarlandı]
-[16:21:26] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Yaratıcı Mod olarak ayarlandı
-[16:21:53] [Render thread/INFO] (Minecraft) Loaded 79 advancements
-[16:22:07] [Render thread/INFO] (Minecraft) [System] [CHAT] [Hata Ayıklama]: Vurma kutuları: görünür
-[16:22:15] [Render thread/INFO] (Minecraft) [System] [CHAT] [Hata Ayıklama]: Vurma kutuları: gizli
-[16:23:25] [Server thread/INFO] (Minecraft) [Player626: Anında Sağlık etkisi, Demir Golem hedefine uygulandı]
-[16:23:25] [Render thread/INFO] (Minecraft) [System] [CHAT] Anında Sağlık etkisi, Demir Golem hedefine uygulandı
-[16:23:31] [Server thread/INFO] (Minecraft) [Player626: Anında Sağlık etkisi, Demir Golem hedefine uygulandı]
-[16:23:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Anında Sağlık etkisi, Demir Golem hedefine uygulandı
-[16:23:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Etki uygulanamadı (hedef ya etkilere karşı bağışık veya daha güçlü bir etkiye sahip)
-[16:23:48] [Server thread/INFO] (Minecraft) [Player626: Demir Golem hedefinden tüm etkiler kaldırıldı]
-[16:23:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Demir Golem hedefinden tüm etkiler kaldırıldı
-[16:23:52] [Server thread/INFO] (Minecraft) [Player626: Anında Sağlık etkisi, Demir Golem hedefine uygulandı]
-[16:23:52] [Render thread/INFO] (Minecraft) [System] [CHAT] Anında Sağlık etkisi, Demir Golem hedefine uygulandı
-[16:23:58] [Server thread/INFO] (Minecraft) [Player626: Demir Golem hedefinden tüm etkiler kaldırıldı]
-[16:23:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Demir Golem hedefinden tüm etkiler kaldırıldı
-[16:24:02] [Render thread/INFO] (Minecraft) [System] [CHAT] Hedeften alınacak hiçbir etki yok
-[16:24:04] [Server thread/INFO] (Minecraft) [Player626: Anında Sağlık etkisi, Demir Golem hedefine uygulandı]
-[16:24:04] [Render thread/INFO] (Minecraft) [System] [CHAT] Anında Sağlık etkisi, Demir Golem hedefine uygulandı
-[16:24:09] [Server thread/INFO] (Minecraft) Named entity CatEntity['§c[Level: 12] §fCat §7- §a35,6§7/§c36 ❤'/101, l='ServerLevel[Ana dünya]', x=777.20, y=-60.00, z=946.52] died: §c[Level: 12] §fCat §7- §a35,6§7/§c36 ❤, Deli Zombi tarafından katledildi
-[16:31:27] [Render thread/INFO] (Minecraft) Loaded 88 advancements
-[16:32:40] [Server thread/INFO] (Minecraft) [Player626: Player626; 0.500000, 0.000000, 0.500000 konumuna ışınlandı]
-[16:32:40] [Render thread/INFO] (Minecraft) [System] [CHAT] Player626; 0.500000, 0.000000, 0.500000 konumuna ışınlandı
-[16:33:16] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[16:33:16] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
-[16:33:16] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
-[16:33:16] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
-[16:33:18] [Render thread/INFO] (Minecraft) Stopping!
-[16:33:19] [Server thread/INFO] (Minecraft) Player626 lost connection: Bağlantı kesildi
-[16:33:19] [Server thread/INFO] (Minecraft) Player626 oyundan ayrıldı
-[16:33:19] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[16:33:19] [Server thread/INFO] (Minecraft) Stopping server
-[16:33:19] [Server thread/INFO] (Minecraft) Saving players
-[16:33:19] [Server thread/INFO] (Minecraft) Saving worlds
-[16:33:19] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
-[16:33:19] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
-[16:33:19] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
-[16:33:19] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (Yeni Dünya): All chunks are saved
-[16:33:19] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[16:33:19] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[16:33:19] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
-[16:33:20] [Thread-3/INFO] (Minecraft) [STDOUT]: [MobPVP] Mod kapanıyor...
+[21:27:40] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/akgls/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/22f9eb729e216a091673a574a5906dc1b9027fb3/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[21:27:41] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[21:27:41] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[21:27:41] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[21:27:41] [main/WARN] (FabricLoader/Mixin) Error loading class: xyz/nucleoid/server/translations/impl/language/SystemDelegatedLanguage (java.lang.ClassNotFoundException: xyz/nucleoid/server/translations/impl/language/SystemDelegatedLanguage)
+[21:27:42] [main/WARN] (FabricLoader/Mixin) Error loading class: org/jetbrains/annotations/ApiStatus$Internal (java.lang.ClassNotFoundException: org/jetbrains/annotations/ApiStatus$Internal)
+[21:27:42] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[21:27:45] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 676 milliseconds
+[21:27:51] [Render thread/WARN] (FabricLoader/Mixin) Error loading class: org/quiltmc/loader/impl/game/minecraft/Hooks (java.lang.ClassNotFoundException: org/quiltmc/loader/impl/game/minecraft/Hooks)
+[21:27:52] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[21:27:52] [Render thread/INFO] (Minecraft) Setting user: Player235
+[21:27:52] [Render thread/INFO] (Minecraft) [STDOUT]: Registered Enchantments
+[21:27:52] [Render thread/INFO] (Minecraft) [STDOUT]: Registered custom villager professions for mobpvp
+[21:27:52] [Render thread/ERROR] (Minecraft) No data fixer registered for reinforced_copper_ball
+[21:27:52] [Render thread/INFO] (Minecraft) [STDOUT]: Custom entities registered.
+[21:27:52] [Render thread/INFO] (Minecraft) [STDOUT]: Mob özellikleri kaydedildi
+[21:27:52] [Render thread/INFO] (owo) We don't have to worry about people re-inventing Venezuela glisco, that's their problem for integrating the Bourgeoisie into their pack
+[21:27:53] [Render thread/INFO] (Mod Menu/Update Checker) Checking mod updates...
+[21:27:53] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-game-rule-api-v1 1.0.53+6ced4dd919 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-data-generation-api-v1 20.2.33+37516cd619 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-block-view-api-v2 1.0.11+ebb2264e19 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-events-interaction-v0 0.7.13+ba9dae0619 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-resource-loader-v0 1.3.1+5b5275af19 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-screen-handler-api-v1 1.3.90+b559734419 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-recipe-api-v1 5.0.14+248df81c19 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for moblib 1.3-build.3 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-transfer-api-v1 5.4.3+c24bd99419 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-message-api-v1 6.0.14+8aaf3aca19 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for mobpvp 3.2.2-pre1 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-command-api-v2 2.2.28+6ced4dd919 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-registry-sync-v0 5.3.1+e3eddc2119 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-particles-v1 4.0.2+6573ed8c19 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-item-api-v1 11.2.0+3b3cb2e819 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-object-builder-api-v1 15.2.1+40875a9319 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-entity-events-v1 1.8.0+2b27e0a419 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-rendering-data-attachment-v1 0.3.49+73761d2e19 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-rendering-fluids-v1 3.1.6+1daea21519 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for minecraft 1.21.1 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-lifecycle-events-v1 2.6.0+0865547519 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-data-attachment-api-v1 1.4.5+6116a37819 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-networking-api-v1 4.3.0+c7469b2119 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/WARN] (FabricLoader) getRootPath access for fabric-item-group-api-v1 4.1.7+def88e3a19 with multiple paths, returning only one which may incur unexpected behavior!
+[21:27:53] [Render thread/INFO] (owo) Services frozen by 'net.minecraft.client.MinecraftClient'
+[21:27:54] [ModMenu/Update Checker/Fabric Loader/INFO] (Mod Menu/Update Checker) Update available for 'fabricloader@0.16.14'
+[21:27:54] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
+[21:27:55] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, cloth-config, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, mobpvp, modmenu, owo, panorama_screenshot
+[21:27:56] [Worker-Main-1/INFO] (Minecraft) Found unifont_all_no_pua-15.1.05.hex, loading
+[21:27:56] [Worker-Main-1/INFO] (Minecraft) Found unifont_jp_patch-15.1.05.hex, loading
+[21:27:58] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[21:27:58] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[21:27:58] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Hoparlör (2- VB-Audio Virtual Cable)
+[21:27:58] [Render thread/INFO] (Minecraft) Sound engine started
+[21:27:58] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[21:27:58] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[21:27:58] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[21:27:58] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[21:27:58] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[21:27:58] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[21:27:58] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[21:27:58] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[21:27:58] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[21:27:58] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[21:27:58] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[21:27:58] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[21:27:58] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[21:27:58] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[21:27:58] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[21:28:04] [Render thread/INFO] (Minecraft) Loaded 1308 recipes
+[21:28:05] [Render thread/INFO] (Minecraft) Loaded 1414 advancements
+[21:28:05] [Render thread/INFO] (BiomeModificationImpl) Applied 1 biome modifications to 1 of 64 new biomes in 7.186 ms
+[21:28:05] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.1
+[21:28:05] [Server thread/INFO] (Minecraft) Generating keypair
+[21:28:05] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[21:28:06] [Render thread/INFO] (Minecraft) Başlangıç alanı hazırlanıyor: %0
+[21:28:06] [Render thread/INFO] (Minecraft) Time elapsed: 625 ms
+[21:28:06] [Server thread/INFO] (Minecraft) Changing view distance to 32, from 10
+[21:28:06] [Server thread/INFO] (Minecraft) Changing simulation distance to 32, from 0
+[21:28:07] [Server thread/INFO] (Minecraft) Player235[local:E:44156c6a] logged in with entity id 58 at (-80.90416062722213, -57.12321609665289, -21.656390343515177)
+[21:28:07] [Server thread/INFO] (Minecraft) Player235 oyuna katıldı
+[21:28:07] [Server thread/INFO] (Minecraft) Player235, [Donanım Edin] gelişimini yaptı
+[21:28:07] [Server thread/INFO] (Minecraft) Player235, [[Reach for the Skies]] meydan okumasını tamamladı
+[21:28:07] [Server thread/INFO] (Minecraft) Player235, [İstikbal Göklerdedir] hedefine ulaştı
+[21:28:07] [Server thread/INFO] (Minecraft) Player235, [A Bit Stronger...] meydan okumasını tamamladı
+[21:28:07] [Server thread/INFO] (Minecraft) Player235, [Yeni Nesil] hedefine ulaştı
+[21:28:07] [Server thread/INFO] (Minecraft) Player235, [Elmaslar!] gelişimini yaptı
+[21:28:07] [Server thread/INFO] (Minecraft) Player235, [Is this really all there is?] gelişimini yaptı
+[21:28:08] [Server thread/INFO] (Minecraft) Player235, [[MobPVP]] meydan okumasını tamamladı
+[21:28:16] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Level: 10] §4MİNİ BOSS'/131, l='ServerLevel[Ana dünya]', x=-64.40, y=-58.61, z=-18.46] died: §c[Level: 10] §4MİNİ BOSS, Tiny Copper Golem tarafından katledildi
+[21:28:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Player235, [Donanım Edin] gelişimini yaptı
+[21:28:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Player235, [[Reach for the Skies]] meydan okumasını tamamladı
+[21:28:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Player235, [İstikbal Göklerdedir] hedefine ulaştı
+[21:28:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Player235, [A Bit Stronger...] meydan okumasını tamamladı
+[21:28:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Player235, [Yeni Nesil] hedefine ulaştı
+[21:28:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Player235, [Elmaslar!] gelişimini yaptı
+[21:28:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Player235, [Is this really all there is?] gelişimini yaptı
+[21:28:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Player235, [[MobPVP]] meydan okumasını tamamladı
+[21:28:24] [Render thread/INFO] (Minecraft) Loaded 88 advancements
+[21:28:38] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2012ms or 40 ticks behind
+[21:28:58] [Server thread/INFO] (Minecraft) Player235, [The first attack] gelişimini yaptı
+[21:28:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Player235, [The first attack] gelişimini yaptı
+[21:28:58] [Render thread/INFO] (Minecraft) Loaded 88 advancements
+[21:29:58] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Level: 10] §4MİNİ BOSS'/1327, l='ServerLevel[Ana dünya]', x=-185.59, y=-58.61, z=-101.69] died: §c[Level: 10] §4MİNİ BOSS, Tiny Copper Golem tarafından katledildi
+[21:30:02] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/1335, l='ServerLevel[Ana dünya]', x=-175.65, y=-60.00, z=-99.46] died: §c[Level: 20] §4ARABİC TOAST BOSS, Tiny Copper Golem tarafından katledildi
+[21:30:31] [Server thread/INFO] (Minecraft) Villager VillagerEntity['§c[Level: 1] §fVillager §7- §a26,9§7/§c27 ❤'/187, l='ServerLevel[Ana dünya]', x=-188.02, y=-62.00, z=-113.81] died, message: '§c[Level: 1] §fVillager §7- §a26,9§7/§c27 ❤, Deli Zombi tarafından katledildi'
+[21:30:31] [Server thread/INFO] (Minecraft) Named entity VillagerEntity['§c[Level: 1] §fVillager §7- §a26,9§7/§c27 ❤'/187, l='ServerLevel[Ana dünya]', x=-188.02, y=-62.00, z=-113.81] died: §c[Level: 1] §fVillager §7- §a26,9§7/§c27 ❤, Deli Zombi tarafından katledildi
+[21:30:31] [Render thread/INFO] (Minecraft) Villager VillagerEntity['§c[Level: 1] §fVillager §7- §a26,9§7/§c27 ❤'/187, l='ClientLevel', x=-188.02, y=-62.00, z=-113.81] died, message: '§c[Level: 1] §fVillager §7- §a26,9§7/§c27 ❤ öldü'
+[21:31:16] [Render thread/INFO] (Minecraft) [System] [CHAT] [Hata Ayıklama]: Vurma kutuları: görünür
+[21:31:29] [Render thread/INFO] (Minecraft) [System] [CHAT] [Hata Ayıklama]: Vurma kutuları: gizli
+[21:33:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Bilinmeyen veya eksik komut. Hata için aşağıya bakın
+[21:33:31] [Render thread/INFO] (Minecraft) [System] [CHAT] ...ffect give<--[BURASI]
+[21:33:54] [Server thread/INFO] (Minecraft) [Player235: Hız etkisi, 142 hedefe uygulandı]
+[21:33:54] [Render thread/INFO] (Minecraft) [System] [CHAT] Hız etkisi, 142 hedefe uygulandı
+[21:34:14] [Server thread/INFO] (Minecraft) [Player235: Hız etkisi, 78 hedefe uygulandı]
+[21:34:14] [Render thread/INFO] (Minecraft) [System] [CHAT] Hız etkisi, 78 hedefe uygulandı
+[21:34:50] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2005ms or 40 ticks behind
+[21:35:07] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2015ms or 40 ticks behind
+[21:35:27] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 5263ms or 105 ticks behind
+[21:35:48] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 5864ms or 117 ticks behind
+[21:36:09] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 5750ms or 115 ticks behind
+[21:36:27] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 3472ms or 69 ticks behind
+[21:36:46] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 3219ms or 64 ticks behind
+[21:36:46] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 600] §4GİANT BOSS'/3819, l='ServerLevel[Ana dünya]', x=-70.22, y=-59.52, z=-69.06] died: §c[Level: 600] §4GİANT BOSS, Tiny Copper Golem tarafından katledildi
+[21:37:06] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 5792ms or 115 ticks behind
+[21:37:24] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2469ms or 49 ticks behind
+[21:37:45] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 5965ms or 119 ticks behind
+[21:38:02] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2476ms or 49 ticks behind
+[21:38:05] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Level: 28] §4SİNİRLİ MİRAN BABA'/4383, l='ServerLevel[Ana dünya]', x=222.20, y=-61.36, z=-113.89] died: §c[Level: 28] §4SİNİRLİ MİRAN BABA, Tiny Copper Golem tarafından katledildi
+[21:38:11] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/4482, l='ServerLevel[Ana dünya]', x=221.16, y=-61.08, z=-92.95] died: §c[Level: 20] §4ARABİC TOAST BOSS, Tiny Copper Golem tarafından katledildi
+[21:38:12] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/4391, l='ServerLevel[Ana dünya]', x=239.56, y=-61.08, z=-106.30] died: §c[Level: 10] §4MİNİ BOSS, Tiny Copper Golem tarafından katledildi
+[21:38:29] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/4626, l='ServerLevel[Ana dünya]', x=219.00, y=-63.00, z=-86.67] died: §c[Level: 20] §4ARABİC TOAST BOSS, Tiny Copper Golem tarafından katledildi
+[21:38:37] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Level: 10] §4MİNİ BOSS'/4716, l='ServerLevel[Ana dünya]', x=248.65, y=-61.08, z=-103.40] died: §c[Level: 10] §4MİNİ BOSS, Tiny Copper Golem tarafından katledildi
+[21:38:40] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem'/235, l='ServerLevel[Ana dünya]', x=251.89, y=-63.00, z=-96.40] died: §c[Seviye: 2] §fMinik Demir Golem yere çok sert düşerek öldü
+[21:38:43] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Level: 10] §4MİNİ BOSS'/4774, l='ServerLevel[Ana dünya]', x=228.70, y=-63.00, z=-74.86] died: §c[Level: 10] §4MİNİ BOSS, Deli Zombi tarafından katledildi
+[21:38:44] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Level: 10] §4MİNİ BOSS'/4821, l='ServerLevel[Ana dünya]', x=218.49, y=-60.42, z=-90.07] died: §c[Level: 10] §4MİNİ BOSS, Tiny Copper Golem tarafından katledildi
+[21:38:44] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 28] §4SİNİRLİ MİRAN BABA'/4797, l='ServerLevel[Ana dünya]', x=221.68, y=-61.06, z=-101.31] died: §c[Level: 28] §4SİNİRLİ MİRAN BABA, Tiny Copper Golem tarafından katledildi
+[21:38:45] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Level: 10] §4MİNİ BOSS'/4929, l='ServerLevel[Ana dünya]', x=238.64, y=-63.00, z=-87.63] died: §c[Level: 10] §4MİNİ BOSS, Demir Golem tarafından katledildi
+[21:38:47] [Server thread/INFO] (Minecraft) [Player235: "mobpvp:arena_feature” 235,-63,-98 konumuna yerleştirildi]
+[21:38:47] [Render thread/INFO] (Minecraft) [System] [CHAT] "mobpvp:arena_feature” 235,-63,-98 konumuna yerleştirildi
+[21:38:50] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Level: 10] §4MİNİ BOSS'/5091, l='ServerLevel[Ana dünya]', x=218.96, y=-61.41, z=-94.74] died: §c[Level: 10] §4MİNİ BOSS, Deli Zombi tarafından katledildi
+[21:38:50] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/5089, l='ServerLevel[Ana dünya]', x=219.55, y=-60.08, z=-94.30] died: §c[Level: 10] §4MİNİ BOSS, Tiny Copper Golem tarafından katledildi
+[21:38:52] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/4946, l='ServerLevel[Ana dünya]', x=222.33, y=-61.08, z=-90.71] died: §c[Level: 20] §4ARABİC TOAST BOSS, Tiny Copper Golem tarafından katledildi
+[21:38:56] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 2] §fMinik Demir Golem'/236, l='ServerLevel[Ana dünya]', x=253.60, y=-63.00, z=-85.60] died: §c[Seviye: 2] §fMinik Demir Golem, §c[Level: 10] §4MİNİ BOSS tarafından katledildi
+[21:39:04] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/5733, l='ServerLevel[Ana dünya]', x=251.12, y=-62.00, z=-94.99] died: §c[Level: 20] §4ARABİC TOAST BOSS, §c[Level: 20] §4ARABİC TOAST BOSS tarafından katledildi
+[21:39:06] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/5268, l='ServerLevel[Ana dünya]', x=250.47, y=-62.00, z=-94.87] died: §c[Level: 10] §4MİNİ BOSS, Zombi tarafından havaya uçuruldu
+[21:39:10] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Level: 10] §4MİNİ BOSS'/5596, l='ServerLevel[Ana dünya]', x=237.50, y=-58.50, z=-81.50] died: §c[Level: 10] §4MİNİ BOSS duvarların arasına sıkıştı
+[21:39:12] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/5842, l='ServerLevel[Ana dünya]', x=237.88, y=-63.00, z=-102.52] died: §c[Level: 20] §4ARABİC TOAST BOSS, Deli Zombi tarafından katledildi
+[21:39:16] [Server thread/INFO] (Minecraft) Named entity MiniIronGolemEntity['§c[Seviye: 1] §fMinik Demir Golem'/238, l='ServerLevel[Ana dünya]', x=231.60, y=-63.00, z=-110.60] died: §c[Seviye: 1] §fMinik Demir Golem, Deli Zombi tarafından katledildi
+[21:39:23] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/5604, l='ServerLevel[Ana dünya]', x=217.26, y=-62.00, z=-98.63] died: §c[Level: 10] §4MİNİ BOSS, Tiny Copper Golem tarafından katledildi
+[21:39:29] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/5712, l='ServerLevel[Ana dünya]', x=235.74, y=-62.00, z=-95.62] died: §c[Level: 20] §4ARABİC TOAST BOSS, Tiny Copper Golem tarafından katledildi
+[21:39:58] [Server thread/INFO] (Minecraft) [Player235: Player235 oyuncusuna 1 [Komut Bloğu] verildi]
+[21:39:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Player235 oyuncusuna 1 [Komut Bloğu] verildi
+[21:40:02] [Server thread/INFO] (Minecraft) [Player235: Player235 oyuncusuna 1 [Komut Bloğu] verildi]
+[21:40:02] [Render thread/INFO] (Minecraft) [System] [CHAT] Player235 oyuncusuna 1 [Komut Bloğu] verildi
+[21:40:10] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[21:40:10] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
+[21:40:10] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
+[21:40:10] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
+[21:40:22] [Render thread/INFO] (Minecraft) [System] [CHAT] Komut ayarlandı: summon mobpvp:mini_copper_golem
+[21:40:22] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:22] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:22] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:22] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:22] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:22] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:22] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:22] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:22] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:22] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:22] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:22] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:22] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:22] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:22] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:22] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:22] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:23] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Server thread/INFO] (Minecraft) [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [@: Yeni bir Tiny Copper Golem çağrıldı]
+[21:40:59] [Render thread/INFO] (Minecraft) Loaded 124 advancements
+[21:41:51] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/6902, l='ServerLevel[Ana dünya]', x=215.18, y=-58.33, z=-151.52] died: §c[Level: 20] §4ARABİC TOAST BOSS, Tiny Copper Golem tarafından katledildi
+[21:41:58] [Server thread/INFO] (Minecraft) Named entity ZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/6914, l='ServerLevel[Ana dünya]', x=202.09, y=-60.00, z=-171.71] died: §c[Level: 20] §4ARABİC TOAST BOSS, Tiny Copper Golem tarafından katledildi
+[21:42:15] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/7183, l='ServerLevel[Ana dünya]', x=207.13, y=-60.00, z=-139.26] died: §c[Level: 10] §4MİNİ BOSS, Tiny Copper Golem tarafından katledildi
+[21:42:30] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/7487, l='ServerLevel[Ana dünya]', x=218.84, y=-60.00, z=-163.31] died: §c[Level: 10] §4MİNİ BOSS, Tiny Copper Golem tarafından katledildi
+[21:42:33] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/7373, l='ServerLevel[Ana dünya]', x=211.96, y=-60.00, z=-155.78] died: §c[Level: 10] §4MİNİ BOSS, §c[Seviye: 8] §fIron Golem §7- §a122,0§7/§c122 ❤ tarafından kovalanırken yere çok sert düşerek öldü
+[21:42:53] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/7603, l='ServerLevel[Ana dünya]', x=192.94, y=-59.22, z=-134.70] died: §c[Level: 20] §4ARABİC TOAST BOSS, Tiny Copper Golem tarafından katledildi
+[21:42:55] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 600] §4GİANT BOSS'/7033, l='ServerLevel[Ana dünya]', x=194.65, y=-60.00, z=-160.45] died: §c[Level: 600] §4GİANT BOSS, Tiny Copper Golem tarafından katledildi
+[21:43:38] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/7894, l='ServerLevel[Ana dünya]', x=225.27, y=-60.00, z=-163.36] died: §c[Level: 10] §4MİNİ BOSS, Demir Golem tarafından katledildi
+[21:44:00] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 28] §4SİNİRLİ MİRAN BABA'/8071, l='ServerLevel[Ana dünya]', x=433.52, y=-60.00, z=-44.72] died: §c[Level: 28] §4SİNİRLİ MİRAN BABA, Muhafız tarafından katledildi
+[21:44:08] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/7987, l='ServerLevel[Ana dünya]', x=430.52, y=-60.23, z=-43.72] died: §c[Level: 20] §4ARABİC TOAST BOSS, Muhafız tarafından katledildi
+[21:44:10] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/7988, l='ServerLevel[Ana dünya]', x=430.45, y=-61.25, z=-47.16] died: §c[Level: 10] §4MİNİ BOSS, Muhafız tarafından katledildi
+[21:44:21] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/8073, l='ServerLevel[Ana dünya]', x=428.52, y=-63.00, z=-47.29] died: §c[Level: 20] §4ARABİC TOAST BOSS havaya uçtu
+[21:44:22] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/8037, l='ServerLevel[Ana dünya]', x=427.03, y=-63.00, z=-44.64] died: §c[Level: 20] §4ARABİC TOAST BOSS, Muhafız tarafından katledildi
+[21:44:26] [Server thread/INFO] (Minecraft) [Player235: Oyun modunuz Hayatta Kalma Modu olarak ayarlandı]
+[21:44:26] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Hayatta Kalma Modu olarak ayarlandı
+[21:44:38] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/8545, l='ServerLevel[Ana dünya]', x=445.78, y=-60.00, z=-35.37] died: §c[Level: 10] §4MİNİ BOSS, Demir Golem tarafından katledildi
+[21:44:42] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/8544, l='ServerLevel[Ana dünya]', x=444.18, y=-59.21, z=-29.83] died: §c[Level: 10] §4MİNİ BOSS, Tiny Copper Golem tarafından katledildi
+[21:44:44] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/8546, l='ServerLevel[Ana dünya]', x=449.06, y=-57.78, z=-26.56] died: §c[Level: 20] §4ARABİC TOAST BOSS, Demir Golem tarafından katledildi
+[21:44:46] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/8629, l='ServerLevel[Ana dünya]', x=463.69, y=-60.00, z=-24.70] died: §c[Level: 10] §4MİNİ BOSS, Demir Golem tarafından katledildi
+[21:44:53] [Server thread/INFO] (Minecraft) [Player235: Hız etkisi, 135 hedefe uygulandı]
+[21:44:53] [Render thread/INFO] (Minecraft) [System] [CHAT] Hız etkisi, 135 hedefe uygulandı
+[21:44:57] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/8627, l='ServerLevel[Ana dünya]', x=474.95, y=-60.00, z=-8.07] died: §c[Level: 10] §4MİNİ BOSS, Demir Golem tarafından katledildi
+[21:45:04] [Render thread/INFO] (Minecraft) [System] [CHAT] Geçersiz veya bilinmeyen varlık türü 'mobpvp:mini_copper_golem_golem'
+[21:45:04] [Render thread/INFO] (Minecraft) [System] [CHAT] ...e @e[type=mobpvp:mini_copper_golem_golem] minecraft:speed infinite 255 true<--[BURASI]
+[21:45:10] [Server thread/INFO] (Minecraft) [Player235: Hız etkisi, 154 hedefe uygulandı]
+[21:45:10] [Render thread/INFO] (Minecraft) [System] [CHAT] Hız etkisi, 154 hedefe uygulandı
+[21:45:18] [Render thread/INFO] (Minecraft) Loaded 125 advancements
+[21:45:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Hiçbir varlık bulunamadı
+[21:45:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Etki uygulanamadı (hedef ya etkilere karşı bağışık veya daha güçlü bir etkiye sahip)
+[21:45:41] [Server thread/INFO] (Minecraft) [Player235: Oyun modunuz Yaratıcı Mod olarak ayarlandı]
+[21:45:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Yaratıcı Mod olarak ayarlandı
+[21:45:43] [Server thread/INFO] (Minecraft) [Player235: Oyun modunuz Hayatta Kalma Modu olarak ayarlandı]
+[21:45:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Hayatta Kalma Modu olarak ayarlandı
+[21:45:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Etki uygulanamadı (hedef ya etkilere karşı bağışık veya daha güçlü bir etkiye sahip)
+[21:46:02] [Render thread/INFO] (Minecraft) [System] [CHAT] Etki uygulanamadı (hedef ya etkilere karşı bağışık veya daha güçlü bir etkiye sahip)
+[21:46:16] [Server thread/INFO] (Minecraft) [Player235: Oyun modunuz Yaratıcı Mod olarak ayarlandı]
+[21:46:16] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Yaratıcı Mod olarak ayarlandı
+[21:46:24] [Render thread/INFO] (Minecraft) [System] [CHAT] [Hata Ayıklama]: Vurma kutuları: görünür
+[21:46:26] [Render thread/INFO] (Minecraft) [System] [CHAT] [Hata Ayıklama]: Vurma kutuları: gizli
+[21:46:48] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/9040, l='ServerLevel[Ana dünya]', x=593.50, y=-60.06, z=67.78] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:46:50] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/9255, l='ServerLevel[Ana dünya]', x=601.83, y=-60.00, z=41.71] died: §c[Level: 20] §4ARABİC TOAST BOSS havaya uçtu
+[21:46:51] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/9538, l='ServerLevel[Ana dünya]', x=581.09, y=-59.00, z=28.44] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:46:52] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/9883, l='ServerLevel[Ana dünya]', x=572.58, y=-57.70, z=42.76] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:46:53] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/9737, l='ServerLevel[Ana dünya]', x=577.83, y=-60.00, z=37.61] died: §c[Level: 20] §4ARABİC TOAST BOSS havaya uçtu
+[21:46:55] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2029ms or 40 ticks behind
+[21:46:57] [Server thread/INFO] (Minecraft) [Player235: Oyun modunuz Hayatta Kalma Modu olarak ayarlandı]
+[21:46:57] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Hayatta Kalma Modu olarak ayarlandı
+[21:46:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Etki uygulanamadı (hedef ya etkilere karşı bağışık veya daha güçlü bir etkiye sahip)
+[21:47:06] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/8992, l='ServerLevel[Ana dünya]', x=590.24, y=-60.75, z=63.47] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:47:06] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/9324, l='ServerLevel[Ana dünya]', x=592.56, y=-62.23, z=64.55] died: §c[Level: 20] §4ARABİC TOAST BOSS havaya uçtu
+[21:47:07] [Render thread/INFO] (Minecraft) Loaded 134 advancements
+[21:47:09] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/8976, l='ServerLevel[Ana dünya]', x=585.99, y=-61.00, z=66.70] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:47:10] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/9322, l='ServerLevel[Ana dünya]', x=582.45, y=-61.00, z=64.56] died: §c[Level: 20] §4ARABİC TOAST BOSS havaya uçtu
+[21:47:10] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/10323, l='ServerLevel[Ana dünya]', x=572.52, y=-61.00, z=64.53] died: §c[Level: 20] §4ARABİC TOAST BOSS havaya uçtu
+[21:47:11] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 28] §4SİNİRLİ MİRAN BABA'/9368, l='ServerLevel[Ana dünya]', x=583.04, y=-62.79, z=66.81] died: §c[Level: 28] §4SİNİRLİ MİRAN BABA havaya uçtu
+[21:47:11] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/9199, l='ServerLevel[Ana dünya]', x=589.34, y=-60.08, z=35.54] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:47:12] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2286ms or 45 ticks behind
+[21:47:15] [Render thread/INFO] (Minecraft) [System] [CHAT] Etki uygulanamadı (hedef ya etkilere karşı bağışık veya daha güçlü bir etkiye sahip)
+[21:47:21] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 28] §4SİNİRLİ MİRAN BABA'/9721, l='ServerLevel[Ana dünya]', x=569.85, y=-63.00, z=66.86] died: §c[Level: 28] §4SİNİRLİ MİRAN BABA havaya uçtu
+[21:47:21] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/9536, l='ServerLevel[Ana dünya]', x=596.03, y=-63.00, z=66.03] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:47:31] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/12299, l='ServerLevel[Ana dünya]', x=606.24, y=-63.00, z=68.82] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:47:31] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/12298, l='ServerLevel[Ana dünya]', x=608.72, y=-63.00, z=72.33] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:47:34] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 28] §4SİNİRLİ MİRAN BABA'/9090, l='ServerLevel[Ana dünya]', x=607.30, y=-63.00, z=63.51] died: §c[Level: 28] §4SİNİRLİ MİRAN BABA havaya uçtu
+[21:47:35] [Server thread/WARN] (Minecraft) Player235 moved wrongly!
+[21:47:37] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/12638, l='ServerLevel[Ana dünya]', x=588.15, y=-63.00, z=54.54] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:47:39] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/12853, l='ServerLevel[Ana dünya]', x=594.36, y=-63.00, z=57.36] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:47:40] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/12636, l='ServerLevel[Ana dünya]', x=587.48, y=-63.00, z=53.17] died: §c[Level: 20] §4ARABİC TOAST BOSS havaya uçtu
+[21:47:41] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/12592, l='ServerLevel[Ana dünya]', x=586.33, y=-63.00, z=54.63] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:47:51] [Render thread/INFO] (Minecraft) [System] [CHAT] Etki uygulanamadı (hedef ya etkilere karşı bağışık veya daha güçlü bir etkiye sahip)
+[21:48:06] [Server thread/INFO] (Minecraft) [Player235: Oyun modunuz Yaratıcı Mod olarak ayarlandı]
+[21:48:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Yaratıcı Mod olarak ayarlandı
+[21:48:23] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/13768, l='ServerLevel[Ana dünya]', x=588.31, y=-63.00, z=38.45] died: §c[Level: 20] §4ARABİC TOAST BOSS havaya uçtu
+[21:48:23] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/13708, l='ServerLevel[Ana dünya]', x=599.79, y=-63.00, z=48.72] died: §c[Level: 20] §4ARABİC TOAST BOSS havaya uçtu
+[21:48:23] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/13863, l='ServerLevel[Ana dünya]', x=587.15, y=-63.00, z=51.02] died: §c[Level: 20] §4ARABİC TOAST BOSS havaya uçtu
+[21:48:24] [Server thread/INFO] (Minecraft) [Player235: Oyun modunuz Hayatta Kalma Modu olarak ayarlandı]
+[21:48:24] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Hayatta Kalma Modu olarak ayarlandı
+[21:48:25] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/14706, l='ServerLevel[Ana dünya]', x=605.71, y=-63.00, z=62.42] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:48:28] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/14708, l='ServerLevel[Ana dünya]', x=601.19, y=-63.00, z=60.46] died: §c[Level: 10] §4MİNİ BOSS, Deli Zombi tarafından havaya uçuruldu
+[21:48:29] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2078ms or 41 ticks behind
+[21:48:31] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/14783, l='ServerLevel[Ana dünya]', x=567.77, y=-63.00, z=52.77] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:48:31] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/14699, l='ServerLevel[Ana dünya]', x=592.06, y=-63.00, z=47.65] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:48:32] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/13684, l='ServerLevel[Ana dünya]', x=597.37, y=-63.00, z=53.22] died: §c[Level: 20] §4ARABİC TOAST BOSS havaya uçtu
+[21:48:32] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/14134, l='ServerLevel[Ana dünya]', x=601.37, y=-63.00, z=49.72] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:48:32] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/15170, l='ServerLevel[Ana dünya]', x=604.34, y=-63.00, z=29.26] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:48:32] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/14382, l='ServerLevel[Ana dünya]', x=588.06, y=-63.00, z=39.52] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:48:32] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 28] §4SİNİRLİ MİRAN BABA'/13862, l='ServerLevel[Ana dünya]', x=592.21, y=-63.00, z=47.33] died: §c[Level: 28] §4SİNİRLİ MİRAN BABA havaya uçtu
+[21:48:32] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/14230, l='ServerLevel[Ana dünya]', x=594.00, y=-63.00, z=57.00] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:48:32] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/14227, l='ServerLevel[Ana dünya]', x=593.52, y=-63.00, z=57.83] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:48:32] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/14400, l='ServerLevel[Ana dünya]', x=595.64, y=-63.00, z=63.72] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:48:47] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/15187, l='ServerLevel[Ana dünya]', x=590.19, y=-63.00, z=34.80] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:48:47] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/15771, l='ServerLevel[Ana dünya]', x=591.03, y=-63.00, z=35.82] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:48:47] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 28] §4SİNİRLİ MİRAN BABA'/14383, l='ServerLevel[Ana dünya]', x=591.60, y=-62.59, z=32.02] died: §c[Level: 28] §4SİNİRLİ MİRAN BABA havaya uçtu
+[21:48:47] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/14830, l='ServerLevel[Ana dünya]', x=591.12, y=-63.00, z=35.00] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:48:48] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/14229, l='ServerLevel[Ana dünya]', x=590.30, y=-63.00, z=38.74] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:48:48] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 28] §4SİNİRLİ MİRAN BABA'/14583, l='ServerLevel[Ana dünya]', x=589.43, y=-62.97, z=30.46] died: §c[Level: 28] §4SİNİRLİ MİRAN BABA havaya uçtu
+[21:48:48] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 28] §4SİNİRLİ MİRAN BABA'/14331, l='ServerLevel[Ana dünya]', x=589.83, y=-62.78, z=33.53] died: §c[Level: 28] §4SİNİRLİ MİRAN BABA havaya uçtu
+[21:48:49] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 28] §4SİNİRLİ MİRAN BABA'/15271, l='ServerLevel[Ana dünya]', x=585.93, y=-63.00, z=39.67] died: §c[Level: 28] §4SİNİRLİ MİRAN BABA havaya uçtu
+[21:48:49] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 28] §4SİNİRLİ MİRAN BABA'/15768, l='ServerLevel[Ana dünya]', x=586.21, y=-62.82, z=36.25] died: §c[Level: 28] §4SİNİRLİ MİRAN BABA havaya uçtu
+[21:48:52] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 8490ms or 169 ticks behind
+[21:48:54] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 28] §4SİNİRLİ MİRAN BABA'/14967, l='ServerLevel[Ana dünya]', x=576.85, y=-63.00, z=35.68] died: §c[Level: 28] §4SİNİRLİ MİRAN BABA havaya uçtu
+[21:48:57] [Server thread/INFO] (Minecraft) [Player235: Oyun modunuz Yaratıcı Mod olarak ayarlandı]
+[21:48:57] [Render thread/INFO] (Minecraft) [System] [CHAT] Oyun modunuz Yaratıcı Mod olarak ayarlandı
+[21:49:00] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 20] §4ARABİC TOAST BOSS'/16082, l='ServerLevel[Ana dünya]', x=570.33, y=-63.00, z=29.83] died: §c[Level: 20] §4ARABİC TOAST BOSS havaya uçtu
+[21:49:04] [Server thread/INFO] (Minecraft) Named entity MadZombieEntity['§c[Level: 10] §4MİNİ BOSS'/14685, l='ServerLevel[Ana dünya]', x=568.37, y=-63.00, z=30.63] died: §c[Level: 10] §4MİNİ BOSS havaya uçtu
+[21:49:40] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[21:49:40] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
+[21:49:40] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
+[21:49:40] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
+[21:49:41] [Render thread/INFO] (Minecraft) Stopping!
+[21:49:41] [Server thread/INFO] (Minecraft) Player235 lost connection: Bağlantı kesildi
+[21:49:41] [Server thread/INFO] (Minecraft) Player235 oyundan ayrıldı
+[21:49:41] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[21:49:41] [Server thread/INFO] (Minecraft) Stopping server
+[21:49:41] [Server thread/INFO] (Minecraft) Saving players
+[21:49:41] [Server thread/INFO] (Minecraft) Saving worlds
+[21:49:42] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:overworld
+[21:49:42] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_nether
+[21:49:42] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Ana dünya]'/minecraft:the_end
+[21:49:42] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (Yeni Dünya): All chunks are saved
+[21:49:42] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:49:42] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:49:42] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[21:49:44] [Thread-3/INFO] (Minecraft) [STDOUT]: [MobPVP] Mod kapanıyor...

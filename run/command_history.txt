@@ -1,21 +1,3 @@
-/summon villager ~ ~ ~ {VillagerData:{profession:"mobpvp:secret_trader",level:1,type:"plains"}}
-/summon minecraft:villager
-/summon villager ~ ~ ~ {VillagerData:{profession:"mobpvp:secret_trader",level:1,type:"plains"}}
-/datapack list enabled
-/data merge entity 0a31c71e-676e-4e46-87e8-089bf0c98102 a
-/data get entity 0a31c71e-676e-4e46-87e8-089bf0c98102
-/summon villager ~ ~ ~ {VillagerData:{profession:"mobpvp:secret_trader",level:1,type:"plains"}}
-/time set day
-/summon villager ~ ~ ~ {VillagerData:{profession:"mobpvp:secret_trader",level:1,type:"taiga"}}
-/summon villager ~ ~ ~ {VillagerData:{profession:"mobpvp:secret_trader",level:1,type:"snowy"}}
-/summon villager ~ ~ ~ {VillagerData:{profession:"mobpvp:secret_trader",level:1,type:"snovy"}}
-/summon villager ~ ~ ~ {VillagerData:{profession:"mobpvp:secret_trader",level:1,type:"snow"}}
-/time set day
-/advancement grant @a everything
-/advancement revoke @a everything
-/summon minecraft:villager
-/give @a minecraft:chiseled_bookshelf
-/recipe give Player122 mobpvp:mobtable
 /time set day
 /effect give Player932 minecraft:strength infinite 255 true
 /summon minecraft:ender_dragon
@@ -48,3 +30,21 @@
 /effect clear 8b15af9b-5e11-4547-887c-70b68b50447b
 /effect give 8b15af9b-5e11-4547-887c-70b68b50447b minecraft:instant_health infinite
 /tp 0 0 0
+/effect give Player262 minecraft:absorption infinite 255
+/tp 0 0 0
+/effect give Player262 minecraft:absorption infinite 255
+/effect give Player262 minecraft:instant_health infinite 255 true
+/effect give Player262 minecraft:instant_health infinite 1 true
+/effect clear
+/effect give Player262 minecraft:absorption infinite 255
+/effect give Player262 minecraft:instant_health infinite 1 true
+/effect give Player262 minecraft:absorption infinite 255
+/effect give
+/effect give @e[type=mobpvp:mini_iron_golem] minecraft:speed infinite 255 true
+/place feature mobpvp:arena_feature
+/give @a minecraft:command_block
+/effect give @e[type=mobpvp:mini_iron_golem] minecraft:speed infinite 255 true
+/effect give @e[type=mobpvp:mini_copper_golem_golem] minecraft:speed infinite 255 true
+/effect give @e[type=mobpvp:mini_copper_golem] minecraft:speed infinite 255 true
+/effect give Player262 minecraft:absorption infinite 255
+/effect give Player235 minecraft:absorption infinite 255

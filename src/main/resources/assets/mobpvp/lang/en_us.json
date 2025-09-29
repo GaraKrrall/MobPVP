@@ -8,6 +8,7 @@
   "item.mobpvp.zombie_egg": "Mad Zombie Egg",
   "item.mobpvp.hearth_part": "Heart Fragment",
   "item.mobpvp.skeleton_egg": "Mad Skeleton Egg",
+  "item.mobpvp.egg_mini_copper_golem": "Tiny Copper Golem Egg",
   "screen.kaplandev.level.title": "Level Panel",
   "screen.kaplandev.level.level": "Level: %s",
   "screen.kaplandev.level.xp": "XP: %s / %s",
@@ -52,6 +53,7 @@
   "text.autoconfig.mobpvp_config.option.hasOpenedBetaNotice": "Debug: Has opened beta notice",
   "entity.minecraft.villager.secret_trader": "Secret trader",
   "entity.mobpvp.mini_iron_golem": "Tiny Iron Golem",
+  "entity.mobpvp.mini_copper_golem": "Tiny Copper Golem",
   "entity.mobpvp.mad_skeleton": "Mad Skeleton",
   "entity.mobpvp.mad_zombie": "Mad Zombie",
   "entity.mobpvp.bulwark": "Bulwark"

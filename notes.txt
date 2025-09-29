@@ -6,3 +6,4 @@ Bebek canlıların isminin saçma görünmesi çözüldü.
 
 
 Artık Bakır top düştüğü yerde küçük bir partikül çıkarır
+Minik Bakır Golem Eklendi.

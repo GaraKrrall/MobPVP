@@ -5,7 +5,7 @@
   "customToastType": "PERIODIC_NOTIFICATION",
   "showAKOTOriginalMessage": true,
   "showLevelHud": false,
-  "showMobPvPPanorama": false,
+  "showMobPvPPanorama": true,
   "debugHasShownToast": true,
   "hasOpenedBetaNotice": false,
   "levelColor": 16776960,

@@ -1,7 +1,8 @@
 package com.kaplandev.entity.goal;
 
+import com.kaplandev.entity.mob.MiniCopperGolemEntity;
 import com.kaplandev.entity.passive.MiniIronGolemEntity;
-import com.kaplandev.level.LevelAssigner;
+
 
 import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.BlockEntity;
@@ -72,7 +73,7 @@ public class FindIngotAndHealGolemGoal extends Goal {
 
                 List<IronGolemEntity> golems = miniGolem.getWorld().getEntitiesByClass(IronGolemEntity.class,
                         miniGolem.getBoundingBox().expand(10),
-                        g -> !(g instanceof MiniIronGolemEntity) && g.getHealth() < g.getMaxHealth());
+                        g -> !(g instanceof MiniIronGolemEntity || g instanceof MiniCopperGolemEntity) && g.getHealth() < g.getMaxHealth());
 // En yakını seç, mızıkçılık yapma!
                 targetGolem = golems.stream()
                         .min((a, b) -> Double.compare(miniGolem.squaredDistanceTo(a), miniGolem.squaredDistanceTo(b)))
