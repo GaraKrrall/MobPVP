@@ -1,0 +1,7 @@
+Java Launcher: C:\Program Files\Eclipse Adoptium\jdk-21.0.7.6-hotspot\bin\java.exe
+Arguments: '--inJar, C:\Users\akgls\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.21.1-52.1.5\forge-1.21.1-52.1.5-injected.jar, --outJar, C:\Users\akgls\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.21.1-52.1.5_mapped_official_1.21.1\forge-1.21.1-52.1.5_mapped_official_1.21.1.jar, --logFile, accesstransform.log, --atFile, D:\Programs\IDEA\PROJECTS\MobPvP-Forge\build\_atJar_4\parent_at.cfg'
+Classpath:
+ - C:\Users\akgls\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\accesstransformers\8.2.1\accesstransformers-8.2.1-fatjar.jar
+Working directory: D:\Programs\IDEA\PROJECTS\MobPvP-Forge\build\_atJar_4
+Main class: net.minecraftforge.accesstransformer.TransformerProcessor
+====================================
