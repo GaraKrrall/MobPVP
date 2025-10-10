@@ -177,34 +177,5 @@ public class PvETowerPiece extends StructurePiece {
 
     }
 
-    private void buildBase(ServerWorld world, BlockPos center) {
-        // Alt destek yüksekliği
-        int height = 6;
-        int radius = 4;
-
-        // Ana silindir (roket ayağı gibi)
-        for (int y = -height; y < 0; y++) {
-            for (int dx = -radius; dx <= radius; dx++) {
-                for (int dz = -radius; dz <= radius; dz++) {
-                    if (dx * dx + dz * dz <= radius * radius) {
-                        BlockPos pos = center.add(dx, y, dz);
-                        world.setBlockState(pos, Blocks.IRON_BLOCK.getDefaultState());
-                    }
-                }
-            }
-        }
-
-        // Alt kısma alev çıkışı gibi glowstone + campfire
-        BlockPos firePos = center.down(height + 1);
-        world.setBlockState(firePos, Blocks.SOUL_CAMPFIRE.getDefaultState());
-        world.setBlockState(firePos.add(1, 0, 0), Blocks.GLOWSTONE.getDefaultState());
-        world.setBlockState(firePos.add(-1, 0, 0), Blocks.GLOWSTONE.getDefaultState());
-        world.setBlockState(firePos.add(0, 0, 1), Blocks.GLOWSTONE.getDefaultState());
-        world.setBlockState(firePos.add(0, 0, -1), Blocks.GLOWSTONE.getDefaultState());
-    }
-
-
-
-
 
 }

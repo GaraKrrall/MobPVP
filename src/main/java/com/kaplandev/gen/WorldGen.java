@@ -3,6 +3,7 @@ package com.kaplandev.gen;
 import com.kaplandev.build.ArenaFeature;
 import com.kaplandev.gen.piece.VillagePiece;
 import com.kaplandev.gen.piece.WaterPondPiece;
+import com.kaplandev.gen.structure.BigPvETower;
 import com.kaplandev.gen.structure.House;
 import com.kaplandev.gen.structure.PvETower;
 import com.kaplandev.gen.structure.Statue;
@@ -11,6 +12,7 @@ import com.kaplandev.gen.structure.WaterPondStructure;
 import com.kaplandev.gen.piece.PvETowerPiece;
 import com.kaplandev.gen.piece.HousePiece;
 import com.kaplandev.gen.piece.StatuePiece;
+import com.kaplandev.gen.piece.BigPvETowerPiece;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
@@ -39,7 +41,8 @@ public class WorldGen {
     // Water Pond
     public static final Identifier WATER_POND_ID = Identifier.of(MOBPVP, "water_pond");
     public static final StructureType<WaterPondStructure> WATER_POND = () -> WaterPondStructure.CODEC;
-    public static final StructurePieceType WATER_POND_PIECE = WaterPondPiece::new;//PVE TOWER
+    public static final StructurePieceType WATER_POND_PIECE = WaterPondPiece::new;
+    //PVE TOWER
     public static final Identifier PVE_TOWER_ID = Identifier.of(MOBPVP, "pve_tower");
     public static final StructureType<PvETower> PVE_TOWER_POND = () -> PvETower.CODEC;
     public static final StructurePieceType PVE_TOWER_POND_PIECE = PvETowerPiece::new;
@@ -57,6 +60,11 @@ public class WorldGen {
     public static final Identifier STATUE_ID = Identifier.of(MOBPVP, "statue");
     public static final StructureType<Statue> STATUE_POND = () -> Statue.CODEC;
     public static final StructurePieceType STATUE_POND_PIECE = StatuePiece::new;
+    //BÜYÜK PVE TOWER
+    public static final Identifier BIG_PVE_TOWER_ID = Identifier.of(MOBPVP, "big_pve_tower");
+    public static final StructureType<BigPvETower> BIG_PVE_TOWER_POND = () -> BigPvETower.CODEC;
+    public static final StructurePieceType BIG_PVE_TOWER_PIECE = BigPvETowerPiece::new;
+
 
 
 
@@ -77,6 +85,8 @@ public class WorldGen {
         Registry.register(Registries.STRUCTURE_PIECE, VILLAGE_ID, VILLAGE_POND_PIECE);
         Registry.register(Registries.STRUCTURE_TYPE, STATUE_ID, STATUE_POND);
         Registry.register(Registries.STRUCTURE_PIECE, STATUE_ID, STATUE_POND_PIECE);
+        Registry.register(Registries.STRUCTURE_TYPE, BIG_PVE_TOWER_ID, BIG_PVE_TOWER_POND);
+        Registry.register(Registries.STRUCTURE_PIECE, BIG_PVE_TOWER_ID, BIG_PVE_TOWER_PIECE);
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld().and(context -> {RegistryEntry<Biome> biomeEntry = context.getBiomeRegistryEntry();return !biomeEntry.isIn(BiomeTags.IS_OCEAN) && !biomeEntry.isIn(BiomeTags.IS_RIVER) && !biomeEntry.isIn(BiomeTags.IS_BEACH);}), GenerationStep.Feature.SURFACE_STRUCTURES, ARENA_PLACED_KEY);
 

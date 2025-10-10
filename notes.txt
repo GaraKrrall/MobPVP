@@ -3,7 +3,9 @@ Canlıların seviyesisin oyundan çık-gir den sonra güncellenmemesi çözüld�
 Canlıların ismini değiştirememe sorunu çözüldü. Örn. [Level: 1] Villager - 26,9/27 isimili bir canlıya "tospik" ismini verirseniz artık [Level: 1] tospik - 26,9/27 olarak gözükür.
 Bebek canlıların isminin saçma görünmesi çözüldü.
 İsimlendirme sorunları çözüldü.
+Gereksiz kodlar silindi.
 
 
 Artık Bakır top düştüğü yerde küçük bir partikül çıkarır
 Minik Bakır Golem Eklendi.
+Büyük PvE Kulesi eklendi

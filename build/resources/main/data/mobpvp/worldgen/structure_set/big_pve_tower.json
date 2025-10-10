@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mobpvp:big_pve_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 2992967,
+    "separation": 9,
+    "spacing": 38
+  }
+}

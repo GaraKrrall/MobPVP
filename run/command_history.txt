@@ -1,22 +1,3 @@
-/time set day
-/effect give Player932 minecraft:strength infinite 255 true
-/summon minecraft:ender_dragon
-/tp @a 1000 ~ 1000
-/data get entity 65623449-e3ee-49d7-b089-1f9a35c7f752 a a
-/data get entity 65623449-e3ee-49d7-b089-1f9a35c7f752 a 1
-/data get entity 65623449-e3ee-49d7-b089-1f9a35c7f752 name 1
-/data get entity 65623449-e3ee-49d7-b089-1f9a35c7f752 "name" 1
-/effect clear
-/particle minecraft:falling_nectar
-/particle minecraft:portal
-/particle minecraft:poof
-/particle minecraft:dust
-/particle minecraft:dust_pillar
-/particle minecraft:damage_indicator
-/particle minecraft:damage_indicator 744.14 -60.00 932.95 744.14 -60.00 932.95 1 90 force
-/particle minecraft:damage_indicator 744.14 -60.00 932.95 744.14 -60.00 932.95 10 90 force
-/particle minecraft:damage_indicator 744.14 -60.00 932.95 744.14 -60.00 932.95 10 90 normal
-/particle minecraft:damage_indicator 744.14 -60.00 932.95 744.14 -60.00 932.95 1 90 normal
 /particle minecraft:damage_indicator 744.14 -60.00 932.95 744.14 -60.00 932.95 0.1 90 normal
 /particle minecraft:damage_indicator 744.14 -60.00 932.95 744.14 -60.00 932.95 0.1 90 force
 /particle minecraft:damage_indicator 738.68 -60.00 940.28 738.68 -60.00 940.28 0.1 90 force
@@ -48,3 +29,22 @@
 /effect give @e[type=mobpvp:mini_copper_golem] minecraft:speed infinite 255 true
 /effect give Player262 minecraft:absorption infinite 255
 /effect give Player235 minecraft:absorption infinite 255
+/tp 10000 ~ ~
+/logger DEBUG
+/logger DEBUG a
+/logger DEBUG
+/locate structure mobpvp:pve_tower
+/tp @s 10000 ~ 89136
+/locate structure mobpvp:big_pve_tower
+/place structure mobpvp:big_pve_tower
+/locate structure mobpvp:big_pve_tower
+/place structure mobpvp:big_pve_tower
+/locate structure mobpvp:big_pve_tower
+/tp @s 9072 ~ 88576
+/tp @a ~ ~ 20000
+/place structure mobpvp:big_pve_tower
+/locate structure mobpvp:big_pve_tower
+/tp @s 8960 ~ 20272
+/tp @s 8960 ~ 15272
+/locate structure mobpvp:big_pve_tower
+/tp @s 8656 ~ 15328

@@ -2,12 +2,9 @@ package com.kaplandev.gen.structure;
 
 import com.kaplandev.gen.WorldGen;
 import com.kaplandev.gen.piece.PvETowerPiece;
-import com.kaplandev.gen.piece.WaterPondPiece;
 import com.mojang.serialization.MapCodec;
-import net.minecraft.util.BlockRotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.ChunkPos;
-import net.minecraft.util.math.random.Random;
 import net.minecraft.world.Heightmap;
 import net.minecraft.world.gen.structure.Structure;
 import net.minecraft.world.gen.structure.StructureType;
