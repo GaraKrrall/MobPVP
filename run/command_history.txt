@@ -1,14 +1,3 @@
-/particle minecraft:damage_indicator 744.14 -60.00 932.95 744.14 -60.00 932.95 0.1 90 normal
-/particle minecraft:damage_indicator 744.14 -60.00 932.95 744.14 -60.00 932.95 0.1 90 force
-/particle minecraft:damage_indicator 738.68 -60.00 940.28 738.68 -60.00 940.28 0.1 90 force
-/tp @a 1000 ~ 1000
-/setworldspawn 765 -61 932
-/spawnpoint Player626 ~ ~ ~
-/effect give 8b15af9b-5e11-4547-887c-70b68b50447b minecraft:instant_health infinite
-/effect give 8b15af9b-5e11-4547-887c-70b68b50447b minecraft:instant_health infinite 255 true
-/effect clear 8b15af9b-5e11-4547-887c-70b68b50447b
-/effect give 8b15af9b-5e11-4547-887c-70b68b50447b minecraft:instant_health infinite 255 true
-/effect clear 8b15af9b-5e11-4547-887c-70b68b50447b
 /effect give 8b15af9b-5e11-4547-887c-70b68b50447b minecraft:instant_health infinite
 /tp 0 0 0
 /effect give Player262 minecraft:absorption infinite 255
@@ -48,3 +37,14 @@
 /tp @s 8960 ~ 15272
 /locate structure mobpvp:big_pve_tower
 /tp @s 8656 ~ 15328
+/place feature mobpvp:arena_feature
+/tp @a ~ ~ 250000
+/locate structure mobpvp:big_pve_tower
+/tp @s 7936 ~ 250336
+/tp @s 7936 ~ 23000
+/locate structure mobpvp:big_pve_tower
+/tp @s 8144 ~ 22544
+/locate structure mobpvp:pve_tower
+/tp @s 7792 ~ 22272
+/locate structure mobpvp:tall_pve_tower
+/tp @s 6848 ~ 20624

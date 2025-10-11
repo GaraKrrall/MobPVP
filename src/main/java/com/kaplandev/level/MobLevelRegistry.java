@@ -36,6 +36,7 @@ public class MobLevelRegistry {
         LEVEL_RANGES.put("custom_skeleton", new Integer[]{2, 6});
 
         LEVEL_RANGES.put("mini_iron_golem", new Integer[]{1, 2});
+        LEVEL_RANGES.put("mini_copper_golem", new Integer[]{1, 8});
     }
 
     public static Integer[] getLevelRange(String mobId) {

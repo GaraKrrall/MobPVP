@@ -39,7 +39,7 @@ public class PvpSpawnerBlockEntity extends BlockEntity {
         // Eğer hiç oyuncu yoksa veya herkes çok uzaksa → resetle
         Optional<ServerPlayerEntity> nearest = serverWorld.getPlayers().stream()
                 .min(Comparator.comparingDouble(p -> p.squaredDistanceTo(Vec3d.ofCenter(pos))));
-        if (nearest.isEmpty() || nearest.get().squaredDistanceTo(Vec3d.ofCenter(pos)) > 20 * 20) { // 20 bloktan uzak
+        if (nearest.isEmpty() || nearest.get().squaredDistanceTo(Vec3d.ofCenter(pos)) > 48 * 48) {// 48 bloktan uzak
             if (blockEntity.waveCount > 0 || !blockEntity.aliveEntities.isEmpty()) {
                 blockEntity.waveCount = 0;
                 blockEntity.aliveEntities.clear();

@@ -1,21 +1,24 @@
 package com.kaplandev.gen;
 
 import com.kaplandev.build.ArenaFeature;
+import com.kaplandev.gen.piece.BigPvETowerPiece;
+import com.kaplandev.gen.piece.HousePiece;
+import com.kaplandev.gen.piece.PvETowerPiece;
+import com.kaplandev.gen.piece.StatuePiece;
+import com.kaplandev.gen.piece.TallPvETowerPiece;
 import com.kaplandev.gen.piece.VillagePiece;
 import com.kaplandev.gen.piece.WaterPondPiece;
 import com.kaplandev.gen.structure.BigPvETower;
 import com.kaplandev.gen.structure.House;
 import com.kaplandev.gen.structure.PvETower;
 import com.kaplandev.gen.structure.Statue;
+import com.kaplandev.gen.structure.TallPvETower;
 import com.kaplandev.gen.structure.Village;
 import com.kaplandev.gen.structure.WaterPondStructure;
-import com.kaplandev.gen.piece.PvETowerPiece;
-import com.kaplandev.gen.piece.HousePiece;
-import com.kaplandev.gen.piece.StatuePiece;
-import com.kaplandev.gen.piece.BigPvETowerPiece;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -64,10 +67,10 @@ public class WorldGen {
     public static final Identifier BIG_PVE_TOWER_ID = Identifier.of(MOBPVP, "big_pve_tower");
     public static final StructureType<BigPvETower> BIG_PVE_TOWER_POND = () -> BigPvETower.CODEC;
     public static final StructurePieceType BIG_PVE_TOWER_PIECE = BigPvETowerPiece::new;
-
-
-
-
+    //UZUN PVE KULESİ
+    public static final Identifier TALL_PVE_TOWER_ID = Identifier.of(MOBPVP, "tall_pve_tower");
+    public static final StructureType<TallPvETower> TALL_PVE_TOWER_POND = () -> TallPvETower.CODEC;
+    public static final StructurePieceType TALL_PVE_TOWER_PIECE = TallPvETowerPiece::new;
 
 
     public static void register() {
@@ -87,8 +90,13 @@ public class WorldGen {
         Registry.register(Registries.STRUCTURE_PIECE, STATUE_ID, STATUE_POND_PIECE);
         Registry.register(Registries.STRUCTURE_TYPE, BIG_PVE_TOWER_ID, BIG_PVE_TOWER_POND);
         Registry.register(Registries.STRUCTURE_PIECE, BIG_PVE_TOWER_ID, BIG_PVE_TOWER_PIECE);
+        Registry.register(Registries.STRUCTURE_TYPE, TALL_PVE_TOWER_ID, TALL_PVE_TOWER_POND);
+        Registry.register(Registries.STRUCTURE_PIECE, TALL_PVE_TOWER_ID, TALL_PVE_TOWER_PIECE);
 
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld().and(context -> {RegistryEntry<Biome> biomeEntry = context.getBiomeRegistryEntry();return !biomeEntry.isIn(BiomeTags.IS_OCEAN) && !biomeEntry.isIn(BiomeTags.IS_RIVER) && !biomeEntry.isIn(BiomeTags.IS_BEACH);}), GenerationStep.Feature.SURFACE_STRUCTURES, ARENA_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld().and(context -> {
+            RegistryEntry<Biome> biomeEntry = context.getBiomeRegistryEntry();
+            return !biomeEntry.isIn(BiomeTags.IS_OCEAN) && !biomeEntry.isIn(BiomeTags.IS_RIVER) && !biomeEntry.isIn(BiomeTags.IS_BEACH);
+        }), GenerationStep.Feature.SURFACE_STRUCTURES, ARENA_PLACED_KEY);
 
 
     }

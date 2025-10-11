@@ -31,6 +31,19 @@ public class UltraHeathItem extends Item {
         ItemStack stack = player.getStackInHand(hand);
         BlockPos center = player.getBlockPos();
 
+        // --- 0. 9x9 sıvı kontrolü ---
+        int fluidRadius = 4; // 4 blok sağa-sola → toplam 9x9 alan
+        for (int fx = -fluidRadius; fx <= fluidRadius; fx++) {
+            for (int fz = -fluidRadius; fz <= fluidRadius; fz++) {
+                BlockPos checkPos = center.add(fx, -1, fz);
+                if (world.getFluidState(checkPos).isIn(net.minecraft.registry.tag.FluidTags.WATER)
+                        || world.getFluidState(checkPos).isIn(net.minecraft.registry.tag.FluidTags.LAVA)) {
+                    player.sendMessage(Text.translatable("error.mobpvp.block"), true);
+                    return TypedActionResult.fail(stack);
+                }
+            }
+        }
+
         // --- 1. 5x5 alan UYGUNLUK kontrolü ---
         int size = 2;
         for (int dx = -size; dx <= size; dx++) {
@@ -39,11 +52,13 @@ public class UltraHeathItem extends Item {
                 BlockPos above = ground.up();               // oyuncunun ayağı
                 BlockPos above2 = ground.up(2);             // oyuncunun kafası
 
-                // Alt blok hava olamaz
-                if (world.getBlockState(ground).isAir()) {
+                // Alt blok hava olamaz ve katı olmalı
+                if (world.getBlockState(ground).isAir()
+                        || !world.getBlockState(ground).isSolidBlock(world, ground)) {
                     player.sendMessage(Text.translatable("error.mobpvp.block"), true);
                     return TypedActionResult.fail(stack);
                 }
+
                 // Oyuncunun ayağı/kafası dolu olamaz
                 if (!world.getBlockState(above).isAir() || !world.getBlockState(above2).isAir()) {
                     player.sendMessage(Text.translatable("error.mobpvp.alan"), true);
@@ -79,6 +94,7 @@ public class UltraHeathItem extends Item {
         stack.decrement(1);
         return TypedActionResult.success(stack);
     }
+
 
     // Küçük yapı yerleştirme metodu
     private void placeStructure(World world, BlockPos center) {

@@ -72,11 +72,6 @@ public class Items {
         DAMAGED_PVP_SPAWNER_MAX_ITEM = GroupItemBuilder.create(DAMAGED_PVP_SPAWNER_MAX_ITEM_KEY, new BlockItem(Blocks.DAMAGED_PVP_SPAWNER_MAX, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         REINFORCED_COPPER_BLOCK = GroupItemBuilder.create(REINFORCED_COPPER_BLOCK_KEY, new BlockItem(Blocks.REINFORCED_COPPER_BLOCK, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
        // IRON_CHEST_ITEM = GroupItemBuilder.BuildItem(IRON_CHEST_ITEM_KEY, new BlockItem(Blocks.IRON_CHEST, new Item.Settings()));
-        EGG_SKELETON = GroupItemBuilder.create(EGG_SKELETON_KEY, new SpawnEggItem(EntityType.MAD_SKELETON, 0xC1C1C1,0x3A3A3A, new Item.Settings())).addToGroup(ItemGroups.EGGS_GROUP_KEY).register();
-        EGG_SUPER_ZOMBIE = GroupItemBuilder.create(EGG_SUPER_ZOMBIE_KEY, new SpawnEggItem(EntityType.MAD_ZOMBIE, 0xB71C1C, 0xFF5252, new Item.Settings())).addToGroup(ItemGroups.EGGS_GROUP_KEY).register();
-        EGG_MINI_GOLEM = GroupItemBuilder.create(EGG_MINI_GOLEM_KEY, new SpawnEggItem(EntityType.MINIGOLEM, 0xD8D8D8, 0x8A8A8A, new Item.Settings())).addToGroup(ItemGroups.EGGS_GROUP_KEY).register();
-        EGG_MINI_COPPER_GOLEM = GroupItemBuilder.create("egg_mini_copper_golem", new SpawnEggItem(EntityType.MINIGOLEM_COPPER, 0xD89A50, 0x8A5D2E, new Item.Settings())).addToGroup(ItemGroups.EGGS_GROUP_KEY).register();
-        EGG_BULWARK = GroupItemBuilder.create(EGG_BULWARK_KEY, new SpawnEggItem(EntityType.BULWARK, 0x880E4F, 0xFF1744, new Item.Settings().rarity(Rarity.EPIC))).addToGroup(ItemGroups.EGGS_GROUP_KEY).register();
         HEARTH_PART = GroupItemBuilder.create(HEARTH_PART_KEY, new Item(new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         REINFORCED_COPPER_INGOT = GroupItemBuilder.create(REINFORCED_COPPER_INGOT_KEY, new Item(new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         KALP_ITEM = GroupItemBuilder.create(KALP_ITEM_KEY, new KalpItem(new Item.Settings().rarity(Rarity.UNCOMMON))).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
@@ -86,5 +81,10 @@ public class Items {
         REINFORCED_COPPER_KNIFE = GroupItemBuilder.create(REINFORCED_COPPER_KNIFE_KEY, new ReinforcedCopperKnifeItem(new Item.Settings().maxCount(1).maxDamage(200), 5.0F, -2.0F)).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         TEST_ITEM = GroupItemBuilder.create("test", new Item(new Item.Settings())).register();
         REINFORCED_COPPER_BALL = GroupItemBuilder.create(REINFORCED_COPPER_BALL_KEY, new IronReinforcedCopperBallItem(new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        EGG_SKELETON = GroupItemBuilder.create(EGG_SKELETON_KEY, new SpawnEggItem(EntityType.MAD_SKELETON, 0xC1C1C1,0x3A3A3A, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        EGG_SUPER_ZOMBIE = GroupItemBuilder.create(EGG_SUPER_ZOMBIE_KEY, new SpawnEggItem(EntityType.MAD_ZOMBIE, 0xB71C1C, 0xFF5252, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        EGG_MINI_GOLEM = GroupItemBuilder.create(EGG_MINI_GOLEM_KEY, new SpawnEggItem(EntityType.MINIGOLEM, 0xD8D8D8, 0x8A8A8A, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        EGG_MINI_COPPER_GOLEM = GroupItemBuilder.create("egg_mini_copper_golem", new SpawnEggItem(EntityType.MINIGOLEM_COPPER, 0xD89A50, 0x8A5D2E, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        EGG_BULWARK = GroupItemBuilder.create(EGG_BULWARK_KEY, new SpawnEggItem(EntityType.BULWARK, 0x880E4F, 0xFF1744, new Item.Settings().rarity(Rarity.EPIC))).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
     }
 }

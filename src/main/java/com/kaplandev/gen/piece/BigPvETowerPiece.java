@@ -103,12 +103,20 @@ public class BigPvETowerPiece extends StructurePiece {
 
             // --- Spawner ve sandık yerleşimi ---
             if (floor % 2 == 0) {
-                BlockPos spawnerPos = origin.add(0, baseY + 1, 0);
-                world.setBlockState(spawnerPos, Blocks.SPAWNER.getDefaultState(), 3);
-                var be = world.getBlockEntity(spawnerPos);
-                if (be instanceof MobSpawnerBlockEntity spawner) {
-                    spawner.setEntityType(randomSpawnerType(random), world.getRandom());
+                BlockPos spawnerBase = origin.add(0, baseY, 0);
+                BlockPos spawnerPos = spawnerBase.up();
+
+                // 3x3 zemin platformu oluştur
+                for (int x = -1; x <= 1; x++) {
+                    for (int z = -1; z <= 1; z++) {
+                        BlockPos floorPos = spawnerBase.add(x, 0, z);
+                        world.setBlockState(floorPos, Blocks.POLISHED_ANDESITE.getDefaultState(), 3);
+                    }
                 }
+
+                // Spawner yerleştir
+                world.setBlockState(spawnerPos, com.kaplandev.block.Blocks.PVP_SPAWNER.getDefaultState(), 3);
+
             }
 
             // 2 adet sandık: zırh/loot + küçük dekor
@@ -175,18 +183,6 @@ public class BigPvETowerPiece extends StructurePiece {
         return Blocks.CHISELED_STONE_BRICKS.getDefaultState();
     }
 
-    private static EntityType<?> randomSpawnerType(Random random) {
-        int pick = random.nextInt(7);
-        return switch (pick) {
-            case 0 -> EntityType.ZOMBIE;
-            case 1 -> EntityType.SKELETON;
-            case 2 -> EntityType.SPIDER;
-            case 3 -> EntityType.CREEPER;
-            case 4 -> EntityType.PILLAGER;
-            case 5 -> EntityType.ENDERMAN;
-            default -> EntityType.HUSK;
-        };
-    }
 
     private static void placeVerticalWindow(StructureWorldAccess world, BlockPos start, int height) {
         for (int i = 0; i < height; i++) {
@@ -279,11 +275,7 @@ public class BigPvETowerPiece extends StructurePiece {
 
         // boss spawner (güçlü)
         BlockPos sp = center.add(0, 2, 0);
-        world.setBlockState(sp, Blocks.SPAWNER.getDefaultState(), 3);
-        var be = world.getBlockEntity(sp);
-        if (be instanceof MobSpawnerBlockEntity spawner) {
-            spawner.setEntityType(EntityType.ELDER_GUARDIAN, world.getRandom());
-        }
+        world.setBlockState(sp, com.kaplandev.block.Blocks.PVP_SPAWNER_MAX.getDefaultState(), 3);
     }
 
     private static void buildGlassDome(StructureWorldAccess world, BlockPos origin, int floors, int floorHeight, int radius, Random random) {

@@ -93,6 +93,7 @@ public class MobXpValues {
         XP_VALUES.put(EntityType.MAD_SKELETON, 5);
         XP_VALUES.put(EntityType.MAD_ZOMBIE, 1);
         XP_VALUES.put(EntityType.MINIGOLEM, 2);
+        XP_VALUES.put(EntityType.MINIGOLEM_COPPER, 4);
 
     }
 
