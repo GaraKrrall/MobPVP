@@ -14,7 +14,7 @@ import net.minecraft.world.gen.structure.StructureType;
 import java.util.Optional;
 
 public class WaterPondStructure extends Structure {
-    public static final MapCodec<WaterPondStructure> CODEC = createCodec(WaterPondStructure::new);
+    public static final MapCodec<WaterPondStructure> CODEC = (MapCodec<WaterPondStructure>) createCodec(WaterPondStructure::new);
 
     public WaterPondStructure(Config config) {
         super(config);

@@ -30,7 +30,7 @@ import net.minecraft.world.World;
 
 public class BulwarkEntity extends PathAwareEntity {
     private final ServerBossBar bossBar = new ServerBossBar(
-            Text.literal("§c🔥 BOSS: Bulwark 🔥"),
+            Text.literal("Bulwark"),
             BossBar.Color.RED,
             BossBar.Style.PROGRESS
     );

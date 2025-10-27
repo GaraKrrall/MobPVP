@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "mobpvp",
-  "version": "3.2.2-pre4",
+  "version": "3.2.3-pre1-port",
   "name": "MobPVP",
   "description": "MobPVP adds a level system to every mob. Stronger mobs drop better loot and may become minibosses.",
   "authors": ["KaplanBedwars"],
@@ -32,9 +32,9 @@
     }
   ],
   "depends": {
-    "fabricloader": ">=0.16.14",
+    "fabricloader": ">=0.17.3",
     "fabric": "*",
-    "minecraft": "1.21.1"
+    "minecraft": "1.20.1"
   },
   "breaks": {
     "addon": "<=1.1"

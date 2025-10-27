@@ -3,9 +3,9 @@ package com.kaplandev.item;
 import com.kaplandev.block.Blocks;
 import com.kaplandev.item.feature.IronReinforcedCopperBallItem;
 import com.kaplandev.item.feature.KalpItem;
-import com.kaplandev.item.feature.ReinforcedCopperKnifeItem;
+import com.kaplandev.item.feature.KnifeItem;
 import com.kaplandev.item.feature.UltraHeathItem;
-import com.kaplandev.item.feature.ReinforcedCopperMaceItem;
+import com.kaplandev.item.feature.MaceItem;
 import com.kaplandev.item.group.ItemGroups;
 import com.kaplandev.entity.EntityType;
 
@@ -56,11 +56,14 @@ public class Items {
     public static final Item DAMAGED_PVP_SPAWNER_MAX_ITEM;
     public static final Item REINFORCED_COPPER_BLOCK;
     public static final Item COPPER_STICK;
-    //public static final Item IRON_CHEST_ITEM;
-    public static final Item REINFORCED_COPPER_MACE;
     public static final Item REINFORCED_COPPER_KNIFE;
     public static final Item TEST_ITEM;
     public static final Item REINFORCED_COPPER_BALL;
+    public static final Item GOLD_MACE;
+    public static final Item IRON_MACE;
+    public static final Item REINFORCED_COPPER_MACE;
+    public static final Item DIAMOND_MACE;
+    public static final Item NETHERITE_MACE;
     public static void init() {}
 
     static {
@@ -71,20 +74,23 @@ public class Items {
         DAMAGED_PVP_SPAWNER_ITEM = GroupItemBuilder.create(DAMAGED_PVP_SPAWNER_ITEM_KEY, new BlockItem(Blocks.DAMAGED_PVP_SPAWNER, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         DAMAGED_PVP_SPAWNER_MAX_ITEM = GroupItemBuilder.create(DAMAGED_PVP_SPAWNER_MAX_ITEM_KEY, new BlockItem(Blocks.DAMAGED_PVP_SPAWNER_MAX, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         REINFORCED_COPPER_BLOCK = GroupItemBuilder.create(REINFORCED_COPPER_BLOCK_KEY, new BlockItem(Blocks.REINFORCED_COPPER_BLOCK, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
-       // IRON_CHEST_ITEM = GroupItemBuilder.BuildItem(IRON_CHEST_ITEM_KEY, new BlockItem(Blocks.IRON_CHEST, new Item.Settings()));
-        HEARTH_PART = GroupItemBuilder.create(HEARTH_PART_KEY, new Item(new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         REINFORCED_COPPER_INGOT = GroupItemBuilder.create(REINFORCED_COPPER_INGOT_KEY, new Item(new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        HEARTH_PART = GroupItemBuilder.create(HEARTH_PART_KEY, new Item(new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         KALP_ITEM = GroupItemBuilder.create(KALP_ITEM_KEY, new KalpItem(new Item.Settings().rarity(Rarity.UNCOMMON))).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         ULTRA_HEARTH_ITEM = GroupItemBuilder.create(ULTRA_HEARTH_KEY, new UltraHeathItem(new Item.Settings().rarity(Rarity.RARE))).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         COPPER_STICK = GroupItemBuilder.create(COPPER_STICK_KEY, new BlockItem(Blocks.REINFORCED_COPPER_STICK, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
-        REINFORCED_COPPER_MACE = GroupItemBuilder.create(REINFORCED_COPPER_MACE_KEY, new ReinforcedCopperMaceItem(new Item.Settings().maxDamage(250).maxCount(1).rarity(Rarity.RARE), 2.0F,  -3.5F, 2.8F, 0.5F)).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
-        REINFORCED_COPPER_KNIFE = GroupItemBuilder.create(REINFORCED_COPPER_KNIFE_KEY, new ReinforcedCopperKnifeItem(new Item.Settings().maxCount(1).maxDamage(200), 5.0F, -2.0F)).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        GOLD_MACE = GroupItemBuilder.create("gold_mace", new MaceItem(new Item.Settings().maxDamage(50).rarity(Rarity.COMMON), 0.5F,  -3.5F, 0.8F, 0.1F)).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        IRON_MACE = GroupItemBuilder.create("iron_mace", new MaceItem(new Item.Settings().maxDamage(150).rarity(Rarity.RARE), 1.5F,  -3.5F, 2.2F, 0.2F)).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        REINFORCED_COPPER_MACE = GroupItemBuilder.create(REINFORCED_COPPER_MACE_KEY, new MaceItem(new Item.Settings().maxDamage(200).rarity(Rarity.RARE), 2.0F,  -3.5F, 2.8F, 0.5F)).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        DIAMOND_MACE = GroupItemBuilder.create("diamond_mace", new MaceItem(new Item.Settings().maxDamage(250).rarity(Rarity.RARE), 2.3F,  -2.5F, 3.0F, 0.7F)).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        NETHERITE_MACE = GroupItemBuilder.create("netherite_mace", new MaceItem(new Item.Settings().maxDamage(300).rarity(Rarity.EPIC), 2.8F,  -2.0F, 3.5F, 1.0F)).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        REINFORCED_COPPER_KNIFE = GroupItemBuilder.create(REINFORCED_COPPER_KNIFE_KEY, new KnifeItem(new Item.Settings().maxDamage(200), 5.0F, -2.0F)).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         TEST_ITEM = GroupItemBuilder.create("test", new Item(new Item.Settings())).register();
         REINFORCED_COPPER_BALL = GroupItemBuilder.create(REINFORCED_COPPER_BALL_KEY, new IronReinforcedCopperBallItem(new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         EGG_SKELETON = GroupItemBuilder.create(EGG_SKELETON_KEY, new SpawnEggItem(EntityType.MAD_SKELETON, 0xC1C1C1,0x3A3A3A, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         EGG_SUPER_ZOMBIE = GroupItemBuilder.create(EGG_SUPER_ZOMBIE_KEY, new SpawnEggItem(EntityType.MAD_ZOMBIE, 0xB71C1C, 0xFF5252, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         EGG_MINI_GOLEM = GroupItemBuilder.create(EGG_MINI_GOLEM_KEY, new SpawnEggItem(EntityType.MINIGOLEM, 0xD8D8D8, 0x8A8A8A, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
-        EGG_MINI_COPPER_GOLEM = GroupItemBuilder.create("egg_mini_copper_golem", new SpawnEggItem(EntityType.MINIGOLEM_COPPER, 0xD89A50, 0x8A5D2E, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        EGG_MINI_COPPER_GOLEM = GroupItemBuilder.create("egg_mini_copper_golem", new SpawnEggItem(EntityType.MINIGOLEM_COPPER, 0xCE7760, 0xA85E4D, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         EGG_BULWARK = GroupItemBuilder.create(EGG_BULWARK_KEY, new SpawnEggItem(EntityType.BULWARK, 0x880E4F, 0xFF1744, new Item.Settings().rarity(Rarity.EPIC))).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
     }
 }

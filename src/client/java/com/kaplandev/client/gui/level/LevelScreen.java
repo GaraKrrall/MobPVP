@@ -62,8 +62,7 @@ public class LevelScreen extends BaseOwoScreen<FlowLayout> {
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
         // önce arkaplan (karartma)
-        this.renderBackground(context,mouseX,mouseY,delta);
-
+        this.renderBackground(context);
         final int w = this.width;
         final int h = this.height;
 

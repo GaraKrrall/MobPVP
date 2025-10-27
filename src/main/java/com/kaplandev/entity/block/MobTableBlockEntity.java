@@ -45,17 +45,4 @@ public class MobTableBlockEntity extends BlockEntity implements ImplementedInven
         }
     }
 
-    @Override
-    public void readNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup lookup) {
-        super.readNbt(nbt, lookup);
-        Inventories.readNbt(nbt, items, lookup);
-        ticksRemaining = nbt.getInt("TicksRemaining");
-    }
-
-    @Override
-    protected void writeNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup lookup) {
-        super.writeNbt(nbt, lookup);
-        Inventories.writeNbt(nbt, items, lookup);
-        nbt.putInt("TicksRemaining", ticksRemaining);
-    }
 }

@@ -14,7 +14,7 @@ import net.minecraft.world.gen.structure.StructureType;
 import java.util.Optional;
 
 public class Village extends Structure {
-    public static final MapCodec<Village> CODEC = createCodec(Village::new);
+    public static final MapCodec<Village> CODEC = (MapCodec<Village>) createCodec(Village::new);
 
     public Village(Config config) {
         super(config);

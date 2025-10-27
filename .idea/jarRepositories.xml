@@ -56,5 +56,15 @@
       <option name="name" value="maven2" />
       <option name="url" value="https://maven.wispforest.io" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="LoomLocalRemappedMods" />
+      <option name="name" value="LoomLocalRemappedMods" />
+      <option name="url" value="file:/$PROJECT_DIR$/../MobPVP%20-%201.20.1/.gradle/loom-cache/remapped_mods/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="LoomLocalMinecraft" />
+      <option name="name" value="LoomLocalMinecraft" />
+      <option name="url" value="file:/$PROJECT_DIR$/../MobPVP%20-%201.20.1/.gradle/loom-cache/minecraftMaven/" />
+    </remote-repository>
   </component>
 </project>

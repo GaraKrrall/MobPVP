@@ -39,7 +39,7 @@ public class IRON_BLOCK {
             world.breakBlock(pos, false);
 
             BlockPos spawnPos = pos.up();
-            for (int i = 0; i < 2; i++) {
+            for (int i = 0; i < 4; i++) {
                 MiniIronGolemEntity mini = new MiniIronGolemEntity(EntityType.MINIGOLEM, world);
                 mini.refreshPositionAndAngles(
                         spawnPos.getX() + 0.5,

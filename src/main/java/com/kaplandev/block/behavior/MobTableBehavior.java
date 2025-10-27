@@ -26,18 +26,6 @@ public class MobTableBehavior extends Block implements BlockBehavior {
         super(settings);
     }
 
-    @Override
-    protected ActionResult onUse(BlockState state, World world, BlockPos pos,
-                                 PlayerEntity player, BlockHitResult hit) {
-        if (world.isClient) {
-            return ActionResult.SUCCESS;
-        } else {
-            player.openHandledScreen(state.createScreenHandlerFactory(world, pos));
-            // İstersen istatistik de tutabilirsin
-            // player.incrementStat(Stats.CUSTOM.get(MY_CUSTOM_STAT));
-            return ActionResult.CONSUME;
-        }
-    }
 
 
     @Override

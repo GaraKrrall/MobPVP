@@ -12,7 +12,7 @@ import net.minecraft.world.gen.structure.StructureType;
 import java.util.Optional;
 
 public class BigPvETower extends Structure {
-    public static final MapCodec<BigPvETower> CODEC = createCodec(BigPvETower::new);
+    public static final MapCodec<BigPvETower> CODEC = (MapCodec<BigPvETower>) createCodec(BigPvETower::new);
 
     public BigPvETower(Config config) {
         super(config);

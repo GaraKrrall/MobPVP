@@ -14,7 +14,7 @@ import net.minecraft.world.gen.structure.StructureType;
 import java.util.Optional;
 
 public class Statue extends Structure {
-    public static final MapCodec<Statue> CODEC = createCodec(Statue::new);
+    public static final MapCodec<Statue> CODEC = (MapCodec<Statue>) createCodec(Statue::new);
 
     public Statue(Config config) {
         super(config);

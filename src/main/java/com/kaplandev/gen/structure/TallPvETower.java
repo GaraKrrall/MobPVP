@@ -12,7 +12,7 @@ import net.minecraft.world.gen.structure.StructureType;
 import java.util.Optional;
 
 public class TallPvETower extends Structure {
-    public static final MapCodec<TallPvETower> CODEC = createCodec(TallPvETower::new);
+    public static final MapCodec<TallPvETower> CODEC = (MapCodec<TallPvETower>) createCodec(TallPvETower::new);
 
     public TallPvETower(Config config) {
         super(config);

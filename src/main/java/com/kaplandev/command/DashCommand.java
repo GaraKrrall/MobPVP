@@ -23,7 +23,7 @@ public class DashCommand {
             long last = cooldowns.get(id);
             long remaining = COOLDOWN_MILLIS - (now - last);
             if (remaining > 0) {
-                player.sendMessage(Text.literal("§cDash hazır değil. Bekleme: " + (remaining / 1000) + " saniye"), true);
+                player.sendMessage(Text.literal("§cDash is not ready. Wait: " + (remaining / 1000) + " seconds"), true);
                 return 0;
             }
         }
@@ -35,7 +35,7 @@ public class DashCommand {
         player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20, 8));
         cooldowns.put(id, now);
 
-        player.sendMessage(Text.literal("§aDash aktif!"), false);
+        player.sendMessage(Text.literal("§aGO GO GO GO!"), false);
         return 1;
     }
 }

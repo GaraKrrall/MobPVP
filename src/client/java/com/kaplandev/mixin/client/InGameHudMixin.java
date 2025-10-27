@@ -19,7 +19,7 @@ import java.util.UUID;
 public class InGameHudMixin {
 
     @Inject(method = "render", at = @At("TAIL"))
-    private void onRender(DrawContext context, RenderTickCounter tickCounter, CallbackInfo ci) {
+    private void onRender(DrawContext context, float tickDelta, CallbackInfo ci) {
         MinecraftClient client = MinecraftClient.getInstance();
 
         if (client.player == null || client.options.hudHidden) return;

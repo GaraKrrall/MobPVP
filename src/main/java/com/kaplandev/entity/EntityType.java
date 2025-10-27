@@ -24,4 +24,5 @@ public class EntityType {
     public static BlockEntityType<MobTableBlockEntity> MOB_TABLE;
     public static net.minecraft.entity.EntityType<IronReinforcedCopperBallEntity> IRON_REINFORCED_COPPER_BALL;
   //  public static BlockEntityType<IronChestBlockEntity> IRON_CHEST;
+    public static void touch(){}
 }

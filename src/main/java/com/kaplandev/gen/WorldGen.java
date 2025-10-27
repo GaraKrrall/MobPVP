@@ -43,25 +43,25 @@ public class WorldGen {
     public static final RegistryKey<PlacedFeature> ARENA_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, ARENA_ID);
     // Water Pond
     public static final Identifier WATER_POND_ID = Identifier.of(MOBPVP, "water_pond");
-    public static final StructureType<WaterPondStructure> WATER_POND = () -> WaterPondStructure.CODEC;
+    public static final StructureType<WaterPondStructure> WATER_POND = () -> WaterPondStructure.CODEC.codec();
     public static final StructurePieceType WATER_POND_PIECE = WaterPondPiece::new;
     //PVE TOWER
     public static final Identifier PVE_TOWER_ID = Identifier.of(MOBPVP, "pve_tower");
-    public static final StructureType<PvETower> PVE_TOWER_POND = () -> PvETower.CODEC;
+    public static final StructureType<PvETower> PVE_TOWER_POND = () -> PvETower.CODEC.codec();
     public static final StructurePieceType PVE_TOWER_POND_PIECE = PvETowerPiece::new;
     //EV
     public static final StructurePieceType HOUSE_PIECE = HousePiece::new;
     //PVE TOWER
     public static final Identifier HOUSE_ID = Identifier.of(MOBPVP, "house");
-    public static final StructureType<House> HOUSE_POND = () -> House.CODEC;
+    public static final StructureType<House> HOUSE_POND = () -> House.CODEC.codec();
     public static final StructurePieceType HOUSE_POND_PIECE = HousePiece::new;
     //VILLAGE
     public static final Identifier VILLAGE_ID = Identifier.of(MOBPVP, "mini_village");
-    public static final StructureType<Village> VILLAGE_POND = () -> Village.CODEC;
+    public static final StructureType<Village> VILLAGE_POND = () -> Village.CODEC.codec();
     public static final StructurePieceType VILLAGE_POND_PIECE = VillagePiece::new;
     //HEYKEL
     public static final Identifier STATUE_ID = Identifier.of(MOBPVP, "statue");
-    public static final StructureType<Statue> STATUE_POND = () -> Statue.CODEC;
+    public static final StructureType<Statue> STATUE_POND = () -> Statue.CODEC.codec();
     public static final StructurePieceType STATUE_POND_PIECE = StatuePiece::new;
     //BÜYÜK PVE TOWER
     public static final Identifier BIG_PVE_TOWER_ID = Identifier.of(MOBPVP, "big_pve_tower");
@@ -69,7 +69,7 @@ public class WorldGen {
     public static final StructurePieceType BIG_PVE_TOWER_PIECE = BigPvETowerPiece::new;
     //UZUN PVE KULESİ
     public static final Identifier TALL_PVE_TOWER_ID = Identifier.of(MOBPVP, "tall_pve_tower");
-    public static final StructureType<TallPvETower> TALL_PVE_TOWER_POND = () -> TallPvETower.CODEC;
+    public static final StructureType<TallPvETower> TALL_PVE_TOWER_POND = () -> TallPvETower.CODEC.codec();
     public static final StructurePieceType TALL_PVE_TOWER_PIECE = TallPvETowerPiece::new;
 
 

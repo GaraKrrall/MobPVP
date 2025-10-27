@@ -1,6 +1,7 @@
 package com.kaplandev.level;
 
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -40,20 +41,20 @@ public class BossVariants {
 
         living.setCustomName(Text.literal("§c[Level: " + level + "] " + name));
         living.setCustomNameVisible(true);
-// HP
+
+        // HP
         if (living.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH) != null) {
             double base = living.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).getBaseValue();
-            double total = base + level * 0.5; // DÜŞÜRÜLDÜ: Eskiden 1.2 idi
+            double total = base + level * 0.5;
             living.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).setBaseValue(total);
             living.setHealth((float) total);
         }
 
-// Damage
+        // Damage
         if (living.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE) != null) {
             double dmg = living.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE).getBaseValue();
-            living.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE).setBaseValue(dmg + level * 0.05); // Eskiden 0.2 idi
+            living.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE).setBaseValue(dmg + level * 0.05);
         }
-
 
         // Zırh
         ItemStack[] armor = armorSet.getArmor();
@@ -64,16 +65,8 @@ public class BossVariants {
 
         // Silah
         ItemStack sword = new ItemStack(swordItem);
-        RegistryEntry<Enchantment> sharpnessEntry = world.getRegistryManager()
-                .get(RegistryKeys.ENCHANTMENT)
-                .getEntry(Identifier.of("minecraft", "sharpness")).orElseThrow();
-
-        RegistryEntry<Enchantment> knockbackEntry = world.getRegistryManager()
-                .get(RegistryKeys.ENCHANTMENT)
-                .getEntry(Identifier.of("minecraft", "knockback")).orElseThrow();
-
-        sword.addEnchantment(sharpnessEntry, sharp);
-        sword.addEnchantment(knockbackEntry, knockback);
+        sword.addEnchantment(Enchantments.SHARPNESS, sharp);
+        sword.addEnchantment(Enchantments.KNOCKBACK, knockback);
         zombie.equipStack(EquipmentSlot.MAINHAND, sword);
 
         // Düşmesin
@@ -83,4 +76,5 @@ public class BossVariants {
 
         return true;
     }
+
 }

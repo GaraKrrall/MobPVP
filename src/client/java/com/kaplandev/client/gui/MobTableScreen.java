@@ -15,7 +15,7 @@ public class MobTableScreen extends HandledScreen<MobTableScreenHandler> {
         super(handler, inventory, title);
         this.backgroundWidth = 176;
         this.backgroundHeight = 166;
-        BookOpener.openFakeSignedBook();
+
     }
 
     @Override

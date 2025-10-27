@@ -27,12 +27,12 @@ public class PanoramaMixin {
     private boolean addon$lastState = false;
 
     private static final Identifier VANILLA_PANORAMA =
-            Identifier.ofVanilla("textures/gui/title/background/panorama");
+            Identifier.of("minecraft","textures/gui/title/background/panorama");
     private static final Identifier MOBPVP_PANORAMA =
             Identifier.of("mobpvp", "textures/gui/title/panorama");
 
     @Inject(method = "render", at = @At("HEAD"))
-    private void addon$onRender(DrawContext context, int width, int height, float alpha, float tickDelta, CallbackInfo ci) {
+    private void addon$onRender(float delta, float alpha, CallbackInfo ci) {
         ConfigManager config = AutoConfig.getConfigHolder(ConfigManager.class).getConfig();
         boolean enabled = config.showMobPvPPanorama;
 

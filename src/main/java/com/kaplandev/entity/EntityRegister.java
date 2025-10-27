@@ -10,7 +10,7 @@ import com.kaplandev.entity.mob.MadSkeletonEntity;
 import com.kaplandev.entity.mob.MadZombieEntity;
 import com.kaplandev.entity.mob.MiniCopperGolemEntity;
 import com.kaplandev.entity.passive.MiniIronGolemEntity;
-import com.kaplanlib.api.builder.EntityAttributeAndSpawnBuilder;
+import com.kaplanlib.api.builder.EntityAttributeBuilder;
 import com.kaplanlib.util.path.Paths;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
@@ -45,9 +45,9 @@ public class EntityRegister {
     public static void register() {
         System.out.println("Custom entities registered.");
         registerSpawns();
-        EntityAttributeAndSpawnBuilder.create(BULWARK).attributes(BulwarkEntity.createAttributes()).build();
-        EntityAttributeAndSpawnBuilder.create(MINIGOLEM).attributes(MiniIronGolemEntity.createAttributes()).build();
-        EntityAttributeAndSpawnBuilder.create(MINIGOLEM_COPPER).attributes(MiniCopperGolemEntity.createAttributes()).build();
+        EntityAttributeBuilder.create(BULWARK).attributes(BulwarkEntity.createAttributes()).build();
+        EntityAttributeBuilder.create(MINIGOLEM).attributes(MiniIronGolemEntity.createAttributes()).build();
+        EntityAttributeBuilder.create(MINIGOLEM_COPPER).attributes(MiniCopperGolemEntity.createAttributes()).build();
         System.out.println("Mob özellikleri kaydedildi");
     }
 
@@ -57,17 +57,27 @@ public class EntityRegister {
     }
 
     static {
-        MAD_ZOMBIE = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, MAD_ZOMBIE_KEY), FabricEntityTypeBuilder.createMob().entityFactory(MadZombieEntity::new).defaultAttributes(MadZombieEntity::createCustomZombieAttributes).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.6f, 1.2f)).build());
-        MAD_SKELETON = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, MAD_SKELETON_KEY), FabricEntityTypeBuilder.createMob().entityFactory(MadSkeletonEntity::new).defaultAttributes(MadSkeletonEntity::createCustomSkeletonAttributes).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.6f, 1.2f)).build());
-        BULWARK = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, Paths.BULWARK), FabricEntityTypeBuilder.createMob().entityFactory(BulwarkEntity::new).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.8f, 2.0f)).trackRangeBlocks(80).build());
-        MINIGOLEM = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, Paths.MINIGOLEM), FabricEntityTypeBuilder.createMob().entityFactory(MiniIronGolemEntity::new).spawnGroup(SpawnGroup.CREATURE).dimensions(EntityDimensions.fixed(0.8f, 2.0f)).trackRangeBlocks(80).build());
-        MINIGOLEM_COPPER = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, "mini_copper_golem"), FabricEntityTypeBuilder.createMob().entityFactory(MiniCopperGolemEntity::new).spawnGroup(SpawnGroup.CREATURE).dimensions(EntityDimensions.fixed(0.8f, 2.0f)).trackRangeBlocks(160).build());
-        PVP_SPAWNER = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, PVP_SPAWNER_KEY), FabricBlockEntityTypeBuilder.create(PvpSpawnerBlockEntity::new, Blocks.PVP_SPAWNER).build());
-        PVP_SPAWNER_MAX = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, PVP_SPAWNER_MAX_KEY), FabricBlockEntityTypeBuilder.create(PvpSpawnerMaxBlockEntity::new, Blocks.PVP_SPAWNER_MAX).build());
+        MAD_ZOMBIE = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, MAD_ZOMBIE_KEY), FabricEntityTypeBuilder.createMob().entityFactory(MadZombieEntity::new).defaultAttributes(MadZombieEntity::createCustomZombieAttributes).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.6f, 1.95f)).build());
+        MAD_SKELETON = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, MAD_SKELETON_KEY), FabricEntityTypeBuilder.createMob().entityFactory(MadSkeletonEntity::new).defaultAttributes(MadSkeletonEntity::createCustomSkeletonAttributes).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.6f, 1.99f)).build());
+        BULWARK = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, Paths.BULWARK), FabricEntityTypeBuilder.createMob().entityFactory(BulwarkEntity::new).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(2.0f, 5.0f)).trackRangeBlocks(80).build());
+        MINIGOLEM = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, Paths.MINIGOLEM), FabricEntityTypeBuilder.createMob().entityFactory(MiniIronGolemEntity::new).spawnGroup(SpawnGroup.CREATURE).dimensions(EntityDimensions.fixed(0.8f, 1.0f)).trackRangeBlocks(80).build());
+        MINIGOLEM_COPPER = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, "mini_copper_golem"), FabricEntityTypeBuilder.createMob().entityFactory(MiniCopperGolemEntity::new).spawnGroup(SpawnGroup.CREATURE).dimensions(EntityDimensions.fixed(0.8f, 1.0f)).trackRangeBlocks(160).build());
+       // PVP_SPAWNER = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, PVP_SPAWNER_KEY), FabricBlockEntityTypeBuilder.create(PvpSpawnerBlockEntity::new, Blocks.PVP_SPAWNER).build());
+        //PVP_SPAWNER_MAX = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, PVP_SPAWNER_MAX_KEY), FabricBlockEntityTypeBuilder.create(PvpSpawnerMaxBlockEntity::new, Blocks.PVP_SPAWNER_MAX).build());
         MOB_TABLE = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, MOB_TABLE_KEY), FabricBlockEntityTypeBuilder.create(MobTableBlockEntity::new, Blocks.MOB_TABLE).build());
         // IRON_CHEST = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, IRON_CHEST_KEY), FabricBlockEntityTypeBuilder.create(IronChestBlockEntity::new, new Block[]{ Blocks.IRON_CHEST }).build());
-        IRON_REINFORCED_COPPER_BALL = Registry.register(Registries.ENTITY_TYPE, MOD_ID, net.minecraft.entity.EntityType.Builder.<IronReinforcedCopperBallEntity>create(IronReinforcedCopperBallEntity::new, SpawnGroup.MISC).dimensions(0.25f, 0.25f).maxTrackingRange(4).trackingTickInterval(10).build(REINFORCED_COPPER_BALL_KEY)
-        );
+        IRON_REINFORCED_COPPER_BALL =
+                Registry.register(
+                        Registries.ENTITY_TYPE,
+                        new Identifier(MOD_ID, "iron_reinforced_copper_ball"),
+                        FabricEntityTypeBuilder.<IronReinforcedCopperBallEntity>create(SpawnGroup.MISC, IronReinforcedCopperBallEntity::new)
+                                .dimensions(EntityDimensions.fixed(0.25f, 0.25f))
+                                .trackRangeBlocks(4)
+                                .trackedUpdateRate(10)
+                                .build()
+                );
+
+
     }
 
 }

@@ -83,7 +83,7 @@ public class PvpSpawnerMaxBlockEntity extends BlockEntity {
             Entity mob = createWaveMob(serverWorld, blockEntity.waveCount, mobVariety);
 
             if (mob != null) {
-                mob.refreshPositionAndAngles(Vec3d.ofCenter(spawnPos), 0, 0);
+                mob.refreshPositionAndAngles(BlockPos.ofFloored(Vec3d.ofCenter(spawnPos)), 0, 0);
                 // Scale mob health and damage based on wave
                 serverWorld.spawnEntity(mob);
                 blockEntity.aliveEntities.add(mob.getUuid());

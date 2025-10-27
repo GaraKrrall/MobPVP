@@ -71,7 +71,7 @@ public class PvpSpawnerBlockEntity extends BlockEntity {
             };
 
             if (mob != null) {
-                mob.refreshPositionAndAngles(Vec3d.ofCenter(spawnPos), 0, 0);
+                mob.refreshPositionAndAngles(BlockPos.ofFloored(Vec3d.ofCenter(spawnPos)), 0, 0);
                 serverWorld.spawnEntity(mob);
                 blockEntity.aliveEntities.add(mob.getUuid());
             }

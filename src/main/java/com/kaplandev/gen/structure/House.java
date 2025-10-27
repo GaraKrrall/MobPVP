@@ -13,7 +13,7 @@ import net.minecraft.world.gen.structure.StructureType;
 import java.util.Optional;
 
 public class House extends Structure {
-    public static final MapCodec<House> CODEC = createCodec(House::new);
+    public static final MapCodec<House> CODEC = (MapCodec<House>) createCodec(House::new);
 
     public House(Config config) {
         super(config);

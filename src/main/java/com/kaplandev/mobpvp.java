@@ -1,5 +1,6 @@
 package com.kaplandev;
 
+import com.kaplandev.entity.EntityType;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 
@@ -24,10 +25,8 @@ import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
 import java.util.ArrayList;
@@ -58,9 +57,10 @@ import com.kaplandev.trade.Trades;
 import com.kaplanlib.api.PluginRegistry;
 import com.kaplanlib.api.annotation.KaplanBedwars;
 import com.kaplandev.enchantment.EnchantmentGet;
-import com.kaplandev.enchantment.effect.MagmatizationEffect;
 import com.kaplandev.villager.Villagers;
 import com.kaplandev.data.LevelData;
+import com.kaplandev.event.totem.COPPER_BLOCK;
+import com.kaplandev.enchantment.MagmatizationEnchantment;
 
 import static com.kaplanlib.util.path.Paths.MOBPVP;
 import static com.kaplanlib.util.path.Paths.STARTUP_SOUND_EVENT;
@@ -78,12 +78,13 @@ public final class mobpvp implements ModInitializer {
     public void onInitialize() {
         AutoConfig.register(LevelData.class, GsonConfigSerializer::new);
 
-        EnchantmentsAndEffects.registerModEnchantmentEffects();
+        EnchantmentsAndEffects.registerModEnchantments();
         EnchantmentGet.init();
         WorldGen.register();
         Blocks.init();
         Villagers.registerVillagers();
         Trades.init();
+        EntityType.touch();
         EntityRegister.register();
         Items.init();
         ItemGroups.init();
@@ -91,6 +92,7 @@ public final class mobpvp implements ModInitializer {
         PluginRegistry.callOnLoad();
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {ModCommands.register(dispatcher);});
         UseBlockCallback.EVENT.register(IRON_BLOCK::onUseBlock);
+        UseBlockCallback.EVENT.register(COPPER_BLOCK::onUseBlock);
         ServerLifecycleEvents.SERVER_STARTED.register(server -> {
             Trades.register(); // enchantment registry bu noktada hazır
             PlayerLevelSaveHandler.init(server);
@@ -98,7 +100,7 @@ public final class mobpvp implements ModInitializer {
 
         ServerLifecycleEvents.SERVER_STOPPING.register(server -> PlayerLevelSaveHandler.save());
         ServerTickEvents.END_WORLD_TICK.register(world -> {
-            MagmatizationEffect.tick(world);
+            MagmatizationEnchantment.tick(world);
             for (var player : world.getPlayers()) {
                 UUID uuid = player.getUuid();
                 int level = PlayerLevelData.getLevel(uuid);
@@ -114,7 +116,8 @@ public final class mobpvp implements ModInitializer {
 
             String mobId = Registries.ENTITY_TYPE.getId(entity.getType()).getPath();
             Integer[] range = MobLevelRegistry.getLevelRangeOrDefault(mobId, new Integer[]{1, 40});
-            int level = range[0] + entity.getRandom().nextInt(range[1] - range[0] + 1);
+            int level = range[0] + entity.getWorld().random.nextInt(range[1] - range[0] + 1);
+
 
 
             LevelAssigner.assignLevel(living, mobId, level);
@@ -169,10 +172,11 @@ public final class mobpvp implements ModInitializer {
             }
         });
 
-        LootTableEvents.MODIFY.register((RegistryKey<LootTable> id, LootTable.Builder builder, LootTableSource source) -> {
-            if (!"minecraft".equals(id.getValue().getNamespace())) return;
-            if (!id.getValue().getPath().startsWith("entities/")) return;
-            String mobId = id.getValue().getPath().replace("entities/", "");
+        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, builder, source) -> {
+            if (!"minecraft".equals(id.getNamespace())) return;
+            if (!id.getPath().startsWith("entities/")) return;
+            String mobId = id.getPath().replace("entities/", "");
+
             Integer[] range = LEVEL_RANGES.getOrDefault(mobId, new Integer[]{1, 1});
             int level = range[1];
             List<LootPoolEntry> common = new ArrayList<>();

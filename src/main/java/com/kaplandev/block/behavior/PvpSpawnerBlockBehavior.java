@@ -33,13 +33,10 @@ public class PvpSpawnerBlockBehavior extends BlockWithEntity implements BlockBeh
 
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return world.isClient ? null : BlockWithEntity.validateTicker(type, EntityType.PVP_SPAWNER, PvpSpawnerBlockEntity::tick);
+        return world.isClient ? null : checkType(type, EntityType.PVP_SPAWNER, PvpSpawnerBlockEntity::tick);
     }
 
-    @Override
-    protected MapCodec<? extends BlockWithEntity> getCodec() {
-        return null; // geçici çözüm — crash riskine dikkat
-    }
+
 
     @Override
     public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack tool, boolean dropXp) {

@@ -1,0 +1,2 @@
+v1	named	intermediary
+FIELD	com/kaplandev/mixin/client/PanoramaMixin	Lnet/minecraft/client/gui/CubeMapRenderer;	cubeMap	field_4141

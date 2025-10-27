@@ -33,13 +33,10 @@ public class PvpSpawnerMaxBlockBehavior extends BlockWithEntity implements Block
 
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return world.isClient ? null : BlockWithEntity.validateTicker(type, EntityType.PVP_SPAWNER_MAX, PvpSpawnerMaxBlockEntity::tick);
+        return world.isClient ? null : checkType(type, EntityType.PVP_SPAWNER_MAX, PvpSpawnerMaxBlockEntity::tick);
     }
 
-    @Override
-    protected MapCodec<? extends BlockWithEntity> getCodec() {
-        return null; // geçici çözüm — crash riskine dikkat
-    }
+
     @Override
     public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack tool, boolean dropXp){
         if (!world.isClient) Block.dropStack(world, pos, new ItemStack(Items.TEST_ITEM));

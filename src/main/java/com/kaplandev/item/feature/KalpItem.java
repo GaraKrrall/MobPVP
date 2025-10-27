@@ -40,10 +40,6 @@ public class KalpItem extends Item implements ItemFeature {
         return onUse(world, player, hand);
     }
 
-    @Environment(EnvType.CLIENT)
-    public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-        addTooltip(stack, world, tooltip, context);
-    }
 
     @Override
     public ActionResult onUseOnBlock(ItemUsageContext context) {
@@ -67,7 +63,7 @@ public class KalpItem extends Item implements ItemFeature {
 
             world.setBlockState(pos, Blocks.PVP_SPAWNER_MAX.getDefaultState());
             stack.decrement(1);
-            player.playSound(SoundEvents.BLOCK_TRIAL_SPAWNER_AMBIENT_OMINOUS, 1.0f, 1.0f);
+            player.playSound(SoundEvents.AMBIENT_BASALT_DELTAS_ADDITIONS.value(), 1.0f, 1.0f);
             return ActionResult.SUCCESS;
         }
 
@@ -95,9 +91,5 @@ public class KalpItem extends Item implements ItemFeature {
         return TypedActionResult.success(stack, world.isClient());
     }
 
-    @Override
-    public void addTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.literal("§7Sağ tıklayınca +2 Kalp verir (30 dakika)"));
-        tooltip.add(Text.literal("§bElmas bloğuna sağ tıklarsan bir zombi çağırır!"));
-    }
+
 }
