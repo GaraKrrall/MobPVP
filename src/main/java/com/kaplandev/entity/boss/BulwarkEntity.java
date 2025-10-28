@@ -30,7 +30,7 @@ import net.minecraft.world.World;
 
 public class BulwarkEntity extends PathAwareEntity {
     private final ServerBossBar bossBar = new ServerBossBar(
-            Text.literal("§c🔥 BOSS: Bulwark 🔥"),
+            Text.literal("Bulwark"),
             BossBar.Color.RED,
             BossBar.Style.PROGRESS
     );
@@ -107,8 +107,8 @@ public class BulwarkEntity extends PathAwareEntity {
         if (!this.getWorld().isClient()) {
             this.dropStack(new ItemStack(Items.DIAMOND, 8));
             this.dropStack(new ItemStack(Items.NETHERITE_SCRAP, 1));
-            this.dropStack(new ItemStack(com.kaplandev.item.Items.COPPER_STICK, 2));
-            this.dropStack(new ItemStack(com.kaplandev.item.Items.KALP_ITEM, 2));
+            this.dropStack(new ItemStack(com.kaplandev.item.ItemType.COPPER_STICK, 2));
+            this.dropStack(new ItemStack(com.kaplandev.item.ItemType.KALP_ITEM, 2));
         }
 
     }

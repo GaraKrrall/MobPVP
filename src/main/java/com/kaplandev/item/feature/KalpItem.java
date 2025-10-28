@@ -1,6 +1,7 @@
 package com.kaplandev.item.feature;
 
 
+import com.kaplandev.block.BlockType;
 import com.kaplandev.block.Blocks;
 import com.kaplandev.entity.EntityType;
 import com.kaplandev.entity.boss.BulwarkEntity;
@@ -52,7 +53,7 @@ public class KalpItem extends Item implements ItemFeature {
         PlayerEntity player = context.getPlayer();
         ItemStack stack = context.getStack();
 
-        if (!world.isClient && world.getBlockState(pos).getBlock() == Blocks.CRUDE_ACIDIC_ORE) {
+        if (!world.isClient && world.getBlockState(pos).getBlock() == BlockType.CRUDE_ACIDIC_ORE) {
             BulwarkEntity bulwark = new BulwarkEntity(EntityType.BULWARK, world);
             bulwark.refreshPositionAndAngles(pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, 0, 0);
             world.spawnEntity(bulwark);
@@ -63,9 +64,9 @@ public class KalpItem extends Item implements ItemFeature {
             return ActionResult.SUCCESS;
         }
 
-        if (!world.isClient && world.getBlockState(pos).getBlock() == Blocks.PVP_SPAWNER) {
+        if (!world.isClient && world.getBlockState(pos).getBlock() == BlockType.PVP_SPAWNER) {
 
-            world.setBlockState(pos, Blocks.PVP_SPAWNER_MAX.getDefaultState());
+            world.setBlockState(pos, BlockType.PVP_SPAWNER_MAX.getDefaultState());
             stack.decrement(1);
             player.playSound(SoundEvents.BLOCK_TRIAL_SPAWNER_AMBIENT_OMINOUS, 1.0f, 1.0f);
             return ActionResult.SUCCESS;

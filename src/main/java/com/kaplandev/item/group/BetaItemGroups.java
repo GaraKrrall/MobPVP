@@ -1,5 +1,6 @@
 package com.kaplandev.item.group;
 
+import com.kaplandev.item.ItemType;
 import com.kaplandev.item.Items;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
@@ -22,7 +23,7 @@ public class BetaItemGroups {
     static {
         BETA_BLOCKS_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(MOD_ID, "beta_blocks"));
         BETA_ITEMS_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(MOD_ID, "beta_items"));
-        BETA_BLOCKS = Registry.register(Registries.ITEM_GROUP, "beta_blocks", FabricItemGroup.builder().icon(() -> new ItemStack(Items.COPPER_STICK)).displayName(Text.literal("Beta Items")).entries((ctx, entries) -> {entries.add(Items.TEST_ITEM);}).build());
-        BETA_ITEMS = Registry.register(Registries.ITEM_GROUP, "beta_items", FabricItemGroup.builder().icon(() -> new ItemStack(Items.REINFORCED_COPPER_BLOCK)).displayName(Text.literal("Beta Blocks")).entries((ctx, entries) -> {}).build());
+        BETA_BLOCKS = Registry.register(Registries.ITEM_GROUP, "beta_blocks", FabricItemGroup.builder().icon(() -> new ItemStack(ItemType.COPPER_STICK)).displayName(Text.literal("Beta Items")).entries((ctx, entries) -> {entries.add(ItemType.TEST_ITEM);}).build());
+        BETA_ITEMS = Registry.register(Registries.ITEM_GROUP, "beta_items", FabricItemGroup.builder().icon(() -> new ItemStack(ItemType.REINFORCED_COPPER_BLOCK)).displayName(Text.literal("Beta Blocks")).entries((ctx, entries) -> {}).build());
     }
 }

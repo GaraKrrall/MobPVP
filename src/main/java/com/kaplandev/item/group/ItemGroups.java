@@ -1,5 +1,6 @@
 package com.kaplandev.item.group;
 
+import com.kaplandev.item.ItemType;
 import com.kaplandev.item.Items;
 import com.kaplanlib.api.version.BetaVersions;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -26,7 +27,7 @@ public class ItemGroups {
 
     static {
         MOBPVP_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(MOD_ID, TAB_MOBPVP_ITEMS_KEY));
-        MOBPVP_GROUP = Registry.register(Registries.ITEM_GROUP, MOBPVP_GROUP_KEY, FabricItemGroup.builder().icon(() -> new ItemStack(Items.KALP_ITEM)).displayName(Text.translatable("itemGroup.mobpvp")).entries((ctx, entries) -> {
+        MOBPVP_GROUP = Registry.register(Registries.ITEM_GROUP, MOBPVP_GROUP_KEY, FabricItemGroup.builder().icon(() -> new ItemStack(ItemType.KALP_ITEM)).displayName(Text.translatable("itemGroup.mobpvp")).entries((ctx, entries) -> {
         }).build());
 
     }

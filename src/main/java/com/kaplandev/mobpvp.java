@@ -1,5 +1,7 @@
 package com.kaplandev;
 
+import com.kaplandev.event.Events;
+import com.kaplandev.item.ItemType;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 
@@ -24,10 +26,8 @@ import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
 import java.util.ArrayList;
@@ -40,7 +40,7 @@ import java.util.UUID;
 
 import com.kaplandev.block.Blocks;
 import com.kaplandev.event.totem.IRON_BLOCK;
-import com.kaplandev.command.ModCommands;
+import com.kaplandev.command.CommandManager;
 import com.kaplandev.effect.LevelEffectHandler;
 import com.kaplandev.entity.boss.BulwarkEntity;
 import com.kaplandev.gen.WorldGen;
@@ -61,6 +61,7 @@ import com.kaplandev.enchantment.EnchantmentGet;
 import com.kaplandev.enchantment.effect.MagmatizationEffect;
 import com.kaplandev.villager.Villagers;
 import com.kaplandev.data.LevelData;
+import com.kaplandev.event.totem.COPPER_BLOCK;
 
 import static com.kaplanlib.util.path.Paths.MOBPVP;
 import static com.kaplanlib.util.path.Paths.STARTUP_SOUND_EVENT;
@@ -89,8 +90,9 @@ public final class mobpvp implements ModInitializer {
         ItemGroups.init();
         Registry.register(Registries.SOUND_EVENT, STARTUP_SOUND_ID, STARTUP_SOUND_EVENT);
         PluginRegistry.callOnLoad();
-        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {ModCommands.register(dispatcher);});
-        UseBlockCallback.EVENT.register(IRON_BLOCK::onUseBlock);
+        Events.register();
+        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
+            CommandManager.register(dispatcher);});
         ServerLifecycleEvents.SERVER_STARTED.register(server -> {
             Trades.register(); // enchantment registry bu noktada hazır
             PlayerLevelSaveHandler.init(server);
@@ -215,8 +217,8 @@ public final class mobpvp implements ModInitializer {
                     guaranteed.add(ItemEntry.builder(net.minecraft.item.Items.BEACON).build());
                 }
                 if (mobId.equals("zombie")) {
-                    rare.add(ItemEntry.builder(Items.KALP_ITEM).build());
-                    guaranteed.add(ItemEntry.builder(Items.HEARTH_PART).build());
+                    rare.add(ItemEntry.builder(ItemType.KALP_ITEM).build());
+                    guaranteed.add(ItemEntry.builder(ItemType.HEARTH_PART).build());
                 }
                 if (mobId.equals("warden")) {
                     guaranteed.add(ItemEntry.builder(net.minecraft.item.Items.SCULK_SHRIEKER).build());

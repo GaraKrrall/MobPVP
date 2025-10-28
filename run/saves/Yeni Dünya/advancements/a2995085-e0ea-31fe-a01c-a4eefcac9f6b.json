@@ -35,24 +35,6 @@
     },
     "done": true
   },
-  "mobpvp:iaiaiaiaiaiaiaiaiia": {
-    "criteria": {
-      "visited_structure": "2025-08-24 21:07:01 +0300"
-    },
-    "done": true
-  },
-  "mobpvp:iaiaiaia": {
-    "criteria": {
-      "visited_structure": "2025-08-24 21:07:01 +0300"
-    },
-    "done": true
-  },
-  "mobpvp:iaiaiaiaiaiaiiaiaiaaiai": {
-    "criteria": {
-      "visited_structure": "2025-08-24 21:07:01 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/combat/iron_boots": {
     "criteria": {
       "has_iron_ingot": "2025-08-24 21:07:00 +0300"
@@ -86,12 +68,6 @@
   "minecraft:recipes/misc/bucket": {
     "criteria": {
       "has_iron_ingot": "2025-08-24 21:07:00 +0300"
-    },
-    "done": true
-  },
-  "mobpvp:kick": {
-    "criteria": {
-      "hit_mob": "2025-08-24 21:07:18 +0300"
     },
     "done": true
   },
@@ -143,12 +119,6 @@
     },
     "done": true
   },
-  "mobpvp:middle": {
-    "criteria": {
-      "armor_up": "2025-08-24 21:07:00 +0300"
-    },
-    "done": true
-  },
   "mobpvp:kapat": {
     "criteria": {
       "elytra": "2025-08-24 21:07:00 +0300"
@@ -197,21 +167,9 @@
     },
     "done": true
   },
-  "mobpvp:iaiai": {
-    "criteria": {
-      "visited_structure": "2025-08-24 21:07:01 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/brewing/golden_carrot": {
     "criteria": {
       "has_gold_nugget": "2025-08-24 21:07:00 +0300"
-    },
-    "done": true
-  },
-  "mobpvp:iaia": {
-    "criteria": {
-      "visited_structure": "2025-08-24 21:07:01 +0300"
     },
     "done": true
   },
@@ -224,12 +182,6 @@
   "minecraft:recipes/redstone/iron_trapdoor": {
     "criteria": {
       "has_iron_ingot": "2025-08-24 21:07:00 +0300"
-    },
-    "done": true
-  },
-  "minecraft:adventure/root": {
-    "criteria": {
-      "killed_something": "2025-08-24 21:07:26 +0300"
     },
     "done": true
   },
@@ -286,12 +238,6 @@
       "has_iron_ingot": "2025-08-24 21:07:00 +0300"
     },
     "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:plains": "2025-08-24 21:07:01 +0300"
-    },
-    "done": false
   },
   "minecraft:recipes/decorations/smithing_table": {
     "criteria": {
@@ -374,6 +320,36 @@
   "minecraft:recipes/redstone/heavy_weighted_pressure_plate": {
     "criteria": {
       "has_iron_ingot": "2025-08-24 21:07:00 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-08-24 21:07:01 +0300"
+    },
+    "done": false
+  },
+  "mobpvp:kick": {
+    "criteria": {
+      "hit_mob": "2025-08-24 21:07:18 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-08-24 21:07:26 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_iron_block": {
+    "criteria": {
+      "has_iron_block": "2025-10-28 16:41:51 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/anvil": {
+    "criteria": {
+      "has_iron_block": "2025-10-28 16:41:51 +0300"
     },
     "done": true
   },

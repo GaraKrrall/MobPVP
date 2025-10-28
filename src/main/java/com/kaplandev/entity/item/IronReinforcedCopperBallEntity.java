@@ -1,5 +1,6 @@
 package com.kaplandev.entity.item;
 
+import com.kaplandev.item.ItemType;
 import com.kaplandev.item.Items;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -60,6 +61,6 @@ public class IronReinforcedCopperBallEntity extends ThrownItemEntity {
 
     @Override
     protected Item getDefaultItem() {
-        return Items.REINFORCED_COPPER_BALL; // senin itemin
+        return ItemType.REINFORCED_COPPER_BALL; // senin itemin
     }
 }

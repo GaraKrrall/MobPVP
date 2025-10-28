@@ -122,9 +122,9 @@ key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
 key_Take Panorama Screenshot:key.keyboard.f4
-key_key.modmenu.open_menu:key.keyboard.unknown
 key_key.mobpvp.dash:key.mouse.4
 key_key.kaplandev.open_level_gui:key.mouse.5
+key_key.modmenu.open_menu:key.keyboard.unknown
 soundCategory_master:0.17880794701986755
 soundCategory_music:0.0
 soundCategory_record:0.0

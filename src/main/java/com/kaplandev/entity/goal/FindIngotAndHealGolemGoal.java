@@ -137,7 +137,7 @@ public class FindIngotAndHealGolemGoal extends Goal {
                             Inventory inv = chest;
                             for (int i = 0; i < inv.size(); i++) {
                                 ItemStack stack = inv.getStack(i);
-                                if (stack.isOf(com.kaplandev.item.Items.REINFORCED_COPPER_INGOT) || stack.isOf(Items.IRON_INGOT)) {
+                                if (stack.isOf(com.kaplandev.item.ItemType.REINFORCED_COPPER_INGOT) || stack.isOf(Items.IRON_INGOT)) {
                                     Item selected = stack.getItem();
                                     stack.decrement(1);
                                     inv.setStack(i, stack.isEmpty() ? ItemStack.EMPTY : stack);
@@ -155,7 +155,7 @@ public class FindIngotAndHealGolemGoal extends Goal {
                         if (miniGolem.squaredDistanceTo(targetIngotEntity) < 1) {
                             ItemStack stack = targetIngotEntity.getStack();
                             Item selected = stack.getItem();
-                            if (!stack.isEmpty() && (selected == Items.IRON_INGOT || selected == com.kaplandev.item.Items.REINFORCED_COPPER_INGOT)) {
+                            if (!stack.isEmpty() && (selected == Items.IRON_INGOT || selected == com.kaplandev.item.ItemType.REINFORCED_COPPER_INGOT)) {
                                 if (stack.getCount() > 1) {
                                     stack.decrement(1);
                                     targetIngotEntity.setStack(stack);
@@ -194,7 +194,7 @@ public class FindIngotAndHealGolemGoal extends Goal {
                     // Golemin canı tam değilse iyileştir
                     if (targetGolem.getHealth() < targetGolem.getMaxHealth()) {
                         ItemStack handStack = miniGolem.getStackInHand(Hand.MAIN_HAND);
-                        if (handStack.isOf(com.kaplandev.item.Items.REINFORCED_COPPER_INGOT)) {
+                        if (handStack.isOf(com.kaplandev.item.ItemType.REINFORCED_COPPER_INGOT)) {
                             targetGolem.heal(16.0F); // 2 kat
                         } else {
                             targetGolem.heal(8.0F); // normal
@@ -226,12 +226,12 @@ public class FindIngotAndHealGolemGoal extends Goal {
                 miniGolem.getBoundingBox().expand(8),
                 e -> {
                     Item i = e.getStack().getItem();
-                    return i == com.kaplandev.item.Items.REINFORCED_COPPER_INGOT || i == Items.IRON_INGOT;
+                    return i == com.kaplandev.item.ItemType.REINFORCED_COPPER_INGOT || i == Items.IRON_INGOT;
                 });
 
         // Öncelik: Reinforced
         return items.stream()
-                .filter(e -> e.getStack().isOf(com.kaplandev.item.Items.REINFORCED_COPPER_INGOT))
+                .filter(e -> e.getStack().isOf(com.kaplandev.item.ItemType.REINFORCED_COPPER_INGOT))
                 .findFirst()
                 .orElse(items.isEmpty() ? null : items.get(0));
     }
@@ -250,7 +250,7 @@ public class FindIngotAndHealGolemGoal extends Goal {
                         if (be instanceof ChestBlockEntity chest) {
                             for (int i = 0; i < chest.size(); i++) {
                                 ItemStack stack = chest.getStack(i);
-                                if (stack.isOf(com.kaplandev.item.Items.REINFORCED_COPPER_INGOT) || stack.isOf(Items.IRON_INGOT)) {
+                                if (stack.isOf(com.kaplandev.item.ItemType.REINFORCED_COPPER_INGOT) || stack.isOf(Items.IRON_INGOT)) {
                                     return check.toImmutable();
                                 }
                             }

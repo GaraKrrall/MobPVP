@@ -1,6 +1,7 @@
 package com.kaplandev.villager;
 
 import com.google.common.collect.ImmutableSet;
+import com.kaplandev.block.BlockType;
 import com.kaplandev.block.Blocks;
 import net.fabricmc.fabric.api.object.builder.v1.world.poi.PointOfInterestHelper;
 import net.minecraft.registry.Registries;
@@ -22,7 +23,7 @@ public class Villagers {
     public static final PointOfInterestType SECRET_TRADER_POI = PointOfInterestHelper.register(
              Identifier.of(MOD_ID, "secret_trader_poi"),
             1, 1,
-            Blocks.MOB_TABLE
+            BlockType.MOB_TABLE
     );
 
     public static final VillagerProfession SECRET_TRADER = Registry.register(

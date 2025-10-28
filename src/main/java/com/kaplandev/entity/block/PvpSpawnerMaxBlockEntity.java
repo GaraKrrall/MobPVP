@@ -1,5 +1,6 @@
 package com.kaplandev.entity.block;
 
+import com.kaplandev.block.BlockType;
 import com.kaplandev.block.Blocks;
 import com.kaplandev.entity.EntityType;
 import com.kaplandev.entity.mob.*;
@@ -49,7 +50,7 @@ public class PvpSpawnerMaxBlockEntity extends BlockEntity {
             if (blockEntity.waveCount > 0 || !blockEntity.aliveEntities.isEmpty()) {
                 blockEntity.waveCount = 0;
                 blockEntity.aliveEntities.clear();
-                serverWorld.setBlockState(pos, Blocks.PVP_SPAWNER_MAX.getDefaultState()); // geri eski haline dön
+                serverWorld.setBlockState(pos, BlockType.PVP_SPAWNER_MAX.getDefaultState()); // geri eski haline dön
             }
             return;
         }
@@ -65,7 +66,7 @@ public class PvpSpawnerMaxBlockEntity extends BlockEntity {
 
         // Max waves reached
         if (blockEntity.waveCount >= MAX_WAVES) {
-            serverWorld.setBlockState(pos, Blocks.DAMAGED_PVP_SPAWNER_MAX.getDefaultState());
+            serverWorld.setBlockState(pos, BlockType.DAMAGED_PVP_SPAWNER_MAX.getDefaultState());
             return;
         }
 

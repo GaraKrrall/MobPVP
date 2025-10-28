@@ -4,13 +4,16 @@ Canlıların ismini değiştirememe sorunu çözüldü. Örn. [Level: 1] Village
 Bebek canlıların isminin saçma görünmesi çözüldü.
 İsimlendirme sorunları çözüldü.
 Gereksiz kodlar silindi.
+Komutlar yeniden düzenlendi
+Bulwark'ın boss barındaki yazı hatası çözüldü.
 [#5](https://github.com/KaplanBedwars/MobPVP/issues/5): Pve çağrıcılarının kapanma mesafesi çok yakın çözüldü
 [#15](https://github.com/KaplanBedwars/MobPVP/issues/15): ItemGroup saçmalığı düzeltildi
 [#11](https://github.com/KaplanBedwars/MobPVP/issues/11): Minik Bakır Golemlerin belirli bir seviyesi olmaması çözüldü
 [#6](https://github.com/KaplanBedwars/MobPVP/issues/6): Süper Kalp'in oluşturduğu sınama yapısı suyun ve lavın üstündede açılması çözüldü
 [#4](https://github.com/KaplanBedwars/MobPVP/issues/4): Büyük PvE Kulesinin spanwerlarının altı boş olamsı sounucu düşmanların düşmesi çözüldü
-
-
+[#16](https://github.com/KaplanBedwars/MobPVP/issues/16) çözüldü
+[#12](https://github.com/KaplanBedwars/MobPVP/issues/12): Hitbox sorunu çözüldü.
+[#14](https://github.com/KaplanBedwars/MobPVP/issues/14): Tiny Copper Golem yumurtasının renk sorunu çözüldü.
 
 Artık Bakır top düştüğü yerde küçük bir partikül çıkarır
 Minik Bakır Golem Eklendi.

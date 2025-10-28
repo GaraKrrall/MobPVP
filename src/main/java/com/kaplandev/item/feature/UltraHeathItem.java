@@ -1,5 +1,6 @@
 package com.kaplandev.item.feature;
 
+import com.kaplandev.block.BlockType;
 import com.kaplandev.block.Blocks;
 
 import net.minecraft.entity.player.PlayerEntity;
@@ -107,11 +108,11 @@ public class UltraHeathItem extends Item {
         }
 
         // Ortada PVP Spawner olsun
-        world.setBlockState(center, Blocks.PVP_SPAWNER.getDefaultState());
+        world.setBlockState(center, BlockType.PVP_SPAWNER.getDefaultState());
 
         // %25 şansla üstte 2 süper blok
         if (world.random.nextFloat() < 0.25f) {
-            world.setBlockState(center.up(), Blocks.PVP_SPAWNER_MAX.getDefaultState());
+            world.setBlockState(center.up(), BlockType.PVP_SPAWNER_MAX.getDefaultState());
         }
     }
 

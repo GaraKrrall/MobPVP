@@ -6,6 +6,9 @@
     "com/kaplandev/mixin/LivingEntityMixin2": {
       "damage": "Lnet/minecraft/class_1309;method_5643(Lnet/minecraft/class_1282;F)Z"
     },
+    "com/kaplandev/mixin/PistonHandlerMixin": {
+      "tick": "Lnet/minecraft/class_2669;method_31707(Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2669;)V"
+    },
     "com/kaplandev/mixin/PlayerEntityMixin": {
       "tick": "Lnet/minecraft/class_1657;method_5773()V"
     }
@@ -17,6 +20,9 @@
       },
       "com/kaplandev/mixin/LivingEntityMixin2": {
         "damage": "Lnet/minecraft/class_1309;method_5643(Lnet/minecraft/class_1282;F)Z"
+      },
+      "com/kaplandev/mixin/PistonHandlerMixin": {
+        "tick": "Lnet/minecraft/class_2669;method_31707(Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2669;)V"
       },
       "com/kaplandev/mixin/PlayerEntityMixin": {
         "tick": "Lnet/minecraft/class_1657;method_5773()V"

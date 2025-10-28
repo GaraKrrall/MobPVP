@@ -1,5 +1,6 @@
 package com.kaplandev.block.behavior;
 
+import com.kaplandev.item.ItemType;
 import com.kaplandev.item.Items;
 import com.kaplanlib.api.behavior.BlockBehavior;
 
@@ -14,7 +15,7 @@ public class DamagedPvpSpawnerMaxBlockBehavior implements BlockBehavior {
     public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack tool, boolean dropXp) {
         if (!world.isClient) {
             // Kalp iteminden 2 adet düşür
-            Block.dropStack(world, pos, new ItemStack(Items.KALP_ITEM, 4));
+            Block.dropStack(world, pos, new ItemStack(ItemType.KALP_ITEM, 4));
 
             // Ekstra başka bir item daha düşür (örnek: enerji itemi)
             Block.dropStack(world, pos, new ItemStack(net.minecraft.item.Items.DIAMOND, 2));

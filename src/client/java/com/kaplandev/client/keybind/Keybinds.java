@@ -30,7 +30,7 @@ public class Keybinds implements ClientModInitializer {
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (dashKey.wasPressed() && client.player != null) {
-                client.player.networkHandler.sendChatCommand("trigger dash");
+                client.player.networkHandler.sendChatCommand("mobpvp dash");
             }
         });
 

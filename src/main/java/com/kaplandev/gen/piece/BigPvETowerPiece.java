@@ -115,7 +115,7 @@ public class BigPvETowerPiece extends StructurePiece {
                 }
 
                 // Spawner yerleştir
-                world.setBlockState(spawnerPos, com.kaplandev.block.Blocks.PVP_SPAWNER.getDefaultState(), 3);
+                world.setBlockState(spawnerPos, com.kaplandev.block.BlockType.PVP_SPAWNER.getDefaultState(), 3);
 
             }
 
@@ -275,7 +275,7 @@ public class BigPvETowerPiece extends StructurePiece {
 
         // boss spawner (güçlü)
         BlockPos sp = center.add(0, 2, 0);
-        world.setBlockState(sp, com.kaplandev.block.Blocks.PVP_SPAWNER_MAX.getDefaultState(), 3);
+        world.setBlockState(sp, com.kaplandev.block.BlockType.PVP_SPAWNER_MAX.getDefaultState(), 3);
     }
 
     private static void buildGlassDome(StructureWorldAccess world, BlockPos origin, int floors, int floorHeight, int radius, Random random) {

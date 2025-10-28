@@ -1,7 +1,7 @@
 package com.kaplandev.block.behavior;
 
+import com.kaplandev.item.ItemType;
 import com.kaplanlib.api.behavior.BlockBehavior;
-import com.kaplandev.item.Items;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
@@ -28,8 +28,9 @@ public class CopperRod extends Block implements BlockBehavior {
     public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return SHAPE;
     }
+
     @Override
     public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack tool, boolean dropXp) {
-        if (!world.isClient) Block.dropStack(world, pos, new ItemStack(Items.COPPER_STICK));
+        if (!world.isClient) Block.dropStack(world, pos, new ItemStack(ItemType.COPPER_STICK));
     }
 }

@@ -1,5 +1,6 @@
 package com.kaplandev.enchantment.effect;
 
+import com.kaplandev.item.ItemType;
 import com.kaplandev.item.Items;
 
 import com.mojang.serialization.MapCodec;
@@ -32,7 +33,7 @@ public record CertaintyEffect(EnchantmentLevelBasedValue amount)
     public void apply(ServerWorld world, int level, EnchantmentEffectContext context, Entity target, Vec3d pos) {
         if (target instanceof LivingEntity livingEntity) {
             if (world.random.nextFloat() < 0.2f) {
-                ItemStack drop = new ItemStack(Items.KALP_ITEM, 1);
+                ItemStack drop = new ItemStack(ItemType.KALP_ITEM, 1);
 
                 ItemEntity itemEntity = new ItemEntity(world, pos.x, pos.y, pos.z, drop);
                 world.spawnEntity(itemEntity);

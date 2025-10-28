@@ -1,6 +1,6 @@
 package com.kaplandev.block.behavior;
 
-import com.kaplandev.item.Items;
+import com.kaplandev.item.ItemType;
 import com.kaplanlib.api.behavior.BlockBehavior;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -11,7 +11,7 @@ import net.minecraft.util.math.BlockPos;
 public class AcidicOreBehavior implements BlockBehavior {
     @Override
     public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack tool, boolean dropXp) {
-        if (!world.isClient) Block.dropStack(world, pos, new ItemStack(Items.HEARTH_PART));
+        if (!world.isClient) Block.dropStack(world, pos, new ItemStack(ItemType.HEARTH_PART));
     }
 
 }

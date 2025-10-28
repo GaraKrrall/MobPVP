@@ -211,7 +211,7 @@ public class ArenaFeature extends Feature<DefaultFeatureConfig> {
             }
         }
         // Senin özel cevherin
-        set(world, c.up(3), com.kaplandev.block.Blocks.CRUDE_ACIDIC_ORE.getDefaultState());
+        set(world, c.up(3), com.kaplandev.block.BlockType.CRUDE_ACIDIC_ORE.getDefaultState());
 
         // Platform çevresine ok tuzağı ankrajı (marker)
         addTrapMarker(world, centerBox, traps, c.up(3).add(+4, 0, 0));
@@ -344,7 +344,7 @@ public class ArenaFeature extends Feature<DefaultFeatureConfig> {
 
     private void addTrapMarker(WorldAccess world, BlockBox scope, List<BlockPos> out, BlockPos pos) {
         if (!scope.contains(pos)) return;
-        set(world, pos, com.kaplandev.block.Blocks.PVP_SPAWNER.getDefaultState()); // MARKER: burayı tuzak merkezi olarak kullan
+        set(world, pos, com.kaplandev.block.BlockType.PVP_SPAWNER.getDefaultState()); // MARKER: burayı tuzak merkezi olarak kullan
         out.add(pos.toImmutable());
     }
 

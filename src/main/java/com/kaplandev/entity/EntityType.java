@@ -4,6 +4,7 @@ package com.kaplandev.entity;
 import com.kaplandev.entity.block.MobTableBlockEntity;
 import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
 import com.kaplandev.entity.block.PvpSpawnerMaxBlockEntity;
+import com.kaplandev.entity.block.UpgradedHopperBlockEntity;
 import com.kaplandev.entity.boss.BulwarkEntity;
 import com.kaplandev.entity.item.IronReinforcedCopperBallEntity;
 import com.kaplandev.entity.mob.MadSkeletonEntity;
@@ -22,6 +23,7 @@ public class EntityType {
     public static BlockEntityType<PvpSpawnerBlockEntity> PVP_SPAWNER;
     public static BlockEntityType<PvpSpawnerMaxBlockEntity> PVP_SPAWNER_MAX;
     public static BlockEntityType<MobTableBlockEntity> MOB_TABLE;
+    public static BlockEntityType<UpgradedHopperBlockEntity> UPGREADED_HOPPER;
     public static net.minecraft.entity.EntityType<IronReinforcedCopperBallEntity> IRON_REINFORCED_COPPER_BALL;
   //  public static BlockEntityType<IronChestBlockEntity> IRON_CHEST;
 }

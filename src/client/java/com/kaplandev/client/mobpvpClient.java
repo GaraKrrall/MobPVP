@@ -1,5 +1,6 @@
 package com.kaplandev.client;
 
+import com.kaplandev.block.BlockType;
 import com.kaplandev.block.Blocks;
 import com.kaplandev.client.config.ConfigManager;
 import com.kaplandev.client.gui.BetaNoticeScreen;
@@ -8,6 +9,7 @@ import com.kaplandev.client.info.dink;
 import com.kaplandev.client.renderer.entity.block.MobTableBlockRenderer;
 import com.kaplandev.client.renderer.entity.block.PvpSpawnerBlockRenderer;
 import com.kaplandev.client.renderer.entity.block.PvpSpawnerMaxBlockRenderer;
+import com.kaplandev.client.renderer.entity.block.UpgradedHopperBlockRenderer;
 import com.kaplandev.client.renderer.entity.boss.BulwarkRenderer;
 import com.kaplandev.client.renderer.entity.mob.CustomZombieRenderer;
 import com.kaplandev.client.renderer.entity.mob.SuperZombieRenderer;
@@ -48,9 +50,10 @@ public class mobpvpClient implements ClientModInitializer {
         BlockEntityRendererFactories.register(EntityType.PVP_SPAWNER, PvpSpawnerBlockRenderer::new);
         BlockEntityRendererFactories.register(EntityType.PVP_SPAWNER_MAX, PvpSpawnerMaxBlockRenderer::new);
         BlockEntityRendererFactories.register(EntityType.MOB_TABLE, MobTableBlockRenderer::new);
+        BlockEntityRendererFactories.register(EntityType.UPGREADED_HOPPER, UpgradedHopperBlockRenderer::new);
 
-        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.PVP_SPAWNER, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.PVP_SPAWNER_MAX, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BlockType.PVP_SPAWNER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BlockType.PVP_SPAWNER_MAX, RenderLayer.getCutout());
 
         EntityRendererRegistry.register(net.minecraft.entity.EntityType.ZOMBIE, CustomZombieRenderer::new);
         EntityRendererRegistry.register(EntityType.MAD_ZOMBIE, SuperZombieRenderer::new);

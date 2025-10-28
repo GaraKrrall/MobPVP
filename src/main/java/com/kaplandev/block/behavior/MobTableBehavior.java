@@ -2,6 +2,7 @@ package com.kaplandev.block.behavior;
 
 
 import com.kaplandev.handler.MobTableScreenHandler;
+import com.kaplandev.item.ItemType;
 import com.kaplandev.item.Items;
 import com.kaplanlib.api.behavior.BlockBehavior;
 import net.minecraft.block.AbstractBlock;
@@ -42,6 +43,6 @@ public class MobTableBehavior extends Block implements BlockBehavior {
 
     @Override
     public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack tool, boolean dropXp) {
-        if (!world.isClient) Block.dropStack(world, pos, new ItemStack(Items.HEARTH_PART));
+        if (!world.isClient) Block.dropStack(world, pos, new ItemStack(ItemType.HEARTH_PART));
     }
 }

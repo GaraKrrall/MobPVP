@@ -1,5 +1,6 @@
 package com.kaplandev.block.behavior;
 
+import com.kaplandev.item.ItemType;
 import com.kaplanlib.api.behavior.BlockBehavior;
 import com.kaplandev.entity.EntityType;
 import com.kaplandev.entity.block.PvpSpawnerMaxBlockEntity;
@@ -42,7 +43,7 @@ public class PvpSpawnerMaxBlockBehavior extends BlockWithEntity implements Block
     }
     @Override
     public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack tool, boolean dropXp){
-        if (!world.isClient) Block.dropStack(world, pos, new ItemStack(Items.TEST_ITEM));
+        if (!world.isClient) Block.dropStack(world, pos, new ItemStack(ItemType.TEST_ITEM));
     }
     @Override
     public boolean isTransparent(BlockState state, BlockView world, BlockPos pos) {

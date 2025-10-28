@@ -6,7 +6,8 @@
   "mixins": [
     "LivingEntityMixin",
     "LivingEntityMixin2",
-    "PlayerEntityMixin"
+    "PlayerEntityMixin",
+    "PistonHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
