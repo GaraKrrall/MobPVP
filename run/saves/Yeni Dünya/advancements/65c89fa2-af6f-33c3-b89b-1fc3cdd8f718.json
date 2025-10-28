@@ -113,12 +113,6 @@
     },
     "done": true
   },
-  "mobpvp:middle": {
-    "criteria": {
-      "armor_up": "2025-08-18 21:12:50 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/waxed_cut_copper_from_honeycomb": {
     "criteria": {
       "has_cut_copper": "2025-08-18 21:12:50 +0300"

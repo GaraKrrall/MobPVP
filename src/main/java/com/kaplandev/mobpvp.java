@@ -2,6 +2,7 @@ package com.kaplandev;
 
 import com.kaplandev.event.Events;
 import com.kaplandev.item.ItemType;
+import com.kaplandev.scheduler.ServerScheduler;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 
@@ -78,7 +79,7 @@ public final class mobpvp implements ModInitializer {
     @Override
     public void onInitialize() {
         AutoConfig.register(LevelData.class, GsonConfigSerializer::new);
-
+        ServerScheduler.init();
         EnchantmentsAndEffects.registerModEnchantmentEffects();
         EnchantmentGet.init();
         WorldGen.register();

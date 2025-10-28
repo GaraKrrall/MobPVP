@@ -131,12 +131,6 @@
     },
     "done": true
   },
-  "mobpvp:middle": {
-    "criteria": {
-      "armor_up": "2025-08-07 18:42:52 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/redstone/oak_door": {
     "criteria": {
       "has_planks": "2025-08-07 18:42:52 +0300"
@@ -251,12 +245,6 @@
     },
     "done": true
   },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:plains": "2025-08-07 18:42:53 +0300"
-    },
-    "done": false
-  },
   "minecraft:recipes/decorations/barrel": {
     "criteria": {
       "has_planks": "2025-08-07 18:42:52 +0300"
@@ -316,6 +304,12 @@
       "has_iron_ingot": "2025-08-07 18:42:52 +0300"
     },
     "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-08-07 18:42:53 +0300"
+    },
+    "done": false
   },
   "DataVersion": 3955
 }

@@ -1,14 +1,3 @@
-/tp 10000 ~ ~
-/logger DEBUG
-/logger DEBUG a
-/logger DEBUG
-/locate structure mobpvp:pve_tower
-/tp @s 10000 ~ 89136
-/locate structure mobpvp:big_pve_tower
-/place structure mobpvp:big_pve_tower
-/locate structure mobpvp:big_pve_tower
-/place structure mobpvp:big_pve_tower
-/locate structure mobpvp:big_pve_tower
 /tp @s 9072 ~ 88576
 /tp @a ~ ~ 20000
 /place structure mobpvp:big_pve_tower
@@ -48,3 +37,14 @@
 /tick freeze
 /difficulty hard
 /mobpvp ClearMobLevelData
+/effect clear
+/summon minecraft:falling_block ~ ~ ~ {block:mobpvp}
+/give @p mobpvp:ore
+/give @p mobpvp:heavy_crusher_head
+/summon minecraft:falling_block ~ ~ ~ {block:heavy_crusher_head}
+/summon minecraft:falling_block ~ ~ ~ {block:gravel}
+/mobpvp hi
+/mobpvp dash
+/mobpvp LocateArena
+/mobpvp ClearMobLevelData
+/tp 797 -59 -268

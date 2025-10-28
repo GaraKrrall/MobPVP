@@ -137,12 +137,6 @@
     },
     "done": true
   },
-  "mobpvp:middle": {
-    "criteria": {
-      "armor_up": "2025-07-25 13:51:00 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/iron_ingot_from_iron_block": {
     "criteria": {
       "has_iron_block": "2025-07-25 13:51:00 +0300"
@@ -203,12 +197,6 @@
     },
     "done": true
   },
-  "mobpvp:deep_dark": {
-    "criteria": {
-      "deep_dark": "2025-07-25 13:51:01 +0300"
-    },
-    "done": true
-  },
   "mobpvp:first": {
     "criteria": {
       "joined_world": "2025-07-25 13:51:00 +0300"
@@ -238,12 +226,6 @@
       "has_iron_ingot": "2025-07-25 13:51:00 +0300"
     },
     "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:plains": "2025-07-25 13:51:01 +0300"
-    },
-    "done": false
   },
   "minecraft:recipes/decorations/smithing_table": {
     "criteria": {
@@ -328,6 +310,12 @@
       "has_diamond": "2025-07-25 13:51:00 +0300"
     },
     "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-07-25 13:51:01 +0300"
+    },
+    "done": false
   },
   "DataVersion": 3955
 }

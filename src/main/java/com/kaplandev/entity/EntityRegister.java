@@ -2,6 +2,7 @@ package com.kaplandev.entity;
 
 import com.kaplandev.block.BlockType;
 import com.kaplandev.block.Blocks;
+//import com.kaplandev.entity.block.IndustrialBarrelBlockEntity;
 import com.kaplandev.entity.block.MobTableBlockEntity;
 import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
 import com.kaplandev.entity.block.PvpSpawnerMaxBlockEntity;
@@ -33,6 +34,7 @@ import static com.kaplandev.entity.EntityType.MOB_TABLE;
 import static com.kaplandev.entity.EntityType.PVP_SPAWNER;
 import static com.kaplandev.entity.EntityType.PVP_SPAWNER_MAX;
 import static com.kaplandev.entity.EntityType.UPGREADED_HOPPER;
+//import static com.kaplandev.entity.EntityType.INDUSTRIAL_BARREL;
 import static com.kaplandev.mobpvp.MOD_ID;
 import static com.kaplanlib.util.path.Paths.MAD_SKELETON_KEY;
 import static com.kaplanlib.util.path.Paths.MAD_ZOMBIE_KEY;
@@ -68,8 +70,8 @@ public class EntityRegister {
         PVP_SPAWNER = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, PVP_SPAWNER_KEY), FabricBlockEntityTypeBuilder.create(PvpSpawnerBlockEntity::new, BlockType.PVP_SPAWNER).build());
         PVP_SPAWNER_MAX = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, PVP_SPAWNER_MAX_KEY), FabricBlockEntityTypeBuilder.create(PvpSpawnerMaxBlockEntity::new, BlockType.PVP_SPAWNER_MAX).build());
         UPGREADED_HOPPER = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, "upgraded_hopper"), FabricBlockEntityTypeBuilder.create(UpgradedHopperBlockEntity::new, BlockType.UPGREADED_HOPPER).build());
+        //INDUSTRIAL_BARREL = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, "industrial_barrel"), FabricBlockEntityTypeBuilder.create(IndustrialBarrelBlockEntity::new, BlockType.INDUSTRIAL_BARREL).build());
         MOB_TABLE = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, MOB_TABLE_KEY), FabricBlockEntityTypeBuilder.create(MobTableBlockEntity::new, BlockType.MOB_TABLE).build());
-        // IRON_CHEST = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MOD_ID, IRON_CHEST_KEY), FabricBlockEntityTypeBuilder.create(IronChestBlockEntity::new, new Block[]{ Blocks.IRON_CHEST }).build());
         IRON_REINFORCED_COPPER_BALL = Registry.register(Registries.ENTITY_TYPE, MOD_ID, net.minecraft.entity.EntityType.Builder.<IronReinforcedCopperBallEntity>create(IronReinforcedCopperBallEntity::new, SpawnGroup.MISC).dimensions(0.25f, 0.25f).maxTrackingRange(4).trackingTickInterval(10).build(REINFORCED_COPPER_BALL_KEY)
         );
     }

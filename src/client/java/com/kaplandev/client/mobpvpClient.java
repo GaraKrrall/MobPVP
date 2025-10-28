@@ -1,7 +1,6 @@
 package com.kaplandev.client;
 
 import com.kaplandev.block.BlockType;
-import com.kaplandev.block.Blocks;
 import com.kaplandev.client.config.ConfigManager;
 import com.kaplandev.client.gui.BetaNoticeScreen;
 import com.kaplandev.client.gui.MobTableScreen;

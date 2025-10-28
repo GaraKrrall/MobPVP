@@ -30,4 +30,6 @@ public class ItemType {
     public static Item NETHERITE_MACE;
     public static Item HEAVY_CRUSHER_HEAD_ITEM;
     public static Item UPGREADED_HOPPER_ITEM;
+    public static Item INDUSTRIAL_OVEN_BLOCK_ITEM;
+    public static Item INDUSTRIAL_OVEN_ITEM;
 }

@@ -51,6 +51,8 @@ public class Items {
         REINFORCED_COPPER_BLOCK = GroupItemBuilder.create(REINFORCED_COPPER_BLOCK_KEY, new BlockItem(BlockType.REINFORCED_COPPER_BLOCK, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         HEAVY_CRUSHER_HEAD_ITEM = GroupItemBuilder.create("heavy_crusher_head", new BlockItem(BlockType.HEAVY_CRUSHER_HEAD, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         UPGREADED_HOPPER_ITEM = GroupItemBuilder.create("upgraded_hopper_item", new BlockItem(BlockType.UPGREADED_HOPPER, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        INDUSTRIAL_OVEN_BLOCK_ITEM = GroupItemBuilder.create("industrial_oven_block", new BlockItem(BlockType.INDUSTRIAL_OVEN_BLOCK, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        INDUSTRIAL_OVEN_ITEM = GroupItemBuilder.create("industrial_oven", new BlockItem(BlockType.INDUSTRIAL_OVEN, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         REINFORCED_COPPER_INGOT = GroupItemBuilder.create(REINFORCED_COPPER_INGOT_KEY, new Item(new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         HEARTH_PART = GroupItemBuilder.create(HEARTH_PART_KEY, new Item(new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         KALP_ITEM = GroupItemBuilder.create(KALP_ITEM_KEY, new KalpItem(new Item.Settings().rarity(Rarity.UNCOMMON))).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();

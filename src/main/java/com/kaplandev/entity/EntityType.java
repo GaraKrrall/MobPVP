@@ -1,6 +1,7 @@
 package com.kaplandev.entity;
 
 //import com.kaplandev.entity.block.IronChestBlockEntity;
+//import com.kaplandev.entity.block.IndustrialBarrelBlockEntity;
 import com.kaplandev.entity.block.MobTableBlockEntity;
 import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
 import com.kaplandev.entity.block.PvpSpawnerMaxBlockEntity;
@@ -24,6 +25,7 @@ public class EntityType {
     public static BlockEntityType<PvpSpawnerMaxBlockEntity> PVP_SPAWNER_MAX;
     public static BlockEntityType<MobTableBlockEntity> MOB_TABLE;
     public static BlockEntityType<UpgradedHopperBlockEntity> UPGREADED_HOPPER;
+   // public static BlockEntityType<IndustrialBarrelBlockEntity> INDUSTRIAL_BARREL;
     public static net.minecraft.entity.EntityType<IronReinforcedCopperBallEntity> IRON_REINFORCED_COPPER_BALL;
   //  public static BlockEntityType<IronChestBlockEntity> IRON_CHEST;
 }

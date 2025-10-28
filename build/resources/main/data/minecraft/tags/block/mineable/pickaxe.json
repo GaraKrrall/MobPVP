@@ -5,6 +5,10 @@
     "mobpvp:damaged_pvp_spawner",
     "mobpvp:damaged_pvp_spawner_max",
     "mobpvp:reinforced_copper_block",
-    "mobpvp:copper_stick"
+    "mobpvp:copper_stick",
+    "mobpvp:heavy_crusher_head",
+    "mobpvp:upgraded_hopper",
+    "mobpvp:industrial_oven_block",
+    "mobpvp:industrial_oven"
   ]
 }

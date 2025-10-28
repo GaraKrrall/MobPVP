@@ -2,6 +2,8 @@ import net.fabricmc.loom.task.RemapJarTask
 plugins {
     id 'fabric-loom' version '1.10-SNAPSHOT'
     id 'maven-publish'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+    id 'net.kyori.blossom' version '2.1.0'
 }
 
 version = project.mod_version
@@ -34,28 +36,34 @@ repositories {
     }
     mavenCentral()
     maven { url "https://maven.shedaniel.me"}
-    maven { url "https://maven.wispforest.io" } // wispforest maven
+    maven { url "https://maven.wispforest.io" }
+    maven { url = "https://maven.createmod.net" }// wispforest maven
     flatDir {
         dirs 'libs'
     }
 }
 
 dependencies {
-    // To change the versions see the gradle.properties file
+    // Versiyonlar
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
-
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    // Diğer modlar
     modImplementation name: 'MobLiB-1.3-build.3'
     modImplementation "io.wispforest:owo-lib:${project.owo_version}"
     include "io.wispforest:owo-lib:${project.owo_version}"
 
     modImplementation "curse.maven:cloth-config-348521:5729125"
     modApi("me.shedaniel.cloth:basic-math:+")
-
     modCompileOnly "curse.maven:modmenu-308702:5810603"
+
+    // ✅ Flywheel API (compileOnly olarak)
+    compileOnly("dev.engine-room.flywheel:flywheel-fabric-api-${project.minecraft_version}:${project.flywheel_version}")
+
+    // ✅ Flywheel modunu runtime’a dahil et
+    modRuntimeOnly("dev.engine-room.flywheel:flywheel-fabric-${project.minecraft_version}:${project.flywheel_version}")
 }
 
 processResources {
