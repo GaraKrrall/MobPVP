@@ -1,0 +1,11 @@
+{
+  "time": 200,
+  "inputs": [
+    { "item": "minecraft:iron_ingot", "count": 3 },
+    { "item": "minecraft:coal", "count": 1 }
+  ],
+  "output": {
+    "item": "minecraft:golden_apple",
+    "count": 1
+  }
+}

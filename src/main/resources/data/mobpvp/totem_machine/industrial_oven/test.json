@@ -1,0 +1,10 @@
+{
+  "time": 400,
+  "inputs": [
+    { "item": "minecraft:gold_ingot", "count": 3 }
+  ],
+  "output": {
+    "item": "minecraft:apple",
+    "count": 128
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "minecraft:recipes/building_blocks/cut_copper_slab_from_cut_copper_stonecutting": {
+    "criteria": {
+      "has_cut_copper": "2025-10-29 14:21:25 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_copper_slab": {
+    "criteria": {
+      "has_cut_copper": "2025-10-29 14:21:25 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/waxed_cut_copper_from_honeycomb": {
+    "criteria": {
+      "has_cut_copper": "2025-10-29 14:21:25 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-10-29 14:21:25 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:first": {
+    "criteria": {
+      "joined_world": "2025-10-29 14:21:25 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-10-29 14:21:26 +0300"
+    },
+    "done": false
+  },
+  "minecraft:recipes/building_blocks/cut_copper_stairs": {
+    "criteria": {
+      "has_cut_copper": "2025-10-29 14:21:25 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_copper_stairs_from_cut_copper_stonecutting": {
+    "criteria": {
+      "has_cut_copper": "2025-10-29 14:21:25 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_copper_from_cut_copper_stonecutting": {
+    "criteria": {
+      "has_cut_copper": "2025-10-29 14:21:25 +0300"
+    },
+    "done": true
+  },
+  "DataVersion": 3955
+}

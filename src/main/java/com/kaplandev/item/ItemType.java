@@ -32,4 +32,5 @@ public class ItemType {
     public static Item UPGREADED_HOPPER_ITEM;
     public static Item INDUSTRIAL_OVEN_BLOCK_ITEM;
     public static Item INDUSTRIAL_OVEN_ITEM;
+    public static Item BEARING_ITEM;
 }

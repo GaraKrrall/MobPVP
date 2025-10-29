@@ -1,0 +1,21 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-10-29 12:50:23 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:first": {
+    "criteria": {
+      "joined_world": "2025-10-29 12:50:23 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-10-29 12:50:24 +0300"
+    },
+    "done": false
+  },
+  "DataVersion": 3955
+}

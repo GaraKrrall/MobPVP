@@ -17,6 +17,7 @@ import com.kaplandev.client.renderer.entity.mobpvp.MiniIronGolemRenderer;
 import com.kaplandev.entity.EntityType;
 import com.kaplandev.handler.type.ScreenHandlerTypes;
 import com.kaplandev.level.LevelAssigner;
+
 import com.kaplanlib.api.version.BetaVersions;
 import com.kaplanlib.api.version.VersionUtils;
 
@@ -61,6 +62,7 @@ public class mobpvpClient implements ClientModInitializer {
         EntityRendererRegistry.register(EntityType.MINIGOLEM, MiniIronGolemRenderer::new);
         EntityRendererRegistry.register(EntityType.MINIGOLEM_COPPER, MiniCopperGolemRenderer::new);
         EntityRendererRegistry.register(EntityType.IRON_REINFORCED_COPPER_BALL, FlyingItemEntityRenderer::new);
+
 
         HandledScreens.register(ScreenHandlerTypes.MOB_TABLE, MobTableScreen::new);
 

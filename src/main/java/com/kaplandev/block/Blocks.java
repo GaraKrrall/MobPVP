@@ -13,7 +13,7 @@ import com.kaplandev.block.behavior.ReinforcedCopperBlockBehavior;
 import com.kaplandev.block.behavior.UpgradedHopperBlockBehavior;
 import com.kaplandev.entity.block.PvpSpawnerBlockEntity;
 import com.kaplandev.entity.block.UpgradedHopperBlockEntity;
-import com.kaplanlib.api.builder.BlockBuilder;
+import com.kaplandev.block.behavior.IndustrialOvenBehaivor;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.registry.Registries;
@@ -21,6 +21,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+
+import com.kaplanlib.api.builder.BlockBuilder;
 
 import static com.kaplandev.mobpvp.MOD_ID;
 import static com.kaplanlib.util.path.Paths.COPPER_STICK_KEY;
@@ -42,13 +44,12 @@ public class Blocks {
         PVP_SPAWNER = BlockBuilder.RegisterCreatedBlockWithEntity(PVP_SPAWNER_KEY, new PvpSpawnerBlockBehavior(AbstractBlock.Settings.create().strength(5.0f).requiresTool().resistance(1200.0f).hardness(-1.0f).sounds(BlockSoundGroup.TRIAL_SPAWNER).nonOpaque()), PvpSpawnerBlockEntity::new);
         UPGREADED_HOPPER = BlockBuilder.RegisterCreatedBlockWithEntity("upgraded_hopper", new UpgradedHopperBlockBehavior(AbstractBlock.Settings.create().strength(8.0f).requiresTool().resistance(1.0f).hardness(1.0f).sounds(BlockSoundGroup.METAL).nonOpaque()), UpgradedHopperBlockEntity::new);
         PVP_SPAWNER_MAX = BlockBuilder.RegisterCreatedBlockWithEntity(PVP_SPAWNER_MAX_KEY, new PvpSpawnerMaxBlockBehavior(AbstractBlock.Settings.create().strength(5.0f).requiresTool().resistance(1200.0f).hardness(-1.0f).sounds(BlockSoundGroup.TRIAL_SPAWNER).nonOpaque()), PvpSpawnerBlockEntity::new);
-      //  INDUSTRIAL_BARREL = BlockBuilder.RegisterCreatedBlockWithEntity("industrial_barrel", new IndustrialBarrelBlockBehaivor(AbstractBlock.Settings.create().strength(5.0f).requiresTool().resistance(12f).hardness(1.0f).sounds(BlockSoundGroup.METAL).nonOpaque()), IndustrialBarrelBlockEntity::new);
         DAMAGED_PVP_SPAWNER = BlockBuilder.create(DAMAGED_PVP_SPAWNER_KEY, AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.TRIAL_SPAWNER)).behavior(new DamagedPvpSpawnerBlockBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();
         DAMAGED_PVP_SPAWNER_MAX = BlockBuilder.create(DAMAGED_PVP_SPAWNER_MAX_KEY, AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.TRIAL_SPAWNER)).behavior(new DamagedPvpSpawnerMaxBlockBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();
         REINFORCED_COPPER_BLOCK = BlockBuilder.create(REINFORCED_COPPER_BLOCK_KEY, AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.COPPER)).behavior(new ReinforcedCopperBlockBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();
         REINFORCED_COPPER_STICK = Registry.register(Registries.BLOCK, Identifier.of(MOD_ID, COPPER_STICK_KEY), new CopperRod(AbstractBlock.Settings.create().strength(5.0f).requiresTool().sounds(BlockSoundGroup.COPPER)));
         HEAVY_CRUSHER_HEAD = BlockBuilder.create("heavy_crusher_head", AbstractBlock.Settings.create().strength(15.0f).requiresTool().sounds(BlockSoundGroup.ANVIL)).behavior(new HeavyCrusherHeadBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();
         INDUSTRIAL_OVEN_BLOCK = BlockBuilder.create("industrial_oven_block", AbstractBlock.Settings.create().strength(20.0f).requiresTool().sounds(BlockSoundGroup.METAL)).behavior(new IndustrialOvenBlockBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();
-        INDUSTRIAL_OVEN = BlockBuilder.create("industrial_oven", AbstractBlock.Settings.create().strength(25.0f).requiresTool().sounds(BlockSoundGroup.METAL)).behavior(new IndustrialOvenBlockBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();
+        INDUSTRIAL_OVEN = BlockBuilder.create("industrial_oven", AbstractBlock.Settings.create().strength(25.0f).requiresTool().sounds(BlockSoundGroup.METAL)).behavior(new IndustrialOvenBehaivor()).xpDrop(UniformIntProvider.create(0, 0)).register();
     }
 }
