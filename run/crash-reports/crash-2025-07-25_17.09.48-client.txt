@@ -4,11 +4,11 @@
 Time: 2025-07-25 17:09:48
 Description: Unexpected error
 
-java.lang.IllegalStateException: Invalid block entity mobpvp:pvp_spawner // com.kaplandev.entity.block.PvpSpawnerBlockEntity state at BlockPos{x=-11, y=-63, z=169}, got Block{mobpvp:pvp_spawner_max}
+java.lang.IllegalStateException: Invalid block entity mobpvp:pvp_spawner // block.entity.mc.garakrral.PvpSpawnerBlockEntity state at BlockPos{x=-11, y=-63, z=169}, got Block{mobpvp:pvp_spawner_max}
 	at knot//net.minecraft.block.entity.BlockEntity.validateSupports(BlockEntity.java:57)
 	at knot//net.minecraft.block.entity.BlockEntity.<init>(BlockEntity.java:51)
-	at knot//com.kaplandev.entity.block.PvpSpawnerBlockEntity.<init>(PvpSpawnerBlockEntity.java:28)
-	at knot//com.kaplandev.block.behavior.PvpSpawnerMaxBlockBehavior.createBlockEntity(PvpSpawnerMaxBlockBehavior.java:27)
+	at knot//block.entity.mc.garakrral.PvpSpawnerBlockEntity.<init>(PvpSpawnerBlockEntity.java:28)
+	at knot//behavior.block.mc.garakrral.PvpSpawnerMaxBlockBehavior.createBlockEntity(PvpSpawnerMaxBlockBehavior.java:27)
 	at knot//net.minecraft.world.chunk.WorldChunk.setBlockState(WorldChunk.java:286)
 	at knot//net.minecraft.world.World.setBlockState(World.java:232)
 	at knot//net.minecraft.client.world.ClientWorld.setBlockState(ClientWorld.java:160)
@@ -41,8 +41,8 @@ Thread: Render thread
 Stacktrace:
 	at knot//net.minecraft.block.entity.BlockEntity.validateSupports(BlockEntity.java:57)
 	at knot//net.minecraft.block.entity.BlockEntity.<init>(BlockEntity.java:51)
-	at knot//com.kaplandev.entity.block.PvpSpawnerBlockEntity.<init>(PvpSpawnerBlockEntity.java:28)
-	at knot//com.kaplandev.block.behavior.PvpSpawnerMaxBlockBehavior.createBlockEntity(PvpSpawnerMaxBlockBehavior.java:27)
+	at knot//block.entity.mc.garakrral.PvpSpawnerBlockEntity.<init>(PvpSpawnerBlockEntity.java:28)
+	at knot//behavior.block.mc.garakrral.PvpSpawnerMaxBlockBehavior.createBlockEntity(PvpSpawnerMaxBlockBehavior.java:27)
 	at knot//net.minecraft.world.chunk.WorldChunk.setBlockState(WorldChunk.java:286)
 	at knot//net.minecraft.world.World.setBlockState(World.java:232)
 	at knot//net.minecraft.client.world.ClientWorld.setBlockState(ClientWorld.java:160)

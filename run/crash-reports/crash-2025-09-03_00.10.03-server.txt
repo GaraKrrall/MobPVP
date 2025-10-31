@@ -6,7 +6,7 @@ Description: Ticking entity
 
 java.util.NoSuchElementException: No value present
 	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
-	at knot//com.kaplandev.trade.Trades.create(Trades.java:39)
+	at knot//trade.mc.garakrral.Trades.create(Trades.java:39)
 	at knot//net.minecraft.entity.passive.MerchantEntity.fillRecipesFromPool(MerchantEntity.java:242)
 	at knot//net.minecraft.entity.passive.VillagerEntity.fillRecipes(VillagerEntity.java:899)
 	at knot//net.minecraft.entity.passive.MerchantEntity.getOffers(MerchantEntity.java:113)
@@ -60,7 +60,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
 Thread: Server thread
 Stacktrace:
 	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
-	at knot//com.kaplandev.trade.Trades.create(Trades.java:39)
+	at knot//trade.mc.garakrral.Trades.create(Trades.java:39)
 	at knot//net.minecraft.entity.passive.MerchantEntity.fillRecipesFromPool(MerchantEntity.java:242)
 	at knot//net.minecraft.entity.passive.VillagerEntity.fillRecipes(VillagerEntity.java:899)
 	at knot//net.minecraft.entity.passive.MerchantEntity.getOffers(MerchantEntity.java:113)

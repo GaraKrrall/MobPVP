@@ -4,7 +4,7 @@
 Time: 2025-08-10 14:59:49
 Description: Initializing game
 
-java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to errors, provided by 'mobpvp' at 'com.kaplandev.mobpvp'!
+java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to errors, provided by 'mobpvp' at 'mc.garakrral.mobpvp'!
 	at net.fabricmc.loader.impl.FabricLoaderImpl.lambda$invokeEntrypoints$2(FabricLoaderImpl.java:403)
 	at net.fabricmc.loader.impl.util.ExceptionUtil.gatherExceptions(ExceptionUtil.java:33)
 	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:401)
@@ -16,12 +16,12 @@ java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to err
 	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
 Caused by: java.lang.ExceptionInInitializerError
-	at knot//com.kaplandev.mobpvp.onInitialize(mobpvp.java:75)
+	at knot//mc.garakrral.mobpvp.onInitialize(mobpvp.java:75)
 	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:399)
 	... 7 more
-Caused by: java.lang.ClassCastException: class com.kaplandev.block.behavior.PvpSpawnerBlockBehavior cannot be cast to class com.kaplandev.api.behavior.BlockBehavior (com.kaplandev.block.behavior.PvpSpawnerBlockBehavior and com.kaplandev.api.behavior.BlockBehavior are in unnamed module of loader 'knot' @5ae63ade)
+Caused by: java.lang.ClassCastException: class behavior.block.mc.garakrral.PvpSpawnerBlockBehavior cannot be cast to class com.kaplandev.api.behavior.BlockBehavior (behavior.block.mc.garakrral.PvpSpawnerBlockBehavior and com.kaplandev.api.behavior.BlockBehavior are in unnamed module of loader 'knot' @5ae63ade)
 	at knot//com.kaplandev.api.builder.BlockBuilder.entityBehavior(BlockBuilder.java:49)
-	at knot//com.kaplandev.block.Blocks.<clinit>(Blocks.java:45)
+	at knot//block.mc.garakrral.Blocks.<clinit>(Blocks.java:45)
 	... 9 more
 
 

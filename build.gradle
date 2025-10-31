@@ -12,7 +12,13 @@ group = project.maven_group
 base {
     archivesName = project.archives_base_name
 }
-
+configurations {
+    shadowImpl {
+        canBeResolved = true
+        canBeConsumed = false
+        extendsFrom implementation
+    }
+}
 loom {
     splitEnvironmentSourceSets()
 
@@ -31,13 +37,27 @@ fabricApi {
 
 repositories {
     maven {
-        name = "CurseMaven"
+        name = "Create Maven"
+        url = "https://maven.createmod.net/"
+    }
+    maven {
+        name = "Fabricators of Create (Porting Lib)"
+        url = "https://mvn.devos.one/snapshots/"
+    }
+    maven {
+        name = "Modrinth Maven"
+        url = "https://api.modrinth.com/maven"
+    }
+    maven {
+        name = "Curse Maven"
         url = "https://cursemaven.com"
     }
+    maven { url = "https://jitpack.io" }
     mavenCentral()
     maven { url "https://maven.shedaniel.me"}
     maven { url "https://maven.wispforest.io" }
-    maven { url = "https://maven.createmod.net" }// wispforest maven
+    maven { url = "https://maven.createmod.net" }
+    maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" }// wispforest maven
     flatDir {
         dirs 'libs'
     }
@@ -59,11 +79,6 @@ dependencies {
     modApi("me.shedaniel.cloth:basic-math:+")
     modCompileOnly "curse.maven:modmenu-308702:5810603"
 
-    // ✅ Flywheel API (compileOnly olarak)
-    compileOnly("dev.engine-room.flywheel:flywheel-fabric-api-${project.minecraft_version}:${project.flywheel_version}")
-
-    // ✅ Flywheel modunu runtime’a dahil et
-    modRuntimeOnly("dev.engine-room.flywheel:flywheel-fabric-${project.minecraft_version}:${project.flywheel_version}")
 }
 
 processResources {

@@ -67,7 +67,7 @@ Stacktrace:
 
 -- Entity being ticked --
 Details:
-	Entity Type: mobpvp:mad_skeleton (com.kaplandev.entity.mob.MadSkeletonEntity)
+	Entity Type: mobpvp:mad_skeleton (mob.entity.mc.garakrral.MadSkeletonEntity)
 	Entity ID: 1701
 	Entity Name: §c[Seviye: 8] §fMad Skeleton §7- §a42,0§7/§c42 ❤
 	Entity's Exact location: -304.50, -58.50, 388.50

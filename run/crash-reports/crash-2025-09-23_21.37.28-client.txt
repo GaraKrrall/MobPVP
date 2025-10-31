@@ -4,7 +4,7 @@
 Time: 2025-09-23 21:37:28
 Description: Initializing game
 
-java.lang.RuntimeException: Could not execute entrypoint stage 'client' due to errors, provided by 'mobpvp' at 'com.kaplandev.client.mobpvpClient'!
+java.lang.RuntimeException: Could not execute entrypoint stage 'client' due to errors, provided by 'mobpvp' at 'client.mc.garakrral.mobpvpClient'!
 	at net.fabricmc.loader.impl.FabricLoaderImpl.lambda$invokeEntrypoints$2(FabricLoaderImpl.java:403)
 	at net.fabricmc.loader.impl.util.ExceptionUtil.gatherExceptions(ExceptionUtil.java:33)
 	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:401)
@@ -15,9 +15,9 @@ java.lang.RuntimeException: Could not execute entrypoint stage 'client' due to e
 	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
 	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
-Caused by: java.lang.RuntimeException: Config 'class com.kaplandev.client.config.ConfigManager' has not been registered
+Caused by: java.lang.RuntimeException: Config 'class config.client.mc.garakrral.ConfigManager' has not been registered
 	at knot//me.shedaniel.autoconfig.AutoConfig.getConfigHolder(AutoConfig.java:77)
-	at knot//com.kaplandev.client.mobpvpClient.onInitializeClient(mobpvpClient.java:59)
+	at knot//client.mc.garakrral.mobpvpClient.onInitializeClient(mobpvpClient.java:59)
 	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:399)
 	... 7 more
 

@@ -4,7 +4,7 @@
 Time: 2025-09-04 14:00:31
 Description: Initializing game
 
-java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to errors, provided by 'mobpvp' at 'com.kaplandev.mobpvp'!
+java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to errors, provided by 'mobpvp' at 'mc.garakrral.mobpvp'!
 	at net.fabricmc.loader.impl.FabricLoaderImpl.lambda$invokeEntrypoints$2(FabricLoaderImpl.java:403)
 	at net.fabricmc.loader.impl.util.ExceptionUtil.gatherExceptions(ExceptionUtil.java:33)
 	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:401)
@@ -16,9 +16,9 @@ java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to err
 	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
 Caused by: java.lang.IllegalStateException: Enchantment registry not initialized yet!
-	at knot//com.kaplandev.trade.Trades.book(Trades.java:120)
-	at knot//com.kaplandev.trade.Trades.register(Trades.java:89)
-	at knot//com.kaplandev.mobpvp.onInitialize(mobpvp.java:80)
+	at knot//trade.mc.garakrral.Trades.book(Trades.java:120)
+	at knot//trade.mc.garakrral.Trades.register(Trades.java:89)
+	at knot//mc.garakrral.mobpvp.onInitialize(mobpvp.java:80)
 	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:399)
 	... 7 more
 

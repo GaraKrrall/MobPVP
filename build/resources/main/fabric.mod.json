@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "id": "mobpvp",
-  "version": "3.2.3-pre3",
+  "version": "3.2.3-pre5",
   "name": "MobPVP",
   "description": "MobPVP adds a level system to every mob. Stronger mobs drop better loot and may become minibosses.",
-  "authors": ["KaplanBedwars"],
+  "authors": ["GaraKrral"],
   "contact": {},
   "license": "AGPL-3.0",
   "icon": "assets/mobpvp/icon.png",
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "com.kaplandev.client.mobpvpDataGenerator"
+      "mc.garakrral.client.mobpvpDataGenerator"
     ],
     "client": [
-      "com.kaplandev.client.mobpvpClient",
-      "com.kaplandev.client.keybind.Keybinds"
+      "mc.garakrral.client.mobpvpClient",
+      "mc.garakrral.client.keybind.Keybinds"
     ],
     "main": [
-      "com.kaplandev.mobpvp"
+      "mc.garakrral.mobpvp"
     ],
     "modmenu": [
-      "com.kaplandev.client.config.MobPvpModMenuIntegration"
+      "mc.garakrral.client.config.MobPvpModMenuIntegration"
     ]
   },
   "mixins": [
@@ -34,8 +34,10 @@
   "depends": {
     "fabricloader": ">=0.16.14",
     "fabric": "*",
-    "minecraft": "1.21.1",
-    "moblib": ">=1.3-build.3"
+    "minecraft": ["1.21", "1.21.1"],
+    "moblib": ">=1.3-build.3",
+    "owo-lib": ">=0.12.15.4",
+    "cloth-config": ">=15.0.140"
   },
   "breaks": {
     "addon": "<=1.1"

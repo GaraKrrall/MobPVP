@@ -1,0 +1,43 @@
+package mc.garakrral.block.behavior;
+
+
+import mc.garakrral.item.ItemType;
+import com.kaplanlib.api.behavior.BlockBehavior;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.text.Text;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+
+public class MobTableBehavior extends Block implements BlockBehavior {
+    private static final Text TITLE = Text.literal("Mob Table");
+
+    public MobTableBehavior(AbstractBlock.Settings settings) {
+        super(settings);
+    }
+
+    @Override
+    protected ActionResult onUse(BlockState state, World world, BlockPos pos,
+                                 PlayerEntity player, BlockHitResult hit) {
+        if (world.isClient) {
+            return ActionResult.SUCCESS;
+        } else {
+            player.openHandledScreen(state.createScreenHandlerFactory(world, pos));
+            // İstersen istatistik de tutabilirsin
+            // player.incrementStat(Stats.CUSTOM.get(MY_CUSTOM_STAT));
+            return ActionResult.CONSUME;
+        }
+    }
+
+
+    @Override
+    public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack tool, boolean dropXp) {
+        if (!world.isClient) Block.dropStack(world, pos, new ItemStack(ItemType.HEARTH_PART));
+    }
+}

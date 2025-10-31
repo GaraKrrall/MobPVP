@@ -4,7 +4,7 @@
 Time: 2025-07-24 23:58:59
 Description: Initializing game
 
-java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to errors, provided by 'mobpvp' at 'com.kaplandev.mobpvp'!
+java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to errors, provided by 'mobpvp' at 'mc.garakrral.mobpvp'!
 	at net.fabricmc.loader.impl.FabricLoaderImpl.lambda$invokeEntrypoints$2(FabricLoaderImpl.java:403)
 	at net.fabricmc.loader.impl.util.ExceptionUtil.gatherExceptions(ExceptionUtil.java:33)
 	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:401)
@@ -16,8 +16,8 @@ java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to err
 	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
 Caused by: java.lang.ExceptionInInitializerError
-	at knot//com.kaplandev.item.Items.<clinit>(Items.java:52)
-	at knot//com.kaplandev.mobpvp.onInitialize(mobpvp.java:76)
+	at knot//item.mc.garakrral.Items.<clinit>(Items.java:52)
+	at knot//mc.garakrral.mobpvp.onInitialize(mobpvp.java:76)
 	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:399)
 	... 7 more
 Caused by: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: mobpvp:pvp_spawner_MAX
@@ -25,7 +25,7 @@ Caused by: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] chara
 	at knot//net.minecraft.util.Identifier.ofValidated(Identifier.java:48)
 	at knot//net.minecraft.util.Identifier.of(Identifier.java:52)
 	at knot//com.kaplandev.api.builder.BlockBuilder.RegisterCreatedBlock(BlockBuilder.java:31)
-	at knot//com.kaplandev.block.Blocks.<clinit>(Blocks.java:31)
+	at knot//block.mc.garakrral.Blocks.<clinit>(Blocks.java:31)
 	... 10 more
 
 

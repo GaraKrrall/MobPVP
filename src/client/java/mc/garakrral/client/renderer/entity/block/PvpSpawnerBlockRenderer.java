@@ -1,0 +1,30 @@
+package mc.garakrral.client.renderer.entity.block;
+
+import mc.garakrral.entity.block.PvpSpawnerBlockEntity;
+
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.render.VertexConsumerProvider;
+import net.minecraft.client.render.block.entity.BlockEntityRenderer;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactory;
+import net.minecraft.client.util.math.MatrixStack;
+
+
+public class PvpSpawnerBlockRenderer implements BlockEntityRenderer<PvpSpawnerBlockEntity> {
+
+    private final MinecraftClient client = MinecraftClient.getInstance();
+
+    public PvpSpawnerBlockRenderer(BlockEntityRendererFactory.Context context) {
+    }
+
+    @Override
+    public void render(
+            PvpSpawnerBlockEntity entity,
+            float tickDelta,
+            MatrixStack matrices,
+            VertexConsumerProvider vertexConsumers,
+            int light,
+            int overlay
+    ) {
+        if (entity.getWorld() == null) return;
+    }
+}

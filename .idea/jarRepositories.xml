@@ -61,5 +61,30 @@
       <option name="name" value="maven3" />
       <option name="url" value="https://maven.createmod.net" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="Create Maven" />
+      <option name="name" value="Create Maven" />
+      <option name="url" value="https://maven.createmod.net/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Fabricators of Create (Porting Lib)" />
+      <option name="name" value="Fabricators of Create (Porting Lib)" />
+      <option name="url" value="https://mvn.devos.one/snapshots/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Modrinth Maven" />
+      <option name="name" value="Modrinth Maven" />
+      <option name="url" value="https://api.modrinth.com/maven" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://jitpack.io" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven5" />
+      <option name="name" value="maven5" />
+      <option name="url" value="https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" />
+    </remote-repository>
   </component>
 </project>
