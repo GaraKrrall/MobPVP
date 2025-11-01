@@ -1,4 +1,22 @@
-Copyright (c) 2025 KaplanBedwars, A KaplanBedwars Original Team(AKOT)
+# License Overview
+
+## Assets License (All Rights Reserved)
+
+All Rights Reserved
+
+Copyright (c) GaraKrral
+
+This license applies to any files under the following directories:
+
+- ./src/main/resources/assets/
+
+---
+
+## Code License (GNU AGPLv3)
+
+All other files are licensed under the GNU AGPLv3 License:
+
+Copyright (c) 2025 GaraKrral
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
