@@ -4,7 +4,7 @@
 
 All Rights Reserved
 
-Copyright (c) GaraKrral
+Copyright (c) 2025 GaraKrral
 
 This license applies to any files under the following directories:
 
