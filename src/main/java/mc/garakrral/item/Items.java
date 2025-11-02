@@ -11,6 +11,7 @@ import mc.garakrral.item.feature.IronReinforcedCopperBallItem;
 import mc.garakrral.item.feature.KalpItem;
 import mc.garakrral.item.feature.KnifeItem;
 import mc.garakrral.item.feature.MaceItem;
+import mc.garakrral.item.feature.RyeSeed;
 import mc.garakrral.item.feature.UltraHeathItem;
 import mc.garakrral.item.group.ItemGroups;
 
@@ -61,6 +62,8 @@ import static mc.garakrral.item.ItemType.REINFORCED_COPPER_BLOCK;
 import static mc.garakrral.item.ItemType.REINFORCED_COPPER_INGOT;
 import static mc.garakrral.item.ItemType.REINFORCED_COPPER_KNIFE;
 import static mc.garakrral.item.ItemType.REINFORCED_COPPER_MACE;
+import static mc.garakrral.item.ItemType.RYE;
+import static mc.garakrral.item.ItemType.RYE_SEED;
 import static mc.garakrral.item.ItemType.TEST_ITEM;
 import static mc.garakrral.item.ItemType.ULTRA_HEARTH_ITEM;
 import static mc.garakrral.item.ItemType.UPGREADED_HOPPER_ITEM;
@@ -95,6 +98,8 @@ public class Items {
         REINFORCED_COPPER_KNIFE = GroupItemBuilder.create(REINFORCED_COPPER_KNIFE_KEY, new KnifeItem(new Item.Settings().maxCount(1).maxDamage(200), 5.0F, -2.0F)).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         TEST_ITEM = GroupItemBuilder.create("test", new Item(new Item.Settings())).register();
         REINFORCED_COPPER_BALL = GroupItemBuilder.create(REINFORCED_COPPER_BALL_KEY, new IronReinforcedCopperBallItem(new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        RYE = GroupItemBuilder.create("rye", new Item(new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        RYE_SEED = GroupItemBuilder.create("rye_seed", new RyeSeed(new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         EGG_SKELETON = GroupItemBuilder.create(EGG_SKELETON_KEY, new SpawnEggItem(EntityType.MAD_SKELETON, 0xC1C1C1, 0x3A3A3A, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         EGG_SUPER_ZOMBIE = GroupItemBuilder.create(EGG_SUPER_ZOMBIE_KEY, new SpawnEggItem(EntityType.MAD_ZOMBIE, 0xB71C1C, 0xFF5252, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         EGG_MINI_GOLEM = GroupItemBuilder.create(EGG_MINI_GOLEM_KEY, new SpawnEggItem(EntityType.MINIGOLEM, 0xD8D8D8, 0x8A8A8A, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();

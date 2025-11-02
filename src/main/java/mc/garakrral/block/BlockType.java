@@ -15,4 +15,5 @@ public class BlockType {
     public static Block HEAVY_CRUSHER_HEAD;
     public static Block INDUSTRIAL_OVEN_BLOCK;
     public static Block INDUSTRIAL_OVEN;
+    public static Block RYE_CROP;
 }

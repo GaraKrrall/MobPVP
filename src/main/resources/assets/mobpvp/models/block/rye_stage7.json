@@ -1,0 +1,7 @@
+{
+  "parent": "mobpvp:block/crop_cross",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "cross": "mobpvp:block/rye_stage7"
+  }
+}

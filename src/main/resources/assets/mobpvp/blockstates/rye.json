@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "age=0": { "model": "mobpvp:block/rye_stage0" },
+    "age=1": { "model": "mobpvp:block/rye_stage1" },
+    "age=2": { "model": "mobpvp:block/rye_stage2" },
+    "age=3": { "model": "mobpvp:block/rye_stage3" },
+    "age=4": { "model": "mobpvp:block/rye_stage4" },
+    "age=5": { "model": "mobpvp:block/rye_stage5" },
+    "age=6": { "model": "mobpvp:block/rye_stage6" },
+    "age=7": { "model": "mobpvp:block/rye_stage7" }
+  }
+}

@@ -18,7 +18,9 @@ import mc.garakrral.block.behavior.MobTableBehavior;
 import mc.garakrral.block.behavior.PvpSpawnerBlockBehavior;
 import mc.garakrral.block.behavior.PvpSpawnerMaxBlockBehavior;
 import mc.garakrral.block.behavior.ReinforcedCopperBlockBehavior;
+import mc.garakrral.block.behavior.RyeCropBlockBehaivor;
 import mc.garakrral.block.behavior.UpgradedHopperBlockBehavior;
+import mc.garakrral.block.crop.api.CropBlockBuilder;
 import mc.garakrral.entity.block.PvpSpawnerBlockEntity;
 import mc.garakrral.entity.block.UpgradedHopperBlockEntity;
 
@@ -43,6 +45,7 @@ import static mc.garakrral.block.BlockType.PVP_SPAWNER;
 import static mc.garakrral.block.BlockType.PVP_SPAWNER_MAX;
 import static mc.garakrral.block.BlockType.REINFORCED_COPPER_BLOCK;
 import static mc.garakrral.block.BlockType.REINFORCED_COPPER_STICK;
+import static mc.garakrral.block.BlockType.RYE_CROP;
 import static mc.garakrral.block.BlockType.UPGREADED_HOPPER;
 import static mc.garakrral.mobpvp.MOD_ID;
 
@@ -63,5 +66,6 @@ public class Blocks {
         HEAVY_CRUSHER_HEAD = BlockBuilder.create("heavy_crusher_head", AbstractBlock.Settings.create().strength(15.0f).requiresTool().sounds(BlockSoundGroup.ANVIL)).behavior(new HeavyCrusherHeadBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();
         INDUSTRIAL_OVEN_BLOCK = BlockBuilder.create("industrial_oven_block", AbstractBlock.Settings.create().strength(20.0f).requiresTool().sounds(BlockSoundGroup.METAL)).behavior(new IndustrialOvenBlockBehavior()).xpDrop(UniformIntProvider.create(0, 0)).register();
         INDUSTRIAL_OVEN = BlockBuilder.create("industrial_oven", AbstractBlock.Settings.create().strength(25.0f).requiresTool().sounds(BlockSoundGroup.METAL)).behavior(new IndustrialOvenBehaivor()).xpDrop(UniformIntProvider.create(0, 0)).register();
+        RYE_CROP =  CropBlockBuilder.createCrop("rye", AbstractBlock.Settings.create().noCollision().ticksRandomly().nonOpaque().strength(0.0f).sounds(BlockSoundGroup.CROP)).behavior(new RyeCropBlockBehaivor()).register();
     }
 }

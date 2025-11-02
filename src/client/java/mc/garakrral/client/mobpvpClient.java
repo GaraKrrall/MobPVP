@@ -54,6 +54,8 @@ public class mobpvpClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(BlockType.PVP_SPAWNER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(BlockType.PVP_SPAWNER_MAX, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BlockType.RYE_CROP, RenderLayer.getCutout());
+
 
         EntityRendererRegistry.register(net.minecraft.entity.EntityType.ZOMBIE, CustomZombieRenderer::new);
         EntityRendererRegistry.register(EntityType.MAD_ZOMBIE, SuperZombieRenderer::new);

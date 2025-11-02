@@ -95,5 +95,7 @@ public class IndustrialOvenRecipes {
     public static RecipeData getRecipeById(String id) {
         return RECIPES.get(id);
     }
-
+    public static Map<String, RecipeData> getAllRecipes() {
+        return RECIPES;
+    }
 }
