@@ -1,5 +1,22 @@
 package mc.garakrral.client;
 
+import me.shedaniel.autoconfig.AutoConfig;
+import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
+
+import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+
+import net.minecraft.client.gui.screen.TitleScreen;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
+import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
+import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
+import net.minecraft.client.render.entity.SkeletonEntityRenderer;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.util.hit.EntityHitResult;
+
 import mc.garakrral.block.BlockType;
 import mc.garakrral.client.config.ConfigManager;
 import mc.garakrral.client.gui.BetaNoticeScreen;
@@ -11,6 +28,7 @@ import mc.garakrral.client.renderer.entity.block.PvpSpawnerMaxBlockRenderer;
 import mc.garakrral.client.renderer.entity.block.UpgradedHopperBlockRenderer;
 import mc.garakrral.client.renderer.entity.boss.BulwarkRenderer;
 import mc.garakrral.client.renderer.entity.mob.CustomZombieRenderer;
+import mc.garakrral.client.renderer.entity.mob.GoblinRenderer;
 import mc.garakrral.client.renderer.entity.mob.SuperZombieRenderer;
 import mc.garakrral.client.renderer.entity.mobpvp.MiniCopperGolemRenderer;
 import mc.garakrral.client.renderer.entity.mobpvp.MiniIronGolemRenderer;
@@ -20,22 +38,6 @@ import mc.garakrral.level.LevelAssigner;
 
 import com.kaplanlib.api.version.BetaVersions;
 import com.kaplanlib.api.version.VersionUtils;
-
-import me.shedaniel.autoconfig.AutoConfig;
-import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
-
-import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.minecraft.client.gui.screen.TitleScreen;
-import net.minecraft.client.gui.screen.ingame.HandledScreens;
-import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
-import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
-import net.minecraft.client.render.entity.SkeletonEntityRenderer;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.util.hit.EntityHitResult;
 
 public class mobpvpClient implements ClientModInitializer {
     private String title;
@@ -56,7 +58,6 @@ public class mobpvpClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(BlockType.PVP_SPAWNER_MAX, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(BlockType.RYE_CROP, RenderLayer.getCutout());
 
-
         EntityRendererRegistry.register(net.minecraft.entity.EntityType.ZOMBIE, CustomZombieRenderer::new);
         EntityRendererRegistry.register(EntityType.MAD_ZOMBIE, SuperZombieRenderer::new);
         EntityRendererRegistry.register(EntityType.MAD_SKELETON, SkeletonEntityRenderer::new);
@@ -64,6 +65,8 @@ public class mobpvpClient implements ClientModInitializer {
         EntityRendererRegistry.register(EntityType.MINIGOLEM, MiniIronGolemRenderer::new);
         EntityRendererRegistry.register(EntityType.MINIGOLEM_COPPER, MiniCopperGolemRenderer::new);
         EntityRendererRegistry.register(EntityType.IRON_REINFORCED_COPPER_BALL, FlyingItemEntityRenderer::new);
+        EntityRendererRegistry.register(EntityType.GOBLIN, GoblinRenderer::new);
+
 
 
         HandledScreens.register(ScreenHandlerTypes.MOB_TABLE, MobTableScreen::new);

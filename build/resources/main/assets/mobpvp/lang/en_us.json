@@ -56,5 +56,7 @@
   "entity.mobpvp.mini_copper_golem": "Tiny Copper Golem",
   "entity.mobpvp.mad_skeleton": "Mad Skeleton",
   "entity.mobpvp.mad_zombie": "Mad Zombie",
-  "entity.mobpvp.bulwark": "Bulwark"
+  "entity.mobpvp.bulwark": "Bulwark",
+  "entity.mobpvp.goblin": "Goblin",
+  "item.mobpvp.goblin_egg": "Goblin Spawn Egg"
 }

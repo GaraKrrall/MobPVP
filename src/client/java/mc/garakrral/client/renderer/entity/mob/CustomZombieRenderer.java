@@ -1,4 +1,3 @@
-// CustomZombieRenderer.java
 package mc.garakrral.client.renderer.entity.mob;
 
 import net.minecraft.client.render.entity.EntityRendererFactory;

@@ -23,9 +23,6 @@ public class MiniCopperGolemEntity extends IronGolemEntity {
         this.setPlayerCreated(true);
     }
 
-    /**
-     * İstatistikler
-     */
     public static DefaultAttributeContainer.Builder createAttributes() {
         return IronGolemEntity.createIronGolemAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 10.0D)
@@ -43,9 +40,6 @@ public class MiniCopperGolemEntity extends IronGolemEntity {
         this.goalSelector.add(4, new LookAroundGoal(this));
     }
 
-    /**
-     * Adım sesi
-     */
     @Override
     protected void playStepSound(BlockPos pos, BlockState state) {
         this.playSound(SoundEvents.BLOCK_IRON_TRAPDOOR_OPEN, 0.15F, 1.0F);

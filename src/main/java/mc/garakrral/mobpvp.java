@@ -57,7 +57,7 @@ import mc.garakrral.level.player.PlayerLevelData;
 import mc.garakrral.level.player.PlayerLevelSaveHandler;
 import mc.garakrral.registry.DataRegister;
 import mc.garakrral.registry.HandlerRegister;
-import mc.garakrral.scheduler.ServerScheduler;
+import mc.garakrral.sound.Sounds;
 import mc.garakrral.trade.Trades;
 import mc.garakrral.villager.Villagers;
 
@@ -79,8 +79,8 @@ public final class mobpvp implements ModInitializer {
     @Override
     public void onInitialize() {
         DataRegister.registerAllData();
-        ServerScheduler.init();
         HandlerRegister.registerHandlers();
+        Sounds.touch();
         EnchantmentsAndEffects.registerModEnchantmentEffects();
         EnchantmentGet.init();
         WorldGen.register();

@@ -10,6 +10,7 @@ public class ItemType {
     public static Item EGG_MINI_GOLEM;
     public static Item EGG_BULWARK;
     public static Item EGG_MINI_COPPER_GOLEM;
+    public static Item EGG_GOBLIN;
     public static Item HEARTH_PART;
     public static Item REINFORCED_COPPER_INGOT;
     public static Item ULTRA_HEARTH_ITEM;

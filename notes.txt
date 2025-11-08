@@ -24,3 +24,13 @@ Uzun PvE Kulesi eklendi.
 ----------------------------------------------------------------------
                         BİR NÜKLEER SAHNE
 ----------------------------------------------------------------------
+Endüstriyel fırın eklendi
+Endüstriyel fırın bloğu eklendi
+Çavdar ekini eklendi
+Ağır başlık eklendi
+Akıllı huni eklendi
+Goblin yaratığı ekendi
+Topuzlar için yeni türler eklendi
+Endüstriyel fırın makinesi eklendi
+Ezme Makinesi eklendi
+7 dil çevirisi tamamlandı(Birinci dilin türkçe olduğnu unutmayın. Çeviriler geç olabilir ve %100 doğru değildir)

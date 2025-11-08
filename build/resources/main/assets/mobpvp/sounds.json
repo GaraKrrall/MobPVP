@@ -1,7 +1,17 @@
 {
-  "startup": {
+  "goblin.ambient": {
     "sounds": [
-      "mobpvp:startup"
+      { "name": "mobpvp:goblin/goblin_ambient", "volume": 1.0 }
+    ]
+  },
+  "goblin.hurt": {
+    "sounds": [
+      { "name": "mobpvp:goblin/goblin_hurt", "volume": 1.0 }
+    ]
+  },
+  "goblin.death": {
+    "sounds": [
+      { "name": "mobpvp:goblin/goblin_death", "volume": 1.0 }
     ]
   }
 }

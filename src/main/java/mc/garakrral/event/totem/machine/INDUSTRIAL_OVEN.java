@@ -26,8 +26,10 @@ import net.minecraft.world.World;
 import mc.garakrral.block.BlockType;
 import mc.garakrral.data.OvenData;
 import mc.garakrral.event.totem.machine.recipe.IndustrialOvenRecipes;
-import mc.garakrral.scheduler.ServerScheduler;
 import mc.garakrral.event.totem.machine.recipe.IndustrialOvenRecipes.RecipeData;
+
+import com.kaplanlib.api.scheduler.ServerScheduler;
+
 
 public class INDUSTRIAL_OVEN {
     private static final OvenData ovenData = AutoConfig.getConfigHolder(OvenData.class).getConfig();

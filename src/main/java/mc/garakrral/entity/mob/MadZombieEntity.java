@@ -8,6 +8,7 @@ import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.PathAwareEntity;
+import net.minecraft.entity.mob.SkeletonEntity;
 import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.world.World;
@@ -46,6 +47,8 @@ public class MadZombieEntity extends ZombieEntity {
                         && !(entity instanceof MadZombieEntity)
                         && !(entity instanceof BulwarkEntity)
                         && !(entity instanceof MadSkeletonEntity)
+                        && !(entity instanceof ZombieEntity)
+                        && !(entity instanceof SkeletonEntity)
 
         ));
     }

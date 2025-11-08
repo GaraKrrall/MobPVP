@@ -1,15 +1,3 @@
-/tp @s 8960 ~ 20272
-/tp @s 8960 ~ 15272
-/locate structure mobpvp:big_pve_tower
-/tp @s 8656 ~ 15328
-/place feature mobpvp:arena_feature
-/tp @a ~ ~ 250000
-/locate structure mobpvp:big_pve_tower
-/tp @s 7936 ~ 250336
-/tp @s 7936 ~ 23000
-/locate structure mobpvp:big_pve_tower
-/tp @s 8144 ~ 22544
-/locate structure mobpvp:pve_tower
 /tp @s 7792 ~ 22272
 /locate structure mobpvp:tall_pve_tower
 /tp @s 6848 ~ 20624
@@ -48,3 +36,15 @@
 /kill @e[type=mobpvp:bulwark]
 /mobpvp ClearMobLevelData
 /tick rate 9999
+/difficulty hard
+/time set night
+/time set day
+/time set night
+/gamerule doMobSpawning true
+/time set night
+/difficulty easy
+/difficulty hard
+/time set night
+/difficulty hard
+/time set 1600
+/time set 16000

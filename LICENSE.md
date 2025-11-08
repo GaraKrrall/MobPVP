@@ -10,6 +10,9 @@ This license applies to any files under the following directories:
 
 - ./src/main/resources/assets/
 
+Public domain (CC0) assets that may appear within this directory remain under their original CC0 license.
+All other assets are strictly protected under this All Rights Reserved license.
+
 ---
 
 ## Code License (GNU AGPLv3)

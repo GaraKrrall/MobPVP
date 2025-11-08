@@ -4,6 +4,8 @@ import mc.garakrral.entity.goal.boss.BreakBlockGoal;
 import mc.garakrral.entity.goal.boss.FireballAttackGoal;
 import mc.garakrral.entity.goal.boss.SummonZombieGoal;
 import mc.garakrral.entity.goal.boss.TntSpawnGoal;
+import mc.garakrral.entity.mob.GoblinEntity;
+import mc.garakrral.entity.mob.MadSkeletonEntity;
 import mc.garakrral.entity.mob.MadZombieEntity;
 
 import mc.garakrral.item.ItemType;
@@ -58,7 +60,14 @@ public class BulwarkEntity extends PathAwareEntity {
 
         this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
         this.targetSelector.add(2, new ActiveTargetGoal<>(this, PathAwareEntity.class, 10, true, true,
-                entity -> entity != this && !(entity instanceof MadZombieEntity) && !(entity instanceof BulwarkEntity)));
+                entity -> entity != this
+                        && !(entity instanceof MadZombieEntity)
+                        && !(entity instanceof BulwarkEntity) // bulwark boss
+                        && !(entity instanceof GoblinEntity) //goblin
+                        && !(entity instanceof MadZombieEntity) //deli zombi
+                        && !(entity instanceof BulwarkEntity) //bulwark boss
+                        && !(entity instanceof MadSkeletonEntity) //deli iskelet
+        ));
         this.targetSelector.add(3, new RevengeGoal(this));
     }
 

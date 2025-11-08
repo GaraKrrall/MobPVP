@@ -6,6 +6,7 @@ import mc.garakrral.entity.block.PvpSpawnerMaxBlockEntity;
 import mc.garakrral.entity.block.UpgradedHopperBlockEntity;
 import mc.garakrral.entity.boss.BulwarkEntity;
 import mc.garakrral.entity.item.IronReinforcedCopperBallEntity;
+import mc.garakrral.entity.mob.GoblinEntity;
 import mc.garakrral.entity.mob.MadSkeletonEntity;
 import mc.garakrral.entity.mob.MadZombieEntity;
 import mc.garakrral.entity.mob.MiniCopperGolemEntity;
@@ -24,4 +25,5 @@ public class EntityType {
     public static BlockEntityType<MobTableBlockEntity> MOB_TABLE;
     public static BlockEntityType<UpgradedHopperBlockEntity> UPGREADED_HOPPER;
     public static net.minecraft.entity.EntityType<IronReinforcedCopperBallEntity> IRON_REINFORCED_COPPER_BALL;
+    public static net.minecraft.entity.EntityType<GoblinEntity> GOBLIN;
 }
