@@ -1,10 +1,5 @@
 package mc.garakrral.level.player;
 
-
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-import net.minecraft.server.MinecraftServer;
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -13,9 +8,15 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+import net.minecraft.server.MinecraftServer;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
 public class PlayerLevelSaveHandler {
     private static final Gson GSON = new Gson();
-    private static final Type TYPE = new TypeToken<Map<UUID, PlayerLevel>>() {}.getType();
+    private static final Type TYPE = new TypeToken<Map<UUID, PlayerLevel>>() {
+    }.getType();
     private static final Map<UUID, PlayerLevel> DATA = new HashMap<>();
     private static File saveFile;
 

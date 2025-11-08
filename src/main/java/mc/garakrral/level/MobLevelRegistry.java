@@ -26,17 +26,17 @@ public class MobLevelRegistry {
         LEVEL_RANGES.put("cave_spider", new Integer[]{3, 5});
         LEVEL_RANGES.put("villager", new Integer[]{1, 2});
 
-        // Pasif moblar (çok az seviye farkı olsun)
         LEVEL_RANGES.put("sheep", new Integer[]{1, 2});
         LEVEL_RANGES.put("cow", new Integer[]{1, 2});
         LEVEL_RANGES.put("pig", new Integer[]{1, 2});
         LEVEL_RANGES.put("chicken", new Integer[]{1, 2});
 
-        // Özel mob
-        LEVEL_RANGES.put("custom_skeleton", new Integer[]{2, 6});
-
+        LEVEL_RANGES.put("mad_skeleton", new Integer[]{2, 8});
+        LEVEL_RANGES.put("mad_zombie", new Integer[]{2, 10});
+        LEVEL_RANGES.put("goblin", new Integer[]{4, 10});
         LEVEL_RANGES.put("mini_iron_golem", new Integer[]{1, 2});
         LEVEL_RANGES.put("mini_copper_golem", new Integer[]{1, 8});
+
     }
 
     public static Integer[] getLevelRange(String mobId) {

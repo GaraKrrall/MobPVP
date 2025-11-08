@@ -42,6 +42,7 @@ import static mc.garakrral.item.ItemType.DAMAGED_PVP_SPAWNER_MAX_ITEM;
 import static mc.garakrral.item.ItemType.DIAMOND_MACE;
 import static mc.garakrral.item.ItemType.EGG_BULWARK;
 import static mc.garakrral.item.ItemType.EGG_GOBLIN;
+import static mc.garakrral.item.ItemType.EGG_GOBLIN_HORSE;
 import static mc.garakrral.item.ItemType.EGG_MINI_COPPER_GOLEM;
 import static mc.garakrral.item.ItemType.EGG_MINI_GOLEM;
 import static mc.garakrral.item.ItemType.EGG_SKELETON;
@@ -107,5 +108,6 @@ public class Items {
         EGG_MINI_COPPER_GOLEM = GroupItemBuilder.create("egg_mini_copper_golem", new SpawnEggItem(EntityType.MINIGOLEM_COPPER, 0xCE7760, 0xA85E4D, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         EGG_BULWARK = GroupItemBuilder.create(EGG_BULWARK_KEY, new SpawnEggItem(EntityType.BULWARK, 0x880E4F, 0xFF1744, new Item.Settings().rarity(Rarity.EPIC))).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         EGG_GOBLIN = GroupItemBuilder.create("goblin_egg", new SpawnEggItem(EntityType.GOBLIN, 0x1B5E20, 0x76FF03, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        EGG_GOBLIN_HORSE = GroupItemBuilder.create("goblin_horse_egg", new SpawnEggItem(EntityType.GOBLIN_HORSE, 0x1B5E20, 0x76FF03, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
     }
 }

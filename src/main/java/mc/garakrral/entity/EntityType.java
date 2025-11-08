@@ -1,5 +1,7 @@
 package mc.garakrral.entity;
 
+import net.minecraft.block.entity.BlockEntityType;
+
 import mc.garakrral.entity.block.MobTableBlockEntity;
 import mc.garakrral.entity.block.PvpSpawnerBlockEntity;
 import mc.garakrral.entity.block.PvpSpawnerMaxBlockEntity;
@@ -7,12 +9,11 @@ import mc.garakrral.entity.block.UpgradedHopperBlockEntity;
 import mc.garakrral.entity.boss.BulwarkEntity;
 import mc.garakrral.entity.item.IronReinforcedCopperBallEntity;
 import mc.garakrral.entity.mob.GoblinEntity;
+import mc.garakrral.entity.mob.GoblinHorseEntity;
 import mc.garakrral.entity.mob.MadSkeletonEntity;
 import mc.garakrral.entity.mob.MadZombieEntity;
 import mc.garakrral.entity.mob.MiniCopperGolemEntity;
 import mc.garakrral.entity.passive.MiniIronGolemEntity;
-
-import net.minecraft.block.entity.BlockEntityType;
 
 public class EntityType {
     public static net.minecraft.entity.EntityType<MadZombieEntity> MAD_ZOMBIE;
@@ -26,4 +27,5 @@ public class EntityType {
     public static BlockEntityType<UpgradedHopperBlockEntity> UPGREADED_HOPPER;
     public static net.minecraft.entity.EntityType<IronReinforcedCopperBallEntity> IRON_REINFORCED_COPPER_BALL;
     public static net.minecraft.entity.EntityType<GoblinEntity> GOBLIN;
+    public static net.minecraft.entity.EntityType<GoblinHorseEntity> GOBLIN_HORSE;
 }

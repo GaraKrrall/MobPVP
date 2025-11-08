@@ -11,8 +11,8 @@ public class MobXpValues {
 
     static {
         //BOSS
-        XP_VALUES.put(net.minecraft.entity.EntityType.ENDER_DRAGON, 2500);  // Ender Dragon (1 seviye ~50-60)
-        XP_VALUES.put(net.minecraft.entity.EntityType.WITHER, 400);        // Wither (1 seviye ~30-40)
+        XP_VALUES.put(net.minecraft.entity.EntityType.ENDER_DRAGON, 2500);
+        XP_VALUES.put(net.minecraft.entity.EntityType.WITHER, 400);
         XP_VALUES.put(net.minecraft.entity.EntityType.WARDEN, 250);
 
         // Hostile Mobs
@@ -94,6 +94,7 @@ public class MobXpValues {
         XP_VALUES.put(EntityType.MAD_ZOMBIE, 1);
         XP_VALUES.put(EntityType.MINIGOLEM, 2);
         XP_VALUES.put(EntityType.MINIGOLEM_COPPER, 4);
+        XP_VALUES.put(EntityType.GOBLIN, 8);
 
     }
 

@@ -3,6 +3,7 @@ package mc.garakrral.event.totem.machine;
 import java.util.Map;
 
 import me.shedaniel.autoconfig.AutoConfig;
+
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.ChestBlockEntity;

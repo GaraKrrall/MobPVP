@@ -22,7 +22,6 @@ public abstract class LivingEntityMixin2 {
     private void onDamage(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
         LivingEntity self = (LivingEntity)(Object)this;
 
-        // Bu hasar ölümcül mü?
         if (!self.getWorld().isClient && self.getHealth() <= amount) {
             Entity attacker = source.getAttacker();
 

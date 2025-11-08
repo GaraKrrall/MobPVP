@@ -1,5 +1,6 @@
 package mc.garakrral.entity.mob;
 
+import net.minecraft.block.BlockState;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.ActiveTargetGoal;
 import net.minecraft.entity.ai.goal.BowAttackGoal;
@@ -11,7 +12,10 @@ import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.SkeletonEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+
+import mc.garakrral.sound.SoundType;
 
 public class MadSkeletonEntity extends SkeletonEntity {
 
@@ -35,5 +39,9 @@ public class MadSkeletonEntity extends SkeletonEntity {
         this.goalSelector.add(4, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
         this.goalSelector.add(5, new LookAroundGoal(this));
         this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
+    }
+    @Override
+    protected void playStepSound(BlockPos pos, BlockState state) {
+        this.playSound(SoundType.WALK_GRASS, 0.15F, 1.0F);
     }
 }

@@ -1,5 +1,6 @@
 package mc.garakrral.entity.mob;
 
+import net.minecraft.block.BlockState;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.ActiveTargetGoal;
 import net.minecraft.entity.ai.goal.LookAroundGoal;
@@ -10,13 +11,14 @@ import net.minecraft.entity.ai.goal.WanderAroundFarGoal;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.entity.mob.ZombieEntity;
+import net.minecraft.entity.passive.IronGolemEntity;
+import net.minecraft.entity.passive.VillagerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.sound.SoundEvent;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import mc.garakrral.entity.boss.BulwarkEntity;
 import mc.garakrral.entity.goal.StealGoldGoal;
 import mc.garakrral.sound.SoundType;
 
@@ -42,15 +44,10 @@ public class GoblinEntity extends ZombieEntity {
         this.goalSelector.add(4, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
         this.goalSelector.add(5, new LookAroundGoal(this));
         this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
-        this.targetSelector.add(2, new ActiveTargetGoal<>(this, PathAwareEntity.class, 10, true, true,
-                entity -> entity != this
-                        && !(entity instanceof MadZombieEntity) //deli zombi
-                        && !(entity instanceof BulwarkEntity) //bulwark boss
-                        && !(entity instanceof MadSkeletonEntity) //deli iskelet
-                        && !(entity instanceof GoblinEntity)
-                        && !(entity instanceof ZombieEntity)
-        ));
+        this.targetSelector.add(2, new ActiveTargetGoal<>(this, IronGolemEntity.class, true));
+        this.targetSelector.add(3, new ActiveTargetGoal<>(this, VillagerEntity.class, true));
     }
+
     @Override
     protected SoundEvent getAmbientSound() {
         return SoundType.GOBLIN_AMBIENT;
@@ -64,5 +61,10 @@ public class GoblinEntity extends ZombieEntity {
     @Override
     protected SoundEvent getDeathSound() {
         return SoundType.GOBLIN_DEATH;
+    }
+
+    @Override
+    protected void playStepSound(BlockPos pos, BlockState state) {
+        this.playSound(SoundType.WALK_GRASS, 0.15F, 1.0F);
     }
 }

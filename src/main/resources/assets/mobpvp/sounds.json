@@ -13,5 +13,30 @@
     "sounds": [
       { "name": "mobpvp:goblin/goblin_death", "volume": 1.0 }
     ]
+  },
+  "walk.grass": {
+    "sounds": [
+      { "name": "mobpvp:walk/walk_grass", "volume": 1.0 }
+    ]
+  },
+  "walk.iron": {
+    "sounds": [
+      { "name": "mobpvp:walk/walk_iron", "volume": 1.0 }
+    ]
+  },
+  "walk.copper": {
+    "sounds": [
+      { "name": "mobpvp:walk/walk_copper", "volume": 1.0 }
+    ]
+  },
+  "machine.run": {
+    "sounds": [
+      { "name": "mobpvp:machine/machine_run", "volume": 1.0 }
+    ]
+  },
+  "general.open": {
+    "sounds": [
+      { "name": "mobpvp:general/open", "volume": 1.0 }
+    ]
   }
 }

@@ -34,3 +34,13 @@ Topuzlar için yeni türler eklendi
 Endüstriyel fırın makinesi eklendi
 Ezme Makinesi eklendi
 7 dil çevirisi tamamlandı(Birinci dilin türkçe olduğnu unutmayın. Çeviriler geç olabilir ve %100 doğru değildir)
+Goblin için ses eklendi
+Minik Demir golem için ses eklendi
+Minik Bakır golem için ses eklendi
+Goblin Atı eklendi
+Artık Goblinler Goblin atı'nın üzerine binik şekilde geceleri doğabilirler.
+Artık Goblinler geceleri doğabilir.
+Artık Goblin Atları geceleri doğabilir.
+
+Zombilerin, oyuncu kalkan tutsa bile açlık götürmesi düzeltildi.
+Büyük gereksiz dosyalar silindi(toplam jar büyüklüğü  73mb -> 10mb)

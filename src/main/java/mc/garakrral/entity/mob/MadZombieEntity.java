@@ -2,7 +2,9 @@ package mc.garakrral.entity.mob;
 
 import mc.garakrral.entity.boss.BulwarkEntity;
 import mc.garakrral.entity.goal.DashAtTargetGoal;
+import mc.garakrral.sound.SoundType;
 
+import net.minecraft.block.BlockState;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
@@ -11,6 +13,7 @@ import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.entity.mob.SkeletonEntity;
 import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class MadZombieEntity extends ZombieEntity {
@@ -60,5 +63,10 @@ public class MadZombieEntity extends ZombieEntity {
 
     public void setDashed(boolean dashed) {
         this.dashed = dashed;
+    }
+
+    @Override
+    protected void playStepSound(BlockPos pos, BlockState state) {
+        this.playSound(SoundType.WALK_GRASS, 0.15F, 1.0F);
     }
 }
