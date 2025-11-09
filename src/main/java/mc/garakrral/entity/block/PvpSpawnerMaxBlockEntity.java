@@ -4,6 +4,9 @@ import mc.garakrral.block.BlockType;
 import mc.garakrral.entity.EntityType;
 
 
+import mc.garakrral.entity.mob.GoblinEntity;
+import mc.garakrral.entity.mob.GoblinHorseEntity;
+import mc.garakrral.entity.mob.HunterEntity;
 import mc.garakrral.entity.mob.MadSkeletonEntity;
 import mc.garakrral.entity.mob.MadZombieEntity;
 import net.minecraft.block.BlockState;
@@ -103,10 +106,13 @@ public class PvpSpawnerMaxBlockEntity extends BlockEntity {
             case 1: return new MadSkeletonEntity(EntityType.MAD_SKELETON, world);
             case 2: return new ZombieEntity(net.minecraft.entity.EntityType.ZOMBIE, world);
             case 3: return new SkeletonEntity(net.minecraft.entity.EntityType.SKELETON, world);
-            case 4:
+            case 4: return new GoblinEntity(EntityType.GOBLIN, world);
+            case 5: return new GoblinHorseEntity(EntityType.GOBLIN_HORSE, world);
+            case 6: return new HunterEntity(EntityType.HUNTER, world);
+            case 7:
                 if (wave > 1) return new CreeperEntity(net.minecraft.entity.EntityType.CREEPER, world);
                 else return new ZombieEntity(net.minecraft.entity.EntityType.ZOMBIE, world);
-            case 5:
+            case 8:
                 if (wave > 2) return new SpiderEntity(net.minecraft.entity.EntityType.SPIDER, world);
                 else return new SkeletonEntity(net.minecraft.entity.EntityType.SKELETON, world);
             default:

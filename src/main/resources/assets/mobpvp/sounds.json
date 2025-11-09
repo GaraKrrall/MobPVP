@@ -14,6 +14,11 @@
       { "name": "mobpvp:goblin/goblin_death", "volume": 1.0 }
     ]
   },
+  "goblin_horse.splash": {
+    "sounds": [
+      { "name": "mobpvp:goblin_horse/goblin_horse_splash", "volume": 1.0 }
+    ]
+  },
   "walk.grass": {
     "sounds": [
       { "name": "mobpvp:walk/walk_grass", "volume": 1.0 }

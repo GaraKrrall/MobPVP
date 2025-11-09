@@ -2,6 +2,8 @@ package mc.garakrral.entity.block;
 
 import mc.garakrral.block.BlockType;
 import mc.garakrral.entity.EntityType;
+import mc.garakrral.entity.mob.GoblinEntity;
+import mc.garakrral.entity.mob.HunterEntity;
 import mc.garakrral.entity.mob.MadSkeletonEntity;
 import mc.garakrral.entity.mob.MadZombieEntity;
 import net.minecraft.block.BlockState;
@@ -64,9 +66,11 @@ public class PvpSpawnerBlockEntity extends BlockEntity {
 
         for (int i = 0; i < WAVE_SIZE; i++) {
             BlockPos spawnPos = pos.add(world.getRandom().nextBetween(-2, 2), 1, world.getRandom().nextBetween(-2, 2));
-            Entity mob = switch (world.getRandom().nextInt(3)) {
+            Entity mob = switch (world.getRandom().nextInt(5)) {
                 case 0 -> new MadZombieEntity(EntityType.MAD_ZOMBIE, serverWorld);
                 case 1 -> new MadSkeletonEntity(EntityType.MAD_SKELETON, serverWorld);
+                case 2 -> new HunterEntity(EntityType.HUNTER, serverWorld);
+                case 3 -> new GoblinEntity(EntityType.GOBLIN, serverWorld);
                 default -> new ZombieEntity(net.minecraft.entity.EntityType.ZOMBIE, serverWorld);
             };
 

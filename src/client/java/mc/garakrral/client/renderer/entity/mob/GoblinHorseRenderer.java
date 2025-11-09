@@ -13,7 +13,7 @@ import mc.garakrral.entity.mob.GoblinHorseEntity;
 
 @Environment(EnvType.CLIENT)
 public class GoblinHorseRenderer extends MobEntityRenderer<GoblinHorseEntity, HoglinEntityModel<GoblinHorseEntity>> {
-    private static final Identifier TEXTURE = Identifier.ofVanilla("eklenecek");
+    private static final Identifier TEXTURE = com.kaplanlib.api.identifier.Identifier.ofMod("eklenecek");
 
     public GoblinHorseRenderer(EntityRendererFactory.Context context) {
         super(context, new HoglinEntityModel(context.getPart(EntityModelLayers.HOGLIN)), 0.7F);

@@ -10,6 +10,7 @@ import mc.garakrral.entity.boss.BulwarkEntity;
 import mc.garakrral.entity.item.IronReinforcedCopperBallEntity;
 import mc.garakrral.entity.mob.GoblinEntity;
 import mc.garakrral.entity.mob.GoblinHorseEntity;
+import mc.garakrral.entity.mob.HunterEntity;
 import mc.garakrral.entity.mob.MadSkeletonEntity;
 import mc.garakrral.entity.mob.MadZombieEntity;
 import mc.garakrral.entity.mob.MiniCopperGolemEntity;
@@ -28,4 +29,5 @@ public class EntityType {
     public static net.minecraft.entity.EntityType<IronReinforcedCopperBallEntity> IRON_REINFORCED_COPPER_BALL;
     public static net.minecraft.entity.EntityType<GoblinEntity> GOBLIN;
     public static net.minecraft.entity.EntityType<GoblinHorseEntity> GOBLIN_HORSE;
+    public static net.minecraft.entity.EntityType<HunterEntity> HUNTER;
 }

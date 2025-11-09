@@ -1,30 +1,3 @@
-/mobpvp dash
-/mobpvp hi
-/mobpvp LocateArena
-/mobpvp ClearMobLevelData
-/difficulty easy
-/tick freeze
-/place structure mobpvp:tall_pve_tower
-/tick freeze
-/difficulty hard
-/mobpvp ClearMobLevelData
-/effect clear
-/summon minecraft:falling_block ~ ~ ~ {block:mobpvp}
-/give @p mobpvp:ore
-/give @p mobpvp:heavy_crusher_head
-/summon minecraft:falling_block ~ ~ ~ {block:heavy_crusher_head}
-/summon minecraft:falling_block ~ ~ ~ {block:gravel}
-/mobpvp hi
-/mobpvp dash
-/mobpvp LocateArena
-/mobpvp ClearMobLevelData
-/tp 797 -59 -268
-/difficulty peaceful
-/kill @e[type=mobpvp:bulwark]
-/mobpvp ClearMobLevelData
-/tick rate 9999
-/difficulty hard
-/time set night
 /time set day
 /time set night
 /gamerule doMobSpawning true
@@ -48,3 +21,30 @@
 /time set 16000
 /time set day
 /time set 16000
+/playsound mobpvp:goblin_horse.splash
+/effect give Player223 minecraft:health_boost infinite 255
+/effect give Player223 minecraft:regeneration infinite 255
+/effect give Player223 minecraft:instant_health infinite 255
+/playsound owo:ui.owo.interaction
+/playsound minecraft:entity.hoglin.attack
+/time set 16000
+/mobpvp ClearMobLevelData
+/time set day
+/kill @e[type=mobpvp:hunter]
+/difficulty peaceful
+/difficulty hard
+/difficulty peaceful
+/difficulty easy
+/difficulty peaceful
+/difficulty hard
+/difficulty peaceful
+/difficulty hard
+/make-loot-container minecraft:acacia_boat
+/make-loot-container minecraft:acacia_boat minecraft:archaeology/desert_pyramid
+/make-loot-container minecraft:acacia_log minecraft:blocks/andesite_stairs
+/mobpvp ClearMobLevelData
+/effect give @a minecraft:bad_omen
+/y
+/time set midnight
+/kill @e[type=minecraft:item]
+/mobpvp ClearMobLevelData

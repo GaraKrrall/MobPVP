@@ -95,7 +95,8 @@ public class MobXpValues {
         XP_VALUES.put(EntityType.MINIGOLEM, 2);
         XP_VALUES.put(EntityType.MINIGOLEM_COPPER, 4);
         XP_VALUES.put(EntityType.GOBLIN, 8);
-
+        XP_VALUES.put(EntityType.GOBLIN_HORSE, 12);
+        XP_VALUES.put(EntityType.HUNTER, 4);
     }
 
     public static int getXp(net.minecraft.entity.EntityType<?> type) {

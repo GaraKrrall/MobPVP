@@ -30,6 +30,7 @@ import mc.garakrral.client.renderer.entity.boss.BulwarkRenderer;
 import mc.garakrral.client.renderer.entity.mob.CustomZombieRenderer;
 import mc.garakrral.client.renderer.entity.mob.GoblinHorseRenderer;
 import mc.garakrral.client.renderer.entity.mob.GoblinRenderer;
+import mc.garakrral.client.renderer.entity.mob.HunterRenderer;
 import mc.garakrral.client.renderer.entity.mob.SuperZombieRenderer;
 import mc.garakrral.client.renderer.entity.mobpvp.MiniCopperGolemRenderer;
 import mc.garakrral.client.renderer.entity.mobpvp.MiniIronGolemRenderer;
@@ -68,6 +69,7 @@ public class mobpvpClient implements ClientModInitializer {
         EntityRendererRegistry.register(EntityType.IRON_REINFORCED_COPPER_BALL, FlyingItemEntityRenderer::new);
         EntityRendererRegistry.register(EntityType.GOBLIN, GoblinRenderer::new);
         EntityRendererRegistry.register(EntityType.GOBLIN_HORSE, GoblinHorseRenderer::new);
+        EntityRendererRegistry.register(EntityType.HUNTER, HunterRenderer::new);
 
         HandledScreens.register(ScreenHandlerTypes.MOB_TABLE, MobTableScreen::new);
 

@@ -36,7 +36,8 @@ public class MobLevelRegistry {
         LEVEL_RANGES.put("goblin", new Integer[]{4, 10});
         LEVEL_RANGES.put("mini_iron_golem", new Integer[]{1, 2});
         LEVEL_RANGES.put("mini_copper_golem", new Integer[]{1, 8});
-
+        LEVEL_RANGES.put("goblin_horse", new Integer[]{1, 4});
+        LEVEL_RANGES.put("hunter", new Integer[]{1, 2});
     }
 
     public static Integer[] getLevelRange(String mobId) {

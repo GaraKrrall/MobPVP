@@ -11,6 +11,12 @@
     },
     "mc/garakrral/mixin/PlayerEntityMixin": {
       "tick": "Lnet/minecraft/class_1657;method_5773()V"
+    },
+    "mc/garakrral/mixin/RaidAccessor": {
+      "world": "field_16619:Lnet/minecraft/class_3218;"
+    },
+    "mc/garakrral/mixin/RaidMixin": {
+      "spawnNextWave": "Lnet/minecraft/class_3765;method_16522(Lnet/minecraft/class_2338;)V"
     }
   },
   "data": {
@@ -26,6 +32,12 @@
       },
       "mc/garakrral/mixin/PlayerEntityMixin": {
         "tick": "Lnet/minecraft/class_1657;method_5773()V"
+      },
+      "mc/garakrral/mixin/RaidAccessor": {
+        "world": "field_16619:Lnet/minecraft/class_3218;"
+      },
+      "mc/garakrral/mixin/RaidMixin": {
+        "spawnNextWave": "Lnet/minecraft/class_3765;method_16522(Lnet/minecraft/class_2338;)V"
       }
     }
   }

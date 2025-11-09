@@ -111,6 +111,7 @@ public final class mobpvp implements ModInitializer {
             }
         });
 
+
         ServerEntityEvents.ENTITY_LOAD.register((entity, world) -> {
             if (!(entity instanceof LivingEntity living) || entity instanceof ServerPlayerEntity || entity instanceof BulwarkEntity)
                 return;

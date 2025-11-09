@@ -41,6 +41,11 @@ Goblin Atı eklendi
 Artık Goblinler Goblin atı'nın üzerine binik şekilde geceleri doğabilirler.
 Artık Goblinler geceleri doğabilir.
 Artık Goblin Atları geceleri doğabilir.
+Goblin's silence başarımı eklendi
+Goblin atı için vuruş sesi eklendi
+Avcı eklendi
+Avcılar nadiren doğabilir
+Avcılar Baskınlarda bulunabilir yada katılabilir
 
 Zombilerin, oyuncu kalkan tutsa bile açlık götürmesi düzeltildi.
 Büyük gereksiz dosyalar silindi(toplam jar büyüklüğü  73mb -> 10mb)

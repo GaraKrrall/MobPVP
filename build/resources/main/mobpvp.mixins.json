@@ -7,7 +7,9 @@
     "LivingEntityMixin",
     "LivingEntityMixin2",
     "PlayerEntityMixin",
-    "PistonHandlerMixin"
+    "PistonHandlerMixin",
+    "RaidAccessor",
+    "RaidMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -43,6 +43,7 @@ import static mc.garakrral.item.ItemType.DIAMOND_MACE;
 import static mc.garakrral.item.ItemType.EGG_BULWARK;
 import static mc.garakrral.item.ItemType.EGG_GOBLIN;
 import static mc.garakrral.item.ItemType.EGG_GOBLIN_HORSE;
+import static mc.garakrral.item.ItemType.EGG_HUNTER;
 import static mc.garakrral.item.ItemType.EGG_MINI_COPPER_GOLEM;
 import static mc.garakrral.item.ItemType.EGG_MINI_GOLEM;
 import static mc.garakrral.item.ItemType.EGG_SKELETON;
@@ -72,8 +73,7 @@ import static mc.garakrral.item.ItemType.UPGREADED_HOPPER_ITEM;
 
 
 public class Items {
-    public static void init() {
-    }
+    public static void init() {}
 
     static {
         ORE = GroupItemBuilder.create(ORE_ITEM_KEY, new BlockItem(BlockType.CRUDE_ACIDIC_ORE, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
@@ -108,6 +108,7 @@ public class Items {
         EGG_MINI_COPPER_GOLEM = GroupItemBuilder.create("egg_mini_copper_golem", new SpawnEggItem(EntityType.MINIGOLEM_COPPER, 0xCE7760, 0xA85E4D, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         EGG_BULWARK = GroupItemBuilder.create(EGG_BULWARK_KEY, new SpawnEggItem(EntityType.BULWARK, 0x880E4F, 0xFF1744, new Item.Settings().rarity(Rarity.EPIC))).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         EGG_GOBLIN = GroupItemBuilder.create("goblin_egg", new SpawnEggItem(EntityType.GOBLIN, 0x1B5E20, 0x76FF03, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
-        EGG_GOBLIN_HORSE = GroupItemBuilder.create("goblin_horse_egg", new SpawnEggItem(EntityType.GOBLIN_HORSE, 0x1B5E20, 0x76FF03, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        EGG_GOBLIN_HORSE = GroupItemBuilder.create("goblin_horse_egg", new SpawnEggItem(EntityType.GOBLIN_HORSE, 0x355E3B, 0xA2FF00, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        EGG_HUNTER = GroupItemBuilder.create("hunter_egg", new SpawnEggItem(EntityType.HUNTER, 0x696969, 0x260E0B, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
     }
 }
