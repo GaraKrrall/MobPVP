@@ -28,6 +28,7 @@ import mc.garakrral.entity.mob.MadSkeletonEntity;
 import mc.garakrral.entity.mob.MadZombieEntity;
 import mc.garakrral.entity.mob.MiniCopperGolemEntity;
 import mc.garakrral.entity.passive.MiniIronGolemEntity;
+import mc.garakrral.entity.passive.TheGreatProtectorGolemEntity;
 
 import com.kaplanlib.api.builder.EntityAttributeAndSpawnBuilder;
 import com.kaplanlib.api.spawn.SpawnLocation;
@@ -51,6 +52,7 @@ import static mc.garakrral.entity.EntityType.MINIGOLEM_COPPER;
 import static mc.garakrral.entity.EntityType.MOB_TABLE;
 import static mc.garakrral.entity.EntityType.PVP_SPAWNER;
 import static mc.garakrral.entity.EntityType.PVP_SPAWNER_MAX;
+import static mc.garakrral.entity.EntityType.THE_GREAT_PROTECTOR_GOLEM;
 import static mc.garakrral.entity.EntityType.UPGREADED_HOPPER;
 import static mc.garakrral.mobpvp.MOD_ID;
 
@@ -67,6 +69,7 @@ public class EntityRegister {
             boolean isNight = lunarTime >= 12000 && lunarTime <= 24000;
             return isNight && world.getLightLevel(pos) < 8 && MobEntity.canMobSpawn(type, world, reason, pos, random);
         }).build();
+        EntityAttributeAndSpawnBuilder.create(THE_GREAT_PROTECTOR_GOLEM).attributes(TheGreatProtectorGolemEntity.createAttributes()).build();
         EntityAttributeAndSpawnBuilder.create(GOBLIN_HORSE)
                 .attributes(GoblinHorseEntity.createGoblinHorseAttributes())
                 .spawn(
@@ -116,5 +119,6 @@ public class EntityRegister {
         GOBLIN = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, "goblin"), FabricEntityTypeBuilder.createMob().entityFactory(GoblinEntity::new).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.6f, 1.95f)).trackRangeBlocks(40).build());
         GOBLIN_HORSE = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, "goblin_horse"), FabricEntityTypeBuilder.createMob().entityFactory(GoblinHorseEntity::new).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(1.3964844F, 1.4F)).trackRangeBlocks(20).build());
         HUNTER = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, "hunter"), FabricEntityTypeBuilder.createMob().entityFactory(HunterEntity::new).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.6F, 1.95F)).trackRangeBlocks(20).build());
+        THE_GREAT_PROTECTOR_GOLEM = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, "the_great_protector"), FabricEntityTypeBuilder.createMob().entityFactory(TheGreatProtectorGolemEntity::new).spawnGroup(SpawnGroup.AMBIENT).dimensions(EntityDimensions.fixed(2.8F, 5.4F)).trackRangeBlocks(25).build());
     }
 }

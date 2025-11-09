@@ -34,6 +34,7 @@ import mc.garakrral.client.renderer.entity.mob.HunterRenderer;
 import mc.garakrral.client.renderer.entity.mob.SuperZombieRenderer;
 import mc.garakrral.client.renderer.entity.mobpvp.MiniCopperGolemRenderer;
 import mc.garakrral.client.renderer.entity.mobpvp.MiniIronGolemRenderer;
+import mc.garakrral.client.renderer.entity.mobpvp.TheGreatProtectorGolemRenderer;
 import mc.garakrral.entity.EntityType;
 import mc.garakrral.handler.type.ScreenHandlerTypes;
 import mc.garakrral.level.LevelAssigner;
@@ -70,6 +71,7 @@ public class mobpvpClient implements ClientModInitializer {
         EntityRendererRegistry.register(EntityType.GOBLIN, GoblinRenderer::new);
         EntityRendererRegistry.register(EntityType.GOBLIN_HORSE, GoblinHorseRenderer::new);
         EntityRendererRegistry.register(EntityType.HUNTER, HunterRenderer::new);
+        EntityRendererRegistry.register(EntityType.THE_GREAT_PROTECTOR_GOLEM, TheGreatProtectorGolemRenderer::new);
 
         HandledScreens.register(ScreenHandlerTypes.MOB_TABLE, MobTableScreen::new);
 

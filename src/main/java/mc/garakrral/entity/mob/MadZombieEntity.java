@@ -52,6 +52,9 @@ public class MadZombieEntity extends ZombieEntity {
                         && !(entity instanceof MadSkeletonEntity)
                         && !(entity instanceof ZombieEntity)
                         && !(entity instanceof SkeletonEntity)
+                        && !(entity instanceof GoblinEntity)
+                        && !(entity instanceof GoblinHorseEntity)
+                        && !(entity instanceof HunterEntity)
 
         ));
     }

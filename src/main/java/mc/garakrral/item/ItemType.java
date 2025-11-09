@@ -13,6 +13,7 @@ public class ItemType {
     public static Item EGG_GOBLIN;
     public static Item EGG_GOBLIN_HORSE;
     public static Item EGG_HUNTER;
+    public static Item EGG_THE_GREAT_PROTECTOR_GOLEM;
     public static Item HEARTH_PART;
     public static Item REINFORCED_COPPER_INGOT;
     public static Item ULTRA_HEARTH_ITEM;

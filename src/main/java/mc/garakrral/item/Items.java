@@ -48,6 +48,7 @@ import static mc.garakrral.item.ItemType.EGG_MINI_COPPER_GOLEM;
 import static mc.garakrral.item.ItemType.EGG_MINI_GOLEM;
 import static mc.garakrral.item.ItemType.EGG_SKELETON;
 import static mc.garakrral.item.ItemType.EGG_SUPER_ZOMBIE;
+import static mc.garakrral.item.ItemType.EGG_THE_GREAT_PROTECTOR_GOLEM;
 import static mc.garakrral.item.ItemType.GOLD_MACE;
 import static mc.garakrral.item.ItemType.HEARTH_PART;
 import static mc.garakrral.item.ItemType.HEAVY_CRUSHER_HEAD_ITEM;
@@ -110,5 +111,6 @@ public class Items {
         EGG_GOBLIN = GroupItemBuilder.create("goblin_egg", new SpawnEggItem(EntityType.GOBLIN, 0x1B5E20, 0x76FF03, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         EGG_GOBLIN_HORSE = GroupItemBuilder.create("goblin_horse_egg", new SpawnEggItem(EntityType.GOBLIN_HORSE, 0x355E3B, 0xA2FF00, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
         EGG_HUNTER = GroupItemBuilder.create("hunter_egg", new SpawnEggItem(EntityType.HUNTER, 0x696969, 0x260E0B, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
+        EGG_THE_GREAT_PROTECTOR_GOLEM = GroupItemBuilder.create("the_great_protector_egg", new SpawnEggItem(EntityType.THE_GREAT_PROTECTOR_GOLEM, 0xD8D8D8, 0x8A8A8A, new Item.Settings())).addToGroup(ItemGroups.MOBPVP_GROUP_KEY).register();
     }
 }
