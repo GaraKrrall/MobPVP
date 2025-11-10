@@ -83,12 +83,6 @@
     },
     "done": true
   },
-  "mobpvp:kick": {
-    "criteria": {
-      "hit_mob": "2025-07-12 15:50:59 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/combat/iron_helmet": {
     "criteria": {
       "has_iron_ingot": "2025-07-12 15:50:19 +0300"
@@ -128,12 +122,6 @@
   "minecraft:recipes/combat/diamond_helmet": {
     "criteria": {
       "has_diamond": "2025-07-12 15:50:19 +0300"
-    },
-    "done": true
-  },
-  "mobpvp:middle": {
-    "criteria": {
-      "armor_up": "2025-07-12 15:50:19 +0300"
     },
     "done": true
   },
@@ -179,12 +167,6 @@
     },
     "done": true
   },
-  "minecraft:adventure/root": {
-    "criteria": {
-      "killed_something": "2025-07-12 15:50:59 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/tools/diamond_pickaxe": {
     "criteria": {
       "has_diamond": "2025-07-12 15:50:19 +0300"
@@ -194,12 +176,6 @@
   "minecraft:recipes/decorations/chain": {
     "criteria": {
       "has_iron_ingot": "2025-07-12 15:50:19 +0300"
-    },
-    "done": true
-  },
-  "mobpvp:deep_dark": {
-    "criteria": {
-      "deep_dark": "2025-07-12 15:50:20 +0300"
     },
     "done": true
   },
@@ -232,12 +208,6 @@
       "has_iron_ingot": "2025-07-12 15:50:19 +0300"
     },
     "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:plains": "2025-07-12 15:50:20 +0300"
-    },
-    "done": false
   },
   "minecraft:recipes/decorations/smithing_table": {
     "criteria": {
@@ -314,6 +284,24 @@
   "minecraft:recipes/combat/diamond_boots": {
     "criteria": {
       "has_diamond": "2025-07-12 15:50:19 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-07-12 15:50:20 +0300"
+    },
+    "done": false
+  },
+  "mobpvp:kick": {
+    "criteria": {
+      "hit_mob": "2025-07-12 15:50:59 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-07-12 15:50:59 +0300"
     },
     "done": true
   },

@@ -14,6 +14,7 @@ import mc.garakrral.entity.mob.HunterEntity;
 import mc.garakrral.entity.mob.MadSkeletonEntity;
 import mc.garakrral.entity.mob.MadZombieEntity;
 import mc.garakrral.entity.mob.MiniCopperGolemEntity;
+import mc.garakrral.entity.mob.SnotBallEntity;
 import mc.garakrral.entity.passive.MiniIronGolemEntity;
 import mc.garakrral.entity.passive.TheGreatProtectorGolemEntity;
 
@@ -32,4 +33,5 @@ public class EntityType {
     public static net.minecraft.entity.EntityType<GoblinHorseEntity> GOBLIN_HORSE;
     public static net.minecraft.entity.EntityType<HunterEntity> HUNTER;
     public static net.minecraft.entity.EntityType<TheGreatProtectorGolemEntity> THE_GREAT_PROTECTOR_GOLEM;
+    public static net.minecraft.entity.EntityType<SnotBallEntity> SNOT_BALL;
 }

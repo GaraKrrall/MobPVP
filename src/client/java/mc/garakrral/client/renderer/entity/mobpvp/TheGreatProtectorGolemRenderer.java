@@ -13,12 +13,14 @@ import net.minecraft.util.math.RotationAxis;
 
 import mc.garakrral.entity.passive.TheGreatProtectorGolemEntity;
 
+import static mc.garakrral.mobpvp.MOD_ID;
+
 @Environment(EnvType.CLIENT)
 public class TheGreatProtectorGolemRenderer extends MobEntityRenderer<TheGreatProtectorGolemEntity, IronGolemEntityModel<TheGreatProtectorGolemEntity>> {
-    private static final Identifier TEXTURE = Identifier.ofVanilla("textures/entity/iron_golem/iron_golem.png");
+    private static final Identifier TEXTURE = Identifier.of(MOD_ID,"textures/entity/a/a.png");
 
     public TheGreatProtectorGolemRenderer(EntityRendererFactory.Context context) {
-        super(context, new IronGolemEntityModel<>(context.getPart(EntityModelLayers.IRON_GOLEM)), 1.4F); // gölge boyutu arttı
+        super(context, new IronGolemEntityModel<>(context.getPart(EntityModelLayers.IRON_GOLEM)), 1.4F);
     }
 
     @Override

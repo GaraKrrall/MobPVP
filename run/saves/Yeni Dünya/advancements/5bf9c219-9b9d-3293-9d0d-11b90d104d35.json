@@ -35,24 +35,6 @@
     },
     "done": true
   },
-  "mobpvp:iaiaiaiaiaiaiaiaiia": {
-    "criteria": {
-      "visited_structure": "2025-08-23 16:56:45 +0300"
-    },
-    "done": true
-  },
-  "mobpvp:iaiaiaia": {
-    "criteria": {
-      "visited_structure": "2025-08-23 16:56:45 +0300"
-    },
-    "done": true
-  },
-  "mobpvp:iaiaiaiaiaiaiiaiaiaaiai": {
-    "criteria": {
-      "visited_structure": "2025-08-23 16:56:45 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/combat/iron_boots": {
     "criteria": {
       "has_iron_ingot": "2025-08-23 16:56:45 +0300"
@@ -137,12 +119,6 @@
     },
     "done": true
   },
-  "mobpvp:middle": {
-    "criteria": {
-      "armor_up": "2025-08-23 16:56:45 +0300"
-    },
-    "done": true
-  },
   "mobpvp:kapat": {
     "criteria": {
       "elytra": "2025-08-23 16:56:45 +0300"
@@ -197,21 +173,9 @@
     },
     "done": true
   },
-  "mobpvp:iaiai": {
-    "criteria": {
-      "visited_structure": "2025-08-23 16:56:45 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/brewing/golden_carrot": {
     "criteria": {
       "has_gold_nugget": "2025-08-23 16:56:45 +0300"
-    },
-    "done": true
-  },
-  "mobpvp:iaia": {
-    "criteria": {
-      "visited_structure": "2025-08-23 16:56:45 +0300"
     },
     "done": true
   },

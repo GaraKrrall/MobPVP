@@ -1,15 +1,3 @@
-/difficulty hard
-/time set night
-/difficulty hard
-/time set 1600
-/time set 16000
-/time set day
-/playsound mobpvp:walk.step
-/playsound mobpvp:walk.copper
-/playsound mobpvp:walk.iron
-/playsound mobpvp:walk.grass
-/playsound mobpvp:goblin.ambient
-/time set night
 /time set 16000
 /playsound mobpvp:machine.run
 /playsound mobpvp:general.open
@@ -48,3 +36,15 @@
 /effect give fd614392-59f7-4e60-8cb4-df3efe6eab2d minecraft:health_boost
 /effect give fd614392-59f7-4e60-8cb4-df3efe6eab2d minecraft:health_boost infinite 255
 /effect give fd614392-59f7-4e60-8cb4-df3efe6eab2d minecraft:regeneration infinite 255
+/difficulty peaceful
+/difficulty hard
+/time set day
+/time set midnight
+/time set day
+/tick freeze
+/tick unfreeze
+/time set midnight
+/tick freeze
+/tick unfreeze
+/summon mobpvp:snot_ball
+/time set day

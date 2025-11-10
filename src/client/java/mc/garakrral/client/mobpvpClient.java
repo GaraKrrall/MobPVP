@@ -6,6 +6,7 @@ import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 
 import net.minecraft.client.gui.screen.TitleScreen;
@@ -34,7 +35,10 @@ import mc.garakrral.client.renderer.entity.mob.HunterRenderer;
 import mc.garakrral.client.renderer.entity.mob.SuperZombieRenderer;
 import mc.garakrral.client.renderer.entity.mobpvp.MiniCopperGolemRenderer;
 import mc.garakrral.client.renderer.entity.mobpvp.MiniIronGolemRenderer;
+import mc.garakrral.client.renderer.entity.mobpvp.SnotBallRenderer;
 import mc.garakrral.client.renderer.entity.mobpvp.TheGreatProtectorGolemRenderer;
+import mc.garakrral.client.renderer.entity.model.SnotBallModel;
+import mc.garakrral.client.renderer.entity.model.layer.EntityModelLayers;
 import mc.garakrral.entity.EntityType;
 import mc.garakrral.handler.type.ScreenHandlerTypes;
 import mc.garakrral.level.LevelAssigner;
@@ -72,6 +76,9 @@ public class mobpvpClient implements ClientModInitializer {
         EntityRendererRegistry.register(EntityType.GOBLIN_HORSE, GoblinHorseRenderer::new);
         EntityRendererRegistry.register(EntityType.HUNTER, HunterRenderer::new);
         EntityRendererRegistry.register(EntityType.THE_GREAT_PROTECTOR_GOLEM, TheGreatProtectorGolemRenderer::new);
+        EntityRendererRegistry.register(EntityType.SNOT_BALL, SnotBallRenderer::new);
+
+        EntityModelLayerRegistry.registerModelLayer(EntityModelLayers.SNOT_BALL_LAYER, SnotBallModel::getTexturedModelData);
 
         HandledScreens.register(ScreenHandlerTypes.MOB_TABLE, MobTableScreen::new);
 
