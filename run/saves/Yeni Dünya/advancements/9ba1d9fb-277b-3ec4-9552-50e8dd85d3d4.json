@@ -1,0 +1,33 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-11-10 22:46:18 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:die": {
+    "criteria": {
+      "death": "2025-11-10 22:47:04 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2025-11-10 22:47:04 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:first": {
+    "criteria": {
+      "joined_world": "2025-11-10 22:46:18 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-11-10 22:46:19 +0300"
+    },
+    "done": false
+  },
+  "DataVersion": 3955
+}

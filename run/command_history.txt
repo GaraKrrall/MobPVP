@@ -1,5 +1,3 @@
-/time set 16000
-/playsound mobpvp:machine.run
 /playsound mobpvp:general.open
 /time set 16000
 /time set day
@@ -48,3 +46,5 @@
 /tick unfreeze
 /summon mobpvp:snot_ball
 /time set day
+/effect give 8fb09d58-fb1b-40c5-9e84-2141d4171981 minecraft:glowing
+/effect give 8fb09d58-fb1b-40c5-9e84-2141d4171981 minecraft:glowing infinite

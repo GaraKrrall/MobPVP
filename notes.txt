@@ -47,6 +47,7 @@ Avcı eklendi
 Avcılar nadiren doğabilir
 Avcılar Baskınlarda bulunabilir yada katılabilir
 TheGreatProtectorGolem eklendi
+Ecvilleştirilebilecek olan yeni sümük topu eklendi. Bu canlıyı evcilleştirip en yakın dostunuz haline getirebilirisiniz
 
 Zombilerin, oyuncu kalkan tutsa bile açlık götürmesi düzeltildi.
 Büyük gereksiz dosyalar silindi(toplam jar büyüklüğü  73mb -> 10mb)
