@@ -27,17 +27,17 @@ public class SnotBallModel extends EntityModel<SnotBallEntity> {
     public static TexturedModelData getTexturedModelData() {
         ModelData modelData = new ModelData();
         ModelPartData modelPartData = modelData.getRoot();
-        ModelPartData bb_main = modelPartData.addChild("bb_main", ModelPartBuilder.create().uv(-18, -12).cuboid(-7.0F, -10.0F, -7.0F, 14.0F, 2.0F, 14.0F, new Dilation(0.0F))
-                .uv(-6, -4).cuboid(-3.0F, -2.0F, -3.0F, 6.0F, 2.0F, 6.0F, new Dilation(0.0F))
-                .uv(-9, -6).cuboid(-4.0F, -4.0F, -4.0F, 8.0F, 2.0F, 8.0F, new Dilation(0.0F))
-                .uv(-12, -8).cuboid(-5.0F, -6.0F, -5.0F, 10.0F, 2.0F, 10.0F, new Dilation(0.0F))
-                .uv(-15, -10).cuboid(-6.0F, -12.0F, -6.0F, 12.0F, 2.0F, 12.0F, new Dilation(0.0F))
-                .uv(-15, -10).cuboid(-6.0F, -8.0F, -6.0F, 12.0F, 2.0F, 12.0F, new Dilation(0.0F))
-                .uv(-12, -8).cuboid(-5.0F, -14.0F, -5.0F, 10.0F, 2.0F, 10.0F, new Dilation(0.0F))
-                .uv(-9, -6).cuboid(-4.0F, -16.0F, -4.0F, 8.0F, 2.0F, 8.0F, new Dilation(0.0F))
-                .uv(-6, -4).cuboid(-3.0F, -18.0F, -3.0F, 6.0F, 2.0F, 6.0F, new Dilation(0.0F))
-                .uv(-6, -4).cuboid(-3.0F, -18.0F, -3.0F, 6.0F, 2.0F, 6.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
-        return TexturedModelData.of(modelData, 64, 32);
+        ModelPartData bb_main = modelPartData.addChild("bb_main", ModelPartBuilder.create().uv(0, 0).cuboid(-7.0F, -10.0F, -7.0F, 14.0F, 2.0F, 14.0F, new Dilation(0.0F))
+                .uv(48, 36).cuboid(-3.0F, -2.0F, -3.0F, 6.0F, 2.0F, 6.0F, new Dilation(0.0F))
+                .uv(48, 16).cuboid(-4.0F, -4.0F, -4.0F, 8.0F, 2.0F, 8.0F, new Dilation(0.0F))
+                .uv(0, 44).cuboid(-5.0F, -6.0F, -5.0F, 10.0F, 2.0F, 10.0F, new Dilation(0.0F))
+                .uv(0, 16).cuboid(-6.0F, -12.0F, -6.0F, 12.0F, 2.0F, 12.0F, new Dilation(0.0F))
+                .uv(0, 30).cuboid(-6.0F, -8.0F, -6.0F, 12.0F, 2.0F, 12.0F, new Dilation(0.0F))
+                .uv(48, 26).cuboid(-4.0F, -16.0F, -4.0F, 8.0F, 2.0F, 8.0F, new Dilation(0.0F))
+                .uv(0, 56).cuboid(-3.0F, -18.0F, -3.0F, 6.0F, 2.0F, 6.0F, new Dilation(0.0F))
+                .uv(40, 44).cuboid(-5.0F, -14.0F, -5.0F, 10.0F, 2.0F, 10.0F, new Dilation(0.0F))
+                .uv(56, 0).cuboid(-3.0F, -18.0F, -3.0F, 6.0F, 2.0F, 6.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
+        return TexturedModelData.of(modelData, 128, 128);
     }
 
     @Override

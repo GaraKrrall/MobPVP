@@ -17,12 +17,6 @@
     },
     "done": true
   },
-  "mobpvp:kick": {
-    "criteria": {
-      "hit_mob": "2025-07-10 15:34:54 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/combat/diamond_chestplate": {
     "criteria": {
       "has_diamond": "2025-07-10 15:34:00 +0300"
@@ -32,12 +26,6 @@
   "minecraft:recipes/combat/diamond_helmet": {
     "criteria": {
       "has_diamond": "2025-07-10 15:34:00 +0300"
-    },
-    "done": true
-  },
-  "mobpvp:middle": {
-    "criteria": {
-      "armor_up": "2025-07-10 15:34:00 +0300"
     },
     "done": true
   },
@@ -59,27 +47,9 @@
     },
     "done": true
   },
-  "minecraft:adventure/summon_iron_golem": {
-    "criteria": {
-      "summoned_golem": "2025-07-10 15:35:43 +0300"
-    },
-    "done": true
-  },
-  "minecraft:adventure/root": {
-    "criteria": {
-      "killed_something": "2025-07-10 15:38:21 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/tools/diamond_pickaxe": {
     "criteria": {
       "has_diamond": "2025-07-10 15:34:00 +0300"
-    },
-    "done": true
-  },
-  "mobpvp:deep_dark": {
-    "criteria": {
-      "deep_dark": "2025-07-10 15:34:01 +0300"
     },
     "done": true
   },
@@ -88,12 +58,6 @@
       "joined_world": "2025-07-10 15:34:00 +0300"
     },
     "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:plains": "2025-07-10 15:34:01 +0300"
-    },
-    "done": false
   },
   "minecraft:recipes/building_blocks/diamond_block": {
     "criteria": {
@@ -137,12 +101,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/nether_brick": {
-    "criteria": {
-      "has_netherrack": "2025-07-10 15:37:26 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/food/pumpkin_pie": {
     "criteria": {
       "has_carved_pumpkin": "2025-07-10 15:34:00 +0300"
@@ -152,6 +110,60 @@
   "minecraft:recipes/combat/diamond_boots": {
     "criteria": {
       "has_diamond": "2025-07-10 15:34:00 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-07-10 15:34:01 +0300"
+    },
+    "done": false
+  },
+  "mobpvp:kick": {
+    "criteria": {
+      "hit_mob": "2025-07-10 15:34:54 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/summon_iron_golem": {
+    "criteria": {
+      "summoned_golem": "2025-07-10 15:35:43 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/nether_brick": {
+    "criteria": {
+      "has_netherrack": "2025-07-10 15:37:26 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-07-10 15:38:21 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/sticky_piston": {
+    "criteria": {
+      "has_slime_ball": "2025-11-11 20:20:47 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/slime_block": {
+    "criteria": {
+      "has_slime_ball": "2025-11-11 20:20:47 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/lead": {
+    "criteria": {
+      "has_slime_ball": "2025-11-11 20:20:47 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/mojang_banner_pattern": {
+    "criteria": {
+      "has_enchanted_golden_apple": "2025-11-11 20:20:47 +0300"
     },
     "done": true
   },

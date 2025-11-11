@@ -1,15 +1,3 @@
-/playsound mobpvp:general.open
-/time set 16000
-/time set day
-/time set 16000
-/playsound mobpvp:goblin_horse.splash
-/effect give Player223 minecraft:health_boost infinite 255
-/effect give Player223 minecraft:regeneration infinite 255
-/effect give Player223 minecraft:instant_health infinite 255
-/playsound owo:ui.owo.interaction
-/playsound minecraft:entity.hoglin.attack
-/time set 16000
-/mobpvp ClearMobLevelData
 /time set day
 /kill @e[type=mobpvp:hunter]
 /difficulty peaceful
@@ -48,3 +36,15 @@
 /time set day
 /effect give 8fb09d58-fb1b-40c5-9e84-2141d4171981 minecraft:glowing
 /effect give 8fb09d58-fb1b-40c5-9e84-2141d4171981 minecraft:glowing infinite
+/tick freeze
+/t
+/tick rate 10
+/tick rate 5
+/tick freeze
+/playsound mobpvp:walk.grass
+/playsound mobpvp:walk.iron
+/playsound mobpvp:walk.iro
+/playsound mobpvp:walk.iron
+/playsound mobpvp:walk.copper
+/tp ~ 165 ~
+/setblock 852 -62 1224 minecraft:end_portal

@@ -83,12 +83,6 @@
     },
     "done": true
   },
-  "mobpvp:kick": {
-    "criteria": {
-      "hit_mob": "2025-06-30 12:41:12 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/redstone/oak_fence_gate": {
     "criteria": {
       "has_planks": "2025-06-30 12:39:49 +0300"
@@ -152,12 +146,6 @@
   "minecraft:recipes/redstone/oak_pressure_plate": {
     "criteria": {
       "has_planks": "2025-06-30 12:39:49 +0300"
-    },
-    "done": true
-  },
-  "mobpvp:middle": {
-    "criteria": {
-      "armor_up": "2025-06-30 12:39:49 +0300"
     },
     "done": true
   },
@@ -239,12 +227,6 @@
     },
     "done": true
   },
-  "mobpvp:deep_dark": {
-    "criteria": {
-      "deep_dark": "2025-06-30 12:39:50 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/redstone/slime_block": {
     "criteria": {
       "has_slime_ball": "2025-06-30 12:39:49 +0300"
@@ -274,12 +256,6 @@
       "has_cobblestone": "2025-06-30 12:39:49 +0300"
     },
     "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:plains": "2025-06-30 12:39:50 +0300"
-    },
-    "done": false
   },
   "minecraft:recipes/decorations/barrel": {
     "criteria": {
@@ -401,12 +377,6 @@
     },
     "done": true
   },
-  "minecraft:story/root": {
-    "criteria": {
-      "crafting_table": "2025-06-30 12:41:03 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/redstone/oak_button": {
     "criteria": {
       "has_planks": "2025-06-30 12:39:49 +0300"
@@ -434,6 +404,30 @@
   "minecraft:recipes/combat/diamond_boots": {
     "criteria": {
       "has_diamond": "2025-06-30 12:39:49 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-06-30 12:39:50 +0300"
+    },
+    "done": false
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2025-06-30 12:41:03 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:kick": {
+    "criteria": {
+      "hit_mob": "2025-06-30 12:41:12 +0300"
+    },
+    "done": true
+  },
+  "minecraft:end/dragon_egg": {
+    "criteria": {
+      "dragon_egg": "2025-11-11 20:56:10 +0300"
     },
     "done": true
   },

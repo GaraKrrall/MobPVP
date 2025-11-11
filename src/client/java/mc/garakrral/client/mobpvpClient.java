@@ -38,6 +38,7 @@ import mc.garakrral.client.renderer.entity.mobpvp.MiniIronGolemRenderer;
 import mc.garakrral.client.renderer.entity.mobpvp.SnotBallRenderer;
 import mc.garakrral.client.renderer.entity.mobpvp.TheGreatProtectorGolemRenderer;
 import mc.garakrral.client.renderer.entity.model.SnotBallModel;
+import mc.garakrral.client.renderer.entity.model.TheGreatProtectorGolemModel;
 import mc.garakrral.client.renderer.entity.model.layer.EntityModelLayers;
 import mc.garakrral.entity.EntityType;
 import mc.garakrral.handler.type.ScreenHandlerTypes;
@@ -79,6 +80,7 @@ public class mobpvpClient implements ClientModInitializer {
         EntityRendererRegistry.register(EntityType.SNOT_BALL, SnotBallRenderer::new);
 
         EntityModelLayerRegistry.registerModelLayer(EntityModelLayers.SNOT_BALL_LAYER, SnotBallModel::getTexturedModelData);
+        EntityModelLayerRegistry.registerModelLayer(EntityModelLayers.GOLEM_LAYER, TheGreatProtectorGolemModel::getTexturedModelData);
 
         HandledScreens.register(ScreenHandlerTypes.MOB_TABLE, MobTableScreen::new);
 
@@ -116,23 +118,6 @@ public class mobpvpClient implements ClientModInitializer {
                         le.setCustomNameVisible(false);
                     }
                 }
-            }
-        });
-        ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if (client.player != null) {
-                var mount = client.player.getVehicle();
-
-                // Değişkeni kullanmadan ÖNCE null olup olmadığını kontrol et.
-                // Eğer 'mount' null değilse (yani oyuncu bir şeye biniyorsa) bu blok çalışır.
-                if (mount != null) {
-                    System.out.println("Mount class: " + mount.getClass().getName());
-                    System.out.println("Implements:");
-                    for (var i : mount.getClass().getInterfaces()) {
-                        System.out.println(" - " + i.getName());
-                    }
-                    System.out.println("JumpingMount class name: " + net.minecraft.entity.JumpingMount.class.getName());
-                }
-                // 'mount' null ise bu blok atlanır ve program hatasızca çalışmaya devam eder.
             }
         });
     }

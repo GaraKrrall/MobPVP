@@ -17,12 +17,6 @@
     },
     "done": true
   },
-  "mobpvp:kick": {
-    "criteria": {
-      "hit_mob": "2025-07-10 16:07:30 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/combat/diamond_chestplate": {
     "criteria": {
       "has_diamond": "2025-07-10 16:07:11 +0300"
@@ -32,12 +26,6 @@
   "minecraft:recipes/combat/diamond_helmet": {
     "criteria": {
       "has_diamond": "2025-07-10 16:07:11 +0300"
-    },
-    "done": true
-  },
-  "mobpvp:middle": {
-    "criteria": {
-      "armor_up": "2025-07-10 16:07:11 +0300"
     },
     "done": true
   },
@@ -62,12 +50,6 @@
   "minecraft:recipes/tools/diamond_pickaxe": {
     "criteria": {
       "has_diamond": "2025-07-10 16:07:11 +0300"
-    },
-    "done": true
-  },
-  "mobpvp:deep_dark": {
-    "criteria": {
-      "deep_dark": "2025-07-10 16:07:11 +0300"
     },
     "done": true
   },
@@ -128,6 +110,42 @@
   "minecraft:recipes/combat/diamond_boots": {
     "criteria": {
       "has_diamond": "2025-07-10 16:07:11 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:kick": {
+    "criteria": {
+      "hit_mob": "2025-07-10 16:07:30 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/sticky_piston": {
+    "criteria": {
+      "has_slime_ball": "2025-11-11 22:16:59 +0300"
+    },
+    "done": true
+  },
+  "minecraft:end/dragon_egg": {
+    "criteria": {
+      "dragon_egg": "2025-11-11 22:16:59 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/slime_block": {
+    "criteria": {
+      "has_slime_ball": "2025-11-11 22:16:59 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/lead": {
+    "criteria": {
+      "has_slime_ball": "2025-11-11 22:16:59 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/mojang_banner_pattern": {
+    "criteria": {
+      "has_enchanted_golden_apple": "2025-11-11 22:16:59 +0300"
     },
     "done": true
   },

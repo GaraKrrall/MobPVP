@@ -12,7 +12,7 @@ import static com.kaplanlib.util.path.Paths.MOBPVP;
 
 public class SnotBallRenderer extends MobEntityRenderer<SnotBallEntity, SnotBallModel> {
 
-    private static final Identifier TEXTURE = Identifier.of(MOBPVP, "textures/entity/eklenecek");
+    private static final Identifier TEXTURE = Identifier.of(MOBPVP, "textures/entity/snot_ball/a2.png");
 
     public SnotBallRenderer(EntityRendererFactory.Context context) {
         super(context, new SnotBallModel(context.getPart(EntityModelLayers.SNOT_BALL_LAYER)), 0.3f);

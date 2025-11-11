@@ -5,22 +5,22 @@ import net.fabricmc.api.Environment;
 
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
-import net.minecraft.client.render.entity.model.EntityModelLayers;
-import net.minecraft.client.render.entity.model.IronGolemEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.RotationAxis;
 
+import mc.garakrral.client.renderer.entity.model.TheGreatProtectorGolemModel;
+import mc.garakrral.client.renderer.entity.model.layer.EntityModelLayers;
 import mc.garakrral.entity.passive.TheGreatProtectorGolemEntity;
 
 import static mc.garakrral.mobpvp.MOD_ID;
 
 @Environment(EnvType.CLIENT)
-public class TheGreatProtectorGolemRenderer extends MobEntityRenderer<TheGreatProtectorGolemEntity, IronGolemEntityModel<TheGreatProtectorGolemEntity>> {
-    private static final Identifier TEXTURE = Identifier.of(MOD_ID,"textures/entity/a/a.png");
+public class TheGreatProtectorGolemRenderer extends MobEntityRenderer<TheGreatProtectorGolemEntity, TheGreatProtectorGolemModel> {
+    private static final Identifier TEXTURE = Identifier.of(MOD_ID,"textures/entity/golem/eklenecek.pngggggg");
 
     public TheGreatProtectorGolemRenderer(EntityRendererFactory.Context context) {
-        super(context, new IronGolemEntityModel<>(context.getPart(EntityModelLayers.IRON_GOLEM)), 1.4F);
+        super(context, new TheGreatProtectorGolemModel(context.getPart(EntityModelLayers.GOLEM_LAYER)), 1.4F);
     }
 
     @Override
