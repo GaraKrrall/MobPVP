@@ -124,6 +124,6 @@ public class EntityRegister {
         GOBLIN_HORSE = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, "goblin_horse"), FabricEntityTypeBuilder.createMob().entityFactory(GoblinHorseEntity::new).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(1.3964844F, 1.4F)).trackRangeBlocks(20).build());
         HUNTER = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, "hunter"), FabricEntityTypeBuilder.createMob().entityFactory(HunterEntity::new).spawnGroup(SpawnGroup.MONSTER).dimensions(EntityDimensions.fixed(0.6F, 1.95F)).trackRangeBlocks(20).build());
         THE_GREAT_PROTECTOR_GOLEM = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, "the_great_protector"), FabricEntityTypeBuilder.createMob().entityFactory(TheGreatProtectorGolemEntity::new).spawnGroup(SpawnGroup.AMBIENT).dimensions(EntityDimensions.fixed(2.8F, 5.4F)).trackRangeBlocks(25).build());
-        SNOT_BALL = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, "snot_ball"), FabricEntityTypeBuilder.createMob().entityFactory(SnotBallEntity::new).spawnGroup(SpawnGroup.AMBIENT).dimensions(EntityDimensions.fixed(1F, 1F)).trackRangeBlocks(25).build());
+        SNOT_BALL = Registry.register(Registries.ENTITY_TYPE, Identifier.of(MOD_ID, "snot_ball"), FabricEntityTypeBuilder.createMob().entityFactory(SnotBallEntity::new).spawnGroup(SpawnGroup.MISC).dimensions(EntityDimensions.fixed(1F, 1F)).trackRangeBlocks(25).build());
     }
 }

@@ -1,4 +1,22 @@
 {
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-10-28 18:01:52 +0300"
+    },
+    "done": true
+  },
+  "mobpvp:first": {
+    "criteria": {
+      "joined_world": "2025-10-28 18:01:52 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-10-28 18:01:53 +0300"
+    },
+    "done": false
+  },
   "minecraft:recipes/building_blocks/stone_bricks": {
     "criteria": {
       "has_stone": "2025-10-28 18:04:08 +0300"
@@ -35,12 +53,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/crafting_table": {
-    "criteria": {
-      "unlock_right_away": "2025-10-28 18:01:52 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/chiseled_stone_bricks_stone_from_stonecutting": {
     "criteria": {
       "has_stone": "2025-10-28 18:04:08 +0300"
@@ -50,12 +62,6 @@
   "minecraft:recipes/building_blocks/stone_stairs_from_stone_stonecutting": {
     "criteria": {
       "has_stone": "2025-10-28 18:04:08 +0300"
-    },
-    "done": true
-  },
-  "mobpvp:first": {
-    "criteria": {
-      "joined_world": "2025-10-28 18:01:52 +0300"
     },
     "done": true
   },
@@ -70,12 +76,6 @@
       "has_stone": "2025-10-28 18:04:08 +0300"
     },
     "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:plains": "2025-10-28 18:01:53 +0300"
-    },
-    "done": false
   },
   "minecraft:recipes/redstone/stone_pressure_plate": {
     "criteria": {

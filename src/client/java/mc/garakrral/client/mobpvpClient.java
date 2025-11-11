@@ -118,5 +118,22 @@ public class mobpvpClient implements ClientModInitializer {
                 }
             }
         });
+        ClientTickEvents.END_CLIENT_TICK.register(client -> {
+            if (client.player != null) {
+                var mount = client.player.getVehicle();
+
+                // Değişkeni kullanmadan ÖNCE null olup olmadığını kontrol et.
+                // Eğer 'mount' null değilse (yani oyuncu bir şeye biniyorsa) bu blok çalışır.
+                if (mount != null) {
+                    System.out.println("Mount class: " + mount.getClass().getName());
+                    System.out.println("Implements:");
+                    for (var i : mount.getClass().getInterfaces()) {
+                        System.out.println(" - " + i.getName());
+                    }
+                    System.out.println("JumpingMount class name: " + net.minecraft.entity.JumpingMount.class.getName());
+                }
+                // 'mount' null ise bu blok atlanır ve program hatasızca çalışmaya devam eder.
+            }
+        });
     }
 }
