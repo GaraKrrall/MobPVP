@@ -2,12 +2,20 @@ package mc.garakrral.client.renderer.entity.model;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.model.*;
+
+import net.minecraft.client.model.Dilation;
+import net.minecraft.client.model.ModelData;
+import net.minecraft.client.model.ModelPart;
+import net.minecraft.client.model.ModelPartBuilder;
+import net.minecraft.client.model.ModelPartData;
+import net.minecraft.client.model.ModelTransform;
+import net.minecraft.client.model.TexturedModelData;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.util.math.MatrixStack;
-import mc.garakrral.entity.passive.TheGreatProtectorGolemEntity;
 import net.minecraft.util.math.MathHelper;
+
+import mc.garakrral.entity.passive.TheGreatProtectorGolemEntity;
 
 @Environment(EnvType.CLIENT)
 public class TheGreatProtectorGolemModel extends EntityModel<TheGreatProtectorGolemEntity> {
@@ -104,60 +112,60 @@ public class TheGreatProtectorGolemModel extends EntityModel<TheGreatProtectorGo
 
         // --- Bacak hedefleri (daha kontrollü, halay hissi yok) ---
         float rightLegTarget = (float) (Math.cos(limbAngle * speed) * degree * swing);
-        float leftLegTarget  = (float) (Math.cos(limbAngle * speed + Math.PI) * degree * swing);
+        float leftLegTarget = (float) (Math.cos(limbAngle * speed + Math.PI) * degree * swing);
 
         // Smooth (lerp) ile geçiş: 0.6F -> nispeten hızlı ama yumuşak uyum
         this.right_leg.pitch = MathHelper.lerp(0.6F, this.right_leg.pitch, rightLegTarget);
-        this.left_leg.pitch  = MathHelper.lerp(0.6F, this.left_leg.pitch, leftLegTarget);
+        this.left_leg.pitch = MathHelper.lerp(0.6F, this.left_leg.pitch, leftLegTarget);
 
         // Bacak yaw küçük ve limbAngle'e bağlı (dönme hissini kaldırıcak kadar küçük)
         float legYawTargetR = (float) (Math.sin(limbAngle * speed) * 0.02F * swing);
         float legYawTargetL = (float) (-Math.sin(limbAngle * speed) * 0.02F * swing);
         this.right_leg.yaw = MathHelper.lerp(0.6F, this.right_leg.yaw, legYawTargetR);
-        this.left_leg.yaw  = MathHelper.lerp(0.6F, this.left_leg.yaw, legYawTargetL);
+        this.left_leg.yaw = MathHelper.lerp(0.6F, this.left_leg.yaw, legYawTargetL);
 
         // --- Gövde: hafif öne eğilme, dönme çok küçük ---
         float bodyPitchTarget = (float) (Math.cos(limbAngle * speed * 0.5F) * 0.03F * swing);
-        float bodyYawTarget   = (float) (Math.sin(limbAngle * speed * 0.25F) * 0.01F * swing);
+        float bodyYawTarget = (float) (Math.sin(limbAngle * speed * 0.25F) * 0.01F * swing);
         this.body.pitch = MathHelper.lerp(0.5F, this.body.pitch, bodyPitchTarget);
-        this.body.yaw   = MathHelper.lerp(0.5F, this.body.yaw, bodyYawTarget);
+        this.body.yaw = MathHelper.lerp(0.5F, this.body.yaw, bodyYawTarget);
 
         // --- Kollar: bacaklarla zıt faz, daha küçük genlik ---
         float armDegree = degree * 0.75F;
         float rightArmTarget = (float) (Math.cos(limbAngle * speed + Math.PI) * armDegree * swing) - 0.12F;
-        float leftArmTarget  = (float) (Math.cos(limbAngle * speed) * armDegree * swing) - 0.12F;
+        float leftArmTarget = (float) (Math.cos(limbAngle * speed) * armDegree * swing) - 0.12F;
 
         // Kolları da yumuşat
         this.right_arm.pitch = MathHelper.lerp(0.55F, this.right_arm.pitch, rightArmTarget);
-        this.left_arm.pitch  = MathHelper.lerp(0.55F, this.left_arm.pitch, leftArmTarget);
+        this.left_arm.pitch = MathHelper.lerp(0.55F, this.left_arm.pitch, leftArmTarget);
 
         // Kol roll (çok küçük) -> animationProgress'e bağlı sürekli dönüş yok
         float rightArmRollTarget = (float) (Math.sin(limbAngle * speed) * 0.02F * swing);
-        float leftArmRollTarget  = (float) (-Math.sin(limbAngle * speed) * 0.02F * swing);
+        float leftArmRollTarget = (float) (-Math.sin(limbAngle * speed) * 0.02F * swing);
         this.right_arm.roll = MathHelper.lerp(0.6F, this.right_arm.roll, rightArmRollTarget);
-        this.left_arm.roll  = MathHelper.lerp(0.6F, this.left_arm.roll, leftArmRollTarget);
+        this.left_arm.roll = MathHelper.lerp(0.6F, this.left_arm.roll, leftArmRollTarget);
 
         // --- Alt kollar üst kola bağlı takipci (yüksek korelasyon) ---
         float rightArm2Target = this.right_arm.pitch * 0.92F + (float) (Math.cos(limbAngle * speed + 0.5F) * 0.02F * swing) - 0.06F;
-        float leftArm2Target  = this.left_arm.pitch  * 0.92F + (float) (Math.cos(limbAngle * speed + 0.5F + Math.PI) * 0.02F * swing) - 0.06F;
+        float leftArm2Target = this.left_arm.pitch * 0.92F + (float) (Math.cos(limbAngle * speed + 0.5F + Math.PI) * 0.02F * swing) - 0.06F;
 
         this.right_arm2.pitch = MathHelper.lerp(0.7F, this.right_arm2.pitch, rightArm2Target);
-        this.left_arm2.pitch  = MathHelper.lerp(0.7F, this.left_arm2.pitch, leftArm2Target);
+        this.left_arm2.pitch = MathHelper.lerp(0.7F, this.left_arm2.pitch, leftArm2Target);
 
         // Alt kol roll/yaw üst kolun küçük bir kesri olsun
         this.right_arm2.roll = MathHelper.lerp(0.7F, this.right_arm2.roll, this.right_arm.roll * 0.6F);
-        this.left_arm2.roll  = MathHelper.lerp(0.7F, this.left_arm2.roll, this.left_arm.roll * 0.6F);
+        this.left_arm2.roll = MathHelper.lerp(0.7F, this.left_arm2.roll, this.left_arm.roll * 0.6F);
 
         this.right_arm2.yaw = MathHelper.lerp(0.7F, this.right_arm2.yaw, this.right_arm.yaw * 0.55F);
-        this.left_arm2.yaw  = MathHelper.lerp(0.7F, this.left_arm2.yaw, this.left_arm.yaw * 0.55F);
+        this.left_arm2.yaw = MathHelper.lerp(0.7F, this.left_arm2.yaw, this.left_arm.yaw * 0.55F);
 
         // --- Hız arttıkça (örneğin sprint tarzı) hafif artış ---
         if (swing > 0.85F) {
             float boost = (swing - 0.85F) * 3.0F;
             this.right_leg.pitch += 0.04F * boost;
-            this.left_leg.pitch  += 0.04F * boost;
+            this.left_leg.pitch += 0.04F * boost;
             this.right_arm.pitch += 0.03F * boost;
-            this.left_arm.pitch  += 0.03F * boost;
+            this.left_arm.pitch += 0.03F * boost;
         }
 
         // --- Son düzeltmeler: başın ve gövdenin aşırı dönmesini engelle ---

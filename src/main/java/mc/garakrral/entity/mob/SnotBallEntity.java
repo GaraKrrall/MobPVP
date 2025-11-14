@@ -2,10 +2,10 @@ package mc.garakrral.entity.mob;
 
 import net.minecraft.entity.EntityData;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.JumpingMount;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
@@ -21,26 +21,24 @@ import net.minecraft.world.LocalDifficulty;
 import net.minecraft.world.ServerWorldAccess;
 import net.minecraft.world.World;
 
-public class SnotBallEntity extends SlimeEntity implements JumpingMount {
+import mc.garakrral.xpjump.XpJump;
+
+public class SnotBallEntity extends SlimeEntity implements XpJump {
 
     private static final TrackedData<Boolean> TAMED =
             DataTracker.registerData(SnotBallEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
 
-    // JumpingMount ile gelen zıplama gücü (0-100 tipinde client'tan gelir)
+    // XP Jump sistemi
     private int jumpStrength = 0;
-    // Şarj (player space basılı tuttuğu süre)
     private boolean isCharging = false;
+    private float currentSpeed = 0.0F;           // anlık yatay hız katsayısı
+    private boolean riderForward = false;
+    private boolean riderSprintBrake = false;
 
     public SnotBallEntity(EntityType<? extends SlimeEntity> type, World world) {
         super(type, world);
-        // Constructor içinde setSize çağırma — initialize() içinde ayarlanacak
     }
 
-    /**
-     * Kayıt ederken kullanacağın attribute builder.
-     * Mod'un mod init kısmında şu şekilde register etmelisin:
-     * FabricDefaultAttributeRegistry.register(ModEntities.SNOT_BALL, SnotBallEntity.createAttributes());
-     */
     public static DefaultAttributeContainer.Builder createAttributes() {
         return SlimeEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 20.0D)
@@ -48,7 +46,6 @@ public class SnotBallEntity extends SlimeEntity implements JumpingMount {
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 0.0D);
     }
 
-    // DataTracker (tamed)
     @Override
     protected void initDataTracker(DataTracker.Builder builder) {
         super.initDataTracker(builder);
@@ -59,164 +56,192 @@ public class SnotBallEntity extends SlimeEntity implements JumpingMount {
         return this.dataTracker.get(TAMED);
     }
 
-    public void setTamed(boolean tamed) {
-        this.dataTracker.set(TAMED, tamed);
+    public void setTamed(boolean b) {
+        this.dataTracker.set(TAMED, b);
     }
 
-    /**
-     * Önemli: SlimeEntity.initialize(super) içinde bazen boyut rastgele atanabilir.
-     * Burada kesinlikle boyutu 1 olarak sabitliyoruz ve attribute'ların hazır olduğu bu aşamada
-     * setSize(1, true) çağrıyoruz.
-     */
+    public void setRiderForward(boolean f) {
+        this.riderForward = f;
+    }
+
+    public void setRiderSprintBrake(boolean b) {
+        this.riderSprintBrake = b;
+    }
+
     @Override
-    public EntityData initialize(ServerWorldAccess world, LocalDifficulty difficulty, SpawnReason reason, EntityData entityData) {
-        EntityData data = super.initialize(world, difficulty, reason, entityData);
-        // kesin 1 boyutu kesinleştir
+    public EntityData initialize(ServerWorldAccess w, LocalDifficulty d, SpawnReason r, EntityData data) {
+        EntityData d0 = super.initialize(w, d, r, data);
         try {
             this.setSize(1, true);
         } catch (Exception ignored) {
-            // Güvenlik: eğer attribute'lar halen hazır değilse yut
         }
-        return data;
+        return d0;
     }
 
-    /**
-     * Evcilleştirme: slime ball kullanınca tamed olur. Tamed ise biner ama kontrol WASD ile değil,
-     * yalnızca jumpbar ile zıplar.
-     */
     @Override
     protected ActionResult interactMob(PlayerEntity player, Hand hand) {
         if (!this.getWorld().isClient) {
             if (!isTamed() && player.getStackInHand(hand).isOf(Items.SLIME_BALL)) {
-                this.setTamed(true);
+                setTamed(true);
                 player.getStackInHand(hand).decrement(1);
                 player.sendMessage(Text.literal("SnotBall seni sevdi 💚"), true);
             } else if (isTamed()) {
-                player.startRiding(this, true); // <---- true ile, client sync zorlanır
+                player.startRiding(this, true);
             }
         } else {
-            // Client tarafında da mount sync'i güvenceye al
             if (isTamed()) player.startRiding(this, true);
         }
         return ActionResult.SUCCESS;
     }
 
-
     @Override
     public void tick() {
         super.tick();
 
-        // Eğer binen bir oyuncu varsa, normal hareketi kilitle; yalnızca zıplama mantığı çalışsın.
         if (this.hasPassengers() && this.getFirstPassenger() instanceof PlayerEntity player) {
 
-            // Yönü eşitle (oyuncu baktıkça slime dönsün)
+            // yön kilidi
             this.setYaw(player.getYaw());
             this.prevYaw = this.getYaw();
 
-            // Slime kendi yapay zekâsını kapatılmış gibi davranacak; x/z hareketi sıfırlıyoruz
-            Vec3d vel = this.getVelocity();
-            this.setVelocity(0.0, vel.y, 0.0); // yatay hareket yok
+            // yatay hareketi sıfırla
+            Vec3d v = this.getVelocity();
+            this.setVelocity(0, v.y, 0);
 
-            // JumpingMount şarjı: şarj bittiyse zıplat
-            // (startJumping() ile isCharging true olur, stopJumping() çağrısıyla zıplatma yapılır)
-            // Burada ekstra bir şey yapmaya gerek yok; stopJumping() zıplamayı uygulayacak.
+            player.fallDistance = 0.0F; //fall damage kapalı
         }
     }
 
-    /**
-     * SlimeEntity.setSize() bazen attribute'lara erişir; hata almamak için super çağrısını try-catch içinde tutuyoruz.
-     * Bu, spawn sırasında veya NBT yüklemerinde güvenlik sağlar.
-     */
-    @Override
-    public void setSize(int size, boolean heal) {
-        try {
-            super.setSize(size, heal);
-        } catch (Exception ignored) {
-            // Bazı durumlarda attribute'lar hazır değil; yut.
-        }
-    }
 
     @Override
     public void readCustomDataFromNbt(NbtCompound nbt) {
         super.readCustomDataFromNbt(nbt);
-        this.setTamed(nbt.getBoolean("Tamed"));
-        // NBT'den gelmiş olabilecek slime size'ı yok sayıp 1 olarak ayarla
-        try { this.setSize(1, false); } catch (Exception ignored) {}
+        setTamed(nbt.getBoolean("Tamed"));
+        try {
+            setSize(1, false);
+        } catch (Exception ignored) {
+        }
     }
 
     @Override
     public void writeCustomDataToNbt(NbtCompound nbt) {
         super.writeCustomDataToNbt(nbt);
-        nbt.putBoolean("Tamed", this.isTamed());
+        nbt.putBoolean("Tamed", isTamed());
     }
 
-    // ----- JumpingMount (zıplama - jumpbar) -----
-    // setJumpStrength: client tarafından gönderilen değeri kaydet
     @Override
     public void setJumpStrength(int strength) {
-        // strength aralığı client tarafında 0..100 gibi olabilir; burada doğrudan kaydediyoruz
         this.jumpStrength = Math.max(0, Math.min(100, strength));
     }
 
     @Override
     public boolean canJump() {
-        // Hem yerde hem de binen varsa zıplayabilir
-        return true;
+        return this.isOnGround();
     }
 
+    @Override
+    public boolean handleFallDamage(float fallDistance, float damageMultiplier, DamageSource source) {
+        return false; // kapalı
+    }
 
     @Override
     public void startJumping(int height) {
-        // Player jump tuşuna bastığında çağrılır -> şarj başlasın
         this.isCharging = true;
     }
 
     @Override
     public void stopJumping() {
-        // Şarj bırakıldığında çağrılır -> hesapla ve uygulayalım
         if (!this.isAlive() || !this.hasPassengers()) {
-            this.isCharging = false;
+            isCharging = false;
             return;
         }
 
-        this.isCharging = false;
+        isCharging = false;
 
-        // Binen oyuncuyu al
-        if (!(this.getFirstPassenger() instanceof PlayerEntity rider)) return;
+        PlayerEntity rider = (PlayerEntity) this.getFirstPassenger();
 
-        // jumpStrength değerinden bir zıplama gücü hesapla
-        // örnek: min 0.4, max 1.6 -> jumpStrength 0..100 arası oranla
+        if (rider != null) {
+            rider.fallDistance = 0.0F;
+        }
+
         double min = 0.4D;
         double max = 1.6D;
-        double power = min + ( (double) this.jumpStrength / 100.0 ) * (max - min);
+        double power = min + ((double) jumpStrength / 100.0) * (max - min);
 
-        // oyuncunun baktığı doğrultu
         Vec3d look = rider.getRotationVec(1.0F).normalize();
 
-        // küçük yukarı takviyesi ile ileri zıplama
         double vx = look.x * power;
-        double vy = power * 0.9D; // biraz daha dik yükseliş
+        double vy = power * 0.9;
         double vz = look.z * power;
 
-        // Uygula
         this.setVelocity(vx, vy, vz);
         this.velocityDirty = true;
-    }
 
-    // ---- Ek: sürüşte WASD'yi pasif hale getirmek için travel override ----
-    // Eğer binen varsa travel inputunu yok sayıyoruz (WASD etkisiz)
-    @Override
-    public void travel(Vec3d movementInput) {
-        if (this.hasPassengers() && this.getFirstPassenger() instanceof PlayerEntity) {
-            // sadece yerçekimi / mevcut y-hızını koru; yatay hareket yok
-            Vec3d vel = this.getVelocity();
-            super.setVelocity(0.0, vel.y, 0.0);
-        } else {
-            super.travel(movementInput);
+        if (rider != null) {
+            rider.fallDistance = 0.0F;
         }
     }
 
-    // Bu iki metot eskiden override edilirken hata veriyordu; bırakıyorum yine çalışır.
+    @Override
+    public void jump() {
+        // kapandı
+    }
+
+    @Override
+    public void travel(Vec3d movementInput) {
+        if (this.hasPassengers() && this.getFirstPassenger() instanceof PlayerEntity rider) {
+
+            // yaw'ı rider'a göre kilitle (görüş)
+            this.setYaw(rider.getYaw());
+            this.prevYaw = this.getYaw();
+
+            // parametreler: hedef hız katsayıları
+            final float maxWalkSpeed = 0.25F;   // normal sürüş hızı (yavaş)
+            final float accel = 0.02F;         // hızlanma hızı (artış per tick)
+            final float decel = 0.01F;         // yavaşlama per tick
+            final float sprintBrakeFactor = 0.06F; // shift ile daha hızlı yavaşlama
+
+            // Hedef hız: eğer riderForward true ise maxWalkSpeed, değilse 0
+            float target = this.riderForward ? maxWalkSpeed : 0f;
+
+            if (!this.riderForward) {
+                // eğer shift ile frenleniyorsa daha hızlı frenle
+                if (this.riderSprintBrake) {
+                    // sprintBrake: güçlü fren
+                    if (currentSpeed > 0f) currentSpeed = Math.max(0f, currentSpeed - sprintBrakeFactor);
+                    else currentSpeed = Math.min(0f, currentSpeed + sprintBrakeFactor);
+                } else {
+                    // normal yavaşlama
+                    if (currentSpeed > target) currentSpeed = Math.max(target, currentSpeed - decel);
+                    else currentSpeed = Math.min(target, currentSpeed + accel);
+                }
+            } else {
+                // riderForward true ise kademeli hızlan
+                if (currentSpeed < target) {
+                    currentSpeed = Math.min(target, currentSpeed + accel);
+                } else if (currentSpeed > target) {
+                    currentSpeed = Math.max(target, currentSpeed - decel);
+                }
+            }
+
+            // apply horizontal velocity according to currentSpeed and rider look direction
+            Vec3d look = rider.getRotationVec(1.0F).normalize();
+            Vec3d vel = this.getVelocity();
+            double vx = look.x * currentSpeed;
+            double vz = look.z * currentSpeed;
+
+            // koru düşey hız bileşeni
+            this.setVelocity(vx, vel.y, vz);
+
+            // passenger control: normal entity physics ile çakışmaması için
+            super.travel(Vec3d.ZERO);
+            return;
+        }
+
+        super.travel(movementInput);
+    }
+
+
     public boolean collides() {
         return true;
     }

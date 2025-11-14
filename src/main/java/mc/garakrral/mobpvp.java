@@ -8,9 +8,6 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.UUID;
 
-import me.shedaniel.autoconfig.AutoConfig;
-import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
-
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
@@ -18,6 +15,8 @@ import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableSource;
+import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -35,6 +34,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
+import net.minecraft.network.packet.CustomPayload;
 
 import mc.garakrral.block.Blocks;
 import mc.garakrral.command.CommandManager;
@@ -60,6 +60,8 @@ import mc.garakrral.registry.HandlerRegister;
 import mc.garakrral.sound.Sounds;
 import mc.garakrral.trade.Trades;
 import mc.garakrral.villager.Villagers;
+import mc.garakrral.xpjump.network.XpJumpServer;
+import mc.garakrral.xpjump.network.payload.SetStrengthPayload;
 
 import com.kaplanlib.api.PluginRegistry;
 import com.kaplanlib.api.annotation.KaplanBedwars;
@@ -78,6 +80,7 @@ public final class mobpvp implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        XpJumpServer.register();
         DataRegister.registerAllData();
         HandlerRegister.registerHandlers();
         Sounds.touch();

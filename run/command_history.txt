@@ -1,8 +1,3 @@
-/time set day
-/kill @e[type=mobpvp:hunter]
-/difficulty peaceful
-/difficulty hard
-/difficulty peaceful
 /difficulty easy
 /difficulty peaceful
 /difficulty hard
@@ -48,3 +43,8 @@
 /playsound mobpvp:walk.copper
 /tp ~ 165 ~
 /setblock 852 -62 1224 minecraft:end_portal
+/setblock 23 64 -2 minecraft:end_portal
+/xp set Player496 100 levels
+/xp set Player0 100 levels
+/xp set Player0 150 levels
+/xp set Player884 150 levels

@@ -40,6 +40,7 @@ import mc.garakrral.client.renderer.entity.mobpvp.TheGreatProtectorGolemRenderer
 import mc.garakrral.client.renderer.entity.model.SnotBallModel;
 import mc.garakrral.client.renderer.entity.model.TheGreatProtectorGolemModel;
 import mc.garakrral.client.renderer.entity.model.layer.EntityModelLayers;
+import mc.garakrral.client.xpjump.XpJumpClient;
 import mc.garakrral.entity.EntityType;
 import mc.garakrral.handler.type.ScreenHandlerTypes;
 import mc.garakrral.level.LevelAssigner;
@@ -53,6 +54,7 @@ public class mobpvpClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        XpJumpClient.init();
         AutoConfig.register(ConfigManager.class, GsonConfigSerializer::new);
         ConfigManager config = AutoConfig.getConfigHolder(ConfigManager.class).getConfig();
 
