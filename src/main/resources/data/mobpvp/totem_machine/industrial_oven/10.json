@@ -1,0 +1,11 @@
+{
+  "time": 60,
+  "inputs": [
+    { "item": "minecraft:raw_gold", "count": 1 },
+    { "item": "minecraft:coal", "count": 1 }
+  ],
+  "output": {
+    "item": "minecraft:gold_ingot",
+    "count": 1
+  }
+}

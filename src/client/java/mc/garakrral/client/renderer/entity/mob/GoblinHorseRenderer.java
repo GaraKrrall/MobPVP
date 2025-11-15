@@ -13,7 +13,7 @@ import mc.garakrral.entity.mob.GoblinHorseEntity;
 
 @Environment(EnvType.CLIENT)
 public class GoblinHorseRenderer extends MobEntityRenderer<GoblinHorseEntity, HorseEntityModel<GoblinHorseEntity>> {
-    private static final Identifier TEXTURE = com.kaplanlib.api.identifier.Identifier.ofMod("textures/entity/goblin_horse/goblin_horse.png");
+    private static final Identifier TEXTURE = Identifier.ofVanilla("textures/entity/horse/horse_zombie.png");
 
     //   // private static final Identifier TEXTURE = com.kaplanlib.api.identifier.Identifier.ofMod("textures/entity/goblin_horse/goblin_horse.png");
 

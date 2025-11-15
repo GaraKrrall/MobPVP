@@ -1,27 +1,3 @@
-/difficulty easy
-/difficulty peaceful
-/difficulty hard
-/difficulty peaceful
-/difficulty hard
-/make-loot-container minecraft:acacia_boat
-/make-loot-container minecraft:acacia_boat minecraft:archaeology/desert_pyramid
-/make-loot-container minecraft:acacia_log minecraft:blocks/andesite_stairs
-/mobpvp ClearMobLevelData
-/effect give @a minecraft:bad_omen
-/y
-/time set midnight
-/kill @e[type=minecraft:item]
-/mobpvp ClearMobLevelData
-/tick freeze
-/tick unfreeze
-/effect give fd614392-59f7-4e60-8cb4-df3efe6eab2d minecraft:health_boost
-/effect give fd614392-59f7-4e60-8cb4-df3efe6eab2d minecraft:health_boost infinite 255
-/effect give fd614392-59f7-4e60-8cb4-df3efe6eab2d minecraft:regeneration infinite 255
-/difficulty peaceful
-/difficulty hard
-/time set day
-/time set midnight
-/time set day
 /tick freeze
 /tick unfreeze
 /time set midnight
@@ -48,3 +24,27 @@
 /xp set Player0 100 levels
 /xp set Player0 150 levels
 /xp set Player884 150 levels
+/data get entity fe30b948-c694-4af8-b3a4-16267cb5a102
+/time set day
+/effect give @a minecraft:night_vision infinite
+/effect give @a minecraft:regeneration infinite 255 true
+/effect clear Player148 minecraft:night_vision
+/effect give @a minecraft:night_vision infinite 255 true
+/effect give 21a997e4-226b-4f15-8e1b-74bbc0f2610a minecraft:night_vision infinite 255 true
+/effect give 21a997e4-226b-4f15-8e1b-74bbc0f2610a minecraft:regeneration infinite 255 true
+/time set day
+/difficulty peaceful
+/give Player845 minecraft:porkchop
+/logger DEBUG
+/logger INFO
+/logger ERROR
+/logger TRACE
+/locate biome minecraft:plains
+/tp @s 141 108 597
+/tick freeze
+/tick unfreeze
+/tick freeze
+/tick unfreeze
+/tick freeze
+/tp -19 69 651
+/difficulty normal

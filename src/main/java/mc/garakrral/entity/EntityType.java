@@ -14,9 +14,9 @@ import mc.garakrral.entity.mob.HunterEntity;
 import mc.garakrral.entity.mob.MadSkeletonEntity;
 import mc.garakrral.entity.mob.MadZombieEntity;
 import mc.garakrral.entity.mob.MiniCopperGolemEntity;
-import mc.garakrral.entity.mob.SnotBallEntity;
+import mc.garakrral.entity.passive.SnotBallEntity;
 import mc.garakrral.entity.passive.MiniIronGolemEntity;
-import mc.garakrral.entity.passive.TheGreatProtectorGolemEntity;
+import mc.garakrral.entity.boss.TheGreatProtectorGolemEntity;
 
 public class EntityType {
     public static net.minecraft.entity.EntityType<MadZombieEntity> MAD_ZOMBIE;

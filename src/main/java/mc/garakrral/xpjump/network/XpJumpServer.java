@@ -3,7 +3,7 @@ package mc.garakrral.xpjump.network;
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 
-import mc.garakrral.entity.mob.SnotBallEntity;
+import mc.garakrral.entity.passive.SnotBallEntity;
 import mc.garakrral.xpjump.XpJump;
 import mc.garakrral.xpjump.network.payload.RideInputPayload;
 import mc.garakrral.xpjump.network.payload.SetStrengthPayload;

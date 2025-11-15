@@ -37,12 +37,21 @@ public class IndustrialOvenRecipes {
         try {
             ClassLoader loader = IndustrialOvenRecipes.class.getClassLoader();
             // /data/mobpvp/totem_machine/industrial_oven içindeki dosyaları listele
-            // (Java ClassLoader doğrudan dizin listeleyemez, bu yüzden sabit liste veya resource tanımı gerekiyor)
-            // ama mod build edilirken bu dizin sabit olduğundan hepsi okunur:
+            // Java ClassLoader doğrudan dizin listeleyemez, bu yüzden sabit liste veya resource tanımı gerekiyor
+            // ama mod build edilirken bu dizin sabit olduğundan hepsi okunur
             String basePath = "data/mobpvp/totem_machine/industrial_oven/";
             String[] recipeFiles = {
-                    "iron_to_golden_apple.json",
-                    "test.json"
+                    "1.json",
+                    "2.json",
+                    "3.json",
+                    "4.json",
+                    "5.json",
+                    "6.json",
+                    "7.json",
+                    "8.json",
+                    "9.json",
+                    "10.json",
+                    "11.json",
             };
 
             for (String file : recipeFiles) {

@@ -14,7 +14,7 @@ import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 
-import mc.garakrral.entity.mob.SnotBallEntity;
+import mc.garakrral.entity.passive.SnotBallEntity;
 
 @Environment(EnvType.CLIENT)
 public class SnotBallModel extends EntityModel<SnotBallEntity> {

@@ -36,7 +36,7 @@ import mc.garakrral.client.renderer.entity.mob.SuperZombieRenderer;
 import mc.garakrral.client.renderer.entity.mobpvp.MiniCopperGolemRenderer;
 import mc.garakrral.client.renderer.entity.mobpvp.MiniIronGolemRenderer;
 import mc.garakrral.client.renderer.entity.mobpvp.SnotBallRenderer;
-import mc.garakrral.client.renderer.entity.mobpvp.TheGreatProtectorGolemRenderer;
+import mc.garakrral.client.renderer.entity.boss.TheGreatProtectorGolemRenderer;
 import mc.garakrral.client.renderer.entity.model.SnotBallModel;
 import mc.garakrral.client.renderer.entity.model.TheGreatProtectorGolemModel;
 import mc.garakrral.client.renderer.entity.model.layer.EntityModelLayers;

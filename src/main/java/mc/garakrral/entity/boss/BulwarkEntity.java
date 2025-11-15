@@ -5,6 +5,8 @@ import mc.garakrral.entity.goal.boss.FireballAttackGoal;
 import mc.garakrral.entity.goal.boss.SummonZombieGoal;
 import mc.garakrral.entity.goal.boss.TntSpawnGoal;
 import mc.garakrral.entity.mob.GoblinEntity;
+import mc.garakrral.entity.mob.GoblinHorseEntity;
+import mc.garakrral.entity.mob.HunterEntity;
 import mc.garakrral.entity.mob.MadSkeletonEntity;
 import mc.garakrral.entity.mob.MadZombieEntity;
 
@@ -23,6 +25,7 @@ import net.minecraft.entity.boss.BossBar;
 import net.minecraft.entity.boss.ServerBossBar;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.PathAwareEntity;
+import net.minecraft.entity.mob.SkeletonEntity;
 import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -62,11 +65,13 @@ public class BulwarkEntity extends PathAwareEntity {
         this.targetSelector.add(2, new ActiveTargetGoal<>(this, PathAwareEntity.class, 10, true, true,
                 entity -> entity != this
                         && !(entity instanceof MadZombieEntity)
-                        && !(entity instanceof BulwarkEntity) // bulwark boss
-                        && !(entity instanceof GoblinEntity) //goblin
-                        && !(entity instanceof MadZombieEntity) //deli zombi
-                        && !(entity instanceof BulwarkEntity) //bulwark boss
-                        && !(entity instanceof MadSkeletonEntity) //deli iskelet
+                        && !(entity instanceof BulwarkEntity)
+                        && !(entity instanceof MadSkeletonEntity)
+                        && !(entity instanceof ZombieEntity)
+                        && !(entity instanceof SkeletonEntity)
+                        && !(entity instanceof GoblinEntity)
+                        && !(entity instanceof GoblinHorseEntity)
+                        && !(entity instanceof HunterEntity)
         ));
         this.targetSelector.add(3, new RevengeGoal(this));
     }
@@ -75,9 +80,7 @@ public class BulwarkEntity extends PathAwareEntity {
     @Override
     public void tick() {
         super.tick();
-        // System.out.println("Boss tickliyor! Health: " + this.getHealth());
         bossBar.setPercent(this.getHealth() / this.getMaxHealth());
-
     }
 
     @Override

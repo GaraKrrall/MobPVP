@@ -1,0 +1,8 @@
+{
+  "time": 20,
+  "inputs": [
+    { "item": "minecraft:beef", "count": 1 },
+    { "item": "minecraft:coal", "count": 1 }
+  ],
+  "output": { "item": "minecraft:cooked_beef", "count": 1 }
+}

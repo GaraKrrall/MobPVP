@@ -15,7 +15,7 @@ import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
 
-import mc.garakrral.entity.passive.TheGreatProtectorGolemEntity;
+import mc.garakrral.entity.boss.TheGreatProtectorGolemEntity;
 
 @Environment(EnvType.CLIENT)
 public class TheGreatProtectorGolemModel extends EntityModel<TheGreatProtectorGolemEntity> {

@@ -44,7 +44,6 @@ Artık Goblin Atları geceleri doğabilir.
 Goblin's silence başarımı eklendi
 Goblin atı için vuruş sesi eklendi
 Avcı eklendi
-Avcılar nadiren doğabilir
 Avcılar Baskınlarda bulunabilir yada katılabilir
 TheGreatProtectorGolem eklendi
 Ecvilleştirilebilecek olan yeni sümük topu eklendi. Bu canlıyı evcilleştirip en yakın dostunuz haline getirebilirisiniz

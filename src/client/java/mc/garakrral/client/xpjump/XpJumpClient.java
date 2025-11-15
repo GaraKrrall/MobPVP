@@ -2,12 +2,18 @@ package mc.garakrral.client.xpjump;
 
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.hud.InGameHud;
+import net.minecraft.util.Identifier;
 
 import mc.garakrral.xpjump.XpJump;
 import mc.garakrral.xpjump.network.payload.RideInputPayload;
 import mc.garakrral.xpjump.network.payload.SetStrengthPayload;
 import mc.garakrral.xpjump.network.payload.StopJumpPayload;
 
+import com.mojang.blaze3d.systems.RenderSystem;
 import org.lwjgl.glfw.GLFW;
 
 public class XpJumpClient {
@@ -20,36 +26,37 @@ public class XpJumpClient {
     private static boolean wasRiding = false;
 
     public static void init() {
+        var client = MinecraftClient.getInstance();
 
-        ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if (client.player == null) return;
+        // --- XP BAR ve kontrol ---
+        ClientTickEvents.END_CLIENT_TICK.register(mc -> {
+            if (mc.player == null) return;
 
-            boolean isRidingXpJump = client.player.getVehicle() instanceof XpJump;
-            boolean pressed = GLFW.glfwGetKey(client.getWindow().getHandle(), GLFW.GLFW_KEY_SPACE) == GLFW.GLFW_PRESS;
-            boolean canJump = isRidingXpJump && client.player.getVehicle().isOnGround();
+            boolean isRidingXpJump = mc.player.getVehicle() instanceof XpJump;
+            boolean pressed = GLFW.glfwGetKey(mc.getWindow().getHandle(), GLFW.GLFW_KEY_SPACE) == GLFW.GLFW_PRESS;
+            boolean canJump = isRidingXpJump && mc.player.getVehicle().isOnGround();
 
             // --- W / Shift input ---
-            boolean forward = GLFW.glfwGetKey(client.getWindow().getHandle(), GLFW.GLFW_KEY_W) == GLFW.GLFW_PRESS;
-            boolean sprintBrake = GLFW.glfwGetKey(client.getWindow().getHandle(), GLFW.GLFW_KEY_LEFT_SHIFT) == GLFW.GLFW_PRESS;
+            boolean forward = GLFW.glfwGetKey(mc.getWindow().getHandle(), GLFW.GLFW_KEY_W) == GLFW.GLFW_PRESS;
+            boolean sprintBrake = GLFW.glfwGetKey(mc.getWindow().getHandle(), GLFW.GLFW_KEY_LEFT_ALT) == GLFW.GLFW_PRESS;
             if (isRidingXpJump) {
                 ClientPlayNetworking.send(new RideInputPayload(forward, sprintBrake));
             }
 
-
-            // --- XP bar güncelle ---
+            // --- XP bar state ---
             if (isRidingXpJump && !wasRiding) {
-                savedLevel = client.player.experienceLevel;
-                savedProgress = client.player.experienceProgress;
+                savedLevel = mc.player.experienceLevel;
+                savedProgress = mc.player.experienceProgress;
                 wasRiding = true;
             } else if (!isRidingXpJump && wasRiding) {
-                client.player.experienceLevel = savedLevel;
-                client.player.experienceProgress = savedProgress;
+                mc.player.experienceLevel = savedLevel;
+                mc.player.experienceProgress = savedProgress;
                 wasRiding = false;
             }
 
             if (isRidingXpJump) {
-                client.player.experienceLevel = strength;
-                client.player.experienceProgress = strength / 100f;
+                mc.player.experienceLevel = strength;
+                mc.player.experienceProgress = strength / 100f;
             }
 
             // --- Jump charging ---
@@ -66,6 +73,5 @@ public class XpJumpClient {
                 strength = 0;
             }
         });
-
     }
 }

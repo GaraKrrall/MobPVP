@@ -6,10 +6,10 @@
   ],
   "key": {
     "I": { "item": "mobpvp:copper_stick" },
-    "C": { "item": "mobpvp:reinforced_copper_block" }
+    "C": { "item": "minecraft:gold_block" }
   },
   "result": {
-    "id": "mobpvp:reinforced_copper_mace",
+    "id": "mobpvp:gold_mace",
     "count": 1
   }
 }

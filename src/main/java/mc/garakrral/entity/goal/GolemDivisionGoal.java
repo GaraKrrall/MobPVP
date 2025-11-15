@@ -1,6 +1,6 @@
 package mc.garakrral.entity.goal;
 
-import mc.garakrral.entity.passive.TheGreatProtectorGolemEntity;
+import mc.garakrral.entity.boss.TheGreatProtectorGolemEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.Goal;
 import net.minecraft.entity.passive.IronGolemEntity;

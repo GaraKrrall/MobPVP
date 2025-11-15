@@ -6,7 +6,7 @@ import net.minecraft.util.Identifier;
 
 import mc.garakrral.client.renderer.entity.model.SnotBallModel;
 import mc.garakrral.client.renderer.entity.model.layer.EntityModelLayers;
-import mc.garakrral.entity.mob.SnotBallEntity;
+import mc.garakrral.entity.passive.SnotBallEntity;
 
 import static com.kaplanlib.util.path.Paths.MOBPVP;
 
