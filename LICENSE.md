@@ -1,43 +1,13 @@
-This License describes how all projects created by GaraKrral and their accompanying code may (and may not) be used.
-This License may be modified or revoked at any time at the SOLE DISCRETION of GaraKrral.
-This License was last modified on November 27, 2025.
+GaraKrral's Open Source License
 
+Copyright (c) GaraKrral
 
-------------------------[PERMITTED USES]------------------------
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), whether acquired for a fee or free of charge, to deal in the Software with almost no restriction (including without limitation the rights to use, freely modify, copy, maintain, merge, publish, distribute, and sell copies of the Software) subject to the following conditions and exclusions:
 
+1. ASSET EXCLUSION AND RESERVATION OF RIGHTS: Notwithstanding the permissions granted above, this license DOES NOT cover any asset files contained within the Software (including but not limited to .png, .jpg, .ico, .ogg, .mp3, and other visual or audio resources). These assets may not be used, copied, distributed, or modified without explicit written permission. All rights regarding these assets are strictly reserved.
 
-* You are permitted to freely modify or edit the code of these licensed projects for personal use or for use within modpacks, provided that you do not redistribute the modified code.
+2. THIRD-PARTY LICENSES: Any portions of the Software subject to different licenses (e.g., Public Domain works, third-party libraries) shall remain subject to their respective original licenses.
 
-* You are permitted to use any licensed project on any server (including third-party servers) without requesting permission. This rule also applies to modified versions, as long as they are not redistributed.
+3. ATTRIBUTION REQUIREMENT: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Any code segments may be used without prior permission, provided that the copyright notice is preserved.
 
-* You are permitted to republish these licensed projects in modpacks only in their unmodified form.
-
-  * However, modifying the code of these licensed projects and then republishing them in modpacks is expressly prohibited.
-
-* You are permitted to examine the source code and make use of AI assistance for learning or understanding the code.
-
-
- ------------------------[PROHIBITED USES]------------------------
-
-
-* You are forbidden from reuploading, republishing, or redistributing these licensed projects under a different name or as standalone files.
-
-* You are forbidden from using these licensed projects in any form of training, including AI, machine learning, or any other educational dataset.
-
-* You are forbidden from using any files belonging to these licensed projects (even small portions) in any other project.
-  All rights are fully held and reserved by GaraKrral.
-
-  * These projects may not be republished under any other license.
-  * All assets (images, banners, textures, etc.) are included under this License.
-
-* You are forbidden from expanding, porting, or otherwise transforming these licensed projects.
-
-  * However, plugins or add-ons that do not modify proprietary code may be created.
-
-
-------------------------[OFFICIAL PERMISSION]------------------------
-
-
-Given that GaraKrral holds full copyright over all parts of these licensed projects, it must be assumed that any portion of this License may be individually overridden with the explicit permission of GaraKrral.
-
-GaraKrral reserves the right, at any time and for any reason (whether personal or commissioned) to create and distribute modified versions of these licensed projects or their derivatives.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
